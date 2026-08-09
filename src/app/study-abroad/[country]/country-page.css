@@ -1,0 +1,152 @@
+/* Country-specific study abroad page extras */
+
+.cp-page {
+  padding-top: 100px;
+}
+
+.cp-breadcrumb {
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.8rem 1.5rem;
+}
+
+.cp-breadcrumb .sa-explorer-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+}
+
+.cp-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #dc2626;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.cp-back-link:hover {
+  color: #991b1b;
+}
+
+.cp-breadcrumb-sep {
+  color: #cbd5e1;
+}
+
+.cp-breadcrumb-current {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Country Hero */
+.cp-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0c2240 100%);
+  padding: 3.5rem 1.5rem 3rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.cp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 40%, rgba(220, 38, 38, 0.2) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cp-hero .sa-explorer-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cp-hero-flag {
+  margin-bottom: 1rem;
+}
+
+.cp-hero-flag img {
+  width: 64px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cp-hero-title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #fff !important;
+  margin-bottom: 0.8rem;
+  line-height: 1.15;
+}
+
+.cp-hero-sub {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+/* Stats override for country page */
+.cp-stats {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Programs header */
+.cp-programs-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cp-programs-header .sa-section-title {
+  margin-bottom: 0;
+}
+
+.cp-program-count {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.cp-cat-count {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #94a3b8;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Other Countries Grid */
+.cp-other-countries {
+  background: #f8fafc;
+  padding: 4rem 1.5rem;
+}
+
+.cp-other-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .cp-hero-flag img {
+    width: 48px;
+    height: 33px;
+  }
+  .cp-other-grid {
+    grid-template-columns: 1fr;
+  }
+}

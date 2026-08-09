@@ -1,0 +1,587 @@
+/* ─────────────────────────────────────────────────────────────
+   Study Abroad — shared page styles
+   ───────────────────────────────────────────────────────────── */
+
+/* ── Hero ── */
+.sa-page {
+  min-height: 100vh;
+  padding-top: 110px;
+}
+
+.sa-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0c2240 100%);
+  padding: 4rem 1.5rem 3rem;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.sa-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(220, 38, 38, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(59, 130, 246, 0.14) 0%, transparent 55%);
+  pointer-events: none;
+}
+
+.sa-hero-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sa-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(220, 38, 38, 0.2);
+  border: 1px solid rgba(220, 38, 38, 0.4);
+  color: #fca5a5;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.sa-hero-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.sa-hero-accent {
+  color: #f87171;
+}
+
+.sa-hero-subtitle {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+  max-width: 540px;
+  margin-bottom: 2rem;
+}
+
+.sa-hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sa-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #dc2626;
+  color: #fff !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.35);
+}
+
+.sa-btn-primary:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+}
+
+.sa-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s;
+  backdrop-filter: blur(8px);
+}
+
+.sa-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Hero Country Cards */
+.sa-hero-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sa-hero-country-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 1.2rem 1rem;
+  text-decoration: none;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s, transform 0.15s;
+  backdrop-filter: blur(8px);
+}
+
+.sa-hero-country-card img {
+  width: 44px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sa-hero-country-card:hover {
+  background: rgba(220, 38, 38, 0.25);
+  transform: translateY(-3px);
+}
+
+.sa-hero-country-count {
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+/* ── Stats ── */
+.sa-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  border-bottom: 2px solid #f1f5f9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.sa-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 2rem 1rem;
+  border-right: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.sa-stat-item:last-child {
+  border-right: none;
+}
+
+.sa-stat-value {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.sa-stat-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.sa-stat-sub {
+  font-size: 0.76rem;
+  color: #94a3b8;
+}
+
+/* ── Explorer Section ── */
+.sa-explorer {
+  background: #f8fafc;
+  padding: 4rem 1.5rem;
+}
+
+.sa-explorer-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sa-section-title {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+/* Country Tabs */
+.sa-country-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.sa-country-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sa-country-tab:hover {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.sa-country-tab.active {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #fff;
+}
+
+.sa-country-tab.active .sa-tab-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.sa-tab-flag {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.sa-tab-count {
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 0.1rem 0.45rem;
+  border-radius: 10px;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+/* Category Filters */
+.sa-category-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.sa-cat-filter {
+  padding: 0.4rem 0.9rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sa-cat-filter:hover {
+  border-color: #0f172a;
+  color: #0f172a;
+}
+
+.sa-cat-filter.active {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: #fff;
+}
+
+/* Category Section */
+.sa-cat-section {
+  margin-bottom: 2.5rem;
+}
+
+.sa-cat-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Program Grid */
+.sa-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1rem;
+}
+
+.sa-program-card {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.1rem;
+  transition: all 0.2s;
+}
+
+.sa-program-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.sa-program-logo {
+  width: 52px;
+  height: 52px;
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  overflow: hidden;
+}
+
+.sa-program-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sa-program-university {
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sa-program-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+
+.sa-program-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #dc2626;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.sa-program-cta:hover {
+  color: #991b1b;
+}
+
+.sa-view-all-wrap {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.sa-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+/* ── Countries Directory ── */
+.sa-countries-dir {
+  background: #fff;
+  padding: 4rem 1.5rem;
+}
+
+.sa-countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.sa-country-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  text-decoration: none;
+  color: #0f172a !important;
+  transition: all 0.2s;
+}
+
+.sa-country-card:hover {
+  border-color: #dc2626;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.1);
+  transform: translateY(-2px);
+}
+
+.sa-country-card-flag {
+  width: 44px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.sa-country-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sa-country-card-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.sa-country-card-count {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-top: 0.15rem;
+}
+
+.sa-country-card-arrow {
+  color: #dc2626;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.sa-country-card:hover .sa-country-card-arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+/* ── CTA Banner ── */
+.sa-cta-banner {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.sa-cta-banner h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: #fff !important;
+  margin-bottom: 0.8rem;
+}
+
+.sa-cta-banner p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2rem;
+}
+
+.sa-cta-banner .sa-btn-primary {
+  background: #fff;
+  color: #dc2626 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sa-cta-banner .sa-btn-primary:hover {
+  background: #f1f5f9;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 900px) {
+  .sa-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .sa-hero-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .sa-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sa-stat-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .sa-stat-item:nth-child(3) {
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .sa-stat-item:nth-child(4) {
+    border-top: 1px solid #e2e8f0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sa-hero-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sa-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sa-programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sa-program-card {
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .sa-program-cta {
+    grid-column: span 2;
+  }
+
+  .sa-countries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sa-country-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .sa-country-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sa-country-tab {
+    white-space: nowrap;
+  }
+}

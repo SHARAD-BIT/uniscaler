@@ -4,6 +4,7 @@ import Link from "@/Utils/StateLink";
 
 import Logo from "./Logo";
 import MenuBtn from "../Utils/MenuBtn";
+import StudyAbroadMegaMenu from "./StudyAbroadMegaMenu";
 import "./styles/navbar.css";
 import { useEffect, useState } from "react";
 import { getStoredUser } from "../Helper/Helper";
@@ -45,6 +46,7 @@ const Navbar = () => {
   const [username, setUsername] = useState(null);
   const [activeMenu, setActiveMenu] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(false);
+  const [studyAbroadOpen, setStudyAbroadOpen] = useState(false);
   const [linkData, setLinkData] = useState(AllCourse[0].name);
   useEffect(() => {
     setUsername(getStoredUser()?.name || null);
@@ -62,8 +64,7 @@ const Navbar = () => {
       state: { course: onlineCourseDetails[0] },
       Icon: FaLaptopCode,
     },
-    // No dedicated Study Abroad page yet — routed to the enquiry form.
-    { name: "Study Abroad", href: "/contact", Icon: FaGlobe },
+    { name: "Study Abroad", href: "/study-abroad", Icon: FaGlobe },
     {
       name: "Common Application Form",
       href: "/common-application-form",
@@ -72,9 +73,9 @@ const Navbar = () => {
     { name: "Contact", href: "/contact", Icon: FaHeadset },
   ];
 
-  // Layer 2 — the main-bar links that sit beside the logo. "All Courses" is
-  // rendered separately below because it opens the existing mega menu.
+  // Layer 2 — the main-bar links that sit beside the logo.
   const topNav = [
+    { name: "Study Abroad", href: "/study-abroad", isStudyAbroad: true },
     { name: "Explore City", href: "/college-search-by-location/delhi" },
     { name: "Top University", href: "/college" },
     { name: "Top MBA", href: "/college/management" },
@@ -243,13 +244,27 @@ const Navbar = () => {
           <div className={`menu-links ${isMenuIcon ? "active" : ""}`}>
             <ul className="links">
               {topNav.map((link) => (
-                <li key={link.name}>
+                <li
+                  key={link.name}
+                  onMouseEnter={() => link.isStudyAbroad && setStudyAbroadOpen(true)}
+                >
                   <Link
                     href={link.href}
-                    onClick={() => setIsMenuIcon(false)}
+                    onClick={() => {
+                      setIsMenuIcon(false);
+                      setStudyAbroadOpen(false);
+                    }}
                   >
                     {link.name}
+                    {link.isStudyAbroad && (
+                      <span className="icon" style={{ marginLeft: "4px" }}>
+                        <FaChevronDown style={{ fontSize: "0.75rem" }} />
+                      </span>
+                    )}
                   </Link>
+                  {link.isStudyAbroad && studyAbroadOpen && (
+                    <StudyAbroadMegaMenu onClose={() => setStudyAbroadOpen(false)} />
+                  )}
                 </li>
               ))}
               <li>
