@@ -142,3 +142,16 @@
   border-radius: var(--sheet-r) var(--sheet-r) 0 0;
   overflow: hidden;
 }
+
+@media screen and (max-width: 768px) {
+  .home .sheet-stack {
+    --sheet-r: 28px;
+  }
+  .home .sheet {
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.08);
+  }
+  .home .sheet-footer {
+    margin-top: 2rem;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+  }
+}
