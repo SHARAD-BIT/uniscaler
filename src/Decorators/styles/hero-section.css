@@ -1,0 +1,142 @@
+.hero-section .wrapper {
+  display: flex;
+  max-width: 1300px;
+  width: 100%;
+  /* `height: 85vh` tied the card to the viewport rather than to its contents,
+     so on a short window the last line ("We cover all aspects of…") spilled out
+     through the bottom of the white panel — measured at 29px past the padding
+     on a 650px-tall viewport, and only 13px short of spilling at 700px. Nothing
+     clips it, so it simply hung outside the card. `min-height` keeps the tall
+     look on a roomy screen and lets the panel grow when the text needs it. */
+  min-height: 85vh;
+  margin: 0 auto;
+  /* `.top` offsets this section by 100px to clear the 90px fixed navbar, which
+     leaves 10px. The old `margin-top: -20px` took all of that back and 10px
+     more, so the hero started at y=80 — inside the bar, not below it, which is
+     why the card looked welded to the navbar. Positive here instead, so the gap
+     survives on the 765px breakpoint too, where `.top` drops to 70px against a
+     70px navbar and would otherwise leave nothing at all. */
+  margin-top: 16px;
+}
+.hero-section .wrapper .text-wrapper {
+  display: flex;
+  width: 50%;
+  gap: 1rem;
+  flex-direction: column;
+  z-index: 2;
+  gap: 1rem;
+  line-height: 1.5;
+  position: relative;
+  border-radius: 25px 0 0 25px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  background-color: var(--light);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.hero-section .wrapper .text-wrapper h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background-image: linear-gradient(
+    295deg,
+    var(--accent),
+    rgb(3, 154, 255),
+    var(--primary)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-section .wrapper .text-wrapper h1 .year {
+  font-size: clamp(2rem , 5vw, 3rem);
+}
+
+.hero-section .wrapper .text-wrapper h1 .year .animate{
+  animation: flip 5s infinite;
+}
+
+.hero-section .wrapper .text-wrapper h1 .year:last-child{
+  font-size: clamp(1.5rem , 3vw, 2.2rem);
+}
+.hero-section .wrapper .text-wrapper .tagline span{
+  background-image: linear-gradient(5deg, var(--accent), var(--primary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: clamp(0.6rem, 5vw, 1.5rem);
+}
+.hero-section .wrapper .text-wrapper p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+.hero-section .text-wrapper .bot-text {
+  font-size: 1.2rem;
+  animation: colorChange 5s infinite;
+  transition: 0.3s;
+  line-height: 1.5;
+}
+@keyframes colorChange {
+  0%,
+  100% {
+    color: #09f;
+  }
+  50% {
+    color: var(--primary);
+  }
+}
+.hero-section .text-wrapper .bot-text span {
+  font-size: 1.2em;
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.hero-section .wrapper .image-wrapper {
+  position: relative;
+  width: 50%;
+  /* `height: 100%` resolved against the wrapper's fixed 85vh. Now that the
+     wrapper is min-height with an auto height, a percentage has nothing to
+     resolve against and collapses to the image's own height, leaving the photo
+     115px shorter than the text card beside it. `auto` hands the job back to
+     the flex container, which stretches both halves to the same height. */
+  height: auto;
+  border-radius: 0 30px 30px 0;
+  overflow: hidden;
+}
+.hero-section .wrapper .image-wrapper img {
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  display: block;
+}
+@media screen and (max-width: 1080px) {
+  .hero-section .wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    height: auto;
+  }
+  .hero-section .wrapper .text-wrapper {
+    padding: 1rem;
+    margin-top: -30px;
+    width: 100%;
+    border-radius: 15px;
+  }
+  .hero-section .wrapper .text-wrapper h1 {
+    font-size: 1rem;
+    text-wrap: balance;
+  }
+  .hero-section .wrapper .text-wrapper p {
+    font-size: 0.6rem;
+  }
+  .hero-section .wrapper .image-wrapper {
+    width: 100%;
+    height: 100vw;
+    order: -1;
+    border-radius: 25px 25px 0 0;
+  }
+  .hero-section .wrapper .text-wrapper .tagline span{
+    font-size: 1rem;
+  }
+}

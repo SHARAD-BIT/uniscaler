@@ -1,0 +1,45 @@
+.wrapper {
+  padding: 1rem;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+.wrapper h2,
+.wrapper h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+.wrapper h3 {
+  margin: 1rem;
+  color: var(--accent);
+}
+.wrapper h4 {
+  margin: 1rem;
+  color: var(--primary);
+  filter: saturate(200%) hue-rotate(90deg);
+}
+.wrapper p {
+  margin-left: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  font-weight: 600;
+}
+.wrapper ul {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+.wrapper ul li {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  list-style: decimal;
+}
+.wrapper ul li strong {
+  color: var(--accent);
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0;
+  }
+    
+}

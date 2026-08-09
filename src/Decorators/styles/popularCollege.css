@@ -1,0 +1,100 @@
+.popular-college {
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+.popular-college h2 {
+  color: var(--accent);
+  text-align: center;
+}
+
+.popular-college .typing-text {
+  font-weight: 600;
+  text-align: center;
+}
+.popular-college .popular-college-wrapper .popular-college {
+  width: 100%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  justify-items: center;
+}
+.popular-college .popular-college-wrapper .popular-college a {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  overflow: hidden;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+.popular-college .popular-college-wrapper .popular-college a picture {
+  position: absolute;
+  inset: 0;
+}
+.popular-college .popular-college-wrapper .popular-college a picture img {
+  object-fit: cover;
+}
+.popular-college .popular-college-wrapper .popular-college a:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  filter: saturate(150%);
+}
+.popular-college .popular-college-wrapper .popular-college a .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 10px 10px;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+.popular-college .popular-college-wrapper .popular-college a .text h3 {
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-family: "Righteous", sans-serif;
+}
+
+.typing-text-zoom {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 765px) {
+  .popular-college .popular-college-wrapper .popular-college {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular-college .popular-college-wrapper .popular-college a {
+    height: 150px;
+  }
+  .popular-college .popular-college-wrapper .popular-college a .text {
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0.2rem 0.8rem;
+  }
+
+  .main-heading {
+    font-size: 2rem !important;
+    font-family: "Righteous", sans-serif !important;
+  }
+
+  .typing-text-zoom {
+    font-size: 1rem;
+  }
+}

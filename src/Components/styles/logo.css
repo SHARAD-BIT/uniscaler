@@ -1,0 +1,56 @@
+.logo {
+  width: 160px;
+  height: 30px;
+}
+
+/* Wordmark-only variant (navbar): size by height so the cropped "Uniscaler"
+   SVG keeps its aspect ratio instead of being squeezed into the icon box. */
+.logo.wordmark {
+  width: auto;
+  height: auto;
+}
+.logo.wordmark .desk,
+.logo.wordmark .mobile {
+  height: 32px;
+  width: auto;
+}
+@media screen and (max-width: 765px) {
+  .logo.wordmark {
+    width: auto;
+  }
+  .logo.wordmark .desk {
+    display: none;
+  }
+  .logo.wordmark .mobile {
+    display: block;
+    height: 26px;
+    width: auto;
+  }
+}
+.form-wrapper .mockUp .logo {
+  width: 120px;
+}
+
+.logo  .mobile{
+  display: none;
+}
+
+.logo  .desk{
+  display: block;
+}
+
+@media screen and (max-width: 765px) {
+  .logo {
+    width: 30px;
+  }
+  .form-wrapper .mockUp .logo {
+    margin-top: 1rem;
+  }
+
+  .logo  .desk{
+    display: none;
+  }
+  .logo  .mobile{
+    display: block;
+  }
+}

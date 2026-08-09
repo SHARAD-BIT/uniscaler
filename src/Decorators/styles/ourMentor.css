@@ -1,0 +1,9 @@
+.our-mentor {
+  width: 100%;
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.our-mentor h2 {
+  margin-bottom: 0.5rem;
+}

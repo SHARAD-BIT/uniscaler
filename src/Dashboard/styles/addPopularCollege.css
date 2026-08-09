@@ -1,0 +1,206 @@
+.add-popular {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.add-popular form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.add-popular form .input-group {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  background-color: var(--secondary);
+  padding: 0.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+}
+.add-popular form .input-group label {
+  text-align: left;
+  font-weight: 600;
+  color: var(--primary);
+}
+.add-popular form .input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.add-popular form .input-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.add-popular form .input-group > button {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: var(--accent);
+  color: var(--light);
+  border-radius: 10px;
+  font-family: inherit;
+}
+.add-popular form .input-group .groups {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.add-popular form .input-group .groups button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background-color: var(--primary);
+  color: var(--light);
+  border-radius: 10px;
+  font-family: inherit;
+}
+.add-popular form .input-group .groups > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.add-popular form .input-group .groups > div > textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-family: inherit;
+}
+.add-popular form > button {
+  padding: 0.5rem;
+  max-width: 300px;
+  margin: 1rem auto;
+  width: 100%;
+  border-radius: 10px;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--accent);
+  color: var(--light);
+}
+@media screen and (max-width: 768px) {
+  .add-popular form .input-group {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
+.collegeListServer{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+.collegeListServer li{
+position: relative;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-weight: 600;
+}
+.collegeListServer li button{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  font-family: inherit;
+  display: block;
+  margin-top: 1rem;
+}
+.collegeListServer .image{
+  max-width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100px;
+}
+@media screen and (max-width: 1080px) {
+  .collegeListServer .image{
+    display: none;
+  }
+}
+
+.addYouTubeVideo .videoContainer{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--secondary);
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.addYouTubeVideo .videoContainer .video {
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.addYouTubeVideo .videoContainer .video button{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  font-family: inherit;
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.addYouTubeVideo .videoContainer .video button:hover{
+  background-color: white;
+  color: brown;
+}
+.blogsContainer{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blogsContainer .blog{
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blogsContainer .blog button{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  font-family: inherit;
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  max-width: 200px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);  
+}
+.blogsContainer .blog button:hover{
+  background-color: white;
+  color: brown;
+}

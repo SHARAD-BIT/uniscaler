@@ -1,0 +1,551 @@
+/* Online course / dual-degree page.
+   Built from the reference layout the client supplied: a soft mesh background,
+   one large card per programme, a dark header strip, a colour-coded grid of
+   curriculum modules, a benefits grid and a footer action bar.
+   The reference was written in Tailwind with an indigo palette; this project
+   has no Tailwind, so it is plain CSS here, and the indigo/slate is mapped onto
+   the site's own navy (--accent) and amber (--primary). The per-module accents
+   are kept, because they do a job: they make five similar cards scannable. */
+
+.onlineCourse {
+  --oc-line: #e6ebf3;
+  --oc-muted: #64748b;
+  --oc-ink: #0f2140;
+
+  /* Full-bleed: the cards run the width of the screen rather than sitting in a
+     centred column. Only enough side padding to keep them off the edge. */
+  max-width: none;
+  margin: 0;
+  padding: clamp(60px, 8vw, 120px) clamp(1rem, 2.5vw, 2.5rem) 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Mesh background: three wide, faint radials so the white cards have something
+   to sit on. It lives on a fixed full-viewport layer rather than on .onlineCourse
+   itself — that element is capped at 1180px and centred, so painting the mesh on
+   it left plain white margins down both sides of the page. */
+.onlineCourse::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #f8fafc;
+  background-image: radial-gradient(
+      at 0% 0%,
+      rgba(0, 57, 128, 0.07) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 0%, rgba(3, 154, 255, 0.07) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(140, 77, 0, 0.05) 0px, transparent 50%);
+}
+
+/* ---- page header --------------------------------------------------------- */
+.onlineCourse .oc-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: center;
+}
+.onlineCourse .oc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background-color: #eef3fb;
+  border: 1px solid #dbe5f5;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.onlineCourse .oc-badge i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  animation: oc-pulse 2s ease-in-out infinite;
+}
+@keyframes oc-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.8);
+  }
+}
+.onlineCourse .oc-head h1 {
+  font-size: clamp(1.6rem, 4.5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--oc-ink);
+  letter-spacing: -0.02em;
+}
+.onlineCourse .oc-head h1 span {
+  background-image: linear-gradient(90deg, var(--accent), #039aff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.onlineCourse .oc-sub {
+  max-width: 46rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-weight: 500;
+  color: var(--oc-muted);
+}
+.onlineCourse .oc-sub strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ---- programme card ------------------------------------------------------ */
+.onlineCourse .ddpWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.onlineCourse .ddpItem {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(15, 33, 64, 0.08);
+}
+
+/* dark header strip */
+.onlineCourse .oc-card-head {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem clamp(1.25rem, 4vw, 2.5rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  color: var(--light);
+  background-image: linear-gradient(
+    100deg,
+    #08152b 0%,
+    var(--accent) 55%,
+    #08152b 100%
+  );
+}
+/* the soft glow in the top-right corner of the strip */
+.onlineCourse .oc-card-head::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  right: -10%;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background-color: rgba(3, 154, 255, 0.18);
+  filter: blur(70px);
+  pointer-events: none;
+}
+.onlineCourse .oc-card-head > * {
+  position: relative;
+  z-index: 1;
+}
+.onlineCourse .oc-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9dc4f5;
+}
+.onlineCourse .oc-card-head h2 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--light);
+}
+.onlineCourse .oc-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.onlineCourse .oc-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #dceafd;
+  white-space: nowrap;
+}
+.onlineCourse .oc-pill svg {
+  color: #9dc4f5;
+}
+
+/* card body */
+.onlineCourse .oc-card-body {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.onlineCourse .oc-overview {
+  padding: 1.25rem 1.4rem;
+  border-radius: 16px;
+  background-color: #f3f7fd;
+  border: 1px solid #e2ebf8;
+}
+.onlineCourse .oc-overview p {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  color: #334155;
+  /* The panel spans the full-width card, but a paragraph that wide is hard to
+     read — the eye loses the line on the way back. Cap the measure and let the
+     tinted panel do the spanning. */
+  max-width: 105ch;
+}
+
+/* section headers */
+.onlineCourse .oc-section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+.onlineCourse .oc-section-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  color: var(--light);
+}
+.onlineCourse .oc-section-icon.indigo {
+  background-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(0, 57, 128, 0.25);
+}
+.onlineCourse .oc-section-icon.green {
+  background-color: #17936a;
+  box-shadow: 0 6px 16px rgba(23, 147, 106, 0.25);
+}
+.onlineCourse .oc-section-head h3 {
+  font-size: clamp(1.05rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  color: var(--oc-ink);
+}
+.onlineCourse .oc-section-head p {
+  font-size: 0.8rem;
+  color: var(--oc-muted);
+}
+
+/* ---- curriculum modules -------------------------------------------------- */
+.onlineCourse .oc-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.onlineCourse .oc-module {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border-radius: 16px;
+  background-color: var(--light);
+  border: 1px solid var(--oc-line);
+  box-shadow: 0 1px 2px rgba(15, 33, 64, 0.04);
+  transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
+}
+.onlineCourse .oc-module:hover {
+  transform: translateY(-2px);
+  border-color: #b9cdea;
+  box-shadow: 0 10px 24px rgba(15, 33, 64, 0.1);
+}
+.onlineCourse .oc-module-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+.onlineCourse .oc-module-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  transition: background-color 0.25s, color 0.25s;
+}
+.onlineCourse .oc-module h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--oc-ink);
+}
+/* Some keyPoint labels are stored lowercase ("other"). Capitalising the first
+   letter for display keeps the headings consistent without editing the data. */
+.onlineCourse .oc-module h4::first-letter {
+  text-transform: uppercase;
+}
+
+/* Per-module accents. The icon tile is a pale wash at rest and inverts to the
+   solid colour when the card is hovered, which is what gives the grid its
+   liveliness in the reference. */
+.onlineCourse .oc-module-icon.blue {
+  background-color: #e8f1fe;
+  color: #1d63c9;
+}
+.onlineCourse .oc-module:hover .oc-module-icon.blue {
+  background-color: #1d63c9;
+  color: var(--light);
+}
+.onlineCourse .oc-module-icon.green {
+  background-color: #e3f6ef;
+  color: #17936a;
+}
+.onlineCourse .oc-module:hover .oc-module-icon.green {
+  background-color: #17936a;
+  color: var(--light);
+}
+.onlineCourse .oc-module-icon.purple {
+  background-color: #f1eafe;
+  color: #7b4bd0;
+}
+.onlineCourse .oc-module:hover .oc-module-icon.purple {
+  background-color: #7b4bd0;
+  color: var(--light);
+}
+.onlineCourse .oc-module-icon.amber {
+  background-color: #fdf1de;
+  color: #a8690a;
+}
+.onlineCourse .oc-module:hover .oc-module-icon.amber {
+  background-color: #a8690a;
+  color: var(--light);
+}
+.onlineCourse .oc-module-icon.rose {
+  background-color: #fdeaee;
+  color: #c33a5c;
+}
+.onlineCourse .oc-module:hover .oc-module-icon.rose {
+  background-color: #c33a5c;
+  color: var(--light);
+}
+
+.onlineCourse .oc-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: #475569;
+}
+.onlineCourse .oc-bullets li {
+  position: relative;
+  padding-left: 1rem;
+  list-style: none;
+}
+/* the small round marker, tinted to match the module */
+.onlineCourse .oc-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.onlineCourse .oc-bullets.blue li::before {
+  background-color: #3b82f6;
+}
+.onlineCourse .oc-bullets.green li::before {
+  background-color: #17936a;
+}
+.onlineCourse .oc-bullets.purple li::before {
+  background-color: #8b5cf6;
+}
+.onlineCourse .oc-bullets.amber li::before {
+  background-color: #d68910;
+}
+.onlineCourse .oc-bullets.rose li::before {
+  background-color: #e0567b;
+}
+
+/* the dark card that closes the grid */
+.onlineCourse .oc-module.is-dark {
+  background-color: #0f2140;
+  border-color: #0f2140;
+}
+.onlineCourse .oc-module.is-dark:hover {
+  border-color: #1d3a68;
+}
+.onlineCourse .oc-module.is-dark h4 {
+  color: var(--light);
+}
+.onlineCourse .oc-module-icon.dark {
+  background-color: rgba(157, 196, 245, 0.16);
+  color: #9dc4f5;
+}
+.onlineCourse .oc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+.onlineCourse .oc-chips span {
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #dbe6f5;
+}
+
+/* ---- benefits ------------------------------------------------------------ */
+.onlineCourse .oc-benefits {
+  padding-top: 2rem;
+  border-top: 1px solid var(--oc-line);
+}
+/* Explicit 4 / 2 / 1 rather than auto-fit. The courses carry four benefits, and
+   any minmax() has a window where it resolves to three columns — which strands
+   the fourth card on a row of its own. Even counts always fill. */
+.onlineCourse .oc-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media screen and (max-width: 1400px) {
+  .onlineCourse .oc-benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 760px) {
+  .onlineCourse .oc-benefit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.onlineCourse .oc-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background-color: #f8fafc;
+  border: 1px solid #eef2f7;
+}
+.onlineCourse .oc-benefit-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  border-radius: 10px;
+  background-color: #e3f6ef;
+  color: #12795a;
+  font-size: 1rem;
+}
+.onlineCourse .oc-benefit h5 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--oc-ink);
+}
+.onlineCourse .oc-benefit p {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* ---- footer action bar --------------------------------------------------- */
+/* Pulled out to the card's edges with negative margins, so it reads as a
+   separate band rather than another padded block. */
+.onlineCourse .oc-footer {
+  margin: 0 clamp(-2.5rem, -4vw, -1.25rem) clamp(-2.5rem, -4vw, -1.25rem);
+  padding: 1.5rem clamp(1.25rem, 4vw, 2.5rem);
+  border-top: 1px solid var(--oc-line);
+  background-color: #f6f9fd;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.onlineCourse .oc-elig {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.onlineCourse .oc-elig-badge {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #e6eefb;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.onlineCourse .oc-elig-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+.onlineCourse .oc-elig p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+.onlineCourse .oc-apply {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: 12px;
+  background-image: linear-gradient(90deg, var(--accent), #0d6bd6);
+  color: var(--light);
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0, 57, 128, 0.25);
+  transition: transform 0.25s, box-shadow 0.25s, filter 0.25s;
+}
+.onlineCourse .oc-apply:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 12px 26px rgba(0, 57, 128, 0.32);
+}
+
+@media screen and (max-width: 640px) {
+  .onlineCourse .oc-card-head,
+  .onlineCourse .oc-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .onlineCourse .oc-apply {
+    width: 100%;
+  }
+}

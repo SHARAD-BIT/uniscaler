@@ -1,0 +1,30 @@
+header {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  user-select: none;
+  background-color: var(--dark);
+}
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  position: absolute;
+  top: 0;
+  text-transform: capitalize;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  backdrop-filter: blur(1px);
+  height: 100%;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  color: var(--light);
+}

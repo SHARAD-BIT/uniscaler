@@ -1,0 +1,54 @@
+.adminLogin {
+  max-width: 500px;
+  margin: 1rem auto;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.adminLogin h2 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.adminLogin form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+.adminLogin form .input-group {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0.5rem;
+}
+.adminLogin form .input-group label {
+  text-align: left;
+}
+.adminLogin form .input-group input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+}
+.adminLogin form button[type="submit"] {
+  width: 100%;
+  max-width: 200px;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--accent);
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 300ms;
+}
+.adminLogin form button[type="submit"]:hover {
+  background-color: var(--accent);
+  color: var(--light);
+}
+@media screen and (max-width: 768px) {
+  .adminLogin form .input-group {
+    grid-template-columns: 1fr;
+  }
+}

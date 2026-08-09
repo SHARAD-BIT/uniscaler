@@ -1,0 +1,37 @@
+.collegeByLocation .findMore {
+  background-color: var(--secondary);
+}
+.collegeByLocation h2 {
+  text-align: center;
+  margin: 1rem auto;
+}
+.collegeByLocation .slider h2 {
+  position: relative;
+  background-image: linear-gradient(45deg, var(--dark), var(--accent));
+  background-color: var(--secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.collegeByLocation .slider .tags {
+  display: flex;
+  max-width: 1400px;
+  padding: 0.5rem;
+  overflow-x: auto;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.collegeByLocation .slider .tags a {
+  padding: 0.3rem 1rem;
+  text-transform: uppercase;
+  color: var(--light);
+  background-color: var(--accent);
+  border-radius: 5px;
+}
+.collegeByLocation .slider .tags a.active {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.collegeByLocation .slider .tags::-webkit-scrollbar {
+  display: none;
+}

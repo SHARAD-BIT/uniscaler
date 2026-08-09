@@ -1,0 +1,42 @@
+.userPaidColleges {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.userPaidColleges > h2 {
+  color: var(--accent);
+}
+.userPaidColleges .PaidCollegeList {
+  display: grid;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 100%;
+  gap: 1.5rem;
+}
+.userPaidColleges .PaidCollegeList .listData {
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.userPaidColleges .PaidCollegeList .listData h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.userPaidColleges .PaidCollegeList .listData ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+.userPaidColleges .PaidCollegeList .listData ul li {
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.userPaidColleges .PaidCollegeList .listData ul li:hover {
+  opacity: 1;
+  color: var(--accent);
+  transform: translateY(-2px);
+}

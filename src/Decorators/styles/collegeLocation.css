@@ -1,0 +1,183 @@
+.college-location {
+  max-width: 1300px;
+  padding: 5rem 1rem;
+  margin: 0 auto;
+}
+.college-location .headP {
+  max-width: 400px;
+  text-align: center;
+  padding: 2vw 1rem;
+  /* box-shadow: */
+  /* 0 6px 0 rgba(255, 89, 0, 0.129),
+    0 0 0 1px rgba(255, 89, 0, 0.315); */
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.college-location .headP h2 {
+  margin-bottom: 1rem;
+  background-image: linear-gradient(45deg, var(--accent), rgb(255, 77, 0));
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(1.5rem, 5vw, 2.2rem);
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+.college-location .headP h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--accent);
+}
+.college-location .headP h2::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -5px;
+  background-color: var(--accent);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: move 9s linear infinite;
+}
+@keyframes move {
+  0%,
+  100% {
+    right: 100%;
+  }
+  50% {
+    right: -5px;
+  }
+  100%{
+    right:-5px
+  }
+}
+.college-location .headP p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+.college-location .headP img {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+  animation: bubble 3s linear infinite;
+}
+@keyframes bubble {
+  0% {
+    top: -25px;
+    filter: drop-shadow(0 0 3px #474dfb);
+  }
+  50% {
+    top: -35px;
+    filter: drop-shadow(0 0 5px #474dfb);
+  }
+  100% {
+    top: -25px;
+    filter: drop-shadow(0 0 3px #474dfb);
+  }
+}
+/*
+ * Fanned card deck, modelled on Shopify's /start merchant strip.
+ *
+ * --card-step is deliberately smaller than --card-w (Shopify uses 211 against a
+ * 330px card, a ratio of 0.64) — that difference is what makes the cards
+ * overlap. Later cards paint over earlier ones purely by document order, so no
+ * z-index bookkeeping is needed.
+ */
+.college-location .city-deck {
+  /* Sized against the viewport on purpose. With 8 cards the strip is
+     (7 * 0.64 + 1) = 5.48 card-widths wide, so 24vw keeps it ~1.3x wider than
+     the screen at every size and there is always something left to travel. A
+     fixed px width fitted inside wide monitors and the deck froze. */
+  --card-w: clamp(200px, 24vw, 400px);
+  --card-step: calc(var(--card-w) * 0.64);
+  position: relative;
+  /* Full-bleed: --vw is set from JS to documentElement.clientWidth, which
+     excludes the scrollbar. 100vw would not, and the page would scroll
+     sideways. Falls back to the container width until the effect runs. */
+  width: var(--vw, 100%);
+  margin-inline: calc(50% - var(--vw, 100%) / 2);
+  /*
+   * Clip sideways only. `overflow: hidden` on both axes sliced the top edge off
+   * any card that pokes upward, and cards do that in two ways: the tilt makes a
+   * card's bounding box up to 25px taller than the card itself, and hover adds a
+   * 14px lift plus the scale on top of that.
+   *
+   * `clip` rather than `hidden` because `overflow-x: hidden` with
+   * `overflow-y: visible` is not a legal pair — the visible axis silently
+   * computes to `auto` and grows a scrollbar. `clip` + `visible` is legal, and
+   * horizontal clipping is all this needs: it is what stops the strip's travel
+   * from widening the page.
+   */
+  overflow-x: clip;
+  overflow-y: visible;
+  /* card height = width * 417/330, plus room for the jitter and the hover lift */
+  height: calc(var(--card-w) * 1.264 + 60px);
+}
+
+.college-location .city-deck__strip {
+  position: relative;
+  height: 100%;
+  width: calc((var(--count) - 1) * var(--card-step) + var(--card-w));
+  /* Absolute cards sit against the padding edge, so this is the headroom the
+     hover lift needs before `overflow: hidden` above would clip it. */
+  padding-top: 26px;
+  /* Only bites on displays wide enough to fit the whole strip, where there is
+     no travel left and a left-aligned deck would look off-centre. */
+  margin-inline: auto;
+  will-change: transform;
+}
+
+@media screen and (max-width: 768px) {
+  .college-location .city-deck {
+    /* Less overlap on phones. The card cannot shrink below its 200px floor, so
+       at Shopify's 0.64 the visible column left for the name and the slogan
+       chip was too narrow to hold either. */
+    --card-step: calc(var(--card-w) * 0.78);
+  }
+  .college-location .headP img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* prefers-reduced-motion: the effect stops driving the strip and flags the
+   deck, which becomes an ordinary swipeable row instead. */
+.college-location .city-deck[data-static="true"] {
+  height: auto;
+  overflow-x: auto;
+  /* Explicit, because `auto` paired with the `visible` above would compute to
+     `auto` on this axis too and add a stray vertical scrollbar. */
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+}
+.college-location .city-deck[data-static="true"] .city-deck__strip {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  /* Vertical padding is the hover lift's headroom, since overflow-y is hidden
+     in this mode. */
+  padding: 20px 1rem;
+}
+.college-location .city-deck[data-static="true"] .city-card {
+  position: static;
+  flex: 0 0 var(--card-w);
+  transform: none;
+  scroll-snap-align: center;
+}
+.college-location .city-deck[data-static="true"] .city-card__rot {
+  transform: none;
+}

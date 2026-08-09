@@ -1,0 +1,22 @@
+.help .page-section > p {
+  padding: 1rem;
+  font-weight: 600;
+  opacity: 0.8;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.help .page-section.faqData p {
+  font-weight: 700;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.help .page-section:nth-child(odd) {
+  background-color: var(--secondary);
+}
+
+.help .contactUs {
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,144 @@
+/*
+ * Sticky-stack reveal, taken from shopify.com/id/website/builder: the section
+ * above pins in place while the panel below scrolls up over it.
+ *
+ * Measured off their live DOM rather than guessed — across 1400px of scrolling
+ * their upper section stayed frozen at `top: -42px` while the white panel moved
+ * 1:1 with the scroll. There is no JavaScript in it at all: one element is
+ * `sticky`, the other has a `z-index` and a rounded edge.
+ *
+ * This only works because nothing above it sets `overflow: hidden` — that
+ * silently kills `position: sticky`. Checked: html, body, main and .home are all
+ * clear, and the only `overflow: hidden` in the app is the temporary one added
+ * to <body> while the search modal is open.
+ */
+.home .sheet-stack {
+  position: relative;
+
+  --sheet-r: clamp(20px, 3.5vw, 48px);
+  /*
+   * The single most important value here. The whole effect is a white card
+   * moving against a backdrop, so the backdrop cannot also be white — Shopify's
+   * is near-black, which is why their rounded corners read instantly. On a light
+   * page a soft tint does the same job without turning the section into a slab.
+   *
+   * It is what shows through in the only two places the sheet does not cover:
+   * behind the pinned deck, and in the band below the sheet.
+   */
+  --sheet-backdrop: #eef3f8;
+
+  background-color: var(--sheet-backdrop);
+}
+
+/*
+ * The success stories are what pins.
+ *
+ * Two reasons this is a wrapper rather than `position: sticky` straight on
+ * `.ourSuccess`:
+ *
+ * 1. A sticky element only stays stuck within its own parent, and the pin has to
+ *    outlast the sheet scrolling past it. `.sheet-stack` holds both, so the pin
+ *    lets go exactly where the sheet ends.
+ * 2. A pinned element needs an opaque background or the sections above scroll up
+ *    behind it and show through. `.ourSuccess` is transparent and capped at
+ *    `max-width: 1300px`, so painting the background on it would leave bare
+ *    strips down both sides on wide screens. This wrapper is full width, so the
+ *    background covers edge to edge.
+ *
+ * It takes the backdrop tint, not white. White here would make the sheet
+ * invisible as it rises: white card, white backdrop, no edge.
+ */
+.home .sheet-stack > .pin {
+  position: sticky;
+  top: 0;
+  background-color: var(--sheet-backdrop);
+}
+
+/*
+ * Holds the second reveal: the sheet and the footer scroll as one block over the
+ * pinned success stories, which is what makes the first reveal happen.
+ *
+ * It also exists to be the sheet's containing block, and that is the whole reason
+ * it was added. A sticky box anchored with `bottom` is dragged upward to bring its
+ * bottom edge to the bottom of the viewport, clamped by the top of its containing
+ * block. With the sheet sitting directly inside `.sheet-stack` — 4892px tall and
+ * starting far above it — that clamp never bit, so the sheet was hauled all the
+ * way to the top of the stack and sat there permanently covering the pinned
+ * layer. Measured: `.pin` and `.sheet` reported an identical viewport top at
+ * every single scroll position, so the success stories were never visible.
+ *
+ * Starting the containing block exactly where the sheet starts removes the drag —
+ * there is nowhere above for it to go.
+ */
+.home .sheet-hold {
+  position: relative;
+  /* Lifts the group over the pinned layer, which is `z-index: auto`. Also makes
+     this a stacking context, so the two z-indexes below are local to it. */
+  z-index: 10;
+}
+
+/*
+ * Layer two: rides over the pinned success stories, then pins itself so the
+ * footer can ride over it in turn.
+ *
+ * Anchored ABOVE the top edge by however much it overflows the viewport, which
+ * is what --sheet-top carries. Home.jsx measures it.
+ *
+ * Measured at 1440x900: this layer is 927px against a 900px viewport. At `top: 0`
+ * it pinned the instant its top edge reached zero, which is also the instant the
+ * footer began climbing over its bottom — and the newsletter lives at its bottom,
+ * so it was swallowed before it had ever been fully on screen. Shorter windows
+ * are worse: 227px of overflow at 700px.
+ *
+ * `bottom: 0` is the declarative way to ask for "pin once your bottom edge
+ * arrives" and was tried first. It does not engage here — probed in the browser
+ * across eight scroll positions, the box kept moving 1:1 with the scroll and
+ * never stuck, while a forced `top: -27px` pinned its bottom at exactly 900 every
+ * time. Hence the measured offset.
+ */
+.home .sheet {
+  position: sticky;
+  top: var(--sheet-top, 0px);
+  /* Local to .sheet-hold's stacking context — below the footer, above nothing. */
+  z-index: 1;
+  background-color: var(--light);
+  /* All four corners, not just the top: the bottom pair is what makes the end of
+     the block read as an end. */
+  border-radius: var(--sheet-r);
+  /*
+   * Padding rather than margin, and not optional: .popular-college opens with
+   * `margin: 2rem auto`, and a plain `position: relative` box does not start a
+   * block formatting context. That top margin would collapse straight through
+   * the sheet, dragging its rounded edge 2rem down and leaving a bare band above
+   * it. Padding stops the collapse and doubles as breathing room under the
+   * corners.
+   */
+  padding-top: clamp(1.5rem, 4vw, 3.5rem);
+  /* Keeps the newsletter clear of the bottom curve. */
+  padding-bottom: clamp(1rem, 3vw, 2.5rem);
+}
+
+/*
+ * Layer three, and the one that closes the page. The dark footer against the
+ * white sheet is the strongest contrast in the stack, so this is where the end
+ * of the block reads most clearly — no tint band needed behind it.
+ *
+ * `overflow: hidden` is what makes the radius bite: the rounded corners are on
+ * this wrapper, but the dark background belongs to the footer inside it, and
+ * without clipping that background would paint square straight over them.
+ */
+.home .sheet-footer {
+  position: relative;
+  /* Local to .sheet-hold, so it only has to beat the sheet's 1. */
+  z-index: 2;
+  /*
+   * Dwell time, not decoration. Once the sheet pins, its bottom sits on the
+   * bottom of the viewport and the newsletter is fully readable — but only until
+   * the footer climbs over it. Measured without this, that window was about
+   * 140px of scrolling. The gap is below the pinned sheet and therefore off
+   * screen, so it costs nothing visually and simply delays the cover.
+   */
+  margin-top: clamp(2rem, 6vw, 6rem);
+  border-radius: var(--sheet-r) var(--sheet-r) 0 0;
+  overflow: hidden;
+}

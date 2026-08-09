@@ -1,0 +1,17 @@
+.top-college {
+  padding: 1rem;
+}
+.top-college h2,
+.top-college > p {
+  text-align: center;
+  margin: 0.5rem 0.5rem;
+}
+.top-college .cardWrapper {
+  max-width: 1400px;
+  padding: 2rem 1.5rem;
+}
+@media screen and (max-width: 450px) {
+  .top-college .cardWrapper {
+    padding: 1rem 0;
+  }
+}

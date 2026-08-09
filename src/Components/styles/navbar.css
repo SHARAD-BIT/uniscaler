@@ -1,0 +1,929 @@
+nav {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  padding: 0;
+  transform: translateX(-50%);
+  z-index: 100;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+
+  /* Heights of the two layers, kept as variables because the U-dots toggle is
+     absolutely positioned across both and has to know how tall each one is to
+     centre itself in whichever bar currently owns it. Every breakpoint/sticky
+     override below re-declares these instead of setting heights directly. */
+  --bar-h: 60px; /* Layer 2 — the glass main bar */
+  --app-h: 63px; /* Layer 1 — the app-switcher bar, when open */
+  /* left edge of the centred 1300px content column */
+  --nav-edge: calc((100% - min(1300px, 100%)) / 2);
+  --dots-w: 34px;
+  --swap-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Water glass. The first attempt used a 0.66 white tint, which buried
+     whatever passed underneath and left the bar reading as plain white. The
+     tint is now thin enough to actually see through, and the glassiness comes
+     from the edges and the refraction instead of from opacity:
+       - the tint is cool (a pale blue) rather than pure white, so the pane has
+         a colour of its own the way real glass does;
+       - saturate() keeps colour passing underneath vivid instead of grey, and
+         brightness() gives the wet, lit look;
+       - a bright specular streak runs across it, strongest at the two ends;
+       - the top rim is lit and the bottom rim carries a faint blue refraction
+         line, which is what makes it read as a pane with thickness.
+     The sheen is a background layer rather than an ::after overlay: an overlay
+     would sit above the logo and links and veil them, since neither is in its
+     own stacking context.
+     Note this can only show where something passes beneath it — over the blank
+     top of a page there is nothing to refract and any glass looks like tint. */
+  background-image: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.06) 24%,
+      rgba(255, 255, 255, 0) 46%,
+      rgba(255, 255, 255, 0.1) 64%,
+      rgba(255, 255, 255, 0.45) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(228, 241, 255, 0.5),
+      rgba(255, 255, 255, 0.2)
+    );
+  border-bottom: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  /* No -webkit- prefix by hand: Lightning CSS adds it during the build, because
+     Next's default targets include Safari 16.4, which only knows the prefixed
+     form. Confirmed against the emitted CSS, not assumed. */
+  backdrop-filter: blur(20px) saturate(200%) brightness(1.06);
+}
+
+/* Without backdrop-filter there is no blur to hide the page behind the bar, so
+   the tint has to carry the contrast on its own or the links become unreadable
+   over whatever scrolls under them. */
+@supports not (
+  (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+) {
+  nav {
+    background-color: rgba(255, 255, 255, 0.93);
+  }
+  nav.sticky {
+    background-color: rgba(255, 255, 255, 0.98);
+  }
+}
+nav .wrapperBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+  height: var(--bar-h);
+  margin: 0 auto;
+  transition: height 0.5s;
+}
+/* Scrolled: thicker glass, and the shadow lifts the pane off the content
+   running under it. The old flat grey shadow is gone — it read as a drop
+   shadow on paper, which is the opposite of what glass does. */
+/* Scrolled: this is where the glass actually reads, because content is now
+   passing underneath. Only a little more tint than at rest — enough to keep the
+   navy link text legible over a dark image — and a deeper lift. */
+nav.sticky {
+  --bar-h: 54px;
+}
+nav.sticky {
+  background-image: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.08) 24%,
+      rgba(255, 255, 255, 0) 46%,
+      rgba(255, 255, 255, 0.12) 64%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(228, 241, 255, 0.62),
+      rgba(255, 255, 255, 0.34)
+    );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+  backdrop-filter: blur(26px) saturate(210%) brightness(1.06);
+}
+nav .menu-links .links {
+  display: flex;
+  /* was `gap: 10=6px`, which is not valid CSS — the parser discarded it and the
+     links were held apart only by their own padding. 6px of the two plausible
+     readings, since the anchors already carry 1rem of horizontal padding. Only
+     desktop is affected: the 1080px block below resets this to 0, which is what
+     shows the gap was deliberate rather than stray. */
+  gap: 6px;
+  align-items: center;
+}
+nav .menu-links > .links > li {
+  position: relative;
+}
+nav .menu-links > .links > li a,
+nav .menu-links > .links > li .link {
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-style: normal;
+  color: var(--accent);
+  display: block;
+}
+
+/* online course details */
+nav .menu-links > .links > li:hover .subMenuList {
+  display: grid;
+}
+nav .subMenuList {
+  position: fixed;
+  top: 60px;
+  width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  overflow: hidden;
+  height: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: none;
+  grid-template-columns: 250px 1fr;
+  z-index: 2;
+}
+
+nav .subMenuList .subWrapList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  height: 100%;
+  background-color: var(--secondary);
+}
+nav .subMenuList .subWrapList li {
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--accent);
+  display: block;
+  position: relative;
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+  z-index: 1;
+}
+nav .subMenuList .subWrapList li.active::after {
+  width: 100%;
+}
+nav .subMenuList .subWrapList li:hover,
+nav .subMenuList .subWrapList li.active {
+  color: var(--light);
+}
+nav .subMenuList .subWrapList li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--accent);
+  background-image: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--secondary) 100%
+  );
+  width: 0;
+  height: 100%;
+  border-radius: 0.5rem 4rem 4rem 0.5rem;
+  transition: 0.3s;
+  z-index: -1;
+}
+nav .subMenuList .subWrapList li:hover::after {
+  width: 100%;
+}
+nav .subMenuList .subWrapList li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  transform: translateY(-50%);
+  background-color: var(--accent);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+nav .subMenuList .subListData {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-y: scroll;
+  z-index: 33;
+  width: 100%;
+}
+nav .subMenuList .subListData h2 {
+  background-image: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+
+.earn-refer {
+  background-color: transparent !important;
+  margin-bottom: 0 !important;
+  display: flex !important;
+}
+
+.earn-refer:hover {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+  nav .subMenuList {
+    position: relative;
+    top: 0;
+    width: 95vw;
+    grid-template-columns: 1fr;
+    height: max-content;
+  }
+  nav .subMenuList .subWrapList li {
+    padding: 0.5rem 1rem;
+  }
+  nav .subMenuList .subWrapList li::before {
+    display: none;
+  }
+  nav .subMenuList .subListData {
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    background-color: var(--light);
+    transition: 0.3s;
+    height: 100%;
+  }
+  nav .subMenuList .subListData.active {
+    transform: translateX(0%);
+  }
+  nav .subMenuList .subListData a {
+    font-size: 0.8rem !important;
+    white-space: normal;
+  }
+
+  .earn-refer img {
+   height: 40px;
+  }
+}
+
+nav .menu-links .links li a.active,
+nav .menu-links .links li a:hover {
+  background-color: #ddd;
+}
+nav .menu-links .links li .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  /* The scale is written inside `transform` rather than as a standalone
+     `scale` property. Next's CSS minifier folds a standalone `scale: 0` into
+     the transform, after which the `scale: 1` on :hover cannot undo it —
+     transform and scale are separate properties that compose, not override.
+     Keeping both in `transform` makes the override unambiguous. */
+  transform: translate(-50%, 0) scale(0);
+  z-index: 1;
+  background-color: var(--light);
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: nowrap;
+  width: max-content;
+  transition: 0.5s ease;
+  padding: 1rem;
+  border-radius: 1rem 10px 10px 1rem;
+  box-shadow:
+    -10px 10px 0 var(--accent),
+    0 0 0 2px var(--dark);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  transform-origin: left top;
+}
+nav .menu-links .links li:hover .sub-menu {
+  transform: translate(-50%, 0) scale(1);
+}
+nav .menu-links .links li:hover .sub-menu::-webkit-scrollbar {
+  width: 8px;
+}
+nav .menu-links .links li:hover .sub-menu::-webkit-scrollbar-thumb {
+  /* background-color: var(--accent); */
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+}
+nav .menu-links .links li:hover .sub-menu li a {
+  position: relative;
+  display: block;
+}
+nav .menu-links .links li:hover .sub-menu li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+nav .menu-icons {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .login-btn {
+  box-shadow: 0 0 0 2px var(--accent);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  align-items: center;
+  transition: 0.3s;
+  color: var(--accent);
+}
+nav .login-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+  transform-origin: center;
+}
+
+nav .login-btn:hover::after {
+  opacity: 1;
+  transform: translateY(0%);
+}
+nav .login-btn:hover {
+  color: var(--light);
+}
+@media screen and (max-width: 1080px) {
+  nav {
+    padding: 0 1rem;
+  }
+  nav .menu-links .links {
+    gap: 0;
+  }
+  nav .menu-icons .login-btn .login-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px) {
+  nav {
+    --bar-h: 70px;
+  }
+  nav.sticky {
+    --bar-h: 60px;
+  }
+  nav .menu-links {
+    position: absolute;
+    top:calc(100% - 10px);
+    left: 50%;
+    /* Same reason as the desktop sub-menu above: keep the scale inside the
+       transform so the .active override actually takes effect. */
+    transform: translate(-50%, 0%) scale(0);
+    width: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;
+    transition: 0.5s ease;
+    padding: 1rem;
+    transform-origin: top right;
+    height: calc(100vh - 70px);
+
+    /* Same glass as the bar, but a much denser tint. This panel covers the
+       whole screen and its links have to stay readable over whatever page is
+       behind them, so it cannot be as sheer as the bar. */
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0) 45%,
+        rgba(255, 255, 255, 0.3) 100%
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.93),
+        rgba(255, 255, 255, 0.85)
+      );
+    backdrop-filter: blur(24px) saturate(180%);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85),
+      0 20px 40px rgba(0, 57, 128, 0.12);
+  }
+  @supports not (
+    (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+  ) {
+    nav .menu-links {
+      background-color: var(--light);
+    }
+  }
+  nav .menu-links::-webkit-scrollbar {
+    display: none;
+  }
+  nav .menu-links.active {
+    transform: translate(-50%, 0%) scale(1);
+  }
+  nav .menu-links .links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+  }
+  nav .menu-links .links li,
+  nav .menu-links .links li a {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  nav .menu-links > .links > li .link + .sub-menu {
+    display: none;
+  }
+  nav .menu-links > .links > li .link.active + .sub-menu {
+    display: block;
+  }
+  nav .menu-links .links li .sub-menu {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    scale: 1;
+    display: block;
+    height: 0;
+    padding: 0;
+    box-shadow: none;
+    transition: height 0.5s ease;
+  }
+  nav .menu-links .links li .link.active + .sub-menu {
+    height: 300px;
+    box-shadow:
+      -5px 5px 0 var(--accent),
+      0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+  }
+  nav .link,
+  nav a {
+    font-size: 0.9em;
+  }
+}
+
+/*  controller  */
+
+.linkGrc {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkGrc .courseBtn {
+  position: relative;
+  padding: 1.23rem 0;
+}
+.linkGrc .courseBtn button {
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 1.5rem;
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 1.06rem;
+  border-radius: 0.3rem;
+}
+.linkGrc .courseBtn button .icon svg {
+  transition: 0.3s;
+}
+.linkGrc .courseBtn .icon.active svg {
+  rotate: -180deg;
+}
+@media screen and (min-width: 768px) {
+  .linkGrc .courseBtn:hover .icon svg {
+    rotate: -180deg;
+  }
+}
+.linkGrc .courseBtn .icon {
+  margin-left: 0.3rem;
+  transition: 0.3s;
+}
+.linkGrc .courseBtn .courseController {
+  display: none;
+}
+.linkGrc .courseBtn:hover .courseController {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+.linkGrc .courseBtn .courseController {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 500px;
+  width: 80vw;
+  overflow: hidden;
+  background-color: var(--light);
+  text-transform: capitalize;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.linkGrc .courseBtn .courseController ul {
+  width: 230px;
+  overflow: auto;
+  background-color: var(--secondary);
+}
+.linkGrc .courseBtn .courseController ul li {
+  padding: 0.5rem;
+  cursor: pointer;
+  display: block;
+  transition: 0.3s;
+  font-weight: 500;
+  margin-left: 1.3rem;
+  position: relative;
+  z-index: 1;
+}
+.linkGrc .courseBtn .courseController ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5rem;
+  background-color: var(--accent);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.linkGrc .courseBtn .courseController ul li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--accent);
+  transition: 0.3s;
+  z-index: -1;
+  border-radius: 0 4rem 4rem 0;
+}
+.linkGrc .courseBtn .courseController ul li:hover::after {
+  width: 100%;
+}
+.linkGrc .courseBtn .courseController ul li:hover {
+  color: var(--light);
+}
+.linkGrc .courseBtn .courseController .courseOverlay {
+  gap: 1rem;
+  height: 100%;
+  padding: 1rem;
+  width: 100%;
+}
+.linkGrc .courseBtn .courseController .courseOverlay span {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.linkGrc .courseBtn .courseController .courseOverlay a {
+  padding: 0.5rem;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+  color: var(--accent);
+  border-radius: 5px;
+  margin: 0.5rem 0.3rem;
+  font-weight: 500;
+}
+.linkGrc .courseBtn .courseController .courseOverlay a:hover {
+  background-color: var(--accent);
+  color: var(--light);
+}
+
+.linkGrc .courseBtn .courseController ul::-webkit-scrollbar {
+  width: 8px;
+}
+.linkGrc .courseBtn .courseController ul::-webkit-scrollbar-thumb {
+  border: 2px solid var(--dark);
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .linkGrc {
+    gap: 0.8rem;
+  }
+  .linkGrc .courseBtn .courseController {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    transition: 0.3s;
+  }
+  .linkGrc .courseBtn .courseController.active {
+    left: 100%;
+  }
+  .linkGrc .courseBtn .courseController ul {
+    width: 100vw;
+  }
+  nav.sticky .linkGrc .courseBtn .courseController .courseOverlay,
+  nav.sticky .linkGrc .courseBtn .courseController {
+    top: 50px;
+  }
+  .linkGrc .courseBtn .courseController .courseOverlay {
+    position: fixed;
+    top: 60px;
+    background-color: var(--light);
+    z-index: 100;
+    left: 100%;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    transition: 0.3s;
+    overflow: auto;
+  }
+  .linkGrc .courseBtn .courseController .courseOverlay.active {
+    left: 0;
+  }
+  .linkGrc .courseBtn {
+    margin-left: 0;
+  }
+  .linkGrc .courseBtn button {
+    font-size: 0.9rem;
+    margin-left: -5px;
+  }
+}
+
+/* =====================================================================
+   Adobe-style two-layer navbar
+   Layer 1: collapsible app-switcher bar (navy), toggled by the dots grid.
+   Layer 2: the existing glass main bar, with small-font quick links.
+   ===================================================================== */
+
+/* ---- Layer 1: app-switcher bar ---- */
+nav .appBar {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  /* Collapsed the bar is gone entirely, not a slim strip: the U-dots toggle
+     lives outside this element (a direct child of <nav>) precisely so it can
+     survive the bar closing and slide down into the main bar instead. */
+  height: 0;
+  overflow: hidden;
+  /* Adobe-style dark red gradient: deep maroon on the left, warming to a rich
+     rust-red through the middle, then settling back to a dark brown-red. */
+  background-image: linear-gradient(
+    90deg,
+    #2b0a06 0%,
+    #7a1c10 55%,
+    #43100a 100%
+  );
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12);
+  transition: height 0.45s var(--swap-ease);
+}
+nav .appBar.open {
+  height: var(--app-h); /* expanded: the stacked icon-over-label shortcut row */
+}
+nav .appBarInner {
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  /* left/right padding clears the absolutely-placed dots at either side */
+  padding: 0 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  /* shift the row so the first shortcut sits above "Explore City" below */
+  transform: translateX(1.3rem);
+  overflow-x: auto;
+  scrollbar-width: none;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/* collapsed: hide the shortcuts, keep the dots */
+nav .appBar:not(.open) .appBarInner {
+  opacity: 0;
+  visibility: hidden;
+}
+nav .appBarInner::-webkit-scrollbar {
+  display: none;
+}
+/* Adobe-style stacked shortcut: icon on top, label beneath it. */
+nav .appItem {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+/* White underline that reveals on hover, beneath the icon+label. */
+nav .appItem::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 40%;
+  height: 1.5px;
+  border-radius: 2px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+nav .appItem:hover::after {
+  opacity: 1;
+}
+/* Hover: translucent box behind the shortcut, plus the underline. */
+nav .appItem:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+nav .appItemIcon {
+  font-size: 1.20rem;
+  opacity: 0.95;
+  flex: none;
+}
+/* Illustration used in place of an icon glyph (e.g. Refer & Earn). Sized to the
+   icon line so it sits above the label the same way the glyph items do. */
+nav .appItemImg {
+  height: 2rem;
+  width: auto;
+  flex: none;
+  object-fit: contain;
+}
+
+/* ---- U-dots toggle ----
+   It is a child of <nav>, not of either bar, and is absolutely positioned over
+   both. `top` stays 0 while `height` grows to whichever bar it belongs to, so
+   the flexbox centring inside it is what actually carries the glyph from the
+   middle of the navy bar down to the middle of the glass bar. Animating a
+   height rather than a translate keeps it in one place if the transition is
+   interrupted mid-flight by a second click. */
+nav .appGrid {
+  position: absolute;
+  top: 0;
+  /* closed: hugs the left edge of the content column, ahead of the wordmark */
+  left: calc(var(--nav-edge) + 0.35rem);
+  height: var(--bar-h);
+  width: var(--dots-w);
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  /* size of the dots when sitting in the second (glass) bar — a touch larger */
+  font-size: 1.7rem;
+  /* on the glass bar the glyph has to be brand blue to be legible */
+  color: #2a40d1;
+  background: transparent;
+  transition: height 0.45s var(--swap-ease), left 0.45s var(--swap-ease),
+    color 0.35s ease, background 0.2s ease;
+}
+nav.appbar-open .appGrid {
+  height: var(--app-h);
+  left: calc(var(--nav-edge) + 1rem);
+  color: rgba(255, 255, 255, 0.85);
+  /* bigger U-dots glyph while it lives in the top bar */
+  font-size: 2.1rem;
+  width: 40px;
+}
+/* Hover highlight: a small rounded square that hugs the 3x3 dots, rather than
+   filling the whole (tall) button. Sized just a touch larger than the glyph. */
+nav.appbar-open .appGrid::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  background: transparent;
+  transition: background 0.2s ease;
+  z-index: -1;
+}
+nav.appbar-open .appGrid:hover::before {
+  background: rgba(255, 255, 255, 0.15);
+}
+nav.appbar-open .appGrid:hover {
+  color: #fff;
+}
+
+/* The wordmark slides right to open the slot the dots drop into. It starts out
+   left of where the dots land, so the two would cross paths if they moved in
+   lockstep: the slot therefore opens faster than the dots descend, and on the
+   way back the wordmark waits for them to lift clear before reclaiming it. */
+nav .wrapperBox .linkGrc {
+  padding-left: calc(var(--dots-w) + 0.7rem);
+  transition: padding-left 0.28s var(--swap-ease);
+}
+nav.appbar-open .wrapperBox .linkGrc {
+  padding-left: 0;
+  transition: padding-left 0.28s var(--swap-ease) 0.22s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  nav .appBar,
+  nav .appGrid,
+  nav .wrapperBox,
+  nav .wrapperBox .linkGrc {
+    transition-duration: 0.01ms;
+  }
+}
+
+/* ---- Layer 2: small-font quick links beside the logo ---- */
+.linkGrc .menu-links .links li > a,
+.linkGrc .menu-links .links li > .link {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+/* shrink the "All Courses" pill so it reads as part of the quick-link row */
+.linkGrc .courseBtn button {
+  font-size: 0.95rem;
+  padding: 0.45rem 0.7rem;
+  margin-left: 0.3rem;
+}
+
+/* ---- responsive ---- */
+@media screen and (max-width: 1080px) {
+  nav {
+    --dots-w: 32px;
+  }
+  nav .appGrid {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    --app-h: 54px; /* room for the stacked icon-over-label shortcut */
+  }
+  nav .appBarInner {
+    gap: 0;
+    padding: 0 0.5rem 0 2.8rem;
+    justify-content: flex-start;
+  }
+  nav .appItem {
+    font-size: 0.64rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .linkGrc {
+    gap: 0.5rem;
+  }
+}
+
+/* Top app-switcher bar text uses Fredoka (rounded display font). Set on the
+   label itself because the global `* { font-family: Lato }` reset would
+   otherwise re-apply Lato to each text node regardless of inheritance. */
+nav .appItemLabel {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+}
+
+/* Student-Login button — the Uniscaler mark inside a square box.
+   Same href logic as before (dashboard when signed in, /login otherwise). */
+nav .login-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: inset 0 0 0 2px var(--accent), 0 2px 8px rgba(0, 57, 128, 0.12);
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+nav .login-circle img {
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+nav .login-circle:hover {
+  transform: translateY(-1px);
+  box-shadow: inset 0 0 0 2px var(--accent), 0 6px 16px rgba(0, 57, 128, 0.28);
+}

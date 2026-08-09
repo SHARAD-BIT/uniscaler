@@ -1,0 +1,54 @@
+.explore-programs {
+  padding: 3rem 1rem;
+  background-color: var(--secondary);
+}
+.explore-programs h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.explore-programs .slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1rem;
+  box-shadow: 0 0 0 2px var(--primary);
+  border-radius: 5px;
+}
+.explore-programs .slider::-webkit-scrollbar {
+  display: none;
+}
+.explore-programs .slider .tags {
+  display: flex;
+  gap: 1rem;
+}
+.explore-programs .slider .tags .tag {
+  padding: 0.3rem 1rem;
+  color: var(--dark);
+  background-color: var(--light);
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.explore-programs .slider .tags .tag:hover {
+  background-color: var(--primary);
+}
+.explore-programs .slider .tags .tag.active {
+  background-color: var(--accent);
+  color: var(--light);
+}
+.explore-programs-container button {
+  max-width: max-content;
+  display: block;
+  margin: 1rem auto;
+}
+@media screen and (max-width: 765px) {
+  .explore-programs {
+    padding: 1rem;
+  }
+  .explore-programs .slider .tags .tag {
+    font-size: 0.9rem;
+  }
+}

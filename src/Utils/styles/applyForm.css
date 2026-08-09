@@ -1,0 +1,63 @@
+.admission {
+  text-align: center;
+}
+.admission h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+}
+.admission .applyForm form h2 {
+  margin-bottom: 2rem;
+}
+.admission .applyForm form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.admission .applyForm form .input-group {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.admission .applyForm form .input-group label {
+  font-weight: 600;
+  color: var(--accent);
+}
+.admission .applyForm form .input-group input {
+  padding: 0.8rem;
+  box-shadow: 0 0 0 2px var(--accent);
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  font-family: inherit;
+}
+.admission .applyForm form .input-group textarea {
+  display: block;
+  padding: 0.8rem;
+  box-shadow: 0 0 0 2px var(--accent);
+  border-radius: 10px;
+  font-family: inherit;
+}
+.admission .applyForm form button {
+  display: block;
+  margin-top: 1rem;
+  background-color: var(--accent);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.admission .applyForm form *::placeholder {
+  font-family: inherit;
+}

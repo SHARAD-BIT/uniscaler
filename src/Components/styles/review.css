@@ -1,0 +1,315 @@
+/* ReviewPage.css */
+.review-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .page-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+
+  .image-thumbnail {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    background-color: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    color:#fff
+  }
+  
+  /* Review Summary Styles */
+  .review-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .overall-rating {
+    text-align: center;
+    min-width: 150px;
+    margin-right: 20px;
+  }
+  
+  .average-rating {
+    font-size: 48px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  .stars {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    color: #ddd;
+  }
+  
+  .star.filled {
+    color: #ffc107;
+  }
+  
+  .total-reviews {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .rating-bars {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .rating-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .rating-label {
+    width: 60px;
+    font-size: 14px;
+  }
+  
+  .bar-container {
+    flex: 1;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    height: 100%;
+    background-color: #ffc107;
+    border-radius: 5px;
+  }
+  
+  .rating-count {
+    width: 30px;
+    font-size: 14px;
+    text-align: right;
+  }
+  
+  /* Review List Styles */
+  .review-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--light, #fff);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  /* ---- marquee ---------------------------------------------------------- */
+  /* Same construction as the education-partner strip: the list is rendered
+     twice and the track is translated by exactly half its width, so the second
+     copy lands where the first started and the loop is invisible. The offset is
+     carried on the cards as margin-right rather than a flex gap — a gap would
+     leave half a gap unaccounted for at the wrap point and the strip would jump
+     once per cycle. */
+  .review-marquee {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  /* Everything below carries the .review-marquee prefix on purpose. The reviews
+     render inside .college-info, whose stylesheet contains a blanket
+     `.college-info div { width: 100% }`. That is specificity 0,1,1 and beats a
+     lone class, so `.review-track { width: max-content }` would silently become
+     100% — the track would size to the viewport, translateX(-50%) would shift by
+     half the *container* rather than half the content, and the loop would jump.
+     Same rule is what flattened the rating row: the rating div was forced to the
+     full header width, leaving the name nothing to occupy. */
+  .review-marquee .review-track {
+    display: flex;
+    width: max-content;
+    padding: 4px 0;
+    animation: review-scroll 60s linear infinite;
+  }
+
+  /* Reviews are text, so the strip has to be stoppable to be readable. */
+  .review-marquee:hover .review-track,
+  .review-marquee:focus-within .review-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes review-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .review-marquee .review-card {
+    flex: 0 0 320px;
+    width: 320px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* At card width the name and the stars collide, so the name truncates rather
+     than wrapping into them. Both need an explicit width to escape the blanket
+     rule described above. */
+  .review-marquee .reviewer-info {
+    width: auto;
+    min-width: 0;
+  }
+  .review-marquee .reviewer-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .review-marquee .review-rating {
+    width: auto;
+    flex-shrink: 0;
+    margin-left: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Flex stretches every card to the tallest one, so the longest comment would
+     otherwise set the height of the whole strip. */
+  .review-marquee .review-content p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .review-marquee::before,
+  .review-marquee::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .review-marquee::before {
+    left: 0;
+    background: linear-gradient(to right, var(--light, #fff), transparent);
+  }
+  .review-marquee::after {
+    right: 0;
+    background: linear-gradient(to left, var(--light, #fff), transparent);
+  }
+
+  /* Motion that cannot be stopped is a problem for some readers; leave the
+     strip in place and let them scroll it by hand instead. */
+  @media (prefers-reduced-motion: reduce) {
+    .review-track {
+      animation: none;
+    }
+    .review-marquee {
+      overflow-x: auto;
+    }
+  }
+
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .reviewer-info {
+    flex: 1;
+  }
+  
+  .reviewer-name {
+    font-weight: bold;
+    margin-bottom: 3px;
+  }
+  
+  .review-date {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .review-rating {
+    font-size: 18px;
+  }
+  
+  .review-content {
+    line-height: 1.6;
+  }
+  
+  /* Write Review Button */
+  .write-review-btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .write-review-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .review-page {
+        padding: 0;
+      }
+      
+    .review-summary {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .overall-rating {
+      margin-bottom: 5px;
+      margin-right: 0;
+    }
+    
+    .rating-bars {
+      width: 100%;
+    }
+    
+    .review-header {
+      flex-wrap: wrap;
+    }
+    
+    .review-rating {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .review-marquee .review-card {
+      flex-basis: 260px;
+      width: 260px;
+    }
+  }
+

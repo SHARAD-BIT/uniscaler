@@ -1,0 +1,96 @@
+.consult-form {
+  background-color: var(--light);
+  padding: 1.2rem;
+  color: var(--dark);
+  border-radius: 0.5rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 10px 10px 0 var(--accent);
+  position: relative;
+  left: 6rem;
+  top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.consult-form form {
+  display: grid;
+}
+.consult-form form .input-box {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.consult-form form .input-box label {
+  font: size 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.consult-form form .input-box input {
+  width: 100%;
+  padding: 0.6rem;
+  box-shadow: 0 0 0 2px var(--secondary);
+  border-radius: 0.5rem;
+  color: var(--accent);
+  font-size: 1rem;
+  font-family: inherit;
+}
+.consult-form form .input-box input:focus {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.consult-form form .input-box textarea {
+  width: 100%;
+  padding: 0.6rem;
+  box-shadow: 0 0 0 2px var(--secondary);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: none;
+  font-family: inherit;
+}
+.consult-form form .input-box textarea:focus {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.consult-form form button {
+  width: 100%;
+  padding: 0.6rem;
+  box-shadow: 0 0 0 2px var(--accent);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: var(--accent);
+  color: var(--light);
+  transition: 0.5s;
+}
+.consult-form form button:hover {
+  background-color: transparent;
+  box-shadow:
+    -5px 5px 0 var(--accent),
+    0 0 0 2px var(--accent);
+  color: var(--accent);
+}
+@media screen and (max-width: 1080px) {
+  .consult-form {
+    max-width: 400px;
+    background-color: rgba(250, 250, 250, 0.3);
+    backdrop-filter: blur(5px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .consult-form {
+    left: 0;
+    top: 0;
+    margin-bottom: 100vh;
+    transition: 0.3s;
+  }
+  .consult-form.submit {
+    transform: translateY(-110%);
+  }
+}
+@media screen and (max-width: 450px) {
+  .consult-form {
+    padding: 1rem;
+  }
+}

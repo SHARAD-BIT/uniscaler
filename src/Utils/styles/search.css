@@ -1,0 +1,56 @@
+.searchBar .icon svg {
+  cursor: pointer;
+  font-size: 1.5rem;
+  fill: var(--accent);
+}
+.fullScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.896);
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+.searchBar .full-screen-search {
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  cursor: pointer;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.5s;
+  background-color: var(--light);
+}
+.searchBar .full-screen-search input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+}
+.searchBar .full-screen-search .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBar .full-screen-search button {
+  padding: 1rem 2rem;
+  display: block;
+  margin-top: 18px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--light);
+  cursor: pointer;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.searchBar .full-screen-search svg {
+  font-size: 2rem;
+  margin-top: 1rem;
+  fill: var(--dark);
+}

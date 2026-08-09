@@ -1,0 +1,145 @@
+.college-header {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.5rem 8%;
+  gap: 20px;
+}
+
+.college-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+}
+
+
+.college-header .text-area {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  
+}
+
+.college-header .img {
+  /* left: 5vw; */
+  width: clamp(80px, 15vw, 130px);
+  height: clamp(80px, 15vw, 130px);
+  overflow: hidden;
+  z-index: 1;
+  /* border:1px solid red ; */
+}
+.college-header .img img {
+  object-fit: cover;
+}
+.college-header .text {
+  inset: 0;
+  backdrop-filter: blur(1px);
+  place-content: left;
+  text-align: left;
+  z-index: 1;
+}
+
+.college-header h1 {
+  color: #a50909;
+  font-size: x-small;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.college-header p {
+  color: #fc0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.college-header p .icon {
+  height: 25px;
+  width: 25px;
+}
+
+.college-header button {
+  cursor: pointer;
+  bottom: 1.75rem;
+  right: 3.75rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background: -moz-linear-gradient(
+    179deg,
+    rgba(227, 157, 61, 0.8) 0,
+    rgba(226, 161, 59, 0.8) 51.56%,
+    rgba(221, 189, 42, 0.8) 100%
+  );
+  background: linear-gradient(
+    271deg,
+    rgba(227, 157, 61, 0.8),
+    rgba(226, 161, 59, 0.8) 51.56%,
+    rgba(221, 189, 42, 0.8)
+  );
+  padding: 0.625rem 4%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: capitalize;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1px);
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.college-header .text h1 {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  font-weight: 600;
+  color: var(--light);
+  text-shadow: 0 0 0 2px var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+  .college-header {
+    flex-direction: column;
+    padding: 10% 20px;
+    justify-content: end;
+    height: 200px;
+  }
+  .college-header button {
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+
+  .college-header .img {
+    width: clamp(50px, 20vw, 130px);
+    height: clamp(50px, 20vw, 130px);
+
+  }
+
+  .college-header .h1 {
+    font-size: 0.8rem;
+  }
+  .college-header .text h1 {
+    font-size: 1.2rem;
+  }
+  .college-header .text p {
+    font-size: small;
+  }
+  
+}

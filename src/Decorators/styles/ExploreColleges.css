@@ -1,0 +1,272 @@
+.ExploreColleges {
+  padding: 3rem 1rem;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.ExploreColleges .headSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.ExploreColleges .headSection h2 {
+  position: relative;
+  padding: 1rem;
+  padding-right: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+  box-shadow:
+    0 10px 20px rgba(72, 72, 72, 0.3),
+    0 0 0 1px rgba(72, 72, 72, 0.1);
+  border-radius: 5rem;
+}
+.ExploreColleges .headSection h2 .sIcon {
+  position: relative;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.85em;
+}
+.ExploreColleges .headSection h2 .sIcon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  animation: rotate 10s linear infinite;
+  border: 2.5px dashed;
+  border-color: #405de6 #f56040 #833ab4 #d10000;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.ExploreColleges .gridPreview {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 1rem;
+  border-radius: 1rem;
+  height: 500px;
+  overflow: hidden;
+}
+
+.ExploreColleges .gridPreview .CList {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  height: 500px;
+  background-color: var(--secondary);
+  overflow: auto;
+}
+.ExploreColleges .gridPreview .CList .CItem {
+  font-size: clamp(1rem, 3vw, 1rem);
+  padding: 0.8rem 0;
+  margin-block: 0.3rem;
+  position: relative;
+  margin-left: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+  padding-left: 0.5rem;
+}
+.ExploreColleges .gridPreview .CList .CItem::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--accent);
+  transition: 0.3s;
+  z-index: -1;
+  border-radius: 0.3rem 3rem 3rem 0.3rem;
+}
+.ExploreColleges .gridPreview .CList .CItem:hover {
+  color: var(--light);
+}
+.ExploreColleges .gridPreview .CList .CItem:hover::after {
+  width: 100%;
+}
+.ExploreColleges .gridPreview .CList .CItem::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+.ExploreColleges .gridPreview .CcontentBox {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  height: 500px;
+  overflow: auto;
+}
+.ExploreColleges .gridPreview .CcontentBox .accentColor {
+  background-image: linear-gradient(45deg, var(--accent), var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-size: 1.2em;
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  gap: 1rem;
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 5px rgba(228, 157, 70, 0.537);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--light);
+  color: var(--dark);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox:hover {
+  transform: translateY(-10px);
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox .vLogo {
+  width: 180px;
+  height: 100px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(250, 250, 250, 0.3);
+  overflow: hidden;
+  padding: 0.1rem;
+  background-color: var(--accent);
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox .vLogo img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.ExploreColleges .gridPreview .CcontentBox .headCBox a {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.8em;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.ExploreColleges .gridPreview .CcontentBox .headCBox a:hover {
+  color: var(--primary);
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox p {
+  font-size: 0.9em;
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox .listStateMsg {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+.ExploreColleges .gridPreview .CcontentBox .CollegesListBox .retryBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 966px) {
+  .ExploreColleges {
+    padding: 0;
+  }
+  .ExploreColleges .headSection {
+    justify-content: center;
+  }
+  .ExploreColleges .gridPreview {
+    grid-template-columns: 1fr;
+  }
+  .ExploreColleges .gridPreview .CList {
+    flex-direction: row;
+    height: 60px;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    overflow: auto;
+  }
+  .ExploreColleges .gridPreview .CList .CItem {
+    font-size: 0.8em;
+  }
+  .ExploreColleges .gridPreview .CList .CItem:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  .ExploreColleges .gridPreview .CList .CItem::after {
+    display: none;
+  }
+  .ExploreColleges .gridPreview .CList::-webkit-scrollbar {
+    height: 8px;
+  }
+  .ExploreColleges .gridPreview .CList .CItem {
+    display: inline-block;
+    margin-left: unset;
+    padding: 0;
+  }
+  .ExploreColleges .gridPreview .CList .CItem::before {
+    display: none;
+  }
+  .ExploreColleges .gridPreview .CcontentBox {
+    overflow: auto;
+    height: calc(440px + 2rem);
+    padding: 0.5rem;
+  }
+  .ExploreColleges .gridPreview .CcontentBox .CollegesListBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox {
+    width: 100%;
+    height: auto;
+  }
+  .ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox .vLogo {
+    width: 100%;
+    height: 70px;
+  }
+  .ExploreColleges .gridPreview .CcontentBox .CollegesListBox .cBox p {
+    line-clamp: 2;
+    font-size: 0.6em;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}

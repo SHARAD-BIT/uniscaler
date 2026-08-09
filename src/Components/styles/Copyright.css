@@ -1,0 +1,49 @@
+/* Apply styles to the copyright container */
+.copyright-container .wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Apply styles to headings */
+.copyright-container .wrapper h1 {
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.copyright-container p {
+  color: var(--dark);
+  font-weight: 600;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Apply styles to unordered lists */
+.copyright-container ul {
+  color: var(--dark);
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+/* Apply styles to list items */
+.copyright-container li {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* Apply styles to list items */
+.copyright-container li::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}

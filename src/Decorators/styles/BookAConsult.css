@@ -1,0 +1,80 @@
+.book-a-consult {
+  background-color: var(--accent);
+  color: var(--secondary);
+  gap: 1rem;
+  background-image: url(../../assets/couple-Image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100vw;
+  z-index: 999;
+}
+.book-a-consult .headRisk {
+  display: flex;
+  background-color: var(--light);
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: var(--accent);
+}
+.book-a-consult .wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  place-items: end;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.book-a-consult .wrapper .closeCtk {
+  position: absolute;
+  top: 5rem;
+  left: -60px;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 5px;
+  background-color: var(--light);
+  color: var(--accent);
+  font-size: 1rem;
+}
+/* }
+.book-a-consult .text {
+  max-width: 550px;
+}
+.book-a-consult .text h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.book-a-consult .text p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+} */
+/* @media screen and (max-width: 1080px) {
+  .book-a-consult .text {
+    max-width: 450px;
+  }
+  .book-a-consult .text h1 {
+    font-size: 1.6rem;
+  }
+  .book-a-consult .text p {
+    font-size: 1rem;
+  }
+} */
+@media screen and (max-width: 765px) {
+  .book-a-consult .wrapper .closeCtk {
+    right: 10px;
+    left: unset;
+    bottom: 180px;
+    background-color: initial;
+    text-align: left;
+    color: var(--light);
+  }
+  .book-a-consult .footer,
+  .book-a-consult .headRisk {
+    display: none;
+  }
+}

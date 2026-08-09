@@ -1,0 +1,38 @@
+.call-us {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 100;
+  writing-mode: vertical-rl;
+  padding: 1rem 0.4rem;
+  color: var(--accent);
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  background-color: var(--light);
+}
+.call-us .desk {
+  display: none;
+  background-image: linear-gradient(45deg, #0840f6, #ad4c4a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.call-us.active .desk {
+  display: block;
+}
+.call-us svg {
+  margin-top: 0.3rem;
+  rotate: 90deg;
+}
+.call-us .mob {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .call-us {
+    display: none;
+  }
+}

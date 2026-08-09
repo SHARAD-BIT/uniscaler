@@ -1,0 +1,43 @@
+.userEnquiry {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  overflow: auto;
+  text-align: center;
+}
+.userEnquiry table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.userEnquiry table th,
+.userEnquiry table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.userEnquiry table th {
+  background-color: var(--accent);
+  color: #fff;
+}
+.userEnquiry table tr {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.userEnquiry table tr:hover {
+  background-color: #eee;
+}
+.userEnquiry table tr td {
+  max-width: 250px;
+}
+.userEnquiry table tr td button {
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}

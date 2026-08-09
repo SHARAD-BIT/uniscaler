@@ -1,0 +1,33 @@
+.refund-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+  margin-bottom: 1rem;
+}
+
+.refund-container > h1 {
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.refund-container > p {
+  text-align: left;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.refund-container ul li {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.refund-container > h2 {
+  color: var(--primary);
+  margin: 1rem 0;
+}
+
+.refund-container .disClaimer {
+  margin-top: 1rem;
+  text-align: center;
+}
+.refund-container .disClaimer strong {
+  color: red;
+}

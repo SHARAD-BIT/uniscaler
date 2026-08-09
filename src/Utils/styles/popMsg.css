@@ -1,0 +1,94 @@
+.popupBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  z-index: 99;
+  backdrop-filter: blur(2px);
+}
+.popupBox .wrapper {
+  max-width: 400px;
+  width: 100%;
+  background-color: var(--dark);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.608);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.popupBox .wrapper .popupHeader {
+  background-color: var(--accent);
+  color: var(--light);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.popupBox .wrapper .popupContent {
+  padding: 20px;
+  text-align: center;
+}
+.popupBox .wrapper button {
+  background-color: var(--accent);
+  color: var(--light);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s;
+  text-transform: capitalize;
+  max-width: max-content;
+  display: block;
+  margin-left: auto;
+}
+.popupBox .wrapper button:hover {
+  background-color: var(--light);
+  color: var(--accent);
+}
+.popupBox .wrapper .link {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 0.5s;
+  margin: 0.5rem 0;
+}
+.popupBox .wrapper .popupContent .link:hover {
+  color: var(--primary);
+}
+.popupBox .wrapper .popupContent p{
+  color: rgb(4, 117, 4);
+  font-weight: 600;
+}
+.popupBox .wrapper .popupContent {
+  display: flex;
+  flex-direction: column;
+}
+.popupBox .wrapper .popupContent input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--accent);
+  outline: none;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-family: inherit;
+}
+.popupBox .wrapper .img{
+    position: absolute;
+    inset: 0;
+    top: 80px;
+    width: 100%;
+    height: calc(100% - 40px);
+    object-fit: cover;
+    background-color:var(--dark);
+    z-index: -1;
+}

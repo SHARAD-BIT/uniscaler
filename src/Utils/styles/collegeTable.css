@@ -1,0 +1,92 @@
+.table-responsive {
+  padding: 3rem 0;
+  text-align: center;
+}
+.table-responsive > h2 {
+  position: relative;
+  margin: 2rem 0;
+  background-color: var(--secondary);
+  padding: 1rem;
+}
+.table-responsive p {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  text-wrap: balance;
+  font-weight: 600;
+}
+.table {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+  overflow-x: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+}
+.table::-webkit-scrollbar {
+  height: 10px;
+  width: 100%;
+}
+.table::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 5px;
+}
+.table::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+.table table {
+  border-collapse: collapse;
+}
+.table table .college-logo {
+  min-width: 150px;
+}
+.table table .college-logo img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  filter: saturate(150%);
+}
+.table th,
+.table td {
+  border: 1px solid var(--primary);
+  padding: 0.3rem 1rem;
+  max-width: 300px;
+  vertical-align: top;
+  overflow: hidden;
+}
+.table th:not(:first-child),
+.table td {
+  min-width: 250px;
+}
+.table tr:nth-child(even) {
+  background-color: var(--light);
+}
+.table tr:nth-child(odd) {
+  background-color: var(--secondary);
+}
+.table table thead th {
+  background-color: var(--dark);
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--light);
+}
+.table table tbody td ul li {
+  position: relative;
+  text-align: left;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.table table tbody td ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--dark);
+}

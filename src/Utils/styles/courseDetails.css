@@ -1,0 +1,49 @@
+.courseDescription {
+  padding: 1rem;
+}
+.courseDescription h2 {
+  text-transform: capitalize;
+  background-color: var(--secondary);
+  text-align: center;
+  font-variant: small-caps;
+  width: 100%;
+  margin: 0 auto;
+  color: var(--accent);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+.courseDescription .course-wrapper {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 1rem;
+}
+.course-wrapper article {
+  background-color: var(--secondary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.course-wrapper article h3 {
+  color: var(--primary);
+  background-color: inherit;
+}
+.course-wrapper article p {
+  margin: 1rem 0 1rem 0.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: var(--dark);
+}
+.course-wrapper article p strong {
+  color: var(--accent);
+}
+.course-wrapper article p span {
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .courseDescription .course-wrapper {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

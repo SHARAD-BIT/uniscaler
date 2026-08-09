@@ -1,0 +1,56 @@
+.updateProfile {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.updateProfile h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  text-transform: capitalize;
+}
+.updateProfile form {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.updateProfile form > div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0.5rem;
+}
+.updateProfile form > div label {
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: capitalize;
+}
+.updateProfile form > div input {
+  padding: 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+}
+.updateProfile form button {
+  padding: 0.5rem;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--light);
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .updateProfile {
+    margin-top: 0;
+  }
+  .updateProfile form > div {
+    grid-template-columns: 1fr;
+  }
+}

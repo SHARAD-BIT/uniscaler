@@ -1,0 +1,66 @@
+.searchSet {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  /* This sits in a flex column. On short viewports the column ran out of room
+     and shrank this box to a few pixels tall, clipping the field and button
+     behind `overflow: hidden`. Keeping it at its natural height fixes that. */
+  flex-shrink: 0;
+  gap: 0.5rem;
+  box-shadow: 0 0 0 2px var(--accent);
+  border-radius: 4rem;
+  overflow: hidden;
+  background-color: var(--light);
+  padding: 0.2rem;
+  animation: slideRight 0.5s ease-in-out forwards;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.searchSet input {
+  max-width: 300px;
+  width: 100%;
+  padding: 0.7rem;
+}
+.searchSet input::placeholder {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.searchSet button {
+  padding: 0.9rem 1.8rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--accent);
+  color: var(--light);
+  border-radius: 4rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.college-search .searchSet {
+  max-width: 600px;
+}
+.college-search .searchSet input {
+  max-width: 500px;
+}
+@media screen and (max-width: 768px) {
+  .searchSet input {
+    padding: 0.5rem;
+  }
+  .searchSet input::placeholder {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .searchSet button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

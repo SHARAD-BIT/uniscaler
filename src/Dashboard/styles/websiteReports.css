@@ -1,0 +1,27 @@
+.websiteReports {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.websiteReports ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: left;
+}
+.websiteReports ul li {
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.websiteReports ul li p {
+  display: flex;
+  gap: 0.5rem;
+}
+.websiteReports ul li p span {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.2em;
+}

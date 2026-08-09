@@ -1,0 +1,50 @@
+.logoutPage {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoutPage button {
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  max-width: 200px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: inherit;
+  transition: 0.3s;
+  color: var(--dark);
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.logoutPage button:hover {
+  color: var(--light);
+  background-color: var(--accent);
+}
+.logoutPage .social-Media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.logoutPage p {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+.logoutPage .social-Media a {
+  background-color: var(--accent);
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  color: var(--light);
+}

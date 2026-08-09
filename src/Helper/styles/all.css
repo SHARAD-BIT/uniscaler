@@ -1,0 +1,32 @@
+.all {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .all {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index:888;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.4);
+    backdrop-filter: blur(5px);
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    place-items: center;
+  }
+
+  .all a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 120px;
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: var(--light);
+  }
+}

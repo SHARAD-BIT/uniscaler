@@ -1,0 +1,42 @@
+.terms .wrapper {
+  padding: 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.terms .wrapper h1 {
+  text-align: center;
+}
+.terms .wrapper p {
+  line-height: 1.5;
+  font-weight: 600;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.terms .wrapper > p {
+  text-align: center;
+}
+.terms .wrapper ul {
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.terms .wrapper ul li {
+  line-height: 1.5;
+  font-weight: 600;
+}
+.terms .wrapper ul li strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+.terms .wrapper .text {
+  margin: 1rem auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.terms .wrapper .text h2 {
+  color: var(--accent);
+}

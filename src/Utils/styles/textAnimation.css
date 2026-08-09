@@ -1,0 +1,67 @@
+.textAnimation {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  height: auto;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  display: block !important;
+  filter: saturate(150%);
+  font-weight: 700;
+  /* Clips the two lines while they slide past each other. */
+  position: relative;
+  overflow: hidden;
+}
+
+.textAnimation__in {
+  display: block;
+  animation: textAnimationIn 0.65s cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+
+/* Taken out of flow on purpose: the box then always measures the incoming line,
+   so a departing line that wrapped to more rows cannot leave dead space behind. */
+.textAnimation__out {
+  position: absolute;
+  inset: 0;
+  animation: textAnimationOut 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes textAnimationIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes textAnimationOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .textAnimation__in {
+    animation: none;
+  }
+  /* Without its animation the outgoing line would sit opaque on top of the new
+     one, so it is removed outright rather than left mid-transition. */
+  .textAnimation__out {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textAnimation{
+    margin: -0.5rem 0;
+  }
+}
+.explore-online-course .cardContainer .CardBox .textAnimation{
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+}

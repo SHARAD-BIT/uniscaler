@@ -1,0 +1,211 @@
+/* Community band — cyan-blue "student community" card.
+   A single rounded gradient card sitting on the page: a left column with the
+   badge, headline and CTA, and a right column holding a slanted glass counter
+   of active students. Replaces the earlier skewed gold-panel composition. */
+
+.container.community-band {
+  display: block;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 2.5rem);
+  background-color: transparent;
+}
+
+.community-band .cb-frame {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* ---- the cyan-blue card -------------------------------------------------- */
+.community-band .cb-hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(2rem, 4.5vw, 3.5rem);
+  border-radius: 28px;
+  background-image: linear-gradient(
+    135deg,
+    #47abec 0%,
+    #2f92dd 48%,
+    #2b74c8 100%
+  );
+  box-shadow: 0 30px 70px rgba(20, 80, 150, 0.35);
+  color: #fff;
+}
+/* soft top-left sheen so the flat gradient reads as a lit surface */
+.community-band .cb-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    120% 120% at 0% 0%,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0) 42%
+  );
+}
+
+/* ---- left column --------------------------------------------------------- */
+.community-band .cb-left {
+  position: relative;
+  z-index: 1;
+}
+.container.community-band .cb-left h2 {
+  max-width: 20ch;
+  margin: 0;
+  font-size: clamp(1.5rem, 3.2vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #fff;
+}
+.community-band .cb-mark {
+  color: #fff;
+  /* hand-drawn squiggle under the brand name */
+  text-decoration: underline wavy #ffd75e;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+.community-band .cb-left > p {
+  max-width: 46ch;
+  margin-top: 1rem;
+  font-size: clamp(0.88rem, 1.6vw, 1rem);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+}
+.community-band .cb-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem 1.5rem;
+  margin-top: 1.75rem;
+}
+.community-band .cb-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.7rem;
+  border: none;
+  border-radius: 999px;
+  background-color: #0d1220;
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s, background-color 0.25s;
+}
+.community-band .cb-cta:hover {
+  transform: translateY(-2px);
+  background-color: #000;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+.community-band .cb-cta svg {
+  font-size: 1.15rem;
+}
+.community-band .cb-trust {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+}
+.community-band .cb-trust svg:first-child {
+  color: #4be08a;
+  font-size: 1.05rem;
+}
+.community-band .cb-trust:last-child svg:first-child {
+  color: #ffd75e;
+}
+
+/* ---- right column: slanted glass counter --------------------------------- */
+.community-band .cb-right {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  perspective: 1500px;
+}
+.community-band .cb-counter {
+  position: relative;
+  width: min(100%, 400px);
+  padding: 1.5rem 1.5rem 1.75rem;
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 24px 50px rgba(15, 50, 100, 0.32);
+  backdrop-filter: blur(12px) saturate(150%);
+  /* the "slanted glass" tilt */
+  transform: rotateY(-17deg) rotateX(5deg);
+  transform-style: preserve-3d;
+}
+.community-band .cb-counter-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.community-band .cb-digits {
+  display: flex;
+  gap: 0.4rem;
+  margin: 1.1rem 0 0;
+}
+.community-band .cb-digit {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #12305a;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  box-shadow: 0 8px 18px rgba(10, 40, 80, 0.22);
+}
+/* the 0-9 strip that rolls up to the current digit, like a flipping calendar */
+.community-band .cb-digit-track {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.community-band .cb-digit-cell {
+  flex: 0 0 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+/* ---- stacked layout ------------------------------------------------------ */
+@media screen and (max-width: 900px) {
+  .community-band .cb-hero {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .container.community-band .cb-left h2 {
+    max-width: none;
+  }
+  .community-band .cb-right {
+    perspective: none;
+    margin-top: 0.5rem;
+  }
+  /* Flat on small screens — a 3D-tilted card reads as broken once it is the
+     full width of the column. */
+  .community-band .cb-counter {
+    transform: none;
+    width: 100%;
+    max-width: 420px;
+  }
+}
