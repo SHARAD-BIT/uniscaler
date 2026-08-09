@@ -3,9 +3,9 @@
   font-size: 1.5rem;
   display: none;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1180px) {
   .menu-btn {
     display: block;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
   }
 }
