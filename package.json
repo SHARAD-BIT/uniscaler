@@ -7,13 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "verify-flows": "node verify-flows.mjs",
-    "audit": "node audit.mjs",
-    "verify-dashboards": "node verify-dashboards.mjs",
     "lint:ssr": "eslint --config eslint.ssr.mjs src",
-    "verify-filters": "node verify-filters.mjs",
-    "verify-review-marquee": "node verify-review-marquee.mjs",
-    "verify-navbar-glass": "node verify-navbar-glass.mjs",
     "check:catalog": "node check-catalog.mjs"
   },
   "dependencies": {
@@ -37,7 +31,6 @@
   },
   "devDependencies": {
     "eslint": "^9",
-    "eslint-config-next": "16.2.12",
-    "puppeteer": "^24.43.1"
+    "eslint-config-next": "16.2.12"
   }
 }
