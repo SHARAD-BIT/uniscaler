@@ -11,7 +11,7 @@
 }
 .logo.wordmark .desk,
 .logo.wordmark .mobile {
-  height: 32px;
+  height: 24px;
   width: auto;
 }
 @media screen and (max-width: 765px) {
@@ -23,7 +23,7 @@
   }
   .logo.wordmark .mobile {
     display: block;
-    height: 26px;
+    height: 18px;
     width: auto;
   }
 }
