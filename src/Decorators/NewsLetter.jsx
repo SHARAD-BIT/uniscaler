@@ -7,9 +7,6 @@ const NewsLetter = () => {
   const { enqueueSnackbar } = useSnackbar();
 
   const [newsLetterEmail, setNewsLetterEmail] = useState("");
-  const filterInputStringToPreventSQLInjection = (input) => {
-    return input.replace(/[^a-zA-Z0-9\s@.-]/g, "");
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,8 +15,11 @@ const NewsLetter = () => {
       headers: {
         "Content-Type": "application/json",
       },
+      // Sent exactly as typed. This ran the allowlist at submit time while the
+      // box stayed controlled on the raw text, so `priya+jobs@gmail.com`
+      // displayed correctly and subscribed `priyajobs@gmail.com` instead.
       body: JSON.stringify({
-        email: filterInputStringToPreventSQLInjection(newsLetterEmail),
+        email: newsLetterEmail,
       }),
     })
       .then((res) => res.json())

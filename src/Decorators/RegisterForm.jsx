@@ -21,13 +21,14 @@ const RegisterForm = ({ isPopUp }) => {
   const [email, setEmail] = useState(null);
   const [otp, setOTP] = useState("");
   const [isVerify, setIsVerify] = useState(false);
-  const filterInputStringToPreventSQLInjection = (input) => {
-    return input.replace(/[^a-zA-Z0-9\s@.$#&]/g, "");
-  };
+  // Sent exactly as typed - see the note in Components/Login.jsx. The allowlist
+  // that used to sit here also mangled the address the verification OTP is
+  // mailed to, so `rahul_sharma@gmail.com` had its mail sent to
+  // `rahulsharma@gmail.com` and the account could never reach status = 1.
   const handleInputChange = (e) => {
     setData({
       ...data,
-      [e.target.name]: filterInputStringToPreventSQLInjection(e.target.value),
+      [e.target.name]: e.target.value,
     });
   };
   const verifyOTP = () => {
@@ -213,7 +214,7 @@ const RegisterForm = ({ isPopUp }) => {
               placeholder="Enter OTP"
               value={otp}
               onChange={(e) => {
-                setOTP(filterInputStringToPreventSQLInjection(e.target.value));
+                setOTP(e.target.value);
               }}
             />
             <button

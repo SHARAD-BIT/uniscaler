@@ -5,6 +5,7 @@ import {
   ONLINE_COURSES,
 } from "@/lib/catalog";
 import { SITE_URL } from "@/lib/seo";
+import { studyAbroadCountries } from "@/lib/studyAbroadData";
 
 /**
  * Serves /sitemap.xml.
@@ -37,6 +38,7 @@ const STATIC_ROUTES = [
   { path: "/admission", priority: 0.8, changeFrequency: "weekly" },
   { path: "/direct-admission", priority: 0.8, changeFrequency: "weekly" },
   { path: "/scholarship", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/study-abroad", priority: 0.8, changeFrequency: "weekly" },
   { path: "/education-loan", priority: 0.7, changeFrequency: "monthly" },
   { path: "/common-application-form", priority: 0.7, changeFrequency: "monthly" },
   { path: "/ai", priority: 0.7, changeFrequency: "monthly" },
@@ -75,6 +77,13 @@ export default async function sitemap() {
     ),
 
     ...EXAM_CATEGORIES.map((name) => entry(`/exam/${name}`, 0.8, "monthly")),
+
+    // The nine country pages. They are prerendered by generateStaticParams but
+    // nothing on the site links to them individually, so the sitemap is how a
+    // crawler reaches them at all.
+    ...studyAbroadCountries.map((country) =>
+      entry(`/study-abroad/${country.slug}`, 0.7, "monthly")
+    ),
 
     ...ONLINE_COURSES.map((name) =>
       entry(`/online-course/${name.replace(/\s/g, "-")}`, 0.7, "monthly")

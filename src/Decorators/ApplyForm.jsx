@@ -20,14 +20,13 @@ const ApplyForm = () => {
   const [otp, setOTP] = useState("");
   const [isVerify, setIsVerify] = useState(false);
 
-  const filterInputStringToPreventSQLInjection = (input) => {
-    return input.replace(/[^a-zA-Z0-9\s@.$#&]/g, "");
-  };
-
+  // Sent exactly as typed. This form registers an account, so the allowlist
+  // here mangled the address the verification OTP is mailed to - same defect
+  // as Decorators/RegisterForm.jsx.
   const handleInputChange = (e) => {
     setData({
       ...data,
-      [e.target.name]: filterInputStringToPreventSQLInjection(e.target.value),
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -188,9 +187,7 @@ const ApplyForm = () => {
               id="otp"
               placeholder="Enter OTP"
               value={otp}
-              onChange={(e) =>
-                setOTP(filterInputStringToPreventSQLInjection(e.target.value))
-              }
+              onChange={(e) => setOTP(e.target.value)}
             />
             <button onClick={verifyOTP} disabled={isVerify}>
               Verify OTP

@@ -11,13 +11,13 @@ const ApplyForm = ({ name }) => {
   const [msg, setMsg] = useState("");
   const [link,setLink]=useState({});
 
+  // Sent exactly as typed. The allowlist here was the harshest of the nine - it
+  // did not even permit `@` - and it ran on every keystroke, so an enquiry
+  // message lost its punctuation as it was being written.
   const inputHandler = (e) => {
-    const filterInputStringToPreventSQLInjection = (input) => {
-      return input.replace(/[^a-zA-Z0-9\s.*#$%]/g, "").trim();
-    };
     setFormData({
       ...formData,
-      [e.target.name]: filterInputStringToPreventSQLInjection(e.target.value),
+      [e.target.name]: e.target.value,
     });
   };
   const handlePopUp=()=>{

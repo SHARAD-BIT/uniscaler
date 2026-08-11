@@ -8,8 +8,14 @@ export function generateStaticParams() {
   return studyAbroadCountries.map((c) => ({ country: c.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const country = studyAbroadCountries.find((c) => c.slug === params.country);
+// params is a Promise in Next 16. Read synchronously it is undefined, which
+// silently cost this route both halves of its job: generateMetadata returned
+// {} so all nine countries inherited the section layout's one generic title and
+// its /study-abroad canonical, and the page below fell straight through to
+// notFound().
+export async function generateMetadata({ params }) {
+  const { country: slug } = await params;
+  const country = studyAbroadCountries.find((c) => c.slug === slug);
   if (!country) return {};
 
   return pageMetadata({
@@ -26,8 +32,9 @@ export function generateMetadata({ params }) {
   });
 }
 
-export default function CountryPage({ params }) {
-  const country = studyAbroadCountries.find((c) => c.slug === params.country);
+export default async function CountryPage({ params }) {
+  const { country: slug } = await params;
+  const country = studyAbroadCountries.find((c) => c.slug === slug);
   if (!country) notFound();
   return <CountryPageClient country={country} />;
 }

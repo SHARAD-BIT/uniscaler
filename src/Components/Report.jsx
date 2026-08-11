@@ -15,19 +15,19 @@ const ReportProblemPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const filterInputStringToPreventSQLInjection = (input) => {
-      return input.replace(/[^a-zA-Z0-9\s@.,-]/g, "");
-    };
-
+    // Sent exactly as typed. The allowlist that used to run here stripped the
+    // problem description down to letters, digits and `@ . , -` - so a bug
+    // report containing a URL, quotes or brackets arrived unreadable, which is
+    // the one thing this form exists to capture.
     fetch(`${process.env.NEXT_PUBLIC_WEBSITE_API}/reportAProblem`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name: filterInputStringToPreventSQLInjection(name),
-        email: filterInputStringToPreventSQLInjection(email),
-        problem: filterInputStringToPreventSQLInjection(problemDescription),
+        name: name,
+        email: email,
+        problem: problemDescription,
       }),
     })
       .then((res) =>

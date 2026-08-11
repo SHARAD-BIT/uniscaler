@@ -82,13 +82,17 @@ const Login = () => {
           setLoading(false);
         });
   };
+  // The value is sent exactly as typed. There used to be a character allowlist
+  // here (`[^a-zA-Z0-9\s.@#$]` deleted) applied to the password as well as the
+  // email, which silently dropped `_ + -` out of addresses and `! & * ( ) ,`
+  // out of passwords. Because these inputs are uncontrolled the box still
+  // showed the original text, so the student saw a correct address while a
+  // different one was submitted. It never prevented SQL injection either - the
+  // backend now uses query placeholders, which is where that belongs.
   const handleInputChange = (e) => {
-    const filterInputStringToPreventSQLInjection = (input) => {
-      return input.replace(/[^a-zA-Z0-9\s.@#$]/g, "");
-    };
     setFormData({
       ...formData,
-      [e.target.name]: filterInputStringToPreventSQLInjection(e.target.value),
+      [e.target.name]: e.target.value,
     });
   };
   const loginData = [

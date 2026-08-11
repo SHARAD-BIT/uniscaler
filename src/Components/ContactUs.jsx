@@ -23,14 +23,15 @@ const ContactUs = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Sent exactly as typed. The allowlist here was also written wrong: in
+  // `[^a-zA-Z0-9\s.-@%]` the `.-@` is read as a character *range* (\x2E-\x40),
+  // so it quietly permitted `/ : ; < = > ?` - it let `<script>` through while
+  // deleting the `_` out of ordinary email addresses.
   const handleChange = (e) => {
     const { name, value } = e.target;
-    const filterInputStringToPreventSQLInjection = (input) => {
-      return input.replace(/[^a-zA-Z0-9\s.-@%]/g, "");
-    };
     setFormData((prevState) => ({
       ...prevState,
-      [name]: filterInputStringToPreventSQLInjection(value),
+      [name]: value,
     }));
   };
 

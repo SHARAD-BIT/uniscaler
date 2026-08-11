@@ -21,7 +21,22 @@ import { publicToken } from "./publicToken";
  * still fetch and render as they do today.
  */
 
-const WEBSITE_API = process.env.NEXT_PUBLIC_WEBSITE_API;
+/**
+ * NEXT_PUBLIC_WEBSITE_API is a same-origin path (`/api/website/v1`) so that the
+ * browser's calls survive being reached through a tunnel — see the rewrites in
+ * next.config.mjs. There is no origin to be relative *to* on the server, so the
+ * same path is resolved against the backend here, which also skips a pointless
+ * hop back through our own proxy. An absolute value is left alone, so a
+ * deployment that points these at a real domain keeps working unchanged.
+ */
+const WEBSITE_API = (() => {
+  const configured = process.env.NEXT_PUBLIC_WEBSITE_API;
+  if (!configured) return null;
+  if (/^https?:\/\//i.test(configured)) return configured;
+
+  const origin = (process.env.BACKEND_ORIGIN || "").replace(/\/+$/, "");
+  return origin ? `${origin}${configured}` : null;
+})();
 
 // Long enough that metadata for a college or blog is not re-fetched on every
 // crawl, short enough that an edit in the admin dashboard shows up the same day.

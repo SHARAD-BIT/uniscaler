@@ -3,8 +3,28 @@ export const SITE_NAME = "Uniscaler";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://uniscaler.in";
 
-/** The site-wide OG image, kept in sync with the one set in app/layout.js. */
-const DEFAULT_OG_IMAGE = "/heroImg.png";
+/**
+ * The site-wide share image, imported by app/layout.js too so there is one
+ * definition rather than two that can drift.
+ *
+ * 1200x630 is the ratio WhatsApp, Facebook and LinkedIn render as a large
+ * banner instead of a small square thumbnail, and the file is ~100KB — WhatsApp
+ * gives up on large images and falls back to the bare link. The dimensions are
+ * declared so a crawler can choose the banner layout from the tags alone,
+ * without waiting on the download.
+ *
+ * It previously pointed at `/heroImg.png`, which has never existed in `public/`
+ * — the hero ships as .jpg/.svg/.webp. Every share of every page resolved to a
+ * 404, which is what a blank grey box in WhatsApp means. Regenerate the file
+ * with `node make-og-image.mjs` if the brand assets change.
+ */
+export const DEFAULT_OG_IMAGE = {
+  url: "/og-image.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Uniscaler — discover top colleges and universities in India",
+  type: "image/jpeg",
+};
 
 /**
  * Builds one page's metadata.

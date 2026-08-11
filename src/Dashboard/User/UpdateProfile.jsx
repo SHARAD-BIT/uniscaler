@@ -43,14 +43,14 @@ const UpdateProfile = () => {
       clearTimeout(timer);
     };
   }, [isUpdate]);
+  // Sent exactly as typed. This allowlist permitted nothing but letters, digits,
+  // space and a comma, so a user could not save a name containing `.` or `-`
+  // (`Dr. Rao`, `Anil-Kumar`) or any address with a `/` or `#` in it.
   const handleChange = (e) => {
-    const filterInputStringToPreventSQLInjection = (input) => {
-      return input.replace(/[^a-zA-Z0-9\s,]/g, "");
-    };
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: filterInputStringToPreventSQLInjection(value),
+      [name]: value,
     }));
   };
   const handleSubmit = (e) => {

@@ -1,4 +1,6 @@
-import CommonApplication from "@/Components/CommonApplication";
+// The card landing page this route used to render is still there, untouched, in
+// CommonApplication.jsx — swapping the import back is the whole revert.
+import CommonApplicationForm from "@/Components/CommonApplicationForm";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
@@ -9,5 +11,5 @@ export const metadata = pageMetadata({
 });
 
 export default function Page() {
-  return <CommonApplication />;
+  return <CommonApplicationForm />;
 }

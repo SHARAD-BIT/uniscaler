@@ -7,6 +7,7 @@ import MenuBtn from "../Utils/MenuBtn";
 import StudyAbroadMegaMenu from "./StudyAbroadMegaMenu";
 import "./styles/navbar.css";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { getStoredUser } from "../Helper/Helper";
 import { AllCourse, onlineCourseDetails } from "../Helper/Helper";
 // App-switcher (top bar) icons
@@ -94,7 +95,27 @@ const Navbar = () => {
 
   // Top app-switcher bar open/closed, toggled by the dots-grid button.
   const [appBarOpen, setAppBarOpen] = useState(true);
+  // On a phone the same shortcuts open as a bottom sheet instead. Six of them
+  // never fit across a phone, so the strip became a horizontal scroller with
+  // everything past "Online Courses" off-screen and nothing to say so.
+  //
+  // Deliberately a second flag rather than a reused one: `appBarOpen` starts
+  // open, and sharing it would have the sheet up on first paint before any
+  // effect could close it.
+  const [sheetOpen, setSheetOpen] = useState(false);
+  // Only ever read to decide which panel the dots drive — never to choose what
+  // to render, so the server's guess of `false` cannot mismatch or flash.
+  // Tracked with a media-query listener rather than a resize handler so it is
+  // still right on the first tap after a rotation.
+  const [isPhone, setIsPhone] = useState(false);
   const [isMenuIcon, setIsMenuIcon] = useState(false);
+  useEffect(() => {
+    const phoneQuery = window.matchMedia("(max-width: 768px)");
+    const syncIsPhone = () => setIsPhone(phoneQuery.matches);
+    syncIsPhone();
+    phoneQuery.addEventListener("change", syncIsPhone);
+    return () => phoneQuery.removeEventListener("change", syncIsPhone);
+  }, []);
   const linkClickHanlder = (e) => {
     e.target.classList.toggle("active");
   };
@@ -113,6 +134,9 @@ const Navbar = () => {
       if (window.innerWidth > 768) {
         setActiveMenu(false);
         setActiveSubmenu(false);
+        // The sheet only exists below this width; left open across the
+        // breakpoint it would keep the scrim over an otherwise normal page.
+        setSheetOpen(false);
       }
     };
     window.addEventListener("resize", overflowHandler);
@@ -127,10 +151,25 @@ const Navbar = () => {
       : document.body.classList.remove("active");
   }, [isMenuIcon]);
 
-  return (
-    <nav
-      className={`${appBarOpen ? "appbar-open" : ""} ${sticky ? "sticky" : ""}`}
-    >
+  // Esc closes the sheet, and the page behind it is frozen: without the lock a
+  // drag that starts on the scrim scrolls the page under the sheet.
+  // An inline style rather than the `active` class the burger menu uses —
+  // sharing it would let whichever closed first unlock for both.
+  useEffect(() => {
+    if (!sheetOpen) return;
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") setSheetOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", closeOnEscape);
+      document.body.style.overflow = "";
+    };
+  }, [sheetOpen]);
+
+  const navBar = (
+    <nav className={`${appBarOpen ? "appbar-open" : ""} ${sticky ? "sticky" : ""}`}>
       {/* The dots toggle is a sibling of both bars rather than a child of the
           app bar: closing that bar collapses it to zero height with overflow
           hidden, which would clip the button away instead of letting it glide
@@ -140,16 +179,19 @@ const Navbar = () => {
       <button
         type="button"
         className="appGrid"
-        onClick={() => setAppBarOpen((o) => !o)}
+        onClick={() =>
+          isPhone ? setSheetOpen((o) => !o) : setAppBarOpen((o) => !o)
+        }
         aria-label="Toggle quick menu"
-        aria-expanded={appBarOpen}
-        aria-controls="app-switcher"
+        aria-expanded={isPhone ? sheetOpen : appBarOpen}
+        aria-controls={isPhone ? "app-switcher-sheet" : "app-switcher"}
         title="Quick menu"
       >
         <UDots />
       </button>
 
-      {/* Layer 1 — collapsible app-switcher bar */}
+      {/* Layer 1 — collapsible app-switcher bar (desktop only; phones get the
+          bottom sheet portalled to <body> at the end of this component) */}
       <div id="app-switcher" className={`appBar ${appBarOpen ? "open" : ""}`}>
         {/* visibility:hidden when collapsed keeps these out of the tab order */}
         <div className="appBarInner">
@@ -308,6 +350,69 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+  );
+
+  return (
+    <>
+      {navBar}
+
+      {/* The phone sheet is portalled to <body> rather than rendered inside
+          <nav>, and that is not a style preference — <nav> carries both a
+          `backdrop-filter` and a `z-index`. The filter makes it the containing
+          block for any fixed-position descendant, so a sheet inside it anchors
+          to the bar instead of the viewport however it is written; the z-index
+          traps it in a stacking context that the floating Call Us / Chat Now
+          bar (fixed, z-index 888) sits above. Out here neither applies.
+
+          Rendered only on phones, so the markup does not exist at all on
+          desktop. `isPhone` is false during SSR and the first paint, which is
+          also what keeps `document` out of the server render. */}
+      {isPhone &&
+        createPortal(
+          <div className={`appSheetRoot ${sheetOpen ? "open" : ""}`}>
+            {/* Dims the page and closes on a tap outside. A <button> rather
+                than a <div> so the same dismissal works from the keyboard. */}
+            <button
+              type="button"
+              className="appSheetScrim"
+              aria-label="Close quick menu"
+              tabIndex={sheetOpen ? 0 : -1}
+              onClick={() => setSheetOpen(false)}
+            />
+            <div
+              id="app-switcher-sheet"
+              className="appSheet"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Quick menu"
+            >
+              <span className="appSheetHandle" aria-hidden="true" />
+              <div className="appSheetGrid">
+                {appShortcuts.map(({ name, href, state, Icon, img }) => (
+                  <Link
+                    key={name}
+                    href={href}
+                    state={state}
+                    className="appSheetItem"
+                    // Client navigation keeps this mounted, so without this the
+                    // sheet stays sitting over the page it just opened.
+                    onClick={() => setSheetOpen(false)}
+                    tabIndex={sheetOpen ? 0 : -1}
+                  >
+                    {img ? (
+                      <img src={img} alt="" className="appSheetItemImg" />
+                    ) : (
+                      <Icon className="appSheetItemIcon" />
+                    )}
+                    <span className="appSheetItemLabel">{name}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
+    </>
   );
 };
 

@@ -11,13 +11,13 @@ const ConsultForm = () => {
     message: "",
   });
   const [isSuccess, setIsSuccess] = useState(false);
-  const filterInputStringToPreventSQLInjection = (input) => {
-    return input.replace(/[^a-zA-Z0-9\s.@]/g, "");
-  };
+  // Sent exactly as typed. The allowlist that used to sit here deleted `_ + -`
+  // from the email, so consultation leads were saved with addresses nobody
+  // could reply to. Injection is handled by placeholders in the handler.
   const inputChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.id]: filterInputStringToPreventSQLInjection(e.target.value),
+      [e.target.id]: e.target.value,
     });
   };
   const handleSubmit = (e) => {

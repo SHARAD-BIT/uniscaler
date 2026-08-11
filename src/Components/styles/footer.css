@@ -3,6 +3,45 @@
   background-color: #1a1a1a;
   color: var(--light);
   padding: 2rem 1rem 1rem 1rem;
+
+  /* Illustration behind the footer content. Two background layers, darkest
+     first: the gradient is a scrim sitting on top of the artwork. It is not
+     decoration — the footer's text is white on #1a1a1a, and the artwork is a
+     bright cream, so without the scrim the links would be unreadable over it.
+     Background layers can never cover child content, which is why this is done
+     here rather than with an overlay element.
+
+     footer-bg.webp is a resized copy of the supplied artwork
+     (international-day-education-cartoon-style.jpg.jpeg). The original is
+     4928x3712 and 8.06 MB — every visitor would have downloaded that for a
+     decorative layer sitting under a 90% dark scrim. Resized to 1920px wide and
+     re-encoded as webp it is 130 KB, and at this scrim strength the difference
+     is not visible.
+
+     If the file is absent the url() simply fails and the background-color above
+     still applies, so the footer falls back to how it looked before rather than
+     breaking. */
+  /* Scrim strength is set by contrast, not by eye. The artwork is essentially
+     white — median luminance 244 of 255, 99th percentile 249 — so the white
+     footer text has nothing to sit on except this layer. Measured against that
+     99th percentile: 0.62 leaves 4.9:1 and 0.55 drops to 4.0:1, below the 4.5:1
+     needed for body text. 0.62 is therefore about as light as this can go while
+     the course links stay readable; it was 0.9/0.95 before. */
+  background-image: linear-gradient(
+      rgba(26, 26, 26, 0.62),
+      rgba(26, 26, 26, 0.74)
+    ),
+    url("/footer-bg.webp");
+  /* `cover` by choice: the footer fills edge to edge with no bare patches, and
+     the crop that costs is accepted. The artwork is 1920x1446 (aspect 1.33) and
+     the footer is taller than it is wide once the course lists render, so cover
+     scales to the height and trims the left and right edges — the floating
+     planets go, the book and globe in the middle stay. `contain` was tried and
+     showed the whole picture but left the upper footer bare; this was the call.
+     Centred so the trim is even on both sides. */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .footer-wrapper {
   display: grid;

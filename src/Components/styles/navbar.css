@@ -378,7 +378,18 @@ nav .login-btn:hover {
   color: var(--light);
 }
 @media screen and (max-width: 1180px) {
+  /* The gutter belongs to the bar's contents, not to <nav>. Set on <nav> it
+     inset every child, so the dark app-switcher bar stopped short of both
+     screen edges with a strip of page showing either side. Only that bar showed
+     it — it is the one opaque dark surface here; the glass bar hid the same gap
+     by being near-white on a white page. .appBarInner carries its own padding,
+     so the red bar now runs edge to edge while its shortcuts stay clear of the
+     rim. Nothing else moves: .appGrid and .menu-links are absolutely positioned
+     against nav's padding box, which the padding never displaced. */
   nav {
+    padding: 0;
+  }
+  nav .wrapperBox {
     padding: 0 0.8rem;
   }
   nav .menu-links .links {
@@ -475,7 +486,6 @@ nav .login-btn:hover {
   nav .login-circle {
     width: 38px;
     height: 38px;
-    border-radius: 8px;
   }
   nav .login-circle img {
     width: 26px;
@@ -866,6 +876,26 @@ nav.appbar-open .wrapperBox .linkGrc {
   font-size: 0.95rem;
   font-weight: 600;
 }
+
+/* The top row is set the way Adobe's global nav sets its own — 14px at regular
+   weight in black, which is what makes that bar read as lean rather than
+   shouted. Ours was 0.95rem at 600 in navy: heavier and louder at the same
+   time, so the links competed with the wordmark beside them.
+   Colour is declared here because it was arriving from the `nav .menu-links >
+   .links > li a` rule far above, which this selector already outranks on class
+   count — leaving it there would have kept the navy.
+   Deliberately the direct-child chain, so it stops at the top row: the items
+   inside the "More" dropdown keep the size and weight above, which suit a menu
+   panel rather than a bar. */
+.linkGrc .menu-links > .links > li > a,
+.linkGrc .menu-links > .links > li > .link {
+  /* 17px, set on review. Above the 0.95rem (15.2px) these started at, and
+     above Adobe's own 14px — the leanness here is carried by the 400 weight
+     rather than by the size, so the row still reads light at this scale. */
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--dark);
+}
 /* shrink the "All Courses" pill so it reads as part of the quick-link row */
 .linkGrc .courseBtn button {
   font-size: 0.95rem;
@@ -916,14 +946,16 @@ nav .login-circle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* The mark sits bare on the glass bar — no box. The square was three things
+     together, and all three had to go or a box of some kind survived: the 2px
+     `inset` ring that read as the border, the white fill behind it, and the
+     soft drop shadow that gave it depth. The 48px box itself stays as the tap
+     target, so nothing beside it shifts. */
   width: 48px;
   height: 48px;
   flex: none;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: inset 0 0 0 2px var(--accent), 0 2px 8px rgba(0, 57, 128, 0.12);
   cursor: pointer;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s;
 }
 nav .login-circle img {
   width: 34px;
@@ -932,5 +964,178 @@ nav .login-circle img {
 }
 nav .login-circle:hover {
   transform: translateY(-1px);
-  box-shadow: inset 0 0 0 2px var(--accent), 0 6px 16px rgba(0, 57, 128, 0.28);
 }
+
+/* ===========================================================================
+   Phone quick-menu: a bottom sheet instead of the top strip.
+
+   Six shortcuts do not fit across a phone, so the strip became a horizontal
+   scroller with everything past "Online Courses" off the right edge and
+   nothing on screen to say it was there. Below 768px the strip is dropped and
+   the same links open upward from the bottom, on a grid, all six at once.
+
+   The sheet's own rules are NOT scoped to nav, and its markup is portalled to
+   <body>, because <nav> carries two things that quietly defeat a sheet placed
+   inside it: a `backdrop-filter`, which makes it the containing block for any
+   fixed-position descendant (so the sheet anchors to the bar rather than the
+   viewport, however it is written), and a `z-index`, which traps it in a
+   stacking context that the floating Call Us / Chat Now bar sits above.
+   =========================================================================== */
+@media screen and (max-width: 768px) {
+  /* Replaced by the sheet, not kept alongside it. Dropping it also takes the
+     nav from 118px back to 64px against the 70px `.top` offset the page
+     reserves at this width — which is why the top of the hero image was
+     sitting underneath the bar. */
+  nav .appBar {
+    display: none;
+  }
+
+  /* With no strip, the dots always live in the glass bar, so the open-state
+     rules that grow them and move them up into it have to be undone —
+     `appbar-open` is still on the element at this width. */
+  nav .appGrid,
+  nav.appbar-open .appGrid {
+    height: var(--bar-h);
+    left: 0.35rem;
+    width: var(--dots-w);
+    font-size: 1.5rem;
+    color: #2a40d1;
+  }
+  nav.appbar-open .appGrid::before {
+    display: none;
+  }
+  /* …and the logo keeps the room for them that the open state took back.
+     `+ 0.7rem` on top of the dots' own width was sized for the desktop bar; on
+     a phone it left the wordmark about 18px clear of the dots, because
+     .wrapperBox's own 0.8rem gutter is already in front of it. Down to the
+     dots' width alone, which still leaves roughly 7px between the two. Both
+     the plain and the open-state selectors, so the spacing cannot depend on a
+     class that no longer means anything at this width. */
+  nav .wrapperBox .linkGrc,
+  nav.appbar-open .wrapperBox .linkGrc {
+    padding-left: var(--dots-w);
+  }
+
+  /* "All Courses" was a touch tall next to the wordmark. Its padding does not
+     come from the 600px block as the file order suggests — the top-level rule
+     at "shrink the All Courses pill" sits after every media block and wins at
+     each width, so 0.45rem is what was actually applying. Down to 0.28rem,
+     about 5px off the pill. Longhands only: the horizontal 0.7rem and the
+     font size stay, so the label keeps its own breathing room. */
+  .linkGrc .courseBtn button {
+    padding-top: 0.28rem;
+    padding-bottom: 0.28rem;
+  }
+}
+
+/* The sheet is only ever rendered on a phone, so its rules need no breakpoint
+   of their own — the markup does not exist above 768px. */
+.appSheetScrim {
+  position: fixed;
+  inset: 0;
+  padding: 0;
+  border: none;
+  background: rgba(8, 3, 2, 0.55);
+  opacity: 0;
+  /* not merely invisible — a transparent scrim still swallows every tap */
+  pointer-events: none;
+  transition: opacity 0.32s ease;
+  z-index: 1400;
+}
+.appSheetRoot.open .appSheetScrim {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.appSheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 78vh;
+  overflow-y: auto;
+  padding: 0.55rem 0.9rem calc(1rem + env(safe-area-inset-bottom, 0px));
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  /* the strip's dark red, kept so the two read as the same surface */
+  background-image: linear-gradient(
+    90deg,
+    #2b0a06 0%,
+    #7a1c10 55%,
+    #43100a 100%
+  );
+  box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.42);
+  /* 101%, so the rounded top corners clear the screen edge while down */
+  transform: translateY(101%);
+  /* visibility, not opacity alone: a sheet merely pushed off-screen would
+     leave six links sitting in the tab order */
+  visibility: hidden;
+  transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  /* clears the floating Call Us / Chat Now bar, which is fixed at 888 */
+  z-index: 1401;
+}
+.appSheetRoot.open .appSheet {
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.appSheetHandle {
+  display: block;
+  width: 42px;
+  height: 4px;
+  margin: 0.15rem auto 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+}
+
+/* Equal columns: the whole point of the sheet is that nothing is hidden or
+   unevenly spaced, so the tiles share the width rather than being sized by
+   the length of their labels. */
+.appSheetGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.appSheetItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 88px;
+  padding: 0.85rem 0.4rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.25;
+}
+.appSheetItem:active {
+  background: rgba(255, 255, 255, 0.16);
+}
+.appSheetItemIcon {
+  font-size: 1.4rem;
+  flex: none;
+}
+/* globals.css sets `img { width: 100%; height: 100% }`, so an icon image has
+   to be given its own size or it fills the tile. */
+.appSheetItemImg {
+  width: 1.4rem;
+  height: 1.4rem;
+  object-fit: contain;
+  flex: none;
+}
+/* The global `* { font-family: Lato }` reset re-applies Lato to every text
+   node regardless of inheritance, so the display font is set here, not on a
+   parent — same reason as nav .appItemLabel above. */
+.appSheetItemLabel {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.01em;
+}
+

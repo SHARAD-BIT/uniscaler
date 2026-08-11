@@ -8,15 +8,15 @@ const ChangePassword = () => {
   const [isPassed, setIsPassUpdated] = useState(false);
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({});
+  // Sent exactly as typed - see the note in Components/Login.jsx. This screen's
+  // allowlist was a third, different one (it kept `! ) * ( ,` but dropped `. $`),
+  // so a password set here could contain characters the login form deleted -
+  // the account was locked out the moment the password was changed.
   const handleChange = (e) => {
-    const filterInputStringToPreventSQLInjection = (input) => {
-      return input.replace(/[^a-zA-Z0-9\s@#!)*(),]/g, "");
-    };
-
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
-      [name]: filterInputStringToPreventSQLInjection(value),
+      [name]: value,
     }));
   };
   function handleSubmit(e) {

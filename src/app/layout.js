@@ -1,6 +1,7 @@
 import "./globals.css";
 import Providers from "./providers";
 import RootLayOut from "@/Helper/RootLayOut";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo";
 
 /**
  * Site-wide metadata defaults.
@@ -30,7 +31,7 @@ export const metadata = {
     title: "Uniscaler - Discover Top Colleges & Universities",
     description:
       "Explore the best colleges and universities with Uniscaler. Discover top-ranked institutions, academic programs, and valuable insights for your educational journey.",
-    images: ["/heroImg.png"],
+    images: [DEFAULT_OG_IMAGE],
     // Relative, so it resolves against metadataBase. It used to be hardcoded to
     // https://www.uniscaler.com/ while metadataBase points at uniscaler.in —
     // an og:url on a different host than the canonical splits ranking signals.
@@ -44,7 +45,7 @@ export const metadata = {
     title: "Uniscaler - Discover Top Colleges & Universities",
     description:
       "Explore the best colleges and universities with Uniscaler. Discover top-ranked institutions, academic programs, and valuable insights for your educational journey.",
-    images: ["/heroImg.png"],
+    images: [DEFAULT_OG_IMAGE],
   },
 };
 
