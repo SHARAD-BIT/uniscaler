@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { studyAbroadCountries, studyAbroadStats } from "@/lib/studyAbroadData";
 import { studyAbroadDestinations } from "@/lib/studyAbroadDestinations";
@@ -235,10 +235,9 @@ export default function StudyAbroadPage() {
   const [activeField, setActiveField] = useState(null);
   const [activeDest, setActiveDest] = useState(0);
   const [focus, setFocus] = useState(null);
-  // The pathway band shows a row you scroll through; this opens it out into the
-  // full list for the current field. Reset whenever the field changes.
+  // The pathway band shows four cards; this opens it out into the full list
+  // for the current field. Reset whenever the field changes.
   const [showAllPathways, setShowAllPathways] = useState(false);
-  const pathwayTrack = useRef(null);
 
   /**
    * The hero video mounts only where it is worth its 3.7MB — 901px and up — and
@@ -330,19 +329,6 @@ export default function StudyAbroadPage() {
   const chooseField = (name) => {
     setActiveField(name);
     setShowAllPathways(false);
-    // Back to the first card, or the new field opens already scrolled into the
-    // middle of itself.
-    if (pathwayTrack.current) pathwayTrack.current.scrollLeft = 0;
-  };
-
-  /** Steps the row by exactly one card, gap included. */
-  const stepPathway = (dir) => {
-    const track = pathwayTrack.current;
-    if (!track) return;
-    const card = track.querySelector(".sa-pathway-card");
-    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-    const step = card ? card.getBoundingClientRect().width + gap : track.clientWidth;
-    track.scrollBy({ left: dir * step, behavior: "smooth" });
   };
 
   return (
@@ -751,49 +737,25 @@ export default function StudyAbroadPage() {
                       onClick={() => chooseField(field.name)}
                     >
                       {field.name}
-                      <span className="sa-pathway-tab-count">
-                        {field.courses.length}
-                      </span>
                     </button>
                   ))}
                 </div>
 
-                {/* The arrows only steer the row. Expanded, it is an ordinary
-                    grid with nothing to scroll, so they go rather than sit
-                    there doing nothing. */}
-                {!showAllPathways && (
-                  <div className="sa-pathway-navs">
-                    <button
-                      type="button"
-                      className="sa-pathway-nav"
-                      onClick={() => stepPathway(-1)}
-                      aria-label="Previous programs"
-                    >
-                      <FaChevronLeft />
-                    </button>
-                    <button
-                      type="button"
-                      className="sa-pathway-nav"
-                      onClick={() => stepPathway(1)}
-                      aria-label="More programs"
-                    >
-                      <FaChevronRight />
-                    </button>
-                  </div>
-                )}
               </div>
 
               <div className="sa-pathway-deck">
-                {/* One element in both states: a scroll-snapping row that
-                    becomes a wrapping grid. Swapping between two containers
-                    would remount all 76 cards on every expand. */}
-                <div
-                  ref={pathwayTrack}
-                  className={`sa-pathway-track${
-                    showAllPathways ? " is-expanded" : ""
-                  }`}
-                >
-                  {activePathway.courses.map((course) => (
+                {/* Collapsed, only the first four render — the row used to be a
+                    scroll-snapping track through all of them, and the scroller
+                    went on the client's word. Slicing rather than hiding: with
+                    Management at 76 programs, rendering everything to show four
+                    would be 72 cards of hidden work on every tab change. The
+                    same grid holds in both states; expanding just renders the
+                    rest into it, so the first four never remount. */}
+                <div className="sa-pathway-track">
+                  {(showAllPathways
+                    ? activePathway.courses
+                    : activePathway.courses.slice(0, 4)
+                  ).map((course) => (
                     <article className="sa-pathway-card" key={course.id}>
                       {/* Its own row above the rule, as in the reference. The
                           plane rather than the flag here, because the flag has
@@ -881,7 +843,10 @@ export default function StudyAbroadPage() {
                 </div>
               </div>
 
-              {activePathway.courses.length > 3 && (
+              {/* > 4, not > 3: four now show, and Health & Science holds
+                  exactly four — a "View all 4" button under all four would
+                  expand into nothing. */}
+              {activePathway.courses.length > 4 && (
                 <div className="sa-pathway-more">
                   <button
                     type="button"

@@ -12,8 +12,8 @@ import { getStoredUser } from "../Helper/Helper";
 import { AllCourse, onlineCourseDetails } from "../Helper/Helper";
 // The app-switcher's six react-icons glyphs (FaGift, BsStars, FaLaptopCode,
 // FaGlobe, FaWpforms, FaHeadset) are gone — the bar now uses the supplied
-// badge SVGs from `public/nav-icons/`. Both react-icons packages went with
-// them; nothing else in this file imported from `react-icons/fa` or `/bs`.
+// artwork in `public/nav-icons/`. Both react-icons packages went with them;
+// nothing else in this file imported from `react-icons/fa` or `/bs`.
 import "./styles/aiass.css";
 
 /**
@@ -52,32 +52,41 @@ const Navbar = () => {
   // Layer 1 — the collapsible Adobe-style app switcher. Its items are simple
   // shortcuts. "Online Courses" carries a default nav-state so the destination
   // page renders instead of bouncing to "/" (it redirects when opened cold).
-  // Every item now carries `img` rather than `Icon`: the six client-supplied
-  // badge SVGs in `public/nav-icons/` replaced the react-icons glyphs. The
-  // `Icon` branch is kept in the markup below, not deleted — it is what renders
-  // if an item is ever added without artwork.
+  // Every item now carries `img` rather than `Icon`: the client-supplied
+  // artwork in `public/nav-icons/` replaced the react-icons glyphs. All six are
+  // PNGs — the badge SVGs that arrived first were swapped out one at a time and
+  // none is left. Each was delivered on a solid white square and had its
+  // background flood-filled out from the border, which is what keeps the
+  // enclosed whites (a letter counter, a face, a radio ring) intact.
+  //
+  // Two of them — Refer & Earn and Study Abroad — are outline art with no
+  // container, so they read much fainter on the strip than the four badges do.
+  // That is the artwork, not the processing; see CHANGELOG 2026-08-19.
+  //
+  // The `Icon` branch is kept in the markup below, not deleted — it is what
+  // renders if an item is ever added without artwork.
   const appShortcuts = [
     {
       name: "Refer & Earn",
       href: "/refer-and-earn",
-      img: "/nav-icons/refer-and-earn.svg",
+      img: "/nav-icons/refer-and-earn.png",
     },
-    { name: "AI Assistance", href: "/ai", img: "/nav-icons/ai-assistance.svg" },
+    { name: "AI Assistance", href: "/ai", img: "/nav-icons/ai-assistance.png" },
     {
       name: "Online Courses",
       href: `/online-course/${onlineCourseDetails[0].name}`,
       state: { course: onlineCourseDetails[0] },
-      img: "/nav-icons/online-courses.svg",
+      img: "/nav-icons/online-courses.png",
     },
     {
       name: "Study Abroad",
       href: "/study-abroad",
-      img: "/nav-icons/study-abroad.svg",
+      img: "/nav-icons/study-abroad.png",
     },
     {
       name: "Common Application Form",
       href: "/common-application-form",
-      img: "/nav-icons/common-application-form.svg",
+      img: "/nav-icons/common-application-form.png",
     },
     { name: "Contact", href: "/contact", img: "/nav-icons/contact.png" },
   ];

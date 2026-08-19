@@ -2,15 +2,36 @@
    Study Abroad — shared page styles
    ───────────────────────────────────────────────────────────── */
 
+/* The glass navbar was briefly stripped of its background and lit top edge on
+   this page and put straight back on the client's word, so the bar here is the
+   ordinary one from navbar.css with nothing overriding it. Kept as a note
+   because the removal is a plausible thing to try again: it changes almost
+   nothing at the top of the page — the page reserves its own 110px for the
+   fixed bar, so what sits behind it there is the white body and not the hero —
+   and on scroll it drops the navy links to 2.54:1 against the darkest moment of
+   the footage. If it is ever wanted for real, the selector is
+   `body:has(.sa-home) nav`, keyed on a class this page's <main> would carry;
+   `.sa-page` will not do, because the country pages share it and their hero is
+   a dark navy panel. */
+
 /* ── Hero ──
    Light, not the dark navy gradient it used to be. The old hero painted a
    near-black band straight under the glass navbar, which is the one surface the
    bar's backdrop-filter cannot sit on legibly — the navy link text ran over it.
    White also matches the rest of the page, which was already light from the
    stats bar down. */
+/* 97px, not the 110px this reserved before, and the 13px is bought rather than
+   saved. The navbar's rounded bottom corners show whatever is behind the bar,
+   so the curve can only be as deep as the strip where the bar overlaps this
+   hero — beyond that it exposes the white reserved here and a nick appears over
+   the video's top corners. Every 1px off this padding is 1px more overlap and
+   1px more radius available, and it costs nothing visible, because that strip
+   of the hero sits behind the navbar either way. At 97px the tightest state
+   (strip open, sticky: a 117px bar) overlaps by 20px, which is what pays for
+   the 18px radius in navbar.css. */
 .sa-page {
   min-height: 100vh;
-  padding-top: 110px;
+  padding-top: 97px;
   transition: padding-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* This page reserves its own room for the fixed navbar instead of using the
@@ -20,7 +41,7 @@
    same 766px guard, same reasoning. */
 @media screen and (min-width: 766px) {
   body.appbar-collapsed .sa-page {
-    padding-top: calc(110px - 63px);
+    padding-top: calc(97px - 63px);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -45,6 +66,18 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  /* Bottom corners only, on the band rather than on the <video>. The video is
+     an absolutely-positioned child filling this box, and the poster is this
+     box's own background — rounding the element rounds both, and the existing
+     `overflow: hidden` is what clips the footage to the curve. Rounding the
+     <video> alone would leave the poster square underneath it and show as a
+     hard corner on phones and for reduced-motion visitors, who never get the
+     video at all.
+     Scales with the band: the hero is 320–520px tall depending on the viewport,
+     and a flat 28px that reads as a soft corner at 520px reads as a chamfer at
+     320px. */
+  border-bottom-left-radius: clamp(16px, 1.8vw, 28px);
+  border-bottom-right-radius: clamp(16px, 1.8vw, 28px);
   overflow: hidden;
 }
 
@@ -1292,14 +1325,6 @@
   border-bottom-color: #fff;
 }
 
-.sa-pathway-tab-count {
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.1rem 0.4rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.16);
-}
-
 /* ── the card row ── */
 .sa-pathway-deck {
   position: relative;
@@ -1312,40 +1337,18 @@
    every card came out 32px wide — its arrow button and nothing else. A flex
    item's percentage basis resolves against the container's own width, which is
    the 1300px column and not the 1958px of cards inside it. */
+/* A grid in both states now, not the scroll-snapping row this used to be — the
+   scroller went on the client's word, and the page renders only the first four
+   cards collapsed, so there is nothing to scroll to. One layout for both
+   states, because "View all" just renders more cards into the same element.
+   minmax(280px, 1fr): four across at the 1300px column (307px each — portrait,
+   which is what the reference's cards are), dropping to two and then one on its
+   own as the viewport narrows, with no per-breakpoint width rules to keep in
+   step. */
 .sa-pathway-track {
-  display: flex;
-  gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  /* Room for the cards' hover lift, which `overflow-x` would otherwise clip
-     along the top and bottom edges. */
-  padding: 4px 4px 8px;
-  margin: -4px -4px -8px;
-}
-
-.sa-pathway-track::-webkit-scrollbar {
-  display: none;
-}
-
-/* Four across, not three. At three the card came out 417px wide against about
-   370px tall — wider than it was high, which is what read as "square" rather
-   than as a card. The reference's are portrait, roughly 380x480, and the only
-   way to reach that shape at a fixed 1300px column is to narrow the card: four
-   of them is 307px against ~400px tall. It also puts a fourth program on screen
-   in a band that has 205 of them. */
-.sa-pathway-track > .sa-pathway-card {
-  flex: 0 0 calc((100% - 4.5rem) / 4);
-}
-
-/* Expanded: the same element stops being a scrolling row and becomes a block.
-   Grid here rather than `flex-wrap`, because a wrapped flex row leaves the last
-   line stretched or ragged depending on the count, and this is 76 cards deep. */
-.sa-pathway-track.is-expanded {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  overflow-x: visible;
-  scroll-snap-type: none;
+  gap: 1.5rem;
 }
 
 /* Portrait, not square. The first cut was a squat card — an 84px logo panel and
@@ -1530,33 +1533,6 @@
   border-color: #e8253c;
 }
 
-/* ── row arrows ── */
-.sa-pathway-navs {
-  display: flex;
-  gap: 0.5rem;
-  flex: none;
-  padding-bottom: 2px;
-}
-
-.sa-pathway-nav {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  background: rgba(0, 0, 0, 0.35);
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-
-.sa-pathway-nav:hover {
-  background: #e8253c;
-  border-color: #e8253c;
-}
-
 .sa-pathway-more {
   display: flex;
   justify-content: center;
@@ -1582,30 +1558,6 @@
 .sa-pathway-viewall:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: #fff;
-}
-
-@media screen and (max-width: 1200px) {
-  .sa-pathway-track > .sa-pathway-card {
-    flex-basis: calc((100% - 3rem) / 3);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .sa-pathway-track > .sa-pathway-card {
-    flex-basis: calc((100% - 1.5rem) / 2);
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .sa-pathway-track > .sa-pathway-card {
-    /* Deliberately not 100%: the sliver of the next card showing past the edge
-       is what says the row scrolls, with the arrows gone at this width. */
-    flex-basis: 84%;
-  }
-  /* The tabs need the whole width at this size, and the row is swipeable. */
-  .sa-pathway-navs {
-    display: none;
-  }
 }
 
 /* ── Explorer Section ──

@@ -53,6 +53,40 @@ nav {
     );
   border-bottom: none;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  /* Curved left and right ends. Only the bottom two corners are set, because
+     the top two sit against the top of the viewport where a radius has nothing
+     to show through and reads as a nick out of the bar.
+     On <nav> rather than on `.wrapperBox`: the glass is painted here, on the
+     element that holds both layers, so the bar's shape is this element's shape
+     — `.wrapperBox` paints nothing and rounding it would round nothing. The
+     app-switcher strip above keeps its square corners because it is a child
+     with its own opaque background and the top corners are untouched.
+     Deliberately no `overflow: hidden` to go with it: the mega menu, the course
+     panel and the mobile drawer all hang below this element, and clipping to
+     the border box would cut every one of them off at the bar.
+
+     18px, and the number is arithmetic rather than taste. A corner notch shows
+     whatever is behind the bar, so on Study Abroad it has to stay inside the
+     strip where the bar overlaps the hero — past that it exposes the white the
+     page reserves for the bar, and a white nick appears over the video's top
+     corners. `.sa-page` reserves 97px; this element is as tall as its two
+     layers, so the overlap it has to fit inside is:
+
+       strip open, at rest    63 + 60 = 123   overlaps the hero by 26px
+       strip open, sticky     63 + 54 = 117   overlaps by 20px   <- the limit
+       collapsed, at rest      0 + 60 =  60   padding drops to 34, so 26px
+       collapsed, sticky       0 + 54 =  54   20px
+
+     18 rather than the 20 that just fits, so a sub-pixel rounding at some zoom
+     level cannot put a hairline of white back.
+
+     The two numbers move together: the radius is only this deep because
+     `.sa-page` gives up 13px of its old 110px reservation to buy the overlap,
+     which costs nothing visible since that strip of hero is behind the bar
+     regardless. Deepening the curve again means taking more off there first —
+     changing this alone brings the white nick straight back. */
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
   /* No -webkit- prefix by hand: Lightning CSS adds it during the build, because
      Next's default targets include Safari 16.4, which only knows the prefixed
      form. Confirmed against the emitted CSS, not assumed. */
@@ -842,6 +876,10 @@ nav .appItemIcon {
    `overflow: hidden` bar. The ≤768px block re-declares it against the 54px
    `--app-h` there. */
 nav .appItemImg {
+  /* No white disc/tile behind the icons: it was added on request and removed on
+     request the same day (see CHANGELOG 2026-08-19). The supplied PNGs each
+     arrived on a solid white square that was flood-filled out at install time,
+     so the artwork sits directly on the strip. */
   height: 1.75rem;
   width: 1.75rem;
   flex: none;
@@ -1043,6 +1081,14 @@ nav.appbar-open .wrapperBox .linkGrc {
 @media screen and (max-width: 768px) {
   nav {
     --app-h: 54px; /* room for the stacked icon-over-label shortcut */
+    /* The overlap the corner notch has to fit inside is tightest here. The
+       strip loses 9px at this breakpoint while `.sa-page` keeps its full 97px
+       reservation — the `appbar-collapsed` correction is guarded at 766px and
+       does not reach this far down — so the sticky bar is 54 + 56 = 110px
+       against a 97px reservation: 13px, not the 20px desktop has. 12px of
+       radius fits that; the 18px above would not. */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
   }
   nav .appBarInner {
     gap: 0;
