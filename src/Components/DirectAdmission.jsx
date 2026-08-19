@@ -14,7 +14,6 @@ const DirectAdmission = () => {
     fatherName: "",
     email: "",
     phone: "",
-    amount: "",
     collegeName: "",
     courseName: "",
   });
@@ -46,12 +45,10 @@ const DirectAdmission = () => {
       required: true,
       key: "phone",
     },
-    {
-      name: "Amount",
-      type: "number",
-      required: true,
-      key: "amount",
-    },
+    // The "Amount" field used to sit here, as a required number the student
+    // typed in with no price shown anywhere on the page. The backend billed
+    // exactly that figure, so the fee was the payer's choice. The booking fee is
+    // now fixed server-side in `pricing.js` and this form does not send one.
   ];
 
   useEffect(() => {
@@ -89,18 +86,25 @@ const DirectAdmission = () => {
       studentName: DOMPurify.sanitize(formValues.studentName),
       email: DOMPurify.sanitize(formValues.email),
       phone: DOMPurify.sanitize(formValues.phone),
-      amount: DOMPurify.sanitize(formValues.amount),
       collegeName: DOMPurify.sanitize(formValues.collegeName),
       courseName: DOMPurify.sanitize(formValues.courseName),
       fatherName: DOMPurify.sanitize(formValues.fatherName),
     };
     setLoader(true);
+    // /direct-pay accepted a bare POST from anyone until now. It checks the same
+    // daily handshake as the rest of the public API, so the form has to send it
+    // — the same token this component already builds to fetch the college list.
+    const currentDate = new Date().getDate();
+    const encryptedToken = CryptoJS.AES.encrypt(
+      JSON.stringify(`${process.env.NEXT_PUBLIC_FETCH_BLOG}${currentDate}`),
+      process.env.NEXT_PUBLIC_PUBLIC_ENC
+    ).toString();
     fetch(`${process.env.NEXT_PUBLIC_PAYMENT_URL}/direct-pay`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(sanitizedFormValues),
+      body: JSON.stringify({ ...sanitizedFormValues, token: encryptedToken }),
     })
       .then((res) => {
         res.json().then((data) => {

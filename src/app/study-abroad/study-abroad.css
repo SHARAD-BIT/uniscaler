@@ -2,73 +2,228 @@
    Study Abroad — shared page styles
    ───────────────────────────────────────────────────────────── */
 
-/* ── Hero ── */
+/* ── Hero ──
+   Light, not the dark navy gradient it used to be. The old hero painted a
+   near-black band straight under the glass navbar, which is the one surface the
+   bar's backdrop-filter cannot sit on legibly — the navy link text ran over it.
+   White also matches the rest of the page, which was already light from the
+   stats bar down. */
 .sa-page {
   min-height: 100vh;
   padding-top: 110px;
+  transition: padding-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* This page reserves its own room for the fixed navbar instead of using the
+   `.top` class the rest of the site uses, so it needs the same correction: the
+   bar loses 63px when the app-switcher strip is shut, and a flat offset does
+   not follow it. See the note on `.top` in globals.css — same class on <body>,
+   same 766px guard, same reasoning. */
+@media screen and (min-width: 766px) {
+  body.appbar-collapsed .sa-page {
+    padding-top: calc(110px - 63px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sa-page {
+    transition-duration: 0.01ms;
+  }
 }
 
+/* Nothing is rendered inside this section any more — no heading, no paragraph,
+   no button, no collage — so it has no content to take its height from and
+   would collapse to nothing. `clamp` rather than a flat number: at the 1520px
+   the design is drawn at, 31.5vw is 479px, which is the height the hero had
+   when it still held the heading, so the rhythm of the page below it does not
+   move.
+
+   The poster paints under the video and stands in for it entirely below 901px
+   and for reduced-motion visitors, so the band is never an empty white gap. */
 .sa-hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0c2240 100%);
-  padding: 4rem 1.5rem 3rem;
-  color: #fff;
+  height: clamp(320px, 31.5vw, 520px);
+  background-color: #ffffff;
+  background-image: url("/study-abroad/hero-poster.webp");
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
 
-.sa-hero::before {
-  content: "";
+/* ── Hero video ──
+   Supplied footage (1520×840, 22.6s, no audio track) filling the band. It is
+   mounted from page.js, not shown/hidden here, so phones and reduced-motion
+   visitors never download it — see the note on `heroVideo` there.
+
+   `object-fit: cover` because the section is a fixed height and full viewport
+   width, so the 1.81:1 source is always cropped; `cover` crops it rather than
+   letterboxing it, and it sits over the poster the section paints. */
+.sa-hero-video {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(220, 38, 38, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse at 20% 80%, rgba(59, 130, 246, 0.14) 0%, transparent 55%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Nothing here is interactive, and it must not swallow a click or a drag. */
   pointer-events: none;
 }
 
-.sa-hero-inner {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 3rem;
-  align-items: center;
-  position: relative;
+/* ── Hero headline ──
+   The rotating line over the footage, after upgrad.com's "For Your Every Next /
+   Opportunity": a red roman line with an italic near-black one under it.
+
+   Absolutely positioned, so a line that wraps to a third row on a narrow screen
+   cannot change the band's height and shunt the whole page every two seconds.
+
+   ── There is deliberately nothing behind it ──
+   A soft white ellipse sat here for legibility. The client saw it, called it a
+   cloud, and asked for it out — the second time in a day that a wash over this
+   footage has been rejected, so it is a settled preference and not an oversight
+   to be corrected. Only the glyph glow below survives.
+
+   The measurement it was based on is kept, because the trade is real and
+   someone will ask. 45 frames were sampled across the region the headline
+   occupies — 31,860 patches. It averages #aca9a7 and runs from #281a17 in the
+   dark shots to near-white in the bright ones, nothing like the evenly-lit
+   white interior the reference film uses. That is why upGrad can put bare text
+   on theirs.
+
+   Against the worst patch in the loop, with nothing behind the text, the brand
+   red sits at 1.00:1 and the ink at 1.00:1 — both invisible for as long as that
+   shot lasts. The headline is display-sized, so the bar is WCAG's 3:1 for large
+   text, and the white that would have been needed to reach it was:
+
+     #e8253c (brand red, in use)   0.84
+     #d11930                       0.76
+     #b3122a                       0.67
+     #111a44 (the ink)             0.41
+
+   So if the dark shots ever become a problem, the cheap lever is the red rather
+   than another wash: at #b3122a the text needs a third less help, and a darker
+   red still reads as the same brand colour at display size. Regrading or
+   re-cutting the footage is the only fix that costs nothing visually. */
+.sa-hero-headline {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1060px, 90vw);
+  text-align: center;
   z-index: 1;
 }
 
-.sa-hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(220, 38, 38, 0.2);
-  border: 1px solid rgba(220, 38, 38, 0.4);
-  color: #fca5a5;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
+.sa-hero-rotator {
+  position: relative;
+  display: block;
+  animation: sa-hero-in 0.55s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-.sa-hero-title {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 800;
-  line-height: 1.15;
-  margin-bottom: 1rem;
-  color: #fff;
+@keyframes sa-hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-.sa-hero-accent {
-  color: #f87171;
+/* The line still changes on its two-second beat — this only takes the movement
+   out of the change, which is what was actually asked for. */
+@media (prefers-reduced-motion: reduce) {
+  .sa-hero-rotator {
+    animation: none;
+  }
 }
 
-.sa-hero-subtitle {
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.78);
-  line-height: 1.7;
-  max-width: 540px;
-  margin-bottom: 2rem;
+/* globals.css carries `* { font-family: "Lato", sans-serif }`, a universal
+   selector that re-applies Lato to every element regardless of inheritance. So
+   the serif has to be set on the two spans that hold the text — setting it on
+   the <h1> alone would be taken straight back off the children. Same trap the
+   navbar labels document.
+
+   A system stack, not a webfont, and that was tested rather than assumed. The
+   reference sets its headline in a licensed serif; the nearest free match is PT
+   Serif, whose @import is already sitting commented out at the top of
+   globals.css. Adding it here did not work — `next build` drops a remote
+   @import from a page-level stylesheet when it bundles, so the declaration
+   survived and the font never arrived, which is worse than not naming it. It
+   loads correctly only from globals.css, which would put the download on every
+   page of the site for one heading. Georgia is a transitional serif with a true
+   italic and renders the reference's look closely enough; if an exact match is
+   ever wanted, the route is `next/font/google` scoped to this page, not an
+   @import. */
+.sa-hero-lead,
+.sa-hero-tail {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  /* With the ellipse gone this is the only thing lifting the text off the
+     footage. It is kept because it hugs the glyphs rather than covering the
+     frame — it is not the cloud that was objected to, and removing it as well
+     would leave the headline sitting flat on the video with nothing at all.
+     Deliberately not made stronger to compensate: a wider blur is how a glyph
+     glow turns into the very haze that was rejected. */
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.85),
+    0 0 4px rgba(255, 255, 255, 0.9);
 }
+
+.sa-hero-lead {
+  color: #e8253c;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.9vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+
+.sa-hero-tail {
+  color: #111a44;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3.05vw, 2.75rem);
+  line-height: 1.2;
+  margin-top: 0.15em;
+}
+
+/* Read by screen readers, never shown. Not `display: none`, which would take it
+   out of the accessibility tree along with everything else. */
+.sa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── The white scrim that used to be here ──
+   Removed on the client's instruction of 2026-08-18: at 50% white over the
+   whole band it read as a wash over the footage, which is what it was. The rule
+   is gone, the note is not, because what it was doing is not visible from what
+   is left.
+
+   The navbar above is glass — `rgba(228,241,255,0.62)` fading to
+   `rgba(255,255,255,0.34)` over a backdrop-filter — and its links are navy
+   (#003980). It is fixed, so although the hero starts below it at rest, the
+   whole band passes underneath as the page scrolls, and whatever is under it
+   shows through. That is the same thing that made this hero light in the first
+   place; see the note at the top of the file.
+
+   Re-measured against the current footage rather than carried over: 23 frames
+   of the clip, each searched for its darkest navbar-height band, composited
+   through the bar's own tint and brightness and scored against the link colour.
+
+     scrim 0.5   6.22:1   AA
+     scrim 0.35  4.88:1   AA
+     scrim 0.25  4.10:1   large text only
+     scrim 0     2.54:1   fails
+
+   So for the length of the darkest shot, the navbar links sit at 2.54:1 while
+   the hero is scrolling past — the cost the client accepted to get the footage
+   ungraded. If it needs fixing later, fix it on the bar and not with another
+   wash over the video: a heavier tint on `nav` scoped to this page buys the
+   same contrast without touching a pixel of the artwork. */
 
 .sa-hero-ctas {
   display: flex;
@@ -79,23 +234,32 @@
 .sa-btn-primary {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background: #dc2626;
+  gap: 0.6rem;
+  background: #e8253c;
   color: #fff !important;
-  padding: 0.8rem 1.6rem;
+  padding: 1rem 1.8rem;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   text-decoration: none;
   transition: background 0.2s, transform 0.15s;
-  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.35);
 }
 
 .sa-btn-primary:hover {
-  background: #b91c1c;
+  background: #c81c31;
   transform: translateY(-2px);
 }
 
+/* Not dead with the hero gone light: `CountryPageClient.jsx` reuses it for the
+   country name in "Study in <b>United States</b>", and that hero is still the
+   dark navy panel. Deleting it with the rest of the dark hero styles left the
+   country name in inherited white — invisible as a highlight. */
+.sa-hero-accent {
+  color: #f87171;
+}
+
+/* Still used by the counseling band at the foot of the page, which sits on a
+   dark panel — so this one keeps its translucent-on-dark treatment. */
 .sa-btn-secondary {
   display: inline-flex;
   align-items: center;
@@ -114,49 +278,6 @@
 
 .sa-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.18);
-}
-
-/* Hero Country Cards */
-.sa-hero-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.sa-hero-country-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 14px;
-  padding: 1.2rem 1rem;
-  text-decoration: none;
-  color: #fff !important;
-  font-weight: 600;
-  font-size: 0.9rem;
-  transition: background 0.2s, transform 0.15s;
-  backdrop-filter: blur(8px);
-}
-
-.sa-hero-country-card img {
-  width: 44px;
-  height: 32px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.sa-hero-country-card:hover {
-  background: rgba(220, 38, 38, 0.25);
-  transform: translateY(-3px);
-}
-
-.sa-hero-country-count {
-  font-size: 0.76rem;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
 }
 
 /* ── Stats ── */
@@ -199,7 +320,1298 @@
   color: #94a3b8;
 }
 
-/* ── Explorer Section ── */
+/* ── One path, multiple destinations ── */
+.sa-dest {
+  background: #ffffff;
+  padding: 4rem 1.5rem 4.5rem;
+}
+
+.sa-dest-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sa-dest-title {
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 700;
+  color: #111a44;
+  margin: 0 0 0.6rem;
+}
+
+.sa-dest-accent {
+  color: #e8253c;
+}
+
+.sa-dest-sub {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+  max-width: 70ch;
+  margin: 0 0 2.5rem;
+}
+
+.sa-dest-body {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* The map is a plain <img>, not inlined: it is 730KB of path data, and inlining
+   would put every byte of that in the page's HTML on every render. Its country
+   highlights are styled inside the file itself for the same reason — see
+   scripts/fetch-destinations.mjs. */
+.sa-dest-map {
+  position: relative;
+  line-height: 0;
+}
+
+.sa-dest-map img {
+  width: 100%;
+  height: auto;
+}
+
+.sa-dest-arcs {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sa-dest-arcs path {
+  fill: none;
+  stroke: #e8253c;
+  /* `vector-effect` because the SVG is stretched non-uniformly to match the pin
+     coordinate space — without it the dashes would be scaled too, and come out
+     a different length on the horizontal runs than the vertical ones. */
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+  stroke-linecap: round;
+  opacity: 0.5;
+}
+
+/* Pins are positioned in percentages of the map box, so they hold their place at
+   any width without a resize listener. `line-height: 0` on the container above
+   is what keeps the percentages honest — an inline image otherwise leaves a few
+   pixels of baseline gap under itself and every pin drifts down by that much. */
+.sa-dest-pin {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  margin: -5.5px 0 0 -5.5px;
+  border-radius: 50%;
+  background: #e8253c;
+  box-shadow: 0 0 0 4px rgba(232, 37, 60, 0.22);
+  /* Idle pins are dimmed so the active one reads as lit rather than merely
+     larger — with all nine at full strength the highlight had to compete. */
+  opacity: 0.45;
+  transition: opacity 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* The pin for whichever country the card is showing. Scaling from the centre
+   works despite the negative margins above, because a transform scales about the
+   element's own box and leaves the margin offset alone — so the pin grows in
+   place instead of sliding off its country. */
+.sa-dest-pin.is-active {
+  opacity: 1;
+  transform: scale(1.25);
+  box-shadow: 0 0 0 5px rgba(232, 37, 60, 0.3),
+    0 0 16px 5px rgba(232, 37, 60, 0.55);
+  z-index: 2;
+}
+
+/* The pulse is a separate ring on a pseudo-element rather than an animation on
+   the pin itself: the pin already carries a `transform` for the scale, and one
+   element cannot hold both a static transform and an animated one. */
+.sa-dest-pin.is-active::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 2px solid #e8253c;
+  animation: saPinPulse 1.7s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
+}
+
+@keyframes saPinPulse {
+  from {
+    transform: scale(0.55);
+    opacity: 0.85;
+  }
+  to {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sa-dest-pin.is-active::after {
+    animation: none;
+    opacity: 0.5;
+  }
+}
+
+.sa-dest-pin-home {
+  width: 15px;
+  height: 15px;
+  margin: -7.5px 0 0 -7.5px;
+  background: #ffffff;
+  border: 4px solid #e8253c;
+  box-shadow: 0 0 0 5px rgba(232, 37, 60, 0.18);
+}
+
+/* ── the destination card ── */
+.sa-dest-card {
+  background: #0b0b0d;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #ffffff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.sa-dest-card-top {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Stands in for the city photograph the reference design uses. Those are
+     licensed stock images on upGrad's CDN and are not ours to copy, so the panel
+     is a flag on a gradient until the client supplies their own — at which point
+     `photo` in studyAbroadDestinations.js takes over and this is never seen. */
+  background: linear-gradient(140deg, #1e2a5a 0%, #0b1024 100%);
+}
+
+.sa-dest-card-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sa-dest-card-flag {
+  width: 42% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.sa-dest-badge {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.9rem;
+  background: #0b0b0d;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+}
+
+.sa-dest-card-body {
+  padding: 1.2rem 1.2rem 0.9rem;
+}
+
+.sa-dest-card-name {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem;
+}
+
+.sa-dest-card-name img {
+  width: 26px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.sa-dest-card-line {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 0.4rem;
+  line-height: 1.45;
+}
+
+.sa-dest-card-ctas {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.1rem;
+}
+
+.sa-dest-card-btn,
+.sa-dest-card-link {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sa-dest-card-btn {
+  background: #e8253c;
+  color: #fff !important;
+}
+
+.sa-dest-card-btn:hover {
+  background: #c81c31;
+}
+
+.sa-dest-card-link {
+  background: #ffffff;
+  color: #0b0b0d !important;
+}
+
+.sa-dest-card-link:hover {
+  background: #e2e8f0;
+}
+
+.sa-dest-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 1.2rem 1.1rem;
+}
+
+.sa-dest-nav button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.3rem;
+  display: inline-flex;
+  transition: color 0.2s;
+}
+
+.sa-dest-nav button:hover {
+  color: #fff;
+}
+
+/* Progress rail: how far through the eight cards you are. A <div> with a moving
+   child rather than a row of dots — eight dots at this size read as noise. */
+.sa-dest-track {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 2px;
+}
+
+.sa-dest-track span {
+  display: block;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: margin-left 0.25s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .sa-dest-body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+  }
+  .sa-dest-card {
+    width: 100%;
+    max-width: 380px;
+  }
+}
+
+/* ── "The smartest way" band ──
+   The one dark surface left on the page, sitting between the white stats bar and
+   the light-grey explorer. It is a full-bleed black band on purpose: it is what
+   marks this as a pitch rather than another list of programs. */
+.sa-smart {
+  background: #060607;
+  padding: 5rem 1.5rem;
+  color: #ffffff;
+}
+
+.sa-smart-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Pulled in off the left edge. The band is full-bleed and its 1300px content
+   column reaches almost to the window on a wide screen, so the heading was
+   starting about 30px from the glass — the cards on the right sit inside a
+   card, which gave that side an implied margin the text did not have. The inset
+   is a clamp so it disappears entirely once the two columns stack. */
+.sa-smart-text {
+  padding-inline-start: clamp(0rem, 4.5vw, 4.5rem);
+}
+
+.sa-smart-title {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  margin: 0 0 1.1rem;
+  /* In `ch`, so the two-line break holds as the font scales with the viewport
+     rather than moving around at particular widths. */
+  max-width: 15ch;
+}
+
+.sa-smart-accent {
+  color: #f4574c;
+}
+
+.sa-smart-sub {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 46ch;
+  margin: 0 0 2.4rem;
+}
+
+.sa-smart-ctas {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.sa-smart-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #f0374a;
+  color: #fff !important;
+  padding: 1.05rem 1.9rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.sa-smart-btn:hover {
+  background: #d42539;
+  transform: translateY(-2px);
+}
+
+.sa-smart-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.08rem;
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.sa-smart-link:hover {
+  gap: 0.85rem;
+}
+
+.sa-smart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+/* Each card is two halves: the figure on a near-black panel, the sentence on a
+   coloured one. `--tone` is set once per card by the `[data-tone]` rules below,
+   so the four cards share this whole block and differ by a single colour. */
+.sa-smart-card {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  /* Keeps the two coloured halves inside the rounded corners so the border sits
+     on the card's edge rather than being crossed by a square panel. */
+  overflow: hidden;
+  min-height: 150px;
+}
+
+.sa-smart-card-stat {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  /* The glow is tinted with the card's own tone rather than a fixed red, so the
+     dark half is quietly related to the coloured half instead of identical
+     across all four.
+
+     `--glow` is a second, hand-written rgba rather than `color-mix(in srgb,
+     var(--tone) 26%, transparent)`. color-mix needs Chrome 111 / Firefox 113,
+     and Lightning CSS cannot fold it to a static colour here because the input
+     is a variable — so on anything older the whole `background` shorthand is
+     invalid and dropped, taking the linear-gradient with it and leaving the
+     panel transparent. Two variables that must be kept in step is the cheaper
+     problem. */
+  background: radial-gradient(circle at 15% 85%, var(--glow) 0%, transparent 62%),
+    linear-gradient(140deg, #2a1113 0%, #14090b 100%);
+}
+
+.sa-smart-card-copy {
+  position: relative;
+  overflow: hidden;
+  padding: 1.2rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.45;
+  background-color: var(--tone);
+}
+
+/* The faint arc in the corner of each coloured panel. A ring rather than a disc,
+   scaled well past the panel so only its curve shows. */
+.sa-smart-card-copy::after {
+  content: "";
+  position: absolute;
+  /* Offset so only the top-left quadrant of the ring crosses the panel. Pushed
+     further out than this and the whole stroke clears the box, which is a
+     decoration that renders as nothing at all. */
+  right: -42%;
+  bottom: -62%;
+  width: 128%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 24px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+/* `--glow` is `--tone` at 26% alpha. Change one, change the other. */
+.sa-smart-card[data-tone="green"] {
+  --tone: #12a06a;
+  --glow: rgba(18, 160, 106, 0.26);
+}
+.sa-smart-card[data-tone="gold"] {
+  --tone: #a8791c;
+  --glow: rgba(168, 121, 28, 0.26);
+}
+.sa-smart-card[data-tone="amber"] {
+  --tone: #e0930f;
+  --glow: rgba(224, 147, 15, 0.26);
+}
+.sa-smart-card[data-tone="coral"] {
+  --tone: #f4574c;
+  --glow: rgba(244, 87, 76, 0.26);
+}
+
+@media screen and (max-width: 1000px) {
+  .sa-smart-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .sa-smart-title {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sa-smart {
+    padding: 3.5rem 1.25rem;
+  }
+  .sa-smart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* globals.css carries, under `@media (max-width: 765px)`:
+ *
+ *     h3, h4, h5, h2 { font-size: clamp(1rem, 3vw, 5rem) !important }
+ *
+ * On a phone `3vw` is under 12px, so that clamp floors every heading on the
+ * site at 16px — and the `!important` means no ordinary rule can raise it. This
+ * heading was measured at 16px on a 520px screen while reading 51px on desktop.
+ * `!important` back is the only thing that reaches it. Scoped to this one
+ * heading deliberately: the global rule is site-wide and deliberate-looking, and
+ * overriding it everywhere is a decision for the client, not a side effect of
+ * resizing one section. See the 2026-08-13 CHANGELOG entry.
+ */
+@media screen and (max-width: 765px) {
+  .sa-smart-title {
+    font-size: clamp(1.75rem, 6.5vw, 2.6rem) !important;
+  }
+}
+
+/* ── Globally acclaimed domains ── */
+.sa-goal {
+  background: #ffffff;
+  padding: 4rem 1.5rem 4.5rem;
+}
+
+.sa-goal-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sa-goal-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #111a44;
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
+}
+
+.sa-goal-accent {
+  color: #e8253c;
+}
+
+.sa-goal-sub {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.6;
+  max-width: 75ch;
+  margin: 0 0 2.5rem;
+}
+
+.sa-goal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* A <button>, so it needs the browser's button styling stripped: these filter
+   the catalog below rather than navigating, and `text-align: left` matters
+   because a button centres its contents by default and the card is a stack of
+   left-aligned text. */
+.sa-goal-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #2a0f12;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sa-goal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.2);
+}
+
+.sa-goal-card.is-active {
+  box-shadow: 0 0 0 3px #e8253c;
+}
+
+/* The red sweeps stay behind the photo rather than being replaced by it: they
+   are what the card falls back to if an image ever fails, and they tint the
+   edges of photos that were not shot for this crop. */
+.sa-goal-card-art {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  background: radial-gradient(
+      circle at 78% 18%,
+      #f0374a 0%,
+      #f0374a 38%,
+      transparent 39%
+    ),
+    radial-gradient(circle at 22% 96%, #e8253c 0%, #e8253c 46%, transparent 47%),
+    #fbdcdf;
+}
+
+.sa-goal-card-art img {
+  width: 100%;
+  height: 100%;
+  /* `cover`, with the focus high: every one of these is a person, and a centred
+     crop of a 3:2 photo into a 16:11 panel cuts heads off. */
+  object-fit: cover;
+  /* Overridden per photo from the data; this is the fallback. */
+  object-position: 50% 25%;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.sa-goal-card:hover .sa-goal-card-art img {
+  transform: scale(1.04);
+}
+
+/* A warm scrim from the card's own dark body up into the photo, so the join
+   between the two halves is a gradient rather than a hard seam. */
+.sa-goal-card-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 15, 18, 0) 55%,
+    rgba(42, 15, 18, 0.55) 100%
+  );
+  pointer-events: none;
+}
+
+.sa-goal-credits {
+  margin: 1.6rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+.sa-goal-credits a {
+  color: #64748b;
+  text-decoration: underline;
+}
+
+.sa-goal-credits a:hover {
+  color: #e8253c;
+}
+
+.sa-goal-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1.2rem 1.15rem 1.5rem;
+  flex: 1;
+}
+
+.sa-goal-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.sa-goal-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.22;
+}
+
+.sa-goal-card-tagline {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.45;
+}
+
+/* Sits above the country tabs while a domain card is filtering the catalog. */
+.sa-goal-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid #fca5a5;
+  border-radius: 20px;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.sa-goal-chip:hover {
+  background: #fecaca;
+}
+
+@media screen and (max-width: 1000px) {
+  .sa-goal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sa-goal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── University partners ──
+   A wall of the catalog's university logos beside the claim they back up. Sits
+   between the domain cards and the explorer.
+
+   White, and with no rule under it, so it reads as part of the same white run
+   as "Globally acclaimed domains" above rather than as a band of its own. The
+   first cut put it on the explorer's tint, which drew a line across the page
+   where the two backgrounds met and then needed a second line at the bottom to
+   keep it from merging into the explorer — two borders solving a problem the
+   tint had created. The explorer's own tint still opens cleanly below this. */
+.sa-partners {
+  background: #ffffff;
+  padding: 4rem 1.5rem;
+  overflow: hidden;
+}
+
+.sa-partners-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-areas: "wall copy";
+  align-items: center;
+  gap: 3rem;
+}
+
+.sa-partners-copy {
+  grid-area: copy;
+}
+
+.sa-partners-title {
+  font-size: clamp(1.6rem, 2.9vw, 2.4rem);
+  font-weight: 700;
+  color: #111a44;
+  line-height: 1.25;
+  margin: 0 0 1.8rem;
+}
+
+.sa-partners-wall {
+  grid-area: wall;
+  display: grid;
+  gap: 1.5rem;
+  /* The rows run past both edges of this box rather than stopping at them, so
+     the ends are faded out instead of cut off — without it a logo is chopped in
+     half against the page background at whatever moment the loop is at. */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 5%,
+    #000 95%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 5%,
+    #000 95%,
+    transparent
+  );
+}
+
+.sa-partners-row {
+  overflow: hidden;
+}
+
+.sa-partners-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  /* Not a percentage: the track has to be as wide as its contents for the -50%
+     below to land on exactly one copy of the row. */
+  width: max-content;
+  animation: saPartnerScroll 60s linear infinite;
+}
+
+/* Opposite directions, which is what stops the two rows reading as one block
+   sliding sideways. `reverse` rather than a second keyframe set. */
+.sa-partners-row:nth-child(even) .sa-partners-track {
+  animation-direction: reverse;
+}
+
+/* Long enough to read a name on the way past. Hovering anywhere in the wall
+   holds both rows, not just the one under the pointer. */
+.sa-partners-wall:hover .sa-partners-track {
+  animation-play-state: paused;
+}
+
+@keyframes saPartnerScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* one full copy of the row — the second copy is now where the first was,
+       and the restart is invisible */
+    transform: translateX(-50%);
+  }
+}
+
+.sa-partner-logo {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  /* globals.css sets `img { width: 100%; height: 100% }`, which on a logo whose
+     natural shape is a wide wordmark stretches it to whatever box it lands in.
+     These are 62 SVGs of no common aspect ratio, so the box is sized here and
+     the image is told to fit inside it rather than fill it. */
+  width: 150px;
+}
+
+.sa-partner-logo img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Most of these are dark marks on white; the tint behind them is light enough
+     that they need nothing else, but a few carry their own white plate. */
+  mix-blend-mode: multiply;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sa-partners-track {
+    animation: none;
+  }
+  /* With nothing moving, the row is just a list too wide for its box, so give
+     it back the ordinary way to see the rest of it. */
+  .sa-partners-row {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .sa-partners-row::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sa-partners-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "wall";
+    gap: 2.5rem;
+  }
+}
+
+/* ── Top Pathway Programs ──
+   The one dark band on an otherwise light page, which is what makes it read as
+   the centre of it. The gradient is the app-switcher strip's own palette from
+   navbar.css rather than a new maroon, so the page's two dark surfaces are the
+   same colour. */
+.sa-pathways {
+  background: radial-gradient(
+    120% 130% at 50% 0%,
+    #7a1c10 0%,
+    #43100a 48%,
+    #2b0a06 100%
+  );
+  padding: 4rem 1.5rem 4.5rem;
+  color: #fff;
+  /* Three things on this page scroll to `#sa-explorer` with `block: "start"`,
+     which lands the section's top edge at the top of the viewport — behind the
+     fixed navbar, so the heading and the first tabs arrived hidden. Tracks the
+     app-switcher strip the same way the page offsets do. */
+  scroll-margin-top: 133px;
+}
+
+@media screen and (min-width: 766px) {
+  body.appbar-collapsed .sa-pathways {
+    scroll-margin-top: calc(133px - 63px);
+  }
+}
+
+.sa-pathways-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.6rem;
+}
+
+.sa-pathways-sub {
+  font-size: 1.02rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
+  max-width: 70ch;
+  margin: 0 0 2rem;
+}
+
+/* ── field tabs + row arrows ── */
+.sa-pathway-head {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sa-pathway-tabs {
+  display: flex;
+  gap: 0.4rem;
+  /* Eight fields do not fit across a laptop, and wrapping them onto a second
+     row makes the band top-heavy. Scrolls instead. `min-width: 0` is what lets
+     it actually shrink inside the flex row above — without it the tabs push the
+     arrows off the end rather than scrolling. */
+  min-width: 0;
+  flex: 1;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  /* Fades the last tab out at the right edge instead of slicing it in half
+     through its count badge, which read as a broken layout rather than as "the
+     row continues". Applied unconditionally, which is safe: the tabs are
+     left-aligned in a `flex: 1` box, so when there are few enough to fit — four
+     of them under a domain filter — the faded strip has nothing in it. */
+  -webkit-mask-image: linear-gradient(to right, #000 88%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 88%, transparent 100%);
+}
+
+.sa-pathway-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.sa-pathway-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex: none;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.66);
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  /* The underline is a border on the button itself rather than an ::after, so
+     the inactive tabs reserve the same 2px and the row does not shift by two
+     pixels every time the selection moves. */
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.sa-pathway-tab:hover {
+  color: #fff;
+}
+
+.sa-pathway-tab.is-active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.sa-pathway-tab-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* ── the card row ── */
+.sa-pathway-deck {
+  position: relative;
+}
+
+/* Flex, not grid, and that is load-bearing. The first cut sized the row with
+   `grid-auto-columns: minmax(0, calc((100% - 3rem) / 3))`, but a percentage
+   track inside an `overflow-x: auto` grid resolves against an indefinite width
+   and collapses: Chrome computed `grid-template-columns` as `0px 0px 0px …` and
+   every card came out 32px wide — its arrow button and nothing else. A flex
+   item's percentage basis resolves against the container's own width, which is
+   the 1300px column and not the 1958px of cards inside it. */
+.sa-pathway-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  /* Room for the cards' hover lift, which `overflow-x` would otherwise clip
+     along the top and bottom edges. */
+  padding: 4px 4px 8px;
+  margin: -4px -4px -8px;
+}
+
+.sa-pathway-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Four across, not three. At three the card came out 417px wide against about
+   370px tall — wider than it was high, which is what read as "square" rather
+   than as a card. The reference's are portrait, roughly 380x480, and the only
+   way to reach that shape at a fixed 1300px column is to narrow the card: four
+   of them is 307px against ~400px tall. It also puts a fourth program on screen
+   in a band that has 205 of them. */
+.sa-pathway-track > .sa-pathway-card {
+  flex: 0 0 calc((100% - 4.5rem) / 4);
+}
+
+/* Expanded: the same element stops being a scrolling row and becomes a block.
+   Grid here rather than `flex-wrap`, because a wrapped flex row leaves the last
+   line stretched or ragged depending on the count, and this is 76 cards deep. */
+.sa-pathway-track.is-expanded {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  overflow-x: visible;
+  scroll-snap-type: none;
+}
+
+/* Portrait, not square. The first cut was a squat card — an 84px logo panel and
+   a 1rem title — which at a third of a 1300px column came out wider than it was
+   interesting. The proportions here are the reference's: the logo gets the room
+   to be looked at, and the title is the largest thing on the card. */
+.sa-pathway-card {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  background: #fff;
+  color: #0f172a;
+  border-radius: 12px;
+  /* No padding: the head rule has to run the full width of the card, so the
+     padding lives on the two sections instead. */
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sa-pathway-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.sa-pathway-card-head {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sa-pathway-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem;
+  /* Takes the remaining height so `margin-top: auto` on the actions can push
+     them to the bottom of the card rather than to the bottom of the text. */
+  flex: 1;
+}
+
+.sa-pathway-where {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  /* Warm tint rather than the page's cool grey, which is what lifts this chip
+     off a white card instead of letting it disappear into one. */
+  background: #fdf3e3;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.sa-pathway-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  padding: 1.1rem;
+  border-radius: 8px;
+  /* A tinted plate, not a bordered white box. Most of these marks are dark on
+     transparent, and several carry their own white plate — on white they had no
+     edge at all and floated in the card. */
+  background: #f6f8fb;
+}
+
+/* globals.css sets `img { width: 100%; height: 100% }` — see the same note on
+   the partner wall. Both the flag and the logo need their box given here. */
+.sa-pathway-logo img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.sa-pathway-uni {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  min-width: 0;
+}
+
+.sa-pathway-uni img {
+  width: 18px;
+  height: 13px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex: none;
+}
+
+/* The ellipsis goes on the name, not on the flex row around it — `overflow` on
+   the row clips the flag off instead of truncating the text beside it. These
+   run to "D'Amore McKim School of Business Northeastern University", so one
+   line with an ellipsis is what keeps the card heights level. */
+.sa-pathway-uni span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sa-pathway-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111a44;
+  line-height: 1.3;
+  margin: 0;
+  /* Two lines, then ellipsis. Titles range from "MBA IBM at XAMK Finland" to
+     "MS in Data Analytics Engineering at Northeastern University - College of
+     Engineering", and left free the longest ones set the height of every card
+     in the row. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* Holds the two lines whether the title needs them or not, so the actions
+     below sit on the same baseline across the row. */
+  min-height: 2.6em;
+}
+
+.sa-pathway-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* Pins the pair to the bottom however tall the rest of the card came out. */
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+/* inline-flex rather than the plain centred block this was, so the download
+   glyph sits on the text's optical centre instead of its baseline — on a
+   700-weight 0.85rem label a baseline-aligned icon rides visibly low. `flex: 1`
+   still applies: this is a flex child either way. */
+.sa-pathway-cta {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  text-align: center;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  background: #e8253c;
+  color: #fff !important;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+/* The glyph reads heavier than the text at a matched size, so it is set a
+   little under 1em. `flex: none` keeps it from being squeezed by a long
+   programme name in a narrow card. */
+.sa-pathway-cta svg {
+  font-size: 0.9em;
+  flex: none;
+}
+
+.sa-pathway-cta:hover {
+  background: #c81c31;
+}
+
+.sa-pathway-go {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  color: #e8253c;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.sa-pathway-go:hover {
+  background: #fef2f3;
+  border-color: #e8253c;
+}
+
+/* ── row arrows ── */
+.sa-pathway-navs {
+  display: flex;
+  gap: 0.5rem;
+  flex: none;
+  padding-bottom: 2px;
+}
+
+.sa-pathway-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.sa-pathway-nav:hover {
+  background: #e8253c;
+  border-color: #e8253c;
+}
+
+.sa-pathway-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.sa-pathway-viewall {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.sa-pathway-viewall:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .sa-pathway-track > .sa-pathway-card {
+    flex-basis: calc((100% - 3rem) / 3);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sa-pathway-track > .sa-pathway-card {
+    flex-basis: calc((100% - 1.5rem) / 2);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .sa-pathway-track > .sa-pathway-card {
+    /* Deliberately not 100%: the sliver of the next card showing past the edge
+       is what says the row scrolls, with the arrows gone at this width. */
+    flex-basis: 84%;
+  }
+  /* The tabs need the whole width at this size, and the row is swipeable. */
+  .sa-pathway-navs {
+    display: none;
+  }
+}
+
+/* ── Explorer Section ──
+   The band this styled was replaced by the pathway programs above; the rules
+   stay because `CountryPageClient.jsx` renders the same program cards, category
+   filters and empty state on every country page. */
 .sa-explorer {
   background: #f8fafc;
   padding: 4rem 1.5rem;
@@ -217,60 +1629,9 @@
   margin-bottom: 2rem;
 }
 
-/* Country Tabs */
-.sa-country-tabs {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.5rem;
-}
-
-.sa-country-tab {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 1rem;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 8px;
-  background: #fff;
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: #475569;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.sa-country-tab:hover {
-  border-color: #dc2626;
-  color: #dc2626;
-}
-
-.sa-country-tab.active {
-  background: #dc2626;
-  border-color: #dc2626;
-  color: #fff;
-}
-
-.sa-country-tab.active .sa-tab-count {
-  background: rgba(255, 255, 255, 0.25);
-  color: #fff;
-}
-
-.sa-tab-flag {
-  width: 20px;
-  height: 14px;
-  object-fit: cover;
-  border-radius: 3px;
-}
-
-.sa-tab-count {
-  background: #f1f5f9;
-  color: #64748b;
-  padding: 0.1rem 0.45rem;
-  border-radius: 10px;
-  font-size: 0.74rem;
-  font-weight: 700;
-}
+/* The country tab strip that stood here went with "Explore Programs by
+   Country". Nothing else rendered it — the country pages use the category
+   filters below, and the destinations themselves are in "All Destinations". */
 
 /* Category Filters */
 .sa-category-filters {
@@ -328,7 +1689,12 @@
 
 .sa-program-card {
   display: grid;
-  grid-template-columns: 60px 1fr auto;
+  /* First track is `auto`, not a hard 60px, so it always measures whatever
+     `.sa-program-logo` below is. The literal used to be 60px against a 52px
+     logo box — 8px of slack that hid the coupling, so widening the box to fit
+     the wordmarks pushed it straight through the next column and the logo
+     printed on top of the course title. */
+  grid-template-columns: auto 1fr auto;
   gap: 1rem;
   align-items: center;
   background: #fff;
@@ -344,8 +1710,12 @@
   transform: translateY(-2px);
 }
 
+/* Wide, not square — same reason as `.study-abroad-logo-wrapper` in
+   Components/styles/studyAbroadMegaMenu.css: the catalog's logos are wordmarks
+   averaging 2.94:1, and a square box letterboxed them down to an unreadable
+   strip. Used by the country pages too, via CountryPageClient.jsx. */
 .sa-program-logo {
-  width: 52px;
+  width: 80px;
   height: 52px;
   background: #f8fafc;
   border: 1px solid #f1f5f9;
@@ -361,6 +1731,15 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* Without this the `1fr` track cannot shrink below the widest university name,
+   because a grid item's automatic minimum is its min-content and the name below
+   is `white-space: nowrap`. The ellipsis on it therefore never engaged — the
+   name simply ran out over the Apply link instead. Visible on the longest of
+   them, "D'Amore McKim School of Business Northeastern University". */
+.sa-program-info {
+  min-width: 0;
 }
 
 .sa-program-university {
@@ -401,11 +1780,6 @@
 
 .sa-program-cta:hover {
   color: #991b1b;
-}
-
-.sa-view-all-wrap {
-  margin-top: 2rem;
-  text-align: center;
 }
 
 .sa-empty {
@@ -517,16 +1891,11 @@
   background: #f1f5f9;
 }
 
-/* ── Responsive ── */
+/* ── Responsive ──
+   The hero has nothing to reflow any more — it is a fixed-height band holding
+   only the video and its wash, and it sizes itself with `clamp` at the top of
+   this file. */
 @media screen and (max-width: 900px) {
-  .sa-hero-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .sa-hero-cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
   .sa-stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -545,10 +1914,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .sa-hero-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .sa-stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -570,18 +1935,4 @@
     grid-template-columns: 1fr;
   }
 
-  .sa-country-tabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
-    scrollbar-width: none;
-  }
-
-  .sa-country-tabs::-webkit-scrollbar {
-    display: none;
-  }
-
-  .sa-country-tab {
-    white-space: nowrap;
-  }
 }

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Red Gradient -->
+    <linearGradient id="appRedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3B30" />
+      <stop offset="100%" stop-color="#800000" />
+    </linearGradient>
+
+    <!-- Paper Gradient -->
+    <linearGradient id="paperGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFEBEE" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#4A0000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Base Circular Background -->
+  <circle cx="256" cy="256" r="230" fill="url(#appRedBg)" />
+
+  <!-- Outer Dashed Orbit Ring -->
+  <circle cx="256" cy="256" r="198" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="8 8" opacity="0.35" />
+
+  <g filter="url(#shadow)">
+    <!-- Clipboard Base Board -->
+    <rect x="126" y="110" width="260" height="330" rx="20" fill="#660000" stroke="#FFFFFF" stroke-width="4" />
+    
+    <!-- Application Paper Document -->
+    <rect x="146" y="130" width="220" height="290" rx="10" fill="url(#paperGrad)" />
+
+    <!-- Top Clipboard Clip -->
+    <rect x="206" y="94" width="100" height="28" rx="8" fill="#E0E0E0" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="256" cy="108" r="6" fill="#800000" />
+
+    <!-- Form Fields / Checkboxes -->
+    <!-- Row 1 (User Info / Name) -->
+    <rect x="176" y="175" width="22" height="22" rx="4" fill="#4CAF50" />
+    <path d="M 181 186 L 185 191 L 193 180" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="210" y="181" width="126" height="10" rx="5" fill="#D32F2F" />
+
+    <!-- Row 2 (Details) -->
+    <rect x="176" y="220" width="22" height="22" rx="4" fill="#4CAF50" />
+    <path d="M 181 231 L 185 236 L 193 225" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="210" y="226" width="100" height="10" rx="5" fill="#B71C1C" opacity="0.7" />
+
+    <!-- Row 3 (Selection) -->
+    <rect x="176" y="265" width="22" height="22" rx="4" fill="#4CAF50" />
+    <path d="M 181 276 L 185 281 L 193 270" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="210" y="271" width="136" height="10" rx="5" fill="#B71C1C" opacity="0.7" />
+
+    <!-- Row 4 (Text Lines) -->
+    <rect x="176" y="316" width="170" height="8" rx="4" fill="#E0E0E0" />
+    <rect x="176" y="334" width="130" height="8" rx="4" fill="#E0E0E0" />
+
+    <!-- User Profile Photo Badge on Form -->
+    <circle cx="320" cy="180" r="16" fill="#FFCDD2" />
+    <circle cx="320" cy="174" r="6" fill="#D32F2F" />
+    <path d="M 310 190 C 310 184, 314 182, 320 182 C 326 182, 330 184, 330 190 Z" fill="#D32F2F" />
+
+    <!-- Signature Pen / Stylus Overlay -->
+    <g transform="translate(290, 270) rotate(-35)">
+      <rect x="0" y="0" width="16" height="110" rx="4" fill="#FFD700" stroke="#B71C1C" stroke-width="2" />
+      <polygon points="0,110 16,110 8,130" fill="#FFFFFF" stroke="#B71C1C" stroke-width="2" />
+      <polygon points="6,125 10,125 8,130" fill="#333333" />
+      <rect x="0" y="-10" width="16" height="10" rx="2" fill="#D32F2F" />
+    </g>
+  </g>
+</svg>

@@ -10,28 +10,24 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { getStoredUser } from "../Helper/Helper";
 import { AllCourse, onlineCourseDetails } from "../Helper/Helper";
-// App-switcher (top bar) icons
-import {
-  FaGift,
-  FaLaptopCode,
-  FaGlobe,
-  FaWpforms,
-  FaHeadset,
-} from "react-icons/fa";
-import { BsStars } from "react-icons/bs";
+// The app-switcher's six react-icons glyphs (FaGift, BsStars, FaLaptopCode,
+// FaGlobe, FaWpforms, FaHeadset) are gone — the bar now uses the supplied
+// badge SVGs from `public/nav-icons/`. Both react-icons packages went with
+// them; nothing else in this file imported from `react-icons/fa` or `/bs`.
 import "./styles/aiass.css";
 
 /**
  * Toggle glyph for the app-switcher bar: a full 3x3 grid of dots (the classic
  * square app-grid), filled out from the earlier "U" arrangement.
  */
-const UDots = () => (
+const UDots = ({ className }) => (
   <svg
     viewBox="0 0 24 24"
     width="1em"
     height="1em"
     fill="currentColor"
     aria-hidden="true"
+    className={className}
   >
     {[4.5, 12, 19.5]
       .flatMap((cy) => [4.5, 12, 19.5].map((cx) => [cx, cy]))
@@ -56,22 +52,34 @@ const Navbar = () => {
   // Layer 1 — the collapsible Adobe-style app switcher. Its items are simple
   // shortcuts. "Online Courses" carries a default nav-state so the destination
   // page renders instead of bouncing to "/" (it redirects when opened cold).
+  // Every item now carries `img` rather than `Icon`: the six client-supplied
+  // badge SVGs in `public/nav-icons/` replaced the react-icons glyphs. The
+  // `Icon` branch is kept in the markup below, not deleted — it is what renders
+  // if an item is ever added without artwork.
   const appShortcuts = [
-    { name: "Refer & Earn", href: "/refer-and-earn", Icon: FaGift },
-    { name: "AI Assistance", href: "/ai", Icon: BsStars },
+    {
+      name: "Refer & Earn",
+      href: "/refer-and-earn",
+      img: "/nav-icons/refer-and-earn.svg",
+    },
+    { name: "AI Assistance", href: "/ai", img: "/nav-icons/ai-assistance.svg" },
     {
       name: "Online Courses",
       href: `/online-course/${onlineCourseDetails[0].name}`,
       state: { course: onlineCourseDetails[0] },
-      Icon: FaLaptopCode,
+      img: "/nav-icons/online-courses.svg",
     },
-    { name: "Study Abroad", href: "/study-abroad", Icon: FaGlobe },
+    {
+      name: "Study Abroad",
+      href: "/study-abroad",
+      img: "/nav-icons/study-abroad.svg",
+    },
     {
       name: "Common Application Form",
       href: "/common-application-form",
-      Icon: FaWpforms,
+      img: "/nav-icons/common-application-form.svg",
     },
-    { name: "Contact", href: "/contact", Icon: FaHeadset },
+    { name: "Contact", href: "/contact", img: "/nav-icons/contact.png" },
   ];
 
   // Layer 2 — the main-bar links that sit beside the logo.
@@ -95,6 +103,20 @@ const Navbar = () => {
 
   // Top app-switcher bar open/closed, toggled by the dots-grid button.
   const [appBarOpen, setAppBarOpen] = useState(true);
+  // Bumped on every swap of the strip. The dots button changes bar, size and
+  // colour in one step now instead of gliding across, and this drives the
+  // flicker that covers the cut — see `dotsSwap` in navbar.css.
+  //
+  // A counter feeding the glyph's `key`, rather than a boolean class: an
+  // already-running CSS animation does not restart when its class is re-applied
+  // to the same element, so a second click inside the 0.45s would have snapped
+  // the button in plain sight. A changing key remounts the <svg>, and a fresh
+  // element always starts its animation from zero. Only the decorative glyph is
+  // replaced — the <button> around it keeps its focus and its ARIA state.
+  //
+  // Starts at 0 and the class is withheld at 0, so the flicker cannot fire on
+  // first paint; it belongs to the click, not to the initial render.
+  const [dotsSwaps, setDotsSwaps] = useState(0);
   // On a phone the same shortcuts open as a bottom sheet instead. Six of them
   // never fit across a phone, so the strip became a horizontal scroller with
   // everything past "Online Courses" off-screen and nothing to say so.
@@ -151,6 +173,20 @@ const Navbar = () => {
       : document.body.classList.remove("active");
   }, [isMenuIcon]);
 
+  // <nav> is fixed, so collapsing the app-switcher strip takes 63px off the bar
+  // without moving anything below it — and `.top`, the offset every page uses
+  // to clear the navbar, is a flat 100px in globals.css. Flagging the collapsed
+  // state on <body> lets that offset shrink by the same amount; without it the
+  // gap under the bar grew from flush to 56px the moment the strip was shut.
+  //
+  // A class rather than a style property so the breakpoints stay in the
+  // stylesheet, and its own class rather than the `active` one above, which the
+  // burger menu owns — sharing it would have either one unlock both.
+  useEffect(() => {
+    document.body.classList.toggle("appbar-collapsed", !appBarOpen);
+    return () => document.body.classList.remove("appbar-collapsed");
+  }, [appBarOpen]);
+
   // Esc closes the sheet, and the page behind it is frozen: without the lock a
   // drag that starts on the scrim scrolls the page under the sheet.
   // An inline style rather than the `active` class the burger menu uses —
@@ -179,15 +215,22 @@ const Navbar = () => {
       <button
         type="button"
         className="appGrid"
-        onClick={() =>
-          isPhone ? setSheetOpen((o) => !o) : setAppBarOpen((o) => !o)
-        }
+        onClick={() => {
+          // The phone path opens the bottom sheet and leaves the strip alone,
+          // so there is no swap to cover and nothing to flicker.
+          if (isPhone) {
+            setSheetOpen((o) => !o);
+            return;
+          }
+          setAppBarOpen((o) => !o);
+          setDotsSwaps((n) => n + 1);
+        }}
         aria-label="Toggle quick menu"
         aria-expanded={isPhone ? sheetOpen : appBarOpen}
         aria-controls={isPhone ? "app-switcher-sheet" : "app-switcher"}
         title="Quick menu"
       >
-        <UDots />
+        <UDots key={dotsSwaps} className={dotsSwaps ? "dotsSwap" : undefined} />
       </button>
 
       {/* Layer 1 — collapsible app-switcher bar (desktop only; phones get the
@@ -285,10 +328,19 @@ const Navbar = () => {
           {/* Remaining Layer-2 links + More */}
           <div className={`menu-links ${isMenuIcon ? "active" : ""}`}>
             <ul className="links">
+              {/* onMouseEnter is on every item, not just Study Abroad: hovering
+                  any other link in the row now closes the mega menu. Leaving
+                  that to the panel's own onMouseLeave was survivable while the
+                  panel hung off the left edge of the screen, but it opens
+                  centred over the page now, and sliding along the row to
+                  "Explore City" would leave it sitting there. Safe on the whole
+                  <li> — mouseenter does not re-fire for descendants, so the
+                  panel, a child of the Study Abroad <li>, never trips a
+                  sibling's handler. */}
               {topNav.map((link) => (
                 <li
                   key={link.name}
-                  onMouseEnter={() => link.isStudyAbroad && setStudyAbroadOpen(true)}
+                  onMouseEnter={() => setStudyAbroadOpen(!!link.isStudyAbroad)}
                 >
                   <Link
                     href={link.href}

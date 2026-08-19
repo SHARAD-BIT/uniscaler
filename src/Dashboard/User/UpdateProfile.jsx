@@ -37,7 +37,9 @@ const UpdateProfile = () => {
   const navigate = useRouter();
   useEffect(() => {
     const timer = setTimeout(() => {
-      isUpdate && navigate.replace("dashboard");
+      // Absolute, for the same reason as the admin login redirect: a bare
+      // "dashboard" resolves to /dashboard here, not /user-dashboard/dashboard.
+      isUpdate && navigate.replace("/user-dashboard/dashboard");
     }, 3000);
     return () => {
       clearTimeout(timer);

@@ -2,6 +2,19 @@
 
 .cp-page {
   padding-top: 100px;
+  transition: padding-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Its own navbar offset rather than the site-wide `.top`, so it needs the same
+   correction — see the note on `.top` in globals.css. */
+@media screen and (min-width: 766px) {
+  body.appbar-collapsed .cp-page {
+    padding-top: calc(100px - 63px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cp-page {
+    transition-duration: 0.01ms;
+  }
 }
 
 .cp-breadcrumb {

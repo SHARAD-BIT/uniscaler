@@ -41,9 +41,6 @@ const StudyAbroadMegaMenu = ({ onClose }) => {
                   loading="lazy"
                 />
                 <span>{country.name}</span>
-                <span className="study-abroad-country-badge">
-                  {country.totalPrograms}
-                </span>
                 <FaChevronRight
                   style={{
                     fontSize: "0.75rem",

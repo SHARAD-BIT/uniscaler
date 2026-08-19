@@ -1,12 +1,31 @@
 /* upGrad-style Study Abroad Mega Menu Dropdown */
+
+/* Fixed, not absolute. The trigger is `nav .menu-links > .links > li`, which
+   carries `position: relative` — so an absolute panel anchored to that list
+   item, and `left: 50%` centred this 1280px sheet on a ~130px link sitting near
+   the left of the bar. Most of it hung off the left edge of the screen and the
+   countries column was unreachable. `.menu-links` and `.courseController` in
+   navbar.css are fixed for exactly this reason; this now matches them.
+
+   <nav> is `position: fixed` with a `transform`, so it — not the viewport — is
+   the containing block here. That costs nothing horizontally: nav's box is the
+   viewport (`left: 50%` pulled back by `translateX(-50%)`, `width: 100%`), so
+   `left: 50%` centres on the screen under either reading. `top` is deliberately
+   in px off the same `--bar-h` / `--app-h` variables the rest of the bar keeps
+   current, never a percentage — a percentage resolves against nav's height in
+   one reading and the viewport's in the other, and those differ by ~800px. */
 .study-abroad-mega-menu {
-  position: absolute;
-  top: calc(100% + 2px);
+  position: fixed;
+  top: calc(var(--bar-h) + 2px);
   left: 50%;
   transform: translateX(-50%);
   width: min(1280px, 96vw);
-  max-height: 580px;
   height: 580px;
+  /* Never taller than what is left of the screen below the bar. The panel is a
+     flat 580px and a laptop viewport is not, so its foot — the country list and
+     the "View all countries" button — sat under the bottom of the window. Both
+     columns already scroll inside it. */
+  max-height: calc(100vh - var(--bar-h) - 1.5rem);
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.06);
@@ -25,6 +44,28 @@
   to {
     opacity: 1;
     transform: translate(-50%, 0);
+  }
+}
+
+/* The drawer variant of the same fade, with the centring transform left out —
+   see the note in the 1180px block at the foot of this file. */
+@keyframes megaMenuFadeInPlace {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* The app-switcher strip sits above the glass bar and adds its own height when
+   open, so the panel has to start below both. Scoped to the desktop band on
+   purpose: below 1180px the block at the foot of this file drops the panel back
+   into the flow of the burger drawer, where `top` means nothing. */
+@media screen and (min-width: 1181px) {
+  nav.appbar-open .study-abroad-mega-menu {
+    top: calc(var(--app-h) + var(--bar-h) + 2px);
+    max-height: calc(100vh - var(--app-h) - var(--bar-h) - 1.5rem);
   }
 }
 
@@ -91,22 +132,30 @@
   flex-shrink: 0;
 }
 
-.study-abroad-country-badge {
-  margin-left: auto;
-  font-size: 0.72rem;
-  font-weight: 600;
-  background-color: #e2e8f0;
-  color: #475569;
-  padding: 0.15rem 0.45rem;
-  border-radius: 12px;
-}
+/* ---------------------------------------------------------------------------
+   Every <a> in this panel is prefixed `nav .menu-links .study-abroad-mega-menu`,
+   and that prefix is load-bearing, not decoration. navbar.css has:
 
-.study-abroad-country-item.active .study-abroad-country-badge {
-  background-color: #fca5a5;
-  color: #991b1b;
-}
+       nav .menu-links > .links > li a { display: block; padding: 0.5rem 1rem;
+                                         font-size: 1.1rem; color: var(--accent);
+                                         border-radius: 5px }
 
-.study-abroad-view-all-btn {
+   written for the six top-level nav links. The panel renders inside one of those
+   <li>s, so the descendant combinator reaches every anchor in here as well, at
+   specificity 0,2,3 — which beat every single-class rule this file could write.
+   That is why the course logo sat on its own line *above* the title instead of
+   beside it: `display: flex` on the card never applied, and the card was a plain
+   block the whole time. It also handed the panel 1.1rem text and 0.5rem/1rem of
+   padding it never asked for.
+
+   Count the prefix carefully before shortening it. `nav .menu-links .x` is
+   (0,2,1) and *loses* to that rule's (0,2,3) — equal classes, fewer elements.
+   Three classes is the bar, which is what the `.study-abroad-mega-menu` in the
+   middle is buying. Keep the prefix on any anchor rule added here later, or
+   navbar.css silently takes it back.
+   --------------------------------------------------------------------------- */
+
+nav .menu-links .study-abroad-mega-menu .study-abroad-view-all-btn {
   margin-top: 1rem;
   display: inline-flex;
   align-items: center;
@@ -123,7 +172,7 @@
   box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25);
 }
 
-.study-abroad-view-all-btn:hover {
+nav .menu-links .study-abroad-mega-menu .study-abroad-view-all-btn:hover {
   background-color: #b91c1c;
   transform: translateY(-1px);
 }
@@ -160,7 +209,7 @@
   border-radius: 4px;
 }
 
-.study-abroad-header-link {
+nav .menu-links .study-abroad-mega-menu .study-abroad-header-link {
   font-size: 0.88rem;
   font-weight: 700;
   color: #dc2626;
@@ -171,7 +220,7 @@
   transition: color 0.2s ease;
 }
 
-.study-abroad-header-link:hover {
+nav .menu-links .study-abroad-mega-menu .study-abroad-header-link:hover {
   color: #991b1b;
   text-decoration: underline;
 }
@@ -183,6 +232,11 @@
   gap: 0.75rem;
 }
 
+/* The label sits on a rule that runs out to the right edge of the panel, which
+   is what separates one category from the next now that the courses themselves
+   carry no border. The rule is an ::after flex child rather than a
+   `border-bottom` on the heading: a border would run under the text as well,
+   and it has to start after a label of unknown width. */
 .study-abroad-category-title {
   font-size: 0.82rem;
   font-weight: 800;
@@ -190,39 +244,58 @@
   letter-spacing: 0.06em;
   color: #64748b;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.study-abroad-category-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #e2e8f0;
 }
 
 .study-abroad-courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 0.85rem;
+  /* 360, not 320: at the panel's ~980px content width 320 fits three columns,
+     and three columns leave the degree titles wrapping to three lines each. */
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 0.35rem 1.5rem;
 }
 
-.study-abroad-course-card {
+/* Borderless. Twenty of these boxed and outlined at once read as a wall of
+   containers rather than a list of courses; the category rules above already do
+   the dividing. Hover is a flat tint — no lift, no shadow — because a card that
+   rises off the page needs an edge to rise from, and there is no longer one. */
+nav .menu-links .study-abroad-mega-menu .study-abroad-course-card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.85rem;
-  padding: 0.85rem;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  padding: 0.55rem 0.6rem;
+  border-radius: 8px;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background-color 0.15s ease;
 }
 
-.study-abroad-course-card:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+nav .menu-links .study-abroad-mega-menu .study-abroad-course-card:hover {
+  background-color: #f8fafc;
 }
 
+/* A compact tile, but wider than it is tall. The reference design uses a square
+   here and it works there because those logos are square marks; the logos in
+   this catalog are co-branded wordmarks, median aspect ratio 2.94:1 and widest
+   5.28:1 measured across all 81 files. `object-fit: contain` in a square would
+   letterbox the typical one down to an unreadable strip — which is what made
+   these read as failed images in the first place. 60x44 keeps the tile small
+   enough not to compete with the course title and still shows the wordmark. */
 .study-abroad-logo-wrapper {
-  width: 44px;
+  width: 60px;
   height: 44px;
   flex-shrink: 0;
   border-radius: 8px;
-  background-color: #f8fafc;
-  border: 1px solid #f1f5f9;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,17 +336,26 @@
   overflow: hidden;
 }
 
-.study-abroad-course-card:hover .study-abroad-degree-title {
+nav .menu-links .study-abroad-mega-menu .study-abroad-course-card:hover .study-abroad-degree-title {
   color: #dc2626;
 }
 
-/* Mobile Adaptation */
-@media screen and (max-width: 1080px) {
+/* Mobile Adaptation.
+   1180px, not 1080px: that is the width at which navbar.css turns `.menu-links`
+   into the full-screen burger drawer. At 1080–1180 the panel was still trying to
+   float free inside a drawer that had already taken over the screen. */
+@media screen and (max-width: 1180px) {
   .study-abroad-mega-menu {
     position: relative;
     top: 0;
     left: 0;
+    /* `transform: none` alone does nothing here — megaMenuFade runs with
+       `forwards`, and an animated value beats a plain declaration, so the panel
+       kept the `translate(-50%, 0)` that centres it on desktop and sat half off
+       the left edge of the drawer. The fade has to be an animation that never
+       touches transform, not an override of the one that does. */
     transform: none;
+    animation-name: megaMenuFadeInPlace;
     width: 100%;
     height: auto;
     max-height: 500px;

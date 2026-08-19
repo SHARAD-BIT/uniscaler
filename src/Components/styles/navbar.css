@@ -407,22 +407,44 @@ nav .login-btn:hover {
     --bar-h: 56px;
   }
   nav .menu-links {
-    position: absolute;
-    top: calc(100% - 2px);
-    left: 50%;
-    transform: translate(-50%, 0%) scale(0);
-    width: 100%;
+    /* Fixed, not absolute. `.linkGrc` carries `position: relative`, so it —
+       not <nav> — was the containing block: `width: 100%` resolved to that
+       flex item's width and `left: 50%` centred the panel on it, while its
+       own `padding-left: var(--dots-w)` pushed the whole thing right. The
+       drawer therefore opened as a narrow strip anchored near the left corner
+       instead of covering the screen. `.courseController` beside it is fixed
+       for exactly this reason; this now matches it.
+       (The comment in the 1080px block above still claims .menu-links is
+       positioned against nav's padding box — that stopped being true when
+       .linkGrc gained `position: relative`.) */
+    position: fixed;
+    top: var(--bar-h);
+    left: 0;
+    right: 0;
+    width: auto;
+    transform: scale(0);
+    transform-origin: top center;
     overflow-y: auto;
     white-space: nowrap;
     transition: 0.3s ease;
     padding: 1rem;
-    transform-origin: top right;
-    height: calc(100vh - 70px);
+    /* `100vh` on mobile Safari measures the viewport with the URL bar
+       retracted, so the foot of the drawer sat under the browser chrome. The
+       vh line is the fallback for anything that does not know `dvh`. */
+    height: calc(100vh - var(--bar-h));
+    height: calc(100dvh - var(--bar-h));
     background-image: linear-gradient(
         105deg,
         rgba(255, 255, 255, 0.95) 0%,
         rgba(255, 255, 255, 0.9) 100%
       );
+    /* Safari honours only the prefixed form. Declaring just the unprefixed one
+       left the panel with no blur at all, and the `@supports not` test below
+       could not rescue it: that test sees `-webkit-backdrop-filter` as
+       supported and so skips the opaque fallback. The result was a 90%-alpha
+       sheet over an unblurred page — the drawer you could read straight
+       through. */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
     backdrop-filter: blur(24px) saturate(180%);
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 20px 40px rgba(0, 57, 128, 0.15);
@@ -438,7 +460,19 @@ nav .login-btn:hover {
     display: none;
   }
   nav .menu-links.active {
-    transform: translate(-50%, 0%) scale(1);
+    transform: scale(1);
+  }
+  /* Between 769px and 1180px the app-switcher strip is still rendered above
+     the glass bar, so the drawer has to start below both. Below 769px that
+     strip is `display: none` (the bottom sheet replaces it) and `appbar-open`
+     is still on the element, which is why this correction is scoped to the
+     band where the strip actually occupies height. */
+  @media screen and (min-width: 769px) {
+    nav.appbar-open .menu-links {
+      top: calc(var(--app-h) + var(--bar-h));
+      height: calc(100vh - var(--app-h) - var(--bar-h));
+      height: calc(100dvh - var(--app-h) - var(--bar-h));
+    }
   }
   nav .menu-links .links {
     flex-direction: column;
@@ -699,16 +733,32 @@ nav .appBar {
      survive the bar closing and slide down into the main bar instead. */
   height: 0;
   overflow: hidden;
-  /* Adobe-style dark red gradient: deep maroon on the left, warming to a rich
-     rust-red through the middle, then settling back to a dark brown-red. */
+  /* The hero banner's own blue, not a hand-picked navy. `public/heroImg.jpg` is
+     a centred radial glow, and these are its measured pixels: a horizontal band
+     across the top of that image reads #002d66 at both edges and #003579 at the
+     middle, and the image's true extremes are #002049 in the corners and
+     #003882 at the brightest point of the glow. The strip is a thin horizontal
+     slice of the same thing, so the stops run dark → glow → dark rather than
+     the asymmetric ramp the old maroon used. Kept in step with `.appSheet`
+     below, which is this bar's phone form. */
   background-image: linear-gradient(
     90deg,
-    #2b0a06 0%,
-    #7a1c10 55%,
-    #43100a 100%
+    #002049 0%,
+    #002d66 24%,
+    #003882 52%,
+    #002d66 78%,
+    #002049 100%
   );
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12);
-  transition: height 0.45s var(--swap-ease);
+  /* Was 0.45s, shortened to match the dots' flicker. The dots blink back in at
+     171ms and are painted for whichever bar they have just landed on — white
+     for this strip, blue for the glass bar. At 0.45s the strip was still only
+     22px tall at that moment, so the bottom row of an arriving white glyph sat
+     over the white bar below and vanished; closing, 34px of strip was still
+     under a blue glyph. Measured: two visible frames wrong in each direction,
+     at 47–67% opacity. At 0.3s the strip is past the glyph either way before it
+     returns, and the whole toggle lands on one beat. */
+  transition: height 0.3s var(--swap-ease);
 }
 nav .appBar.open {
   height: var(--app-h); /* expanded: the stacked icon-over-label shortcut row */
@@ -780,11 +830,20 @@ nav .appItemIcon {
   opacity: 0.95;
   flex: none;
 }
-/* Illustration used in place of an icon glyph (e.g. Refer & Earn). Sized to the
-   icon line so it sits above the label the same way the glyph items do. */
+/* The badge artwork every shortcut now uses, in place of the react-icons glyph.
+   Both axes are declared, not `width: auto`: globals.css carries a blanket
+   `img { width: 100%; height: 100% }`, and these SVGs are authored
+   `width="100%" height="100%"` with only a viewBox, so neither the element nor
+   the file offers an intrinsic width to fall back on.
+   28px, not the 2rem this rule used to carry, because the strip is a fixed
+   63px and the stack inside it has to fit: 4px + 4px of `.appItem` padding,
+   the icon, the 0.35rem gap, and a 0.85rem Fredoka label at roughly 16px comes
+   to 58px at this size and 62px at 2rem — one pixel of clearance under an
+   `overflow: hidden` bar. The ≤768px block re-declares it against the 54px
+   `--app-h` there. */
 nav .appItemImg {
-  height: 2rem;
-  width: auto;
+  height: 1.75rem;
+  width: 1.75rem;
   flex: none;
   object-fit: contain;
 }
@@ -793,9 +852,7 @@ nav .appItemImg {
    It is a child of <nav>, not of either bar, and is absolutely positioned over
    both. `top` stays 0 while `height` grows to whichever bar it belongs to, so
    the flexbox centring inside it is what actually carries the glyph from the
-   middle of the navy bar down to the middle of the glass bar. Animating a
-   height rather than a translate keeps it in one place if the transition is
-   interrupted mid-flight by a second click. */
+   middle of the navy bar to the middle of the glass bar. */
 nav .appGrid {
   position: absolute;
   top: 0;
@@ -815,8 +872,63 @@ nav .appGrid {
   /* on the glass bar the glyph has to be brand blue to be legible */
   color: #2a40d1;
   background: transparent;
-  transition: height 0.45s var(--swap-ease), left 0.45s var(--swap-ease),
-    color 0.35s ease, background 0.2s ease;
+  /* The swap is a cut, not a move. Height and left used to glide over 0.45s
+     while width and font-size (never in the transition list) snapped, so the
+     button visibly walked up and down the bar, resizing out of step with
+     itself. All five properties now change abruptly instead — a `0s` duration
+     with a delay holds the old value, then jumps — and the delay lands the jump
+     inside the blackout at the head of the flicker on the glyph below, so the
+     swap is never seen in transit. The lone survivor is `background`, which is
+     the hover highlight and has nothing to do with the swap. */
+  transition: height 0s linear 0.1s, left 0s linear 0.1s, width 0s linear 0.1s,
+    font-size 0s linear 0.1s, color 0s linear 0.1s, background 0.2s ease;
+}
+/* Blink the glyph out, let the button jump underneath it, blink it back in.
+
+   Every stutter belongs to the arrival. The first cut of this ran 0.45s, the
+   time the strip then took to open or close, on the reasoning that the dots
+   should settle as the bar finishes moving — but the button reaches its new
+   home at 100ms and holds it, so the whole back half was the glyph blinking in
+   a place it had already arrived at, which reads as a fault rather than as
+   motion. Total is 0.3s now, and the strip was brought down to the same 0.3s to
+   keep the two in step: the blackout is 18%–50% (54–150ms), which brackets the
+   100ms jump above with room either side, the flashes are done by 88% (264ms),
+   and the last 12% is flat so it ends settled rather than mid-blink. */
+nav .appGrid .dotsSwap {
+  animation: dotsSwap 0.3s linear;
+}
+@keyframes dotsSwap {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.18;
+  }
+  18% {
+    opacity: 0;
+  }
+  /* blackout — the button changes bar, size and colour in here */
+  50% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0.85;
+  }
+  64% {
+    opacity: 0.2;
+  }
+  72% {
+    opacity: 1;
+  }
+  79% {
+    opacity: 0.45;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 nav.appbar-open .appGrid {
   height: var(--app-h);
@@ -849,16 +961,24 @@ nav.appbar-open .appGrid:hover {
 }
 
 /* The wordmark slides right to open the slot the dots drop into. It starts out
-   left of where the dots land, so the two would cross paths if they moved in
-   lockstep: the slot therefore opens faster than the dots descend, and on the
-   way back the wordmark waits for them to lift clear before reclaiming it. */
+   left of where the dots land, so the two share ground and the timings below
+   keep them off each other.
+   Both were retimed when the dots stopped travelling: the old numbers were cut
+   against a 0.45s glide up and down the bar, and against a blink they left the
+   wordmark still sliding when the dots came back — measured at 3px of overlap
+   around 180ms, while they were at 38% opacity. */
 nav .wrapperBox .linkGrc {
   padding-left: calc(var(--dots-w) + 0.7rem);
-  transition: padding-left 0.28s var(--swap-ease);
+  /* Closing: the slot has to be open before the dots blink back into it at 57%
+     of the flicker (171ms), so the slide finishes just inside that. */
+  transition: padding-left 0.16s var(--swap-ease);
 }
 nav.appbar-open .wrapperBox .linkGrc {
   padding-left: 0;
-  transition: padding-left 0.28s var(--swap-ease) 0.22s;
+  /* Opening: nothing to dodge — the dots are gone from this row by 100ms, when
+     they jump up into the strip — so the wordmark waits for that, then takes
+     the space back. */
+  transition: padding-left 0.2s var(--swap-ease) 0.14s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -867,6 +987,14 @@ nav.appbar-open .wrapperBox .linkGrc {
   nav .wrapperBox,
   nav .wrapperBox .linkGrc {
     transition-duration: 0.01ms;
+  }
+  /* The dots' delay has to go with it: with the flicker off, a jump held back
+     for 100ms is not a hidden cut any more, just a lag. */
+  nav .appGrid {
+    transition-delay: 0s;
+  }
+  nav .appGrid .dotsSwap {
+    animation: none;
   }
 }
 
@@ -924,6 +1052,13 @@ nav.appbar-open .wrapperBox .linkGrc {
   nav .appItem {
     font-size: 0.64rem;
     padding: 0.25rem 0.5rem;
+  }
+  /* `--app-h` is 54px here, and `.appItemLabel` keeps its own 0.85rem
+     regardless of the smaller `.appItem` font-size above, so the icon is the
+     only part of the stack left to give: 21.6px keeps the total near 52px. */
+  nav .appItemImg {
+    height: 1.35rem;
+    width: 1.35rem;
   }
   .linkGrc {
     gap: 0.5rem;
@@ -1035,7 +1170,9 @@ nav .login-circle:hover {
   inset: 0;
   padding: 0;
   border: none;
-  background: rgba(8, 3, 2, 0.55);
+  /* a near-black mixed toward the sheet's navy, not the warm one the maroon
+     sheet used — a brown-black scrim under a blue sheet reads as dirt */
+  background: rgba(0, 6, 18, 0.55);
   opacity: 0;
   /* not merely invisible — a transparent scrim still swallows every tap */
   pointer-events: none;
@@ -1057,12 +1194,15 @@ nav .login-circle:hover {
   padding: 0.55rem 0.9rem calc(1rem + env(safe-area-inset-bottom, 0px));
   border-radius: 20px 20px 0 0;
   color: #fff;
-  /* the strip's dark red, kept so the two read as the same surface */
+  /* the strip's hero blue, copied stop for stop so the two read as the same
+     surface — this sheet is what the app-switcher bar becomes on a phone */
   background-image: linear-gradient(
     90deg,
-    #2b0a06 0%,
-    #7a1c10 55%,
-    #43100a 100%
+    #002049 0%,
+    #002d66 24%,
+    #003882 52%,
+    #002d66 78%,
+    #002049 100%
   );
   box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.42);
   /* 101%, so the rounded top corners clear the screen edge while down */
@@ -1122,10 +1262,13 @@ nav .login-circle:hover {
   flex: none;
 }
 /* globals.css sets `img { width: 100%; height: 100% }`, so an icon image has
-   to be given its own size or it fills the tile. */
+   to be given its own size or it fills the tile. Raised from 1.4rem with the
+   switch to badge artwork: these are filled shapes inside a coloured disc, not
+   line glyphs, and the detail inside them closed up at 22px. The 88px tile has
+   the room — 0.85rem padding either side, a 0.5rem gap and one label line. */
 .appSheetItemImg {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.75rem;
+  height: 1.75rem;
   object-fit: contain;
   flex: none;
 }

@@ -106,6 +106,32 @@ img {
 }
 .top {
   padding-top: 100px;
+  /* Follows the app-switcher strip's own 0.3s height glide (navbar.css
+     --swap-ease), so the page slides up with the bar instead of snapping the
+     moment the strip is shut. Keep the two in step if either is retimed. */
+  transition: padding-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* `.top` reserves the room for the fixed navbar, but as a flat number it only
+   ever matched the bar with the app-switcher strip open. Closing the strip
+   takes --app-h (63px) off the navbar and the offset stayed where it was, so
+   the gap under the bar jumped from flush to 56px — on every page using
+   `.top`, not just the home hero. Navbar puts `appbar-collapsed` on <body>
+   while the strip is shut; the offset drops by the same 63px, so the spacing
+   below the bar does not move.
+
+   Desktop only: below 765px the strip is `display: none` — the bottom sheet
+   replaces it — and the rule further down already sizes the offset for the
+   single-bar navbar. The guard also covers a desktop→phone resize made while
+   the strip was collapsed, which leaves the class on <body>. */
+@media screen and (min-width: 766px) {
+  body.appbar-collapsed .top {
+    padding-top: calc(100px - 63px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .top {
+    transition-duration: 0.01ms;
+  }
 }
 
 .slogan {

@@ -1,0 +1,269 @@
+/* ─────────────────────────────────────────────────────────────
+   Accelerated Pathway Programs — the full catalog, filtered
+
+   The cards are the `.sa-pathway-*` ones from study-abroad.css, imported
+   alongside this file rather than restyled here: they are the same object in
+   both places, and a second copy would be two things to keep in step.
+   ───────────────────────────────────────────────────────────── */
+
+.pp-page {
+  min-height: 100vh;
+  background: #ffffff;
+  padding-top: 110px;
+  transition: padding-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Its own navbar offset rather than the site-wide `.top`, so it needs the same
+   correction — see the note on `.top` in globals.css. */
+@media screen and (min-width: 766px) {
+  body.appbar-collapsed .pp-page {
+    padding-top: calc(110px - 63px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pp-page {
+    transition-duration: 0.01ms;
+  }
+}
+
+.pp-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.pp-crumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 1.25rem;
+}
+
+.pp-crumbs a {
+  color: #e8253c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pp-crumbs a:hover {
+  text-decoration: underline;
+}
+
+.pp-title {
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-weight: 700;
+  color: #111a44;
+  text-align: center;
+  margin: 0 0 0.6rem;
+}
+
+.pp-sub {
+  font-size: 1.02rem;
+  color: #475569;
+  text-align: center;
+  line-height: 1.6;
+  max-width: 60ch;
+  margin: 0 auto 2.5rem;
+}
+
+/* ── the preference panel ── */
+.pp-prefs {
+  background: #f6f8fb;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pp-prefs-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.pp-prefs-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.pp-clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #e8253c;
+  border-radius: 999px;
+  background: #fff;
+  color: #e8253c;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pp-clear:hover {
+  background: #e8253c;
+  color: #fff;
+}
+
+.pp-facet + .pp-facet {
+  margin-top: 1.25rem;
+}
+
+.pp-facet-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #334155;
+  margin: 0 0 0.6rem;
+}
+
+/* Wraps rather than scrolls. The reference runs these as one clipped line per
+   group, which hides half the countries behind an edge with nothing to say they
+   are there; nine of them fit on two lines here and all are reachable. */
+.pp-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pp-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: #fff;
+  color: #475569;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.pp-pill:hover {
+  border-color: #e8253c;
+  color: #e8253c;
+}
+
+.pp-pill.is-on {
+  background: #e8253c;
+  border-color: #e8253c;
+  color: #fff;
+}
+
+.pp-pill-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.08rem 0.4rem;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.pp-pill.is-on .pp-pill-count {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.pp-resultbar {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 1.25rem;
+}
+
+.pp-resultbar strong {
+  color: #111a44;
+  font-size: 1.1rem;
+}
+
+/* ── results ──
+   `auto-fill` rather than `auto-fit`: on a filter that returns one program,
+   auto-fit stretches that single card the full 1300px, which looks like a
+   layout fault. auto-fill leaves the empty tracks in place and the card keeps
+   the size it has in every other row. */
+.pp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  /* The cards lift on hover and the page would otherwise clip that lift where
+     the grid meets the section below it. */
+  padding-bottom: 6px;
+}
+
+/* These cards sit on white here, not on the dark band, so the shadow has to be
+   the thing that separates them from the page. */
+.pp-grid .sa-pathway-card {
+  border: 1px solid #e2e8f0;
+}
+
+.pp-grid .sa-pathway-card:hover {
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.14);
+}
+
+.pp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.pp-tag {
+  padding: 0.16rem 0.5rem;
+  border-radius: 4px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.pp-more,
+.pp-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.pp-empty {
+  padding: 3rem 1rem;
+  color: #64748b;
+}
+
+.pp-empty p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* The view-all button is borrowed from the dark band, where it is a white
+   outline on maroon. On this white page it needs the brand colours instead. */
+.pp-more .sa-pathway-viewall,
+.pp-empty .sa-pathway-viewall {
+  border-color: #e8253c;
+  color: #e8253c;
+}
+
+.pp-more .sa-pathway-viewall:hover,
+.pp-empty .sa-pathway-viewall:hover {
+  background: #e8253c;
+  border-color: #e8253c;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .pp-prefs {
+    padding: 1.1rem;
+  }
+
+  .pp-prefs-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

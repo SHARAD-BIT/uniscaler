@@ -40,7 +40,12 @@ const LoginAdmin = () => {
             variant: "success",
             autoHideDuration: 3000,
           });
-        data.code === 200 && navigate.replace("users");
+        // Absolute path. React Router resolved a bare "users" against the
+        // current *route*, giving /admin-dashboard/users; Next resolves it as a
+        // URL against the current *path*, which replaces the last segment and
+        // lands on /users — a route that does not exist, so a successful admin
+        // login dropped straight onto the 404 page.
+        data.code === 200 && navigate.replace("/admin-dashboard/users");
       })
       .catch((err) =>
         enqueueSnackbar(err.message, {

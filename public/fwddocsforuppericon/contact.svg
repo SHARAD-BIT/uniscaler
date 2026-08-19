@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Red Gradient -->
+    <linearGradient id="contactRedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF3B30" />
+      <stop offset="100%" stop-color="#800000" />
+    </linearGradient>
+
+    <!-- Card Inner Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FFEBEE" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#4A0000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Base Circular Background -->
+  <circle cx="256" cy="256" r="230" fill="url(#contactRedBg)" />
+
+  <!-- Outer Dashed Orbit Ring -->
+  <circle cx="256" cy="256" r="198" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="8 8" opacity="0.35" />
+
+  <g filter="url(#shadow)">
+    <!-- Main Chat Speech Bubble Base -->
+    <path d="M 130 160 C 130 130, 160 110, 256 110 C 352 110, 382 130, 382 160 C 382 230, 340 280, 256 280 C 230 280, 200 290, 160 310 C 170 290, 175 275, 170 265 C 140 240, 130 200, 130 160 Z" fill="url(#cardGrad)" stroke="#D32F2F" stroke-width="6" />
+
+    <!-- Envelope / Mail Icon Inside Chat -->
+    <g transform="translate(196, 150)">
+      <rect x="0" y="0" width="120" height="80" rx="10" fill="#D32F2F" />
+      <!-- Envelope Flap -->
+      <path d="M 0 0 L 60 45 L 120 0" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round" />
+      <path d="M 0 80 L 45 35" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.6" />
+      <path d="M 120 80 L 75 35" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.6" />
+    </g>
+
+    <!-- Floating Phone Call Circle Badge (Bottom Right) -->
+    <g transform="translate(310, 270)">
+      <circle cx="45" cy="45" r="45" fill="#FFFFFF" stroke="#B71C1C" stroke-width="6" />
+      <circle cx="45" cy="45" r="36" fill="#D32F2F" />
+      <!-- Handset Icon -->
+      <path d="M 32 30 C 30 30, 27 33, 29 37 C 31 41, 35 46, 44 55 C 53 64, 58 68, 62 70 C 66 72, 69 69, 69 67 L 64 57 C 63 55, 60 55, 58 56 L 54 59 C 48 55, 44 51, 40 45 L 43 41 C 44 39, 44 36, 42 35 L 32 30 Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- Contact User Dots / Waves (Top Right) -->
+    <circle cx="390" cy="130" r="10" fill="#FFD700" />
+    <circle cx="120" cy="330" r="14" fill="#FFD700" />
+    <path d="M 100 140 A 30 30 0 0 0 80 170" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+  </g>
+</svg>
