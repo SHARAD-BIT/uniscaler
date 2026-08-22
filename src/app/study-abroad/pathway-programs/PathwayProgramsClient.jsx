@@ -186,26 +186,19 @@ export default function PathwayProgramsClient() {
                       )}
                     </div>
 
-                    {/* Same button as the study-abroad page's pathway cards,
-                        and the same reasoning applies — see the long note there
-                        for why this points at a competitor's host and why that
-                        was the client's call rather than an oversight. */}
+                    {/* Same button as the study-abroad page's pathway cards —
+                        a lead gate to /register since 2026-08-19, not a
+                        download, on every card including the two brochure-less
+                        ones. The long note there has the history; keep the two
+                        sites in step. */}
                     <div className="sa-pathway-actions">
-                      {program.syllabusUrl ? (
-                        <a
-                          href={program.syllabusUrl}
-                          className="sa-pathway-cta"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`Download the brochure for ${program.title}`}
-                        >
-                          Download Brochure <FaDownload />
-                        </a>
-                      ) : (
-                        <Link href="/contact" className="sa-pathway-cta">
-                          Talk to a Counsellor
-                        </Link>
-                      )}
+                      <Link
+                        href="/register"
+                        className="sa-pathway-cta"
+                        aria-label={`Register to get the brochure for ${program.title}`}
+                      >
+                        Download Brochure <FaDownload />
+                      </Link>
                       <Link
                         href={`/study-abroad/${program.countrySlug}`}
                         className="sa-pathway-go"

@@ -1741,18 +1741,13 @@
   font-size: 1rem;
 }
 
-/* ── Countries Directory ── */
-.sa-countries-dir {
-  background: #fff;
-  padding: 4rem 1.5rem;
-}
-
-.sa-countries-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
-}
-
+/* ── Country cards ──
+   NOT dead, though this page no longer renders them: the country
+   pages' "Explore Other Destinations" grid (CountryPageClient.jsx,
+   which imports this stylesheet) is built from these classes. They
+   were briefly deleted along with the home page's directory and
+   that unstyled the country pages — this file styles two pages,
+   check both before removing anything sa-prefixed. */
 .sa-country-card {
   display: flex;
   align-items: center;
@@ -1812,7 +1807,788 @@
   transform: translateX(3px);
 }
 
+/* ── Personalized plan lead band ──
+   Replaced the Countries Directory (client's word, 2026-08-20), after
+   upgrad.com/study-abroad. Their band is pure black; this one is the same
+   near-black navy the country heroes use, so the page's dark surfaces stay
+   one family. The angular corner shapes on the copy panel are
+   clip-path'd pseudo-elements, like the reference's. */
+.sa-plan {
+  background: #191c22;
+}
+
+.sa-plan-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: center;
+}
+
+.sa-plan-copy {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0e1116;
+  color: #fff;
+  padding: 5rem 3rem;
+  overflow: hidden;
+}
+
+.sa-plan-copy::before,
+.sa-plan-copy::after {
+  content: "";
+  position: absolute;
+  background: #191c22;
+}
+
+.sa-plan-copy::before {
+  width: 120px;
+  height: 120px;
+  left: -40px;
+  top: 30%;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.sa-plan-copy::after {
+  width: 160px;
+  height: 160px;
+  right: -60px;
+  bottom: -60px;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.sa-plan-copy h2 {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1.25;
+  max-width: 18ch;
+  position: relative;
+  z-index: 1;
+}
+
+.sa-plan-copy p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #c8cdd8;
+  max-width: 44ch;
+  position: relative;
+  z-index: 1;
+}
+
+.sa-plan-form {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.sa-plan-lead {
+  font-size: 1rem;
+  line-height: 1.55;
+  margin-bottom: 1.6rem;
+  max-width: 52ch;
+}
+
+.sa-plan-form label {
+  font-size: 0.8rem;
+  color: #b9bfcc;
+  margin-bottom: 0.35rem;
+}
+
+/* The global `*` reset kills borders and outlines, so the fields'
+   affordance is carried by the fill alone — a lighter slab on the
+   dark band, exactly the reference's look. */
+.sa-plan-form input {
+  background: #2c3038;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.8rem 0.9rem;
+  font-size: 0.95rem;
+  margin-bottom: 1.3rem;
+  width: 100%;
+}
+
+.sa-plan-form input:focus {
+  background: #363b45;
+}
+
+.sa-plan-phone {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #2c3038;
+  border-radius: 6px;
+  padding-left: 0.9rem;
+  margin-bottom: 1.3rem;
+}
+
+.sa-plan-phone span {
+  font-size: 0.9rem;
+  color: #e6e9ef;
+  flex: none;
+}
+
+.sa-plan-phone input {
+  margin-bottom: 0;
+  border-radius: 0 6px 6px 0;
+  padding-left: 0.6rem;
+}
+
+.sa-plan-submit {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e8253c;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.6rem;
+  transition: background 0.2s ease;
+}
+
+.sa-plan-submit:hover {
+  background: #c81c31;
+}
+
+.sa-plan-submit:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.sa-plan-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #7ee2a8;
+}
+
+.sa-plan-err {
+  color: #ff9d9d;
+}
+
+@media screen and (max-width: 900px) {
+  .sa-plan-inner {
+    grid-template-columns: 1fr;
+  }
+  .sa-plan-copy {
+    padding: 3.5rem 1.5rem;
+  }
+  .sa-plan-form {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+}
+
+/* ── 360° support system ──
+   Light band below the plan band, after the reference's. List and photo
+   split the row; every item wears the grey left rail, and the open one
+   turns its stretch of it red and fills grey behind itself — one
+   continuous line with a red segment at the open item, which is the
+   reference's look. */
+.sa-support {
+  background: #fff;
+  padding: 4.5rem 1.5rem;
+}
+
+.sa-support-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sa-support-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #111a44;
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
+}
+
+.sa-support-sub {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 2.5rem;
+}
+
+.sa-support-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.sa-support-item {
+  border-left: 3px solid #e2e8f0;
+}
+
+/* Between collapsed rows only — under the open card the grey fill already
+   marks the edge, and a rule on top of it would double up. */
+.sa-support-item + .sa-support-item:not(.is-open) {
+  border-top: 1px solid #eef0f4;
+}
+
+.sa-support-item.is-open {
+  border-left-color: #e8253c;
+  background: #f4f5f7;
+  border-radius: 0 10px 10px 0;
+}
+
+.sa-support-item-title {
+  margin: 0;
+}
+
+/* The global reset strips button chrome, so the whole row is the hit
+   target and the row's own fill above is all the open-state dressing. */
+.sa-support-item-title button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  padding: 1.15rem 1.4rem;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #111a44;
+  cursor: pointer;
+}
+
+.sa-support-item.is-open .sa-support-item-title button {
+  color: #e8253c;
+  padding-bottom: 0.4rem;
+}
+
+.sa-support-panel {
+  padding: 0 1.4rem 1.3rem;
+}
+
+.sa-support-panel p {
+  margin: 0 0 1.1rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: #475569;
+  max-width: 52ch;
+}
+
+.sa-support-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e8253c;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.sa-support-cta:hover {
+  background: #c81c31;
+}
+
+.sa-support-photo {
+  margin: 0;
+}
+
+/* All five photos sit stacked in this frame with only the active one
+   visible, so moving the selection crossfades between already-painted
+   layers instead of refetching a src — see the section comment in
+   page.js. The frame owns the shape; the images just fill it. */
+.sa-support-frame {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sa-support-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.sa-support-frame img.is-active {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sa-support-frame img {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sa-support-body {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ── Meet Uniscaler experts in your city ──
+   Light band after the reference's: checklist and an outline CTA left, the
+   contact page's map embed right with the centre's name, phone and a red
+   visit button in a row beneath it. Top padding is shallow because the
+   support band above already ends with its own 4.5rem. */
+.sa-city {
+  background: #fff;
+  padding: 1rem 1.5rem 4.5rem;
+}
+
+.sa-city-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.sa-city-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #111a44;
+  line-height: 1.2;
+  margin: 0 0 1.6rem;
+  /* In `ch` so the reference's two-line break holds as the font scales,
+     the same reasoning as .sa-smart-title. */
+  max-width: 16ch;
+}
+
+.sa-city-list {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.sa-city-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.45rem 0;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.sa-city-list svg {
+  color: #e8253c;
+  flex: none;
+}
+
+/* Outline button, the reference's look — the red filled one under the map is
+   .sa-support-cta, reused. The global reset kills borders, so this one is
+   explicit. */
+.sa-city-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #d3d9e2;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #111a44 !important;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.sa-city-btn:hover {
+  border-color: #111a44;
+}
+
+.sa-city-map iframe {
+  display: block;
+  width: 100%;
+  height: 380px;
+  border-radius: 12px;
+}
+
+.sa-city-meta {
+  margin-top: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.sa-city-meta-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.3rem;
+}
+
+.sa-city-meta-place {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111a44;
+}
+
+.sa-city-meta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.55rem;
+}
+
+.sa-city-meta-phone {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569 !important;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .sa-city-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .sa-city-title {
+    max-width: none;
+  }
+  .sa-city-map iframe {
+    height: 300px;
+  }
+  .sa-city-meta-right {
+    align-items: flex-start;
+  }
+}
+
+/* ── Free tools band ──
+   Four link-cards on the deep red-black the smart band's stat panels
+   already use, so the two dark treatments on this page stay one family.
+   Each card is title top, a big quiet arrow centre-left, and a one-line
+   factual tag at the foot. */
+.sa-tools {
+  background: #fff;
+  padding: 1rem 1.5rem 4.5rem;
+}
+
+.sa-tools-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sa-tools-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #111a44;
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
+}
+
+.sa-tools-sub {
+  font-size: 1.05rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 2.2rem;
+}
+
+.sa-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.sa-tool-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 190px;
+  border-radius: 12px;
+  padding: 1.4rem 1.3rem;
+  background: radial-gradient(circle at 85% 15%, rgba(232, 37, 60, 0.28) 0%, transparent 55%),
+    linear-gradient(150deg, #3a1014 0%, #16090b 100%);
+  color: #fff !important;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.sa-tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(22, 9, 11, 0.35);
+}
+
+.sa-tool-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+}
+
+.sa-tool-name small {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0.15rem;
+}
+
+/* Decorative, so it fades until the card is engaged. */
+.sa-tool-arrow {
+  font-size: 2.6rem;
+  color: rgba(255, 255, 255, 0.16);
+  margin: auto 0;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.sa-tool-card:hover .sa-tool-arrow {
+  color: rgba(255, 255, 255, 0.55);
+  transform: translateX(6px);
+}
+
+.sa-tool-tag {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+@media screen and (max-width: 1000px) {
+  .sa-tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sa-tools-grid {
+    grid-template-columns: 1fr;
+  }
+  .sa-tool-card {
+    min-height: 150px;
+  }
+}
+
 /* ── CTA Banner ── */
+/* ── Learner trust band ── */
+.sa-learner-trust {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 400px;
+  background: #f7f4f6;
+}
+
+.sa-learner-trust-image {
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.sa-learner-trust-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sa-learner-trust-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3.5rem clamp(2rem, 7vw, 6rem);
+}
+
+.sa-learner-trust-copy h2 {
+  margin: 0 0 0.65rem;
+  color: #111a44;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sa-learner-trust-copy h2 span {
+  color: #e8253c;
+}
+
+.sa-learner-trust-copy p {
+  margin: 0 0 1.75rem;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.sa-learner-trust-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 48px;
+  padding: 0.8rem 1.25rem;
+  border-radius: 6px;
+  background: #e8253c;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.sa-learner-trust-btn:hover {
+  background: #c91f33;
+  transform: translateY(-2px);
+}
+
+.sa-learner-trust-btn svg {
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 760px) {
+  .sa-learner-trust {
+    grid-template-columns: 1fr;
+  }
+
+  .sa-learner-trust-image {
+    min-height: 280px;
+  }
+
+  .sa-learner-trust-copy {
+    padding: 2.75rem 1.5rem 3rem;
+  }
+}
+
+/* ── Long-form study abroad guide ── */
+.sa-guide {
+  background: #faf7f8;
+  padding: 4.5rem 1.5rem;
+}
+
+.sa-guide-card {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid #f0e7ea;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(17, 26, 68, 0.05);
+  color: #344054;
+}
+
+.sa-guide-card section {
+  padding-top: 2.4rem;
+  scroll-margin-top: 110px;
+}
+
+.sa-guide-header h2 {
+  margin: 0 0 1rem;
+  color: #111a44;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.sa-guide-header h2 span { color: #e8253c; }
+.sa-guide-kicker {
+  color: #111a44 !important;
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sa-guide-card h3 {
+  margin: 0 0 1rem;
+  color: #111a44;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  line-height: 1.25;
+}
+
+.sa-guide-card h4 { margin: 1.3rem 0 0.55rem; color: #111a44; font-size: 1.05rem; }
+.sa-guide-card p { margin: 0 0 1rem; font-size: 0.98rem; line-height: 1.75; }
+.sa-guide-card ul { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+.sa-guide-card li { margin: 0.55rem 0; line-height: 1.55; }
+
+.sa-guide-reasons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.sa-guide-reasons > div {
+  position: relative;
+  padding: 1.25rem;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  background: #fbfcfe;
+}
+
+.sa-guide-reasons b {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #feecef;
+  color: #e8253c;
+}
+
+.sa-guide-reasons h4 { margin-top: 0.9rem; }
+.sa-guide-reasons p { margin-bottom: 0; font-size: 0.9rem; line-height: 1.55; }
+
+.sa-guide-table-wrap {
+  width: 100%;
+  margin: 1.25rem 0 0.4rem;
+  overflow-x: auto;
+  border: 1px solid #dfe3e8;
+  border-radius: 10px;
+}
+
+.sa-guide-table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 0.9rem; }
+.sa-guide-table th,
+.sa-guide-table td { padding: 0.9rem 1rem; border-right: 1px solid #dfe3e8; border-bottom: 1px solid #dfe3e8; text-align: left; vertical-align: top; line-height: 1.5; }
+.sa-guide-table th:last-child,
+.sa-guide-table td:last-child { border-right: 0; }
+.sa-guide-table tbody tr:last-child td { border-bottom: 0; }
+.sa-guide-table th { background: #f6f7fa; color: #111a44; font-weight: 700; }
+.sa-guide-table tbody tr:nth-child(even) { background: #fcfcfd; }
+.sa-guide-table a { color: #245fc7 !important; text-decoration: underline; text-underline-offset: 2px; }
+
+.sa-guide-steps { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
+.sa-guide-steps > div { display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid #edf0f5; }
+.sa-guide-steps span { display: grid; place-items: center; flex: 0 0 34px; height: 34px; border-radius: 50%; background: #111a44; color: #fff; font-weight: 700; }
+.sa-guide-steps h4 { margin: 0 0 0.35rem; }
+.sa-guide-steps p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
+
+.sa-guide-links { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.25rem; }
+.sa-guide-links a { padding: 0.65rem 0.9rem; border: 1px solid #e8253c; border-radius: 7px; color: #c91f33 !important; font-size: 0.88rem; font-weight: 700; text-decoration: none; }
+.sa-guide-note { margin-top: 1.2rem; padding: 1rem 1.1rem; border-left: 4px solid #e8253c; border-radius: 0 8px 8px 0; background: #fff3f5; line-height: 1.6; }
+
+.sa-guide-card ol { margin: 0.5rem 0 0; padding-left: 1.4rem; }
+
+.sa-guide-faqs { border-top: 1px solid #e5e8ee; }
+.sa-guide-faqs details { border-bottom: 1px solid #e5e8ee; }
+.sa-guide-faqs summary { position: relative; padding: 1.1rem 2.2rem 1.1rem 0; color: #111a44; font-weight: 700; cursor: pointer; list-style: none; }
+.sa-guide-faqs summary::-webkit-details-marker { display: none; }
+.sa-guide-faqs summary::after { content: "+"; position: absolute; right: 0.35rem; top: 0.9rem; color: #e8253c; font-size: 1.35rem; }
+.sa-guide-faqs details[open] summary::after { content: "−"; }
+.sa-guide-faqs p { padding-right: 2rem; }
+
+.sa-guide-card .sa-guide-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2.7rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #111a44;
+  color: #fff;
+}
+
+.sa-guide-help h3 { color: #fff; margin-bottom: 0.4rem; }
+.sa-guide-help p { margin: 0; color: #dce2f4; }
+.sa-guide-help > a { flex: none; padding: 0.8rem 1.1rem; border-radius: 7px; background: #e8253c; color: #fff !important; font-weight: 700; text-decoration: none; }
+
+@media screen and (max-width: 760px) {
+  .sa-guide { padding: 2.5rem 0.75rem; }
+  .sa-guide-reasons { grid-template-columns: 1fr; }
+  .sa-guide-steps { grid-template-columns: 1fr; }
+  .sa-guide-card .sa-guide-help { align-items: flex-start; flex-direction: column; }
+}
+
 .sa-cta-banner {
   background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   padding: 4rem 1.5rem;
@@ -1881,10 +2657,6 @@
 
   .sa-program-cta {
     grid-column: span 2;
-  }
-
-  .sa-countries-grid {
-    grid-template-columns: 1fr;
   }
 
 }

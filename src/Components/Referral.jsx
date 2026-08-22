@@ -1,94 +1,277 @@
 "use client";
-import Button from "../Utils/Button";
-import ReferalSrc from "../assets/referal.avif";
-import Image from "next/image";
+import Link from "next/link";
+import FaqItem from "../Utils/FaqItem";
 import "./styles/referral.css";
+import {
+  FaWhatsapp,
+  FaEnvelope,
+  FaShareNodes,
+  FaGraduationCap,
+  FaArrowUpRightFromSquare,
+  FaLink,
+  FaUserPlus,
+  FaWallet,
+} from "react-icons/fa6";
+
+/**
+ * Rebuilt 2026-08-20 after easemytrip.com/refer, on the client's word, with
+ * their supplied illustration as the hero-card image. Every figure and rule in
+ * the copy is carried over from the page this replaced — ₹1000 per successful
+ * referral, code from the student account, success = enrolment in an
+ * affiliated college, credit on confirmed enrolment, program subject to change
+ * — nothing here is invented, only re-arranged into the reference's sections.
+ *
+ * The reference's step/scene illustrations could not be sourced as usable
+ * licensed files, so those spots use icon roundels instead; the structure is
+ * the reference's throughout.
+ */
+
+/* Condensed from the old page's three long "How it Works" passages — the
+   EMT-style card holds two lines, not four paragraphs. The three scenes are
+   drawn in-house in the flat-indigo style of the client's own hero-art.svg
+   (same #4b62e8/#8090ed/#050d3c family), so all four illustrations on this
+   page read as one set — which no stock set pulled off the internet would. */
+const STEPS = [
+  {
+    step: "Step 1",
+    title: "Get your referral code",
+    copy: "Every student enrolled at Uniscaler gets a unique referral code in their student account.",
+    img: "/refer-earn/step-code.svg",
+  },
+  {
+    step: "Step 2",
+    title: "Share your code",
+    copy: "Share it with friends via email, social media, or word of mouth, and have them use it when applying to affiliated colleges.",
+    img: "/refer-earn/step-share.svg",
+  },
+  {
+    step: "Step 3",
+    title: "Earn referral money",
+    copy: "When your friend enrolls in a college affiliated with Uniscaler, you earn ₹1000.",
+    img: "/refer-earn/step-earn.svg",
+  },
+];
+
+/* One reward type exists (₹1000 on enrolment), so unlike the reference's
+   flight/hotel/bus rows these differ by how you share, not by what you earn. */
+const INVITE_ROWS = [
+  {
+    title: "Share on WhatsApp",
+    sub: "You will earn ₹1000 per enrolment",
+    Icon: FaWhatsapp,
+  },
+  {
+    title: "Share over Email",
+    sub: "You will earn ₹1000 per enrolment",
+    Icon: FaEnvelope,
+  },
+  {
+    title: "Share on social media",
+    sub: "You will earn ₹1000 per enrolment",
+    Icon: FaShareNodes,
+  },
+];
+
+const JOURNEY = [
+  {
+    title: "Log in",
+    copy: "Sign in to your Uniscaler student account and grab your unique referral code.",
+    Icon: FaLink,
+  },
+  {
+    title: "Refer a friend",
+    copy: "Your friend uses your code when applying to a college through Uniscaler.",
+    Icon: FaUserPlus,
+  },
+  {
+    title: "Friend enrolls",
+    copy: "The referral counts once your friend enrolls in an affiliated college.",
+    Icon: FaGraduationCap,
+  },
+  {
+    title: "₹1000 credited",
+    copy: "The reward is credited to your account once the enrolment is confirmed.",
+    Icon: FaWallet,
+  },
+];
+
+const FAQS = [
+  {
+    title: "How to participate in the Refer and Earn program?",
+    des: "Log in to your Uniscaler student account. Navigate to the “Refer and Earn” section to get your unique referral code. Share your code with friends via email, social media, or word of mouth, and encourage them to use it when applying to colleges through Uniscaler’s website. Enjoy rewards for successful referrals!",
+  },
+  {
+    title: "How much do I earn per referral?",
+    des: "For every successful referral — when your friend enrolls in a college associated with Uniscaler through our platform — you earn ₹1000.",
+  },
+  {
+    title: "When is a referral counted as successful?",
+    des: "Referrals are considered successful only when the referred friend enrolls in a college affiliated with Uniscaler through our website.",
+  },
+  {
+    title: "When are rewards credited?",
+    des: "Rewards are credited to your account once the enrolment of your referred friend is confirmed.",
+  },
+  {
+    title: "Can I share my referral code publicly?",
+    des: "No. The referral code is unique to each student and should not be shared publicly or misused.",
+  },
+  {
+    title: "Can the program change?",
+    des: "The Refer and Earn program is subject to change or termination at the discretion of Uniscaler.",
+  },
+];
 
 const Referral = () => {
-  const howWeWork = [
-    "<h3>Get Your Referral Code </h3><p>Every student enrolled at Uniscaler gets a unique referral code.<br/>At Uniscaler, we believe in rewarding our students for their loyalty and support. That's why every student enrolled with us receives a special privilege: a unique referral code just for them.<br/>This referral code is more than just a combination of numbers and letters; it's your key to unlocking exciting rewards. Whether you're passionate about sharing your college experience with friends or simply want to help others discover the opportunities Uniscaler offers, your referral code empowers you to do just that.<br  />Not only does your referral code make it easy for your friends to join our vibrant community, but it also entitles you to exclusive benefits. Each time a friend uses your code and enrolls in one of our affiliated colleges through our platform, you earn rewards as a token of our appreciation.<br/>So, get ready to share the Uniscaler experience with your friends and reap the rewards. Your unique referral code awaits, ready to connect more students with the endless possibilities that Uniscaler has to offer.</p>",
-    "<h3>Share Your Code </h3><p>Share your referral code with friends and encourage them to use it when they apply to colleges affiliated with Uniscaler through our website. <br/>Sharing your referral code is as easy as spreading the word about Uniscaler's excellence. Once you receive your unique referral code, it's time to share the excitement with your friends and peers. Whether it's through social media, emails, or a friendly chat, let them know about the fantastic opportunities waiting for them at Uniscaler and our affiliated colleges.<br/>Your referral code isn't just a string of characters; it's a gateway to a world of possibilities. By sharing it generously, you're not only helping your friends discover their path to success but also earning rewards as a token of our appreciation for your support.<br/>So, don't hesitate to share your code far and wide. Every referral is a step towards building a stronger, more connected community at Uniscaler.</p>",
-    "<h3>Earn Rewards</h3><p> For every successful referral (when your friend enrolls in a college associated with Uniscaler), you earn Rs 1000.<br/>Earning rewards through our Refer and Earn program is both exciting and rewarding. For every successful referral you make, where your friend enrolls in a college associated with Uniscaler through our platform, you earn a generous reward of Rs 1000.<br/>Imagine the possibilities! By simply sharing your referral code and encouraging your friends to join Uniscaler's network of affiliated colleges, you not only help them embark on a journey of education and growth but also earn valuable rewards for yourself.<br/>Each successful referral is a testament to your advocacy and support for Uniscaler's vision. It's our way of saying 'thank you' for being an active part of our community and for helping us expand our reach to more aspiring students.<br/>So, keep sharing your code and watching your rewards grow. Together, we'll create a brighter future for education and empowerment at Uniscaler.</p>",
-  ];
   return (
     <main className="top referral">
-      <section className="gridBox">
-        <div className="textArea">
-          <h1>Uniscaler Refer and Earn Program</h1>
-          <p>
-            Introducing the Uniscaler Refer and Earn Program! As a student at
-            Uniscaler, you now have the exciting opportunity to earn rewards
-            by referring your friends to enroll in colleges affiliated with Uniscaler
-            College through our website.
-          </p>
-          <p>
-            Don&apos;t miss out on this fantastic opportunity to earn while
-            helping others achieve their educational dreams. Log in to your Uniscaler
-            College student account, grab your referral code, and start
-            referring today!
-          </p>
-          <Button text="Refer Now" link="/login" />
+      {/* ─── Hero: card left, pitch right, on the dotted blue panel ─── */}
+      <section className="rf-hero">
+        <div className="rf-hero-inner">
+          <div className="rf-hero-card">
+            <span className="rf-crown" aria-hidden="true">
+              👑
+            </span>
+            <h2>UNISCALER</h2>
+            <p>Refer a friend and earn &#8377;1000*</p>
+            <a href="#rf-how" className="rf-explore">
+              Explore now <FaArrowUpRightFromSquare />
+            </a>
+            <img
+              src="/refer-earn/hero-art.svg"
+              alt=""
+              className="rf-hero-art"
+            />
+          </div>
+          <div className="rf-hero-pitch">
+            <h1>
+              Refer &amp; Earn{" "}
+              <span aria-hidden="true" className="rf-coin">
+                <span className="rf-coin-inner">
+                  <span className="rf-coin-face">&#8377;</span>
+                  <span className="rf-coin-face rf-coin-face--back">
+                    &#8377;
+                  </span>
+                </span>
+              </span>
+            </h1>
+            <p>Invite your friends &amp; earn &#8377;1000 per enrolment</p>
+            <Link href="/login" className="rf-login">
+              Login
+            </Link>
+          </div>
         </div>
-        <div className="imageContainer">
-          <Image
-            src={ReferalSrc}
-            alt="Refer and earn at Uniscaler"
-            sizes="(max-width: 768px) 90vw, 600px"
-          />
+
+        {/* ─── How it works ─── */}
+        <div className="rf-how" id="rf-how">
+          <h2>
+            How it <span>works?</span>
+          </h2>
+          <p className="rf-how-sub">
+            Let&apos;s break down the referral program
+          </p>
+          <div className="rf-steps">
+            {STEPS.map(({ step, title, copy, img }) => (
+              <article className="rf-step" key={step}>
+                <img src={img} alt="" className="rf-step-img" />
+                <span className="rf-step-no">{step}</span>
+                <h3>{title}</h3>
+                <p>{copy}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
-      <section className="how-we-do">
-        <h2>How it Works:</h2>
-        <div className="section-wrapper">
-          {howWeWork.map((item) => (
+
+      {/* ─── Invite more ─── */}
+      <section className="rf-invite">
+        <h2>
+          Don&apos;t stop here, <em>invite</em> more to <em>earn</em> more.
+        </h2>
+        <div className="rf-invite-body">
+          <div className="rf-invite-rows">
+            {INVITE_ROWS.map(({ title, sub, Icon }) => (
+              <div className="rf-invite-row" key={title}>
+                <span className="rf-invite-icon" aria-hidden="true">
+                  <Icon />
+                </span>
+                <div className="rf-invite-text">
+                  <strong>{title}</strong>
+                  <span>{sub}</span>
+                </div>
+                <Link href="/login" className="rf-invite-btn">
+                  Invite
+                </Link>
+              </div>
+            ))}
+          </div>
+          <div className="rf-invite-art" aria-hidden="true">
+            <img src="/refer-earn/hero-art.svg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      {/* ─── The journey, four stops on a line ─── */}
+      <section className="rf-journey">
+        <h2>
+          Earn <strong>&#8377;1000 per referral</strong> with Uniscaler
+        </h2>
+        {/* The reference's wave: four near-semicircle arcs, each cradling a
+            circle — down, up, down, up — with the copy on the opposite side of
+            the wave from its circle. The arcs are one inline SVG sized by the
+            same 1300×300 proportions the stops are positioned in, so the two
+            stay locked together at any width; four separate paths rather than
+            one, because the round-capped gaps between arcs are part of the
+            reference's look. */}
+        <div className="rf-journey-stage">
+          <svg
+            className="rf-wave"
+            viewBox="0 0 1300 300"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <g
+              fill="none"
+              stroke="#ffffff"
+              strokeWidth="16"
+              strokeLinecap="round"
+            >
+              <path d="M17.5 150 A145 145 0 0 0 307.5 150" />
+              <path d="M342.5 150 A145 145 0 0 1 632.5 150" />
+              <path d="M667.5 150 A145 145 0 0 0 957.5 150" />
+              <path d="M992.5 150 A145 145 0 0 1 1282.5 150" />
+            </g>
+            <circle cx="17.5" cy="150" r="20" fill="#eef1fb" />
+            <circle cx="1282.5" cy="150" r="20" fill="#eef1fb" />
+          </svg>
+          {JOURNEY.map(({ title, copy, Icon }, i) => (
             <div
-              className="section-item"
-              key={item}
-              dangerouslySetInnerHTML={{ __html: item }}
-            ></div>
+              className={`rf-stop ${i % 2 ? "rf-stop-up" : "rf-stop-down"}`}
+              key={title}
+            >
+              <span className="rf-stop-circle" aria-hidden="true">
+                <Icon />
+              </span>
+              <div className="rf-stop-copy">
+                <h3>{title}</h3>
+                <p>{copy}</p>
+              </div>
+            </div>
           ))}
         </div>
+        <p className="rf-fineprint">
+          *The Refer and Earn program is subject to change or termination at
+          the discretion of Uniscaler.
+        </p>
       </section>
-      <section className="how-we-do">
-        <h2>How to Participate:</h2>
 
-        <ul>
-          <li>Log in to your Uniscaler student account.</li>
-          <li>
-            Navigate to the &quot;Refer and Earn&quot; section to get your
-            unique referral code.
-          </li>
-          <li>
-            Share your code with friends via email, social media, or word of
-            mouth.
-          </li>
-          <li>
-            Encourage your friends to use your code when applying to colleges
-            through Uniscaler&apos;s website.
-          </li>
-          <li>Enjoy rewards for successful referrals!</li>
-        </ul>
-        <div className="terms">
-          <h2>Terms and Conditions</h2>
-          <ul>
-            <li>
-              The referral code is unique to each student and should not be
-              shared publicly or misused.
-            </li>
-            <li>
-              Referrals are considered successful only when the referred friend
-              enrolls in a college affiliated with Uniscaler through our
-              website.
-            </li>
-            <li>
-              Rewards are credited to your account once the enrollment of your
-              referred friend is confirmed.
-            </li>
-            <li>
-              The Refer and Earn program is subject to change or termination at
-              the discretion of Uniscaler.
-            </li>
-          </ul>
+      {/* ─── FAQ ─── */}
+      <section className="rf-faq">
+        <h2>FAQ</h2>
+        <div className="rf-faq-items">
+          {FAQS.map(({ title, des }) => (
+            <FaqItem key={title} title={title} des={des} />
+          ))}
         </div>
       </section>
     </main>

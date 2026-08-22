@@ -4,7 +4,10 @@ import Link from "next/link";
 import { studyAbroadCountries, studyAbroadStats } from "@/lib/studyAbroadData";
 import { studyAbroadDestinations } from "@/lib/studyAbroadDestinations";
 import { domainPhotoCredits } from "@/lib/domainPhotoCredits";
+import { supportPhotoCredits } from "@/lib/supportPhotoCredits";
+import { studyAbroadTools } from "@/lib/studyAbroadTools";
 import { brochureUrl } from "@/lib/brochure";
+import StudyAbroadGuide from "./StudyAbroadGuide";
 import {
   FaArrowRight,
   FaChevronRight,
@@ -16,6 +19,7 @@ import {
   FaXmark,
   FaPlaneUp,
   FaDownload,
+  FaCircleCheck,
 } from "react-icons/fa6";
 import "./study-abroad.css";
 
@@ -96,12 +100,12 @@ const SMART_HIGHLIGHTS = [
  * means nothing here.
  *
  * Each card therefore maps onto real categories in `studyAbroadData.js` —
- * checked against the catalog, which holds Management(76), MBA(30),
- * Data Science(25), ENGINEERING(25), AI & ML(19), Bachelors(17),
+ * checked against the catalog, which holds Management(75), MBA(30),
+ * Data Science(25), ENGINEERING(25), AI & ML(18), Bachelors(17),
  * Finance & Commerce(9) and Health & Science(4).
  *
  * "With Internships" is the odd one out: there is no such category, so it
- * matches on the course title instead — 19 of the 205 courses say so.
+ * matches on the course title instead — 19 of the 203 courses say so.
  */
 /**
  * The rotating hero headline, one line every 2s, styled after
@@ -119,6 +123,80 @@ const HERO_LINES = [
   { lead: "Smart Scaling for", tail: "Growing Businesses." },
   { lead: "Uniscaler:", tail: "Seamless Growth, Simplified." },
 ];
+
+/**
+ * The 360° support accordion, after upgrad.com/study-abroad's. Items map onto
+ * what Uniscaler actually has pages for — loans and scholarships link to their
+ * own pages, the rest to counselling — and the copy makes no numeric claims:
+ * the reference's "scholarships of up to 40%" is upGrad's figure, not ours.
+ *
+ * `key` names each item's photo: `/study-abroad/support/{key}.webp`, fetched
+ * and credited by scripts/fetch-support-photos.mjs. All five are CC BY, so
+ * attribution is a licence condition; it renders in the combined credits
+ * line under "Globally acclaimed domains" — neither goes without the other.
+ */
+const SUPPORT_ITEMS = [
+  {
+    key: "counseling",
+    title: "1:1 profile evaluation & counseling",
+    copy: "Sit down with our counselors for a one-on-one evaluation of your profile, goals and budget.",
+    cta: "Talk to us",
+    href: "/contact",
+  },
+  {
+    key: "scholarship",
+    title: "Scholarship support",
+    copy: "Guidance on scholarships offered by partner universities, to make your global education more accessible.",
+    cta: "Learn more",
+    href: "/scholarship",
+  },
+  {
+    key: "ielts",
+    title: "IELTS preparation",
+    copy: "Get exam-ready with guidance and preparation support for IELTS and other admission tests.",
+    cta: "Get guidance",
+    href: "/contact",
+  },
+  {
+    key: "loan",
+    title: "Educational loan assistance",
+    copy: "Hassle-free education loan options through our trusted banking partners.",
+    cta: "Explore loans",
+    href: "/education-loan",
+  },
+  {
+    key: "visa",
+    title: "Visa support",
+    copy: "End-to-end help with your student visa application and documentation.",
+    cta: "Talk to us",
+    href: "/contact",
+  },
+];
+
+const supportCredit = (key) => supportPhotoCredits.find((c) => c.key === key);
+
+/**
+ * The checklist in the "Meet Uniscaler experts" band, after the reference's.
+ * Reworded where the reference states things that are upGrad's, not ours:
+ * their "upGrad-exclusive scholarships" became the partner-university
+ * scholarship guidance SUPPORT_ITEMS already claims, and their Google rating
+ * (4.6, 802 reviews) and opening hours are left out entirely rather than
+ * invented — the band shows the real phone number in that slot instead.
+ */
+const CITY_POINTS = [
+  "Personalized study abroad counseling",
+  "Real-time answers to your queries",
+  "Guidance on partner-university scholarships",
+  "One-stop support for application, loan & visa",
+];
+
+/**
+ * The same embed the contact page renders — Uniscaler, Faridabad. Copied
+ * rather than imported because ContactUs.jsx does not export it; an office
+ * move is a change in both files.
+ */
+const CITY_MAP_EMBED =
+  "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1036.780674783372!2d77.3209610054497!3d28.342003822200684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1709790690975!5m2!1sen!2sin";
 
 const GOAL_DOMAINS = [
   {
@@ -173,12 +251,12 @@ const PARTNER_ROWS = (() => {
     for (const category of country.categories || [])
       for (const course of category.courses || []) {
         const name = course.university?.trim();
-        // Two "Youth Leadership Program" entries name upGrad itself as the
-        // university, and their logo file is upGrad's own square mark. The
-        // catalog was extracted from that platform (see the header of
-        // studyAbroadData.js), so this is the source showing through — and a
-        // wall of partner logos is the one place it cannot be left in, because
-        // it would put a competitor's mark among Uniscaler's partners.
+        // A guard now, not a fix: the two "Youth Leadership Program" entries
+        // that named upGrad itself as the university were removed from the
+        // catalog on 2026-08-21 (see the header of studyAbroadData.js — the
+        // client's rule is that the name never appears anywhere). Kept
+        // because the catalog came from that platform, and a re-extraction
+        // could bring such entries back.
         if (!name || !course.logo || /upgrad/i.test(name)) continue;
         if (!seen.has(name)) seen.set(name, { name, logo: course.logo });
       }
@@ -200,8 +278,8 @@ const PARTNER_ROWS = (() => {
  *
  * Ordered by how many programs each field holds rather than by a hand-written
  * list, so the busiest tab opens first and a new category appears on its own.
- * Currently: Management(76), MBA(30), Data Science(25), ENGINEERING(25),
- * AI & ML(19), Bachelors(17), Finance & Commerce(9), Health & Science(4).
+ * Currently: Management(75), MBA(30), Data Science(25), ENGINEERING(25),
+ * AI & ML(18), Bachelors(17), Finance & Commerce(9), Health & Science(4).
  */
 const PATHWAY_FIELDS = (() => {
   const byField = new Map();
@@ -329,6 +407,43 @@ export default function StudyAbroadPage() {
   const chooseField = (name) => {
     setActiveField(name);
     setShowAllPathways(false);
+  };
+
+  /**
+   * Which SUPPORT_ITEMS entry is open. One is always open, as in the
+   * reference — clicking a header moves the selection rather than toggling it
+   * shut, so the band never collapses to a bare list of titles.
+   */
+  const [supportOpen, setSupportOpen] = useState(0);
+
+  /**
+   * The plan band's lead form. Same endpoint and shape as ConsultForm's
+   * consultation leads; the message says which page produced it, so the two
+   * kinds of lead stay tellable-apart in the same table.
+   */
+  const [plan, setPlan] = useState({ name: "", email: "", phone: "" });
+  const [planStatus, setPlanStatus] = useState("idle");
+  const submitPlan = (e) => {
+    e.preventDefault();
+    setPlanStatus("sending");
+    fetch(process.env.NEXT_PUBLIC_API_URL + "/consultation", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...plan,
+        message: "Personalized study abroad plan request (/study-abroad)",
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.code === 200) {
+          setPlan({ name: "", email: "", phone: "" });
+          setPlanStatus("ok");
+        } else {
+          setPlanStatus("error");
+        }
+      })
+      .catch(() => setPlanStatus("error"));
   };
 
   return (
@@ -600,13 +715,17 @@ export default function StudyAbroadPage() {
             ))}
           </div>
 
-          {/* Not optional. All four photos are CC BY, which permits the
-              commercial use and the crop but requires the credit — removing
-              this line means removing the images. Generated alongside them by
-              scripts/fetch-domain-photos.mjs. */}
+          {/* Not optional. All nine photos — the four cards above and the
+              support band's five — are CC BY, which permits the commercial
+              use and the crop but requires the credit: removing this line
+              means removing the images. The support five are credited here rather
+              than under their own figure on the client's word (2026-08-21);
+              one combined line on the page satisfies BY's "reasonable to the
+              medium" attribution. Generated by scripts/fetch-domain-photos.mjs
+              and scripts/fetch-support-photos.mjs respectively. */}
           <p className="sa-goal-credits">
             Photos:{" "}
-            {domainPhotoCredits.map((c, i) => (
+            {[...domainPhotoCredits, ...supportPhotoCredits].map((c, i) => (
               <span key={c.key}>
                 {i > 0 && " · "}
                 <a href={c.source} target="_blank" rel="noopener noreferrer">
@@ -783,28 +902,17 @@ export default function StudyAbroadPage() {
                         </span>
                         <h3 className="sa-pathway-name">{course.title}</h3>
 
-                        {/* "Download Brochure", matching the reference, on the
-                            client's decision of 2026-08-18 after the trade-off
-                            was put to them. It was "Talk to a Counsellor"
-                            before, because every one of the 203 `syllabusUrl`s
-                            in the catalog is on upGrad's own S3 bucket or CDN —
-                            so this hands a visitor a competitor-branded PDF
-                            from a host we do not control, leaks the referrer
-                            there, and breaks whenever that bucket is rotated.
-                            The client weighed that and chose the exact upGrad
-                            behaviour. Do not "fix" it back without asking.
-
-                            A plain <a>, not next/link: the target is external,
-                            so there is no route to prefetch. No `download`
-                            attribute either — browsers ignore it cross-origin,
-                            so it would promise a save and deliver a tab. The
-                            PDF opens in a new tab instead, which is what
-                            actually happens.
-
-                            Two of the 205 programs carry no brochure at all
-                            (DePaul's MBA, Northeastern's MS in Data Analytics
-                            Engineering). They keep the counselling link rather
-                            than showing a button that downloads nothing.
+                        {/* "Download Brochure" is a lead gate, the third
+                            behaviour this button has had, each on the client's
+                            word: counselling → the upGrad PDF directly
+                            (2026-08-18) → registration (2026-08-19). It
+                            downloads nothing and routes every card to
+                            /register — including the two programmes that have
+                            no brochure in the catalog; the counselling
+                            fallback they kept at first was removed on the
+                            client's word the same day. Nothing on /register
+                            knows about brochures, so do not wire syllabusUrl
+                            back in here without asking.
 
                             The arrow opens the full pathway listing, carrying
                             this card's own domain and country as the starting
@@ -812,21 +920,13 @@ export default function StudyAbroadPage() {
                             around the one being looked at rather than on all
                             203, or on a country page that drops the field. */}
                         <div className="sa-pathway-actions">
-                          {course.syllabusUrl ? (
-                            <a
-                              href={course.syllabusUrl}
-                              className="sa-pathway-cta"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              aria-label={`Download the brochure for ${course.title}`}
-                            >
-                              Download Brochure <FaDownload />
-                            </a>
-                          ) : (
-                            <Link href="/contact" className="sa-pathway-cta">
-                              Talk to a Counsellor
-                            </Link>
-                          )}
+                          <Link
+                            href="/register"
+                            className="sa-pathway-cta"
+                            aria-label={`Register to get the brochure for ${course.title}`}
+                          >
+                            Download Brochure <FaDownload />
+                          </Link>
                           <Link
                             href={`/study-abroad/pathway-programs?domain=${encodeURIComponent(
                               activePathway.name
@@ -855,7 +955,7 @@ export default function StudyAbroadPage() {
                   >
                     {showAllPathways
                       ? "Show fewer"
-                      : `View all ${activePathway.courses.length} ${activePathway.name} programs`}{" "}
+                      : `View all ${activePathway.name} programs`}{" "}
                     <FaChevronRight />
                   </button>
                 </div>
@@ -867,23 +967,254 @@ export default function StudyAbroadPage() {
         </div>
       </section>
 
-      {/* ─── All Countries Directory ─── */}
-      <section className="sa-countries-dir">
-        <div className="sa-explorer-inner">
-          <h2 className="sa-section-title">All Destinations</h2>
-          <div className="sa-countries-grid">
-            {studyAbroadCountries.map((country) => (
-              <Link
-                key={country.slug}
-                href={`/study-abroad/${country.slug}`}
-                className="sa-country-card"
-              >
-                <img src={country.flag} alt={country.name} className="sa-country-card-flag" />
-                <div className="sa-country-card-info">
-                  <span className="sa-country-card-name">{country.name}</span>
-                  <span className="sa-country-card-count">{country.totalPrograms} Programs</span>
+      {/* ─── Personalized plan lead band ───
+          Replaced the "All Destinations" country directory on the client's
+          word, after upgrad.com/study-abroad's "Secure your personalized study
+          abroad plan" band: dark copy panel left, lead form right. Worth
+          remembering that the directory this displaced was the page's only
+          set of links to the nine country pages — the destinations map at the
+          top still reaches them, so they are not orphaned, but this is now
+          the only route.
+
+          The form posts to `/consultation` — the same public endpoint, with
+          the same {name, email, phone, message} shape, that ConsultForm
+          already uses — so no backend change and no new wiring; the message
+          field says where the lead came from. Inline status text rather than
+          a snackbar so the outcome reads next to the button that caused it. */}
+      <section className="sa-plan">
+        <div className="sa-plan-inner">
+          <div className="sa-plan-copy">
+            <h2>Secure your personalized study abroad plan</h2>
+            <p>
+              Get comprehensive guidance on destinations, universities,
+              scholarships, and funding — tailored to your career goals.
+            </p>
+          </div>
+          <form className="sa-plan-form" onSubmit={submitPlan}>
+            <p className="sa-plan-lead">
+              Enter your details, and our experts will connect with you to
+              guide you through the process.
+            </p>
+            <label htmlFor="sa-plan-name">Full Name</label>
+            <input
+              id="sa-plan-name"
+              type="text"
+              required
+              value={plan.name}
+              onChange={(e) => setPlan({ ...plan, name: e.target.value })}
+            />
+            <label htmlFor="sa-plan-email">Email Address</label>
+            <input
+              id="sa-plan-email"
+              type="email"
+              required
+              value={plan.email}
+              onChange={(e) => setPlan({ ...plan, email: e.target.value })}
+            />
+            <label htmlFor="sa-plan-phone">Phone number</label>
+            <div className="sa-plan-phone">
+              <span aria-hidden="true">🇮🇳 +91</span>
+              <input
+                id="sa-plan-phone"
+                type="tel"
+                required
+                inputMode="numeric"
+                pattern="[0-9]{10}"
+                title="10-digit mobile number"
+                value={plan.phone}
+                onChange={(e) => setPlan({ ...plan, phone: e.target.value })}
+              />
+            </div>
+            <button
+              type="submit"
+              className="sa-plan-submit"
+              disabled={planStatus === "sending"}
+            >
+              {planStatus === "sending" ? "Sending…" : "Continue"}{" "}
+              <FaChevronRight />
+            </button>
+            {planStatus === "ok" && (
+              <p className="sa-plan-note" role="status">
+                Thank you! Our experts will connect with you shortly.
+              </p>
+            )}
+            {planStatus === "error" && (
+              <p className="sa-plan-note sa-plan-err" role="status">
+                Something went wrong — please try again.
+              </p>
+            )}
+          </form>
+        </div>
+      </section>
+
+      {/* ─── 360° support system ───
+          After the reference's "360° support system for upGrad learners"
+          band, added below the plan band on the client's word (2026-08-21).
+          SUPPORT_ITEMS at the top of this file has carried the content since
+          the band was drafted. Hover moves the selection as well as click —
+          also the client's word — so the handler sits on mouseEnter, where a
+          touch screen never fires it and a tap still lands on onClick.
+
+          Every item's photo renders stacked in the figure with only the
+          active one visible, rather than one <img> whose src changes: a src
+          swap refetches on first hover and the band flashes white for the
+          round trip, where a stack has every layer already painted and the
+          crossfade is just opacity. Five 27-46KB WebPs, so the whole stack
+          costs less than the single JPEG it replaced. All five are CC BY —
+          credited in the combined line under "Globally acclaimed domains",
+          not here, on the client's word. */}
+      <section className="sa-support">
+        <div className="sa-support-inner">
+          <h2 className="sa-support-title">
+            <span className="sa-goal-accent">360° support system</span> for
+            Uniscaler learners
+          </h2>
+          <p className="sa-support-sub">
+            Applications, visas, counselling, and planning — everything in one
+            place.
+          </p>
+
+          <div className="sa-support-body">
+            <div className="sa-support-list">
+              {SUPPORT_ITEMS.map((item, i) => (
+                <div
+                  key={item.title}
+                  className={`sa-support-item${
+                    supportOpen === i ? " is-open" : ""
+                  }`}
+                >
+                  <h3 className="sa-support-item-title">
+                    <button
+                      type="button"
+                      aria-expanded={supportOpen === i}
+                      onClick={() => setSupportOpen(i)}
+                      onMouseEnter={() => setSupportOpen(i)}
+                    >
+                      {item.title}
+                    </button>
+                  </h3>
+                  {supportOpen === i && (
+                    <div className="sa-support-panel">
+                      <p>{item.copy}</p>
+                      <Link href={item.href} className="sa-support-cta">
+                        {item.cta} <FaChevronRight />
+                      </Link>
+                    </div>
+                  )}
                 </div>
-                <FaArrowRight className="sa-country-card-arrow" />
+              ))}
+            </div>
+
+            {/* No caption: the credit line that sat here went, on the
+                client's word (2026-08-21), into the combined credits line
+                under "Globally acclaimed domains" — moved, not deleted,
+                because CC BY makes attribution a licence condition. Do not
+                remove these photos from that line while they render here. */}
+            <figure className="sa-support-photo">
+              <div className="sa-support-frame">
+                {SUPPORT_ITEMS.map((item, i) => (
+                  <img
+                    key={item.key}
+                    src={`/study-abroad/support/${item.key}.webp`}
+                    alt={supportCredit(item.key)?.alt || ""}
+                    style={{ objectPosition: supportCredit(item.key)?.focal }}
+                    className={supportOpen === i ? "is-active" : undefined}
+                    loading="lazy"
+                  />
+                ))}
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Meet Uniscaler experts in your city ───
+          After the reference's "Meet upGrad experts in your city" band, added
+          below the support band on the client's word (2026-08-21). Checklist
+          and CTA left, map right with a meta row underneath. The map is the
+          contact page's own embed — Uniscaler, Faridabad — and the meta row
+          carries the address and phone number from that same page. What the
+          reference shows there that this deliberately does not: upGrad's
+          Google rating and their opening hours. See CITY_POINTS' comment. */}
+      <section className="sa-city">
+        <div className="sa-city-inner">
+          <div className="sa-city-copy">
+            <h2 className="sa-city-title">
+              Meet Uniscaler Pro experts{" "}
+              <span className="sa-goal-accent">in your city</span>
+            </h2>
+            <ul className="sa-city-list">
+              {CITY_POINTS.map((point) => (
+                <li key={point}>
+                  <FaCircleCheck /> {point}
+                </li>
+              ))}
+            </ul>
+            <Link href="/contact" className="sa-city-btn">
+              Talk to our expert <FaChevronRight />
+            </Link>
+          </div>
+
+          <div className="sa-city-map">
+            <iframe
+              src={CITY_MAP_EMBED}
+              title="Uniscaler on Google Maps — Faridabad, Haryana"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <div className="sa-city-meta">
+              <div>
+                <span className="sa-city-meta-label">
+                  Your nearest Uniscaler centre
+                </span>
+                <span className="sa-city-meta-place">Faridabad, Haryana</span>
+              </div>
+              <div className="sa-city-meta-right">
+                <a className="sa-city-meta-phone" href="tel:+919667956655">
+                  +91 96679 56655
+                </a>
+                <Link href="/contact" className="sa-support-cta">
+                  Book a free visit <FaChevronRight />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Free tools band ───
+          After the reference's tools band, added below the experts band on
+          the client's word (2026-08-21). Four dark cards linking to
+          /study-abroad/tools/[tool], where the calculators live — the list
+          and the routes come from src/lib/studyAbroadTools.js, so a fifth
+          tool is one entry there plus its calculator. The reference's
+          per-card usage counts are its own platform's figures, so each card
+          carries a factual line about the tool instead. */}
+      <section className="sa-tools">
+        <div className="sa-tools-inner">
+          <h2 className="sa-tools-title">
+            Plan your journey with{" "}
+            <span className="sa-goal-accent">free tools</span>
+          </h2>
+          <p className="sa-tools-sub">
+            Estimate living costs, test scores and loan EMIs in minutes —
+            before you apply.
+          </p>
+
+          <div className="sa-tools-grid">
+            {studyAbroadTools.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/study-abroad/tools/${t.slug}`}
+                className="sa-tool-card"
+              >
+                <span className="sa-tool-name">
+                  {t.name}
+                  <small>Calculator</small>
+                </span>
+                <FaArrowRight className="sa-tool-arrow" aria-hidden="true" />
+                <span className="sa-tool-tag">{t.tag}</span>
               </Link>
             ))}
           </div>
@@ -891,6 +1222,28 @@ export default function StudyAbroadPage() {
       </section>
 
       {/* ─── CTA Banner ─── */}
+      {/* Learner trust band — placed directly after the free tools section. */}
+      <section className="sa-learner-trust">
+        <div className="sa-learner-trust-image">
+          <img
+            src="/study-abroad/learner-trust.webp"
+            alt="Graduates celebrating at their graduation ceremony"
+            loading="lazy"
+          />
+        </div>
+        <div className="sa-learner-trust-copy">
+          <h2>
+            <span>3,00,000+ learners</span> have trusted us
+          </h2>
+          <p>Advance your career with our expert guidance &amp; global programs.</p>
+          <Link href="/contact" className="sa-learner-trust-btn">
+            Start your journey today <FaChevronRight />
+          </Link>
+        </div>
+      </section>
+
+      <StudyAbroadGuide />
+
       <section className="sa-cta-banner">
         <div className="sa-explorer-inner">
           <h2>Ready to Study Abroad?</h2>

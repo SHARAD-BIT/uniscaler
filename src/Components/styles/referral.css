@@ -1,84 +1,780 @@
+/* ─────────────────────────────────────────────────────────────
+   Refer & Earn — rebuilt 2026-08-20 after easemytrip.com/refer.
+   The blue is the brand indigo family (#2a40d1 is the hero
+   banner's card colour, already used by the navbar dots), not
+   EMT's royal blue, so the page matches this site rather than
+   theirs. The Login/Invite orange is #f75d34 — the colour the
+   AI-Assistance shining-tag already uses, so it is not a new
+   colour either. The old page's rules are gone with the markup
+   that used them; only Referral.jsx ever imported this file.
+   ───────────────────────────────────────────────────────────── */
+
 .referral {
-  padding-inline: 1rem;
+  background: #fff;
 }
 
-.referral .gridBox {
-  max-width: 1400px;
+/* ── Hero + How-it-works share one dotted blue panel, as in the
+   reference, fading to pale blue where the step cards sit. The
+   dot grid is two radial-gradient tiles rather than an image —
+   nothing to load, and it recolours with the panel. */
+/* The dots gather into continents rather than covering the panel evenly —
+   that clustering is what the reference actually shows, and a gradient tile
+   cannot do it: a tile repeats uniformly by definition, so any version of it
+   reads as a grid, however the sizes are staggered. dot-map.svg is the
+   landmasses on a dot grid, ~24kB of <circle> and no raster. On brand too,
+   for a site whose other half is study abroad.
+
+   It sits above the fine 22px grid, which stays as the base texture. The map
+   is white; opacity carries it, so it still recolours with the panel.
+
+   The width cap is what sets dot size: the file is 120 dots across at a 6px
+   pitch, so at 1400px each dot lands about 7.5px on an 11.7px pitch. Letting
+   it run to full width on a wide monitor would scale the dots up with it —
+   and this one number is the fastest way to resize the whole field, since
+   it scales dot and gap together without regenerating the svg. */
+.rf-hero {
+  /* ?v= is the asset's version. The file name never changes, so a browser
+     that has cached an earlier dot size keeps serving it — bump this
+     whenever dot-map.svg is regenerated. */
+  background-image: url("/refer-earn/dot-map.svg?v=5"),
+    radial-gradient(rgba(255, 255, 255, 0.14) 1.5px, transparent 1.5px),
+    linear-gradient(180deg, #16247f 0%, #2a40d1 55%, #b9cdf3 130%);
+  background-size: min(1400px, 100%) auto, 22px 22px, 100% 100%;
+  background-position: center 12%, 0 0, 0 0;
+  background-repeat: no-repeat, repeat, no-repeat;
+  padding: 3.5rem 1.5rem 4.5rem;
+}
+
+/* Two equal cards, centred as a pair. Equal columns rather than a capped
+   left and a greedy 1fr right, which made the glass panel half again as
+   wide as the card it is supposed to match; stretch rather than center, so
+   they share a height instead of floating the shorter one. The max-width is
+   two ~530px cards plus the gap. */
+.rf-hero-inner {
+  max-width: 1120px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  place-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3rem;
+  align-items: stretch;
 }
-.referral .gridBox .textArea {
+
+/* The left card. The supplied illustration sits inside it on its
+   own light panel — it is line art with a transparent ground, so
+   it needs a pale backing to read, the way the reference's photo
+   fills its card. */
+.rf-hero-card {
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.6rem 1.6rem 0;
+  box-shadow: 0 18px 44px rgba(4, 12, 64, 0.35);
+  overflow: hidden;
+  /* A column so the art can take the slack when this card is stretched to
+     the pitch's height — otherwise the extra height lands as dead white
+     space under the illustration. */
+  display: flex;
+  flex-direction: column;
+}
+
+.rf-crown {
+  font-size: 2rem;
+  display: block;
+  line-height: 1;
+}
+
+.rf-hero-card h2 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: #10194f;
+}
+
+.rf-hero-card > p {
+  color: #4a5378;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.rf-explore {
+  display: inline-flex;
+  align-items: center;
+  /* Same reason as .rf-login: its parent is a flex column now, so without
+     this the pill stretches the full width of the card. */
+  align-self: flex-start;
+  gap: 0.5rem;
+  background: #10194f;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.65rem 1.3rem;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.rf-explore:hover {
+  background: #2a40d1;
+}
+
+.rf-explore svg {
+  font-size: 0.8em;
+}
+
+.rf-hero-art {
+  display: block;
+  width: min(300px, 80%);
+  height: auto;
+  /* auto top margin parks it against the card's bottom edge, where the
+     reference's photo sits, rather than leaving the gap below it. */
+  margin: auto auto 0;
+  padding-top: 1.2rem;
+}
+
+/* The pitch sits on frosted glass, matching the left card's radius so the
+   two read as a pair. The panel is a tint plus a blur of the dotted panel
+   behind it — deliberately low-contrast, because the headline is the thing
+   that should carry, not its container. */
+.rf-hero-pitch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    0 18px 44px rgba(4, 12, 64, 0.28);
+  backdrop-filter: blur(14px) saturate(125%);
+  -webkit-backdrop-filter: blur(14px) saturate(125%);
+}
+
+/* Without backdrop-filter the tint alone reads as a washed-out rectangle,
+   so browsers that lack it get a solid-enough panel instead. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .rf-hero-pitch {
+    background: rgba(28, 44, 150, 0.55);
+  }
+}
+
+/* The reference sets this line in a serif; Georgia for the same
+   reason as the study-abroad headline — the PT Serif @import is
+   dropped from page-level CSS by the build, and next/font is not
+   worth it for two words. */
+.rf-hero-pitch h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* A struck gold coin rather than the 🪙 emoji, which Windows renders as a
+   bank building and every other platform draws differently. Two faces, not
+   one: backface-visibility hides each through the half turn where you would
+   otherwise be reading a mirrored ₹. */
+.rf-coin {
+  --rf-coin-size: 0.75em;
+  --rf-coin-speed: 2.8s;
+  display: inline-grid;
+  width: var(--rf-coin-size);
+  height: var(--rf-coin-size);
+  vertical-align: 0.02em;
+  perspective: 420px;
+}
+
+.rf-coin-inner {
+  grid-area: 1 / 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rf-coin-spin var(--rf-coin-speed) linear infinite;
+}
+
+.rf-coin-face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  /* The h1 is Georgia, whose ₹ coverage is not dependable — the glyph gets
+     its own stack so the coin can never fall back to a tofu box. */
+  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.56em;
+  font-weight: 600;
+  line-height: 1;
+  color: #7a4e02;
+  text-shadow: 0 0.02em 0 rgba(255, 255, 255, 0.45);
+  background: radial-gradient(
+    circle at 32% 27%,
+    #ffedb4 0%,
+    #f8cb4c 40%,
+    #e3a507 71%,
+    #b87a08 100%
+  );
+  box-shadow:
+    inset 0 0 0 0.05em rgba(255, 255, 255, 0.55),
+    inset 0 0 0 0.085em rgba(150, 98, 4, 0.5),
+    0 0.04em 0.1em rgba(0, 0, 0, 0.25);
+}
+
+.rf-coin-face--back {
+  transform: rotateY(180deg);
+}
+
+@keyframes rf-coin-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rf-coin-inner {
+    animation: none;
+  }
+}
+
+.rf-hero-pitch > p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  opacity: 0.92;
+  margin-bottom: 1.6rem;
+}
+
+.rf-login {
+  display: inline-block;
+  /* .rf-hero-pitch is a flex column now, and a flex item stretches to the
+     cross axis by default — without this the pill spans the whole card. */
+  align-self: center;
+  background: #f75d34;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.75rem 2.6rem;
+  border-radius: 999px;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.rf-login:hover {
+  background: #e04a22;
+  transform: translateY(-2px);
+}
+
+/* ── How it works — still on the blue panel ── */
+.rf-how {
+  max-width: 1300px;
+  margin: 4.5rem auto 0;
+  text-align: center;
+  color: #fff;
+  /* the anchor from the card's Explore button lands here; keep it
+     clear of the fixed two-layer navbar */
+  scroll-margin-top: 133px;
+}
+
+.rf-how h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+}
+
+.rf-how h2 span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.rf-how-sub {
+  margin: 0.4rem 0 2.2rem;
+  opacity: 0.92;
+}
+
+.rf-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+  text-align: left;
+}
+
+.rf-step {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: 0 14px 30px rgba(4, 12, 64, 0.22);
+  color: #1b2559;
+}
+
+/* The step scene, drawn in the hero illustration's own flat-indigo
+   style — see the note on STEPS in Referral.jsx. */
+.rf-step-img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto 1rem;
+}
+
+.rf-step-no {
+  display: block;
+  color: #2a40d1;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.rf-step h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+  color: #10194f;
+}
+
+.rf-step p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #4a5378;
+}
+
+/* ── Invite more ── */
+.rf-invite {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+}
+
+.rf-invite h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 800;
+  color: #101223;
+  margin-bottom: 2.5rem;
+}
+
+.rf-invite h2 em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.rf-invite-body {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.rf-invite-rows {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  line-height: 1.5;
 }
-.referral .gridBox .textArea h1,
-.referral .how-we-do h2 {
-  background-image: linear-gradient(5deg, var(--accent), var(--primary));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.referral .how-we-do{
-    max-width: 1400px;
-    margin: 3rem auto;
-}
-.referral .how-we-do h2{
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.referral .how-we-do ul,.referral .how-we-do ul li {
-    list-style: decimal;
-}
-.referral .how-we-do ul li{
-    margin-left: 1rem;
-    line-height: 1.5;
-    font-weight: 600;
-    opacity: 0.8;
-    margin-bottom: 0.5rem;
-}
-.referral .section-wrapper{
-    max-width: 1400px;
-    margin: 2rem auto;
-    display: grid;
-    gap: 3rem;
 
+.rf-invite-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 8px 26px rgba(16, 25, 79, 0.1);
+  border: 1px solid #eef1fb;
 }
-.referral .section-wrapper .section-item{
-    width: 100%;
+
+.rf-invite-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  flex: none;
+  border-radius: 12px;
+  background: #e8edfd;
+  color: #2a40d1;
+  font-size: 1.5rem;
+}
+
+.rf-invite-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+}
+
+.rf-invite-text strong {
+  color: #10194f;
+  font-size: 1.05rem;
+}
+
+.rf-invite-text span {
+  color: #6a7391;
+  font-size: 0.88rem;
+}
+
+.rf-invite-btn {
+  background: #f75d34;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.6rem;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.rf-invite-btn:hover {
+  background: #e04a22;
+}
+
+/* the illustration again, on a soft indigo disc — the reference
+   reuses photography here; we have one piece of supplied art and
+   it carries both spots */
+.rf-invite-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(closest-side, #e8edfd 0%, #ffffff 100%);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.rf-invite-art img {
+  width: 78%;
+  height: auto;
+}
+
+/* ── The journey — the reference's wave band. The soft blue
+   gradient stands in for its beach photo: the wave is white, so
+   it only reads against a coloured mid-band. ── */
+.rf-journey {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #eaf2ff 18%,
+    #cfdff8 58%,
+    #eef5ff 100%
+  );
+  padding: 4.5rem 1.5rem 3rem;
+  overflow: hidden;
+}
+
+.rf-journey h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 700;
+  color: #101223;
+}
+
+.rf-journey h2 strong {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* The stage keeps the SVG's own 1300×300 proportions, and the
+   stops are positioned in percentages of it, so circles and arcs
+   scale together and cannot drift apart. The big top/bottom
+   margins are the room the up-stops' and down-stops' copy grows
+   into — the copy hangs outside the box, above or below. */
+.rf-journey-stage {
+  position: relative;
+  max-width: 1300px;
+  aspect-ratio: 1300 / 300;
+  margin: 10rem auto 10.5rem;
+}
+
+.rf-wave {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 6px 14px rgba(16, 25, 79, 0.08));
+}
+
+.rf-stop {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 25%;
+}
+
+.rf-stop:nth-of-type(1) {
+  left: 0;
+}
+.rf-stop:nth-of-type(2) {
+  left: 25%;
+}
+.rf-stop:nth-of-type(3) {
+  left: 50%;
+}
+.rf-stop:nth-of-type(4) {
+  left: 75%;
+}
+
+/* Sized so the circle clears the arc, and the numbers are the
+   arc's own: the arc has a 145 radius drawn with a 16 stroke, so
+   its inner edge sits 137 from the arc centre. The circle's
+   farthest point from that centre is its offset plus its radius —
+   45 + 80 = 125 here — leaving a 12-unit gap at the closest
+   approach. The first cut used 55 + 87 = 142, which is *past* the
+   stroke's inner edge: the circle touched the wave, which is what
+   the client saw. 160/325 = 49.2% wide, centres at (150±45)/300 =
+   65% and 35%. */
+.rf-stop-circle {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  width: 49.2%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(16, 25, 79, 0.12);
+  color: #10194f;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+}
+
+.rf-stop-up .rf-stop-circle {
+  top: 35%;
+}
+
+/* The stops drift up and down, as the reference's do.
+   The circle is already centred with translate(-50%, -50%), and an
+   animation replaces the whole transform rather than adding to it — so the
+   keyframes have to carry that centring themselves. Animating a bare
+   translateY would drop it and shunt every circle half its own width to the
+   right, off the arc it is meant to sit in. */
+@keyframes rf-stop-float {
+  from {
+    transform: translate(-50%, -50%) translateY(-6px);
+  }
+  to {
+    transform: translate(-50%, -50%) translateY(6px);
+  }
+}
+
+/* Stacked on phones the circle is static and centred by auto margins, so
+   there is no transform to preserve and the float is the plain one. */
+@keyframes rf-stop-float-flat {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+.rf-stop-circle {
+  animation: rf-stop-float 3.4s ease-in-out infinite alternate;
+}
+
+/* Negative delays start each circle mid-cycle, so the four read as a wave
+   travelling along the line instead of four things rising together. */
+.rf-stop:nth-of-type(2) .rf-stop-circle {
+  animation-delay: -0.85s;
+}
+.rf-stop:nth-of-type(3) .rf-stop-circle {
+  animation-delay: -1.7s;
+}
+.rf-stop:nth-of-type(4) .rf-stop-circle {
+  animation-delay: -2.55s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rf-stop-circle {
+    animation: none;
+  }
+}
+
+/* Copy on the opposite side of the wave from its circle, with the
+   reference's short rule between copy and circle. */
+.rf-stop-copy {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(290px, 98%);
+  text-align: center;
+}
+
+.rf-stop-down .rf-stop-copy {
+  top: calc(100% + 0.5rem);
+}
+
+.rf-stop-up .rf-stop-copy {
+  bottom: calc(100% + 0.3rem);
+}
+
+.rf-stop-down .rf-stop-copy::before,
+.rf-stop-up .rf-stop-copy::after {
+  content: "";
+  display: block;
+  width: 64px;
+  margin: 0 auto;
+  border-top: 2px solid #3b4463;
+}
+
+.rf-stop-down .rf-stop-copy::before {
+  margin-bottom: 0.7rem;
+}
+
+.rf-stop-up .rf-stop-copy::after {
+  margin-top: 0.7rem;
+}
+
+.rf-stop h3 {
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  font-weight: 800;
+  color: #10194f;
+  margin-bottom: 0.35rem;
+}
+
+.rf-stop p {
+  font-size: clamp(0.8rem, 1.15vw, 0.95rem);
+  line-height: 1.5;
+  color: #3f4a6b;
+  max-width: 30ch;
+  margin: 0 auto;
+}
+
+.rf-fineprint {
+  text-align: center;
+  color: #8b93ad;
+  font-size: 0.8rem;
+  margin-top: 2.5rem;
+}
+
+/* ── FAQ ── the EMT look: plain rows, hairline rules. FaqItem's
+   own markup (.faq-item > h3 > span+svg, then p) is styled here
+   rather than importing faq.css, whose accent-shadow cards are a
+   different design. */
+.rf-faq {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4.5rem;
+}
+
+.rf-faq h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #101223;
+  margin-bottom: 1.5rem;
+}
+
+.rf-faq .faq-item {
+  border-bottom: 1px solid #e5e8f2;
+  padding: 1.1rem 0.2rem;
+}
+
+.rf-faq .faq-item h3 {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  align-items: center;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  color: #10194f;
+}
+
+.rf-faq .faq-item h3 svg {
+  transform: rotate(180deg);
+  transition: transform 0.25s ease;
+  justify-self: end;
+}
+
+.rf-faq .faq-item.active h3 svg {
+  transform: rotate(0deg);
+}
+
+.rf-faq .faq-item p {
+  display: none;
+  margin-top: 0.7rem;
+  color: #5a6382;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+.rf-faq .faq-item.active p {
+  display: block;
+}
+
+/* ── responsive ── */
+@media screen and (max-width: 980px) {
+  .rf-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .rf-hero-card {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  /* Stacked, the two cards should share a width and edge, or the glass
+     panel reads as a full-bleed band rather than the card's partner. */
+  .rf-hero-pitch {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+  }
+  .rf-invite-body {
+    grid-template-columns: 1fr;
+  }
+  .rf-invite-art {
+    order: -1;
+    max-width: 300px;
+  }
+  /* Below this the copy zones collide and the type inside the
+     scaled stage gets too small to read, so the wave goes and the
+     stops stack — the same trade the reference makes on phones. */
+  .rf-journey-stage {
+    aspect-ratio: auto;
+    margin: 2.5rem auto 0;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+    gap: 2.4rem;
+  }
+  .rf-wave {
+    display: none;
+  }
+  .rf-stop {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .rf-stop-circle {
+    position: static;
+    transform: none;
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 0.9rem;
+    border: 3px solid #e2e9fb;
+    box-shadow: none;
+    font-size: 1.9rem;
+    /* the centring-aware keyframes would push it off-centre here */
+    animation-name: rf-stop-float-flat;
+  }
+  .rf-stop-copy {
+    position: static;
+    transform: none;
+    width: auto;
+    max-width: 36ch;
     margin: 0 auto;
-}
-.referral .section-wrapper .section-item:nth-child(3){
-    grid-column: 1/-1;
-}
-.referral .section-wrapper .section-item:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1.01) translateY(-10px);
-}
-.referral .section-wrapper .section-item h3{
-    color: var(--accent);
-}
-.referral .section-wrapper .section-item p{
-    line-height: 1.5;
-    opacity: 0.8;
-    font-weight: 600;
-    text-align: left;
+  }
+  /* stacked, the little rules read as stray marks */
+  .rf-stop-down .rf-stop-copy::before,
+  .rf-stop-up .rf-stop-copy::after {
+    display: none;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .referral .section-wrapper{
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+@media screen and (max-width: 560px) {
+  .rf-invite-row {
+    flex-wrap: wrap;
+  }
+  .rf-invite-btn {
+    margin-left: 68px;
+  }
 }

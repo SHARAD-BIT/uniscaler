@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
+  <!-- Step 2: share your code. Megaphone deliberately echoes the one in the
+       client's hero-art.svg. -->
+  <ellipse cx="160" cy="130" rx="120" ry="94" fill="#e8edfd"/>
+  <circle cx="50" cy="74" r="6" fill="#c5d0f7"/>
+  <circle cx="272" cy="58" r="7" fill="#c5d0f7"/>
+  <circle cx="286" cy="170" r="5" fill="#d9e1fb"/>
+  <path d="M262 210c8-1 13-8 14-16 1 8 6 15 14 16-8 1-13 8-14 16-1-8-6-15-14-16z" fill="#adb6ea"/>
+
+  <!-- left person with megaphone -->
+  <circle cx="86" cy="96" r="15" fill="#f2b28c"/>
+  <path d="M75 88c3-9 19-9 22 0-4-5-18-5-22 0z" fill="#10194f"/>
+  <path d="M66 168c0-26 9-40 20-40s20 14 20 40z" fill="#f75d34"/>
+  <rect x="72" y="168" width="10" height="26" rx="5" fill="#10194f"/>
+  <rect x="90" y="168" width="10" height="26" rx="5" fill="#10194f"/>
+  <!-- arm up holding the megaphone -->
+  <path d="M100 138l16-18" stroke="#f2b28c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M114 104l26-12 6 34-26-6a14 14 0 0 1-6-16z" fill="#4b62e8"/>
+  <rect x="136" y="90" width="8" height="40" rx="4" transform="rotate(12 140 110)" fill="#10194f"/>
+
+  <!-- sound + chat flying across -->
+  <path d="M158 84c8 2 12 8 12 14" stroke="#8090ed" stroke-width="4" stroke-linecap="round"/>
+  <path d="M162 68c14 4 20 14 20 24" stroke="#8090ed" stroke-width="4" stroke-linecap="round"/>
+  <rect x="176" y="96" width="42" height="26" rx="8" fill="#4b62e8"/>
+  <circle cx="189" cy="109" r="3" fill="#ffffff"/>
+  <circle cx="198" cy="109" r="3" fill="#ffffff"/>
+  <circle cx="207" cy="109" r="3" fill="#ffffff"/>
+  <path d="M182 122l-4 9 12-6z" fill="#4b62e8"/>
+  <!-- paper plane -->
+  <path d="M226 66l30 8-24 12 0-8z" fill="#f7b64a"/>
+  <path d="M226 66l6 12 0 8-6-4z" fill="#e09a2e"/>
+
+  <!-- right person catching the message -->
+  <circle cx="240" cy="120" r="14" fill="#c98862"/>
+  <path d="M230 112c3-8 18-8 20 0-4-4-16-4-20 0z" fill="#050d3c"/>
+  <path d="M222 190c0-25 8-38 18-38s18 13 18 38z" fill="#8090ed"/>
+  <path d="M230 158l-16 14" stroke="#c98862" stroke-width="7" stroke-linecap="round"/>
+  <path d="M250 156l12-20" stroke="#c98862" stroke-width="7" stroke-linecap="round"/>
+  <rect x="228" y="190" width="9" height="24" rx="4.5" fill="#10194f"/>
+  <rect x="243" y="190" width="9" height="24" rx="4.5" fill="#10194f"/>
+</svg>

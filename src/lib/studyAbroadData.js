@@ -1,12 +1,20 @@
 /**
  * Authoritative Study Abroad Catalog & Metadata Dataset
  * Extracted and normalized from upGrad Study Abroad platform.
- * 
+ *
  * Contains:
- * - 205+ Verified International Degree Programs
+ * - 203 Verified International Degree Programs
  * - Country Flag SVGs, University Logos, Syllabus PDFs
  * - Category groupings (AI & ML, MBA, Engineering, Data Science, etc.)
  * - Hero Metrics & Counseling Form Meta
+ *
+ * 2026-08-21: the two "Youth Leadership Program … at upGrad" entries were
+ * removed from both structures below (they named upGrad itself as the
+ * university and carried its logo — the source platform showing through,
+ * and the client's rule is that upGrad's name must never appear anywhere
+ * user-facing). Their logo SVG is deleted from public/study-abroad/logos/.
+ * The `upgrad-abroad-files` syllabus URLs and `-upgra-` package keys that
+ * remain are never rendered or linked; do not wire them into an href.
  */
 
 export const studyAbroadStats = [
@@ -271,14 +279,6 @@ export const studyAbroadCountries = [
             "logo": "/study-abroad/logos/Clark-NEU-578206499ce74c0c9b3dd8514d8ce94b.svg",
             "syllabusUrl": "https://d2o2utebsixu4k.cloudfront.net/BSIM_NU_USA_Brochure-06b5a6e797464e4193f451103647e9b3.pdf",
             "programPackageKey": "bachel-v24-smanag-upgra-spa-bl"
-          },
-          {
-            "id": "695f55eba6878ba26a5dd0c8",
-            "title": "Youth Leadership Program with Business Concentration at upGrad",
-            "university": "upGrad",
-            "logo": "/study-abroad/logos/upGrad_square_logo-8f3c5af8edde4aacb07b14493150b187.svg",
-            "syllabusUrl": "https://d2o2utebsixu4k.cloudfront.net/Business Leadership Brochure-1ead5be972294156b8b3ce4722f91205.pdf",
-            "programPackageKey": "bachel-v6-smanag-upgra-spa-bl"
           },
           {
             "id": "69eb0a9aa1aabd2524f2d3b1",
@@ -910,14 +910,6 @@ export const studyAbroadCountries = [
             "logo": "/study-abroad/logos/Base-IITB-SussexUniversity-f86f252ed5a24d989185943a95524003.svg",
             "syllabusUrl": "https://d2o2utebsixu4k.cloudfront.net/Sussex-MSc Artificial Intelligence and Adaptive Systems-827c0bb7bf7442c1b47e74f7e0476e44.pdf",
             "programPackageKey": "master-v11-saian-upgra-spa-bl"
-          },
-          {
-            "id": "695f5357b4d4a38934bf8aea",
-            "title": "Youth Leadership Program with AI Concentration at upGrad",
-            "university": "upGrad",
-            "logo": "/study-abroad/logos/upGrad_square_logo-8f3c5af8edde4aacb07b14493150b187.svg",
-            "syllabusUrl": "https://d2o2utebsixu4k.cloudfront.net/LDP_AI_Brochure_New-4cce175256124c6db2c44c0aecdca1ea.pdf",
-            "programPackageKey": "bachel-saian-upgra-spa-bl"
           },
           {
             "id": "6a0ae1a368e0bcddf119e823",
@@ -2472,16 +2464,6 @@ export const allStudyAbroadPrograms = [
     "country": "United States"
   },
   {
-    "id": "695f55eba6878ba26a5dd0c8",
-    "name": "Youth Leadership Program with Business Concentration at upGrad",
-    "universityName": "upGrad",
-    "programPackageKey": "bachel-v6-smanag-upgra-spa-bl",
-    "universityLogo": "/study-abroad/logos/upGrad_square_logo-8f3c5af8edde4aacb07b14493150b187.svg",
-    "syllabusFileUrl": "https://d2o2utebsixu4k.cloudfront.net/Business Leadership Brochure-1ead5be972294156b8b3ce4722f91205.pdf",
-    "category": "Management",
-    "country": "United States"
-  },
-  {
     "id": "69eb0a9aa1aabd2524f2d3b1",
     "name": "MSc International Business at EDC Paris Business School",
     "universityName": "EDC Paris Business School",
@@ -2858,16 +2840,6 @@ export const allStudyAbroadPrograms = [
     "programPackageKey": "master-v11-saian-upgra-spa-bl",
     "universityLogo": "/study-abroad/logos/Base-IITB-SussexUniversity-f86f252ed5a24d989185943a95524003.svg",
     "syllabusFileUrl": "https://d2o2utebsixu4k.cloudfront.net/Sussex-MSc Artificial Intelligence and Adaptive Systems-827c0bb7bf7442c1b47e74f7e0476e44.pdf",
-    "category": "AI & ML",
-    "country": "United States"
-  },
-  {
-    "id": "695f5357b4d4a38934bf8aea",
-    "name": "Youth Leadership Program with AI Concentration at upGrad",
-    "universityName": "upGrad",
-    "programPackageKey": "bachel-saian-upgra-spa-bl",
-    "universityLogo": "/study-abroad/logos/upGrad_square_logo-8f3c5af8edde4aacb07b14493150b187.svg",
-    "syllabusFileUrl": "https://d2o2utebsixu4k.cloudfront.net/LDP_AI_Brochure_New-4cce175256124c6db2c44c0aecdca1ea.pdf",
     "category": "AI & ML",
     "country": "United States"
   },

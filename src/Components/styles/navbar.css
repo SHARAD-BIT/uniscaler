@@ -876,14 +876,17 @@ nav .appItemIcon {
    `overflow: hidden` bar. The ≤768px block re-declares it against the 54px
    `--app-h` there. */
 nav .appItemImg {
-  /* No white disc/tile behind the icons: it was added on request and removed on
-     request the same day (see CHANGELOG 2026-08-19). The supplied PNGs each
-     arrived on a solid white square that was flood-filled out at install time,
-     so the artwork sits directly on the strip. */
-  height: 1.75rem;
-  width: 1.75rem;
+  /* Increased icon size for better visibility */
+  height: 2.15rem;
+  width: 2.15rem;
   flex: none;
   object-fit: contain;
+}
+/* AI Assistance icon is slightly larger than the rest — scale keeps
+   the layout slot unchanged so its label stays on the same baseline. */
+nav .appItemImg.ai-icon {
+  /* Move SVG down slightly and keep larger size */
+  transform: translateY(0.1rem) scale(1.35);
 }
 
 /* ---- U-dots toggle ----
@@ -1106,6 +1109,9 @@ nav.appbar-open .wrapperBox .linkGrc {
     height: 1.35rem;
     width: 1.35rem;
   }
+  nav .appItemImg.ai-icon {
+    transform: scale(1.35);
+  }
   .linkGrc {
     gap: 0.5rem;
   }
@@ -1313,8 +1319,8 @@ nav .login-circle:hover {
    line glyphs, and the detail inside them closed up at 22px. The 88px tile has
    the room — 0.85rem padding either side, a 0.5rem gap and one label line. */
 .appSheetItemImg {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.2rem;
+  height: 2.2rem;
   object-fit: contain;
   flex: none;
 }

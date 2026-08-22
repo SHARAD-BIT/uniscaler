@@ -6,6 +6,7 @@ import {
 } from "@/lib/catalog";
 import { SITE_URL } from "@/lib/seo";
 import { studyAbroadCountries } from "@/lib/studyAbroadData";
+import { studyAbroadTools } from "@/lib/studyAbroadTools";
 
 /**
  * Serves /sitemap.xml.
@@ -83,6 +84,11 @@ export default async function sitemap() {
     // crawler reaches them at all.
     ...studyAbroadCountries.map((country) =>
       entry(`/study-abroad/${country.slug}`, 0.7, "monthly")
+    ),
+
+    // The four free calculators, linked from /study-abroad's tools band.
+    ...studyAbroadTools.map((tool) =>
+      entry(`/study-abroad/tools/${tool.slug}`, 0.6, "monthly")
     ),
 
     ...ONLINE_COURSES.map((name) =>

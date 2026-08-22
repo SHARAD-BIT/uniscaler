@@ -1,10 +1,12 @@
 /**
  * Cleans a catalog `syllabusUrl` enough to be put in an href.
  *
- * The values are not fit for that as they stand. Of the 203 that exist, 31
+ * The values are not fit for that as they stand. Of the 201 that exist, 30
  * carry an interior space (`WHU- MSc Management-….pdf`), one carries trailing
  * whitespace, and four already contain a percent-escape — the same untrimmed,
  * inconsistent shape the rest of this project's text data has.
+ * (Two fewer than first surveyed: the catalog's upGrad-named entries were
+ * removed 2026-08-21 — see studyAbroadData.js's header.)
  *
  * Browsers do percent-encode a space in an href themselves, so most of the 31
  * happen to work anyway. That is the browser repairing our data rather than the

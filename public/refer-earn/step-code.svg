@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
+  <!-- Step 1: get your referral code. Same flat-indigo family as the client's
+       hero-art.svg (#4b62e8 / #8090ed / #050d3c / #caf3ff), so the three step
+       scenes and the hero read as one set. -->
+  <ellipse cx="160" cy="128" rx="118" ry="96" fill="#e8edfd"/>
+  <circle cx="52" cy="60" r="6" fill="#c5d0f7"/>
+  <circle cx="278" cy="86" r="8" fill="#c5d0f7"/>
+  <circle cx="262" cy="196" r="5" fill="#d9e1fb"/>
+  <path d="M40 150c10-2 16-10 17-20 1 10 7 18 17 20-10 2-16 10-17 20-1-10-7-18-17-20z" fill="#adb6ea"/>
+
+  <!-- phone -->
+  <rect x="106" y="34" width="108" height="176" rx="16" fill="#10194f"/>
+  <rect x="113" y="41" width="94" height="162" rx="10" fill="#ffffff"/>
+  <rect x="146" y="47" width="28" height="4" rx="2" fill="#d9e1fb"/>
+
+  <!-- referral coupon on screen, ticket-notched -->
+  <path d="M124 96h72a6 6 0 0 1 6 6v14a8 8 0 0 0 0 16v14a6 6 0 0 1-6 6h-72a6 6 0 0 1-6-6v-14a8 8 0 0 0 0-16v-14a6 6 0 0 1 6-6z" fill="#4b62e8"/>
+  <text x="160" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="13" fill="#ffffff">YOUR CODE</text>
+  <rect x="136" y="130" width="48" height="10" rx="5" fill="#8090ed"/>
+  <rect x="136" y="130" width="48" height="10" rx="5" stroke="#caf3ff" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <rect x="126" y="164" width="68" height="8" rx="4" fill="#e2e8fa"/>
+  <rect x="126" y="178" width="46" height="8" rx="4" fill="#e2e8fa"/>
+
+  <!-- sparkles around the code -->
+  <path d="M228 52c6-1 10-6 11-12 1 6 5 11 11 12-6 1-10 6-11 12-1-6-5-11-11-12z" fill="#f7b64a"/>
+  <circle cx="98" cy="88" r="4" fill="#f7b64a"/>
+
+  <!-- small person pointing at the phone -->
+  <circle cx="256" cy="132" r="13" fill="#f2b28c"/>
+  <path d="M247 124c2-7 16-7 18 0-3-4-15-4-18 0z" fill="#10194f"/>
+  <path d="M240 186c0-22 8-34 16-34s16 12 16 34z" fill="#4b62e8"/>
+  <path d="M247 156l-24-14" stroke="#f2b28c" stroke-width="7" stroke-linecap="round"/>
+  <rect x="244" y="186" width="9" height="22" rx="4.5" fill="#10194f"/>
+  <rect x="259" y="186" width="9" height="22" rx="4.5" fill="#10194f"/>
+</svg>

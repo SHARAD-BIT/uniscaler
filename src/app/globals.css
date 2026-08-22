@@ -105,7 +105,15 @@ img {
   transition: transform 0.2s ease;
 }
 .top {
-  padding-top: 100px;
+  /* 127px, not the 100px this carried since before the app-switcher strip
+     existed. The fixed navbar is two layers — the 63px strip plus the glass
+     bar, which is 60px at rest and 64px between 766–1180px — so the bar is up
+     to 127px tall, and at 100px the first 27px of every `.top` page sat under
+     the glass. Nobody noticed while pages opened with margined headings; the
+     login page's flush <h1> is what finally showed it, half-hidden under the
+     bar. Sized to the tallest state so nothing is ever clipped; wider screens
+     get 4px of slack rather than a page-by-page number. */
+  padding-top: 127px;
   /* Follows the app-switcher strip's own 0.3s height glide (navbar.css
      --swap-ease), so the page slides up with the bar instead of snapping the
      moment the strip is shut. Keep the two in step if either is retimed. */
@@ -125,7 +133,7 @@ img {
    the strip was collapsed, which leaves the class on <body>. */
 @media screen and (min-width: 766px) {
   body.appbar-collapsed .top {
-    padding-top: calc(100px - 63px);
+    padding-top: calc(127px - 63px);
   }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -36,5 +36,22 @@ export default async function CountryPage({ params }) {
   const { country: slug } = await params;
   const country = studyAbroadCountries.find((c) => c.slug === slug);
   if (!country) notFound();
-  return <CountryPageClient country={country} />;
+  // Only the fields CountryPageClient reads. Passed whole, every course also
+  // carried syllabusUrl (upgrad-abroad-files S3 links) and programPackageKey
+  // ("…-upgra-…" keys) into the page's serialized props — never rendered,
+  // but sitting in the page source, and the client's rule (2026-08-21) is
+  // that the name appears nowhere. Slimming also drops ~10KB of URLs a page.
+  const slim = {
+    name: country.name,
+    slug: country.slug,
+    flag: country.flag,
+    totalPrograms: country.totalPrograms,
+    categories: (country.categories || []).map((cat) => ({
+      name: cat.name,
+      courses: (cat.courses || []).map(
+        ({ id, title, university, logo }) => ({ id, title, university, logo })
+      ),
+    })),
+  };
+  return <CountryPageClient country={slim} />;
 }

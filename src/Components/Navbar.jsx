@@ -71,7 +71,7 @@ const Navbar = () => {
       href: "/refer-and-earn",
       img: "/nav-icons/refer-and-earn.png",
     },
-    { name: "AI Assistance", href: "/ai", img: "/nav-icons/ai-assistance.png" },
+    { name: "AI Assistance", href: "/ai", img: "/nav-icons/ai-assistance.svg" },
     {
       name: "Online Courses",
       href: `/online-course/${onlineCourseDetails[0].name}`,
@@ -256,7 +256,7 @@ const Navbar = () => {
               title={name}
             >
               {img ? (
-                <img src={img} alt="" className="appItemImg" />
+                <img src={img} alt="" className={`appItemImg${name === "AI Assistance" ? " ai-icon" : ""}`} />
               ) : (
                 <Icon className="appItemIcon" />
               )}
@@ -461,7 +461,7 @@ const Navbar = () => {
                     tabIndex={sheetOpen ? 0 : -1}
                   >
                     {img ? (
-                      <img src={img} alt="" className="appSheetItemImg" />
+                      <img src={img} alt="" className={`appSheetItemImg${name === "AI Assistance" ? " ai-icon" : ""}`} />
                     ) : (
                       <Icon className="appSheetItemIcon" />
                     )}

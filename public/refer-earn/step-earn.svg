@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
+  <!-- Step 3: earn referral money. Rupee coins, as in the reference's card. -->
+  <ellipse cx="160" cy="130" rx="120" ry="94" fill="#e8edfd"/>
+  <circle cx="58" cy="62" r="6" fill="#c5d0f7"/>
+  <circle cx="270" cy="70" r="7" fill="#c5d0f7"/>
+  <circle cx="44" cy="176" r="5" fill="#d9e1fb"/>
+  <path d="M250 44c8-1 13-8 14-16 1 8 6 15 14 16-8 1-13 8-14 16-1-8-6-15-14-16z" fill="#f7b64a"/>
+
+  <!-- certificate sheet behind, a nod to enrolment -->
+  <rect x="64" y="58" width="86" height="112" rx="10" fill="#ffffff" stroke="#c5d0f7" stroke-width="3"/>
+  <rect x="76" y="74" width="62" height="7" rx="3.5" fill="#d9e1fb"/>
+  <rect x="76" y="88" width="46" height="7" rx="3.5" fill="#d9e1fb"/>
+  <rect x="76" y="102" width="54" height="7" rx="3.5" fill="#d9e1fb"/>
+  <circle cx="90" cy="142" r="12" fill="#4b62e8"/>
+  <path d="M85 142l4 4 7-8" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- coin stack -->
+  <ellipse cx="196" cy="196" rx="34" ry="10" fill="#e09a2e"/>
+  <rect x="162" y="176" width="68" height="20" rx="10" fill="#f7b64a"/>
+  <rect x="170" y="158" width="68" height="20" rx="10" fill="#f7b64a"/>
+  <rect x="170" y="158" width="68" height="20" rx="10" stroke="#e09a2e" stroke-width="2"/>
+  <!-- big rupee coin -->
+  <circle cx="218" cy="118" r="34" fill="#f7b64a" stroke="#e09a2e" stroke-width="4"/>
+  <circle cx="218" cy="118" r="25" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="218" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="30" fill="#7a4300">&#8377;</text>
+  <!-- small coin popping -->
+  <circle cx="164" cy="72" r="15" fill="#f7b64a" stroke="#e09a2e" stroke-width="3"/>
+  <text x="164" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#7a4300">&#8377;</text>
+
+  <!-- celebrating person -->
+  <circle cx="278" cy="132" r="13" fill="#f2b28c"/>
+  <path d="M269 124c2-7 16-7 18 0-3-4-15-4-18 0z" fill="#10194f"/>
+  <path d="M262 188c0-23 8-36 16-36s16 13 16 36z" fill="#4b62e8"/>
+  <path d="M270 156l-10-22" stroke="#f2b28c" stroke-width="7" stroke-linecap="round"/>
+  <path d="M287 154l10-20" stroke="#f2b28c" stroke-width="7" stroke-linecap="round"/>
+  <rect x="266" y="188" width="9" height="22" rx="4.5" fill="#10194f"/>
+  <rect x="281" y="188" width="9" height="22" rx="4.5" fill="#10194f"/>
+  <!-- confetti -->
+  <rect x="246" y="96" width="7" height="7" rx="1.5" transform="rotate(24 249 99)" fill="#f75d34"/>
+  <rect x="298" y="104" width="6" height="6" rx="1.5" transform="rotate(-18 301 107)" fill="#4b62e8"/>
+  <circle cx="256" cy="80" r="3.5" fill="#8090ed"/>
+</svg>

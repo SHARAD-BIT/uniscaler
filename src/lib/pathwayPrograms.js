@@ -70,10 +70,11 @@ export const pathwayPrograms = (() => {
   for (const country of studyAbroadCountries)
     for (const category of country.categories || [])
       for (const course of category.courses || []) {
-        // Two entries name upGrad itself as the university and carry that
-        // platform's own mark — the catalog was extracted from there. Excluded
-        // for the same reason as on the partner wall: this is a page of what
-        // Uniscaler offers.
+        // A guard now, not a fix — the two entries that named upGrad itself
+        // as the university were removed from the catalog on 2026-08-21 (see
+        // studyAbroadData.js's header; the client's rule is that the name
+        // never appears). Kept in case a re-extraction brings such entries
+        // back: this is a page of what Uniscaler offers.
         if (/upgrad/i.test(course.university || "")) continue;
         out.push({
           id: course.id,
