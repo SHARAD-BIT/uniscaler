@@ -1,0 +1,199 @@
+{
+ "slug": "woolf-university-msmgrad",
+ "name": "Woolf University",
+ "establishedYear": "1998",
+ "location": "",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "total": 0
+ },
+ "banner": "/university/banners/woolf-university-msmgrad.webp",
+ "approvals": [
+  {
+   "title": "ECTS",
+   "logo": "/university/approvals/ects-logo.png"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Woolf is a global, collegiate institution primarily based in San Francisco, 1998, where it is licensed as a higher education institution -- where students and professionals from many walks of life attended a variety of settings. The formation, part of a boom-at the time was built with the increased demand for talented technical and business professionals based on accelerating industrial growth, was established at the beginning. This university evolved from a small, oriented training institution into a prominent institution delivering diverse programs designed to prepare students for the contemporary workforce. Its mission continues to emphasize hands-on learning, career opportunities, and access to help students learn from experiences and to find a place in the labor market."
+  },
+  {
+   "t": "p",
+   "text": "Therefore, due to the need of a new kind of teaching, the university made significant adjustments in line with the current industry phenomenon of adopting new technology in the teaching-learning process and modern business practices in the teaching-learning process. Because of this university has been able to continue to make it into an influential educational landscape."
+  },
+  {
+   "t": "p",
+   "text": "Woolf University focuses on the students by providing personalized teaching, small classes, and resources designed to help students succeed. Highly focused programs such as business administration, healthcare, and technology are ideal for highly paid industries with continuously increasing income streams. The university welcomes new ways of learning with the introduction of the online university system, allowing students to balance studies and personal/professional lives."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Woolf University with MSM grad provides industry-recognized courses that hold the same weightage as an offline program.",
+  "The University provides ECTS-accredited courses that are recognized globally.",
+  "The degrees earned from the university are recognized in the European Higher Education Area (EHEA) which comprises countries like the UK, France, Germany, and the Netherlands.",
+  "The university focuses on the overall growth of the learner by equipping them with soft skills & interview skills via an industry-relevant course curriculum.",
+  "The university’s case-driven practical learnings develop decision-making & quick problem-solving skills in the learners.",
+  "The university’s AI-powered technical learning module & world-class content develop innovative perspectives in the learners to cope with National & International industry trends.",
+  "A varied number of management specializations are offered in online mode at the university including Executive Leadership, Marketing, Finance, Data Analytics, International Business, and Entrepreneurship.",
+  "The counseling sessions offered by the university’s professional & academic experts develop job-ready skills in the learners to help them get their dream job."
+ ],
+ "courses": [
+  {
+   "name": "MS Degree in Computer Science",
+   "fee": 467269,
+   "duration": "12-24 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "467269"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Woolf University provides payments (EMI, scholarship options) to make education cost-effective. Students may pay the tuition payments in installments, which helps save them a financial burden. And this university has scholarship programs for students and veterans."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "At Woolf University partnered with MSMgrad, the process of admissions is made simple and accessible:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Submit an online application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Provide transcripts and documents needed."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Attend counseling or advisory session (if applicable)."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Get an admission confirmation."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Full enrolment and fee payment."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The exams at Woolf University partnered with MSM grad aim to assess theoretical knowledge as well as applied skill. Since assessments are online-focused, they cater to a wide range of students. The assessment includes assignments, quizzes, case studies, and project-based work. This emphasizes the need for regular assessment, allowing students (throughout the course) to assess their growth, versus all of it being done by the end of the course. This frequently involves applications to real-world problems. This not only facilitates critical thinking, problem-solving skills, and industry-connected competencies."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Woolf University partnered with MSM grad supports students with career counseling, resume-building, interview, career connections and job placement help."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Hitachi",
+   "logo": "/university/partners/hitachi.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "Bajaj Finserv",
+   "logo": "/university/partners/bajaj-finserv.webp"
+  },
+  {
+   "title": "Tech Mahindra",
+   "logo": "/university/partners/tech-mahindra.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [],
+ "faqs": [
+  {
+   "q": "Are student reviews available for Woolf University?",
+   "a": "Yes, Woolf University's student reviews are available through the Student Review Portal by College Vidya , covering academics, LMS experience, placement assistance, and overall satisfaction. You can look these up and read feedback from students who have actually completed or are pursuing programs there. No university can pay to hide reviews on the portal, so what you see is authentic."
+  },
+  {
+   "q": "Is MSM grad College an autonomous academic institution?",
+   "a": "MSM grad is one of the academic members of Woolf University that offers a premium range of online programs. MSM grad is nothing but another name for Woolf University as it offers its own accredited courses via its learning portal."
+  },
+  {
+   "q": "Who are the other members of Woolf University?",
+   "a": "Apart from MSM Grad, several educational portals are associated with Woolf University. Some of them are GoIT, Exeed College, Turing College, Deep Science Ventures, OneDay, Hesse College, Analytix Labs, Scaler, Virtual Film School, etc."
+  },
+  {
+   "q": "Are the degrees earned from MSM grad College of Woolf University recognized in India?",
+   "a": "The degrees /diplomas/certificates earned from the MSM grad of Woolf University are ECTS accredited & are recognized in European regions including the UK, Germany, the Netherlands, and France. Moreover, these online programs are treated as equivalent to regular college programs in Canada & US."
+  },
+  {
+   "q": "Is Woolf University the only collegiate university in the world?",
+   "a": "There are a number of collegiate universities serving different countries for educational betterment. Some examples of such universities include the University of Oxford, the University of London, the University of California, and Delhi University. However, Woolf University is the first global collegiate to provide skillful higher education, especially to working professionals."
+  },
+  {
+   "q": "Do I need to visit Woolf University’s college campus for examinations?",
+   "a": "The mode of learning offered at MSM grad of Woolf University is completely online, thus, enrolled students do not need to visit the college campus. They can study from the comforts of their home through a digitized portal of academic content & earn a globally recognized degree from one of the most prestigious institutions in the world."
+  }
+ ]
+}

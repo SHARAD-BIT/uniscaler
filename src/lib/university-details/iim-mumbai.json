@@ -1,0 +1,422 @@
+{
+ "slug": "iim-mumbai",
+ "name": "IIM Mumbai",
+ "establishedYear": "1963",
+ "location": "Mumbai, Maharashtra",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   2,
+   4
+  ],
+  "total": 8
+ },
+ "banner": "/university/banners/iim-mumbai.webp",
+ "approvals": [
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Formerly known as NITIE (National Institute of Industrial Engineering), IIM Mumbai has carried on the rich traditions of the institution’s prowess in management education. With the advent of the digital era, IIM Mumbai has updated its curriculum according to industry needs. It stays connected with industry partners from the business capital of India, Mumbai itself. Ranked among India’s top B-schools of India, IIM Mumbai has been ranked 6th in the management category of NIRF Rankings 2024. Established in 1963, this institute has been around for a long while, upskilling students into skilled professionals in diverse functional areas such as Finance, Analytics, Project Management, HR, Operations Management, Sustainability Management, and Information Technology."
+  },
+  {
+   "t": "p",
+   "text": "The mode of education in this institute for graduate degrees and postgraduate degrees is offline since these programs are full-time residential. The faculty consists of more than 59 academicians who are highly qualified experts. The students get to meet industry experts through the institute’s connections with its industry partners which help in integrating practical knowledge based on industry insight with classroom teaching. Across many of the programs, 1200 students are learning and growing their academic prowess, getting prepared to face the dynamic industry challenges."
+  },
+  {
+   "t": "p",
+   "text": "IIM Mumbai has also been accredited by AACSB (Association to Advance Collegiate Schools of Business), an accreditation body that credits institutions providing management education at undergraduate, postgraduate, and doctoral levels. The programs offered by IIM Mumbai are MBAs, PGDEx-VLFM (Postgraduate Diploma for Executives-Visionary Leaders For Manufacturing), Ph.D., General Management Programme for the Defence officers(DGMP), online MDPs (Management Development Programmes) and several certificate courses meant to specialize in a particular field. The institute has partnered up with many companies that provide placements for the students such as 3M, Abbott, AB InBev, Cipla, John Deere, Aditya Birla Group, EY, etc."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Top Course from IIMs!"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Courses Online",
+      "IIM Online MBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Executive MBA",
+      "IIM Online Certificate Courses"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Data Science and Analytics Online",
+      "IIM Digital Marketing and Analytics Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Project Management Online",
+      "IIM Financial Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Human Resource Management Online",
+      "IIM Leadership and Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Operations and Six Sigma Online",
+      "IIM Chief Business Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Financial Data Analytics Online",
+      "IIM Marketing and Sales Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Hospital and Healthcare Management Online",
+      "IIM Digital Transformation and Innovation Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Business Analytics Online",
+      "IIM Blockchain and Fintech Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Public Policy Management Online",
+      "IIM CMO Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM CFO Course Online",
+      "IIM Financial Services and Capital Markets Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Investment Banking and Capital Markets Online",
+      "IIM AI and Machine Learning Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief HR Officer Online Course",
+      "IIM Chief Operations Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief Executive Officer Online Course",
+      "IIM General Management Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Logistics and Supply Chain Management Online"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "IIM Mumbai has partnered with foreign universities to conduct student exchange programs and lectures by eminent professors from these universities in North America, South America, Europe, and South-East Asia. This institute aims to produce professionals who will have a higher impact on the corporate structure as well as its output on the nation’s development as business leaders. Thus it aims to lead the field of management education in churning out leadership skills among their students that are meant to be used for making a huge impact on society."
+  }
+ ],
+ "aboutBoxes": [],
+ "facts": [
+  "IIM Mumbai stands for Indian Institute of Management Mumbai.",
+  "IIM Mumbai is ranked 6th in the NIRF Rankings 2024 in the management category.",
+  "It used to be known as the National Institute of Industrial Engineering (NITIE).",
+  "It is located in the business capital of India, Mumbai, and consists of several major industries, industrial experts, and pioneers.",
+  "Part of the cluster of IIMs (Indian Institute of Management) spread across the country providing management education.",
+  "It is accredited by AACSB.",
+  "This institute provides programmes in MBA, PGDEx-VLFM, PhD, and certificate courses.",
+  "This institute has partnered up with multiple companies to recruit students for career prospects. Some of the hiring companies are 3M, Abbott, AB InBev, Cipla, John Deere, Aditya Birla Group, EY, etc.",
+  "This institute provides management education that is industry-oriented with a faculty consisting of more than 59 in-house instructors and also includes professors from foreign universities.",
+  "The institute has an alumni network of 10K people.",
+  "Provides MDPs in online mode in areas such as Finance, Economics, Strategy, Analytics, Data Science, Operations & Supply Chain Management, Marketing, Sustainability Management, and Organisational Behaviour & Human Resource Management.",
+  "It Was established in the year of 1963."
+ ],
+ "courses": [
+  {
+   "name": "Executive PhD Program",
+   "fee": 750000,
+   "duration": "5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "750000"
+    }
+   ]
+  },
+  {
+   "name": "Executive MBA",
+   "fee": 1170000,
+   "duration": "1 -2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1170000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 1500000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1500000"
+    }
+   ]
+  },
+  {
+   "name": "Doctor of Philosophy",
+   "fee": 600000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "PGD",
+   "fee": 750000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "750000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "A student can use the EMI facility to pay for the programme fee and additional fees to the institute. EMI could be availed by a student from a plethora of legit EMI providers. An EMI facility eases the burden of students’ financial constraints. Due to the management courses, in institutes such as IIM Mumbai being expensive, it’s challenging to come up with the required money up-front."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The following is a step-by-step process of getting admission into IIM Mumbai"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- The candidate should start by applying online and getting registered at the application portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Upload the required documents online."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Based on the details and documents provided, candidates will be shortlisted for an aptitude test and an interview."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- The student’s final score will be evaluated based on factors such as his/her past academic performance, aptitude test, interview etc."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- Once cleared and selected, the student will join the institute on the day of the commencement of classes."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "IIM Mumbai’s examination and evaluation pattern is set in such a way that it enhances and preserves whatever the student is learning. Using experiential learning to register whatever is learned, the student gets to go through testing formats and understand the subject. There are group exercises that test the student’s ability to cooperate and collaborate. Then there are case studies that broaden perspectives and develop the skillset through the main insights derived from the case study. One could apply concepts and theories to make a project that tests the ability to create something new or discover new paradigms out of the existing knowledge and concepts. Then final exams are held that evaluate the total knowledge, concepts and skills, in order to solidify them."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "IIM Mumbai has a good rapport with its company partners who participate in placement rounds. These companies provide placements for worthy students who aim to excel in their careers. A few students get somewhere near the highest salary package, while the remaining get an average salary, and higher or lower than that. IIM Mumbai has partnered with a plethora of companies such as 3M, Abbott, AB InBev, Cipla, John Deere, Aditya Birla Group, EY, etc for it’s placement events. These placement events advance a student’s career by empowering their skills and knowledge to be applied to the screening tests and interviews taken by the placement representative of the hiring company."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2024-04-12",
+   "content": "They provide a good bunch of courses to select from. The staff is kind and helpful if there are issues faced by a student."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2024-04-12",
+   "content": "An institute for someone who wants to grow by learning."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2024-04-12",
+   "content": "This institute has a good campus and faculty."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2024-04-12",
+   "content": "I had a good experience studying here especially because of the dedicated faculty guiding me every step of the way."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What was IIM Mumbai’s previous name?",
+   "a": "IIM Mumbai’s previous name was National Institute of Industrial Engineering."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "What are some best online executive programs in India?",
+   "a": "Universities have launched numerous online executive courses to empower the Indian workforce. The top ones on that list are tabulated below. Explorer Best Executive Programs In India Executive Program Online In Finance Executive Program Online In HR Executive Program Online In Operations Executive Program Online In Leadership Executive Program Online In Data Science and Analytics Executive Program Online In AI and Machine Learning Executive Program Online In Marketing Executive Program Online In Software and Technology Executive Program Online In Healthcare Executive Program Online In Business Analytics Executive Program Online In DevOps Executive Program Online In Cyber Security Executive Program Online In Bigdata Engineering Executive Program Online In Blockchain Executive Program Online In Cloud Computing LLM Online Job Linked Programs Pay After Placement Programs Explore more online and distance courses In India! Click here for all approved distance and online universities in India!"
+  },
+  {
+   "q": "When was IIM Mumbai established?",
+   "a": "IIM Mumbai was established in 1963."
+  },
+  {
+   "q": "What is the rank of IIM Mumbai in NIRF Rankings 2024 in the management category?",
+   "a": "IIM Mumbai is ranked 6th in the NIRF Rankings 2024 category in the management category."
+  },
+  {
+   "q": "What programmes are offered by IIM Mumbai?",
+   "a": "The programmes offered by IIM Mumbai are MBA, Ph.D., DGMP, PGDEx-VLFM and certificate programmes."
+  },
+  {
+   "q": "What is the mode of course of delivery for programmes such as MBA and PGDEx-VLFM at IIM Mumbai?",
+   "a": "MBA and PGDEx-VLFM programmes are held offline as these courses are held on-campus, full -time and are residential."
+  },
+  {
+   "q": "What are the accreditations achieved by IIM Mumbai?",
+   "a": "IIM Mumbai has been accredited by AACSB."
+  },
+  {
+   "q": "Where is IIM Mumbai located?",
+   "a": "IIM Mumbai is located in Mumbai."
+  },
+  {
+   "q": "Are there any online courses provided at IIM Mumbai?",
+   "a": "IIM Mumbai provides MDP (Management Development Programme) in the online format which consists of upskilling in diverse areas such as Finance, Economics, Strategy, Analytics, Data Science, Operations & Supply Chain Management, Marketing, Sustainability Management, and Organisational Behaviour & Human Resource Management."
+  },
+  {
+   "q": "Which top IIMs offer online management courses other than IIM Lucknow?",
+   "a": "Here is a list of the top IIMs as per NIRF 2024 Management category which offer different types of online management courses. Top IIMs In India As Per NIRF Ranking 2024 Name Rank Score Indian Institute of Management Ahmedabad 1 83.32 Indian Institute of Management Amritsar 47 52.57 Indian Institute of Management Bangalore 2 81.16 Indian Institute of Management Jammu 42 54.64 Indian Institute of Management Kashipur 23 60.82 Indian Institute of Management Kozhikode 3 77.90 Indian Institute of Management Lucknow 7 74.43 Indian Institute of Management Nagpur 31 56.94 Indian Institute of Management Raipur 14 64.40 Indian Institute of Management Ranch i 17 61.27 Indian Institute of Management Rohtak 12 66.49 Indian Institute of Management Sambalpur 50 51.47 Indian Institute of Management Shillong 24 60.49 Indian Institute of Management Sirmaur 57 50.92 Indian Institute of Management Udaipur 22 60.93 Indian Institute of Management Visakhapatnam 26 59.20"
+  },
+  {
+   "q": "Can I pursue a doctorate program while working?",
+   "a": "Several online doctorate courses have been launched in the market for working professionals. A few of them include: Explore Online Doctorate Programs for Working Professionals Online Doctorate Course for Working Professionals Doctor of Juridical Science DBA In Supply Chain Management DBA In Supply Artificial Intelligence DBA In Human Resource Management Doctor of Business Administration"
+  },
+  {
+   "q": "Can I pursue an MBA without a good CAT score?",
+   "a": "Top management institutions in India including IIMs are now offering online MBAs for which you do not need to attempt CAT. Some of these trending MBA options are listed below. MBA without CAT Available! MBA Global Online MBA for Working Professionals MBA Courses Online MBA Distance Learning Course Online Executive MBA MBA Part-Time Courses Executive MBA for Working Professionals"
+  }
+ ]
+}

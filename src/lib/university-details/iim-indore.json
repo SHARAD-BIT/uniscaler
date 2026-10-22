@@ -1,0 +1,390 @@
+{
+ "slug": "iim-indore",
+ "name": "IIM Indore",
+ "establishedYear": "1996",
+ "location": "Indore, Madhya Pradesh",
+ "rating": 3.8,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   3,
+   4,
+   1
+  ],
+  "total": 8
+ },
+ "banner": "/university/banners/iim-indore.webp",
+ "approvals": [
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "AMBA",
+   "logo": "/university/approvals/AMBA.jpg"
+  },
+  {
+   "title": "EQUIS",
+   "logo": "/university/approvals/EQUIS.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "IIM Indore, also known as the Indian Institute of Management Indore, was established in 1996, and since then it has been nurtured by the MoE, Government of India. It is located in the city of Indore, Madhya Pradesh. It is an essential institution as per the Indian Institutes of Management Act 2017. This institute offers quality education to students by adhering to academic excellence, researching innovative ideas, and dwelling on all the factors of leadership. It has top and expert faculty that offers excellent academic knowledge and skills. The institute is highly focused on research areas. It is the 3rd largest institute based on student exchange programs offered."
+  },
+  {
+   "t": "p",
+   "text": "The Institute offers both online and on-campus programs. Students can apply for courses like the Executive Post Graduate Programme in Management (EPGP), Post Graduate Programme in Human Resource Management (PGP-HRM), Executive Fellow Programme in Management (EFPM), Post Graduate Programme in Management for Working Executives (PGPMX), Post Graduate Programme in Management (PGP), Five Year Integrated Programme in Management (IPM), Fellow Programme in Management (FPM), Executive Fellow Programme in Management and Governance (EFPMG), and many more."
+  },
+  {
+   "t": "p",
+   "text": "Executive Education is offered to students in disciplines like business analytics, general management, human resource management, finance and investment banking, information systems, sales and marketing, operations management, strategy and entrepreneurship, and many more. Executive programs are offered online through various platforms by offering online study material to the students."
+  },
+  {
+   "t": "p",
+   "text": "There are various programs offered to students in executive education, like customized programs, long-duration online programs, short-term online programs, the Executive Postgraduate Diploma Programme in Management & Artificial Intelligence, certificate courses designed especially for defense officers, the General Management Programme, and many more."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Top Certificate Course from IIMs!"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Certificate In Digital Marketing and Analytics from IIM",
+      "Online Certificate In Project Management from IIM"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Certificate In Data Science and Analytics from IIM",
+      "Online Certificate In Financial Management from IIM"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Certificate In HR Management from IIM",
+      "Online Certificate In Leadership and Management from IIM"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Certificate In Supply Chain and Logistics from IIM",
+      "Online Certificate In Operations and Six Sigma form IIM"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Certificate In Financial Data Analytics from IIM",
+      "IIM Certificate for Working Professionals"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The Institute is accredited by the European Quality Improvement System and the Association to Advance Collegiate Schools of Business and is a prestigious and renowned member of the Association of MBA. It is also a member of the AACSB Business Education Alliance. Recently the institute got 8th rank by the National Institutional Ranking Framework 2024. IIM Indore is the right choice for students who are looking for short-duration programs and certificate programs."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Placements Opportunities",
+   "content": "With many top recruiters and their hiring partners, the institute is providing 100% placement to students in various industries."
+  },
+  {
+   "title": "Globally Renowned",
+   "content": "IIM is among the top-ranked Institutes in India and is ranked by some prestigious organizations."
+  },
+  {
+   "title": "Expert Faculty Members",
+   "content": "IIM has top faculty members who give excellent guidance to the students along with real-time experience and industry exposure."
+  }
+ ],
+ "facts": [
+  "IIM Indore offers both online and on-campus programs.",
+  "The institute got 8th rank by NIRF 2024.",
+  "Indian Institute of Management Indore was established in 1996 and nurtured by the Ministry of Education, GOI.",
+  "It is recognised and accredited by various national and international organisations.",
+  "The Institute is accredited by the European Quality Improvement System and the Association to Advance Collegiate Schools of Business.",
+  "It is a prestigious and renowned member of the Association of MBA and AACSB Business Education Alliance.",
+  "Students can apply for courses like Executive Post Graduate Programme in Management (EPGP), Post Graduate Programme in Human Resource Management (PGP-HRM), Executive Fellow Programme in Management (EFPM), Post Graduate Programme in Management for Working Executives (PGPMX), Post Graduate Programme in Management (PGP), Five Year Integrated Programme in Management (IPM), Fellow Programme in Management (FPM), Executive Fellow Programme in Management and Governance (EFPMG) and many more.",
+  "Customized programs, long-duration online programs, short-term online programs, Executive Post Graduate Diploma programs and many more courses are available.",
+  "This is the only IIM that offers courses in management after the 12th. The students can pursue the IPM- Integrated Programme in Management.",
+  "Disciplines offered by the institution are Business Analytics, General Management, Human Resource Management, Finance and Investment Banking, Information Systems, Sales and Marketing, Operations Management, Strategy and Entrepreneurship."
+ ],
+ "courses": [
+  {
+   "name": "Certificate in Healthcare Management",
+   "fee": 300000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "300000"
+    }
+   ]
+  },
+  {
+   "name": "Certificate in Digital Transformation",
+   "fee": 250000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "250000"
+    }
+   ]
+  },
+  {
+   "name": "Doctor of Philosophy",
+   "fee": 2450000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "2450000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "IIM Indore is transforming the future of students by providing top-notch education that makes the future of the students bright. They offer various financial assistance and scholarships to the students, like"
+  },
+  {
+   "t": "p",
+   "text": "Merit-Based Scholarships"
+  },
+  {
+   "t": "p",
+   "text": "Need-Based Scholarships"
+  },
+  {
+   "t": "p",
+   "text": "Diversity Scholarships"
+  },
+  {
+   "t": "p",
+   "text": "Corporate Scholarships"
+  },
+  {
+   "t": "p",
+   "text": "Education Loans"
+  },
+  {
+   "t": "p",
+   "text": "Fellowship programs with financial aid"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "IIM Indore offers various online and on-campus programs. However, the eligibility criteria for all the courses vary. Many examinations, like the Common Admission Test (CAT) or Graduate Management Admission Test (GMAT), scores are required for admission to some courses. The students have to check the eligibility criteria and then move to the steps mentioned below:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- The first step is selecting the best course for you. Students have to ensure that the selected course aligns well with their career and educational goals."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Now check the basic eligibility criteria to get admission to the Institute, including all educational qualifications, work experience, and all other requirements."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Visit the online website of the university by entering the details, a functional phone number, email address, name of the candidate, and nationality."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- The institute verifies the details of the candidate. After two-step verification, the students can fill out the application form by logging in with the credentials."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- Now, move to the next step, which is scanning and uploading the documents on the application."
+  },
+  {
+   "t": "p",
+   "text": "Step 6- Make the fee payment. Take the application pdf print."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination for the students enrolled in online programs will be done in online mode. The institute has a dedicated online platform or software like Proctored Zoom, Google Meet, and many more. The students have to register for the online examination. It is important to keep the identity card while appearing for the examination. The date and time for the online examination will be scheduled and updated on the portal. The proctoring technology is essential to avoid misbehavior while appearing for the examination. For such purposes, a webcam, screen, and audio recording are used. The students can check the results on the website after the notification."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The institute is offering various placement options to the students. Every year the institute graduates get high salary packages in various industries in domestic and international ventures. The Institute has offered its highest package of 1.14 crore, and the average package increased by 21%. Currently, students get job opportunities in sectors like the consulting domain, marketing and management, the human resources and operations department, and many more. The institute got offers from more than 180 recruiters, with over 30 new recruiters. Top recruiting companies are Accenture Strategy, Reliance Industries Limited, Redseer Consulting, HDFC Bank, Hindustan Unilever, and many more."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "H&M",
+   "logo": "/university/partners/hm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "NTT Data",
+   "logo": "/university/partners/ntt-data.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "Tata Motors",
+   "logo": "/university/partners/tata-motors.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Decathlon",
+   "logo": "/university/partners/decathlon.webp"
+  },
+  {
+   "title": "Apple",
+   "logo": "/university/partners/apple.webp"
+  },
+  {
+   "title": "Nike",
+   "logo": "/university/partners/Nike.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-10-16",
+   "content": "My friend suggested this institute. However, I was already enrolled in a job role and decided to pursue a short-term course. I am glad I chose this institute."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-10-16",
+   "content": "The Institute offers placement support to the students. With their perfect bridging of top recruiters and students, they ease the load of finding the right company by students and getting a job."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-10-16",
+   "content": "The Institute is an amazing place to study. They are offering various job-aligned courses that help students to find better job & career opportunities."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-16",
+   "content": "I was a working professional and wanted to upskill and get more knowledge that could help me in my career. At that point, this Institute was suggested to me by my friend."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the contact details of IIM Indore?",
+   "a": "Here are the contact details of IIM Indre Indian Institute of Management Indore, Indore, M.P., India Tel: +91-731-2439676 Email: bbeep@iimidr.ac.in Fax: +91-731-2439800"
+  },
+  {
+   "q": "What are some best online executive programs in India?",
+   "a": "Universities have launched numerous online executive courses to empower the Indian workforce. The top ones on that list are tabulated below. Explorer Best Executive Programs In India Executive Program Online In Finance Executive Program Online In HR Executive Program Online In Operations Executive Program Online In Leadership Executive Program Online In Data Science and Analytics Executive Program Online In AI and Machine Learning Executive Program Online In Marketing Executive Program Online In Software and Technology Executive Program Online In Healthcare Executive Program Online In Business Analytics Executive Program Online In DevOps Executive Program Online In Cyber Security Executive Program Online in Big Data Engineering Executive Program Online In Blockchain Executive Program Online In Cloud Computing LLM Online Job-Linked Programs Pay After Placement Programs Explore more online and distance courses in India! Click here for all approved distance and online universities in India!"
+  },
+  {
+   "q": "Can I pursue a doctorate program while working?",
+   "a": "Several online doctorate courses have been launched in the market for working professionals. A few of them include: Explore Online Doctorate Programs for Working Professionals Online Doctorate Course for Working Professionals Doctor of Juridical Science DBA In Supply Chain Management DBA In Supply Artificial Intelligence DBA In Human Resource Management Doctor of Business Administration"
+  },
+  {
+   "q": "Can I pursue an MBA without a good CAT score?",
+   "a": "Top management institutions in India including IIMs are now offering online MBAs for which you do not need to attempt CAT. Some of these trending MBA options are listed below. MBA without CAT Available! IIM Online MBA IIM Online Executive MBA MBA Courses Online MBA Distance Learning Course Online Executive MBA Executive MBA for Working Professionals MBA for Working Professionals MBA Part-Time Courses MBA Global Online IIM Online Courses"
+  },
+  {
+   "q": "Which top IIMs offer online management courses other than IIM Indore?",
+   "a": "Here is a list of the top IIMs as per the NIRF 2024 Management category, which offer different types of online management courses. Top IIMs In India As Per NIRF Ranking 2024 Name Rank Score Indian Institute of Management Ahmedabad 1 83.32 Indian Institute of Management Amritsar 47 52.57 Indian Institute of Management Bangalore 2 81.16 Indian Institute of Management Jammu 42 54.64 Indian Institute of Management Kashipur 23 60.82 Indian Institute of Management Kozhikode 3 77.90 Indian Institute of Management Lucknow 7 74.43 Indian Institute of Management Nagpur 31 56.94 Indian Institute of Management Raipur 14 64.40 Indian Institute of Management Ranch i 17 61.27 Indian Institute of Management Rohtak 12 66.49 Indian Institute of Management Sambalpur 50 51.47 Indian Institute of Management Shillong 24 60.49 Indian Institute of Management Sirmaur 57 50.92 Indian Institute of Management Udaipur 22 60.93 Indian Institute of Management Visakhapatnam 26 59.20"
+  },
+  {
+   "q": "Does IIM Indore offer online programs?",
+   "a": "Yes, the institute offers various online programs in both online and on-campus modes."
+  },
+  {
+   "q": "How the results of courses are declared at IIM Indore?",
+   "a": "The results are declared by intimating students through email, and also, a copy of the admission letter will be sent to the students."
+  },
+  {
+   "q": "Are the courses offered by IIM Indore in online mode Valid?",
+   "a": "Yes, the courses offered by the institute in online mode are valid and approved by various reputed organizations."
+  },
+  {
+   "q": "Can we pursue an online examination at IIM Indore?",
+   "a": "Yes, if the student is enrolled in an online program, they can take an online examination and submit an online submission assignment."
+  },
+  {
+   "q": "Do I have to Visit IIM Indore to pursue my online course?",
+   "a": "No, all the processes will be done in an online mode right from admission to assignment submission & examination."
+  },
+  {
+   "q": "What courses are offered to the students at IIM Indore?",
+   "a": "The courses offered by the institution are Executive Post Graduate Programme in Management (EPGP), Post Graduate Programme in Human Resource Management (PGP-HRM), Executive Fellow Programme in Management (EFPM), Post Graduate Programme in Management for Working Executives (PGPMX), Post Graduate Programme in Management (PGP), Five Year Integrated Programme in Management (IPM), Fellow Programme in Management (FPM), Executive Fellow Programme in Management and Governance (EFPMG), and many more."
+  }
+ ]
+}

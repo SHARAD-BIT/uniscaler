@@ -1,0 +1,412 @@
+{
+ "slug": "liverpool-john-moores",
+ "name": "Liverpool John Moores University",
+ "establishedYear": "1823",
+ "location": "",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   1,
+   0,
+   3,
+   10,
+   15
+  ],
+  "total": 29
+ },
+ "banner": "/university/banners/liverpool-john-moores.webp",
+ "approvals": [
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "Privy Council Accredited",
+   "logo": "/university/approvals/Privy_Council_Accredited.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Liverpool John Moores University (LJMU) is one of the eminent universities in the Liverpool, UK established in 1823. However, the university came out as an entirely new educational platform with complete accreditation of the courses in the year of 1992. However, the university has a history of 200 years in Liverpool itself. The University was named after Liverpool’s great philanthropist & entrepreneur, Sir John Moores."
+  },
+  {
+   "t": "p",
+   "text": "The university’s strong belief in &ldquo;Knowledge is Power&rdquo; has made it come a long way in delivering a quality education globally. It not only believes in making education accessible to all but also wants this education to be meaningful for the wellness & development of society."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The university offers a varied number of courses in the undergraduate, postgraduate, & professional development programs in the domains of arts, health, humanities, technology and science, education, & engineering in online & offline modes. These courses are delivered to the learners in collaboration with LJMU and other learning platforms around the globe."
+  },
+  {
+   "t": "p",
+   "text": "This way even the hybrid or online learners of the university get to earn the same conceptual understanding of the topics as that of on-campus learners. The university has also set its bars high by providing special educational support to &ldquo;Black People&rdquo; & &ldquo;Armed Forces.&rdquo; This step of the university has impacted both students & teachers strongly & encourages them to be a part of the educational system that truly believes in their potential."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Student-Focused University",
+   "content": "Be a part of a student-focused university that strongly believes in transforming your values through quality education."
+  },
+  {
+   "title": "Affordable Fee Structure",
+   "content": "The university provides courses at an affordable range along with the options of Schlorships & Easy payment options."
+  },
+  {
+   "title": "International Collaborations",
+   "content": "The university’s international collaborations with academic institutions that hold the same values & beliefs ensure a productive learning journey."
+  }
+ ],
+ "facts": [
+  "The university is rooted in its cultural grounds & has a remarkable global presence at the same time.",
+  "The university does not just believe in bringing in change but also actively participating in it by making a choice of treating all the students equally.",
+  "LJMU’s world-class faculty members have expertise in both theoretical & practical knowledge that is imparted through their research studies & technical commands.",
+  "At LJMU, you get to learn beyond the college walls with innovative methods of learning with the inclusion of insights from global partners including Pakistani, Indian, Bangladeshi, Somalian, and Nigerian communities.",
+  "The courses offered by the university in hybrid/online mode are accredited by the Privy Council &WES & have got the same recognition in the National & International markets as that of the on-campus programs.",
+  "The university provides its standard level education at an affordable cost with additional financial support in the name of Scholarships. Moreover, the easy EMI options have made tech-driven courses accessible & affordable to all.",
+  "The career support provided by the university makes you learn the latest tactics & strategies in your specialized field to stand out in this competitive skill-driven era of industries."
+ ],
+ "courses": [
+  {
+   "name": "Online M.Sc",
+   "fee": 504000,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "504000"
+    }
+   ]
+  },
+  {
+   "name": "Master of Science",
+   "fee": 485000,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "485000"
+    }
+   ]
+  },
+  {
+   "name": "Online Global MBA",
+   "fee": 485000,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "485000"
+    }
+   ]
+  },
+  {
+   "name": "Online One Year MBA",
+   "fee": 485000,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "485000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 485000,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "485000"
+    }
+   ]
+  },
+  {
+   "name": "Online Executive MBA",
+   "fee": 485000,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "485000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "At LJMU, you can avail yourself of the financial support services provided either through scholarships or through installment options. You can apply for the scholarship at the university while filling out the admission form & if selected, you will get a specific percentage of fee waiver from the university in the tuition or program fee."
+  },
+  {
+   "t": "p",
+   "text": "Moreover, if in case you do not get a scholarship, you still have the chance of relieving yourself from the financial burden via the easy EMI options available as a mode of fee payment at the university. This method will make you free from the stress of paying the course fee in one go."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission procedure at Liverpool John Moores University is pretty easy & hassle-free that can be completed by following the steps mentioned here:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1 Visit the official University website and search for the specific requirements of your course as per your country."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 Access the admission portal for international students and fill out your basic info in the mandatory field of the application form. Upload the required documents (Academic & Professional) on the admission portal along with the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 For some courses, the university conducts course-specific entrance exams & language-specific tests (TOEFL, IELTS, etc.). Admission to such courses is only considered on the basis of those entrance test results. So, you need to meet the minimum cut-off of the university for your course, if applicable, for enrollment."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 After being shortlisted by the university, you need to share your SOPs, LORs, cover letters, & resumes with the university. You can also apply for the scholarship at this stage of the admission process."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 After the verification of your documents, you will receive the offer letter from the university confirming your admission to the course."
+  },
+  {
+   "t": "p",
+   "text": "Step 6 The final step of fee payment will confirm your seat in the course & you will receive a confirmation mail with your login credentials & enrollment number from the university."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "A continuous method of evaluation is followed by the university to make you equipped with all the technicalities of the field. Apart from the term-end theoretical exams, you get to build a strong foundation of practical insights via case studies, dissertations/projects, & training programs on tools. The overall performance of the students in the entire session of the course is evaluated by the university in the final results. Thus, to get a globally recognized degree, you need to be proactive & attentive to each & every assessment of the course."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Students of Liverpool John Moores University:"
+  },
+  {
+   "t": "li",
+   "text": "Have Diversified Career Options"
+  },
+  {
+   "t": "li",
+   "text": "Get Hired Within 6 Months of Program Completion"
+  },
+  {
+   "t": "li",
+   "text": "Have Up-to-Date Industry Experience"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  },
+  {
+   "title": "Paypal",
+   "logo": "/university/partners/paypal.webp"
+  },
+  {
+   "title": "HSBC",
+   "logo": "/university/partners/hsbc.webp"
+  },
+  {
+   "title": "Adidas",
+   "logo": "/university/partners/adidas.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Chandrashekar Ramanathan",
+   "title": "Dean Academics (IIITB)",
+   "description": "Prof. Chandrashekar has a PhD from Mississippi State University and experience of over 10 years in several multinational organizations.",
+   "photo": "/university/faculty/Chandrashekar_Ramanathan-.webp"
+  },
+  {
+   "name": "Tricha Anjali",
+   "title": "Ex-Associate Dean",
+   "description": "Prof. Anjali has a PhD from Georgia Institute of Technology as well as an integrated MTech (EE) from IIT Bombay.",
+   "photo": "/university/faculty/Tricha_Anjali.webp"
+  },
+  {
+   "name": "Dr. Debabrata Das",
+   "title": "Director, IIITB",
+   "description": "Dr. Debabrata Das is Director of IIITB. He has received his PhD from IIT-KGP. His main areas of research are IoT and Wireless Access Network",
+   "photo": "/university/faculty/Dr._Debabrata_Das.webp"
+  },
+  {
+   "name": "G. Srinivasaraghavan",
+   "title": "Professor",
+   "description": "Prof. Srinivasaraghavan has a PhD in Computer Science from IIT-K and 18 years of experience with Infosys and several other MNCs.",
+   "photo": "/university/faculty/G._Srinivasaraghavan.webp"
+  },
+  {
+   "name": "Prof. Dhiya Al-Jumeily",
+   "title": "Professor - Artificial Intelligence",
+   "description": "A senior member of the IEEE and a chartered IT Professional, he is a fellow of the UK Higher Education Academy.",
+   "photo": "/university/faculty/Prof._Dhiya_AL-Jumeily.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Shubham Kejriwal",
+   "rating": 5,
+   "date": "2026-05-31",
+   "content": "Amazing University. I am very fortunate that I have enrolled in such university wherein i can get to learn many aspects of finances through this University. I feel this is one of the best university i"
+  },
+  {
+   "name": "Amit Kumar Singh",
+   "rating": 5,
+   "date": "2026-03-20",
+   "content": "excellent modules, great teachers and course material."
+  },
+  {
+   "name": "Mohit Dalvi",
+   "rating": 5,
+   "date": "2025-10-24",
+   "content": "The Liverpool Business School offers excellent teaching and strong academic support. The faculty is knowledgeable, approachable, and the MBA degree is well structured."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Who delivers the online lectures in online courses offered by Liverpool John Moores University?",
+   "a": "In the online program of LJMU, you get to learn industry-relevant curriculum from the highly qualified & experienced faculty members of the university itself. Thus, you can avail of the same academic benefits as a full-time student of Liverpool John Moores University in an online mode at a way more affordable fee structure."
+  },
+  {
+   "q": "Who are the top recruiters of Liverpool John Moores University in India?",
+   "a": "After completing an online program from Liverpool John Moores University in India, you can secure a highly reputed position at Flipkart, Zivame, Amazon, Fractal, Kantar, & many other MNCs."
+  },
+  {
+   "q": "Is an online degree from Liverpool John Moores University recognized by recruiters?",
+   "a": "All the online programs offered by Liverpool John Moores University have international tie-ups & thus the curriculum of these courses is designed on the basis of a standard set of guidelines for maintaining their quality that provides an equivalent learning experience as in an on-campus program. Moreover, these online programs are WES approved & are recognized by recruiters at a global level."
+  },
+  {
+   "q": "Are student reviews available for Liverpool John Moores University?",
+   "a": "Yes, Liverpool John Moores University has verified student reviews on the Student Review Portal by College Vidya , covering academics, LMS experience, placement support, and overall learning experience. You can search these reviews and see what actual enrolled students have shared. Universities on the portal cannot pay to hide or remove reviews, so the feedback stays honest."
+  }
+ ]
+}

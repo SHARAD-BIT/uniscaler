@@ -1,0 +1,358 @@
+{
+ "slug": "christ-university-online",
+ "name": "Christ University Online",
+ "establishedYear": "1969",
+ "location": "Bengaluru, Karnataka",
+ "rating": 3.9,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   3,
+   2,
+   2
+  ],
+  "total": 7
+ },
+ "banner": "/university/banners/christ-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Christ (Deemed to be University) is a renowned university in India, known for its global standard and holistic approach to education. The university has its main campus in Bangalore, where the university has about four campuses, and the other two are in Delhi NCR and Pune. It is a UGC-approved institution with NAAC accreditation with an A+ grade. It is among the top 100 universities in the country and received a 60th NIRF ranking in 2024."
+  },
+  {
+   "t": "p",
+   "text": "The varied departments at Christ University are architecture, education, management, humanities, and performing arts. Students are provided with online and doctoral courses and also programs at undergraduate and postgraduate levels. Some top-ranked online courses provided at the university are MSc Data Science, MSc Artificial Intelligence, BA Applied Economics, BCA, and B Com. The university focuses on providing practical knowledge, rigorous industry-focused training, and valuable resources that heighten the study experience."
+  },
+  {
+   "t": "p",
+   "text": "Christ University has a large student body, with 520-plus international students coming from 77 different countries. This is because of the flexible online education provided by the university. Students get to study from experienced teaching faculty and have an engaging, world-class study experience with a modern curriculum and technologies. They also get to learn and interact with diverse people in the industry, make connections, find mentors, and earn a degree while sitting comfortably in their homes. This allows work or other obligations to be managed with studies."
+  },
+  {
+   "t": "p",
+   "text": "One of the things students can be assured about is the placement possibilities after graduation. The institution invites many big companies, NGOs, MNCs, and public sector organizations to the placement drive. So, the students of the university have the best job opportunities. Besides that, skill-enhancement workshops, events, online resources, and alumni networks are all provided to help students land the ideal job prospects."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "The university is operating in multiple cities with 6 campuses in total. There are four campuses in Bangalore itself - Central, Kengeri, Bannerghatta Road, and Yeshwanthpur. Followed by the Ghaziabad campus in Delhi-NCR and Lavasa in Pune.",
+  "The university started in 1969, previously being called \"Christ College.\"",
+  "Christ University is recognized by UGC (University Grants Commission) and was announced as a deemed-to-be University by the Ministry of Human Resource Development (Government of India) in 2008.",
+  "The university is renowned for offering path-breaking higher education, modern syllabi, practical knowledge, and holistic education.",
+  "Christ University was one of the first universities in India to receive accreditation in 1998 from the National Assessment and Accreditation Council (NAAC); now it has an A+ grade from NAAC.",
+  "In 2022, Christ University was reaccredited by NAAC with an A+ grade.",
+  "The university implemented the 2020 National Education Policy in 2023.",
+  "Both the online Bachelor's and Master's programmes were granted permission from UGC and AICTE.",
+  "The online wing of the university offers two bachelor's and five Master programs.",
+  "Students are offered career counseling services, placement support, and skill-based training, like resume support and interview-taking skills"
+ ],
+ "courses": [
+  {
+   "name": "Online M.Sc",
+   "fee": 250000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "250000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "1500"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 230000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "230000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "1500"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 175000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "175000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "1500"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 75000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "75000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "1500"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 160000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "160000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "1500"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "At Christ (Deemed To Be University), fees for most online courses are affordable. Students are given financial aid support so that fees can be paid easily. The university has scholarship facilities that are provided to students with good merit scores or those who showcase co-curricular or sports abilities. To be applicable to this, students also need to have proper attendance. Moreover, fee payment may also be allowed in installments, keeping in mind the convenience of the learner."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "To apply to any program of choice at Christ University, follow the steps below:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Go to the official website of the university. You have to create an account on the application page."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: The application process has started, and you will have to share personal, contact, educational, and other information. Have ready and within reach the documents that are important, such as a passport-size photograph, graduation certificates, marksheets, or any other document that is relevant to your application."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Once the form is completely filled, finish any assessments, interviews, or evaluations."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: The payment page will be at the end of the form. Only when you reach this stage will your application be considered as completed. Make the payment, and your application will be finished, which is part of the application process."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Then, wait for the admission committee to give their verdict about the next steps. Those students selected will be asked to pay the initial installment of the fees to confirm their spot."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is the Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25. Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalence of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of universities and colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "How much refund does Christ University Online offer? As per the UGC Refund policy, the Christ University Online refund offers a 100% refund 15+ days before the closing date, 90% within 15 days before, 80% within 15 days after, 50% within 16–30 days after, and none after 30 days. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination pattern of Christ (Deemed To Be University) has two parts. There are continuous internal assessments and term-end examinations. More weightage is for the continuous internal assessments, over 70 percent. These internals consist of presentations, written assessments, quizzes, and reports. The type of internal evaluation may depend on and vary with the course chosen. However, the end-of-semester examinations evaluate and grade the knowledge gained by students throughout the whole term. The marks' weightage of exams is about 50%. Both these ways are used to completely assess the student’s performance."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 30–40% internal assessment (assignments, quizzes, participation) + 60–70% end-semester exam. Online proctored examinations from home - no mandatory campus visits."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Students graduating from Christ (Deemed To Be University) have a very high chance of getting placed. The university assists the students by providing them with mentoring opportunities, professional training, and skill development workshops. These consist of optimizing resumes, building profiles, and taking interview skills, among others. The university also organizes networking events and conducts campus recruitment training. Moreover, the university invites many top companies, start-ups, government or public sector organizations, or NGOs to conduct placement drives. Some of the top recruiters where graduates have found jobs are Accenture, Deloitte, Amazon, PWC, KPMG, EY, IBM, HSBC, SAP, ICICI Bank, and HSBC."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "ICICI Bank",
+   "logo": "/university/partners/icici-bank.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2025-10-24",
+   "content": "The staff at Christ University are really knowledgeable and very helpful. I could reach out to them with doubts, and I would get good solutions."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2025-10-24",
+   "content": "The online classes for MSc Artificial Intelligence were so knowledge-rich, and I could balance my classes and work at the same time. I even received a promotion at work due to the program."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2025-10-24",
+   "content": "I thoroughly loved how well-designed and executed the curriculum of Christ University is!"
+  },
+  {
+   "name": "Rinku sharma",
+   "rating": 3,
+   "date": "2025-10-24",
+   "content": "I got a job at my dream company, IBM, after completing my degree at Christ (Deemed to be University). The interviewing, profiling, and other skills that I got in training during the workshops helped me with the placement."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What can I expect in terms of placements after graduating from Christ (Deemed-to-be University)?",
+   "a": "Christ University will connect you to big companies such as Amazon and Accenture through their placement cell and also provide you with job-related training."
+  },
+  {
+   "q": "Where are CHRIST (Deemed To Be University) campuses?",
+   "a": "Christ (Deemed To Be University) has around 6 campuses in total. There are four campuses in Bangalore itself - Central, Kengeri, Bannerghatta Road, and Yeshwanthpur. Followed by the Ghaziabad campus in Delhi-NCR and Lavasa in Pune."
+  },
+  {
+   "q": "What can I expect from the Christ University online program?",
+   "a": "The Christ University online program has academic mentors, counseling services, a learning management system with plenty of self-learning materials, as well as digital resources."
+  },
+  {
+   "q": "What types of subjects can I study at Christ (Deemed-to-be University)?",
+   "a": "Courses at all levels, from undergraduate, postgraduate, to doctoral degrees, as well as online courses, are present. Some domains these are available in are business management, data science, and economics."
+  },
+  {
+   "q": "What does the examination structure look like at Christ (Deemed-to-be University)?",
+   "a": "At Christ (Deemed-to-be University), the examination is weighted. Most of the grade will be from internal assessment, about 70% and 30% from your finals exam at the end of the term."
+  },
+  {
+   "q": "Are there financing options for fees at Christ University?",
+   "a": "Yes. The fees are manageable, and Christ University gives the option for installments, and there are several scholarships available for candidates with good academic or scholastic merit."
+  },
+  {
+   "q": "Is the Christ (Deemed-to-be University) holding any accreditation?",
+   "a": "The Christ (Deemed-to-be University) has been granted NAAC accreditation with an A+ grade. Check the other approvals and accreditations received by the university by visiting the official website of College Vidya."
+  }
+ ]
+}

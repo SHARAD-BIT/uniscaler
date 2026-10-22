@@ -24,42 +24,26 @@
   -webkit-text-fill-color: transparent;
   font-size: clamp(1.5rem, 5vw, 2.2rem);
   width: max-content;
-  margin: 0 auto;
+  /* The bottom margin is the swoosh's room: ::before dips 17px below the
+     heading, so anything less runs the curve through the subtitle. */
+  margin: 0 auto 1.4rem;
   position: relative;
 }
+/* The underline is an Amazon-style smile: an elliptical border-bottom does the
+   curve (so it stretches with the heading at any font size, which a fixed SVG
+   path would not). The dot that used to travel the line is gone with the
+   straight line — it animated on a straight axis and cannot follow the curve;
+   an arrowhead stood at the right tip briefly and was removed on request. */
 .college-location .headP h2::before {
   content: "";
   position: absolute;
-  bottom: 0rem;
+  bottom: -14px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 3px;
-  border-radius: 5px;
-  background-color: var(--accent);
-}
-.college-location .headP h2::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  right: -5px;
-  background-color: var(--accent);
-  width: 12px;
   height: 12px;
-  border-radius: 50%;
-  animation: move 9s linear infinite;
-}
-@keyframes move {
-  0%,
-  100% {
-    right: 100%;
-  }
-  50% {
-    right: -5px;
-  }
-  100%{
-    right:-5px
-  }
+  border-bottom: 3px solid var(--accent);
+  border-radius: 0 0 50% 50% / 0 0 100% 100%;
 }
 .college-location .headP p {
   font-size: clamp(1rem, 1.5vw, 1.2rem);

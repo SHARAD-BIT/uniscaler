@@ -50,21 +50,73 @@
   text-decoration: underline;
 }
 
+/* The bottom margin is the whole gap to the preference panel — the subtitle
+   that used to sit between them was removed on the client's word (2026-08-24). */
 .pp-title {
   font-size: clamp(1.8rem, 3.4vw, 2.6rem);
   font-weight: 700;
   color: #111a44;
   text-align: center;
-  margin: 0 0 0.6rem;
+  margin: 0 0 2rem;
 }
 
-.pp-sub {
-  font-size: 1.02rem;
-  color: #475569;
-  text-align: center;
-  line-height: 1.6;
-  max-width: 60ch;
-  margin: 0 auto 2.5rem;
+/* ── search ──
+   The site-wide `*` reset strips borders, so the box draws its own. */
+.pp-search {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+  padding: 0.75rem 1.1rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pp-search:focus-within {
+  border-color: #e8253c;
+  box-shadow: 0 2px 12px rgba(232, 37, 60, 0.12);
+}
+
+.pp-search > svg {
+  flex: none;
+  color: #94a3b8;
+}
+
+.pp-search input {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.95rem;
+  color: #111a44;
+  background: transparent;
+}
+
+.pp-search input::placeholder {
+  color: #94a3b8;
+}
+
+/* The browser's own clear button on type=search doubles the custom one. */
+.pp-search input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.pp-search-clear {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 2px;
+  color: #64748b;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.pp-search-clear:hover {
+  color: #e8253c;
 }
 
 /* ── the preference panel ── */
@@ -159,20 +211,6 @@
   color: #fff;
 }
 
-.pp-pill-count {
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.08rem 0.4rem;
-  border-radius: 999px;
-  background: #f1f5f9;
-  color: #64748b;
-}
-
-.pp-pill.is-on .pp-pill-count {
-  background: rgba(255, 255, 255, 0.24);
-  color: #fff;
-}
-
 .pp-resultbar {
   font-size: 0.95rem;
   color: #475569;
@@ -185,45 +223,222 @@
 }
 
 /* ── results ──
-   `auto-fill` rather than `auto-fit`: on a filter that returns one program,
-   auto-fit stretches that single card the full 1300px, which looks like a
-   layout fault. auto-fill leaves the empty tracks in place and the card keeps
-   the size it has in every other row. */
-.pp-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  /* The cards lift on hover and the page would otherwise clip that lift where
-     the grid meets the section below it. */
-  padding-bottom: 6px;
-}
-
-/* These cards sit on white here, not on the dark band, so the shadow has to be
-   the thing that separates them from the page. */
-.pp-grid .sa-pathway-card {
-  border: 1px solid #e2e8f0;
-}
-
-.pp-grid .sa-pathway-card:hover {
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.14);
-}
-
-.pp-tags {
+   The reference's wide cards, one per row: logo panel + red title +
+   durations on the left, labelled facts and the CTA pair on the right,
+   heart pinned top-right. */
+.pp-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.pp-tag {
-  padding: 0.16rem 0.5rem;
-  border-radius: 4px;
-  background: #f1f5f9;
-  color: #64748b;
-  font-size: 0.7rem;
+.pp-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 1.5rem 2rem;
+  padding: 1.5rem 1.75rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.pp-card:hover {
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+}
+
+.pp-save {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 4px;
+  font-size: 1.15rem;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.15s ease;
+  z-index: 1;
+}
+
+.pp-save:hover {
+  color: #e8253c;
+  transform: scale(1.12);
+}
+
+.pp-save.is-saved {
+  color: #e8253c;
+}
+
+/* The reference leads with a campus photo — licensed stock we have no right
+   to — so the university logo carries the slot on a bordered panel. */
+.pp-card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  padding: 0.9rem;
+  border: 1px solid #eef1f6;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.pp-card-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pp-card-title {
+  margin: 0.9rem 0 0.5rem;
+  font-size: 1.02rem;
   font-weight: 700;
+  color: #e8253c;
+  line-height: 1.4;
 }
 
-.pp-more,
+.pp-card-dur {
+  margin: 0 0 0.2rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.pp-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  /* Clear the heart pinned in the card's corner. */
+  padding-right: 2.2rem;
+}
+
+.pp-card-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem 1.6rem;
+}
+
+.pp-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pp-fact span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.pp-fact strong {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111a44;
+  line-height: 1.35;
+}
+
+.pp-card-ctas {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.pp-cta-outline,
+.pp-cta-solid {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pp-cta-outline {
+  border: 1.5px solid #e8253c;
+  color: #e8253c !important;
+  background: #fff;
+}
+
+.pp-cta-outline:hover {
+  background: #fdeaec;
+}
+
+.pp-cta-solid {
+  background: #e8253c;
+  color: #fff !important;
+}
+
+.pp-cta-solid:hover {
+  background: #c81c31;
+}
+
+/* Page changes scroll back to the top of the list; without the margin the
+   fixed navbar would sit over the first card. */
+#pp-results {
+  scroll-margin-top: 130px;
+}
+
+/* ── pagination ── */
+.pp-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 2.5rem;
+}
+
+.pp-page-btn,
+.pp-page-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 0.6rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #334155;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.pp-page-btn:hover,
+.pp-page-arrow:hover:not(:disabled) {
+  border-color: #e8253c;
+  color: #e8253c;
+}
+
+.pp-page-btn.is-current {
+  background: #e8253c;
+  border-color: #e8253c;
+  color: #fff;
+  cursor: default;
+}
+
+.pp-page-arrow:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.pp-page-gap {
+  padding: 0 0.2rem;
+  color: #94a3b8;
+}
+
 .pp-empty {
   display: flex;
   flex-direction: column;
@@ -244,17 +459,40 @@
 
 /* The view-all button is borrowed from the dark band, where it is a white
    outline on maroon. On this white page it needs the brand colours instead. */
-.pp-more .sa-pathway-viewall,
 .pp-empty .sa-pathway-viewall {
   border-color: #e8253c;
   color: #e8253c;
 }
 
-.pp-more .sa-pathway-viewall:hover,
 .pp-empty .sa-pathway-viewall:hover {
   background: #e8253c;
   border-color: #e8253c;
   color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .pp-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pp-card-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pp-card-right {
+    padding-right: 0;
+  }
+
+  .pp-card-ctas {
+    justify-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .pp-cta-outline,
+  .pp-cta-solid {
+    flex: 1;
+    min-width: 150px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -265,5 +503,10 @@
   .pp-prefs-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .pp-card-facts {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
   }
 }

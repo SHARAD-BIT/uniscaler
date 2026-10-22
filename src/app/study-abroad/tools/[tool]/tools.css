@@ -296,12 +296,29 @@
   }
 }
 
+/* Flat deep purple, as the reference band is — the copy sits left and the
+   stationery illustration rides the right edge. */
 .tl-hero {
-  background: radial-gradient(circle at 82% 20%, rgba(232, 37, 60, 0.25) 0%, transparent 55%),
-    linear-gradient(130deg, #1b1f4e 0%, #111a44 60%, #0e1116 100%);
+  background: #2e2a4d;
   color: #fff;
-  padding: 3.5rem 1.5rem 4rem;
+  padding: 3rem 1.5rem 3.4rem;
   margin-bottom: 2.8rem;
+}
+
+.tl-hero-grid {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.tl-hero-copy {
+  flex: 1 1 auto;
+}
+
+.tl-hero-art {
+  flex: none;
+  width: 240px;
+  height: auto;
 }
 
 .tl-back-light {
@@ -322,8 +339,8 @@
 .tl-hero-sub {
   font-size: 1.02rem;
   line-height: 1.65;
-  color: #c8cdd8;
-  max-width: 62ch;
+  color: #e4e6ef;
+  max-width: 66ch;
   margin: 0;
 }
 
@@ -351,14 +368,15 @@
   margin-bottom: 2rem;
 }
 
-/* Buttons, not links: they retarget the calculator further down the same
-   page. Each carries its own soft tint; the active one earns the red edge. */
+/* Buttons, not links: "Calculate now" opens the country's calculator.
+   Each carries its own soft tint and a landmark illustration pinned to the
+   card's bottom-right, bleeding to the edge as the reference cards do. */
 .tl-country-card {
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.4rem;
-  padding: 1.6rem 1.5rem;
+  min-height: 200px;
+  padding: 1.8rem 1.6rem;
   border: 2px solid transparent;
   border-radius: 14px;
   cursor: pointer;
@@ -367,11 +385,11 @@
 }
 
 .tl-country-us {
-  background: #e7f4ee;
+  background: #def0ea;
 }
 
 .tl-country-de {
-  background: #efeaf7;
+  background: #e6dff2;
 }
 
 .tl-country-card:hover {
@@ -382,20 +400,35 @@
   border-color: #e8253c;
 }
 
-.tl-country-name {
+.tl-country-body {
+  position: relative;
+  z-index: 1;
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  font-size: 1.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.tl-country-name {
+  font-size: 1.55rem;
   font-weight: 700;
   color: #111a44;
 }
 
-.tl-country-name img {
-  width: 34px;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(17, 26, 68, 0.25);
+.tl-country-art {
+  position: absolute;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.tl-country-us .tl-country-art {
+  right: 10%;
+  height: 92%;
+}
+
+.tl-country-de .tl-country-art {
+  right: 3%;
+  height: 84%;
 }
 
 .tl-country-cta {
@@ -411,6 +444,54 @@
 .tl-country-card.is-active .tl-country-cta {
   background: #e8253c;
   color: #fff;
+}
+
+/* ── Flag-card variant (cost of living) ──
+   Ten destinations instead of two, so the grid tightens to four columns
+   and the cards shrink; the art is the country's flag — the one set of
+   art that exists for all ten — pinned bottom-right where the reference
+   puts its landmarks. Tints cycle through the reference's pastels by
+   position. */
+
+.tl-country-grid-flags {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tl-country-grid-flags .tl-country-card {
+  min-height: 150px;
+  padding: 1.3rem 1.2rem;
+}
+
+.tl-country-grid-flags .tl-country-body {
+  gap: 1.1rem;
+}
+
+.tl-country-grid-flags .tl-country-name {
+  font-size: 1.2rem;
+}
+
+.tl-country-grid-flags .tl-country-card:nth-child(5n + 1) { background: #f2ecd9; }
+.tl-country-grid-flags .tl-country-card:nth-child(5n + 2) { background: #f9dcd4; }
+.tl-country-grid-flags .tl-country-card:nth-child(5n + 3) { background: #d9eef0; }
+.tl-country-grid-flags .tl-country-card:nth-child(5n + 4) { background: #e6dff2; }
+.tl-country-grid-flags .tl-country-card:nth-child(5n + 5) { background: #def0ea; }
+
+.tl-country-flag {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 1.1rem;
+  width: 64px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(17, 26, 68, 0.18);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 900px) {
+  .tl-country-grid-flags {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* ── Country-selected heading (shown when ?country= param is in URL) ── */
@@ -440,17 +521,33 @@
   }
 }
 
-/* ── Explainer accordion ── */
+/* ── "More About" band + explainer accordion ──
+   The band runs edge to edge in its own grey, as the reference does, and
+   the items sit on it as white rounded cards. */
+
+.tl-about {
+  background: #eef1f6;
+  padding: 3.2rem 1.5rem 3.6rem;
+  margin-top: 3.2rem;
+}
+
+.tl-about-title {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 700;
+  color: #16213e;
+  margin: 0 0 1.6rem;
+}
 
 .tl-acc {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .tl-acc-item {
-  border: 1px solid #e6e9f0;
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(17, 26, 68, 0.06);
 }
 
 .tl-acc-head {
@@ -465,8 +562,8 @@
   gap: 1rem;
   text-align: left;
   background: none;
-  padding: 1.05rem 1.3rem;
-  font-size: 1rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: #111a44;
   cursor: pointer;
@@ -483,7 +580,7 @@
 }
 
 .tl-acc-body {
-  padding: 0 1.3rem 1.2rem;
+  padding: 0 1.5rem 1.3rem;
   font-size: 0.95rem;
   line-height: 1.65;
   color: #475569;
@@ -585,6 +682,12 @@
   color: #475569;
 }
 
+@media screen and (max-width: 900px) {
+  .tl-hero-art {
+    width: 180px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .tl-country-grid {
     grid-template-columns: 1fr;
@@ -592,10 +695,62 @@
   .tl-hero {
     padding: 2.5rem 1.25rem 3rem;
   }
+  /* The copy is the band's job on a phone; the illustration would squeeze
+     it into a column of one word per line. */
+  .tl-hero-art {
+    display: none;
+  }
   .tl-faq-a {
     padding: 0 0.2rem;
   }
 }
+/* Step 1's labelled fields (duration, university, college). The global `*`
+   reset strips borders site-wide, so without these the inputs render as
+   invisible boxes on the white card. The label floats on the input's top
+   border, as in the reference — which is why the group needs no gap and the
+   list around it needs generous row spacing (see .tl-wstep .tl-fields). */
+.tl-float-group {
+  position: relative;
+}
+
+.tl-float-group label {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  transform: translateY(-55%);
+  background: #fff;
+  padding: 0 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #334155;
+  z-index: 1;
+}
+
+.tl-float-group input,
+.tl-float-group select {
+  border: 1.5px solid #dfe1e6;
+  border-radius: 8px;
+  padding: 0.65rem 0.8rem;
+  font-size: 0.95rem;
+  color: #111a44;
+  background: #fff;
+  width: 100%;
+}
+
+.tl-float-group input:focus,
+.tl-float-group select:focus {
+  border-color: #aab4c4;
+  background: #f4f6fb;
+}
+
+.tl-calc-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111a44;
+  text-align: center;
+  margin: 0 0 1.4rem;
+}
+
 .tl-tab-header {
   display: flex;
   align-items: center;
@@ -637,7 +792,7 @@
   line-height: 1.5;
 }
 
-.tl-table-wrap-upgrad {
+.tl-table-wrap-wizard {
   margin-bottom: 1.5rem;
 }
 
@@ -770,7 +925,7 @@
   line-height: 1.5;
 }
 
-/* ── Upgrad Step 3 Consolidated Box ── */
+/* ── Step 3 consolidated box ── */
 
 .tl-consolidated-box {
   border: 1px solid #e2e8f0;
@@ -794,6 +949,707 @@
   font-size: 1.15rem;
   font-weight: 700;
   color: #0f172a;
+}
+
+/* ── Wizard chrome (stepper, chips, radio list, nav) ─────────────────────
+   The wizard renders in a column narrower than the card so step 1 reads
+   like the reference. The site-wide `*` reset strips borders, so every
+   circle and pill below draws its own. */
+
+.tl-wizard {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Stepper: four numbered circles joined by a hairline. Steps are equal flex
+   columns; the segment between two circles is drawn by the right-hand
+   step's ::before, spanning one column width minus the circle diameter. */
+.tl-steps {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto 2.4rem;
+}
+
+.tl-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.tl-step + .tl-step::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: calc(50% + 22px);
+  width: calc(100% - 44px);
+  height: 2px;
+  background: #e2e8f0;
+}
+
+.tl-step span,
+.tl-step button {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #cbd5e1;
+  border-radius: 50%;
+  background: #fff;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.tl-step button {
+  cursor: pointer;
+}
+
+.tl-step em {
+  font-style: normal;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.tl-step.is-active span {
+  border-color: #d01d32;
+  color: #d01d32;
+}
+
+.tl-step.is-active em {
+  color: #d01d32;
+}
+
+/* A finished step is a button (clicking it returns to that step); filling
+   it makes the trail read done → current → upcoming at a glance. */
+.tl-step.is-done button {
+  border-color: #d01d32;
+  background: #d01d32;
+  color: #fff;
+}
+
+.tl-step.is-done + .tl-step::before {
+  background: #d01d32;
+}
+
+.tl-wlead {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #334155;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+.tl-chiprow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0 0 2rem;
+}
+
+.tl-center-row {
+  justify-content: center;
+}
+
+.tl-chip {
+  border: 1.5px solid #cbd5e1;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0.4rem 1.6rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.tl-chip:hover {
+  border-color: #94a3b8;
+}
+
+.tl-chip.is-active {
+  border-color: #d01d32;
+  color: #d01d32;
+  background: #fff5f5;
+}
+
+/* Room for the floating labels overhanging each input's top border. */
+.tl-wstep .tl-fields {
+  max-width: 460px;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.tl-scale-section {
+  margin-top: 2.2rem;
+}
+
+.tl-scale-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111a44;
+  text-align: center;
+  margin: 0 0 1.3rem;
+}
+
+/* width: max-content centres the block while the options stay left-aligned,
+   as in the reference. */
+.tl-scale-radio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tl-radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  position: relative;
+}
+
+/* The native radio stays in the tree for keyboard and screen readers; the
+   drawn circle is the visual. */
+.tl-radio-option input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.tl-radio-custom {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #94a3b8;
+  border-radius: 50%;
+  flex: none;
+  position: relative;
+}
+
+.tl-radio-option input:checked + .tl-radio-custom {
+  border-color: #d01d32;
+}
+
+.tl-radio-option input:checked + .tl-radio-custom::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: #d01d32;
+}
+
+.tl-radio-option input:focus-visible + .tl-radio-custom {
+  outline: 2px solid #d01d32;
+  outline-offset: 2px;
+}
+
+.tl-radio-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Step 1 has only Next (its own margin-left: auto sends it right); later
+   steps put the text Back link on the left of the same row. */
+.tl-wnav {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* ── IELTS calculator (reference layout) ─────────────────────────────
+   Two light panels side by side — Exam Score (raw marks) and Band Score
+   (examiner bands) — with a centred Submit under them. The site-wide `*`
+   reset strips borders, so inputs draw their own. */
+
+.tl-ielts-panels {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.4rem;
+}
+
+.tl-ielts-panel {
+  background: #f1f2f9;
+  border-radius: 8px;
+  padding: 1.3rem 1.4rem 1.5rem;
+}
+
+.tl-ielts-panel-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #111a44;
+  margin: 0 0 1.1rem;
+}
+
+.tl-ielts-panel-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.1rem;
+}
+
+.tl-ielts-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.tl-ielts-field label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.tl-ielts-field input {
+  border: 1px solid #d3d9e2;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: #111a44;
+  background: #fff;
+  width: 100%;
+}
+
+.tl-ielts-field input::placeholder {
+  color: #94a3b8;
+  font-size: 0.82rem;
+}
+
+.tl-ielts-field input:focus {
+  border-color: #aab4c4;
+}
+
+.tl-ielts-field.has-error input {
+  border-color: #d01d32;
+}
+
+.tl-ielts-error {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #d01d32;
+}
+
+.tl-ielts-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.6rem;
+}
+
+/* .tl-wnext-red carries margin-left: auto for the wizard rows; centred here. */
+.tl-ielts-submit .tl-wnext-red {
+  margin-left: 0;
+}
+
+.tl-ielts-result {
+  margin-top: 1.8rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.6rem 1.4rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.tl-ielts-result-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.tl-ielts-result-big {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #d01d32;
+  margin: 0.3rem 0 1rem;
+}
+
+.tl-ielts-result-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.8rem;
+}
+
+.tl-ielts-result-row {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.tl-ielts-result-row strong {
+  color: #111a44;
+}
+
+@media (max-width: 768px) {
+  .tl-ielts-panels,
+  .tl-ielts-panel-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ── Expense wizard (cost-of-living country pages) ──
+   Sized to the reference: a 645px column, a thin progress bar with a back
+   chevron, one centred question per step, white option cards that carry
+   their own shadow (the site-wide `*` reset strips borders). */
+
+.tl-exp-wrap {
+  max-width: 645px;
+  margin: 3rem auto 5rem;
+  min-height: 380px;
+  padding: 0 1.5rem;
+}
+
+/* The result card is wider than the question column. */
+.tl-exp-wrap-result {
+  max-width: 900px;
+}
+
+.tl-exp-progress {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.tl-exp-back {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-right: 40px;
+  cursor: pointer;
+  color: #212835;
+  font-size: 1rem;
+}
+
+.tl-exp-bar-box {
+  flex: 1;
+}
+
+.tl-exp-count {
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: #586274;
+}
+
+.tl-exp-track {
+  display: block;
+  height: 6px;
+  margin-top: 4px;
+  background: #e9edf3;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.tl-exp-fill {
+  display: block;
+  height: 100%;
+  background: #d01d32;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.tl-exp-q {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: #212835;
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+
+.tl-exp-q-tight {
+  margin: 0;
+}
+
+.tl-exp-multi-note {
+  font-size: 0.875rem;
+  text-align: center;
+  color: #364257;
+  margin: -2rem 0 1.5rem;
+}
+
+.tl-exp-step {
+  animation: fadeInDown 0.3s ease both;
+}
+
+.tl-exp-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.tl-exp-opt {
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+  padding: 14px 24px;
+  font-size: 1rem;
+  color: #212835;
+  cursor: pointer;
+}
+
+.tl-exp-list {
+  display: grid;
+  place-items: center;
+}
+
+.tl-exp-list .tl-exp-opt {
+  border-radius: 8px;
+  padding: 10px 24px;
+  margin-bottom: 18px;
+  min-width: 246px;
+  text-align: center;
+}
+
+.tl-exp-opt.is-selected {
+  border-color: #d01d32;
+  background: #fdeaec;
+  color: #d01d32;
+}
+
+.tl-exp-continue {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+/* .tl-wnext-red carries margin-left: auto for the CGPA wizard rows. */
+.tl-exp-continue .tl-wnext-red,
+.tl-exp-actions .tl-wnext-red {
+  margin-left: 0;
+}
+
+.tl-exp-done-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.tl-exp-done-head .tl-exp-back {
+  margin-right: 0;
+}
+
+.tl-exp-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+.tl-exp-change {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #d01d32;
+}
+
+@media screen and (max-width: 640px) {
+  .tl-exp-wrap {
+    margin-top: 2rem;
+  }
+  .tl-exp-back {
+    margin-right: 20px;
+  }
+  .tl-exp-row {
+    gap: 14px;
+  }
+  .tl-exp-list .tl-exp-opt {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* ── Education-loan eligibility form (per-country pages) ──
+   One rounded card after the reference's: back chevron beside a centred
+   title, question groups of icon pills, the labelled ₹ inputs, and the
+   red Calculate CTA. The site-wide `*` reset strips borders, so pills
+   and inputs draw their own. */
+
+.tl-loan-wrap {
+  max-width: 1000px;
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+}
+
+.tl-loan-card {
+  border-radius: 20px;
+  padding: 2rem clamp(1.5rem, 6vw, 6rem) 2.6rem;
+}
+
+.tl-loan-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.6rem;
+}
+
+.tl-loan-top .tl-exp-back {
+  margin-right: 0;
+}
+
+/* The chevron stays left; flex: 1 centres the title over the card. */
+.tl-loan-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #262e3d;
+  margin: 0;
+}
+
+.tl-loan-q {
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.tl-loan-qhead {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #212835;
+  margin: 0 0 1.2rem;
+}
+
+.tl-loan-opts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tl-loan-opt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+  font-size: 0.92rem;
+  color: #212835;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tl-loan-opt svg {
+  flex: none;
+  font-size: 1.3rem;
+  color: #d01d32;
+}
+
+.tl-loan-opt.is-active {
+  background: #f5f5f5;
+  border-color: #364257;
+}
+
+.tl-loan-input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 560px;
+  margin: 0 auto 1.1rem;
+}
+
+.tl-loan-input-row label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #212835;
+}
+
+.tl-loan-input {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 200px;
+  border: 1.5px solid #dfe1e6;
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  background: #fff;
+}
+
+.tl-loan-input input {
+  width: 100%;
+  font-size: 0.95rem;
+  color: #111a44;
+  background: transparent;
+}
+
+.tl-loan-input input:disabled {
+  color: #94a3b8;
+}
+
+.tl-loan-input.has-error {
+  border-color: #d01d32;
+}
+
+.tl-loan-err {
+  max-width: 560px;
+  margin: -0.6rem auto 1.1rem;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #d01d32;
+}
+
+.tl-loan-cta {
+  display: grid;
+  place-items: center;
+  margin-top: 2.6rem;
+}
+
+.tl-loan-cta .tl-wnext-red {
+  margin-left: 0;
+  padding: 0.85rem 4rem;
+}
+
+.tl-loan-note {
+  max-width: 640px;
+  margin: 1.6rem auto 0;
+  text-align: center;
+}
+
+.tl-loan-note a {
+  color: #d01d32;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+  .tl-loan-wrap {
+    margin-top: 2rem;
+  }
+  .tl-loan-input-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .tl-loan-input {
+    width: 100%;
+  }
+  .tl-loan-err {
+    text-align: left;
+  }
+  .tl-loan-opt {
+    width: 100%;
+  }
 }
 
 

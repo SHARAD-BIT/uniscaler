@@ -1,0 +1,310 @@
+{
+ "slug": "florida-coastal-university",
+ "name": "Florida Coastal University",
+ "establishedYear": "1991",
+ "location": "",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   3,
+   2,
+   6
+  ],
+  "total": 11
+ },
+ "banner": "/university/banners/florida-coastal-university.webp",
+ "approvals": [
+  {
+   "title": "FAPSC",
+   "logo": "/university/approvals/FAPSC_-_Florida_Association_of_Postsecondary_Schools_and_Colleges.webp"
+  },
+  {
+   "title": "QAHE",
+   "logo": "/university/approvals/QAHE_-_Quality_Assurance_in_Higher_Education.webp"
+  },
+  {
+   "title": "Florida Department of Education",
+   "logo": "/university/approvals/Florida_Department_of_Education.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Florida Coastal University is an online university meant for the 21st-century learner. It offers flexible degree programs oriented to the busy professional lifestyles. The University of Florida Coastal awards Bachelor's, Master's, and Doctoral degrees in Business, Computer Science, and Education Leadership."
+  },
+  {
+   "t": "p",
+   "text": "Each course is taught 100% online so that students can study from any region of the world. Admission starts dates in September, January, and May give students the option to begin when it suits them, whether full- or part-time, which means learners have self-determination on how they want to pursue their studies around their schedules."
+  },
+  {
+   "t": "p",
+   "text": "The University holds accreditation by the CIE. That way, all programs meet state standards for the benefit of what is a student population from around the world. Florida Coastal University offers an approach to work-based, hands-on education, where its curriculum is oriented towards building the skills of employers nowadays. Also, students will engage in stages of guided support from one-on-one academic advising to help-desk support that is available 24/7, where the University will never let a student stand on their own."
+  },
+  {
+   "t": "p",
+   "text": "Beyond academics, Florida Coastal University is committed to career growth. Students gain access to career mentorship, professional development support, and flexible payment options to ease financial stress. The goal is simple: to make quality higher education accessible, affordable, and impactful. By combining technology-driven learning with human support, Florida Coastal University helps students achieve their personal and professional goals. It is more than just a place to earn a degree is a partner in lifelong learning and success."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "All programs are fully online with global access.",
+  "Students can start in September, January, or May.",
+  "You can study full-time or part-time.",
+  "Each bachelor’s program needs 120 credit hours.",
+  "Courses are offered in Business, Computer Science, and Education Leadership.",
+  "Degrees include Bachelor’s, Master’s, and Doctoral levels.",
+  "The university is provisionally licensed by Florida’s CIE.",
+  "Students get 1:1 academic support and career mentorship.",
+  "Tuition is affordable with scholarships and flexible payment plans.",
+  "Programs are career-ready and job-aligned for working adults."
+ ],
+ "courses": [
+  {
+   "name": "Online Doctorate of Education",
+   "fee": 600000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Online Master of Education (M.Ed)",
+   "fee": 500000,
+   "duration": "2 years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "500000"
+    }
+   ]
+  },
+  {
+   "name": "Online DCS Doctorate",
+   "fee": 600000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Master of Science in Computer Science",
+   "fee": 499999,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "500000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral for Working Professionals",
+   "fee": 600000,
+   "duration": "3-5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 500000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "500000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA Doctorate",
+   "fee": 600000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral Program (PhD)",
+   "fee": 600000,
+   "duration": "3-5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Florida Coastal University does not provide any particular information regarding the EMI facility or the education loan facility. But Florida Coastal University makes higher education affordable with flexible payment and scholarship plans. They know the needs of international learners, career changers, and working adults. They crafted plans to lower financial tension and align with every step of yours."
+  },
+  {
+   "t": "li",
+   "text": "Dissertation Research Grants - Additional funding for doctoral students conducting influential research."
+  },
+  {
+   "t": "li",
+   "text": "Deferred Tuition Plans - Begin learning today and pay later with adjustable time frames."
+  },
+  {
+   "t": "li",
+   "text": "Fellowships for Working Professionals - Scholarships intended to assist students who work and are pursuing education."
+  },
+  {
+   "t": "li",
+   "text": "Payment Flexibility - Pay by phase or term to easily cater to your budget."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Getting into Florida Coastal University is simple and clear. We look at both your studies and your career goals to find the right fit for you."
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Apply Online - Fill out the application form with your basic details."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Take the Admission Test - Show us your skills and knowledge."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Online Assessment - Complete a short assessment to understand your strengths."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Personal Interview - Talk with our team about your goals and ambitions."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Final Decision - The admission committee reviews everything and gives you the result."
+  }
+ ],
+ "importantDates": [],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The assessment system is practical and flexible at Florida Coastal University. Students are assessed using online exams, assignments, projects, case studies, and presentations based on the application of knowledge to reality. The ultimate assessment integrates all these with research and viva to provide an overall picture of a student's learning. It is not only to test theory but to equip students with skills that can be applied in their working lives."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Florida Coastal University works with global leaders like Cisco, IBM, CompTIA, and Microsoft as academic partners. These collaborations make their curriculum industry-ready and globally relevant. Students gain access to the latest tools, certifications, and real-world knowledge trusted by top employers. For placement partners, this means the graduates come equipped with practical skills and credentials that align with today’s workforce needs, ready to make an impact from day one."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Tata",
+   "logo": "/university/partners/tata.webp"
+  },
+  {
+   "title": "CISCO",
+   "logo": "/university/partners/CISCO.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "girish choudhary",
+   "rating": 5,
+   "date": "2026-05-22",
+   "content": "Good to On board and Ready to Start learning with Florida Costal Univerisity Faulty as Induction program was Good Yesterday with all Team , Thank You"
+  },
+  {
+   "name": "tehmina pathan",
+   "rating": 3,
+   "date": "2026-05-21",
+   "content": "Good course with supportive staff. All the best to team"
+  },
+  {
+   "name": "Jayesh Ghotkar",
+   "rating": 5,
+   "date": "2026-05-21",
+   "content": "Initially I was afraid because of the online scams going on. But College Vidya guided me properly and helped me to choose the correct path as per my skill and interest. Thanks a lot College Vidya!"
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2025-10-31",
+   "content": "I had a great experience during university, the classes and other students were awesome."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is Florida Coastal University?",
+   "a": "Florida Coastal University is a private online university that offers doctoral and other advanced programs for working professionals and students worldwide."
+  },
+  {
+   "q": "Are student reviews available for Florida Coastal University?",
+   "a": "Yes, Florida Coastal University has verified student reviews on the Student Review Portal by College Vidya , covering academics, LMS experience, placement support, and overall learning experience. You can search these reviews and see what actual enrolled students have shared. Universities on the portal cannot pay to hide or remove reviews, so the feedback stays honest."
+  },
+  {
+   "q": "Where is the university based?",
+   "a": "It is based in Florida, USA, but all programs are offered online so students can study from anywhere."
+  },
+  {
+   "q": "What kind of programs does the university offer?",
+   "a": "The university mainly offers various online programs, such as bachelor’s, master’s, and doctoral-level programs, with flexible study options for professionals who want to grow in their careers."
+  },
+  {
+   "q": "How does the admission process work?",
+   "a": "The process includes an online application, admission test, online assessment, personal interview, and a final committee decision."
+  },
+  {
+   "q": "How are students examined?",
+   "a": "Exams are not only theory-based. Students are tested through online tests, projects, assignments, presentations, and viva."
+  },
+  {
+   "q": "Does Florida Coastal University provide financial help?",
+   "a": "Yes, students can apply for dissertation research grants, fellowships, deferred tuition plans, and flexible payment options."
+  },
+  {
+   "q": "Who can apply for the programs at Florida Coastal University?",
+   "a": "Working professionals, researchers, and graduates who want to earn a doctorate and build leadership careers can apply."
+  },
+  {
+   "q": "What makes Florida Coastal University different?",
+   "a": "It focuses on flexible learning, real-world assessments, global recognition, and strong financial support for students."
+  }
+ ]
+}

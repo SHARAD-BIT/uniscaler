@@ -1,0 +1,425 @@
+{
+ "slug": "andhra-university-online",
+ "name": "Andhra University Online",
+ "establishedYear": "1926",
+ "location": "Visakhapatnam, Andhra Pradesh",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   1,
+   0,
+   2,
+   7,
+   17
+  ],
+  "total": 27
+ },
+ "banner": "/university/banners/andhra-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC A",
+   "logo": "/university/approvals/logo-naac-a.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Andhra University was established 97 years ago in 1926 by the Madras Act and is one of the oldest and most esteemed educational institutions in India. It has been ranked as the 43rd best university in India by the National Institutional Ranking Framework (NIRF). The university has been awarded an A grade by the National Assessment and Accreditation Council (NAAC) and approved by the University Grants Commission (UGC) to offer its courses in the online mode."
+  },
+  {
+   "t": "p",
+   "text": "The university currently offers bachelor's degrees, a BCom (Accountancy), and a master's degree (M.A. Sociology) as part of its online programs to students. It provides quality study material like e-books, study guides, recorded tutorials, and live lectures to students, along with carrying out regular practice tests and discussion forums so that the students can gain maximum value from the university."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses in India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Overall, Andhra University constitutes 5 colleges and 4 campuses. Out of which the College of Arts and Commerce is the largest one, consisting of 26 internal departments that provide courses in 42 different subjects, including diplomas. The College of Science & Technology has more than 21 different departments offering 63 study programs and a PG diploma. While the College of Engineering includes 15 departments offering UG, PG, and research programs."
+  },
+  {
+   "t": "p",
+   "text": "Exciting Offer"
+  },
+  {
+   "t": "p",
+   "text": "The university has various colleges, out of which the College of Pharmaceutical Sciences is the most unique type in South India, offering one undergraduate and six postgraduate programs. Andhra University provides its own Learning Management System (LMS) to students to support the journey of their online education and provide them with the best guidance and curriculum."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Comfort for working professionals",
+   "content": "The students who are already working can continue their full-time job alongside studying with the help of the efficient online system of education provided by the university."
+  },
+  {
+   "title": "Easily available study material",
+   "content": "Andhra University provides study material like e-books, study guides and lectures through their own LMS. Hence, it is easily accessible all the time for the students."
+  },
+  {
+   "title": "Industry connect",
+   "content": "Mentors from the same industry as the programs that students have enrolled in provide valuable insights and guidance to students."
+  }
+ ],
+ "facts": [
+  "Andhra University was established in 1926 under the Madras Act of 1926 and holds its place as one of the oldest and most prestigious universities in India.",
+  "Andhra University has been ranked as the 25th best university in India by the National Institutional Ranking Framework (NIRF).",
+  "The university has been accredited by the National Assessment and Accreditation Council (NAAC) with an A grade.",
+  "All the courses are approved by UGC to be offered in online mode.",
+  "The university offers a B.Com undergraduate degree course and an M.A. Sociology postgraduate degree course in the online mode.",
+  "Students are given admission to online courses on a provisional basis after university counselling and approval.",
+  "Students are given access to learning material such as e-books, study guides, practice tests, discussion forums, web resources, live interactive sessions, etc."
+ ],
+ "courses": [
+  {
+   "name": "Online B.Com",
+   "fee": 60000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "1500"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "20000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 57500,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "29250"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 76200,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "17800"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "17800"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 62200,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "16300"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "16300"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA Plus",
+   "fee": 87200,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "21500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "21500"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The online programs offered by Andhra University are cost-effective and affordable compared to the traditional regular courses. Apart from the fee, the other expenses are minimal."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission process for Andhra University takes place in online mode. Fresh admission starts in the month of January of every year. There are direct admissions, and no entrance exam is conducted for the admission process. The admission procedure for 2026 for the online courses at Andhra University is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Visit the official website of Online Andhra University and begin the application process by clicking on &ldquo;Apply Now.&rdquo;"
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Enroll yourself in the course you want to study by filling in the required details and paying ₹500 as registration fees."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: After submission of the registration fees, the university verifies the documents of the prospective students and further approves the students for completion of the admission process."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: After the document verification, the approved students can complete the admission process by completing the fee payment through the payment gateway."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: After final verification by the university and fee payment, the admission process will be complete, and the students will be given access to their Learning Management System."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is the Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25. Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of universities and colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "Can I request a refund for Andhra University Online Programs? Yes, as per the UGC refund norms, the Andhra University Online refund policy is as mentioned below. ⭐Advance cancellation: 100% refund ⭐Close-to-date cancellation: 90% refund ⭐Post-date (≤15 days): 80% refund ⭐Post-date (16–30 days): 50% refund ⭐Post-date (30+ days): 0% refund. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Andhra University conducts exams in the online mode for its online programs on its own Learning Management System, which is remotely proctored. The university conducts regular evaluations during the session and final exams at the end of each semester. This helps students to stay connected with the learning process throughout the session."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 30-40% Internal Assessment (assignments, quizzes, participation) + 60-70% End-Semester proctored online exam. No physical exam-centre visit required."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "You can pursue the course from the Andhra University Online which offers"
+  },
+  {
+   "t": "li",
+   "text": "Better Placement Opportunities"
+  },
+  {
+   "t": "li",
+   "text": "Industry-specific curriculum framework"
+  },
+  {
+   "t": "li",
+   "text": "Expertise and Skills"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "ICICI Bank",
+   "logo": "/university/partners/icici-bank.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Reliance",
+   "logo": "/university/partners/reliance.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  },
+  {
+   "title": "Apple",
+   "logo": "/university/partners/apple.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Sonu Kumar Gupta",
+   "rating": 5,
+   "date": "2025-03-09",
+   "content": "A smooth admissin process and a promising journey ahead I recently enrolled in the MBA finance program through CV and my experience has been fantastic so far. Ye platform made the admission process incredibly smooth and hassle free. the was supportive."
+  },
+  {
+   "name": "JANAMPELLI JOHN",
+   "rating": 5,
+   "date": "2025-02-18",
+   "content": "LMS Quality was good i enjoyed using the lms quality was good enough to use and it was really awesome recently in joined in the andra university mba hr and marketing it was so good the lms was detail enough to"
+  },
+  {
+   "name": "Kuldeep",
+   "rating": 5,
+   "date": "2025-02-10",
+   "content": "LMS Quality EMI Facility Faculty Support Value For Money Course Quality: The course content was well-structured, comprehensive, and up-to-date. The faculty were knowledgeable and experienced. Platform Experience: Patform was user-friendly, intuitive, and seamless. The interface was easy to navigate, and the technical support was prompt. Support Services: The support team were responsive, helpful, and courteous. They resolved my queries promptly. Value for Money: The course fee was reasonable, and the quality of education exceeded my expectations. Recommendation: I highly recommend Andhra University's online courses. Student Support"
+  },
+  {
+   "name": "Om Patel",
+   "rating": 5,
+   "date": "2025-02-07",
+   "content": "Student Support: Student support is responsive and helpful, providing guidance on academics, exams and technical issues, ensuring a smooth learning experience for all students. Thank You for supporting us"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the learning resources provided by Andhra University for Online Education?",
+   "a": "Andhra Online University gives access to top-quality course material to its students. These include e-books, study guides, practice tests, discussion forums, web resources, tutorial videos, live interactive sessions, and animated modules."
+  },
+  {
+   "q": "Is Andhra University approved by UGC for online programs?",
+   "a": "Yes, Andhra University distance education has been approved by the University Grants Commission (UGC) to offer courses in the online mode."
+  },
+  {
+   "q": "What are the contact details of Andhra University Online Courses?",
+   "a": "Here are the Contact details for Andhra University: Andhra University, Visakhapatnam-530003, Andhra Pradesh, INDIA. Mobile: +91 9175185223 Students Support: ol.support@andhrauniversity.edu.in"
+  },
+  {
+   "q": "Which online degree courses does Andhra University offer?",
+   "a": "Online Andhra University offers a B.Com degree undergraduate course and an M.A. Sociology postgraduate course in online mode."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC, which gives them equal recognition in the industry, just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part-Time MCA Part-Time MTech Part-Time MCom Part-Time MSc Part-Time MA Part-Time BBA Part-Time BCA Part-Time BTech Part-Time BCom Part-Time BSc Part Time BA Part-Time"
+  },
+  {
+   "q": "Does the online degree have the same benefits as the regular degree?",
+   "a": "Yes, the online degree consists of the same benefits and value as the regular degree, and the university provides constant support to its online students to help them in their education."
+  }
+ ]
+}

@@ -1,0 +1,512 @@
+{
+ "slug": "rushford-business-school",
+ "name": "Rushford Business School",
+ "establishedYear": "2009",
+ "location": "",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   1,
+   0,
+   1,
+   13,
+   47
+  ],
+  "total": 62
+ },
+ "banner": "/university/banners/rushford-business-school.webp",
+ "approvals": [
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "ACBSP",
+   "logo": "/university/approvals/ACBSP.jpg"
+  },
+  {
+   "title": "EduQua",
+   "logo": "/university/approvals/EduQua.jpg"
+  },
+  {
+   "title": "IACBE",
+   "logo": "/university/approvals/IACBE.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Rushford Business School is a shining example of academic success and new ideas. It is located in the beautiful city of Lucerne in Switzerland. Rushford is proud to offer a top-notch business education that goes beyond the usual limits. It is known as one of the best business schools in the area. Rushford's success comes from its world-class professors, who bring new ideas and different points of view to the classroom. These professors not only teach but also push students to think in new ways and give them different points of view that help them prepare for the fast-paced world of business."
+  },
+  {
+   "t": "p",
+   "text": "Rushford Business School is certified by Swiss EduQua and is a member of UN PRME and AACSB, which shows that it is always dedicated to giving students the best training and education. Rushford has an impressive 5-star QS Rating and over 50 bachelor and graduate degree programs in various business-related subjects, such as management, marketing, accounting, and finance. This wide range of options ensures students can follow their interests and make their education fit their job goals."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Related Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA Online",
+      "Global DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online DBA & MBA Program",
+      "PhD for Working Professionals"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "PhD Abroad",
+      "PhD Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "PhD Distance Education",
+      "Part Time PhD"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA After MBA",
+      "Doctorate Courses Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Ph.D. After MBA",
+      "Global PhD"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Doctoral for Working Professionals"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Over 9,000 graduates from over 45 countries live worldwide and are part of the Rushford group. The goal of Rushford Business School is clear: to teach the next generation of business leaders how to do well in a global economy that is changing quickly by giving students a world-class education that blends rigorous classroom training with hands-on practice in the real world."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked Business School",
+   "content": "Rushford is the best business school in Lucerne, Switzerland. It has a 5-star QS Rating and a Swiss EduQua approval, making it stand out. With more than 50 programs, it creates world leaders of the future."
+  },
+  {
+   "title": "Great Placement Assistance",
+   "content": "Rushford promises master's students paid internships that last one to two months, with the option to extend them. This one-of-a-kind chance helps students improve their practical skills and prepares them for great jobs in the tough business world."
+  },
+  {
+   "title": "Innovative Teaching Facilities",
+   "content": "The teachers at Rushford Business School are very proud of their cutting-edge, high-quality teaching methods including case studies, scenarios, role-play, mentoring, and organisational contact. This gives our students a dynamic learning experience."
+  }
+ ],
+ "facts": [
+  "Rushford Business School is based in Lucerne, Switzerland, a great place for learning in a beautiful setting.",
+  "The school is approved by Swiss EduQua, which shows that it is dedicated to giving excellent education and training.",
+  "Rushford has over 50 bachelor and graduate degree programs in various business-related areas and is recognised and accredited by ACBSP, BGA, AACSB, IACBE, EduQua, and UN PRME.",
+  "The school offers management, marketing, accounting, and finance programs so students can make their education fit the needs of their future careers.",
+  "With more than 9,000 graduates from more than 45 countries, Rushford has a truly international society.",
+  "Rushford has two campuses, so students can choose from and experience a variety of learning settings.",
+  "The school's job is to teach the next group of business leaders how to do well in a world economy that changes quickly.",
+  "Rushford blends theory and practice to provide a \"holistic education\" that includes both hard academic training and experiences in the real world.",
+  "Rushford is dedicated to being relevant and creative, so their curriculum changes as the business world does.",
+  "Rushford promotes a culture that values honesty, quality, and new ideas in all education and community building by focusing on variety, acceptance, and respect."
+ ],
+ "courses": [
+  {
+   "name": "Online Doctorate Course",
+   "fee": 450000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "450000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral Program (PhD)",
+   "fee": 450000,
+   "duration": "3-5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "450000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA Course",
+   "fee": 450000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "450000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Rushford Business School knows how important it is to think about money when going to college. They make it easy for students to pay tuition by offering EMI (Equated Monthly Installment) plans. This flexible payment choice allows students to pay their tuition in manageable monthly amounts. This way, money worries will stay in the way of them getting a world-class business education at Rushford."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Other Doctor of Business Administration [DBA] Courses"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Rushford Online DBA",
+      "SSBM Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Golden Gate University Online DBA",
+      "IIM Kashipur Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Durham University Online DBA",
+      "IMSR Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "University of Michigan Flint Online DBA",
+      "University of Dallas Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "ESGCI School of Business Online DBA",
+      "Westcliff University Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "University of South Florida Online DBA",
+      "Walden University Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Liberty University Online DBA",
+      "Purdue University Online DBA"
+     ],
+     "header": false
+    }
+   ]
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "There is a simple and organized way to start your education journey at Rushford Business School:"
+  },
+  {
+   "t": "p",
+   "text": "Choose a Program: Pick the school that fits your study and job goals."
+  },
+  {
+   "t": "p",
+   "text": "Check Your Eligibility Requirement: To speed up the application process, ensure you meet the program's requirements for participation."
+  },
+  {
+   "t": "p",
+   "text": "Review Your Finances: Look into possible scholarships or other financial help as you consider paying for your schooling."
+  },
+  {
+   "t": "p",
+   "text": "Get Your Documents Ready: Get the documents you need, like letters of reference and records."
+  },
+  {
+   "t": "p",
+   "text": "Submit Your Application: Fill out the online application completely, including all the necessary papers and correct details."
+  },
+  {
+   "t": "p",
+   "text": "Get an Offer of Admission: Applicants who are accepted will get a written offer of admission after their application has been reviewed."
+  },
+  {
+   "t": "p",
+   "text": "Applicant's Acceptance: Confirm that you accept the offer of entry within the time limit given."
+  },
+  {
+   "t": "p",
+   "text": "Payment of the Tuition Fee: Make it possible for the tuition fee to be paid as described in the offer of acceptance."
+  },
+  {
+   "t": "p",
+   "text": "Confirmation of Admission: Once payment is received, your entry is guaranteed, and you will be sent information about the program."
+  },
+  {
+   "t": "p",
+   "text": "Start Your Program: Begin your academic journey at Rushford Business School, where you'll get a world-class education that will set you up for success in the fast-paced business world."
+  },
+  {
+   "t": "p",
+   "text": "Transparency and openness are important to Rushford Business School's admissions process, ensuring prospective business leaders have an easy time."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "Explore the dedicated Rushford Business School subdomain for academic and admission information. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "ELearn more about the Rushford Online DBA through its dedicated subdomain. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "A dynamic examination pattern used at Rushford Business School goes beyond regular tests. Their method uses a variety of tests, such as written ones, case studies, talks, and hands-on assessments, to fully test students' knowledge, skills, and ability to use academic ideas in real-life situations."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The strong network of placement partners at Rushford Business School shows how successful the school is. Their placement relationships with well-known global companies in a wide range of businesses give students internship and job opportunities that they can't get anywhere else. The school carefully build these relationships to make sure they fit with their goal of exposing students to a wide range of fields so they can get real-world experience and useful knowledge."
+  },
+  {
+   "t": "p",
+   "text": "With the help and support of our esteemed placement partners, they have a history of successfully placing our students. This makes them well-prepared for the tough job market after they finish. Some companies that have worked on placements with Rushford Business School are mentioned below:"
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Placement Partners"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Accenture",
+      "Amazon",
+      "American Express"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Deloitte",
+      "EY (Ernst & Young)",
+      "HCL Technologies"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Hindustan Unilever Limited (HUL)",
+      "ICICI Bank",
+      "Infosys"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "ITC Limited",
+      "JP Morgan Chase",
+      "KPMG"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "L&T (Larsen & Toubro)",
+      "Mahindra & Mahindra",
+      "Microsoft"
+     ],
+     "header": false
+    }
+   ]
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "ICICI Bank",
+   "logo": "/university/partners/icici-bank.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Hindustan Unilever Limited",
+   "logo": "/university/partners/hindustan-unilever-limited.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Sameer Gaikwad",
+   "title": "CEO - IITL Group",
+   "description": "Former SVP - YES Bank | Former AVP - HDFC Bank | Former Project Manager - Godrej & Boyce",
+   "photo": "/university/faculty/Sameer_Gaikwad.webp"
+  },
+  {
+   "name": "Amit Kumar Das",
+   "title": "VP - Mindlance",
+   "description": "Former Global IT Operations Manager - McAfee | Former IT Leader - Tata Consultancy Services",
+   "photo": "/university/faculty/Amit_kumar_das.webp"
+  },
+  {
+   "name": "Bhanuprabha A",
+   "title": "AVP - JP Morgan Chase & Co",
+   "description": "Former Project Manager - Société Générale | Former Manager - Sunstream | Regional Operations Head - First Data Corporation",
+   "photo": "/university/faculty/Bhanuprabha_A.webp"
+  },
+  {
+   "name": "Gaurav Sharma",
+   "title": "Head of Credit - Mercedes-Benz",
+   "description": "Former VP & Compliance Officer - Daimler | VP - VE Commercial Vehicles | Former Territory Sales Manager - Maruti Suzuki",
+   "photo": "/university/faculty/Gaurav_Sharma.webp"
+  },
+  {
+   "name": "Jagdamba Prasad Tripathi",
+   "title": "Former GM - JSW Foundation",
+   "description": "Director - Wadhwani AI | Former Dy General Manager - Ambuja Cement Foundation | Former Programme Director - Reliance",
+   "photo": "/university/faculty/Jagdamba_Prasad_Tripathi.webp"
+  },
+  {
+   "name": "Muralidhar Gumma",
+   "title": "Director, Consulting - Altair",
+   "description": "Former Module Lead - Creative Synergies Group | Former Consultant CAE Engineer - Altran Technologies | Former Project Engineer - Wipro",
+   "photo": "/university/faculty/Muralidhar_Gumma.webp"
+  },
+  {
+   "name": "Vivekanandhan K",
+   "title": "Managing Director - Faraday Ozone",
+   "description": "CEO - Farazon Manufacturing | Founder - Farazon Software | Experienced in Product Development & Business Innovation",
+   "photo": "/university/faculty/Vivekanandhan_K.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Suresh KM",
+   "rating": 5,
+   "date": "2026-06-28",
+   "content": "The University is enabling us to have a critical mindset and foster research mentality"
+  },
+  {
+   "name": "Kshitij Jain",
+   "rating": 5,
+   "date": "2026-06-09",
+   "content": "good and the study level till now was understanding and organized"
+  },
+  {
+   "name": "Gunja Jha",
+   "rating": 5,
+   "date": "2026-05-29",
+   "content": "This is one of the best online platform for DBA Program."
+  },
+  {
+   "name": "Umesh",
+   "rating": 5,
+   "date": "2026-05-24",
+   "content": "Highly professional University. Supportive and easy approachable. Courses that are suitable career building and enhancing leadership qualities."
+  }
+ ],
+ "faqs": []
+}

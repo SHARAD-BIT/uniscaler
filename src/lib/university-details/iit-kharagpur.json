@@ -1,0 +1,448 @@
+{
+ "slug": "iit-kharagpur",
+ "name": "IIT Kharagpur",
+ "establishedYear": "1951",
+ "location": "Kharagpur, West Bengal",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   3,
+   2
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/iit-kharagpur.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "IIT Kharagpur is India’s premier institute that is excelling in nurturing students with excellent academic knowledge, top-class research facilities and industry exposure. The institution was founded on 18 August 1951 and it was the first IIT that was established with the support of the Indian government. The institution is located in the West Bengal in Kharagpur. The campus covers all the facilities for their scholars and learners, including state-of-the-art facilities, high-tech research laboratories, student clubs, sports clubs, libraries stacked with resources and various organisations and student groups that activity participates in the extracurricular activities. It offers various undergraduate, postgraduate, diploma, certificate and doctoral programs to the students."
+  },
+  {
+   "t": "p",
+   "text": "It provides interdisciplinary programs, minor courses that can be completed online mode in a short duration, micro-specialisation courses, along on-campus regular mode courses. It offers nearly 15+ B.Tech programs, 67 programs which include MBA, MHRM, LLB, MMST, MCP, M.Sc/ M.Tech/ MS, 35 programs which include a course in B.Arch, several Dual Degrees and many PhD programs."
+  },
+  {
+   "t": "p",
+   "text": "IIT Kharagpur has a variety of courses offered through faculties like Faculty of Engineering and Architecture, Faculty of Interdisciplinary Sciences & Engineering, Faculty of Humanities, Social & Economic Sciences, School of Management, Faculty of Inter-Disciplinary and Biotechnology & Biosciences, Faculty of Sciences, School of Law and many more. Students can pursue courses in many disciplines like Engineering and Technology, Management, Law, Medical Science and Technology, Science, Humanities, Architecture and Regional Planning, Rural Development and many more."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The institute is research-oriented and encourages students to pursue and conduct research in various fields. The institute is engaged in many research programs and projects and has collaborated with various national and international institutions and organisations. It has many research labs that are high-tech and equipped with modern facilities. It is conducting research in technologies like robotics, nanotechnology, artificial intelligence, and biotechnology."
+  },
+  {
+   "t": "p",
+   "text": "IIT Kharagpur is approved by the Ministry of Human Resource & Development, Government of India. It is accredited by the National Board of Accreditation and also by the All India Council for Technical Education. As per the National Institutional Ranking Framework 2025, the institution is ranked 5th in the engineering category with a 78.69 score ."
+  },
+  {
+   "t": "p",
+   "text": "Courses Offered by IIT Kharagpur"
+  },
+  {
+   "t": "li",
+   "text": "Bachelor of Technology (B.Tech )"
+  },
+  {
+   "t": "li",
+   "text": "B.Arch (Bachelor of Architecture)"
+  },
+  {
+   "t": "li",
+   "text": "Dual Degree Programs, combining B.Tech with M.Tech or MBA"
+  },
+  {
+   "t": "li",
+   "text": "M.Tech (Master of Technology) in various engineering and technology fields"
+  },
+  {
+   "t": "li",
+   "text": "M.Sc (Master of Science) in various science disciplines"
+  },
+  {
+   "t": "li",
+   "text": "MBA (Master of Business Administration)"
+  },
+  {
+   "t": "li",
+   "text": "Master of Urban and Regional Planning"
+  },
+  {
+   "t": "li",
+   "text": "LL.M (Master of Laws)"
+  },
+  {
+   "t": "li",
+   "text": "Master of Human Resource Management"
+  },
+  {
+   "t": "li",
+   "text": "Master of Medical Science and Technology"
+  },
+  {
+   "t": "li",
+   "text": "Master of Intellectual Property Law"
+  },
+  {
+   "t": "li",
+   "text": "Master of Technology Law"
+  },
+  {
+   "t": "li",
+   "text": "Master of Technology in Environmental Engineering and Management"
+  },
+  {
+   "t": "li",
+   "text": "Master of Technology in Safety Engineering and Disaster Management"
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "IIT Kharagpur is ranked 6TH in the category of Engineering colleges by the National Institutional Ranking Framework."
+  },
+  {
+   "title": "Research- Oriented",
+   "content": "IIT Kharagpur is a well-established institute that offers many opportunities for research on new technologies."
+  },
+  {
+   "title": "Placement opportunities",
+   "content": "The institute offers many placement options in top companies with high salary packages."
+  }
+ ],
+ "facts": [
+  "IIT Kharagpur, India’s premier institute was founded on 18 August 1951 and it was the first IIT that was established with the support of the Indian government.",
+  "It provides interdisciplinary programs, minor courses that can be completed online mode in a short duration, and micro-specialisation courses.",
+  "Students can get enrolled in undergraduate, postgraduate, degree, diploma, certificate and PhD programs.",
+  "This is an approved institution by the Ministry of Human Resource & Development, Government of India.",
+  "It is accredited by the National Board of Accreditation and by the All India Council for Technical Education.",
+  "It offers 15+ B.Tech programs, 67 programs which include MBA, MHRM, LLB, MMST, MCP, M.Sc/ M.Tech/ MS, 35 programs which include a course in B.Arch, several Dual Degrees and many PhD programs.",
+  "It has excellent faculties that offer amazing courses like Faculty of Engineering and Architecture, Faculty of Interdisciplinary Sciences & Engineering, Faculty of Humanities, Social & Economic Sciences, School of Management, Faculty of Inter-Disciplinary and Biotechnology & Biosciences, Faculty of Sciences, School of Law and many more.",
+  "As per the NIRF 2025, the institution is ranked 5th in the engineering category with a score of 78.69."
+ ],
+ "courses": [
+  {
+   "name": "Data Science",
+   "fee": 177000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "177000"
+    }
+   ]
+  },
+  {
+   "name": "Generative AI",
+   "fee": 177000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "177000"
+    }
+   ]
+  },
+  {
+   "name": "Generative AI & Agentic AI",
+   "fee": 177000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "177000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech Program",
+   "fee": 100000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Year (internally)",
+     "fee": "50000"
+    }
+   ]
+  },
+  {
+   "name": "PhD Program",
+   "fee": 15000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "15000"
+    }
+   ]
+  },
+  {
+   "name": "IIT Courses Online",
+   "fee": 177000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "177000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Scholarships and loans are available at the institute. IIT Kharagpur is offering merit-based scholarships, Scholarships for students belonging to different categories, fellowships and many more. But before applying for some scholarships you can check the eligibility criteria on the official website. You need to submit the relevant documents to avail of the scholarship."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Admission at IIT KGP is an amazing institute and every year, many students enrol in this institute to complete their higher education. They need to appear in the All India Examinations like JAM, JEE, GATE, UGC-CSIR and many more. Also, it is mandatory for the students to clear the cutoffs and attend counselling and personal interview sessions at the institution. Then candidates can follow the steps mentioned below."
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Make an online registration on the website of the IIT KGP. Use a functional phone number and email ID."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Now, you need to move to the next step which is the completion of the two-step verification."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Fill in all the details left and check them twice before moving to the next step."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Now, you can move to the step of uploading the relevant documents."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- Make online payment and complete the final submission of the form. Download the application form and take a print of the same."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Examination at IIT Kharagpur is done in online mode. It is an amazing institute that allows students to study in a flexible mode. The institute offers online study material to the students that allows students to learn from anywhere. They conduct examinations in online mode with proper proctoring. The students are not required to visit the campus. They can appear in online examinations from their respective places or states. But before applying to the institute make sure to read all the guidelines and follow them. Submit the examination on the stipulated time frame and check the schedule of the test on the official website."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The Institute is globally recognised for its excellent faculty and services. It has facilitated placement drives with the help of top recruiters and MNCs. The Students are trained with excellent academic skills and practical knowledge that makes them industry-ready and eases to handle fresh exposure in the industry. Also, students enrolled in online courses at IITs are well-versed in the basic knowledge that helps them fetch a job in the industry with ease and that too, with the right guidance by the experts. They have an amazing record of offering placements to more than 95% of students every year. Some top recruiters of the institute are Google, Deloitte, KPMG, HCL, Dell, Accenture and many more."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-20",
+   "content": "The institution offers very well study material that helps students to get a flexible learning environment."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-20",
+   "content": "The Institute is globally recognised for its top-notch education and high-tech labs. They are known to be institutes of national importance."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-20",
+   "content": "The best thing about the institute is its placement cell which offers amazing training to the students with counselling sessions by experts that help in enhancing the confidence of students."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-20",
+   "content": "I am glad I opted for this institute. It was a fantastic experience. They offered amazing studying material to the students."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Are the online courses offered by IIT Kharagpur valid?",
+   "a": "Yes, all the courses offered by the IIT are valid and approved. It is ranked 6th top engineering college by NIRF."
+  },
+  {
+   "q": "What are the courses offered to the students at IIT Kharagpur?",
+   "a": "IIT Kharagpur offers bachelor's courses, master’s courses, doctoral programs and many online courses."
+  },
+  {
+   "q": "What disciplines are offered at IIT Kharagpur?",
+   "a": "Disciplines offered by various faculties like Faculty of Engineering and Architecture, Faculty of Interdisciplinary Sciences & Engineering, Faculty of Humanities, Social & Economic Sciences, School of Management, Faculty of Inter-Disciplinary and Biotechnology & Biosciences, Faculty of Sciences, School of Law and many more."
+  },
+  {
+   "q": "Does IIT Kharagpur offer online programs?",
+   "a": "Yes, IIT Kharagpur offers online programs to students from all across India. However, before applying for the institute, students need to check the eligibility criteria."
+  },
+  {
+   "q": "Do I have to visit the campus to give exams for online courses?",
+   "a": "No, students enrolled in online programs are not required to visit the IIT campus. They can appear for online examination."
+  },
+  {
+   "q": "What courses are offered to the students at IIT Kharagpur?",
+   "a": "Courses offered by the institute: 15+ B.Tech programs, 67 programs which include MBA, MHRM, LLB, MMST, MCP, M.Sc/ M.Tech/ MS, 35 programs which include a course in B.Arch, several Dual Degrees and many PhD programs."
+  }
+ ]
+}

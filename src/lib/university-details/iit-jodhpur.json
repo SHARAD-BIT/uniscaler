@@ -1,0 +1,505 @@
+{
+ "slug": "iit-jodhpur",
+ "name": "IIT Jodhpur",
+ "establishedYear": "2008",
+ "location": "Jodhpur, Rajasthan",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   3,
+   2
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/iit-jodhpur.webp",
+ "approvals": [
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "IIT Jodhpur, Indian Institute of Technology of Jodhpur, India’s prestigious institute, was established in the year 2008. It provides quality education, research facilities and high technologies to its students. It is a public technical institute that is located in the city of Jodhpur, Rajasthan. It was established with the support of the Ministry of Human Resource Development, GOI. This institute was first announced by the Central Government in the year 2007, and the official announcement was made in 2008 with its first academic session."
+  },
+  {
+   "t": "p",
+   "text": "The first academic session was started at the campus of IIT Kanpur with around 109 undergraduate programs in mechanical engineering, computer science engineering and electrical engineering. The final approval was given to IIT Jodhpur by the Ministry of Human Resource Development. IIT Jodhpur is placed beautifully in Jodhpur City and is spread over 852 acres of land. Their main permanent campus was established in 2013 It is a self-sustained model have around 20 laboratories and a classroom holding a capacity of 200 people."
+  },
+  {
+   "t": "p",
+   "text": "Currently, it has more than 14 schools & departments the School of Artificial Intelligence & Data Science, the School of Liberal Arts (SoLA), Chemical Engineering, Civil and Infrastructure Engineering, Electrical Engineering, Metallurgical & Materials Engineering, Mechanical Engineering, School of Management & Entrepreneurship, Biosciences and Bioengineering, Chemistry, Computer Science & Engineering, Humanities & Social Sciences, Mathematics, and Physics."
+  },
+  {
+   "t": "p",
+   "text": "It offers various undergraduate, postgraduate, doctoral and programs for working professionals. Courses offered to the students are, B.Tech. Computer Science & Engineering, B.Tech. Artificial intelligence &data sciences, M.Tech. Computer Science And Engineering (CSE), M.Tech. Artificial Intelligence (AI), Dual Master's With University Of Albany, SUNY (UA), Executive M.Tech. AI (For Working Professionals) that is done through online resources, M.Tech.-Ph.D. Dual Degree CSE & M.Tech.-Ph.D. Dual Degree AI, Ph.D. Computer Science and Engineering, Joint PhD (JPD)."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The institute offers online programs specially designed for working professionals. The online programs are offered with online resources like online lectures, on weekends and evenings. Executive Program for Working Professionals is an amazing initiative that can students land in domains like manufacturing, healthcare, education, fintech, human and robot interaction and many more. Some of the most popular executive courses for working professionals provided by IIT Jodhpur are MBA in Technology, PG Diploma and MTech in Artificial Intelligence. It also offers a PG diploma in Data Engineering in online mode. It is ranked 27th in the category of Engineering colleges by the National Institutional Ranking Framework."
+  },
+  {
+   "t": "p",
+   "text": "Course Offered by IIT Jodhpur"
+  },
+  {
+   "t": "li",
+   "text": "Executive M.Tech. AI (For Working Professionals)"
+  },
+  {
+   "t": "li",
+   "text": "PG Diploma in Data Engineering in online mode"
+  },
+  {
+   "t": "li",
+   "text": "PG Diploma in Artificial Intelligence"
+  },
+  {
+   "t": "li",
+   "text": "B.Tech. Computer Science & Engineering"
+  },
+  {
+   "t": "li",
+   "text": "B.Tech. Artificial intelligence & data sciences"
+  },
+  {
+   "t": "li",
+   "text": "M.Tech. Computer Science And Engineering (CSE)"
+  },
+  {
+   "t": "li",
+   "text": "M.Tech. Artificial Intelligence (AI)"
+  },
+  {
+   "t": "li",
+   "text": "Dual Master's With University Of Albany, SUNY (UA)"
+  },
+  {
+   "t": "li",
+   "text": "M.Tech.-Ph.D. Dual Degree CSE"
+  },
+  {
+   "t": "li",
+   "text": "M.Tech.-Ph.D. Dual Degree AI"
+  },
+  {
+   "t": "li",
+   "text": "M.Tech.-Ph.D. Dual Degree CSE & M.Tech.-Ph.D. Dual Degree AI"
+  },
+  {
+   "t": "li",
+   "text": "Ph.D. Computer Science and Engineering"
+  },
+  {
+   "t": "li",
+   "text": "Joint PhD (JPD)"
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "IIT Jodhpur is ranked 27th in the category of Engineering colleges by the National Institutional Ranking Framework."
+  },
+  {
+   "title": "Research- Oriented",
+   "content": "IIT Jodhpur is a well-established institute that offers many opportunities in research and new technologies."
+  },
+  {
+   "title": "Placement opportunities",
+   "content": "The institute offers many placement options in India and Abroad with high salary packages."
+  }
+ ],
+ "facts": [
+  "India’s prestigious institute, the Indian Institute of Technology of Jodhpur, was established in the year 2008.",
+  "A public technical institute in the city of Rajasthan started with around 109 undergraduate programs.",
+  "It is approved by the Ministry of Human Resource and Development and also ranked 27th in the category of Engineering colleges by the National Institutional Ranking Framework 2025.",
+  "Various departments are School of Artificial Intelligence & Data Science, the School of Liberal Arts (SoLA), Chemical Engineering, Civil and Infrastructure Engineering, Electrical Engineering, Metallurgical & Materials Engineering, Mechanical Engineering, School of Management & Entrepreneurship, Biosciences and Bioengineering, Chemistry, Computer Science & Engineering, Humanities & Social Sciences, Mathematics, and Physics.",
+  "You can pursue courses like B.Tech. Computer Science & Engineering, B.Tech. Artificial intelligence &data sciences, M.Tech. Computer Science And Engineering (CSE), M.Tech. Artificial Intelligence (AI), Dual Master's With University Of Albany, SUNY (UA), Executive M.Tech. AI (For Working Professionals) that is done through online resources, M.Tech.-Ph.D. Dual Degree CSE & M.Tech.-Ph.D. Dual Degree AI, Ph.D. Computer Science and Engineering, Joint PhD (JPD).",
+  "Various online courses are available for working professionals with online resources like online lectures, on weekends and evenings in domains like manufacturing, healthcare, education, fintech, human and robot interaction and many more."
+ ],
+ "courses": [
+  {
+   "name": "B.Sc",
+   "fee": 360000,
+   "duration": "3-4 Years",
+   "feeDetails": [
+    {
+     "type": "Per Year (internally)",
+     "fee": "120000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "5000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech. in Artificial Intelligence",
+   "fee": 335000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "335000"
+    }
+   ]
+  },
+  {
+   "name": "Online Executive MBA",
+   "fee": 860000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Exam Fees",
+     "fee": "15000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "860000"
+    }
+   ]
+  },
+  {
+   "name": "Online PG Diploma Program",
+   "fee": 335000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "335000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA (Technology)",
+   "fee": 860000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "860000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "15000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech Program",
+   "fee": 335000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "10000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "335000"
+    }
+   ]
+  },
+  {
+   "name": "PhD Program",
+   "fee": 30000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Year (internally)",
+     "fee": "10000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The institute offers various online and on-campus programs. They are offering amazing career opportunities by nurturing students with excellent academic skills. Hence, the students offer scholarships and other financial aid that encourage students to complete the course. Some scholarships offered by the institutes are-"
+  },
+  {
+   "t": "li",
+   "text": "SC Scholarship for Top Students"
+  },
+  {
+   "t": "li",
+   "text": "UGC-CSIR JRF/SRF funding"
+  },
+  {
+   "t": "li",
+   "text": "Fee Remission for B.Tech Students"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "IIT Jodhpur offers various undergraduate, postgraduate and other doctoral degree courses to the students, However, admission to this institution requires a lot of dedication, effort and hard work. The students need to appear in the JEE examination, JAM, GATE and many other competitive exams. The students will be selected based on the cutoffs and marks and All India Rank. After that, you can move to the steps mentioned below."
+  },
+  {
+   "t": "p",
+   "text": "Step 1- The first step is registering on the online website and filling in all the information correctly."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- The institute completes two-step verification with the help of the entered phone number and email address."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Fill in all the details and make sure to check the same to avoid any future trouble."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Upload all the documents like photographs, caste certificates, academic transcripts and scorecards of the examination."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- The final step is paying the fee on the portal and later downloading the application form and keeping it for future reference."
+  },
+  {
+   "t": "p",
+   "text": "Note- The seats in IIT are limited and the selection process is done only after the results of the entrance examination."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The institute offers various online courses for working professionals along with on-campus courses. Hence the students enrolled in online programs are eligible to give online examinations. It offers diplomas, and certificate programs for working professionals. They offer self-paced learning material to the students that helps in prepare for the final examination. The course material along with the online resources are very helpful and students can also study from the previous year's question papers."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The placement cell of the institute is one of a kind. It offers world-class job and career opportunities to the students. The Career Development Cell helps bridge the broad gap between companies and their students, by reaching them and inviting them to participate in the Institute. Later, the institute gets the requirement from the CDC for hiring purposes. The students then have to undergo the screening process. The Companies shortlist the students and move ahead with the further steps of the hiring process. It has offered a 100% placement rate in many departments like Computer Science and Engineering, and Biosciences and Bioengineering. The institute offered high packages to B.Tech students and M.Tech students reaching as high as 60 lakhs and above. Top Recruiters are-"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Bosch",
+   "logo": "/university/partners/bosch.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Mckinsey and Company",
+   "logo": "/university/partners/mckinsey-and-company.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-19",
+   "content": "IIT Jodhpur is amazing. It is fantastic. I was enrolled in an online program at the institution to pursue my online management course. I had a great experience at this institution."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-19",
+   "content": "The institution is nice, I have completed my management degree from the institution. They offered us top-notch education along with an on-campus placement drive."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-19",
+   "content": "The campus is so beautiful and has all the advanced facilities for the students."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-19",
+   "content": "My experience at the institution was the best! The teachers and other faculty members are so amazing. They helped me throughout my study program duration."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Do I have to visit the campus to take exams for online courses?",
+   "a": "No, students enrolled in online programs are not required to visit the IIT campus. They can appear for online examination."
+  },
+  {
+   "q": "Are the online courses offered by IIT Jodhpur valid?",
+   "a": "Yes, all the courses offered by the IIT are valid and approved. It is ranked as one of the top engineering colleges by NIRF and also approved by the Government of India."
+  },
+  {
+   "q": "What are the courses offered to the students at IIT Jodhpur?",
+   "a": "IIT Jodhpur offers Undergraduate courses, postgraduate courses, doctoral programs and many online courses."
+  },
+  {
+   "q": "What disciplines are offered at IIT Jodhpur?",
+   "a": "Disciplines offered by the institute are Chemical Engineering, Civil and Infrastructure Engineering, Electrical Engineering, Metallurgical and Materials Engineering, Mechanical Engineering, School of Management and entrepreneurship, Biosciences and Bioengineering, Chemistry, Computer Science and Engineering, Humanities and Social Sciences, Mathematics, and Physics."
+  },
+  {
+   "q": "Does IIT Jodhpur offer online programs?",
+   "a": "Yes, IIT Jodhpur offers various online courses for working professionals with online resources like lectures on weekends and evenings in domains like manufacturing, healthcare, education, fintech, human and robot interaction and many more."
+  }
+ ]
+}

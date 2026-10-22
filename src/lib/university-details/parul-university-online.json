@@ -1,0 +1,578 @@
+{
+ "slug": "parul-university-online",
+ "name": "Parul University Online",
+ "establishedYear": "2009",
+ "location": "Vadodara, Gujarat",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   0,
+   3,
+   15,
+   75,
+   213
+  ],
+  "total": 306
+ },
+ "banner": "/university/banners/parul-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC A++",
+   "logo": "/university/approvals/logo-naac-a-plus-plus.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Parul University is a famous educational institution in the Indian city of Vadodara. Since its inception in 2009, the institution has swiftly earned a reputation for its dedication to offering high-quality education, encouraging innovation, and supporting holistic development among its students."
+  },
+  {
+   "t": "p",
+   "text": "To encourage education to the masses, and make high-quality education accessible, Parul University introduces its online verticle known as Parul University Online. The institution offers management, computer applications, and arts discipline courses at the undergraduate, postgraduate, and doctorate levels. Parul University Online caters to a wide spectrum of students' academic aims and career goals."
+  },
+  {
+   "t": "p",
+   "text": "One of Parul University Online's primary features is its cutting-edge curriculum and 100% online flexible learning. Choosing Parul University Online lets you earn an online degree from a credible university with an NAAC A++ grade. Moreover, the courses offered are highly affordable as compared to regular programs."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The emphasis of Parul University is not just on academic performance but also on entire personality development. By providing sessions with entrepreneurs, mentorship from management professors from leading institutes, and inclusion of an interactive learning platform the university tries to develop students into well-rounded persons. These activities assist learners in developing their leadership, creativity, and collaboration qualities."
+  },
+  {
+   "t": "p",
+   "text": "Additionally, Parul University Online is awarded as the best university in placement by Assocham. With the availability of robust LMS, projects and case studies, effective examination platforms, collaborative sessions, and access to live and recorded lectures, students get the best quality education which results in easy placements and multiple career opportunities."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Parul University, based in Vadodara, Gujarat, India, was founded in 2009 and provides over 250 UG, PG, and doctorate programs.",
+  "Parul University Online has approval from the University Grants Commission (UGC), NIRF, and NAAC A++.",
+  "The institution has a great placement record, placing students in prominent firms across various industries. Recorded highest placement package 45.98 LPA and average 8 LPA.",
+  "The institution emphasizes holistic development by providing sessions with entrepreneurs, mentorship from management professors from leading institutes, and the inclusion of an interactive learning platform.",
+  "Parul University Online is awarded as the best university in placement by Assocham.",
+  "The institution is dedicated to offering high-quality education, encouraging innovation, and preparing students to be competent professionals in their disciplines.",
+  "Parul University Online has a student-centered approach, providing students with customized attention and mentorship from management professors of leading institutions to ensure their academic and personal success.",
+  "The university organizes various industrial visits, workshops, and seminars to bridge the gap between academics and industry, preparing students for real-world difficulties.",
+  "The institution encourages entrepreneurship and innovation by providing incubation facilities and assistance to aspiring entrepreneurs in turning their ideas into profitable enterprises.",
+  "The university has a robust alum network, which includes accomplished individuals who give back to the institution and advise current students.",
+  "Parul University Online is well-known for its warm and diversified community, which welcomes students from many origins and cultures and fosters a vibrant learning environment."
+ ],
+ "courses": [
+  {
+   "name": "Online M.Com",
+   "fee": 60000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "15000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "40000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 150000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "37500"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "90000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "37500"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 120000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "30000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "30000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "80000"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 111000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "18500"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 111000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "18500"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 60000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "15000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "40000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 111000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "18500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18500"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 60000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "15000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "40000"
+    }
+   ]
+  },
+  {
+   "name": "Online Master of Social Work",
+   "fee": 60000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "15000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "40000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Parul University understands the significance of making education available to all, and to ensure that financial restraints do not impede a student's pursuit of higher education, it offers EMI services. This flexible payment option enables students to pay their tuition in manageable monthly installments, easing the financial strain over time."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admissions procedure at Parul University is comprehensive and user-friendly. The following are the important steps:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Interested applicants may apply online or in person by completing the application form and providing the necessary papers."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Depending on the programme, students may be needed to take admission exams such as GUJCET, JEE, NEET, or Parul University's entrance exam."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Candidates must fulfil the stipulated eligibility standards for the different courses, which include academic credentials, minimum marks, and any particular prerequisites."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Candidates are chosen based on their performance in admission tests, past academic records, and other relevant factors."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Shortlisted candidates are asked to attend counselling sessions, during which they can select their desired course and speciality depending on availability and preferences."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: Selected applicants must provide all relevant documentation for verification, including academic credentials, identity evidence, and other supporting papers."
+  },
+  {
+   "t": "p",
+   "text": "Step 7: Once the documents have been verified, candidates must pay the admission cost to confirm their place in the specified course."
+  },
+  {
+   "t": "p",
+   "text": "Step 8: Finally, registered students go through the enrollment procedure and attend an orientation session to become acquainted with the university's regulations, facilities, and academic structure."
+  },
+  {
+   "t": "p",
+   "text": "For precise details and updates on the admission procedure for their selected course, candidates may consult the official university website or contact the admission office."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "Online BA Psychology Discontinued at Parul University as per UGC Guidelines, BA in English and Journalism & Mass Communication in online mode will be same. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of Parul University Online Courses? Parul University Online follows the UGC refund policy to refund the course fee in case of admission cancellation. A 100% refund is given for withdrawal 15 days or more before the last admission date. A 90% refund is given if withdrawn less than 15 days before the last admission date. An 80% refund is allowed within 15 days after the last admission date. A 50% refund applies 15–30 days after the last admission date. No refund is given after 30 days. The registration fee may also not be refunded after cancellation. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Parul University's Online examination format is 100% online. The programs are online and Exams will be scheduled as per your schedule and can be given through LMS of the university. Exams schedule would be semester-wise. These examinations normally consist of written theoretical tests, practical exams, and viva voce (oral examination)."
+  },
+  {
+   "t": "p",
+   "text": "Online courses sometimes include a mix of online quizzes, assignments, projects, and proctored online examinations. These tests are administered remotely, allowing students to take them from the comfort of their homes via secure internet platforms."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 30% Internal (AI & proctored based online MCQs, evaluation) + 70% End-Semester Descriptive (Case Studies, learning etc.). All exams are 100% online proctored. Semester system."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Parul University provides 100% placement assistance through 700+ industry collaborations. Placement assistance is provided through career development and training, campus drives, and interview preparation. Parul University Online has recorded the highest package of 48.98 LPA and 8 LPA as the average package. Reliance, Vodafone, Amazon, and Byjus are some examples of companies cooperating with Parul University Online for placements and recruiting."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Byjus",
+   "logo": "/university/partners/byjus.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Reliance",
+   "logo": "/university/partners/reliance.webp"
+  },
+  {
+   "title": "Tata",
+   "logo": "/university/partners/tata.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "DR. VEENA PV",
+   "title": "Assistant Professor",
+   "description": "An adept physician with a strong focus on listening to and addressing patient concerns and answering them in terms they can easily understand. Willingness to work with all members of the team and listen to their suggestions and input to improve results and maximize patient satisfaction. Compassionate with great communication skills and results-oriented, seeking to leverage effective lesson planning and empathetic attitude to be a professional. Provided effective classroom management often at a moment’s notice.",
+   "photo": "/university/faculty/Dr._Veena_PV.webp"
+  },
+  {
+   "name": "Om Prakash Dave",
+   "title": "Professor",
+   "description": "I am a Creative Compassionate and Practical person who is Responsive Observant but introverted .",
+   "photo": "/university/faculty/Om_prakash_Dave.webp"
+  },
+  {
+   "name": "Dr. Hemant D Toshikhane",
+   "title": "Dean,Principal",
+   "description": "Prior to this, he was Head of the Department of Sangyaharana (Anaesthesiology in Indian medicine) at KLE University Shri B M Kankanwadi Ayurved Mahavidyalaya Shahapur Belgaum, Karnataka, India. He did his graduation in Ayurved from Ayurved Mahavidyalaya Hubli, Karnataka, India which is one of the renowned and oldest colleges in Ayurved. He has completed his Post Graduation in Shalyatantra from S.D.M. College of Ayurved, Hassan affiliated to Rajiv Gandhi University of Health Sciences, Karnataka, Bangalore. He pursued the Ph.D.from TilakAyurved Mahavidyalaya, Maharashtra University, Pune, India.He has completed the MBA from IIBM, Institute of Business Management, Delhi. Yet another feather added to his academic credit is his LLB degree from Parul University. He has hands on working experience in Causality unit of Shivakrupa Hospital, Hubli. His practical experience in carrying out surgeries is immensely appreciable. His expertise lies in both Ayurved and Allopathic system of medicine practices. During his postgraduate studies, he was taught by Prof. Dr B.G. Gopinath a famous Ayurvedic physician in India. Prof. Toshikhane practices in Ayurved includes (Medicine) Chikitsa, Panchakarma (Five therapeutic procedures) Ksharakarma (Corrosive Therapy), Agni karma (Cauterization Therapy), Rakta Mokshana (Blood Letting) and other related modalities. He has extensive knowledge in the management of Anorectal Disorders like Piles, Fistula, Fissure. Prof. Toshikhane has treated more than 3000 patients of such disorders.He has dynamically played a pivotal role in handling more than 100 plus patients through traditional fracture management techniquesnarrated in Ayurved Classics.",
+   "photo": "/university/faculty/Dr_HEMANT_D_TOSHIKHANE.webp"
+  },
+  {
+   "name": "Dr Vasupradha R",
+   "title": "Assistant Professor",
+   "description": "Clinical Study to Evaluate the Efficacy of Panchathikthaka Grutha in Asrugdhara (Dysfunctional Uterine Bleeding) Dr Prathima, HOD, Associate Professor, Department of Prasuthi Tantra & Stree Roga, Sri Dharmasthala Manjunatheshwara College of Ayurveda and Hospital , Hassan, Karnataka Online certificate course \"Prasooti Tantra & Stree Roga\" conducted as a part of PAMPA Mastery Programme in Nov-Dec2020.",
+   "photo": "/university/faculty/Dr_Vasupradha_R.webp"
+  },
+  {
+   "name": "DR.HARISH DAGA",
+   "title": "Associate Professor",
+   "description": "Dr Harish Daga has completed his graduation in 2013 from DSRRAU Jodhpur and Post Graduation from Gujarat Ayurved University Jamnagar in 2017. He has underwent for I.T. Course for Ayush Professionals at CDAC Pune in 2019. He has published 20 full length research articles in peer reviewed & indexed journals. He has completed a research project funded by gufic bioscience limited in the capacity of co-investigator. He has awarded devdoot award for exemplary selfless service during vadodara flood 2019. He has academic experience of 4 years and currently working in parul institute of ayurveda, Parul University, vadodara, Gujarat, as an assistant professor in the department of shalya tantra.",
+   "photo": "/university/faculty/Dr._Harish_Daga.webp"
+  },
+  {
+   "name": "Dr. Harshal Shah",
+   "title": "Associate Professor",
+   "description": "Dr. Harshal Shah is an experienced professional with over 20 years in teaching and 10 years in leading the Computer Science & Engineering Department. Currently, he heads the Tinkering Hub at Parul University and serves as the Additional Director for Continuous Education Programs. Dr. Shah has trained over 1000 industry professionals and 6000 students, specializing in Project Management using MSProject and MS-Excel, as well as .NET Technologies.",
+   "photo": "/university/faculty/Dr._Harshal_Shah.webp"
+  },
+  {
+   "name": "Dr.Sachin.Deva",
+   "title": "Professor",
+   "description": "Myself Dr Sachin Deva Professor & Head PG and Ph.D Department of RogaNidana and Vikruti Vigyana Parul Institute of Ayurveda Parul University Vadodara Gujarat",
+   "photo": "/university/faculty/Dr._Sachin.Deva.webp"
+  },
+  {
+   "name": "Dr. SWATHY V",
+   "title": "Assistant Professor",
+   "description": "A compassionate and charismatic Vaidya with a sound knowledge in Ayurvedic research and clinical practice. Currently looking for academics, clinical and research opportunities to explore innovative and sustainable areas of research for the validation of science and towards the service of humanity. Where I get to learn human values, an opportunity for continuous learning and to work as a team to build up a strong institution.",
+   "photo": "/university/faculty/Dr._Swathy_V.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Rohan Ramesh Chougule",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "Best LMS portal and weekly live lecture very affordable fees and Experience faculties UGC approved university as well as NAAC A++"
+  },
+  {
+   "name": "Tanish Kaneriya",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "It is a very good opportunity for those who wants to do Masters in computer Application."
+  },
+  {
+   "name": "Suraj",
+   "rating": 4,
+   "date": "2026-08-07",
+   "content": "Parul University is a good choice for an online MBA, especially for working professionals. It is UGC-approved and NAAC A++ accredited, offers affordable fees, and provides flexible online learning."
+  },
+  {
+   "name": "Nikhil Jha",
+   "rating": 5,
+   "date": "2026-08-06",
+   "content": "Good response from college vidya and good support."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What courses and programs are available at Parul University Online?",
+   "a": "Parul University Online provides various undergraduate and postgraduate programs in management, computer applications, commerce, and arts."
+  },
+  {
+   "q": "How can I apply for a course at Parul University Online?",
+   "a": "Parul University Online, admission procedure is completed online via its official website. You can apply by completing the application form, submitting the necessary papers, and paying the application cost."
+  },
+  {
+   "q": "Is it worth pursuing an online MBA from Parul University?",
+   "a": "Yes, it is definitely worth pursuing an online MBA from Parul University, as it is a well-known private university. It has excellent MBA faculty and placement records as well. You can get a flexible learning experience."
+  },
+  {
+   "q": "Are scholarships available for Parul University students?",
+   "a": "Yes, scholarships and financial aid are available to worthy and distinguished students at Parul University. Scholarships depend on various factors, including academic excellence, athletic achievements, and socioeconomic status. The university's website or admission office can provide further information about the scholarships and qualifying requirements."
+  },
+  {
+   "q": "Is there a placement cell at Parul University Online to help students get jobs?",
+   "a": "Parul University Online has an active Training and Placement Cell connecting students with possible companies and helps in building resume and interview preparations To improve students' employability and prepare them for the labor market, the placement cell organizes recruiting drives, enables internships, and provides career assistance and counseling."
+  },
+  {
+   "q": "Can I study at Parul University distance or online?",
+   "a": "Yes, through its online education platform, Parul University provides online courses and distance learning programs. Working professionals or those who prefer remote learning choices will benefit from these programs' flexibility."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "What are the fees of an Online MBA from Parul University?",
+   "a": "The exact fee of an online MBA from Parul University is 90,000 INR, which might vary depending on the particular specializations you are pursuing."
+  },
+  {
+   "q": "Does Parul University collaborate with other universities throughout the world?",
+   "a": "Yes, Parul University collaborates and partners with prestigious worldwide universities and institutes. These agreements enable student exchange programs, collaborative research initiatives, and global exposure through foreign internships and study abroad programs."
+  }
+ ]
+}

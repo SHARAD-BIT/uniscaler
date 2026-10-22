@@ -1,0 +1,13 @@
+/* /goal — page shell only. The universities grid itself is the shared
+   Utils/OnlineUniversities component (also embedded on the online-course
+   page); its styles live in Utils/styles/onlineUniversities.css. */
+
+.goalPage {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 4.5rem;
+}
+
+.goalPage .gp-universities {
+  padding-top: 2.5rem;
+}

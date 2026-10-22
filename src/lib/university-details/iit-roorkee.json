@@ -1,0 +1,229 @@
+{
+ "slug": "iit-roorkee",
+ "name": "IIT Roorkee",
+ "establishedYear": "1847",
+ "location": "Roorkee, Uttarakhand",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   2,
+   5
+  ],
+  "total": 9
+ },
+ "banner": "/university/banners/iit-roorkee.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Indian Institute of Technology Roorkee, is an autonomous institute that is located in Uttarakhand. It was established in the year 1847 and named Thomas College of Civil Engineering. This is known as the Oldest Technical Institute of Asia. The Institute is located in Haridwar District and is spread over 358.5 acres of land in Roorkee. The institute has two more campuses that are located in two places, one in Saharanpur which is 30 km away from Roorkee's main campus and the other is in Greater Noida."
+  },
+  {
+   "t": "p",
+   "text": "IIT Roorkee is excellent in offering top-notch academic courses to the students. Currently, it offers over 14 undergraduate programs, 24 postgraduate programs, and many doctorate degrees. It has 23 departments engineering, architecture & planning, humanities & social sciences, management programs, and many more. As per the National Institutional Ranking Framework 2024 it is ranked 8th in the overall institute's category, in the research category it is ranked 9th, in the top engineering category it is ranked 6th, in the innovation category it is ranked 6th, in architecture and planning category it is ranked number 1 and in management category it is ranked 18th."
+  },
+  {
+   "t": "p",
+   "text": "IIT Roorkee is India’s premier institute that is essentially famous for its B.Tech courses. Not many students get lucky to accomplish their degree from IIT Roorkee. To get admission at this prestigious institute, students appear for the All India Examination JEE(Joint Entrance Examination). Also, the cutoff to study at this institute is very high. The top-listed students get the chance to study here."
+  },
+  {
+   "t": "p",
+   "text": "The full-time courses offered at the institute are B. Tech, B.Arch, M.Sc, M.Tech, MBA, and many PhD programs. Entrance examinations like JEE, IIT JAM, GATE, CAT, and many more institutes are available that pave the way to the IIT. As per the placement statistics, Placement opportunities are abundant at IIT Roorkee. The highest package being offered is in Crores ranging between INR 1.3 CPA to INR 2.15 CPA."
+  },
+  {
+   "t": "p",
+   "text": "The top recruiting companies of the institute are Accenture, Bajaj Auto, Tata Steel, BCG, Microsoft, Amazon, and Bank of America. Students from all over the world want to be part of this institute. The online courses offered by IIT Roorkee are the Executive MBA degree, Post Graduate Certificate in 5G Technology and IoT, Post Graduate Certificate in Strategic Supply Chain Management with AI, Post Graduate Certificate in Data Science and Machine learning, Post Graduate Certificate in VLSI Design, and Post Graduate Certificate in Machine Learning for Finance."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "IIT Roorkee offers top-notch and quality education and as per NIRF ranking 2025, it is ranked 6th."
+  },
+  {
+   "title": "Global Alumni Network",
+   "content": "IIT Roorkee has a global network of 40,000+ Alumni."
+  },
+  {
+   "title": "Advanced Research and Innovation",
+   "content": "IIT Roorkee is a research giant and works efficiently in the direction of innovation and research. It has won many awards from prestigious organisations."
+  }
+ ],
+ "facts": [
+  "IIT Roorkee was established as Thomas College of Civil Engineering in 1847. It is an autonomous institute that is located in Uttarakhand.",
+  "IIT Roorkee is known as the Oldest Technical Institute in Asia and offers various courses like B. Tech, B.Arch, M.Sc, M.Tech, MBA, online management courses and many PhD programs.",
+  "Courses are offered in various departments of engineering, architecture & planning, humanities & social sciences, management programs, and many more. It has 23 departments in total that offer courses over 14 undergraduate programs, 24 postgraduate programs, and many doctorate degrees.",
+  "Top recruiters of the institute for campus programs are Accenture, Bajaj Auto, Tata Steel, BCG, Microsoft, Amazon, Bank of America, and many more. The highest packages offered are as high as INR 1.30 Crore per annum.",
+  "According to the National Institutional Ranking Framework, the IIT Roorkee ranked 6th in the top engineering category."
+ ],
+ "courses": [
+  {
+   "name": "GenAI/Agentic AI and Data Science",
+   "fee": 149000,
+   "duration": "11 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "149000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech Program",
+   "fee": 306600,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Year (internally)",
+     "fee": "153300"
+    }
+   ]
+  },
+  {
+   "name": "Certification Program",
+   "fee": 150000,
+   "duration": "6-11 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "150000"
+    }
+   ]
+  },
+  {
+   "name": "Online Generative AI",
+   "fee": 149000,
+   "duration": "11 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "149000"
+    }
+   ]
+  },
+  {
+   "name": "Online AI and ML",
+   "fee": 149000,
+   "duration": "11 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "149000"
+    }
+   ]
+  },
+  {
+   "name": "GenAI/Agentic AI and ML",
+   "fee": 149000,
+   "duration": "11 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "149000"
+    }
+   ]
+  },
+  {
+   "name": "PhD",
+   "fee": 150000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "150000"
+    }
+   ]
+  }
+ ],
+ "emi": [],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Each degree programme/course offered by the university has its own admissions process and is decided solely by the university. To know more about the programmes offered and the admissions process, you can choose to visit the university website. However, for specifically the Executive MBA, following is the admissions process:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Submit your application to IIT Roorkee on Coursera. After you submit your application, IIT Roorkee admissions team will review your application."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- If your application is found to meet the preliminary eligibility conditions, you will be invited by IIT Roorkee for an interview."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- After the interview round, if your candidature is found fit for the Executive MBA degree, you will receive an offer of admission from IIT Roorkee."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [],
+ "placementText": [],
+ "placementPartners": [],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Amit Jha",
+   "rating": 5,
+   "date": "2024-08-27",
+   "content": "I definitely see long term value in this course. The areas that I have never learned like finance, marketing, these are areas which I had zero clue about because I’ve mostly been confined into my cocoon of software and technical work. I have enjoyed learning from people with over 30 to 40 years of experience and not just in one area, but multiple areas and have worked in top leadership positions."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Does IIT Roorkee offer online courses?",
+   "a": "Yes, IIT Roorkee offers online courses in long-term and short-term duration."
+  },
+  {
+   "q": "What courses are offered in online mode at IIT Roorkee?",
+   "a": "Courses offered at IIT Roorkee are Executive MBA degree, Post Graduate Certificate in 5G Technology and IoT, Post Graduate Certificate in Strategic Supply Chain Management with AI, Post Graduate Certificate in Data Science and Machine learning, Post Graduate Certificate in VLSI Design, and Post Graduate Certificate in Machine Learning for Finance."
+  },
+  {
+   "q": "Can I get admission at IIT Roorkee without any entrance examination?",
+   "a": "Yes, online courses offered at IIT Roorkee can be pursued without appearing in any entrance examination. However, students have to check all the eligibility criteria before applying."
+  }
+ ]
+}

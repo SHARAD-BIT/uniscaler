@@ -1,0 +1,446 @@
+{
+ "slug": "iim-nagpur",
+ "name": "IIM Nagpur",
+ "establishedYear": "2015",
+ "location": "Nagpur, Maharashtra",
+ "rating": 4.5,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   2,
+   2
+  ],
+  "total": 4
+ },
+ "banner": "/university/banners/iim-nagpur.webp",
+ "approvals": [
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Indian Institute of Management Nagpur was established in 2015, and initially, it was under the mentorship of IIM Ahmedabad. IIM Nagpur was shifted to a new and technically sound campus in 2015 at MIHAN, Nagpur, Maharashtra. IIM Nagpur Online is among the new generations of the IIMs and it is globally recognized as one of the most prominent management institutions worldwide."
+  },
+  {
+   "t": "p",
+   "text": "IIM Nagpur Onlne has been known for its globally competent education system and its main aim is to create value-driven leaders, global managers, entrepreneurs, and industry-based leaders. The institute guides and upskills every individual at the institute to make them prominent in their relevant field, and all this happens with the support of the faculty with the well-maintained and revised curriculum of the programs."
+  },
+  {
+   "t": "p",
+   "text": "IIM Nagpur Online offers various programs that include MBA, PhD, PhD Executive, and MBA Executive. Executive programs are among the new trends in the market and these programs are opted for by the working professional the main objective of these programs is to provide global exposure and approach to senior executives and give them an upgraded vision to monitor and lead their organization efficiently by enhancing their skills and acquiring knowledge with help of these programs."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Top Course from IIMs!"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Courses Online",
+      "IIM Online MBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Executive MBA",
+      "IIM Online Certificate Courses"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Data Science and Analytics Online",
+      "IIM Digital Marketing and Analytics Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Project Management Online",
+      "IIM Financial Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Human Resource Management Online",
+      "IIM Leadership and Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Operations and Six Sigma Online",
+      "IIM Chief Business Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Financial Data Analytics Online",
+      "IIM Marketing and Sales Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Hospital and Healthcare Management Online",
+      "IIM Digital Transformation and Innovation Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Business Analytics Online",
+      "IIM Blockchain and Fintech Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Public Policy Management Online",
+      "IIM CMO Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM CFO Course Online",
+      "IIM Financial Services and Capital Markets Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Investment Banking and Capital Markets Online",
+      "IIM AI and Machine Learning Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief HR Officer Online Course",
+      "IIM Chief Operations Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief Executive Officer Online Course",
+      "IIM General Management Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Logistics and Supply Chain Management Online"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "IIM Nagpur Online is a well-known and reputed institute and it ranks 31st in the National Institutional Ranking Framework (NIRF) 2024 it is also a member of The Association to Advance Collegiate Schools of Business (AACSB). IIM Nagpur aims to get connected with the global network and enhance the quality of management and business education worldwide."
+  }
+ ],
+ "aboutBoxes": [],
+ "facts": [
+  "Indian Institute of Management Nagpur was established in 2015.",
+  "Initially, IIM NagpurOnline was under the mentorship of IIM Ahmedabad.",
+  "The institution was shifted to a new campus at MIHAN, Nagpur, Maharashtra in 2015.",
+  "Various programs offered at the institute are MBA, PhD, PhD Executive, and MBA Executive.",
+  "The institute ranks 31st in the National Institutional Ranking Framework (NIRF) 2024.",
+  "IIM Nagpur is also a member of AACSB (Association to Advance Collegiate Schools of Business).",
+  "The institute regularly organizes many events to give a friendly environment to students.",
+  "There is cultural diversity at the campus and all the festivals are celebrated with great zeal by every student."
+ ],
+ "courses": [
+  {
+   "name": "PhD",
+   "fee": 1000000,
+   "duration": "4 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1000000"
+    }
+   ]
+  },
+  {
+   "name": "Executive PhD Program",
+   "fee": 1050000,
+   "duration": "4 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1050000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 950000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "950000"
+    }
+   ]
+  },
+  {
+   "name": "Leadership Program",
+   "fee": 370000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "370000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "2950"
+    }
+   ]
+  },
+  {
+   "name": "Executive MBA",
+   "fee": 1010000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1010000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "IIM Nagpur is among the most renowned institutes in India and is globally recognized for financially assisting students. The institute offers two major scholarships for the MBA (2 Years – Full Time) programme at IIM Nagpur:"
+  },
+  {
+   "t": "li",
+   "text": "IIM Nagpur Merit Scholarship – for the top ten scorer candidates securing 95%ile or above in CAT"
+  },
+  {
+   "t": "li",
+   "text": "IIM Nagpur Need-cum-Merit Scholarship – for candidates with family income less than Rs 8 lakhs"
+  },
+  {
+   "t": "p",
+   "text": "For blended MBA and other courses, students who are unable to pursue further studies due to financial constraints can opt for the education loan facility at any of the banks. The point to be noted here is that IIM Nagpur has no role to play in the process of availing this education loan facility. It is entirely dependent on your financial history and the bank."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Students who are willing to get admission to the programs offered at IIM Nagpur Online are requested to appear and clear entrance exams relevant to the program they are opting such as GRE/GMAT/GATE/CAT and score marks according to the minimum criteria to compete with the shortlisted students, the admission process for regular program are conducted in 3 stages mentioned below:"
+  },
+  {
+   "t": "p",
+   "text": "Stage 1- A list is prepared of the shortlisted students based on the CAT cut-off, and eligible students can fill out the application form."
+  },
+  {
+   "t": "p",
+   "text": "Stage 2- The institute selects candidates from the application forms for the next step, the Personal Interview (PI) based on the calculation of the Shortlisting Score."
+  },
+  {
+   "t": "p",
+   "text": "Stage 3- This is the final stage where a candidate is selected based on the evaluation of the Final Score."
+  },
+  {
+   "t": "p",
+   "text": "Meanwhile, candidates who are willing to enroll in the online and executive program offered at the university are required to follow some basic steps including an eligible score in the relevant entrance exam GRE/GMAT/GATE/CAT and there is a specific entrance exam conducted by the institute itself for executive programs. After qualifying for these exams, the candidate can move further with the admission process according to the eligibility criteria of their preferred program. The admission process is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- To get admission to the institute, candidates have to visit the official website of the institute and register themselves on the website to get access to the portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- After the registration process, the candidate will receive credentials to access the portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- After accessing the portal, candidates have to click on the application process tab and fill in their scores in the entrance exam if the scores are under the eligibility criteria only then the application process can be resumed."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Right after filling in the scores, candidates have to fill out the application form with some basic questions and information."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- While filling out the details, the candidate has to attach the required documents along with the application form and make sure all the information and documents are accurate and valid or they will get rejected from the institution end."
+  },
+  {
+   "t": "p",
+   "text": "Step 6- Go through the application form and recheck it, then pay the fee for the program opted."
+  },
+  {
+   "t": "p",
+   "text": "Step 7- After payment of the fee candidate can finally submit the application form."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination evaluation process of the Institute follows a basic pattern that includes two major components: internal assessment and term-end examinations. The internal assessment evaluates the practical understanding of an individual through quizzes, assignments, projects, etc., Whereas end-term examinations are conducted to evaluate the overall theoretical understanding of an individual and they carry 30% and 70% of overall weightage respectively."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The placement cell of the IIM Nagpur remains active throughout the year and assists full-time MBA students in every way possible through its Career Development Services (CDS). The placement cell helps students in developing industry-oriented skills and guides them to enhance their personality and abilities to compete with global competence. This support service is not available for the blended or hybrid MBA courses at IIM Nagpur. However, the name of the institution on your resume would attract some big firms and bring you to the notice of your dream company."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "Tata Power",
+   "logo": "/university/partners/tata-power.webp"
+  },
+  {
+   "title": "Bajaj Capital",
+   "logo": "/university/partners/bajaj-capital.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-18",
+   "content": "The study materials and programs of the institute are regularly revised and are full of practical exposure that is globally recognized, it was an amazing experience at IIM Nagpur."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-18",
+   "content": "Financially I was not that strong, but the loan facility of the institute helped me make my dream of IIM come true and I’ve also been placed in an MNC."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-18",
+   "content": "The placement assistance offered at the institute is quite impressive and their packages are worth an IIM, I got a decent package at the placement drive and was satisfied with the services of the institute."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-18",
+   "content": "The faculty members of the institute are just amazing, I haven’t seen this type of support in any institution. They guide every student and resolve all the problems they face in no time."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the contact details of IIM Nagpur Online?",
+   "a": "Contact details of the institute are: Location: Plot No. 1, Sector 20, MIHAN (Non-SEZ), Nagpur, Maharashtra India – 441108 General Enquiries. info@iimnagpur.ac.in Phone: 0712-7102356"
+  },
+  {
+   "q": "What is the lowest percentile for IIM Nagpur?",
+   "a": "The lowest percentile cutoff for IIM Nagpur Online was 85.15."
+  },
+  {
+   "q": "What is the highest salary in IIM Nagpur?",
+   "a": "The highest salary package offered at IIM Nagpur is 64LPA."
+  },
+  {
+   "q": "What is the last date to apply for IMT Nagpur 2024?",
+   "a": "The last date to get admission at IIM Nagpur is 10 March 2024."
+  },
+  {
+   "q": "Which top IIMs offer online management courses other than IIM Nagpur?",
+   "a": "Here is a list of the top IIMs as per NIRF 2024 Management category which offer different types of online management courses. Top IIMs In India As Per NIRF Ranking 2024 Name Rank Score Indian Institute of Management Ahmedabad 1 83.32 Indian Institute of Management Amritsar 47 52.57 Indian Institute of Management Bangalore 2 81.16 Indian Institute of Management Jammu 42 54.64 Indian Institute of Management Kashipur 23 60.82 Indian Institute of Management Kozhikode 3 77.90 Indian Institute of Management Lucknow 7 74.43 Indian Institute of Management Nagpur 31 56.94 Indian Institute of Management Raipur 14 64.40 Indian Institute of Management Ranch i 17 61.27 Indian Institute of Management Rohtak 12 66.49 Indian Institute of Management Sambalpur 50 51.47 Indian Institute of Management Shillong 24 60.49 Indian Institute of Management Sirmaur 57 50.92 Indian Institute of Management Udaipur 22 60.93 Indian Institute of Management Visakhapatnam 26 59.20"
+  },
+  {
+   "q": "What are some best online executive programs in India?",
+   "a": "Universities have launched numerous online executive courses to empower the Indian workforce. The top ones on that list are tabulated below. Explorer Best Executive Programs In India Executive Program Online In Finance Executive Program Online In HR Executive Program Online In Operations Executive Program Online In Leadership Executive Program Online In Data Science and Analytics Executive Program Online In AI and Machine Learning Executive Program Online In Marketing Executive Program Online In Software and Technology Executive Program Online In Healthcare Executive Program Online In Business Analytics Executive Program Online In DevOps Executive Program Online In Cyber Security Executive Program Online In Bigdata Engineering Executive Program Online In Blockchain Executive Program Online In Cloud Computing LLM Online Job Linked Programs Pay After Placement Programs Explore more online and distance courses In India! Click here for all approved distance and online universities in India!"
+  },
+  {
+   "q": "Can I pursue a doctorate program while working?",
+   "a": "Several online doctorate courses have been launched in the market for working professionals. A few of them include: Explore Online Doctorate Programs for Working Professionals Online Doctorate Course for Working Professionals Doctor of Juridical Science DBA In Supply Chain Management DBA In Supply Artificial Intelligence DBA In Human Resource Management Doctor of Business Administration"
+  },
+  {
+   "q": "Can I pursue an MBA without a good CAT score?",
+   "a": "Top management institutions in India including IIMs are now offering online MBAs for which you do not need to attempt CAT. Some of these trending MBA options are listed below. MBA without CAT Available! MBA Global Online MBA for Working Professionals MBA Courses Online MBA Distance Learning Course Online Executive MBA MBA Part-Time Courses Executive MBA for Working Professionals"
+  }
+ ]
+}

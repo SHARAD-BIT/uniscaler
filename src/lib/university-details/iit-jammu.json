@@ -1,0 +1,424 @@
+{
+ "slug": "iit-jammu",
+ "name": "IIT Jammu",
+ "establishedYear": "2016",
+ "location": "Jammu, Jammu and Kashmir",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   2,
+   3
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/iit-jammu.webp",
+ "approvals": [
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The Indian Institute of Technology is the finest technical institute in India and in the Union Budget of 2014-15, the Honourable Finance Minister of India announced the establishment of IIT Jammu followed by a list of four more IITs i.e. Kerala, Goa, Andhra Pradesh, and Chhattisgarh."
+  },
+  {
+   "t": "p",
+   "text": "IIT Jammu is an autonomous institute that is situated in Jammu, Jammu and Kashmir, India, and was established on 6th August 2016. The first batch of IIT Jammu was placed on the campus of Paloura, Jammu. Initially, IIT Jammu was under the mentorship of IIT Delhi. IIT Jammu was also entitled as an institution of National Importance by the Ministry of Human Resource Development (MHRD), Government of India in 2016."
+  },
+  {
+   "t": "p",
+   "text": "IIT Jammu offers various undergraduate, postgraduate, doctoral, and executive (online) programs in multiple specializations. The main campus of IIT Jammu Online has been allotted 400 acres of land but Phase 1-A of the permanent campus is operational and consists of 25 acres, whereas Phase 1-B and 1-C are under construction. However the campus has all the required facilities a student needs in their academic life such as a hostel, accommodation, sports facility, library, and dispensary, and all mandatory facilities are available at the campus for students' comfort."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The curriculum of every program follows the New Education Policy and the study material of every program is revised and updated regularly. The curriculum includes hands-on engineering skills and practical knowledge to make students compatible in the global competitive market. IIT Jammu also ranks 56th under the engineering category of NIRF (National Institutional Ranking Framework)."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Expert Faculty",
+   "content": "International exposure to global competent curriculum and study programs at IIT Jammu helps students acquire their dream jobs with the assistance of expert faculty."
+  },
+  {
+   "title": "Top-Ranked University",
+   "content": "IIT Jammu is a world globally recognized institute that is ranked 56th under the engineering category of NIRF (National Institutional Ranking Framework) 2025."
+  },
+  {
+   "title": "On-Campus Placements",
+   "content": "The Career and Development Services (CDS) of IIT Jammu with its career exploration, and various job search strategies assists students in acquiring a job in their relevant field with a lucrative package."
+  }
+ ],
+ "facts": [
+  "The Finance Minister of India announced the establishment of IIT Jammu followed by a list of four more IITs i.e. Kerala, Goa, Andhra Pradesh, and Chhattisgarh.",
+  "IIT Jammu offers various undergraduate, postgraduate, doctoral, and executive (online) programs in multiple specialization.",
+  "IIT Jammu is situated in Jammu, Jammu and Kashmir, India, and was established on 6th August 2016.",
+  "Initially, IIT Jammu was under the mentorship of IIT Delhi.",
+  "The main campus of IIT Jammu Online has been allotted 400 acres of land but only 25 acres of that is operational and the rest is under construction.",
+  "IIT Jammu also ranks 56th under the engineering category of NIRF (National Institutional Ranking Framework)."
+ ],
+ "courses": [
+  {
+   "name": "M.Tech in  Data Science",
+   "fee": 449000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "449000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "18000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "10000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "449000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "18000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Agentic AI with AIOps",
+   "fee": 84000,
+   "duration": "7 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "84000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech Program",
+   "fee": 449000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "449000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "PhD Program",
+   "fee": 75800,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "75800"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The education offered at IIT Jammu Online is world-class and the institute offers various undergraduate, postgraduate, and doctoral programs in multiple specializations with some executive and online programs. The fee structure of every program varies from one another, and as financial aid, the institute offers an Education Loan Scheme for candidates facing financial constraints. There are a few scholarships also available, which students can apply for according to their eligibility criteria, a few scholarships offered at the Online IIT Jammu are:"
+  },
+  {
+   "t": "li",
+   "text": "Merit-cum-Means (MCM) Scholarship"
+  },
+  {
+   "t": "li",
+   "text": "Free Messing Scholarship"
+  },
+  {
+   "t": "li",
+   "text": "Free ship (Remission of Fee) Scholarship"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Candidates willing to enroll at IIT Jammu are requested to appear for the common entrance exam like JEE, GATE, JAM, CAT, or other relevant exam, depending upon the program candidate has opted such as Joint Entrance Examination (JEE) for UG courses, Graduate Aptitude Test in Engineering (GATE) for PG courses, and others. Candidates have to qualify for these exams by scoring minimum marks to fall under the cut-off criteria, qualified candidates can proceed with the application process which may include the application process, selection process, and other things. IIT Jammu also offers a few online and executive programs, candidates interested in enrolling themselves in those programs have to follow some basic steps mentioned below, simultaneously the application process for every program remains the same:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1 Candidates have to visit the official website of the institute and register themselves on it."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 The registration process will give access and login credentials for the admission portal to the candidate."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 Access the admission portal and click on the online application process."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 Before starting to fill out the application form, candidate have to provide their score on the common entrance exam and further application process will be only resumed if the score falls under the eligibility criteria."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 After the score submission, the candidate can begin filling out the application form with the required information."
+  },
+  {
+   "t": "p",
+   "text": "Step 6 While filling out the application form candidates have to attach the required documents along with the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 7 Candidate can move forward with the payment of the fee process and submit their form."
+  },
+  {
+   "t": "p",
+   "text": "Note: Candidates make sure, that all the details and documents they provide must be accurate and valid or the institute may reject the application form."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examinations at the IIT Jammu Online are conducted in a semester pattern. The main objective of these exams is to evaluate the overall theoretical and practical understanding acquired by a student throughout their program. The examination pattern has two main components: internal assessment and term-end examination. Students can view the previous year's question papers for a detailed glimpse of the examination pattern."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The placement assistance of IITs is the best in the nation, and IIT Jammu Online has partnered with the majority of leading tech companies that recruit candidates from campus every year. The placement cell at online IIT Jammu is known as Career and Development Services (CDS), with its career exploration, and various job search strategies it assists students in acquiring a job in their relevant field with a lucrative package. The CDS remains active throughout the program and helps students develop industry-based skills, hands-on engineering abilities, and leadership qualities. A few pros of placement cell at online IIT Jammu are:"
+  },
+  {
+   "t": "li",
+   "text": "A total number of 220+ offers were made in the 2022-2023 session."
+  },
+  {
+   "t": "li",
+   "text": "The average package offered at the institute stands at 17 LPA."
+  },
+  {
+   "t": "li",
+   "text": "The highest package offered at the institute has raised by 2%."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Paytm",
+   "logo": "/university/partners/paytm.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Sony",
+   "logo": "/university/partners/sony.webp"
+  },
+  {
+   "title": "Paypal",
+   "logo": "/university/partners/paypal.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-25",
+   "content": "Placement assistance from IITs is the best in the nation and IIT Jammu offers lucrative packages and job opportunities in the relevant field of an individual."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-25",
+   "content": "The curriculum of every program is highly accessible and regularly updated and revised according to the latest education policy."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-25",
+   "content": "The faculty members are very helpful, they assist each student in every way possible. They resolved all my problems within no time."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-25",
+   "content": "My journey of becoming an IITian has been the most terrifying yet beautiful. I have lived my best moments of life at the campus and will cherish them always."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is the rank of IIT Jammu in India?",
+   "a": "IIT Jammu Online ranks 56th under the engineering category of NIRF (National Institutional Ranking Framework)."
+  },
+  {
+   "q": "What is the minimum package of IIT Jammu?",
+   "a": "The minimum package offer at the IIT Jammu Online placement stands at 7 LPA, whereas the average package is 7 LPA."
+  },
+  {
+   "q": "How much percentile is required for IIT Jammu?",
+   "a": "A candidate must have scored 75% marks in their 12th standard (65% for SC/ST/PwD) or the candidate must be under the top 20 percentile category of their respective board examinations."
+  },
+  {
+   "q": "Is it safe to go to IIT Jammu?",
+   "a": "It is completely safe to get enrolled at IIT Jammu Online and it is similar to any other IIT across the nation, where an ex-army security agency guards the IIT Campus 24*7."
+  },
+  {
+   "q": "What is the last date for IIT Jammu Online admission?",
+   "a": "The last date to apply for Online IIT Jammu is 20 October 2023."
+  },
+  {
+   "q": "How to contact online IIT Jammu?",
+   "a": "The tact details of the institute are: Address: Indian Institute of Technology Jammu Jagti, NH-44 , PO Nagrota Jammu - 181 221 J&K, India Phone: 0191-274-1103, 0191-257-0699 Mail: ar.acad@iitjammu.ac.in"
+  }
+ ]
+}

@@ -1,4 +1,5 @@
 import { studyAbroadCountries } from "./studyAbroadData";
+import { pathwayProgramDetails } from "./pathwayProgramDetails";
 import { brochureUrl } from "./brochure";
 
 /**
@@ -64,6 +65,29 @@ export const STEM_CATEGORIES = [
 ];
 export const INTERNSHIP_TITLE = /\b(intern|co-?op)/i;
 
+/**
+ * Post-study work eligibility per destination, for the listing card's
+ * "Post Study Work Visa Eligibility" line — the reference carries the same
+ * line on its cards. These are the standard published routes (OPT, UK
+ * Graduate Route, PGWP, subclass 485, the German job-seeker permit, APS,
+ * Ireland's 1G, and Hungary's job-search stay), stated as "up to" figures
+ * as of mid-2026. Immigration rules move: verify against the official
+ * route before quoting a figure anywhere weightier than this card. UAE has
+ * no standard post-study route (work visas are employer-sponsored), so it
+ * is absent and the card simply omits the line.
+ */
+export const POST_STUDY_WORK = {
+  "United States": "Up to 12 months (3 years with STEM OPT)",
+  "United Kingdom": "Up to 2 years",
+  Canada: "Up to 3 years",
+  Australia: "Up to 3 years",
+  Germany: "Up to 18 months",
+  France: "Up to 2 years",
+  Ireland: "Up to 2 years",
+  Finland: "Up to 2 years",
+  Hungary: "Up to 9 months",
+};
+
 /** Every course in the catalog, flattened, with its facets resolved once. */
 export const pathwayPrograms = (() => {
   const out = [];
@@ -76,7 +100,28 @@ export const pathwayPrograms = (() => {
         // never appears). Kept in case a re-extraction brings such entries
         // back: this is a page of what Uniscaler offers.
         if (/upgrad/i.test(course.university || "")) continue;
+        // Durations, fees and visa months, where the one-time extraction has
+        // them (184 of 197 keys) — the card omits what is absent.
+        const details =
+          pathwayProgramDetails[course.programPackageKey] || {};
+        const searchText = [
+          course.title,
+          course.university,
+          country.name,
+          category.name,
+        ]
+          .join(" ")
+          .toLowerCase();
         out.push({
+          // Precomputed for searchPrograms below — one normalisation at
+          // module load instead of one per keystroke per program.
+          searchText,
+          searchWords: searchText.split(/[^a-z0-9&]+/).filter(Boolean),
+          onlineMonths: details.onlineMonths || null,
+          campusMonths: details.campusMonths || null,
+          onlineFee: details.onlineFee || null,
+          campusFee: details.campusFee || null,
+          visaMonths: details.visaMonths || null,
           id: course.id,
           title: course.title.trim(),
           university: course.university.trim(),
@@ -133,6 +178,77 @@ export const pathwayFacets = [
     ],
   },
 ];
+
+/**
+ * Levenshtein distance with a ceiling: the loop abandons a row the moment
+ * every cell exceeds `max`, because the caller only asks "within 1 or 2
+ * edits?", never "how far exactly?".
+ */
+function editDistanceAtMost(a, b, max) {
+  if (Math.abs(a.length - b.length) > max) return false;
+  let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    const next = [i];
+    let rowMin = i;
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      next[j] = Math.min(next[j - 1] + 1, prev[j] + 1, prev[j - 1] + cost);
+      if (next[j] < rowMin) rowMin = next[j];
+    }
+    if (rowMin > max) return false;
+    prev = next;
+  }
+  return prev[b.length] <= max;
+}
+
+/**
+ * Elastic-style search over the flat list, client-side — for 203 static
+ * programs a search server would be infrastructure with nothing to do, so
+ * the behaviour people mean by it lives here instead: every query word must
+ * match somewhere in the program's title, university, country or domain
+ * (AND across words), where "match" is a substring hit or, for words of
+ * four letters and up, a typo-tolerant one (edit distance 1, or 2 from
+ * seven letters — "managment" finds Management, "germny" finds Germany).
+ * Results come back ranked: whole-word and prefix hits above mid-word
+ * substrings above fuzzy rescues.
+ */
+export function searchPrograms(list, query) {
+  const tokens = (query || "")
+    .toLowerCase()
+    .split(/[^a-z0-9&]+/)
+    .filter(Boolean);
+  if (!tokens.length) return list;
+
+  const scoreToken = (program, token) => {
+    if (program.searchWords.includes(token)) return 4;
+    if (program.searchWords.some((w) => w.startsWith(token))) return 3;
+    if (program.searchText.includes(token)) return 2;
+    if (token.length >= 4) {
+      const max = token.length >= 7 ? 2 : 1;
+      if (
+        program.searchWords.some((w) => editDistanceAtMost(token, w, max))
+      )
+        return 1;
+    }
+    return 0;
+  };
+
+  const scored = [];
+  for (const program of list) {
+    let total = 0;
+    let all = true;
+    for (const token of tokens) {
+      const s = scoreToken(program, token);
+      if (s === 0) {
+        all = false;
+        break;
+      }
+      total += s;
+    }
+    if (all) scored.push([total, program]);
+  }
+  return scored.sort((a, b) => b[0] - a[0]).map(([, program]) => program);
+}
 
 /**
  * Applies a selection. Values within one facet are OR'd and the facets are

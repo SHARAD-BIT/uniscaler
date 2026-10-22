@@ -1,0 +1,528 @@
+{
+ "slug": "sharda-university-online",
+ "name": "Sharda University Online",
+ "establishedYear": "1996",
+ "location": "Greater Noida, Uttar Pradesh",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   0,
+   1,
+   4,
+   9,
+   34
+  ],
+  "total": 48
+ },
+ "banner": "/university/banners/sharda-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  },
+  {
+   "title": "BCI",
+   "logo": "/university/approvals/bar-council-of-india-bci-logo.webp"
+  },
+  {
+   "title": "INC",
+   "logo": "/university/approvals/inc-indian-nursing-council-approval.jpg"
+  },
+  {
+   "title": "NCTE",
+   "logo": "/university/approvals/ncte-logo.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Sharda University was established in 1996 and today it is the largest educational group located in Uttar Pradesh. It offers various undergraduate postgraduate, diploma, and other certificate courses in online and regular modes. This institute consists of more than 13,000 students and more than 900 teachers and other faculty members."
+  },
+  {
+   "t": "p",
+   "text": "The University has various campuses in Agra, Greater Noida, and Mathura. Its main campus is spread over 180 acres of land with a 3.5 million square feet infrastructure. The University is approved by the University Grants Commission, under the UGC Act 1956. It is a full-fledged University and not just a deemed University. Also, the University is approved by the State Legislature of Uttar Pradesh."
+  },
+  {
+   "t": "p",
+   "text": "The University is vibrant and diverse and has students from 95+ countries 29 states and many other places. It has various national and international recognitions with 200+ functional MOUs under Tuition fee programs/ Semester Exchange to offer global exposure and boundless opportunities. It has also been accredited by the National Assessment & Accreditation Council (NAAC) with a grade of A+. It is awarded for excellent education by ASSOCHAM which is supported by the Ministry of Commerce, Government of India."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The University is approved by the NBA which is the National Board of Accreditation offered for engineering programs. It has collaborated with 210+ national and international organizations. Currently, it is offering 130+ programs at undergraduate and postgraduate levels through departments like Engineering and Technology, Basic Sciences and Research, Agricultural Sciences, Humanities and Social Sciences, Allied Health Sciences, Design, Architecture and planning, Nursing Science and research, Media, Film and Entertainment, Law, Medical Sciences & Research, Dental Sciences, Pharmacy, and Education."
+  },
+  {
+   "t": "p",
+   "text": "As per the National Institutional Ranking Framework, the University is ranked 87th in the University Category. In the Management category, it is ranked 101-125th rank, in engineering rank it is ranked 150-200 position, and in pharmacy, it is ranked 62nd. It is also approved by UGC, Department of Higher Education, a prestigious member of the Association of Indian Universities. Bar Council of India (BCI), National Medical Commission (NMC), Dental Council of India (DCI), Council of Architecture (COA), NCTE, INC, ASIC and many more. Online courses offered by the University are Bachelor of Business Administration (General), Bachelor of Computer Application (General), Bachelor of Arts (Hons. Political Science), and Master of Commerce (General)."
+  },
+  {
+   "t": "p",
+   "text": "Courses offered by Sharda University Online"
+  },
+  {
+   "t": "li",
+   "text": "Bachelor of Business Administration"
+  },
+  {
+   "t": "li",
+   "text": "Bachelor of Computer Application"
+  },
+  {
+   "t": "li",
+   "text": "Bachelor of Arts"
+  },
+  {
+   "t": "li",
+   "text": "Master of Commerce"
+  },
+  {
+   "t": "li",
+   "text": "Master of Computer Applications"
+  },
+  {
+   "t": "li",
+   "text": "Master of Business Administration"
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Sharda University was established in 1996 located in Uttar Pradesh and offers various undergraduate postgraduate, diploma, and other certificate courses in online and regular modes.",
+  "The campuses are at Agra, Greater Noida, and Mathura with the main campus spread over 180 acres of land with 3.5 million square feet of infrastructure.",
+  "This Institution is approved by the University Grants Commission, under the UGC Act 1956 as a full-fledged University and not just a deemed one.",
+  "It is accredited by the National Assessment & Accreditation Council(NAAC) with a grade of A+ and also awarded for excellent education by ASSOCHAM, the Ministry of Commerce, and is approved by the NBA.",
+  "Various disciplines are offered to the students like Engineering and Technology, Basic Sciences and Research, Agricultural Sciences, Humanities and Social Sciences, Allied Health Sciences, Design, Architecture and planning, Nursing Science and research, Media, Film and Entertainment, Law, Medical Sciences & Research, Dental Sciences, Pharmacy, and Education.",
+  "It is also approved by UGC, Department of Higher Education, a prestigious member of the Association of Indian Universities, Bar Council of India(BCI), National Medical Commission, Dental Council of India, Council of Architecture, NCTE, INC, ASIC, and many more.",
+  "Online courses by the Institution are Bachelor of Business Administration (General), Bachelor of Computer Application (General), Bachelor of Arts (Hons. Political Science), and Master of Commerce (General)."
+ ],
+ "courses": [
+  {
+   "name": "Online MBA",
+   "fee": 150000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "37500"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "75000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 80000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3500"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "40000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "20000"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 135000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3500"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "45000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "22500"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 130000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3500"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "65000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "32500"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 135000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3500"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "45000"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "45000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "University is offering online courses for students that are best for working professionals. The University aims to offer quality education to the maximum number of students and helps them by offering various financial aid and scholarships. They offer scholarships to the students enrolled in different study programs. There are various scholarships like Sports Category Scholarships, CUET Scholarships, Innovative Idea Scholarships, Arts and Culture Scholarships, and many more."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "If you are planning to take admission to Sharda University, you can apply through online mode. The first step is selecting the study field and course. Also, make sure to checkmark all the eligibility criteria issued by the University. You can find the course from the list. Here are some steps that can be followed to get enrolled in the University."
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Find the right course as per the qualifications and the eligibility criteria."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Now, make a new registration by filling in the required personal credentials."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Two-step verification will be done and the Students will be eligible to fill the rest of the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- The next step is uploading the documents and scanning them before submitting them on the portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- The final step is submitting the fee. Students should take the final print of the application form and fee receipt."
+  },
+  {
+   "t": "p",
+   "text": "Step 6- After the verification of all the details the students will be updated regarding the confirmation of the admission."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "Does Sharda University Online provide a refund? Refunds for Sharda University Online depend on when the cancellation is made, as per the UGC Refund policy. Cancellations 15 days or more before the admission closing date qualify for a 100% refund; within 15 days before qualify for 90%; within 15 days after qualify for 80%; and within 16–30 days after qualify for 50%. No refund applies after 30 days. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The Examination will be conducted in online mode. The students get the login credentials to the iCloud portal. The students can access all the information on the portal through mobile phones or laptops. Students can get all the information related to the timetable, attendance, class content, and various other resources."
+  },
+  {
+   "t": "p",
+   "text": "The examination pattern and marking will vary from subject to subject. Students have to work closely on studying and making notes at their convenience. Since the study material is available 24/7, they can access the same anytime anywhere. The Students must have a system with good internet connectivity."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: Semester-based examination with a mix of internal assessment (assignments, quizzes, project work) and end-semester exams conducted through online proctored mode. Grading follows CBCS system."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The University is offering top job and career options to the University graduates. At Sharda, the placements drive runs for both summer and final jobs. The placement department is efficient and bridges the gap between graduates and big recruiters and companies. The main objective of the department is to sharpen the creative talents of the University by offering quality education to the students and also by improving the analytical skills of the students."
+  },
+  {
+   "t": "p",
+   "text": "They are offering 100% placement to the students, with the support of 450+ recruiters, 30+ companies, and 150+ Multinational Companies that offer one crore packages to the students. At present, the top recruiters of the University are Sleepwell, Halonix, NTT Data, Amazon, Mahindra Rise, Videocon, iGate, Wipro, Compro Technology, Johnson Controls and many more."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "H&M",
+   "logo": "/university/partners/hm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Paytm",
+   "logo": "/university/partners/paytm.webp"
+  },
+  {
+   "title": "Tata Motors",
+   "logo": "/university/partners/tata-motors.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Avinash Bhowate",
+   "title": "Assistant Professor, MBA — Centre for Distance and Online Education",
+   "description": "Dr. Avinash Bhowate specializes in marketing management, having more than 8 years of industrial and more than 8 years of academic experience. With an MBA and PhD in marketing management, he has contributed significantly to academia through numerous publications in national and international journals. His expertise extends beyond publication, reflecting his passion in his pursuit of advancing knowledge and nurturing future generations of scholars and learners.",
+   "photo": "/university/faculty/dr-avinash-bhowate.webp"
+  },
+  {
+   "name": "Dr. Kirti Prashar",
+   "title": "Assistant Professor, BBA — Centre for Distance and Online Education",
+   "description": "Dr. Kirti Prashar specializes in commerce and marketing, possessing a wealth of knowledge backed by a Master's in Commerce, UGC NET certification, and a Ph.D. in Marketing; she brings academic excellence to her role. With more than five years of dedicated teaching and research experience, she has contributed significantly to academia through numerous publications, including books, book chapters, case studies, and research papers in esteemed national and international journals. Her expertise extends beyond publication, serving as an editor and reviewer for reputable academic journals and with a good number of patents published under her name. She epitomizes dedication, expertise, and passion in her pursuit of advancing knowledge and nurturing future generations of scholars and learners.",
+   "photo": "/university/faculty/dr-kirti-prashar.webp"
+  },
+  {
+   "name": "Dr. Sandeep Kumar",
+   "title": "Assistant Professor, MBA — Centre for Distance and Online Education",
+   "description": "Dr. Sandeep is working as an Assistant Professor at Sharda University, Greater Noida. He graduated in life science from MDU, Rohtak, Haryana, India. He secured his Master of Business Administration from TMV, Pune, Maharashtra, India, and his Ph.D. in marketing at MMU, Ambala, Haryana, India. He is in the field of management at Sharda University, Greater Noida, UP, India. He has been in the teaching profession for more than 9 years. He has presented 4 papers in national and international journals, conferences and symposiums. His main areas of interest include psychology, human behavior and brand management.",
+   "photo": "/university/faculty/dr-sandeep-kumar.webp"
+  },
+  {
+   "name": "Dr. Shubh Arora",
+   "title": "Associate Professor, MBA — Centre for Distance and Online Education",
+   "description": "Dr. Shubh Arora is working as Associate Professor at Centre for Distance and Online Education, Sharda University. She has over 16 years of rich academic and research experience. Holding a Ph.D. in Marketing and an MBA in Marketing & Finance, she began her journey in academia after graduating from HNB Garhwal University. Driven by a passion for continuous improvement, she has undertaken a Refresher Course on Quality Research & Teaching Methodology from UGC-HRDC, Jodhpur. She is committed to fostering dynamic learning environments and employs innovative teaching pedagogy and strategies to enhance student engagement and comprehension. She cultivates an environment where students thrive and excel by integrating cutting-edge methodologies tailored to individual learning styles. Her expertise is evident in her extensive publication record, comprising over 10 papers in prestigious national and international journals indexed with SCOPUS, ABDC, UGC, and other databases. Her research interests span across services marketing, consumer behavior, retail management, digital marketing, and marketing management.",
+   "photo": "/university/faculty/dr-shubh-arora.webp"
+  },
+  {
+   "name": "Dr. Tanya Rastogi",
+   "title": "Assistant Professor, M.Com — Centre for Distance and Online Education",
+   "description": "Dr. Tanya Rastogi is an academic and researcher having teaching experience of more than 6 years. With a Ph.D. from Amity University, Noida, focusing on the influence of sustainable marketing practices on customer loyalty and purchase intention, she also holds a Master of Commerce and a Bachelor's degree from Delhi University. She has accumulated significant teaching experience as a faculty at the University of Delhi and Amity University. She has numerous papers to her name published in prestigious journals, including those indexed by SCOPUS, Web of Science, and ABDC. She is a keen researcher with her research featured in \"A category\" journals such as the Journal of Cleaner Production. She has also presented papers in national and international conferences and attended many national and international seminars and workshops. Her research interests include sustainability, marketing, consumer behaviour, and brand loyalty.",
+   "photo": "/university/faculty/dr-tanya-rastogi.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Ankan Goswami",
+   "rating": 5,
+   "date": "2026-03-13",
+   "content": "Sharda University’s online courses are flexible and convenient for working professionals"
+  },
+  {
+   "name": "Sharda University",
+   "rating": 5,
+   "date": "2025-12-08",
+   "content": "Best university for online courses and their classes are on the weekends with very good lecturers with a perfect knowledge delivery"
+  },
+  {
+   "name": "Love Kumar",
+   "rating": 3,
+   "date": "2025-11-29",
+   "content": "College didn’t reach out to me before my classes started i got to know about classes after 1st assignment announcement"
+  },
+  {
+   "name": "Sharda University",
+   "rating": 5,
+   "date": "2025-10-09",
+   "content": "Realy a good experience to connect with sharda University. And excited also for the course and I would like to refer my friends too."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Are the online programs of Sharda University Valid?",
+   "a": "Yes, online programs of the University are valid and approved by the University Grants Commission."
+  },
+  {
+   "q": "Are online programs available at Sharda University?",
+   "a": "Yes, many undergraduate and postgraduate courses are available at Sharda University."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "What disciplines are available at Sharda University?",
+   "a": "There are various disciplines available at Sharda University, Engineering and Technology, Basic Sciences and Research, Agricultural Sciences, Humanities and Social Sciences, Allied Health Sciences, Design, Architecture and planning, Nursing Science and research, Media, Film and Entertainment, Law, Medical Sciences & Research, Dental Sciences, Pharmacy, and Education."
+  },
+  {
+   "q": "What are the other credentials offered to Sharda University?",
+   "a": "The university got approvals from UGC, NAAC A+, NIRF, ASSOCHAM, BCI, NMC, DCI, COA, NCTE, INC, ASIC, and many more."
+  },
+  {
+   "q": "What are the courses available at Sharda University in Online Mode?",
+   "a": "Online courses by the Institution are Bachelor of Business Administration (General), Bachelor of Computer Application (General), Bachelor of Arts (Hons. Political Science), and Master of Commerce (General)."
+  }
+ ]
+}

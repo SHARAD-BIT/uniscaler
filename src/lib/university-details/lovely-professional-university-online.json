@@ -1,0 +1,1152 @@
+{
+ "slug": "lovely-professional-university-online",
+ "name": "LPU Online",
+ "establishedYear": "2005",
+ "location": "Jalandhar, Punjab",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   10,
+   4,
+   38,
+   292,
+   1189
+  ],
+  "total": 1533
+ },
+ "banner": "/university/banners/lovely-professional-university-online.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "UGC-DEB",
+   "logo": "/university/approvals/ugc-deb-logo.jpg"
+  },
+  {
+   "title": "NAAC A++",
+   "logo": "/university/approvals/logo-naac-a-plus-plus.jpg"
+  },
+  {
+   "title": "SACSCOC",
+   "logo": "/university/approvals/SACSCOC.png"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Lovely Professional University (LPU) is a top-ranking university in India in various academic disciplines, ranked by NIRF. LPU Online is no different, as it is one of the top online education providers in India."
+  },
+  {
+   "t": "p",
+   "text": "The university has various affiliations, including recognition from the University Grants Commission (UGC), the All India Council for Technical Education (AICTE), and World Education Services (WES). The university has been ranked by NIRF, WURI, and The World University Rankings 2022. The quality of education this university provides is quite evident from its NAAC A++ grading."
+  },
+  {
+   "t": "p",
+   "text": "The university offers online UG and PG courses in the domains of Management, Computer Applications, Commerce, Arts, and science. The curriculum for every course is industry-oriented, as it has been designed by expert practitioners and experienced faculty. Apart from academic learning, the university conducts skilling classes conducted by a dedicated team of in-house professors."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The university has its own Learning Management System (LMS) that can be accessed as a mobile app, which is quite user-friendly and has customized features to ensure students have a seamless learning experience."
+  },
+  {
+   "t": "p",
+   "text": "There are live online classes with real-time interaction between the faculty and students to offer a structured opportunity to communicate. This is to make sure that online learners have an innovative classroom experience. However, the live lectures are recorded and made available for all to access to provide maximum flexibility to the students."
+  },
+  {
+   "t": "p",
+   "text": "The university regards extracurricular activities and encourages its online learners to join community service groups. This not just deviates students from mundane academics but also allows them to build strong networks and share their innovative thoughts with the community."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Placement Assistance",
+   "content": "There are several career assistance services including CV workshops and mock interviews"
+  },
+  {
+   "title": "Latest Curriculum",
+   "content": "The curriculum is industry-aligned and according to the latest trends"
+  },
+  {
+   "title": "Incubation Centres",
+   "content": "To help entrepreneurial avenues, there are incubation centres for seed capital and technology support"
+  }
+ ],
+ "facts": [
+  "LPU Online is approved by UGC-DEB to offer UG and PG degrees in the online mode.",
+  "The university has its own LMS which can be accessed as a mobile app as well.",
+  "The examinations are conducted in the online mode with remote proctoring using various Artificial Intelligence (AI) tools.",
+  "The students can access exclusive resources like case studies, scholarly articles, and journals.",
+  "Students can take up various additional online certification courses conducted by the university to enhance their resumes.",
+  "The students have the opportunity to undertake research endeavors as the university has world-class research facilities and infrastructure for the same.",
+  "The university regularly conducts seminars, workshops, and mock interviews for professional enhancement and webinars by eminent speakers from relevant industries."
+ ],
+ "courses": [
+  {
+   "name": "Diploma in Computer Applications",
+   "fee": 50000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 160000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "40000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "40000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 100000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 150000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 120000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "20000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "20000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "600"
+    }
+   ]
+  },
+  {
+   "name": "Diploma in Business Administration",
+   "fee": 50000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 120000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "20000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "20000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 80000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "20000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "20000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 150000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA (Dual)",
+   "fee": 200000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "50000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "50000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 200000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "50000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "50000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech",
+   "fee": 840000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "840000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 100000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Nowadays, education loans and other financing options are available out there to easily pursue what the student wants to pursue with no financial stress. LPU online also offers students these available options to easily finance their education."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "MBA",
+      "Loan amount",
+      "6 months - 4.60%",
+      "Total Interest Amount",
+      "8 months - 5.95%",
+      "Total Interest Amount",
+      "10 months - 7.50%",
+      "Total Interest Amount",
+      "12 months - 8.95%",
+      "Total Interest Amount",
+      "24 months - 18%",
+      "Total Interest Amount"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Full Fees",
+      "₹129,400",
+      "₹22,558.73",
+      "₹5,952.40",
+      "₹17,137.41",
+      "₹7,699.30",
+      "₹13,910.50",
+      "₹9,705.00",
+      "₹11,748.44",
+      "₹11,581.30",
+      "₹6,362.17",
+      "₹23,292"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Semester fees",
+      "₹35,550",
+      "₹6,197.55",
+      "₹1,635.30",
+      "₹4,708.15",
+      "₹2,115.23",
+      "₹3,821.63",
+      "₹2,666.25",
+      "₹3,227.64",
+      "₹3,181.73",
+      "₹1,747.88",
+      "₹6,399"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "MCA",
+      "Loan amount",
+      "6 months - 4.60%",
+      "Total Interest Amount",
+      "8 months - 5.95%",
+      "Total Interest Amount",
+      "10 months - 7.50%",
+      "Total Interest Amount",
+      "12 months - 8.95%",
+      "Total Interest Amount",
+      "24 months - 18%",
+      "Total Interest Amount"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Full Fees",
+      "₹97,000",
+      "₹16,910.33",
+      "₹4,462.00",
+      "₹12,846.44",
+      "₹5,771.50",
+      "₹10,427.50",
+      "₹7,275.00",
+      "₹8,806.79",
+      "₹8,681.50",
+      "₹4,769.17",
+      "₹17,460"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Semester fees",
+      "₹26,500",
+      "₹4,619.83",
+      "₹1,219.00",
+      "₹3,509.59",
+      "₹1,576.75",
+      "₹2,848.75",
+      "₹1,987.50",
+      "₹2,405.98",
+      "₹2,371.75",
+      "₹1,302.92",
+      "₹4,770"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "MCom",
+      "Loan amount",
+      "6 months - 4.60%",
+      "Total Interest Amount",
+      "8 months - 5.95%",
+      "Total Interest Amount",
+      "10 months - 7.50%",
+      "Total Interest Amount",
+      "12 months - 8.95%",
+      "Total Interest Amount",
+      "24 months - 18%",
+      "Total Interest Amount"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Full Fees",
+      "₹80,800",
+      "₹14,086.13",
+      "₹3,716.80",
+      "₹10,700.95",
+      "₹4,807.60",
+      "₹8,686.00",
+      "₹6,060.00",
+      "₹7,335.97",
+      "₹7,231.60",
+      "₹3,972.67",
+      "₹14,544"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Semester fees",
+      "₹22,000",
+      "₹3,835.33",
+      "₹1,012.00",
+      "₹2,913.63",
+      "₹1,309.00",
+      "₹2,365.00",
+      "₹1,650.00",
+      "₹1,997.42",
+      "₹1,969.00",
+      "₹1,081.67",
+      "₹3,960"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "MA, MSc",
+      "Loan amount",
+      "6 months - 4.60%",
+      "Total Interest Amount",
+      "8 months - 5.95%",
+      "Total Interest Amount",
+      "10 months - 7.50%",
+      "Total Interest Amount",
+      "12 months - 8.95%",
+      "Total Interest Amount",
+      "24 months - 18%",
+      "Total Interest Amount"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Full Fees",
+      "₹64,600",
+      "₹11,261.93",
+      "₹2,971.60",
+      "₹8,555.46",
+      "₹3,843.70",
+      "₹6,944.50",
+      "₹4,845.00",
+      "₹5,865.14",
+      "₹5,781.70",
+      "₹3,176.17",
+      "₹11,628"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Semester fees",
+      "₹17,500",
+      "₹3,050.83",
+      "₹805.00",
+      "₹2,317.66",
+      "₹1,041.25",
+      "₹1,881.25",
+      "₹1,312.50",
+      "₹1,588.85",
+      "₹1,566.25",
+      "₹860.42",
+      "₹3,150"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "BCA",
+      "Loan amount",
+      "6 months - 4.60%",
+      "Total Interest Amount",
+      "8 months - 5.95%",
+      "Total Interest Amount",
+      "10 months - 7.50%",
+      "Total Interest Amount",
+      "12 months - 8.95%",
+      "Total Interest Amount",
+      "24 months - 18%",
+      "Total Interest Amount"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Full Fees",
+      "₹145,500",
+      "₹25,365.50",
+      "₹6,693.00",
+      "₹19,269.66",
+      "₹8,657.25",
+      "₹15,641.25",
+      "₹10,912.50",
+      "₹13,210.19",
+      "₹13,022.25",
+      "₹7,153.75",
+      "₹26,190"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Semester fees",
+      "₹26,500",
+      "₹4,619.83",
+      "₹1,219.00",
+      "₹3,509.59",
+      "₹1,576.75",
+      "₹2,848.75",
+      "₹1,987.50",
+      "₹2,405.98",
+      "₹2,371.75",
+      "₹1,302.92",
+      "₹4,770"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "BCom",
+      "Loan amount",
+      "6 months - 4.60%",
+      "Total Interest Amount",
+      "8 months - 5.95%",
+      "Total Interest Amount",
+      "10 months - 7.50%",
+      "Total Interest Amount",
+      "12 months - 8.95%",
+      "Total Interest Amount",
+      "24 months - 18%",
+      "Total Interest Amount"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Full Fees",
+      "₹121,200",
+      "₹21,129.20",
+      "₹5,575.20",
+      "₹16,051.43",
+      "₹7,211.40",
+      "₹13,029.00",
+      "₹9,090.00",
+      "₹11,003.95",
+      "₹10,847.40",
+      "₹5,959.00",
+      "₹21,816"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Semester fees",
+      "₹22,000",
+      "₹3,835.33",
+      "₹1,012.00",
+      "₹2,913.63",
+      "₹1,309.00",
+      "₹2,365.00",
+      "₹1,650.00",
+      "₹1,997.42",
+      "₹1,969.00",
+      "₹1,081.67",
+      "₹3,960"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "BA",
+      "Loan amount",
+      "6 months - 4.60%",
+      "Total Interest Amount",
+      "8 months - 5.95%",
+      "Total Interest Amount",
+      "10 months - 7.50%",
+      "Total Interest Amount",
+      "12 months - 8.95%",
+      "Total Interest Amount",
+      "24 months - 18%",
+      "Total Interest Amount"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Full Fees",
+      "₹96,900",
+      "₹16,892.90",
+      "₹4,457.40",
+      "₹12,833.19",
+      "₹5,765.55",
+      "₹10,416.75",
+      "₹7,267.50",
+      "₹8,797.71",
+      "₹8,672.55",
+      "₹4,764.25",
+      "₹17,442"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Semester fees",
+      "₹17,500",
+      "₹3,050.83",
+      "₹805.00",
+      "₹2,317.66",
+      "₹1,041.25",
+      "₹1,881.25",
+      "₹1,312.50",
+      "₹1,588.85",
+      "₹1,566.25",
+      "₹860.42",
+      "₹3,150"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Note: Loan Partner - Financepeer"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission procedure at LPU Online takes place in online mode. The fresh admission batches start every 6 months. The admission session generally starts in the months of January and July of every year. Direct admission is done on the basis of one’s educational qualifications; no other entrance exams are conducted for taking admission. The admission procedure 2023 for the online courses at LPU Online is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: The first step is registration. You have to sign up and pay a registration fee of ₹500."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: The Next step is to fill out the online application form and upload relevant documents."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Now, you have to pay the program fee."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: The university will verify the documents and notify you for further procedures."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Upon approval from the university, you will get your LMS credentials via email."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "LPU Invited Online and Distance Learners to Participate in the Campus-based 14th Annual Sports Meet! Click here to know more!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of LPU Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of LPU University Online Courses? LPU Online follows UGC norms to refund the course on admission withdrawal or cancellation. Here is how much students get if they cancel admission: ⭐15 days or more before the last admission date—100% refund ⭐Less than 15 days before the last admission date—90% refund ⭐Within 15 days after the last admission date, 80% refund ⭐15–30 days after last admission date – 50% refund ⭐After 30 days, 0% refund ⭐LPU may not refund the registration fee paid at the time of admission. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "LPU Online conducts online proctored exams that are remotely monitored live using several Artificial Intelligence tools. The students can give the exams comfortably from their homes, but they should have a good internet connection and the right digital assets, like a computer, mic, and camera or a laptop with a functional camera and mic."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "University",
+      "LPU"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Exam Pattern",
+      "Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MCQ Questions",
+      "40"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Marks / Question",
+      "1"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Subjective Questions",
+      "4, To be attempted 3"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Project (Last Sem)",
+      "100"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Marks / Question",
+      "10"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Assignment Marks",
+      "30"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Passing Marks",
+      "40%"
+     ],
+     "header": false
+    }
+   ]
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our students got an opportunity through:"
+  },
+  {
+   "t": "li",
+   "text": "Incubator for starting one’s own startup"
+  },
+  {
+   "t": "li",
+   "text": "Career mentorship for placement drives"
+  },
+  {
+   "t": "li",
+   "text": "Resume workshops and interview sessions"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Bosch",
+   "logo": "/university/partners/bosch.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Flipkart",
+   "logo": "/university/partners/flipkart.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "HDFC Bank",
+   "logo": "/university/partners/hdfc-bank.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Tech Mahindra",
+   "logo": "/university/partners/tech-mahindra.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Rajeev Gupta",
+   "title": "Assistant Professor",
+   "description": "Teaching: International Business Environment",
+   "photo": "/university/faculty/Rajeev_Gupta.webp"
+  },
+  {
+   "name": "Anup Sharma",
+   "title": "Assistant Professor",
+   "description": "Teaching: Operations Management & Research",
+   "photo": "/university/faculty/Anup_Sharma.webp"
+  },
+  {
+   "name": "Dr. Tanima Dutta",
+   "title": "Associate Professor",
+   "description": "Teaching: Managerial Economics",
+   "photo": "/university/faculty/Dr._Tanima_Dutta.webp"
+  },
+  {
+   "name": "Pretty Bhalla",
+   "title": "Associate Professor",
+   "description": "Teaching: Marketing Management",
+   "photo": "/university/faculty/Pretty_Bhalla.webp"
+  },
+  {
+   "name": "Dr. Shikha Goyal",
+   "title": "Associate Professor",
+   "description": "Teaching: Organizational Behavior and Human Resource Dynamics",
+   "photo": "/university/faculty/Dr._Shikha_Goyal.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Shekhu.P",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "A skilled counsellor analyzes your academic record, interests, strengths, and financial budget before recommending options."
+  },
+  {
+   "name": "Indrajit Laha",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "i am just starting bba online program, let see how lpu react , and how many marks I am able to score there, And after 6 months I edit my review."
+  },
+  {
+   "name": "Garv Chopra",
+   "rating": 4,
+   "date": "2026-08-07",
+   "content": "I m very much glad that I got an addmission in lpu in my one of the favourite course . Soo I'm very much thankful to college vidya team and lpu team to help me all over the process."
+  },
+  {
+   "name": "Varsha Mittal",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "Good opportunity for learning things online and offline"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is LPU online approved by UGC?",
+   "a": "Yes, the LPU has been approved by UGC-DEB to offer degree courses in online mode."
+  },
+  {
+   "q": "Which courses are offered at LPU online?",
+   "a": "The university offers online UG and PG courses in the domains of Management, Computer Applications, Commerce, Arts, and Science."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "What are the facilities provided by LPU online?",
+   "a": "Apart from quality education, LPU online provides its students access to exclusive study resources like scholarly articles and journals, case studies, and more. They also provide additional online certification courses and research opportunities. Also, there are regular seminars, workshops, mock interviews, and webinars by professionals and experts from the industry."
+  },
+  {
+   "q": "Are examinations conducted in the online mode at LPU?",
+   "a": "Yes, the examinations are conducted in a completely online mode through the Learning Management System (LMS) and are remotely proctored using the latest AI technology."
+  },
+  {
+   "q": "Does LPU online have its own LMS?",
+   "a": "Yes, the university has its own LMS which can also be accessed as a mobile app. It has the latest and customized features for a seamless, flexible, and efficient learning environment."
+  }
+ ]
+}

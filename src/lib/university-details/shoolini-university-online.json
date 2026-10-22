@@ -1,0 +1,594 @@
+{
+ "slug": "shoolini-university-online",
+ "name": "Shoolini University Online",
+ "establishedYear": "2009",
+ "location": "Solan, Himachal Pradesh",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   5,
+   3,
+   30,
+   204,
+   625
+  ],
+  "total": 867
+ },
+ "banner": "/university/banners/shoolini-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC",
+   "logo": "/university/approvals/naac-logo.jpg"
+  },
+  {
+   "title": "ISO",
+   "logo": "/university/approvals/iso-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Shoolini University, located in the Solan district of Himachal Pradesh, was established in the year 2009, that comes under the top private university in India. The university has ranked amongst the top 100 universities by the National Institutional Ranking Framework (NIRF)."
+  },
+  {
+   "t": "p",
+   "text": "After establishing a great name in the field of the regular mode of education, the university has now started its educational services through the online mode. Shoolini Online is an online venture, that has started offering various undergraduate and postgraduate courses through online mode."
+  },
+  {
+   "t": "p",
+   "text": "For offering educational services via online mode, the university has gotten all the necessary accreditations like University Grants Commission (UGC), NIRF, and NAAC accreditations, etc. As per the QS World University Rankings, Shoolini Online has gotten 1st position in India and 6th position in Asia."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The university offers quite exciting benefits to the students in the online mode of learning like cost-effective learning, career support through interview prep and career sessions, and a sense of comfort to pay the full fee when you are satisfied with your after-course outcome."
+  },
+  {
+   "t": "p",
+   "text": "The most important advantage that an online course offer is quality learning with cost-effective budget options. And also enables the student to manage their studies along with gaining work experience, thereby progressively building their resume."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "After becoming a successful education provider in the regular mode, the Shoolini university has started its online venture to offer quality education.",
+  "The university has been accredited and recognized by UGC, NIRF, etc to provide the courses in online mode.",
+  "The online degree awarded by Shoolini Online has equal importance and value as the on-campus degree.",
+  "The course deliverables, lectures, and study materials can be easily accessed through the university Learning Management System.",
+  "The university offers the great benefit of paying 50% of their tuition fee after they get a placement offer or get admission to a desired foreign university to study abroad.",
+  "The university conducts online exams that are monitored through the online proctored software to ensure fair examination practices.",
+  "The university has partnered with various companies like Zydus, Biocon, Hindustan Unilever Limited, LG, L&T, etc to offer great placement support to the students even in online learning mode.",
+  "Through AI interview prep and resume-building sessions, increase your chance of being shortlisted for an interview with Shoolini Online."
+ ],
+ "courses": [
+  {
+   "name": "Online BBA",
+   "fee": 135000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "135000"
+    }
+   ]
+  },
+  {
+   "name": "Online BA Honours",
+   "fee": 60000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "10000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 135000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "135000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 200000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "200000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA (Dual)",
+   "fee": 110000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "27500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "27500"
+    }
+   ]
+  },
+  {
+   "name": "Pay After Placement Program",
+   "fee": 90000,
+   "duration": "2 - 3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "10500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "10500"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 84000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "84000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 200000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "200000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 120000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "120000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 160000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "30000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "30000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "B.Com Honours",
+   "fee": 90000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "15000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 60000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "10000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "10000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Shoolini Online doesn’t offer easy financing options like education loans, EMI payments, etc for paying their course fee. But the university offers an exciting feature of Pay-on-Placement that provides a benefit to the students to pay 50% of the academic fee after they got placed in a company or achieve their expected outcome from the course."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "For applying to any course in the Shoolini Online, the candidate has to apply online. Fresh batches generally start in the month of January-February month of every year. The last date for the January admission cycle is in March month. Admissions for the online courses are conducted on a direct basis, no entrance exams are shown for the same. The 2023 admission procedure for the online courses at Shoolini Online is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Visit the official website and click on &ldquo;Enroll Now&rdquo;."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Enquire about the concerned course and after that start the admission procedure through the online application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Fill up the application form and upload all the necessary documents in the prescribed format and size."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- After this, pay the required amount of fee to secure the admission seat."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- After paying the fee and completing the application process, submit the admission form."
+  },
+  {
+   "t": "p",
+   "text": "Step 6- After a few days the university will send the admission confirmation mail containing your enrollment number and other credentials."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of Shoolini University Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination procedure in the Shoolini Online also takes place in online mode. The online examinations are conducted through AI-proctored technologies that ensure fair examination practices. And the examinations are conducted periodically at the end of every semester."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 30% Internal Assessment (case studies, projects, assignments, dissertations) + 70% End-Semester Examination (MCQ + short-answer + long-answer questions). Exams are conducted through AI-proctored online mode via the university's LMS; both proctored and non-proctored formats are used depending on the course/subject."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our Students get benefits like"
+  },
+  {
+   "t": "li",
+   "text": "E-Portfolio and Patent Application"
+  },
+  {
+   "t": "li",
+   "text": "50% Tuition Fee Pay After Placement"
+  },
+  {
+   "t": "li",
+   "text": "2x Chance of being Selected in an Interview with AI Interview Prep"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "ICICI Bank",
+   "logo": "/university/partners/icici-bank.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Nestle",
+   "logo": "/university/partners/nestle.webp"
+  },
+  {
+   "title": "Hindustan Unilever Limited",
+   "logo": "/university/partners/hindustan-unilever-limited.webp"
+  },
+  {
+   "title": "Ericsson",
+   "logo": "/university/partners/ericsson.webp"
+  },
+  {
+   "title": "Decathlon",
+   "logo": "/university/partners/decathlon.webp"
+  },
+  {
+   "title": "Zydus",
+   "logo": "/university/partners/zydus.webp"
+  },
+  {
+   "title": "LG",
+   "logo": "/university/partners/lg.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Prof. Ashish Khosla",
+   "title": "Co-founder & President Innovation",
+   "description": "Ex - Citibank, HSBC, Marico, UNB Alum: IIM Calcutta, PEC",
+   "photo": "/university/faculty/Prof._Ashish_Khosla.webp"
+  },
+  {
+   "name": "Tarun Gupta",
+   "title": "Professor of Practice in Management",
+   "description": "Ex - Puncom, Airtel, Vodafone, Aircel Alum: YPS Patiala, PEC",
+   "photo": "/university/faculty/Tarun_Gupta.webp"
+  },
+  {
+   "name": "Munish Shehrawat",
+   "title": "President and Dean FMS",
+   "description": "Ex - Nudje, HSBC, Citibank Alum: IRMA, Delhi University",
+   "photo": "/university/faculty/Munish_Shehrawat.webp"
+  },
+  {
+   "name": "Mohit Varma",
+   "title": "Learning & Development Consultant",
+   "description": "Ex - NDTV, Reliance Communications Alum: ISB, St. Stephens's",
+   "photo": "/university/faculty/Mohit_Varma.webp"
+  },
+  {
+   "name": "Sandeep Shivram Poduval",
+   "title": "Ex - Deejital (Co-Founder)",
+   "description": "Ex - Deejital (Co-Founder), Commercial Bank of Dubai, Lowe Dubai Alum: BKSBM, BVM",
+   "photo": "/university/faculty/Sandeep_Shivram.webp"
+  },
+  {
+   "name": "Ashoo Khosla",
+   "title": "Co-founder & President Innovation",
+   "description": "Ex - Dr Reddy'd, Novartis & NMC Group Alum: IGMC, ISM",
+   "photo": "/university/faculty/Ashoo_Khosla.webp"
+  },
+  {
+   "name": "Amit Khanna",
+   "title": "Adjunct Professor and Advisor",
+   "description": "Ex - McKinsey, Capital One, Genpact Alum: IIM Calcutta, IIT Delhi",
+   "photo": "/university/faculty/Amit_Khanna.webp"
+  },
+  {
+   "name": "Dr. Pooja Verma",
+   "title": "Associate Professor",
+   "description": "",
+   "photo": "/university/faculty/Dr._Pooja_Verma.webp"
+  },
+  {
+   "name": "Arathi Kamath",
+   "title": "Associate Professor",
+   "description": "Ex - McKinsey, Capital One, Genpact Alum: IIM Calcutta, IIT Delhi",
+   "photo": "/university/faculty/Arathi_Kamath.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "nitin vashist",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "Very supportive counsellor and excellent infrastructure"
+  },
+  {
+   "name": "Dipanshu Singh",
+   "rating": 3,
+   "date": "2026-08-08",
+   "content": "This college is very right, thank you college Vidya"
+  },
+  {
+   "name": "Yashwardhan Singh Kushwaha Kushwaha",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "Shoolini University offers a smooth learning experience with supportive faculty, an easy-to-use online portal, and quality study materials. I am satisfied with my experience and recommend it to others"
+  },
+  {
+   "name": "Matruprasad pradhan",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "Excellent university good service and good teaching"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "Is Shoolini Online a government or private university?",
+   "a": "Shoolini Online is a private university whose campus is situated in the Solan district of Himachal Pradesh."
+  },
+  {
+   "q": "Does Shoolini Online offer placement assistance?",
+   "a": "Yes, Shoolini Online is partnered with various companies like ICICI Bank, L & T, LG, Zydus, etc to offer placement opportunities to the students enrolled."
+  },
+  {
+   "q": "Is Shoolini a UGC-recognized university?",
+   "a": "Yes, Shoolini Online is recognized by the University Grants Commission(UGC) to offer online courses in the online mode."
+  },
+  {
+   "q": "Is there LMS support at Shoolini Online?",
+   "a": "Yes, Shoolini Online is equipped with the Learning Management System(LMS) features to offer quality learning even through the online mode."
+  },
+  {
+   "q": "Do I get scholarship assistance at Shoolini Online?",
+   "a": "No, Shoolini Online does not offer any scholarship assistance but its offers a pay-on-placement scheme. Through this scheme, the students get to pay 50% of the tuition fee after achieving their outcome. The outcome can be, whether getting placed in a company or getting selected by a foreign university to study abroad."
+  },
+  {
+   "q": "Is the admission for Shoolini online courses conducted online?",
+   "a": "Yes, the admission process at the Shoolini Online is conducted online that generally starts in the month of January and lasts till the month of March."
+  }
+ ]
+}

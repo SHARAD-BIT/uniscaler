@@ -53,15 +53,17 @@ const Navbar = () => {
   // shortcuts. "Online Courses" carries a default nav-state so the destination
   // page renders instead of bouncing to "/" (it redirects when opened cold).
   // Every item now carries `img` rather than `Icon`: the client-supplied
-  // artwork in `public/nav-icons/` replaced the react-icons glyphs. All six are
-  // PNGs — the badge SVGs that arrived first were swapped out one at a time and
-  // none is left. Each was delivered on a solid white square and had its
-  // background flood-filled out from the border, which is what keeps the
-  // enclosed whites (a letter counter, a face, a radio ring) intact.
-  //
-  // Two of them — Refer & Earn and Study Abroad — are outline art with no
-  // container, so they read much fainter on the strip than the four badges do.
-  // That is the artwork, not the processing; see CHANGELOG 2026-08-19.
+  // SVG artwork in `public/nav-icons/` replaced the react-icons glyphs (and
+  // then the interim PNGs, one at a time — the last on 2026-08-24). All but
+  // AI Assistance arrived on a 1080-square canvas with wide empty margins,
+  // so their viewBoxes are cropped (Refer & Earn `53 53 973 973`,
+  // Online Courses `162 162 756 756`, Common Application Form
+  // `90 90 900 900`, Contact `157 160 763 763` — each a square centred on
+  // its art) to fill the strip slot like a full-bleed image would rather
+  // than shrinking inside the padding. Study Abroad (the boarding-pass art,
+  // third delivery) is cropped tight to its art (`117 159 846 762`) and its
+  // `imgClass` gives it a wider box plus an in-place scale — the same trick
+  // `ai-icon` uses, kept from when its previous art was strongly landscape.
   //
   // The `Icon` branch is kept in the markup below, not deleted — it is what
   // renders if an item is ever added without artwork.
@@ -69,26 +71,39 @@ const Navbar = () => {
     {
       name: "Refer & Earn",
       href: "/refer-and-earn",
-      img: "/nav-icons/refer-and-earn.png",
+      img: "/nav-icons/refer-and-earn.svg",
     },
-    { name: "AI Assistance", href: "/ai", img: "/nav-icons/ai-assistance.svg" },
+    {
+      name: "AI Assistance",
+      href: "/ai",
+      img: "/nav-icons/ai-assistance.svg",
+      imgClass: "ai-icon",
+    },
     {
       name: "Online Courses",
       href: `/online-course/${onlineCourseDetails[0].name}`,
       state: { course: onlineCourseDetails[0] },
-      img: "/nav-icons/online-courses.png",
+      img: "/nav-icons/online-courses.svg",
+      imgClass: "online-courses-icon",
     },
     {
       name: "Study Abroad",
       href: "/study-abroad",
-      img: "/nav-icons/study-abroad.png",
+      img: "/nav-icons/study-abroad.svg",
+      imgClass: "study-abroad-icon",
     },
     {
       name: "Common Application Form",
       href: "/common-application-form",
-      img: "/nav-icons/common-application-form.png",
+      img: "/nav-icons/common-application-form.svg",
+      imgClass: "caf-icon",
     },
-    { name: "Contact", href: "/contact", img: "/nav-icons/contact.png" },
+    {
+      name: "Contact",
+      href: "/contact",
+      img: "/nav-icons/contact.svg",
+      imgClass: "contact-icon",
+    },
   ];
 
   // Layer 2 — the main-bar links that sit beside the logo.
@@ -247,7 +262,7 @@ const Navbar = () => {
       <div id="app-switcher" className={`appBar ${appBarOpen ? "open" : ""}`}>
         {/* visibility:hidden when collapsed keeps these out of the tab order */}
         <div className="appBarInner">
-          {appShortcuts.map(({ name, href, state, Icon, img }) => (
+          {appShortcuts.map(({ name, href, state, Icon, img, imgClass }) => (
             <Link
               key={name}
               href={href}
@@ -256,7 +271,7 @@ const Navbar = () => {
               title={name}
             >
               {img ? (
-                <img src={img} alt="" className={`appItemImg${name === "AI Assistance" ? " ai-icon" : ""}`} />
+                <img src={img} alt="" className={`appItemImg${imgClass ? ` ${imgClass}` : ""}`} />
               ) : (
                 <Icon className="appItemIcon" />
               )}
@@ -449,7 +464,7 @@ const Navbar = () => {
             >
               <span className="appSheetHandle" aria-hidden="true" />
               <div className="appSheetGrid">
-                {appShortcuts.map(({ name, href, state, Icon, img }) => (
+                {appShortcuts.map(({ name, href, state, Icon, img, imgClass }) => (
                   <Link
                     key={name}
                     href={href}
@@ -461,7 +476,7 @@ const Navbar = () => {
                     tabIndex={sheetOpen ? 0 : -1}
                   >
                     {img ? (
-                      <img src={img} alt="" className={`appSheetItemImg${name === "AI Assistance" ? " ai-icon" : ""}`} />
+                      <img src={img} alt="" className={`appSheetItemImg${imgClass ? ` ${imgClass}` : ""}`} />
                     ) : (
                       <Icon className="appSheetItemIcon" />
                     )}

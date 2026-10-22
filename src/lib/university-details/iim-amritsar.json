@@ -1,0 +1,425 @@
+{
+ "slug": "iim-amritsar",
+ "name": "IIM Amritsar",
+ "establishedYear": "2015",
+ "location": "Amritsar, Punjab",
+ "rating": 3.8,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   2,
+   1
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/iim-amritsar.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "IIM Amritsar was established with the support of the Ministry of Education which was earlier known as the Ministry of Human Resource and Development. The institute is supported by the government of India. It is the 15th member of the IIM Family. This institution was inaugurated by Surjit Singh Rakhra, who was then Minister of Higher Education & language."
+  },
+  {
+   "t": "p",
+   "text": "IIMAm welcomed its first batch in the year 2015-2017. It was established in the year 2015. It has a beautiful campus in Amritsar, which is a religious place of the Sikh community, the land of the Golden Temple. It runs through the Punjab Institute of Technology Building which is just 5 km from the Railway station, and 10 km away from the airport, hence commuting from the institute to other places is easy. IIM Amritsar offers postgraduate and doctoral programs in a wide range of specializations."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Top Course from IIMs!"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Courses Online",
+      "IIM Online MBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Executive MBA",
+      "IIM Online Certificate Courses"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Data Science and Analytics Online",
+      "IIM Digital Marketing and Analytics Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Project Management Online",
+      "IIM Financial Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Human Resource Management Online",
+      "IIM Leadership and Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Operations and Six Sigma Online",
+      "IIM Chief Business Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Financial Data Analytics Online",
+      "IIM Marketing and Sales Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Hospital and Healthcare Management Online",
+      "IIM Digital Transformation and Innovation Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Business Analytics Online",
+      "IIM Blockchain and Fintech Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Public Policy Management Online",
+      "IIM CMO Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM CFO Course Online",
+      "IIM Financial Services and Capital Markets Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Investment Banking and Capital Markets Online",
+      "IIM AI and Machine Learning Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief HR Officer Online Course",
+      "IIM Chief Operations Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief Executive Officer Online Course",
+      "IIM General Management Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Logistics and Supply Chain Management Online"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "IIM Amritsar offers On-campus and Executive courses in business management. The institute offers a Master of Business Administration (MBA) designed to offer advanced knowledge and expertise in business management. Students can choose a specialization in MBA in Business Analytics (MBA-BA) and Human Resources (MBA-HR). It also supports the Executive MBA (EMBA) program which is designed for experienced working professionals. The program is offered in online mode with requirements of 5 campus visits in 2 years."
+  },
+  {
+   "t": "p",
+   "text": "IIM Amritsar offers a two-year MSc in Data Science and Management in collaboration with IIT Ropar. This program blends advanced expertise in data analytics with management principles. Apart from from master’s program, IIM Amritsar offers a Doctoral program in a wide range of disciplines. It offers doctoral programs in Organizational Behaviour and Human Resources, Marketing, Finance, Accounting and Control, Economics, Operations Management and Quantitative Techniques, Information Technology and Computational Systems, and Strategy. Additionally, it also offers an Integrated B.Tech. and MBA (IBM) program."
+  },
+  {
+   "t": "p",
+   "text": "The institute is highly focused on working on research projects and taking new initiatives. The institute is approved by the All India Council for Technical Education and, the Association of Indian Universities, it has the status of an autonomous institution, has been ranked by the National Institution Ranking Framework, is a prestigious member of the Association of Advance Collegiate Schools of Business, and Association of MBA."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Assured Placements",
+   "content": "With many top recruiters and their hiring partners, the institute is providing 100% placement to students in various industries."
+  },
+  {
+   "title": "Globally Recognised",
+   "content": "IIM is among the top-ranked Institutes in India and is ranked by some prestigious organizations like AICTE, AMBA, and AACSB."
+  },
+  {
+   "title": "Expert Faculty",
+   "content": "IIM has top faculty members who give excellent guidance to the students along with real-time experience and industry exposure."
+  }
+ ],
+ "facts": [
+  "IIM Amritsar was set up by Surjit Singh Rakhra, who was then Minister of Higher Education and Language in the year 2015.",
+  "It became the 15th member of the IIM family. It successfully welcomed its first batch in the year 2015.",
+  "It is accredited and recognized by many institutions and organizations like AICTE, AMBA, AACSB, and also by the Association of Indian Universities.",
+  "IIM Amritsar offers postgraduate and doctoral programs in a wide range of specializations.",
+  "IIM Amritsar offers On-campus and Executive courses with a focus on high-quality learning.",
+  "IIM Amritsar offers an MBA in Business Analytics (MBA-BA) and Human Resources (MBA-HR).",
+  "It is an autonomous institution that is also ranked 47th by the National Institution Ranking Framework.",
+  "IIM Amritsar offers an Executive MBA (EMBA) for working professionals.",
+  "IIM Amritsar offers a two-year MSc in Data Science and Management in collaboration with IIT Ropar.",
+  "IIM Amritsar PhD programs in Organizational Behaviour and Human Resources, Marketing, Finance, Accounting and Control, Economics, Operations Management and Quantitative Techniques, Information Technology and Computational Systems, and Strategy.",
+  "IIT Amritsar also offers an Integrated B.Tech. and MBA (IBM) program."
+ ],
+ "courses": [
+  {
+   "name": "Executive MBA",
+   "fee": 1074000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1074000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "2950"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 1074000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Application Fee",
+     "fee": "2950"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1074000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The institute offers financial assistance to students. They have various scholarships that students can apply for while pursuing their management program. But before applying to these scholarships it is mandatory to check the eligibility criteria for the same. The awardee of the scholarship must have a good scholastic background. There are many banks that grants education loan to students that help them cover all their college expenses be it tuition fee, hostel fee, and all other charges."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The students looking for taking admission to this institute have to appear for the entrance examination. However, the courses offered in online mode might not require any entrance, they just have to fulfill basic eligibility criteria. The first step is checking the right course for you and all the eligibility criteria of the same."
+  },
+  {
+   "t": "p",
+   "text": "Step 1- The students have to visit the official website of the University."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Make registration by entering some basic details like the name of the candidate, address, phone number, and email ID."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- The Institute starts the two-step verification process which is the most essential step while filling an online form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Now, login to the portal with the user ID and password. You have to complete all the details left on the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- Now, upload all your documents and scan them before uploading them to avoid any confusion and blurred images."
+  },
+  {
+   "t": "p",
+   "text": "Step 6- Now make the fee payment and for future reference, you can download the application form and fee receipt."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The students who have taken admission to the online program can appear for the online examination. They have to submit all the assessments, project works, and assignments in online mode at the student's portals. The Institute has a strict proctoring system that ensures examination conduction with zero cheating. But before applying for the examination the students are advised to go through the admission guidelines."
+  },
+  {
+   "t": "p",
+   "text": "The most essential factor is checking all the equipment and devices that have to be used in the examination. You must have a good internet connection along with a system and a laptop. Make sure to have a functional microphone and a camera while appearing for the examination."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "IIM Amritsar is offering amazing job and career opportunities. They are offering packages not just in India but abroad. They are giving packages with an average package of 16.51 LPA. They have witnessed an increase of 12.85% in the average package in the last few years. They have more than 120 recruiters partnered with them that offer many jobs to young and talented graduates. The highest package is recorded as high as INR 36.25 LPA. Top industry recruiting students are consulting and strategy, and top hiring partners are."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "ICICI Bank",
+   "logo": "/university/partners/icici-bank.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Paytm",
+   "logo": "/university/partners/paytm.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-05",
+   "content": "The institute is amazing and offers top-quality education to the students. They have self-paced self-learning material."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-10-05",
+   "content": "I enrolled in an online course while working in the private sector. They helped me in the completion of my course along with other factors like training for interviews and many more."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-10-05",
+   "content": "I am glad I pursued my MBA Program from this institute. They made all the efforts possible to accomplish the best skills and knowledge."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-05",
+   "content": "Great Experience studying at the institute. They offered all the facilities even in the online mode of education."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What courses are offered to the students at IIM Amritsar?",
+   "a": "The courses offered by the Institution are Post Graduate Program in Management (PGP), Executive Post Graduate Program (EPGP), and Fellow Program in Management (FPM)."
+  },
+  {
+   "q": "Does IIM Amritsar offer online programs?",
+   "a": "Yes, the institute offers various online programs in both online and on-campus modes."
+  },
+  {
+   "q": "Are the courses offered by IIM Amritsar in online mode Valid?",
+   "a": "Yes, the courses offered by the institute in online mode are valid and approved by various reputed organizations like AMBA, NIRF, and many more."
+  },
+  {
+   "q": "Can we pursue an online examination at IIM Amritsar?",
+   "a": "Yes, if the student is enrolled in an online program, you are eligible to take an online examination and online submission of the assignment."
+  },
+  {
+   "q": "Do I have to Visit IIM Amritsar to pursue my online course?",
+   "a": "No, all the processes will be done in an online mode right from admission to assignment submission & examination."
+  },
+  {
+   "q": "Can I pursue a doctorate program while working?",
+   "a": "Several online doctorate courses have been launched in the market for working professionals. A few of them include: Explore Online Doctorate Programs for Working Professionals Online Doctorate Course for Working Professionals Doctor of Juridical Science DBA In Supply Chain Management DBA In Supply Artificial Intelligence DBA In Human Resource Management Doctor of Business Administration"
+  },
+  {
+   "q": "Which top IIMs offer online management courses other than IIM Amritsar?",
+   "a": "Here is a list of the top IIMs as per NIRF 2024 Management category which offer different types of online management courses. Top IIMs In India As Per NIRF Ranking 2024 Name Rank Score Indian Institute of Management Ahmedabad 1 83.32 Indian Institute of Management Amritsar 47 52.57 Indian Institute of Management Bangalore 2 81.16 Indian Institute of Management Jammu 42 54.64 Indian Institute of Management Kashipur 23 60.82 Indian Institute of Management Kozhikode 3 77.90 Indian Institute of Management Lucknow 7 74.43 Indian Institute of Management Nagpur 31 56.94 Indian Institute of Management Raipur 14 64.40 Indian Institute of Management Ranch i 17 61.27 Indian Institute of Management Rohtak 12 66.49 Indian Institute of Management Sambalpur 50 51.47 Indian Institute of Management Shillong 24 60.49 Indian Institute of Management Sirmaur 57 50.92 Indian Institute of Management Udaipur 22 60.93 Indian Institute of Management Visakhapatnam 26 59.20"
+  },
+  {
+   "q": "What are some best online executive programs in India?",
+   "a": "Universities have launched numerous online executive courses to empower the Indian workforce. The top ones on that list are tabulated below. Explorer Best Executive Programs In India Executive Program Online In Finance Executive Program Online In HR Executive Program Online In Operations Executive Program Online In Leadership Executive Program Online In Data Science and Analytics Executive Program Online In AI and Machine Learning Executive Program Online In Marketing Executive Program Online In Software and Technology Executive Program Online In Healthcare Executive Program Online In Business Analytics Executive Program Online In DevOps Executive Program Online In Cyber Security Executive Program Online In Bigdata Engineering Executive Program Online In Blockchain Executive Program Online In Cloud Computing LLM Online Job Linked Programs Pay After Placement Programs Explore more online and distance courses In India! Click here for all approved distance and online universities in India!"
+  }
+ ]
+}

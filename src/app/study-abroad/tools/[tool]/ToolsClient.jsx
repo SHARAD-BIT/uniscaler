@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import {
   FaChevronRight,
   FaChevronDown,
@@ -9,14 +9,21 @@ import {
   FaMinus,
   FaPlus,
 } from "react-icons/fa6";
-import { studyAbroadTools } from "@/lib/studyAbroadTools";
+import {
+  studyAbroadTools,
+  LIVING_COSTS,
+  COST_LINES,
+  COST_COUNTRIES,
+} from "@/lib/studyAbroadTools";
 import "./tools.css";
 
 /**
  * The four calculators behind the /study-abroad tools band. One client
  * component switching on the route's slug rather than four route folders:
- * they share the whole page shell, the result-panel layout and the CSS, and
- * differ only in the middle.
+ * they share the result-panel layout and the CSS. All four pages carry
+ * the reference's page structure (purple hero, then the tool); cost and
+ * loan send their country cards on to per-country pages under
+ * [tool]/[country].
  *
  * All maths is standard, public formula work — see each calculator's
  * comment. Every figure that isn't computed (the cost-of-living lines) is
@@ -42,8 +49,10 @@ const inr = (n) => "₹" + Math.round(n).toLocaleString("en-IN");
  *
  * The reference runs this tool as a four-step wizard, and on the client's
  * word (2026-08-21) so does this — the earlier single-form calculator is
- * gone. Steps: the degree (level, duration, university, grading scale) →
- * a score per year of it → contact details → the result. `mode`
+ * gone. Steps, matching the reference's exactly (checked against its
+ * shipped bundle 2026-08-24 — it has no contact/OTP gate in this tool):
+ * the degree (level, duration, university, grading scale) → semester- or
+ * subject-wise scores → the consolidated score → the scorecard. `mode`
  * ("us" | "de") comes from the country cards above and decides which
  * conversion leads step 4; the other still shows as a secondary row.
  *
@@ -73,8 +82,6 @@ function CgpaWizard({ mode }) {
   const [university, setUniversity] = useState("");
   const [college, setCollege] = useState("");
   const [scaleKey, setScaleKey] = useState("10-5");
-  const [lead, setLead] = useState({ name: "", email: "", phone: "" });
-  const [leadStatus, setLeadStatus] = useState("idle");
 
   const [entryMode, setEntryMode] = useState("semester");
   const [semesters, setSemesters] = useState([
@@ -186,7 +193,6 @@ function CgpaWizard({ mode }) {
 
   const restart = () => {
     setStep(0);
-    setLeadStatus("idle");
   };
 
   const leadResult =
@@ -206,7 +212,7 @@ function CgpaWizard({ mode }) {
 
   return (
     <div className="tl-wizard">
-      <h3 className="tl-upgrad-card-title">Calculate your GPA</h3>
+      <h3 className="tl-calc-card-title">Calculate your GPA</h3>
 
       <div className="tl-steps" role="list">
         {WIZARD_STEPS.map((name, i) => (
@@ -248,7 +254,19 @@ function CgpaWizard({ mode }) {
             ))}
           </div>
           <div className="tl-fields">
-
+            <div className="tl-float-group">
+              <label>Duration of Degree</label>
+              <select
+                value={years}
+                onChange={(e) => pickYears(Number(e.target.value))}
+              >
+                {DURATION_OPTIONS.map((n) => (
+                  <option key={n} value={n}>
+                    {n} {n === 1 ? "Year" : "Years"}
+                  </option>
+                ))}
+              </select>
+            </div>
 
             <div className="tl-float-group">
               <label>University Name (Optional)</label>
@@ -331,7 +349,7 @@ function CgpaWizard({ mode }) {
           </p>
 
           {entryMode === "semester" ? (
-            <div className="tl-table-wrap-upgrad">
+            <div className="tl-table-wrap-wizard">
               <div className="tl-table-head-black">
                 <span>Semesters</span>
                 <span>Number of Backlog</span>
@@ -393,7 +411,7 @@ function CgpaWizard({ mode }) {
               </div>
             </div>
           ) : (
-            <div className="tl-table-wrap-upgrad">
+            <div className="tl-table-wrap-wizard">
               <div className="tl-table-head-black">
                 <span>Subject Name</span>
                 <span>Credits / Weight</span>
@@ -558,8 +576,23 @@ function CgpaWizard({ mode }) {
 
 /* ── IELTS band score ─────────────────────────────────────────────── */
 
-/** 9.0, 8.5, … 0.0 — every half band a section can score. */
-const IELTS_BANDS = Array.from({ length: 19 }, (_, i) => (18 - i) / 2);
+/**
+ * Raw-score → band conversion for the two machine-marked sections, after the
+ * published IELTS indicative tables (Listening, and Academic Reading — the
+ * two diverge below band 8). Each row is [minimum raw score, band]; first
+ * match on the way down wins. Speaking and Writing have no raw scores —
+ * examiners award the band directly — which is why the form asks for those
+ * two as bands, exactly as the reference's calculator does.
+ */
+const LISTENING_TO_BAND = [
+  [39, 9], [37, 8.5], [35, 8], [32, 7.5], [30, 7], [26, 6.5], [23, 6],
+  [18, 5.5], [16, 5], [13, 4.5], [10, 4], [8, 3.5], [6, 3], [4, 2.5], [0, 2],
+];
+const READING_TO_BAND = [
+  [39, 9], [37, 8.5], [35, 8], [33, 7.5], [30, 7], [27, 6.5], [23, 6],
+  [19, 5.5], [15, 5], [13, 4.5], [10, 4], [8, 3.5], [6, 3], [4, 2.5], [0, 2],
+];
+const rawToBand = (table, raw) => table.find(([min]) => raw >= min)[1];
 
 /**
  * The overall band is the mean of the four sections rounded to the nearest
@@ -577,251 +610,504 @@ function ieltsOverall(l, r, w, s) {
 }
 
 function IeltsCalculator() {
-  const [bands, setBands] = useState({
-    listening: 6.5,
-    reading: 6.5,
-    writing: 6,
-    speaking: 6.5,
+  const [fields, setFields] = useState({
+    listening: "",
+    reading: "",
+    speaking: "",
+    writing: "",
   });
-  const overall = ieltsOverall(
-    bands.listening,
-    bands.reading,
-    bands.writing,
-    bands.speaking
-  );
-  const set = (k) => (e) =>
-    setBands({ ...bands, [k]: Number(e.target.value) });
+  const [errors, setErrors] = useState({});
+  const [result, setResult] = useState(null);
+
+  const set = (k) => (e) => {
+    setFields((prev) => ({ ...prev, [k]: e.target.value }));
+    setErrors((prev) => ({ ...prev, [k]: undefined }));
+    // A shown result no longer matches the inputs the moment one changes.
+    setResult(null);
+  };
+
+  const submit = () => {
+    const next = {};
+    const listening = Number(fields.listening);
+    const reading = Number(fields.reading);
+    const speaking = Number(fields.speaking);
+    const writing = Number(fields.writing);
+
+    const rawOk = (v, s) =>
+      s.trim() !== "" && Number.isInteger(v) && v >= 0 && v <= 40;
+    // Bands only come in halves; 6.3 is a typo, not a score.
+    const bandOk = (v, s) =>
+      s.trim() !== "" && v >= 0 && v <= 9 && v * 2 === Math.round(v * 2);
+
+    if (!rawOk(listening, fields.listening))
+      next.listening = "Enter a whole score from 0 to 40";
+    if (!rawOk(reading, fields.reading))
+      next.reading = "Enter a whole score from 0 to 40";
+    if (!bandOk(speaking, fields.speaking))
+      next.speaking = "Enter a band from 0 to 9, in half bands";
+    if (!bandOk(writing, fields.writing))
+      next.writing = "Enter a band from 0 to 9, in half bands";
+
+    setErrors(next);
+    if (Object.keys(next).length) return;
+
+    const l = rawToBand(LISTENING_TO_BAND, listening);
+    const r = rawToBand(READING_TO_BAND, reading);
+    setResult({
+      sections: {
+        Listening: l,
+        Reading: r,
+        Speaking: speaking,
+        Writing: writing,
+      },
+      average: (l + r + speaking + writing) / 4,
+      overall: ieltsOverall(l, r, writing, speaking),
+    });
+  };
 
   return (
-    <div className="tl-grid">
-      <div className="tl-fields">
-        {["listening", "reading", "writing", "speaking"].map((k) => (
-          <label key={k} className="tl-cap">
-            {k}
-            <select value={bands[k]} onChange={set(k)}>
-              {IELTS_BANDS.map((b) => (
-                <option key={b} value={b}>
-                  {b.toFixed(1)}
-                </option>
-              ))}
-            </select>
-          </label>
-        ))}
-        <p className="tl-note">
-          The overall band is the average of the four sections, rounded to
-          the nearest half band — .25 rounds up to the half, .75 up to the
-          next whole. That is the rule the test itself applies.
-        </p>
+    <div className="tl-ielts">
+      <div className="tl-ielts-panels">
+        <section className="tl-ielts-panel">
+          <h2 className="tl-ielts-panel-title">Exam Score</h2>
+          <div className="tl-ielts-panel-fields">
+            <div
+              className={`tl-ielts-field${errors.listening ? " has-error" : ""}`}
+            >
+              <label htmlFor="ielts-listening">Listening Score (Out of 40)</label>
+              <input
+                id="ielts-listening"
+                type="number"
+                inputMode="numeric"
+                min="0"
+                max="40"
+                step="1"
+                placeholder="Enter your score (E.g: 34)"
+                value={fields.listening}
+                onChange={set("listening")}
+              />
+              {errors.listening && (
+                <span className="tl-ielts-error">{errors.listening}</span>
+              )}
+            </div>
+            <div
+              className={`tl-ielts-field${errors.reading ? " has-error" : ""}`}
+            >
+              <label htmlFor="ielts-reading">Reading Score (Out of 40)</label>
+              <input
+                id="ielts-reading"
+                type="number"
+                inputMode="numeric"
+                min="0"
+                max="40"
+                step="1"
+                placeholder="Enter your score (E.g: 34)"
+                value={fields.reading}
+                onChange={set("reading")}
+              />
+              {errors.reading && (
+                <span className="tl-ielts-error">{errors.reading}</span>
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section className="tl-ielts-panel">
+          <h2 className="tl-ielts-panel-title">Band Score</h2>
+          <div className="tl-ielts-panel-fields">
+            <div
+              className={`tl-ielts-field${errors.speaking ? " has-error" : ""}`}
+            >
+              <label htmlFor="ielts-speaking">Speaking Band (Out of 9)</label>
+              <input
+                id="ielts-speaking"
+                type="number"
+                inputMode="decimal"
+                min="0"
+                max="9"
+                step="0.5"
+                placeholder="Enter your band (E.g: 6.5)"
+                value={fields.speaking}
+                onChange={set("speaking")}
+              />
+              {errors.speaking && (
+                <span className="tl-ielts-error">{errors.speaking}</span>
+              )}
+            </div>
+            <div
+              className={`tl-ielts-field${errors.writing ? " has-error" : ""}`}
+            >
+              <label htmlFor="ielts-writing">Writing Band (Out of 9)</label>
+              <input
+                id="ielts-writing"
+                type="number"
+                inputMode="decimal"
+                min="0"
+                max="9"
+                step="0.5"
+                placeholder="Enter your band (E.g: 6.5)"
+                value={fields.writing}
+                onChange={set("writing")}
+              />
+              {errors.writing && (
+                <span className="tl-ielts-error">{errors.writing}</span>
+              )}
+            </div>
+          </div>
+        </section>
       </div>
 
-      <div className="tl-result">
-        <div className="tl-result-hero">
-          <span className="tl-result-label">Overall band score</span>
-          <span className="tl-result-big">{overall.toFixed(1)}</span>
-        </div>
-        <div className="tl-result-row">
-          <span className="tl-result-label">Section average, unrounded</span>
-          <span className="tl-result-value">
-            {(
-              (bands.listening +
-                bands.reading +
-                bands.writing +
-                bands.speaking) /
-              4
-            ).toFixed(2)}
-          </span>
-        </div>
+      <div className="tl-ielts-submit">
+        <button type="button" className="tl-wnext-red" onClick={submit}>
+          Submit
+        </button>
       </div>
+
+      {result && (
+        <div className="tl-ielts-result">
+          <span className="tl-ielts-result-label">Overall Band Score</span>
+          <span className="tl-ielts-result-big">
+            {result.overall.toFixed(1)}
+          </span>
+          <div className="tl-ielts-result-rows">
+            {Object.entries(result.sections).map(([name, band]) => (
+              <div key={name} className="tl-ielts-result-row">
+                <span>{name}</span>
+                <strong>{band.toFixed(1)}</strong>
+              </div>
+            ))}
+            <div className="tl-ielts-result-row">
+              <span>Average, unrounded</span>
+              <strong>{result.average.toFixed(2)}</strong>
+            </div>
+          </div>
+        </div>
+      )}
+
+      <p className="tl-note">
+        Listening and Reading are converted from your raw score to a band
+        using the published indicative tables (Academic Reading); Speaking
+        and Writing are already bands. The overall band is the average of
+        the four sections, rounded to the nearest half band — .25 rounds up
+        to the half, .75 up to the next whole. That is the rule the test
+        itself applies.
+      </p>
     </div>
+  );
+}
+
+/**
+ * The IELTS page mirrors the reference's structure the same way the CGPA
+ * page does: purple hero with the stationery illustration (the CGPA hero
+ * art is the same drawing the reference uses on this page too), then the
+ * calculator card on white.
+ */
+function IeltsPage() {
+  return (
+    <main className="tl-page tl-page-full">
+      <section className="tl-hero">
+        <div className="tl-inner tl-hero-grid">
+          <div className="tl-hero-copy">
+            <Link href="/study-abroad" className="tl-back tl-back-light">
+              <FaArrowLeft /> Study Abroad
+            </Link>
+            <h1 className="tl-hero-title">IELTS Band Score Calculator</h1>
+            <p className="tl-hero-sub">
+              Our IELTS Band Score Calculator tool is designed with the
+              objective of providing you with a close estimation of your
+              overall band score.
+            </p>
+          </div>
+          <img
+            className="tl-hero-art"
+            src="/study-abroad/tools/cgpa-hero.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <div className="tl-inner tl-body">
+        <div className="tl-card">
+          <IeltsCalculator />
+        </div>
+        <MoreTools current="ielts-band-score" />
+      </div>
+    </main>
   );
 }
 
 /* ── Cost of living ───────────────────────────────────────────────── */
 
-/**
- * Indicative monthly budgets for a single student, in rupees, excluding
- * tuition. Round figures by design: they are starting points the user is
- * expected to edit — every line is an input — not survey data, and the copy
- * under the result says exactly that. Countries match the catalog's nine
- * destinations plus Ireland, which is offered as a destination without
- * catalog programs.
+/*
+ * The data (LIVING_COSTS, COST_LINES, COST_COUNTRIES) lives in
+ * lib/studyAbroadTools.js, shared with the per-country wizard pages at
+ * /study-abroad/tools/cost-of-living/[country] — the chooser below only
+ * links there; the calculator itself runs inside the wizard.
  */
-const LIVING_COSTS = {
-  "United States": { rent: 60000, food: 25000, transport: 8000, utilities: 12000, other: 15000 },
-  "United Kingdom": { rent: 55000, food: 22000, transport: 10000, utilities: 12000, other: 14000 },
-  Canada: { rent: 45000, food: 20000, transport: 8000, utilities: 10000, other: 12000 },
-  Australia: { rent: 50000, food: 20000, transport: 8000, utilities: 10000, other: 12000 },
-  Germany: { rent: 40000, food: 18000, transport: 6000, utilities: 10000, other: 12000 },
-  France: { rent: 38000, food: 18000, transport: 6000, utilities: 9000, other: 12000 },
-  Ireland: { rent: 48000, food: 18000, transport: 7000, utilities: 10000, other: 12000 },
-  Finland: { rent: 35000, food: 17000, transport: 5000, utilities: 9000, other: 11000 },
-  UAE: { rent: 40000, food: 16000, transport: 7000, utilities: 8000, other: 10000 },
-  Hungary: { rent: 25000, food: 13000, transport: 4000, utilities: 7000, other: 8000 },
-};
 
-const COST_LINES = [
-  ["rent", "Rent & accommodation"],
-  ["food", "Food & groceries"],
-  ["transport", "Transport"],
-  ["utilities", "Utilities & internet"],
-  ["other", "Everything else"],
+/**
+ * The by-country table is summed from the same LIVING_COSTS rows the
+ * calculator runs on, so the table and the tool can never disagree —
+ * same principle as CGPA_TABLE below.
+ */
+const COST_TABLE = COST_COUNTRIES.map(({ key }) => ({
+  name: key,
+  total: Object.values(LIVING_COSTS[key]).reduce((a, b) => a + b, 0),
+}));
+
+/**
+ * "More about" content, ours throughout — the reference has sections on
+ * the same well-known topics, but every sentence here is written for this
+ * site and describes what this calculator actually does.
+ */
+const COST_SECTIONS = [
+  {
+    title: "What is a Cost of Living Calculator?",
+    body: (
+      <p>
+        A cost of living calculator estimates what everyday life — rent,
+        food, transport, utilities and the rest — costs in a destination,
+        before tuition. Comparing those budgets side by side is often what
+        settles a shortlist: two countries with similar programmes can
+        differ by lakhs a year in living costs alone.
+      </p>
+    ),
+  },
+  {
+    title: "What the Estimate Covers",
+    body: (
+      <>
+        <p>
+          Each country starts from an indicative monthly budget for one
+          student, split into five lines:
+        </p>
+        <ul>
+          <li>Rent &amp; accommodation</li>
+          <li>Food &amp; groceries</li>
+          <li>Transport</li>
+          <li>Utilities &amp; internet</li>
+          <li>Everything else — phone, books, leisure, toiletries</li>
+        </ul>
+        <p>
+          Tuition is deliberately excluded: it varies by university and
+          programme, not by country. Every line is an input — the figures
+          are starting points to edit, not survey data.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Monthly Living Costs by Country",
+    body: (
+      <>
+        <div className="tl-table-wrap">
+          <table className="tl-table">
+            <thead>
+              <tr>
+                <th>Country</th>
+                <th>Indicative monthly total</th>
+                <th>Per year</th>
+              </tr>
+            </thead>
+            <tbody>
+              {COST_TABLE.map((r) => (
+                <tr key={r.name}>
+                  <td>{r.name}</td>
+                  <td>{inr(r.total)}</td>
+                  <td>{inr(r.total * 12)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Starting figures in rupees for one student, excluding tuition —
+          your city, accommodation style and the exchange rate all move
+          them, which is why the calculator lets you edit every line.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "How to Use This Calculator",
+    body: (
+      <ol>
+        <li>Pick your destination country above and press Calculate now.</li>
+        <li>
+          Answer a few quick questions about how you plan to live —
+          accommodation, food, transport, activities.
+        </li>
+        <li>
+          Your answers shape an indicative monthly budget; edit any line of
+          it and the monthly and yearly totals follow as you type.
+        </li>
+        <li>
+          Treat the result as a planning estimate: your city, accommodation
+          and lifestyle set the real number.
+        </li>
+      </ol>
+    ),
+  },
 ];
 
-function CostCalculator() {
-  const [country, setCountry] = useState("United States");
-  const [costs, setCosts] = useState(LIVING_COSTS["United States"]);
-
-  // Switching country resets every line to that country's baseline — edits
-  // are per-country tinkering, not a budget to carry between countries.
-  const pick = (e) => {
-    setCountry(e.target.value);
-    setCosts(LIVING_COSTS[e.target.value]);
-  };
-  const set = (k) => (e) =>
-    setCosts({ ...costs, [k]: Math.max(0, Number(e.target.value)) });
-
-  const total = Object.values(costs).reduce((a, b) => a + b, 0);
+/**
+ * The cost page carries the reference's structure the way the CGPA page
+ * does: purple hero, then the choose-your-country card grid. Unlike the
+ * CGPA page's same-page ?country= reveal, "Calculate now" here opens the
+ * country's own wizard page at /study-abroad/tools/cost-of-living/<slug>
+ * — a whole new page, on the client's word (2026-08-24), matching the
+ * reference's /expense-calculator/AUS/ flow. The explainer accordion
+ * rides the grey band at the end.
+ */
+function CostPage({ tool }) {
+  const [openSection, setOpenSection] = useState(-1);
 
   return (
-    <div className="tl-grid">
-      <div className="tl-fields">
-        <label>
-          Country
-          <select value={country} onChange={pick}>
-            {Object.keys(LIVING_COSTS).map((c) => (
-              <option key={c}>{c}</option>
-            ))}
-          </select>
-        </label>
-        {COST_LINES.map(([k, name]) => (
-          <label key={k}>
-            {name} (₹ / month)
-            <input
-              type="number"
-              min="0"
-              step="1000"
-              value={costs[k]}
-              onChange={set(k)}
-            />
-          </label>
-        ))}
-        <p className="tl-note">
-          Indicative starting figures for one student, excluding tuition —
-          edit any line to match your own plans and the total follows.
-        </p>
+    <main className="tl-page tl-page-full">
+      <section className="tl-hero">
+        <div className="tl-inner tl-hero-grid">
+          <div className="tl-hero-copy">
+            <Link href="/study-abroad" className="tl-back tl-back-light">
+              <FaArrowLeft /> Study Abroad
+            </Link>
+            <h1 className="tl-hero-title">Cost of Living Calculator</h1>
+            <p className="tl-hero-sub">
+              Choosing between study destinations often comes down to what
+              each one costs to live in. Pick a country below, answer a few
+              quick questions about how you plan to live, and get an
+              indicative monthly budget for one student, in rupees.
+            </p>
+          </div>
+          <img
+            className="tl-hero-art"
+            src="/study-abroad/tools/cgpa-hero.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <div className="tl-inner tl-body">
+        <h2 className="tl-section-title">
+          Select your preferred country to study abroad
+        </h2>
+        <div className="tl-country-grid tl-country-grid-flags">
+          {COST_COUNTRIES.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/study-abroad/tools/cost-of-living/${c.slug}`}
+              className="tl-country-card"
+            >
+              <span className="tl-country-body">
+                <span className="tl-country-name">{c.card}</span>
+                <span className="tl-country-cta">Calculate now</span>
+              </span>
+              <img
+                className="tl-country-flag"
+                src={`/study-abroad/flags/${c.slug}.svg`}
+                alt=""
+              />
+            </Link>
+          ))}
+        </div>
       </div>
 
-      <div className="tl-result">
-        <div className="tl-result-hero">
-          <span className="tl-result-label">Estimated monthly total</span>
-          <span className="tl-result-big">{inr(total)}</span>
-        </div>
-        <div className="tl-result-row">
-          <span className="tl-result-label">Per year</span>
-          <span className="tl-result-value">{inr(total * 12)}</span>
-        </div>
-        {COST_LINES.map(([k, name]) => (
-          <div className="tl-result-row tl-result-minor" key={k}>
-            <span className="tl-result-label">{name}</span>
-            <span className="tl-result-value">{inr(costs[k])}</span>
+      <section className="tl-about">
+        <div className="tl-inner">
+          <h2 className="tl-about-title">
+            More About the Cost of Living Calculator
+          </h2>
+          <div className="tl-acc">
+            {COST_SECTIONS.map((s, i) => (
+              <div
+                key={s.title}
+                className={`tl-acc-item${openSection === i ? " is-open" : ""}`}
+              >
+                <h3 className="tl-acc-head">
+                  <button
+                    type="button"
+                    aria-expanded={openSection === i}
+                    onClick={() => setOpenSection(openSection === i ? -1 : i)}
+                  >
+                    {s.title} <FaChevronDown />
+                  </button>
+                </h3>
+                {openSection === i && (
+                  <div className="tl-acc-body">{s.body}</div>
+                )}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+      </section>
+
+      <div className="tl-inner tl-body">
+        <MoreTools current={tool.slug} />
       </div>
-    </div>
+    </main>
   );
 }
 
-/* ── Education loan EMI ───────────────────────────────────────────── */
+/* ── Education loan ───────────────────────────────────────────────── */
 
 /**
- * Standard EMI amortisation: with monthly rate r = annual/12/100 over
- * n months, EMI = P·r·(1+r)ⁿ / ((1+r)ⁿ − 1). Zero interest degrades to
- * simple division rather than 0/0.
+ * The loan chooser mirrors the cost-of-living one — purple hero, then the
+ * choose-your-country cards, each opening the country's eligibility form
+ * at /study-abroad/tools/education-loan/<slug> (client's word,
+ * 2026-08-24, matching the reference's /calculator/education-loan/AUS/
+ * flow). This replaced the earlier single-page EMI slider calculator; the
+ * EMI arithmetic now lives in the wizard's result.
  */
-function emi(principal, annualRate, years) {
-  const n = years * 12;
-  const r = annualRate / 12 / 100;
-  if (r === 0) return principal / n;
-  const growth = Math.pow(1 + r, n);
-  return (principal * r * growth) / (growth - 1);
-}
-
-function LoanCalculator() {
-  const [amount, setAmount] = useState(2000000);
-  const [rate, setRate] = useState(10.5);
-  const [years, setYears] = useState(7);
-
-  const monthly = emi(amount, rate, years);
-  const totalPaid = monthly * years * 12;
-  const interest = totalPaid - amount;
-  const interestShare = totalPaid > 0 ? (interest / totalPaid) * 100 : 0;
-
-  // Slider and number input share state per field, so either can drive it.
-  const field = (label, value, setter, min, max, step, unit) => (
-    <label key={label}>
-      {label} {unit && <em>({unit})</em>}
-      <div className="tl-pair">
-        <input
-          type="range"
-          min={min}
-          max={max}
-          step={step}
-          value={value}
-          onChange={(e) => setter(Number(e.target.value))}
-        />
-        <input
-          type="number"
-          min={min}
-          max={max}
-          step={step}
-          value={value}
-          onChange={(e) => setter(Number(e.target.value))}
-        />
-      </div>
-    </label>
-  );
-
+function LoanPage({ tool }) {
   return (
-    <div className="tl-grid">
-      <div className="tl-fields">
-        {field("Loan amount", amount, setAmount, 100000, 20000000, 50000, "₹")}
-        {field("Interest rate", rate, setRate, 5, 18, 0.1, "% per year")}
-        {field("Tenure", years, setYears, 1, 15, 1, "years")}
-        <p className="tl-note">
-          Standard EMI arithmetic on a fixed rate. Lenders quote their own
-          rates, processing fees and moratorium terms — see the education
-          loan page for the partner-bank route.
-        </p>
-      </div>
+    <main className="tl-page tl-page-full">
+      <section className="tl-hero">
+        <div className="tl-inner tl-hero-grid">
+          <div className="tl-hero-copy">
+            <Link href="/study-abroad" className="tl-back tl-back-light">
+              <FaArrowLeft /> Study Abroad
+            </Link>
+            <h1 className="tl-hero-title">Education Loan Calculator</h1>
+            <p className="tl-hero-sub">
+              Planning to fund your studies with a loan? Pick a country, tell
+              us about your co-applicant and collateral, and get an
+              indicative loan amount and EMI — before you talk to a bank.
+            </p>
+          </div>
+          <img
+            className="tl-hero-art"
+            src="/study-abroad/tools/cgpa-hero.svg"
+            alt=""
+          />
+        </div>
+      </section>
 
-      <div className="tl-result">
-        <div className="tl-result-hero">
-          <span className="tl-result-label">Monthly EMI</span>
-          <span className="tl-result-big">{inr(monthly)}</span>
+      <div className="tl-inner tl-body">
+        <h2 className="tl-section-title">
+          Select your preferred country to study abroad
+        </h2>
+        <div className="tl-country-grid tl-country-grid-flags">
+          {COST_COUNTRIES.map((c) => (
+            <Link
+              key={c.slug}
+              href={`/study-abroad/tools/education-loan/${c.slug}`}
+              className="tl-country-card"
+            >
+              <span className="tl-country-body">
+                <span className="tl-country-name">{c.card}</span>
+                <span className="tl-country-cta">Calculate now</span>
+              </span>
+              <img
+                className="tl-country-flag"
+                src={`/study-abroad/flags/${c.slug}.svg`}
+                alt=""
+              />
+            </Link>
+          ))}
         </div>
-        <div className="tl-result-row">
-          <span className="tl-result-label">Total interest</span>
-          <span className="tl-result-value">{inr(interest)}</span>
-        </div>
-        <div className="tl-result-row">
-          <span className="tl-result-label">Total repaid</span>
-          <span className="tl-result-value">{inr(totalPaid)}</span>
-        </div>
-        {/* Principal vs interest, as one bar: the red stretch is interest. */}
-        <div
-          className="tl-split"
-          role="img"
-          aria-label={`Interest is ${interestShare.toFixed(0)}% of the total repaid`}
-        >
-          <span style={{ width: `${100 - interestShare}%` }} />
-          <span className="tl-split-interest" style={{ width: `${interestShare}%` }} />
-        </div>
-        <div className="tl-split-legend">
-          <span>Principal {(100 - interestShare).toFixed(0)}%</span>
-          <span>Interest {interestShare.toFixed(0)}%</span>
-        </div>
+
+        <MoreTools current={tool.slug} />
       </div>
-    </div>
+    </main>
   );
 }
 
@@ -847,7 +1133,7 @@ const CGPA_TABLE = [10, 9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5].map((c) => ({
  */
 const CGPA_SECTIONS = [
   {
-    title: "CGPA to GPA conversion table",
+    title: "CGPA to GPA Conversion Table",
     body: (
       <>
         <p>
@@ -882,7 +1168,7 @@ const CGPA_SECTIONS = [
     ),
   },
   {
-    title: "The formulas this calculator uses",
+    title: "CGPA to GPA Formula",
     body: (
       <>
         <p>
@@ -901,7 +1187,7 @@ const CGPA_SECTIONS = [
     ),
   },
   {
-    title: "How grades differ by country",
+    title: "CGPA to GPA Conversion: Country wise",
     body: (
       <ul>
         <li>
@@ -953,7 +1239,7 @@ const CGPA_SECTIONS = [
     ),
   },
   {
-    title: "CGPA vs GPA at a glance",
+    title: "CGPA vs GPA at a Glance",
     body: (
       <div className="tl-table-wrap">
         <table className="tl-table">
@@ -986,7 +1272,7 @@ const CGPA_SECTIONS = [
     ),
   },
   {
-    title: "How to use this calculator",
+    title: "How to Use This Calculator",
     body: (
       <ol>
         <li>Pick the country you are applying to above.</li>
@@ -1064,10 +1350,14 @@ function CgpaPage({ tool }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [countryParam]);
 
-  // Open country calculator in a NEW TAB when country card is clicked
+  // "Calculate now" navigates to the country's calculator in the same tab,
+  // as the reference does — the ?country= URL carries the choice, the
+  // effect above then reveals the wizard and scrolls to it. (This replaced
+  // a window.open new-tab on the client's word, 2026-08-24.)
+  const router = useRouter();
   const pickCountry = (countryCode) => {
     const urlCode = countryCode === "us" ? "USA" : "DE";
-    window.open(`/study-abroad/tools/cgpa-to-gpa?country=${urlCode}`, "_blank");
+    router.push(`/study-abroad/tools/cgpa-to-gpa?country=${urlCode}`);
   };
 
   const toggleFaq = (i) =>
@@ -1087,17 +1377,25 @@ function CgpaPage({ tool }) {
   return (
     <main className="tl-page tl-page-full">
       <section className="tl-hero">
-        <div className="tl-inner">
-          <Link href="/study-abroad" className="tl-back tl-back-light">
-            <FaArrowLeft /> Study Abroad
-          </Link>
-          <h1 className="tl-hero-title">CGPA to GPA Calculator</h1>
-          <p className="tl-hero-sub">
-            Turn the CGPA on your transcript into a US 4.0 GPA or a German
-            grade in seconds. Pick the country you are applying to, enter
-            your score, and take away a clear first estimate for your
-            applications.
-          </p>
+        <div className="tl-inner tl-hero-grid">
+          <div className="tl-hero-copy">
+            <Link href="/study-abroad" className="tl-back tl-back-light">
+              <FaArrowLeft /> Study Abroad
+            </Link>
+            <h1 className="tl-hero-title">CGPA to GPA Calculator</h1>
+            <p className="tl-hero-sub">
+              Calculate your CGPA to GPA instantly! Generate your US or German
+              GPA with our user-friendly GPA calculator. Get your estimated
+              global academic score in just minutes. Easily convert your
+              CGPA/percentage to GPA and streamline your college application
+              process.
+            </p>
+          </div>
+          <img
+            className="tl-hero-art"
+            src="/study-abroad/tools/cgpa-hero.svg"
+            alt=""
+          />
         </div>
       </section>
 
@@ -1120,11 +1418,15 @@ function CgpaPage({ tool }) {
             onClick={() => pickCountry("us")}
             aria-pressed={mode === "us" && initialMode === "us"}
           >
-            <span className="tl-country-name">
-              USA
-              <img src="/study-abroad/flags/united-states.svg" alt="" />
+            <span className="tl-country-body">
+              <span className="tl-country-name">USA</span>
+              <span className="tl-country-cta">Calculate now</span>
             </span>
-            <span className="tl-country-cta">Calculate now</span>
+            <img
+              className="tl-country-art"
+              src="/study-abroad/tools/usa-liberty.svg"
+              alt=""
+            />
           </button>
           <button
             type="button"
@@ -1133,39 +1435,59 @@ function CgpaPage({ tool }) {
             onClick={() => pickCountry("de")}
             aria-pressed={mode === "de" && initialMode === "de"}
           >
-            <span className="tl-country-name">
-              Germany
-              <img src="/study-abroad/flags/germany.svg" alt="" />
+            <span className="tl-country-body">
+              <span className="tl-country-name">Germany</span>
+              <span className="tl-country-cta">Calculate now</span>
             </span>
-            <span className="tl-country-cta">Calculate now</span>
+            <img
+              className="tl-country-art"
+              src="/study-abroad/tools/germany-tower.svg"
+              alt=""
+            />
           </button>
         </div>
 
-        <div className="tl-card" id="tl-calc">
-          <CgpaWizard mode={mode} />
-        </div>
+        {/* As in the reference, the wizard appears only once a country is
+            chosen — the base page is the chooser, and "Calculate now" opens
+            the ?country= variant where this renders (and is scrolled to). */}
+        {initialMode && (
+          <div className="tl-card" id="tl-calc">
+            <CgpaWizard mode={mode} />
+          </div>
+        )}
+      </div>
 
-        <h2 className="tl-section-title">More about CGPA to GPA</h2>
-        <div className="tl-acc">
-          {CGPA_SECTIONS.map((s, i) => (
-            <div
-              key={s.title}
-              className={`tl-acc-item${openSection === i ? " is-open" : ""}`}
-            >
-              <h3 className="tl-acc-head">
-                <button
-                  type="button"
-                  aria-expanded={openSection === i}
-                  onClick={() => setOpenSection(openSection === i ? -1 : i)}
-                >
-                  {s.title} <FaChevronDown />
-                </button>
-              </h3>
-              {openSection === i && <div className="tl-acc-body">{s.body}</div>}
-            </div>
-          ))}
+      {/* Full-bleed grey band, as in the reference: the accordion rides in
+          its own section so the tint can run edge to edge while everything
+          else keeps the .tl-body gutter. */}
+      <section className="tl-about">
+        <div className="tl-inner">
+          <h2 className="tl-about-title">More About CGPA to GPA Calculator</h2>
+          <div className="tl-acc">
+            {CGPA_SECTIONS.map((s, i) => (
+              <div
+                key={s.title}
+                className={`tl-acc-item${openSection === i ? " is-open" : ""}`}
+              >
+                <h3 className="tl-acc-head">
+                  <button
+                    type="button"
+                    aria-expanded={openSection === i}
+                    onClick={() => setOpenSection(openSection === i ? -1 : i)}
+                  >
+                    {s.title} <FaChevronDown />
+                  </button>
+                </h3>
+                {openSection === i && (
+                  <div className="tl-acc-body">{s.body}</div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
+      </section>
 
+      <div className="tl-inner tl-body">
         <h2 className="tl-section-title tl-center">
           Frequently Asked Questions
         </h2>
@@ -1219,41 +1541,13 @@ function MoreTools({ current }) {
   );
 }
 
-const CALCULATORS = {
-  "cgpa-to-gpa": CgpaPage,
-  "ielts-band-score": IeltsCalculator,
-  "cost-of-living": CostCalculator,
-  "education-loan": LoanCalculator,
-};
-
 export default function ToolsClient({ slug }) {
   const tool = studyAbroadTools.find((t) => t.slug === slug);
 
-  // The CGPA page carries the reference's full structure — hero, country
-  // step, explainers, FAQ — so it has a layout of its own. The other three
-  // keep the plain shell.
+  // All four pages carry the reference's structure — purple hero, then
+  // the tool — so each has a layout of its own.
   if (slug === "cgpa-to-gpa") return <CgpaPage tool={tool} />;
-
-  const Calculator = CALCULATORS[slug];
-
-  return (
-    <main className="tl-page">
-      <div className="tl-inner">
-        <Link href="/study-abroad" className="tl-back">
-          <FaArrowLeft /> Study Abroad
-        </Link>
-
-        <h1 className="tl-title">
-          {tool.name} <span className="tl-accent">Calculator</span>
-        </h1>
-        <p className="tl-sub">{tool.description}</p>
-
-        <div className="tl-card">
-          <Calculator />
-        </div>
-
-        <MoreTools current={slug} />
-      </div>
-    </main>
-  );
+  if (slug === "ielts-band-score") return <IeltsPage />;
+  if (slug === "cost-of-living") return <CostPage tool={tool} />;
+  return <LoanPage tool={tool} />;
 }

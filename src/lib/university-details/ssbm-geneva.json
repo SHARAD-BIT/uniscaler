@@ -1,0 +1,476 @@
+{
+ "slug": "ssbm-geneva",
+ "name": "Swiss School of Business Management",
+ "establishedYear": "1998",
+ "location": "",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   5,
+   17
+  ],
+  "total": 24
+ },
+ "banner": "/university/banners/ssbm-geneva.webp",
+ "approvals": [
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "ACBSP",
+   "logo": "/university/approvals/ACBSP.jpg"
+  },
+  {
+   "title": "CHEA",
+   "logo": "/university/approvals/CHEA.jpg"
+  },
+  {
+   "title": "EduQua",
+   "logo": "/university/approvals/EduQua.jpg"
+  },
+  {
+   "title": "IACBE",
+   "logo": "/university/approvals/IACBE.jpg"
+  },
+  {
+   "title": "VSS",
+   "logo": "/university/approvals/VSS.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Swiss School of Business & Management (SSBM) is one of the highly committed universities continuously trying to provide academic excellence to individuals in the field of business & management. The innovative & tech-driven educational services provided by the universities are aimed at equipping management aspirants with research-oriented & premium education. With more than 30 international industry partners, the university is imparting high-quality knowledge even to international candidates."
+  },
+  {
+   "t": "p",
+   "text": "SSBM is located at the heart of a business city in Switzerland, i.e., Geneva. Being a global financial and diplomacy center, Geneva is filled with numerous international organizations, including the headquarters of many high-profile companies and international agencies. The advantage of being surrounded by the industry gives you exposure to the diversity of the management field."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In DevOps",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The university’s international collaborations have benefitted 70+ national & international companies by providing the services of consulting, teaching, and project-based analysis. With these global connections & industry exposures, the university makes its learners equipped with the dynamic changes of the business world."
+  },
+  {
+   "t": "p",
+   "text": "SSBM is imparting knowledge in different areas of specialization through a diversified option of undergraduate, postgraduate, & doctoral programs. The university is also renowned for delivering high-quality learning experiences in the online learning mode to provide better & innovative learning opportunities to candidates beyond borders."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explore Online Doctorate Programs for Working Professionals"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Doctorate Course for Working Professionals",
+      "Doctor of Juridical Science"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA In Supply Chain Management",
+      "DBA In Supply Artificial Intelligence"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA In Human Resource Management",
+      "Doctor of Business Administration"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "With its history of generating great alumni, the university offers quite a strong & impactful professional networking to enlighten you about some alluring career options. The award of being authorized OTHM center reflects the standard of academic excellence, the university is imparting. The AACSB International (AACSB) membership has marked its contribution to the field of business & management practices."
+  },
+  {
+   "t": "p",
+   "text": "Accreditation Council for Business Schools and Programs (ACBSP) accreditation, EduQua certification, & 5 QS Stars show its continuous efforts in providing innovative & sustainable learning methodologies that place societal & environmental aspects before the business profits."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Diversified University Network",
+   "content": "SSBM has successfully impacted the lives of 6650 learners via a team of 120+ faculty members delivering education in 6 campuses of 135+ countries."
+  },
+  {
+   "title": "Value-Based Learning",
+   "content": "SSBM is an innovative business & management school providing a superior learning experience to strengthen your efficiency and leadership skills to cope with today’s organizational trends."
+  },
+  {
+   "title": "International Tie-ups",
+   "content": "SSBM’s international tie-ups with 70+ global organizations make it a place for learning industry-relevant knowledge to survive today’s cut-throat competition."
+  }
+ ],
+ "facts": [
+  "SSBM is a university situated in the city of Geneva, Switzerland.",
+  "The university is offering academic excellence via online & on-campus modes of learning.",
+  "The university is offering a diversified range of online courses in the business & management field under UG, PG, & doctoral programs.",
+  "Bachelor of Science (BSc) in Business Administration, International Management, Information Technology, Sports Management, & Accelerated Bachelor of Science (BSc) in Business Administration are some of the UG programs offered at SSBM.",
+  "The list of SSBM’s PG programs includes a Master in Global Business and International Master in Sports Law, Global MBA, EMBA, MBA in Data Science, Finance, Hospitality Management, & many other MBA specializations.",
+  "The university has also enlightened doctoral aspirants via its popular Doctorate in Business Administration (DBA) program. Some of the options available in this category include Executive DBA, Global DBA, & International DBA.",
+  "The credibility of SSBM’s courses has been approved & accredited by some of the elite accreditation bodies like ACBSP, AACSB, & EduQua.",
+  "The premium knowledge delivered by the university has been recognized globally with a rating of 5 QS Stars & with the authorization of the OTHM center.",
+  "SSBM was listed in the top 10 European Universities For Online Study at PostGrad.com.",
+  "The university‘s faculty panel comes from top universities around the world & delivers quality education in new & interesting ways.",
+  "Students at SSBM are assessed based on the European Credit Transfer and Accumulation System, i.e., the ECTS credit system.",
+  "The university’s sustainable approach promotes businesses that place the planet, people, and employees before their profit."
+ ],
+ "courses": [
+  {
+   "name": "Online Doctorate Courses",
+   "fee": 750000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "750000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA Course",
+   "fee": 750000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "750000"
+    }
+   ]
+  },
+  {
+   "name": "PhD for Working Professionals",
+   "fee": 750000,
+   "duration": "3-5 Years",
+   "feeDetails": []
+  },
+  {
+   "name": "Online Global MBA",
+   "fee": 827000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "827000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Swiss School of Business & Management provides flexible modes of payment for its online programs that make it even more approachable for learners. The financial support of the university in terms of Equated Monthly Installment (EMI) payment options offers you a chance to acquire knowledge from world-class faculty members."
+  },
+  {
+   "t": "p",
+   "text": "In the need of making quality education accessible for all, the university has even proposed some scholarships for the candidates based on their academic performance. The terms & conditions for the same may vary as the guidelines for it are revised every year. Moreover, students can avail of some fee relaxations on payment of the total tuition fee at once."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The process of admission to online undergraduate, postgraduate, and doctorate programs at SSBM can be completed via digitized mode. The following steps outline the common admission process at the university:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1 At first, go through the list of documents you need to prepare before starting the enrollment process. This list generally includes your professional resume, ID proofs, photograph, & latest grade transcripts."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 After that register on the university’s website by filling out your basic contact information to apply for your particular course."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 Access the SSBM Student Application System (SAS) & fill out your personal, educational, & professional details. Submit the documents asked by the university on the same panel."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 At last complete your application by choosing a suitable payment method & the number of installments, if applicable."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 After the application submission, the university will notify you of its decision by sending an interview invitation."
+  },
+  {
+   "t": "p",
+   "text": "Step 6 After making it through the interview, you will get an offer letter from the university. The offer letter will confirm any scholarships or financial assistance you asked for."
+  },
+  {
+   "t": "p",
+   "text": "Step 7 After receiving an offer letter, you need to pay a blocking amount of the tuition fee to ensure your admission."
+  },
+  {
+   "t": "p",
+   "text": "In case the applicant doesn’t belong to a majority English-speaking country, the university asks for an English language competency test. These tests include either TOEFL, IELTS, or Cambridge tests. An intensive English Program certificate or an official certificate from an English-speaking or Bilingual school will also work as proof of English language proficiency."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The university assesses the knowledge & learning of students in a continuous evaluation format along with term-end exams in offline & online modes. The performance grading of the learners also considers their participation in the case studies & projects based on real-time industry cases."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "With a specialization in providing conceptual education along with industry-based trends, the university has developed a vast network of hiring partners globally. Students of SSBM:"
+  },
+  {
+   "t": "li",
+   "text": "Are working at top-notch organizations"
+  },
+  {
+   "t": "li",
+   "text": "Have a network of 70+ organizations"
+  },
+  {
+   "t": "li",
+   "text": "Renowned for their sustainable approach to business"
+  },
+  {
+   "t": "p",
+   "text": "A list of some of these recruiters is mentioned below to give you an idea of the career prospects after graduating from SSBM."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Nestle",
+   "logo": "/university/partners/nestle.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "Spicejet",
+   "logo": "/university/partners/Spicejet.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Jaka Vadnjal",
+   "title": "Faculty",
+   "description": "PhD, The Faculty of Economics in Ljubljana; President of the Management Board of Lon Bank from 2015- 2019.",
+   "photo": "/university/faculty/Jaka_Vadnjal.webp"
+  },
+  {
+   "name": "Derrald Stice",
+   "title": "Faculty",
+   "description": "Published in top accounting and finance journals. Cited in The Wall Street Journal and Bloomberg.",
+   "photo": "/university/faculty/Derrald_Stice.webp"
+  },
+  {
+   "name": "George Latridis",
+   "title": "Faculty",
+   "description": "Professor of accounting and finance at the University of Thessaly, Greece; He is the director of the MSc in Accounting and Auditing (ACCA accredited).",
+   "photo": "/university/faculty/George_Latridis.webp"
+  },
+  {
+   "name": "Alex E. Asampong",
+   "title": "Faculty",
+   "description": "Executive Doctor of Business Administration (EDBA); Area of research includes Intercultural Competence, OB, Leadership, International HRM & more.",
+   "photo": "/university/faculty/Alex_E._Asampong.webp"
+  },
+  {
+   "name": "Anna L. Provodnikova",
+   "title": "Lecturer",
+   "description": "PhD; Lecturer in RANEPA (the Russian Presidential Academy of National Economy and Public Administration), Institute of Business Studies.",
+   "photo": "/university/faculty/Anna_L._Provodnikova.webp"
+  },
+  {
+   "name": "David Annan",
+   "title": "Faculty",
+   "description": "Holds a Master’s in development studies – Economic development from the Nelson Mandela University, South Africa.",
+   "photo": "/university/faculty/David_Annan.webp"
+  },
+  {
+   "name": "Iva Buljubašić",
+   "title": "Faculty of Economics",
+   "description": "Works as an External Associate at the Faculty of Economics in Osijek & Catholic Faculty of Theology in Zagreb.",
+   "photo": "/university/faculty/Iva_Buljubasic.webp"
+  },
+  {
+   "name": "Hrvoje Volarević",
+   "title": "Faculty of Economics",
+   "description": "Has authored/co-authored more than 20 peer-reviewed scientific & professional/commercial papers.",
+   "photo": "/university/faculty/Hrvoje_Volarevic.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Ved Prakash Pandey",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "College Vidya helped me to get admission into SSBM and helped to get the scholarship from the SSBM also. Thanks to College Vidya."
+  },
+  {
+   "name": "SOUVIK DAS",
+   "rating": 4,
+   "date": "2026-07-28",
+   "content": "Good experience with College Vidya. Special thanks to Mr. Abhishek for his excellent support during SSBM onboarding. Improve OTP/login issues. Direct university tie-ups would be even better."
+  },
+  {
+   "name": "Reenu dubey",
+   "rating": 4,
+   "date": "2026-06-26",
+   "content": "Great platform for finding the right online program. The team was supportive, the admission process was smooth, and SSBM University was a great choice for my career goals. Highly recommended!"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are MBA specializations offered by the Swiss School of Business & Management in online mode?",
+   "a": "SSBM University provides online MBA in a variety of specializations like Data Science, Finance, Cybersecurity Management, Human Resources Management, Global Finance and Banking, Marketing, Operations Management, Strategic Management, Entrepreneurship, IT Management, and Sustainability & Energy Management."
+  },
+  {
+   "q": "Are the degrees from the Swiss School of Business & Management recognized in India?",
+   "a": "SSBM University has been accredited by ACBSP and holds a 5-star QS rating that makes its courses well-recognized internationally including India. Moreover, its AACSB membership makes it a part of the global leader’s network."
+  },
+  {
+   "q": "Is there any entrance exam for enrolling into SSBM’s online program?",
+   "a": "The demand for entrance exams is program specific at the Swiss School of Business & Management. However, the university does ask for scores on English Language Proficiency Tests like TOEFL, IELTS, etc."
+  },
+  {
+   "q": "Is any scholarship or financial assistance provided by the Swiss School of Business & Management?",
+   "a": "SSBM offers scholarships to aspiring candidates based on their academic performance & depending on the program they are applying to. Moreover, easy EMI options or flexible payment methods are there for all to provide financial assistance."
+  },
+  {
+   "q": "Who are the faculty members at the Swiss School of Business & Management?",
+   "a": "The faculty members at SSBM are experts holding 15+ years of industry experience & professors teaching at top-ranked International Universities. These experts form a direct impact on learners & prepare them for the challenges of today’s fast-changing world."
+  },
+  {
+   "q": "Are student reviews available for the Swiss School of Business Management?",
+   "a": "Yes, the Swiss School of Business Management has verified student reviews on the Student Review Portal by College Vidya , touching on academics, LMS quality, placement support, and overall learning experience. You can search for them here, pulled from feedback shared by actual enrolled students. Since universities can't pay to hide unfavorable reviews, the ratings stay authentic."
+  }
+ ]
+}

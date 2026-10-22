@@ -1,0 +1,435 @@
+{
+ "slug": "sanskriti-university-engineering",
+ "name": "Sanskriti University Engineering",
+ "establishedYear": "2016",
+ "location": "Mathura, Uttar Pradesh",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   7,
+   8,
+   37,
+   213,
+   616
+  ],
+  "total": 881
+ },
+ "banner": "/university/banners/sanskriti-university-engineering.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "ISO",
+   "logo": "/university/approvals/iso-logo.jpg"
+  },
+  {
+   "title": "AICTE**",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Sanskriti University is one of the prestigious private universities in India known for its 360-degree and holistic development of students for better personal and professional growth. Sanskriti University is famous for its world-class education quality with highly qualified and experienced faculty members who impart top-notch education to students. To make students compatible with industry essential skills and abilities there the curriculum of every program at Sanskriti University is industry oriented."
+  },
+  {
+   "t": "p",
+   "text": "Sanskriti University is situated in Mathura, Uttar Pradesh, and was established in 2016 since then the university has robustly grown in the education sector and has acquired a well-reputed name and position. To offer students better career aspects in a plethora of industries Sanskriti University offers multiple undergraduate, and postgraduate degree programs with flexible timings in a plethora of specializations namely Computer Science Engineering, Civil Engineering, Electrical Engineering, Electronics & Communication Engineering, Mechanical Engineering, Computer Science Engineering, Construction Engineering, Mechanical - Design, Power System Engineering, Structural Engineering, and VLSI Engineering."
+  },
+  {
+   "t": "p",
+   "text": "Sanskriti University is notified under the UP State Act and the programs are designed to develop entrepreneurial, managerial, and leadership qualities among the students through its 400+ vast faculty members. A degree earned from Sanskriti University is globally credible as it is recognized by the University Grants Commission (UGC), a member of the Association of Indian Universities (AIU) and Association of Commonwealth Universities (ACU), UK, approved by the Bar Council of India (BCI), Rehabilitation Council of India (RCI), and approved by the Pharmacy Council of India (PCI)."
+  },
+  {
+   "t": "p",
+   "text": "There are various programs offered at Sanskriti University meanwhile, the university provides BTech and MTech for Working Professionals programs with flexible timings, which allows students from the working class to acquire a technical BTech degree with flexibility and maintain a good work-life balance with their personal, professional, and academic commitments. The engineering degree program with flexible timings is specially designed to assist the working professional in pursuing a BTech or MTech degree without hampering their work schedule."
+  }
+ ],
+ "aboutBoxes": [],
+ "facts": [
+  "Sanskriti University was established in 2016 at Mathura (Uttar Pradesh) and notified under the UP State Act.",
+  "Indian Council of Agriculture Research (ICAR) has given its approval letter to Sanskriti University.",
+  "Sanskriti University is certified by the ISO 9001 : 2015 & ISO 21001 : 2018.",
+  "Sanskriti University ranks #1 among the highest number of patent applications in India.",
+  "The Associated Chambers of Commerce & Industry of India has awarded Sanskriti University as the emerging university of the year award.",
+  "The learning methodology of Sanskriti University includes flexibility, integration of theoretical and practical knowledge, personal development, and professional development.",
+  "Working professional can pursue the BTech Flexible Timings and MTech Flexible Timings program without quitting their jobs.",
+  "The various UG, PG, doctoral, diploma, certificate, and integrated programs of Sanskriti University are offered under various schools such as School of Engineering & Information Technology, School of Agriculture, School of Tourism and Hospitality, School of Management & Commerce, School of Education, etc."
+ ],
+ "courses": [
+  {
+   "name": "B.Tech After Dilpoma",
+   "fee": 276000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "3000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "42500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "42500"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "Part-Time (Flexible) B.Tech",
+   "fee": 276000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "3000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "42500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "42500"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech For Working Professionals",
+   "fee": 276000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "42500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "42500"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "3000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech",
+   "fee": 185000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "3000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "42500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "42500"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech Lateral Entry",
+   "fee": 276000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "3000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "42500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "42500"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "3000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "To lessen the financial burden on students, Sanskriti University offers financial assistance to students. There is multiple education loan assistance at Sanskriti University that are offered through their loan partner i.e. Propelld . Students can also avail of the scholarships offered at the university, namely:"
+  },
+  {
+   "t": "li",
+   "text": "Chancellor’s Scholarship Scheme (After 10+2)"
+  },
+  {
+   "t": "li",
+   "text": "Chancellor’s Scholarship Scheme (For Subsequent Years)"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Sports Persons"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Defence Quota"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Girls’ Quota"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Champion (Existing Student of SU)"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Physically Disability"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Aptitude Test Passouts"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Students who are willing to enroll themselves at Sanskriti University are required to follow the below-listed steps of the Sanskriti University admission process:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: The application form is available either online on the official website of the university or offline on the university campus. The application form should be filled with the required personal, professional, and academic information."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: After filling out the application form, students are required to attach all the supporting documents along with it, such as academic transcripts, proof of identity, passport-sized photographs, etc. Some courses require work experience certificates as well."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Depending on the course chosen by the applicant, you must appear for an entrance examination conducted by the university or a national-level examination like JEE, CAT, or GATE. simultaneously, in some courses admission is made directly based on eligibility criteria."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Shortlisted candidates may be called for an interview or a counseling session (majorly in postgraduate programs). In the counseling process, candidates are independent in opting for the course and stream of their preference."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: On the basis of the score obtained in the Entrance Test (if applicable) or Interview or Merit in the Qualifying Examination, students are required to pay a confirmation fee in order to reserve their seats."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: Once the admission is confirmed, pay for tuition fees according to the chosen program and specialization of the student."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination pattern at Sanskriti University is an assessment to evaluate the overall understanding developed by the students throughout their program. The general examination pattern includes internal assessment and end-semester examinations. Internal assessments may include quizzes, assignments, presentations, and practical exams that carry about 70% of the marks in the final result whereas, End-semester examinations are always conducted at the end of every semester to cover the entire syllabus of the particular course."
+  },
+  {
+   "t": "p",
+   "text": "These examinations assist in evaluating the overall theoretical and practical understanding of the candidates. The Sanskriti University for practical and technical courses and subjects conducts viva voce or practical exams to develop hands-on engineering skills and better verbal communication. The combination of term-end examination and internal assessment results in the academic score obtained by the student."
+  },
+  {
+   "t": "p",
+   "text": "30% (Internal) – 70% (End Term)"
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The placement cell at Sanskriti University is a dedicated department bridging the gap between academics and industry by offering compatible employment opportunities to students. The Sanskriti University placement cell remains active throughout the course and guides students to equip themselves with in demands skills and abilities of the job market, via guidance and training provided by the university. The facilities of the university include opportunities for internship and placement."
+  },
+  {
+   "t": "p",
+   "text": "The university has various collaborations with many reputed companies and business corporations that conduct campus recruitment drives. The placement partners of Sanskriti University are top leaders in multiple domains like IT, finance, healthcare, and engineering. To make students compatible with the global competent market, Sanskriti University conducts various academic events such as:"
+  },
+  {
+   "t": "li",
+   "text": "Workshop"
+  },
+  {
+   "t": "li",
+   "text": "Seminars"
+  },
+  {
+   "t": "li",
+   "text": "Mock interviews, etc"
+  },
+  {
+   "t": "p",
+   "text": "About 200+ companies visited the Sanskriti University campus for placement and 85% of students were placed on the highest packages, a few active hiring partners of Sabskriti University are Whitehat Jr., TCS, Radisson Blu, FedEx, JCB, Vedantu, Bajaj, Amazon, TATA STEEL, etc."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Dunzo",
+   "logo": "/university/partners/dunzo.webp"
+  },
+  {
+   "title": "Flipkart",
+   "logo": "/university/partners/flipkart.webp"
+  },
+  {
+   "title": "ISRO",
+   "logo": "/university/partners/isro.webp"
+  },
+  {
+   "title": "Paytm",
+   "logo": "/university/partners/paytm.webp"
+  },
+  {
+   "title": "Tata",
+   "logo": "/university/partners/tata.webp"
+  },
+  {
+   "title": "Tata Power",
+   "logo": "/university/partners/tata-power.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Bajaj Capital",
+   "logo": "/university/partners/bajaj-capital.webp"
+  },
+  {
+   "title": "CISCO",
+   "logo": "/university/partners/CISCO.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "SHUBHANKAR KUMAR",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "As a B.Tech Lateral Entry student in the Working Professional program, currently pursuing my 6th semester at Sanskriti University, my overall experience has been excellent"
+  },
+  {
+   "name": "Vishal kushwah",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "I thinnk i can grow my career and more grab opportunities for my future"
+  },
+  {
+   "name": "Narendra",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "I have taken the admission in this university as per the review good university. Let’s see the actual experience"
+  },
+  {
+   "name": "Ritik",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Sanskriti University has a good campus, supportive faculty, modern infrastructure, and a positive learning environment. It offers practical exposure and good opportunities for students to grow and bu."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is the highest package offered by Sanskriti University?",
+   "a": "The highest package offered to Sanskriti University graduates is 54 LPA."
+  },
+  {
+   "q": "How are blended learning B.Tech for Working Professionals classes conducted in Sanskriti University?",
+   "a": "Classes are conducted through virtual labs and online sessions. To understand better, watch the LMS tutorial after clicking the tap to get LMS access and click the Play Tutorial button."
+  },
+  {
+   "q": "Is Sanskriti University approved by UGC?’",
+   "a": "Yes, Sanskriti University is recognized by the University Grants Commission (UGC) and approved by the Association of Indian Universities (AIU)."
+  },
+  {
+   "q": "Sanskriti University offers online BTech?",
+   "a": "No, Sanskriti University does not offer Online BTech but students can pursue BTech with a flexible timing program."
+  },
+  {
+   "q": "Is Sanskriti University a government college?",
+   "a": "Sanskriti University is a private college that is situated in Mathura, Uttar Pradesh."
+  },
+  {
+   "q": "Can I pursue a BTech from Sanskriti University while working?",
+   "a": "Yes, you can pursue a BTech in the flexible time shifts program offered at Sanskriti University specially designed for working professionals."
+  },
+  {
+   "q": "How to contact Sanskriti University?",
+   "a": "The Sanskriti University contact details are: Address: 28 K. M. Stone, Mathura - Delhi Highway, Chhata, Mathura Uttar Pradesh (U.P.) Pin - 281401 Email: flexi.engineering@sanskriti.edu.in Phone: 18003097918"
+  }
+ ]
+}

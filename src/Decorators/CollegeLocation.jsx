@@ -183,6 +183,43 @@ const CollegeLocation = () => {
       if (!raf) raf = requestAnimationFrame(tick);
     };
 
+    /*
+     * Hover-reveal: pointing at a card the viewport's left edge has cut off
+     * slides the rack right until that card is fully in view. It is a one-shot
+     * nudge of `target`, not a separate mode — the next scroll event recomputes
+     * target and the rack rejoins its scroll-linked position; leaving the deck
+     * does the same immediately.
+     *
+     * The lastMove guard is what stops a feedback loop: the rack sliding under
+     * a stationary cursor fires pointerover on each card that passes beneath
+     * it, and acting on those would chain-walk the rack back to its start. An
+     * enter only counts if the pointer itself moved just before it.
+     */
+    const hoverable = window.matchMedia("(hover: hover)");
+    let lastMove = 0;
+    const onMove = () => {
+      lastMove = performance.now();
+    };
+    const onOver = (e) => {
+      if (reduced.matches || !hoverable.matches) return;
+      if (performance.now() - lastMove > 150) return;
+      const card = e.target.closest?.(".city-card");
+      if (!card) return;
+      const clip =
+        viewport.getBoundingClientRect().left -
+        card.getBoundingClientRect().left;
+      if (clip <= 0) return;
+      // 12px of air past the edge; clamp because the first card can ask for
+      // more room than exists left of the strip's resting position.
+      target = Math.max(0, current - clip - 12);
+      if (!raf) raf = requestAnimationFrame(tick);
+    };
+    const onLeave = () => {
+      if (reduced.matches) return;
+      target = progress() * travel;
+      if (!raf) raf = requestAnimationFrame(tick);
+    };
+
     const apply = () => {
       if (reduced.matches) {
         // No scroll hijacking for anyone who asked for less motion — the CSS
@@ -210,12 +247,19 @@ const CollegeLocation = () => {
     apply();
     window.addEventListener("resize", onResize);
     reduced.addEventListener("change", apply);
+    // Attached unconditionally; the handlers bail in static/reduced mode.
+    viewport.addEventListener("pointermove", onMove, { passive: true });
+    viewport.addEventListener("pointerover", onOver);
+    viewport.addEventListener("pointerleave", onLeave);
 
     return () => {
       if (raf) cancelAnimationFrame(raf);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
       reduced.removeEventListener("change", apply);
+      viewport.removeEventListener("pointermove", onMove);
+      viewport.removeEventListener("pointerover", onOver);
+      viewport.removeEventListener("pointerleave", onLeave);
     };
   }, []);
 

@@ -1,0 +1,406 @@
+{
+ "slug": "alliance-university-online",
+ "name": "Alliance University Online",
+ "establishedYear": "2010",
+ "location": "Bengaluru, Karnataka",
+ "rating": 4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   2,
+   2
+  ],
+  "total": 6
+ },
+ "banner": "/university/banners/alliance-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Alliance Online believes in redefining the future of students by providing them with flexible, accessible, and impactful learning through online education. The online programs offered by the university bridge the gap between technology and transformative education. Alliance Online prepares the mindset of students to make a big move and sustain in this competitive world. Pursuing an online degree with Alliance Online will put 5 stars on the resume (s) of the students, as this university is known for its quality of education offered."
+  },
+  {
+   "t": "p",
+   "text": "At Alliance Online, it supports the young minds to grow in a vibrant digital ecosystem for students from diverse fields. Here at this university, students can enhance their knowledge and skills (both hard and soft). Soft skills may include communication, strategic thinking, leadership, decision-making, emotional intelligence, team management, business communication, problem-solving, and more. Hard skills include Accounting Software Basics (Tally, QuickBooks), Digital Marketing Tools (Google Ads, SEO, CRM), Data Interpretation with Excel & Business Analytics Tools, Finance & Business Analysis, and more."
+  },
+  {
+   "t": "p",
+   "text": "Alliance University Online has received various recognitions, awards, and approvals from various statutory bodies. The National Assessment and Accreditation Council has awarded the university with an &ldquo;A+&rdquo; grade by inspecting all the services offered by the university to its students. Alliance University Online has received the Government of India’s University Grants Commission (UGC) (South India’s first private University). This university is SIRO-recognized by the DSIR. Alliance University is also recognized by AICTE and BCI."
+  },
+  {
+   "t": "p",
+   "text": "Alliance University Online has achieved various ranks in national and international ranking frameworks. In the 2025 NIRF ranking list, the university has ranked 71. Additionally, it is in the top 1% Universities in South Asia, ranked by QS World University Ranking (Based on 2024 rankings). Alliance University Online has been approved by the AICTE to offer tech-related programs. Moreover, various other approvals that this university, Alliance University Online, holds are as follows: Technology-Based Incubator (Approved by MSME), a member of AACSB, USA (Business Education Alliance Member), and IACBE-accredited (Accreditation for Business Programmes)."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Alliance University is committed to becoming the best in the world, where students can develop through excellent teaching, research, and service to society.",
+  "The university has the belief of transforming lives, not necessarily through books, but by producing a better person who can serve the communities.",
+  "It makes students think, learn, and ask questions, as little scientists and explorers do.",
+  "Alliance is a location where students and teachers collaborate, express what they learn, and solve real-life issues.",
+  "The university encourages big ideas and creativity, be it in science, art, business, or service to others.",
+  "It trains students to be leaders who are good, intelligent, and willing to transform the world.",
+  "All the members of Alliance are dealt with in the same and respectful way, regardless of who those people are and their backgrounds.",
+  "It makes the students confident and competent, thus they are prepared to take jobs and lead meaningful lives upon their graduation.",
+  "The teachers and the students are challenged to serve by serving their university, community, and the world.",
+  "The university emphasizes honesty, learning, creativity, and kindness, and desires the students to take pride in their identity.",
+  "Alliance University Online Focuses on providing such a level of education that helps them to get a good job opportunity in the industry.",
+  "The university offers personalized resume building, placement support, career counselling, and interview preparation to enhance their growth at a professional level.",
+  "Alliance University Online provides 24/7 access to its online learning platform, which is a Learning Management System (LMS).",
+  "This LMS is uploaded with loads of study materials that will help students to enhance their efficiency in learning through interactive Content, progress tracking, assessments, and live sessions through their modern LMS.",
+  "Students of online learning programs are provided with a strong learner support system, which includes technical support, peer forums, and academic advisors.",
+  "These services are provided to students to ensure a smooth learning experience in their online learning journey with Alliance University Online.",
+  "Alliance University Online provides three major 3 courses: Online MBA, Online BBA, and Online BCom, where each of them have their own specializations that they can choose from.",
+  "Alliance University Online Focuses on providing such a level of education that helps them to get a good job opportunity in the industry.",
+  "The university offers personalized resume building, placement support, career counselling, and interview preparation to enhance their growth at a professional level.",
+  "Alliance University Online provides 24/7 access to its online learning platform, which is a Learning Management System (LMS).",
+  "This LMS is uploaded with loads of study materials that will help students to enhance their efficiency in learning through interactive Content, progress tracking, assessments, and live sessions through their modern LMS.",
+  "Students of online learning programs are provided with a strong learner support system, which includes technical support, peer forums, and academic advisors.",
+  "These services are provided to students to ensure a smooth learning experience in their online learning journey with Alliance University Online.",
+  "Alliance University Online provides three major 3 courses: Online MBA, Online BBA, and Online BCom, where each of them have their own specializations that they can choose from."
+ ],
+ "courses": [
+  {
+   "name": "Online MBA",
+   "fee": 160000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "5000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "40000"
+    },
+    {
+     "type": "Full Fee",
+     "fee": "160000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 76000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "76000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "12667"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com (Hons)",
+   "fee": 101336,
+   "duration": "4 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "76000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "12667"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 126000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "126000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "21000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "3000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Alliance University Online provides a no-cost EMI option to its students. There are only two options available: one is for a master’s program, and the other is for a bachelor’s program. For the master’s program, students get a tenure of 20 months, and for the bachelor’s program, it is 24 months. The EMI flow (student process) includes the following processes: first, the students need to do his/her KYC, then sign the agreement provided by the university based on the level of program (UG/PG). After this step, students are asked for payment for the program. Next, they need to capture their selfie, and lastly, submit it."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Step 1: Program Registration - Students need to choose a program in which they wish to enrol. Register for the program and pay the registration fee (varies from program to program)."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Document Upload - Students need to upload the required documents to apply for the chosen program."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Fee Payment - Students need to pay a semester-wise fee or the full program fee (the University offers a no-cost EMI option)."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: University Approval - The responsible authority for admissions reviews the documents and confirms the admission of the candidate."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: LMS Access - After successful admission to the program, the university provides the login ID and Password to the students so that s/he can access the LMS to start their online educational journey."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of Alliance University online courses? Alliance University follows UGC fee refund rules. Students get a 100% refund if they withdraw 15 days or more before the last admission date. A 90% refund applies if the withdrawal is less than 15 days before the last date of admission. An 80% refund is given within 15 days after the last date of admission. A 50% refund applies 15–30 days after the last date of admission. No refund is allowed after 30 days. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Alliance University Online takes examinations in an online mode. However, the examination and assessment structure is in two formats: During Semester Assessment (DSA) (30% marks) and Semester End Examination (SEE) (Online Mode) (70% marks). Well, based on the program, the DSA pattern, question formats, and duration vary. The SEE will be conducted through online mode. Additionally, all the examination-related guidance is provided by the subject teachers in detail well in advance. Moreover, LMS has all the study materials, uploaded well in time, so that students can prepare for their examinations."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The university, Alliance University Online, offers personalized resume building, placement support, career counselling, and interview preparation to enhance their growth at a professional level. This will help students to build their confidence to face the interview without any hesitation. At Alliance University Online, a pan-India network of 800+ recruiters has been connected and takes part in their placement drives. Below are a few of the top organizations that take part in Alliance University Online’s placement drives: Dell, IBM, PwC, SAP, Target, Canon, Accenture, Lenovo, KPMG, Volvo, Cisco, Maersk, BASF, Oracle, Deloitte, Daimler, and more. Well, the university prepares the students for their interview part as well during ht ecourse of the program."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "HDFC Bank",
+   "logo": "/university/partners/hdfc-bank.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "CISCO",
+   "logo": "/university/partners/CISCO.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Mahindra",
+   "logo": "/university/partners/mahindra.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Abdul Hameed",
+   "title": "Professor & Associate Dean – Alliance School of Business",
+   "description": "",
+   "photo": "/university/faculty/Dr._Abdul_Hameed.webp"
+  },
+  {
+   "name": "Dr. Arindam Das",
+   "title": "Professor & Program Director - Ph.D. and Director - Centre of Excellence for Cultural Studies",
+   "description": "",
+   "photo": "/university/faculty/Dr._Arindam_Das.webp"
+  },
+  {
+   "name": "Dr. Ravi Chakraborty",
+   "title": "Assistant Professor & Director - Communication for Liberal Arts &",
+   "description": "",
+   "photo": "/university/faculty/Dr._Ravi_Chakraborty.webp"
+  },
+  {
+   "name": "Dr. Ray Titus",
+   "title": "Pro Vice-Chancellor (Incubation and Innovation ) & Dean, ASOB",
+   "description": "",
+   "photo": "/university/faculty/Dr._Ray_Titus.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Nilu Sinha",
+   "rating": 5,
+   "date": "2026-02-05",
+   "content": "I had a great exprience with alliance Online University. The LMS is well- structured, user-friendly, and designed to support working professionals. the faculty members are supportive and always willing to guid. Faculty are from reguler University and they have experience with IVY League University and theyreally Impressive."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2025-11-07",
+   "content": "Hostel experience was terrible poor facilities, no hot water, no basic amenities, and no help from the hostel office. Not worth the fee."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2025-11-07",
+   "content": "Faculty response to personal issues was cold and uncaring. Students deserve empathy and better communication from the university."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2025-11-07",
+   "content": "The sudden INR 3500 summer term fee was unfair. No communication or support for students facing financial stress. Felt ignored."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is the criteria to get the online degree certificate at Alliance University Online in any of their online programs?",
+   "a": "At Alliance University Online, students need to secure a minimum of aggregate 50% marks in DSA (30%) and SEE (70%)."
+  },
+  {
+   "q": "Can any students change the program after enrolling in any of Alliance University Online’s online courses?",
+   "a": "Yes, it is possible, but with some conditions. Here are the conditions: There is a certain period of time available for any change in the program the student is eligible for (s/he wishes to change to), and then it is possible to change the student. Interested students need to contact the students' support team or the admission support team to initiate the process. Getting approval from the Academic Council is a must for any change in the program."
+  },
+  {
+   "q": "How will students of an online program get to study at Alliance University Online?",
+   "a": "Alliance Unprovidesy Ontone provides access to their LMS where students can see all the study modules and notifications regarding the program, or any change happens during the program. Students additionally get comprehensive support from the university. Alliance University Online provides 24/7 access to its online learning platform, which is a Learning Management System (LMS). Students of online learning programs are provided with a strong learner support system, which includes technical support, peer forums, and academic advisors. These services are provided to students to ensure a smooth learning experience in their online learning journey with Alliance University Online."
+  },
+  {
+   "q": "Is getting an online degree from Alliance University Online the is valid and considered in the corporate world?",
+   "a": "Yes, online degrees are considered equivalent to regular degrees, whether they are from Alliance University (UGC-entitled) or any other university; the university is UGC-approved and is considered equally in the corporate sector."
+  },
+  {
+   "q": "What is the admission process for an online program at Alliance University Online?",
+   "a": "Here is the admission process to enroll in any of the online programs offered by Alliance University Online: Step 1: Program registration Step 2: Document upload Step 3: Fee Payment Step 4: University Approval Step 5: LMS Access"
+  },
+  {
+   "q": "Does Alliance University Online conduct its examinations semester-wise or annually?",
+   "a": "Alliance University conducts its examinations semester-wise. The examination is divided into two types of exams: one is an assessment (During Semester Assessment - 30% marks) athe nd Semester End Examination (70% marks)."
+  },
+  {
+   "q": "Does Alliance University Online offer any scholarships to its students?",
+   "a": "Yes, once University Online offers merit-based scholarships for both undergraduate and postgraduate programs. For UG students, there are 3 criteria (aggregate % of 10th and 12th): If they have secured 95% and above, they will get a concession of 40% in the total fee of the respective haverogram. If they have secured 93% to 94.9%, then they get a concession of 35% in the total fee of their UG course. And, if they have secured between 90% to 92.9%, then they get a concession of 30% in the total fee of their UG program. Similarly, for the PG students, the the crteria is same, but the percentage is calculated as an aggregate of 10th, 12th, and UG percentage."
+  },
+  {
+   "q": "Does Alliance University Online offer loans or loan options to students?",
+   "a": "Yes, Alliance offers a variety of loan facilities, but to avail of the loan facilities, students must be eligible for them. The university has set a few eligibility criteria to become eligthe loan for the loan option. Here are the eligibility criteria: The family Income must be &ge; 1.5–2&times; EMI amount No minimum CIBIL score is required Applicant: Parent/Guardian/Relative (21–56 yrs) Documents required to apply for a loan: PAN, Aadhaar, and Bank details only Bank statements are also required only if there are any mismatches in the family income or so."
+  },
+  {
+   "q": "How many programs are offered by Alliance University Online?",
+   "a": "Well, the university, Alliance University Online, offers 3 programs with multiple specializations intact. It offers an online MBA (Business Analytics, Marketing, Finance, HRM, Operations, and Business Analytics & AI), an online BBA (Marketing, Finance, HRM, and Operations), and an online BCom (Accounting & Taxation, Finance Management, and Marketing Management)."
+  }
+ ]
+}

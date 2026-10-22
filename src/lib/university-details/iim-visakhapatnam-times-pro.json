@@ -1,0 +1,385 @@
+{
+ "slug": "iim-visakhapatnam-times-pro",
+ "name": "IIM Visakhapatnam",
+ "establishedYear": "2015",
+ "location": "Visakhapatnam, Andhra Pradesh",
+ "rating": 4.8,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   1,
+   3
+  ],
+  "total": 4
+ },
+ "banner": "/university/banners/iim-visakhapatnam-times-pro.webp",
+ "approvals": [
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The Indian Institute of Management (IIM) Visakhapatnam is a top business school in the coastal city of Visakhapatnam, Andhra Pradesh, that is creating waves in the world of management education in India. IIM Visakhapatnam, established in 2015 as an autonomous institution by the Ministry of Human Resource Development, Government of India, has quickly emerged as the country's leading B-school, known for its rigorous academic curriculum, cutting-edge research, and commitment to developing business leaders of tomorrow."
+  },
+  {
+   "t": "p",
+   "text": "The emphasis of IIM Visakhapatnam extends beyond typical management education. The institute's programs are meant to develop well-rounded business executives who are only well-versed, have strong leadership abilities, and have a global outlook. The curriculum is revised regularly to keep up with the changing dynamics of the business world. It integrates experiential learning, case studies, and simulations to sharpen students' analytical and decision-making skills."
+  },
+  {
+   "t": "p",
+   "text": "IIM Visakhapatnam promotes a robust research culture by encouraging staff and students to do cutting-edge research that tackles real-world problems. Sustainable development, social entrepreneurship, digital transformation, and rural marketing are just a few of the institute's research centers and programs. In addition, faculty members actively engage in national and international conferences, publish research articles in prestigious journals, and work with leading universities to build a robust research environment that encourages innovation and knowledge production."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Top Course from IIMs!"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Courses Online",
+      "IIM Online MBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Executive MBA",
+      "IIM Online Certificate Courses"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Data Science and Analytics Online",
+      "IIM Digital Marketing and Analytics Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Project Management Online",
+      "IIM Financial Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Human Resource Management Online",
+      "IIM Leadership and Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Operations and Six Sigma Online",
+      "IIM Chief Business Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Financial Data Analytics Online",
+      "IIM Marketing and Sales Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Hospital and Healthcare Management Online",
+      "IIM Digital Transformation and Innovation Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Business Analytics Online",
+      "IIM Blockchain and Fintech Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Public Policy Management Online",
+      "IIM CMO Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM CFO Course Online",
+      "IIM Financial Services and Capital Markets Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Investment Banking and Capital Markets Online",
+      "IIM AI and Machine Learning Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief HR Officer Online Course",
+      "IIM Chief Operations Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief Executive Officer Online Course",
+      "IIM General Management Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Logistics and Supply Chain Management Online"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "IIM Visakhapatnam is proud of its solid industrial interaction, which allows students to engage with the business sector and develop practical insights. The institution conducts guest lectures, industry exchanges, live projects, internships, and seminars to bridge the gap between theory and reality. The institute's strong industry contacts also translate into outstanding placement prospects, with students landing coveted employment in famous businesses across various industries."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "IIM Visakhapatnam has a wealth of information resources; and modern infrastructure, even on its temporary campus, favourable to high-impact learning outcomes.",
+  "IIM Visakhapatnam thrives in academics, co- and extra-curricular activities and routinely wins pan-India contests because they have a lively student cohort with national character, representing most of India's states.",
+  "IIM Visakhapatnam was founded in 2015 as the country's 20th Indian Institute of Management (IIM).",
+  "It is one of India's top management institutes with a 26th ranking in NIRF.",
+  "IIM Visakhapatnam offers executive education programs for working professionals in online mode in the specializations of Strategic HRM, Digital & Social Media Marketing, Marketing Analytics, General Management, Digital Leadership in Smart Manufacturing, & Digital Supply Chain & Logistics Management.",
+  "IIM Visakhapatnam is the only IIM that has been granted the Dr. B R Ambedkar Chair by the Ministry of Social Justice & Empowerment (MSJE), GOI.",
+  "IIM Visakhapatnam features cutting-edge infrastructure, including contemporary classrooms, well-equipped libraries, computer laboratories, dorms, sports facilities, and recreational spaces.",
+  "All professors have PhDs from prestigious Indian and international institutions such as IIMs, IITs, and prestigious overseas universities.",
+  "The faculty of IIM Visakhapatnam is outstanding and are noted for their research, publications, and industry expertise, which enhances students' learning experiences.",
+  "IIM Visakhapatnam offers a strong industry engagement, including regular guest lecturers, workshops, seminars, and industrial visits."
+ ],
+ "courses": [],
+ "emi": [
+  {
+   "t": "p",
+   "text": "IIM Visakhapatnam acknowledges students' financial circumstances and provides the option of paying tuition in instalments. This allows students to handle their financial obligations systematically, making education more accessible and affordable. Furthermore, it demonstrates the institute's dedication to assisting students in pursuing management education without undue financial stress, delivering a smooth learning environment."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The following steps are usually included in the admission process for the Indian Institute of Management Visakhapatnam (IIM Visakhapatnam):"
+  },
+  {
+   "t": "p",
+   "text": "Step 1 - In the first step, interested applicants should go to the official website of IIM Visakhapatnam. Then, they must fill out the essential information, upload appropriate papers, and submit the application form online."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 - Candidates must fulfill the qualifying requirements provided by IIM Visakhapatnam for the certificate program offered. This may include minimal educational credentials, job experience, and other program-specific criteria."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 - The certificate program selection procedure may include screening applications based on eligibility requirements, followed by additional review through written tests, interviews, or other assessment techniques considered appropriate by IIM Visakhapatnam."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 - If a candidate's application is shortlisted and is offered admission, they must pay the program fees according to the institute's requirements."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 - After successfully paying fees, IIM Visakhapatnam confirms the candidate's admission to the certificate program."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "IIM Visakhapatnam's curriculum is meant to be broad and rigorous, encompassing all facets of management. It combines core courses, electives, case studies, simulations, and experiential learning experiences. The curriculum is changed regularly to reflect industry developments and expectations."
+  },
+  {
+   "t": "p",
+   "text": "The examination format at IIM Visakhapatnam is often a mix of mid-term and end-of-term tests, quizzes, assignments, and class participation. The assessment is based on continuously evaluating a student's performance throughout the term. The emphasis is on critical thinking, problem-solving, and concept application. The curriculum and examination pattern are intended to promote students' growth."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "IIM Visakhapatnam Placements 2023 have ended with a 100% placement rate. The average package at IIM Visakhapatnam climbed by 10.29% to INR 16.61 LPA, with the highest package being INR 32.65 LPA. Dual offers were extended to 17% of 193 students."
+  },
+  {
+   "t": "p",
+   "text": "The placement partners might change yearly, including multinational corporations (MNCs) and domestic businesses. Some of the well-known firms that have been known to recruit from IIM Visakhapatnam in the past and may continue to do so in the future, depending on the current placement season, are:"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Dunzo",
+   "logo": "/university/partners/dunzo.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Akash Verma",
+   "rating": 5,
+   "date": "2024-08-12",
+   "content": "Students Support EMI Facility"
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2024-01-27",
+   "content": "IIM Visakhapatnam provides a stimulating academic environment. The knowledge of the teachers and participatory teaching techniques give a solid basis for real-world difficulties."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2024-01-27",
+   "content": "The campus infrastructure and resources at IIM Visakhapatnam are commendable. The emphasis on holistic development through numerous organizations and activities is genuinely outstanding."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2024-01-27",
+   "content": "The rigorous curriculum, case-based learning, and diverse peer group at IIM Visakhapatnam have significantly improved my business acumen. It is a place that promotes growth and quality."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can I pursue an MBA without a good CAT score?",
+   "a": "Top management institutions in India including IIMs are now offering online MBAs for which you do not need to attempt CAT. Some of these trending MBA options are listed below. MBA without CAT Available! MBA Global Online MBA for Working Professionals MBA Courses Online MBA Distance Learning Course Online Executive MBA MBA Part-Time Courses Executive MBA for Working Professionals"
+  },
+  {
+   "q": "What is the IIM Vishakhapatnam online Executive Development Certification program?",
+   "a": "IIM Vishakhapatnam's online Executive Development Certification program is a professional development program designed for working professionals who desire to improve their abilities and knowledge in various business fields. It is offered online, allowing users to learn at their speed."
+  },
+  {
+   "q": "What distinguishes the online Executive Development Certification program?",
+   "a": "IIM Vishakhapatnam's online Executive Development Certification program is designed with several key features, including high-quality course content developed by expert faculty, interactive online learning modules, case studies, assignments, and assessments to assess participants' understanding of the subject matter."
+  },
+  {
+   "q": "Who is eligible to participate in the online Executive Development Certification program?",
+   "a": "IIM Vishakhapatnam's online Executive Development Certification program is designed for mid-career professionals, managers, and executives who want to improve their skills and knowledge in business management, leadership, marketing, finance, operations, and other relevant areas."
+  },
+  {
+   "q": "What are the advantages of the Executive Development Certification online program?",
+   "a": "Participants in the online Executive Development Certification program offered by IIM Vishakhapatnam benefit from various advantages, including the ability to study from renowned teachers from IIM Vishakhapatnam, India's most prestigious B-school."
+  },
+  {
+   "q": "What are some best online executive programs in India?",
+   "a": "Universities have launched numerous online executive courses to empower the Indian workforce. The top ones on that list are tabulated below: Explorer Best Executive Programs In India Executive Program Online In Finance Executive Program Online In HR Executive Program Online In Operations Executive Program Online In Leadership Executive Program Online In Data Science and Analytics Executive Program Online In AI and Machine Learning Executive Program Online In Marketing Executive Program Online In Software and Technology Executive Program Online In Healthcare Executive Program Online In Business Analytics Executive Program Online In DevOps Executive Program Online In Cyber Security Executive Program Online In Bigdata Engineering Executive Program Online In Blockchain Executive Program Online In Cloud Computing LLM Online Job Linked Programs Pay After Placement Programs Explore more online and distance courses In India! Click here for all approved distance and online universities in India!"
+  },
+  {
+   "q": "Can I pursue a doctorate program while working?",
+   "a": "Several online doctorate courses have been launched in the market for working professionals. A few of them include: Explore Online Doctorate Programs for Working Professionals Online Doctorate Course for Working Professionals Doctor of Juridical Science DBA In Supply Chain Management DBA In Supply Artificial Intelligence DBA In Human Resource Management Doctor of Business Administration"
+  },
+  {
+   "q": "Which top IIMs offer online management courses other than IIM Visakhapatnam?",
+   "a": "Here is a list of the top IIMs as per NIRF 2024 Management category which offer different types of online management courses. Top IIMs In India As Per NIRF Ranking 2024 Name Rank Score Indian Institute of Management Ahmedabad 1 83.32 Indian Institute of Management Amritsar 47 52.57 Indian Institute of Management Bangalore 2 81.16 Indian Institute of Management Jammu 42 54.64 Indian Institute of Management Kashipur 23 60.82 Indian Institute of Management Kozhikode 3 77.90 Indian Institute of Management Lucknow 7 74.43 Indian Institute of Management Nagpur 31 56.94 Indian Institute of Management Raipur 14 64.40 Indian Institute of Management Ranch i 17 61.27 Indian Institute of Management Rohtak 12 66.49 Indian Institute of Management Sambalpur 50 51.47 Indian Institute of Management Shillong 24 60.49 Indian Institute of Management Sirmaur 57 50.92 Indian Institute of Management Udaipur 22 60.93 Indian Institute of Management Visakhapatnam 26 59.20"
+  },
+  {
+   "q": "How long will the online Executive Development Certification program last, and how will it be structured?",
+   "a": "Depending on the chosen course, the online Executive Development Certification program provided by IIM Vishakhapatnam typically lasts a year. The program is entirely online, with participants able to access course materials, communicate with teachers and peers, and complete assignments and exams at their speed."
+  }
+ ]
+}

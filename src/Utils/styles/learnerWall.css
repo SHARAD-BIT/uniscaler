@@ -1,0 +1,188 @@
+/* "1.25 Lakh+ Learners" band, after the collegevidya reference: stat block on
+   the left, a staggered four-column wall of learner cards on the right. Faces
+   are AI-generated (see LearnerWall.jsx); logos come from the local
+   placement-partner set. */
+
+/* Its own full-width band, separating it from the white sections around it.
+   The blue is the navbar top strip's own gradient, copied from `nav .appBar`
+   in navbar.css (the hero banner's measured navy) — keep the two in step if
+   that strip is ever recoloured. */
+.lw-band {
+  background-color: #003882;
+  background-image: linear-gradient(
+    90deg,
+    #002049 0%,
+    #002d66 10%,
+    #003882 26%,
+    #003882 74%,
+    #002d66 90%,
+    #002049 100%
+  );
+  padding: clamp(2rem, 5vw, 3.5rem) 0;
+}
+/* Inside the online-course page the band runs edge to edge, cancelling the
+   page's side padding the same way the hero video band does (--oc-pad-x is
+   inherited from .onlineCourse). */
+.onlineCourse .lw-band {
+  margin: 0 calc(-1 * var(--oc-pad-x));
+}
+
+.lw {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+.lw-copy {
+  flex: 1;
+  min-width: 240px;
+  text-align: left;
+}
+/* Light type on the navy band. */
+.lw-stat {
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.05;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+.lw-title {
+  margin-top: 0.35rem;
+  font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+  font-weight: 800;
+  color: #cfe1ff;
+}
+.lw-sub {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* The wall is a fixed-height window the columns scroll inside forever: odd
+   columns drift up, even ones down, each on its own period so they never sync.
+   Each track holds its card list twice; wrapping at -50% therefore lands on
+   an identical frame and the loop has no visible seam. The soft mask keeps
+   cards from being cut off hard at the window's edges. */
+.lw-wall {
+  flex: 1.2;
+  display: flex;
+  gap: 14px;
+  height: clamp(420px, 42vw, 580px);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+}
+.lw-col {
+  flex: 1;
+}
+.lw-track {
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+  animation: lw-scroll-up 34s linear infinite;
+}
+.lw-col:nth-child(2) .lw-track {
+  animation-name: lw-scroll-down;
+  animation-duration: 42s;
+}
+.lw-col:nth-child(3) .lw-track {
+  animation-duration: 38s;
+}
+.lw-col:nth-child(4) .lw-track {
+  animation-name: lw-scroll-down;
+  animation-duration: 46s;
+}
+/* padding-bottom rather than gap between the two groups: it keeps each
+   group's outer height exactly half the track, which the -50% wrap relies
+   on. */
+.lw-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 14px;
+}
+@keyframes lw-scroll-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+@keyframes lw-scroll-down {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* Motion is decorative here — a reduced-motion visitor gets a still wall. */
+@media (prefers-reduced-motion: reduce) {
+  .lw-track {
+    animation: none;
+  }
+}
+
+.lw-card {
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(15, 33, 64, 0.08);
+}
+.lw-card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.lw-card figcaption {
+  height: 38px;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  padding: 0 10px;
+}
+.lw-card figcaption img {
+  max-height: 20px;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .lw {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lw-copy {
+    text-align: center;
+  }
+  /* Two columns on phones — one drifting each way. The other two are hidden
+     rather than wrapped: a wrapped column would fall below the fixed-height
+     window and simply be cut off. */
+  .lw-wall {
+    width: 100%;
+    height: 420px;
+  }
+  .lw-col:nth-child(n + 3) {
+    display: none;
+  }
+}

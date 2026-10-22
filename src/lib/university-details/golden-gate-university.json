@@ -1,0 +1,641 @@
+{
+ "slug": "golden-gate-university",
+ "name": "Golden Gate University",
+ "establishedYear": "1901",
+ "location": "",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   0,
+   1,
+   1,
+   9,
+   33
+  ],
+  "total": 44
+ },
+ "banner": "/university/banners/golden-gate-university.webp",
+ "approvals": [
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "WSCUC",
+   "logo": "/university/approvals/WSCUC.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Golden Gate University (GGU) is a beacon of excellence in higher education in the bustling metropolis of San Francisco. With over 100 years of existence, the university has established itself as a recognized institution known for its commitment to academic excellence, practical instruction, and professional achievement."
+  },
+  {
+   "t": "p",
+   "text": "Golden Gate University's varied choice of programs tailored to suit the demands of today's changing workforce is one of its core assets. Business, law, taxes, accounting, psychology, public administration, and information technology are among the undergraduate and graduate disciplines available at the university. So whether students want to be successful entrepreneurs, accomplished attorneys, or inventive leaders in their fields, GGU provides them with the information and skills they need to succeed."
+  },
+  {
+   "t": "p",
+   "text": "GGU has become an associate member university of the Association of Indian University (AIU), New Delhi from 1 April 2023."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In DevOps",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The rigorous curriculum and high academic standards of Golden Gate University demonstrate the university's dedication to academic achievement. The institution enjoys providing intellectually stimulating programs that promote critical thinking, problem-solving abilities, and analytical reasoning. Students are encouraged to participate in vigorous debates, research, and think creatively to prepare them to overcome complicated issues in their chosen disciplines."
+  },
+  {
+   "t": "p",
+   "text": "The emphasis on practical education is important to Golden Gate University's educational philosophy. The faculty, which includes renowned professionals and industry experts, brings real-world expertise into the classroom to ensure students obtain a well-rounded education directly applicable to their future jobs. In addition, the university's tight relationships with the Bay Area business world provide many opportunities for internships, networking, and experiential learning, helping students bridge the theoretical and practical divide."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explore Online Doctorate Programs for Working Professionals"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Doctorate Course for Working Professionals",
+      "Doctor of Juridical Science"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA In Supply Chain Management",
+      "DBA In Supply Artificial Intelligence"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA In Human Resource Management",
+      "Doctor of Business Administration"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The University's commitment to creating a learning environment is admirable. Small class sizes enable students to engage in meaningful conversations. This fosters a collaborative and welcoming environment where students may develop intellectually. The university's dedication to student achievement goes beyond the classroom, with extensive academic counseling, career services, and professional development programs available."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "Golden Gate University is one of the best institutions in the United States for international students. The university offers a high-quality education with several job and learning possibilities. Reputable organisations like WSCUC and ABA also recognise G"
+  },
+  {
+   "title": "Great placement assistance",
+   "content": "GGU helps you access hundreds of openings with local and global businesses and organisations. In addition, they collaborate with companies to provide students with a job board suited to GGU's academic degrees."
+  },
+  {
+   "title": "International Tie-ups",
+   "content": "GGU Worldwide collaborates with universities and academic institutions to provide affordable and accessible joint, dual, and cooperative programs and international campus partnerships supervised by the US Department of Education and WASC rules."
+  }
+ ],
+ "facts": [
+  "Golden Gate University has a lengthy history, dating back to 1901, when it was known as the YMCA Evening Law School.",
+  "GGU is located in the centre of San Francisco, one of the most lively and culturally diverse cities in the United States.",
+  "The institution uses its position to connect with the local community and provide students with unique learning opportunities.",
+  "GGU is well-known for its dedication to assisting non-traditional students, such as working professionals and adult learners.",
+  "The institution provides flexible scheduling alternatives such as evening sessions and online programs to meet the demands of students who lead busy lives.",
+  "Several notable organizations, including WASC, Senior College, and University Commission, accredit GGU.",
+  "GGU provides a comprehensive range of undergraduate and graduate programs in various fields.",
+  "The institution is well-known for its business, law, taxes, accounting, psychology, and public administration disciplines.",
+  "GGU's faculty comprises experienced professionals with real-world experience in their respective professions.",
+  "The American Bar Association (ABA) has recognized GGU's School of Law, which provides a rigorous legal education.",
+  "GGU has an extensive and prominent alum network. The university's alum network provides current students with vital contacts and networking possibilities.",
+  "GGU has become an Associate Member University of the AIU, New Delhi, from 1 April 2023."
+ ],
+ "courses": [
+  {
+   "name": "Global Business Management",
+   "fee": 313529,
+   "duration": "7 - 8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "313529"
+    }
+   ]
+  },
+  {
+   "name": "Online Master of Science",
+   "fee": 821011,
+   "duration": "24 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "821011"
+    }
+   ]
+  },
+  {
+   "name": "Full Stack Software Development Bootcamp",
+   "fee": 85000,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "85000"
+    }
+   ]
+  },
+  {
+   "name": "DBA in Emerging Technologies with concentration in Gen AI",
+   "fee": 1800000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1800000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 450000,
+   "duration": "15 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "450000"
+    }
+   ]
+  },
+  {
+   "name": "Study In USA",
+   "fee": 3023307,
+   "duration": "1 Year Online + 3 Years On-Campus (both at Golden Gate)",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "3023307"
+    }
+   ]
+  },
+  {
+   "name": "MBA Abroad Hybrid Program",
+   "fee": 1936078,
+   "duration": "8 Months Online + 12 Months On-Campus (both at Golden Gate)",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1936078"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctorate Courses",
+   "fee": 1065000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1065000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA Courses",
+   "fee": 1065000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1065000"
+    }
+   ]
+  },
+  {
+   "name": "Online Global MBA",
+   "fee": 430000,
+   "duration": "15 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "430000"
+    }
+   ]
+  },
+  {
+   "name": "Online One Year MBA",
+   "fee": 430000,
+   "duration": "15 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "430000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 430000,
+   "duration": "15 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "430000"
+    }
+   ]
+  },
+  {
+   "name": "Online Executive MBA",
+   "fee": 430000,
+   "duration": "15 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "430000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral Program (PhD)",
+   "fee": 1065000,
+   "duration": "3-5 Years",
+   "feeDetails": []
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Golden Gate University (GGU) allows students to pay their tuition in installments. This allows students to spread out their financial commitments over time rather than paying the complete sum simultaneously."
+  },
+  {
+   "t": "p",
+   "text": "It's crucial to remember that the specifics of installment plans, such as the number of installments, payment dates, and any related fees or interest, may vary. As a result, it is best to ask directly with GGU's financial aid office or student accounts department about the possible payment options for the program you are interested in. They will offer accurate and up-to-date payment plan information and will aid you in understanding the alternatives and criteria."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Golden Gate University's (GGU) admissions process consists of many parts. While the particular prerequisites and processes will vary based on the program, below is a broad outline of the admission process:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Submit an online application through GGU's official website or the relevant application portal. Make sure you choose the curriculum and degree level that interests you."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Pay the needed application fee, which varies by program and degree level. For the most up-to-date pricing information, visit GGU's website or contact the admissions office."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Submit certified transcripts from all prior institutions and universities attended. These transcripts highlight your academic achievements and demonstrate that you fulfill the program's basic qualifying standards."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: International students who do not speak English as their first language may be required to demonstrate English language competency through examinations such as the TOEFL (Test of English as a Foreign Language) or IELTS (International English Language Testing System)."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: After receiving all application papers, the admissions committee will analyze your application and evaluate your qualities, including academic accomplishments, job experience, test scores, and other relevant variables."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: The admissions committee will decide after considering your application. If accepted, you will get an official admission letter describing any next steps and enrollment information."
+  },
+  {
+   "t": "p",
+   "text": "It is vital to remember that the admissions procedure varies depending on the program and degree level. Therefore, to acquire extensive and up-to-date information related to your program of interest, it is advised that you visit GGU's official website or contact the admissions office directly."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "AIU Associate Membership Letter of Golden Gate University, California, USA Read the AIU Letter"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination pattern at GGU is intended to measure students' knowledge and abilities. They were given both in-person and online, with online exams using remote proctoring. The school uses a credit-based grading system; the test schedule is published in advance. Students dissatisfied with their exam results can ask for a reevaluation."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Golden Gate University (GGU) collaborates well with various organizations and businesses to improve students' employment options and increase networking opportunities. GGU's professional Planning & Placement Center works with these placement partners to help students and graduates with internships, job placements, and professional development opportunities."
+  },
+  {
+   "t": "p",
+   "text": "Here are a few companies that have tie-ups with GGU:"
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Some Companies that collaborate with Golden Gate University"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Google",
+      "Salesforce",
+      "Oracle"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Wells Fargo",
+      "Deloitte",
+      "Morrison & Foerster"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Orrick",
+      "KPMG",
+      "Ernst & Young"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "PWC",
+      "LinkedIn",
+      "Apple"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Facebook",
+      "Adobe",
+      "Internal Revenue Service (IRS)"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "While individual placement partners may differ based on the curriculum and industry, GGU's large network comprises local, national, and worldwide organizations from various industries. Businesses, law companies, accountancy firms, government agencies, and nonprofit groups are among the partners."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Facebook",
+   "logo": "/university/partners/facebook.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Paytm",
+   "logo": "/university/partners/paytm.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "Apple",
+   "logo": "/university/partners/apple.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Mick Mcgee",
+   "title": "Director, DBA Program",
+   "description": "Dr. McGee, Associate Dean and DBA Program Director at Golden Gate University brings 21+ years of academic and leadership experience, specializing in higher education management.",
+   "photo": "/university/faculty/Dr._Mick_Mcgee.webp"
+  },
+  {
+   "name": "Prof. Anthony De Leon",
+   "title": "Former Partner, Accenture",
+   "description": "Prof. Anthony, DBA from GGU, is a senior adjunct marketing professor with 18 years of consulting experience, including leadership roles at Accenture and Booz Allen.",
+   "photo": "/university/faculty/Prof._anthony_De_Leon.webp"
+  },
+  {
+   "name": "Dr. Judy Lee",
+   "title": "Professor & Director, GGU",
+   "description": "Dr. Lee, Founding Executive Director of the Business Innovation Center at GGU, has extensive leadership experience in IT and academia.",
+   "photo": "/university/faculty/Dr._Judy_Lee.webp"
+  },
+  {
+   "name": "Dr. Anitha Manohar",
+   "title": "Dept. Chair, Finance, GGU",
+   "description": "Dr. Anitha Manohar, PhD in Finance, teaches at GGU with research in option markets and prior experience at Quinnipiac and Mercer University.",
+   "photo": "/university/faculty/Dr._Anitha_Manohar.webp"
+  },
+  {
+   "name": "Prof. Tommy Moreno",
+   "title": "Adjunct Professor, GGU",
+   "description": "Prof. Tommy is a talent development leader with global Fortune 500 experience and holds a doctorate in Organization and Leadership from USF.",
+   "photo": "/university/faculty/Prof._Tommy_moreno.webp"
+  },
+  {
+   "name": "Prof. Marion Moreno",
+   "title": "Adjunct Professor, GGU",
+   "description": "Dr. Marion, a senior talent leader with Fortune 500 experience and a doctorate in Leadership from USF, leads executive programs across the US.",
+   "photo": "/university/faculty/Prof._Marion_Moreno.webp"
+  },
+  {
+   "name": "Prof. Geoffrey Ngene",
+   "title": "Associate Professor, Finance",
+   "description": "Dr. Geoffrey M. Ngene, Associate Professor of Finance at Mercer, holds a PhD in Financial Economics and is an award-winning educator and finance expert.",
+   "photo": "/university/faculty/Prof._Geoffrey_Ngene.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Debrup Mondal",
+   "rating": 5,
+   "date": "2026-04-24",
+   "content": "Golden Gate University offers flexible, career-focused programs with practical learning for professionals; strong academics and industry relevance, though limited global ranking and higher tuition."
+  },
+  {
+   "name": "Syed Danish Ali",
+   "rating": 5,
+   "date": "2026-04-23",
+   "content": "I am Pursuing my DBA at Golden Gate University. The online program is perfect for working professionals. The faculty brings strong industry insights, making learning both practical and engaging."
+  },
+  {
+   "name": "Kamlesh Bansal",
+   "rating": 5,
+   "date": "2026-03-28",
+   "content": "Just started my DBA at Golden Gate University. Early experience is encouraging—practical, executive-focused, and aligned to AI-led decision-making. Looking forward to the journey."
+  },
+  {
+   "name": "chand shaikh",
+   "rating": 5,
+   "date": "2026-01-23",
+   "content": "Till now my journey with GGU Is amazing and full of learning, the concept and the modules are very informative. everyday i m learning new things and gaining deep knowledge. the professor lectures are well defined, live sessions are also very much informative and helping to gain more insights about the concepts."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What courses are available at Golden Gate University?",
+   "a": "Golden Gate University provides undergraduate and postgraduate business, law, taxes, accounting, psychology, and public administration courses. Degrees in finance, marketing, management, law, taxation, and psychology are among the specific programs available."
+  },
+  {
+   "q": "What are the GGU admissions requirements?",
+   "a": "Admission criteria differ according to program and degree level. Applicants must often submit an application form, official transcripts, a personal statement or essay, letters of reference (if necessary), and, in certain circumstances, admission exam scores (such as the GMAT or GRE). In addition, international students may be required to verify their English competence via examinations such as the TOEFL or IELTS."
+  },
+  {
+   "q": "Does GGU provide financial assistance or scholarships?",
+   "a": "Yes, GGU offers financial help and scholarships to qualified students. Grants, loans, and work-study programs are examples of financial help. Scholarships are offered for undergraduate and graduate students, with different qualifying requirements and application processes."
+  },
+  {
+   "q": "Is it possible to study at GGU online?",
+   "a": "Yes, GGU provides online programs and courses to students who choose distance learning or have time limitations. Students can use the university's online learning platform to access course materials, participate in discussions, and digitally communicate with teachers and peers."
+  },
+  {
+   "q": "Does GGU provide placement assistance?",
+   "a": "Yes, GGU offers a specialised Career Planning & Placement Center that provides students and alums with career assistance and support. Resume writing, interview preparation, job search tools, networking events, and access to job fairs are among the services provided. In addition, to enable internships, job placements, and professional development opportunities, the centre works with various companies and organisations."
+  },
+  {
+   "q": "Can international students apply to GGU?",
+   "a": "Yes, overseas students may apply to Golden Gate University. The institution helps international students with visa formalities and English language competency criteria. International applicants should check unique admission criteria and seek advice from the admissions office."
+  },
+  {
+   "q": "Is there a campus and student group at GGU?",
+   "a": "Yes, GGU has a campus in San Francisco, complete with classrooms, libraries, computer laboratories, and student lounges. Additionally, the institution provides student groups and clubs that cater to a wide range of interests, allowing students to participate in extracurricular activities, leadership development, and networking opportunities."
+  },
+  {
+   "q": "Are student reviews available for Golden Gate University?",
+   "a": "Yes, Golden Gate University's student reviews are available on the Student Review Portal by College Vidya , covering academics, LMS experience, placement support, and overall program satisfaction. You can explore these reviews, built entirely on feedback from students who actually enrolled. Since no university can pay to remove or hide reviews here, the ratings represent authentic student experiences."
+  }
+ ]
+}

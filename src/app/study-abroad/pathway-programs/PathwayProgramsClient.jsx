@@ -1,24 +1,76 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   FaArrowRight,
-  FaPlaneUp,
   FaXmark,
-  FaDownload,
+  FaHeart,
+  FaRegHeart,
+  FaMagnifyingGlass,
+  FaChevronLeft,
+  FaChevronRight,
 } from "react-icons/fa6";
 import {
   pathwayFacets,
-  pathwayPrograms,
   filterPrograms,
+  searchPrograms,
+  POST_STUDY_WORK,
 } from "@/lib/pathwayPrograms";
 import "../study-abroad.css";
 import "./pathway-programs.css";
 
-/** How many to render before "Load more" — 203 cards at once is a long page. */
-const PAGE_SIZE = 24;
+/** Cards per page — the reference paginates ten per page and so does this. */
+const PAGE_SIZE = 10;
+
+/**
+ * The page-number row: first and last always, a window around the current
+ * page, "…" where a run is skipped. 21 numbered buttons for the unfiltered
+ * list would be a second toolbar; this stays at no more than seven cells.
+ */
+function pageCells(current, total) {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+  const cells = [1];
+  if (current > 3) cells.push("…");
+  for (
+    let p = Math.max(2, current - 1);
+    p <= Math.min(total - 1, current + 1);
+    p++
+  )
+    cells.push(p);
+  if (current < total - 2) cells.push("…");
+  cells.push(total);
+  return cells;
+}
+
+/**
+ * The card hearts, kept in this browser only. There are no accounts on this
+ * page, so localStorage is the honest scope: the heart remembers, on this
+ * machine, which programs caught the eye — it is not a synced wishlist.
+ * Reads and writes are try/catch'd because the accessor itself can throw
+ * (SSR, private windows, storage disabled), and an empty set is the correct
+ * answer in every one of those cases.
+ */
+const SAVED_KEY = "uniscaler-pathway-saved";
+
+const readSaved = () => {
+  try {
+    const raw = localStorage.getItem(SAVED_KEY);
+    return new Set(raw ? JSON.parse(raw) : []);
+  } catch {
+    return new Set();
+  }
+};
+
+/** 11 → "11 Months", 18 → "1 Year 6 Months" — the reference's phrasing. */
+const fmtMonths = (m) => {
+  if (!m) return null;
+  if (m < 12) return `${m} Months`;
+  const years = Math.floor(m / 12);
+  const rest = m % 12;
+  return `${years} Year${years > 1 ? "s" : ""}${rest ? ` ${rest} Months` : ""}`;
+};
 
 /**
  * Reads the initial selection off the query string.
@@ -49,9 +101,48 @@ export default function PathwayProgramsClient() {
   const [selection, setSelection] = useState(() =>
     selectionFromQuery(searchParams)
   );
-  const [shown, setShown] = useState(PAGE_SIZE);
+  const [page, setPage] = useState(1);
+  const [query, setQuery] = useState("");
 
-  const results = useMemo(() => filterPrograms(selection), [selection]);
+  // Starts empty and loads after mount, so the server and first client render
+  // agree (localStorage exists on neither) and hydration stays clean.
+  const [saved, setSaved] = useState(() => new Set());
+  useEffect(() => {
+    setSaved(readSaved());
+  }, []);
+
+  const toggleSaved = (id) => {
+    setSaved((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      try {
+        localStorage.setItem(SAVED_KEY, JSON.stringify([...next]));
+      } catch {
+        // Storage refused (private window, quota) — the heart still works
+        // for this visit; it just won't be remembered.
+      }
+      return next;
+    });
+  };
+
+  // Search runs on top of the facet selection: the pills narrow the pool,
+  // the query ranks and prunes what is left. 203 items score in well under
+  // a millisecond, so this runs on every keystroke with no debounce.
+  const results = useMemo(
+    () => searchPrograms(filterPrograms(selection), query),
+    [selection, query]
+  );
+  const searching = query.trim().length > 0;
+
+  // Clamped rather than trusted: hearts and re-renders never change it, but a
+  // filter applied while deep in the list can leave `page` past the new end.
+  const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages);
+  const pageResults = results.slice(
+    (safePage - 1) * PAGE_SIZE,
+    safePage * PAGE_SIZE
+  );
 
   const chosenCount = Object.values(selection).reduce(
     (n, v) => n + v.length,
@@ -68,9 +159,17 @@ export default function PathwayProgramsClient() {
       if (!next.length) delete updated[key];
       return updated;
     });
-    // A narrower list should start from the top rather than keep however many
-    // pages the previous, wider one had been opened out to.
-    setShown(PAGE_SIZE);
+    // A narrower list starts from its first page.
+    setPage(1);
+  };
+
+  const goToPage = (next) => {
+    setPage(next);
+    // The new page's cards replace the old ones well below the fold —
+    // return to the top of the results so the change is visible.
+    document
+      .getElementById("pp-results")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -89,10 +188,35 @@ export default function PathwayProgramsClient() {
         </div>
 
         <h1 className="pp-title">Accelerated Pathway Programs</h1>
-        <p className="pp-sub">
-          Every program in the catalog — {pathwayPrograms.length} degrees across{" "}
-          {pathwayFacets[1].options.length} countries. Narrow it down below.
-        </p>
+
+        {/* Typo-tolerant search over title, university, country and domain —
+            see searchPrograms in lib/pathwayPrograms.js. */}
+        <div className="pp-search">
+          <FaMagnifyingGlass aria-hidden="true" />
+          <input
+            type="search"
+            value={query}
+            placeholder="Search programs, universities, countries…"
+            aria-label="Search programs"
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setPage(1);
+            }}
+          />
+          {searching && (
+            <button
+              type="button"
+              className="pp-search-clear"
+              aria-label="Clear search"
+              onClick={() => {
+                setQuery("");
+                setPage(1);
+              }}
+            >
+              <FaXmark />
+            </button>
+          )}
+        </div>
 
         <section className="pp-prefs" aria-label="Change preferences">
           <div className="pp-prefs-head">
@@ -103,7 +227,7 @@ export default function PathwayProgramsClient() {
                 className="pp-clear"
                 onClick={() => {
                   setSelection({});
-                  setShown(PAGE_SIZE);
+                  setPage(1);
                 }}
               >
                 Clear {chosenCount} filter{chosenCount > 1 ? "s" : ""}{" "}
@@ -131,7 +255,6 @@ export default function PathwayProgramsClient() {
                       onClick={() => toggle(facet.key, option.value)}
                     >
                       {option.value}
-                      <span className="pp-pill-count">{option.count}</span>
                     </button>
                   );
                 })}
@@ -140,87 +263,179 @@ export default function PathwayProgramsClient() {
           ))}
         </section>
 
-        <div className="pp-resultbar" aria-live="polite">
-          <strong>{results.length}</strong>{" "}
-          {results.length === 1 ? "program" : "programs"}
-          {chosenCount > 0 && " match your preferences"}
-        </div>
+        {/* Only while filtering or searching — then the number is feedback
+            on the selection. Bare of either, "203 programs" was just a
+            figure on the page, and the client asked for no numbers
+            (2026-08-24). */}
+        {(chosenCount > 0 || searching) && (
+          <div className="pp-resultbar" aria-live="polite">
+            <strong>{results.length}</strong>{" "}
+            {results.length === 1 ? "program" : "programs"} match your{" "}
+            {searching && chosenCount > 0
+              ? "search and preferences"
+              : searching
+                ? "search"
+                : "preferences"}
+          </div>
+        )}
 
         {results.length > 0 ? (
           <>
-            <div className="pp-grid">
-              {results.slice(0, shown).map((program) => (
-                <article className="sa-pathway-card" key={program.id}>
-                  <div className="sa-pathway-card-head">
-                    <span className="sa-pathway-where">
-                      <FaPlaneUp />
-                      Study in {program.country}
-                    </span>
-                  </div>
-                  <div className="sa-pathway-card-body">
-                    <span className="sa-pathway-logo">
-                      <img
-                        src={program.logo}
-                        alt={program.university}
-                        loading="lazy"
-                      />
-                    </span>
-                    <span className="sa-pathway-uni">
-                      <img src={program.flag} alt="" />
-                      <span>{program.university}</span>
-                    </span>
-                    <h3 className="sa-pathway-name">{program.title}</h3>
+            {/* The reference's wide card, one per row: logo panel, red title
+                and durations on the left; labelled fact columns (university,
+                country, visa, the two fees) and the CTA pair on the right.
+                Their cards lead with a campus photo — licensed stock we have
+                no right to (see studyAbroadDestinations.js), so the
+                university logo panel stands in. */}
+            <div className="pp-list" id="pp-results">
+              {pageResults.map((program) => {
+                const visa = program.visaMonths
+                  ? `Upto ${program.visaMonths} Months`
+                  : POST_STUDY_WORK[program.country];
+                return (
+                  <article className="pp-card" key={program.id}>
+                    <button
+                      type="button"
+                      className={`pp-save${
+                        saved.has(program.id) ? " is-saved" : ""
+                      }`}
+                      aria-pressed={saved.has(program.id)}
+                      aria-label={
+                        saved.has(program.id)
+                          ? `Remove ${program.title} from saved programs`
+                          : `Save ${program.title}`
+                      }
+                      onClick={() => toggleSaved(program.id)}
+                    >
+                      {saved.has(program.id) ? <FaHeart /> : <FaRegHeart />}
+                    </button>
 
-                    {/* What the pills would have to be set to for this program
-                        to come back — the same vocabulary, so the badges read
-                        as an explanation of the filters rather than as a second
-                        set of labels. */}
-                    <div className="pp-tags">
-                      <span className="pp-tag">{program.domain}</span>
-                      {program.level && (
-                        <span className="pp-tag">{program.level}</span>
+                    <div className="pp-card-left">
+                      <span className="pp-card-logo">
+                        <img
+                          src={program.logo}
+                          alt={program.university}
+                          loading="lazy"
+                        />
+                      </span>
+                      <h3 className="pp-card-title">{program.title}</h3>
+                      {program.onlineMonths && (
+                        <p className="pp-card-dur">
+                          Online duration - {fmtMonths(program.onlineMonths)}
+                        </p>
                       )}
-                      {program.stem && <span className="pp-tag">STEM</span>}
-                      {program.internship && (
-                        <span className="pp-tag">With Internship</span>
+                      {program.campusMonths && (
+                        <p className="pp-card-dur">
+                          On-campus duration - {fmtMonths(program.campusMonths)}
+                        </p>
                       )}
                     </div>
 
-                    {/* Same button as the study-abroad page's pathway cards —
-                        a lead gate to /register since 2026-08-19, not a
-                        download, on every card including the two brochure-less
-                        ones. The long note there has the history; keep the two
-                        sites in step. */}
-                    <div className="sa-pathway-actions">
-                      <Link
-                        href="/register"
-                        className="sa-pathway-cta"
-                        aria-label={`Register to get the brochure for ${program.title}`}
-                      >
-                        Download Brochure <FaDownload />
-                      </Link>
-                      <Link
-                        href={`/study-abroad/${program.countrySlug}`}
-                        className="sa-pathway-go"
-                        aria-label={`${program.title} — programs in ${program.country}`}
-                      >
-                        <FaArrowRight />
-                      </Link>
+                    <div className="pp-card-right">
+                      <div className="pp-card-facts">
+                        <div className="pp-fact">
+                          <span>University Name</span>
+                          <strong>{program.university}</strong>
+                        </div>
+                        <div className="pp-fact">
+                          <span>Destination Country</span>
+                          <strong>{program.country}</strong>
+                        </div>
+                        {visa && (
+                          <div className="pp-fact">
+                            <span>Post Study Work Visa Eligibility</span>
+                            <strong>{visa}</strong>
+                          </div>
+                        )}
+                        {program.campusFee && (
+                          <div className="pp-fact">
+                            <span>On-campus Tuition Fee</span>
+                            <strong>~ {program.campusFee}</strong>
+                          </div>
+                        )}
+                        {program.onlineFee && (
+                          <div className="pp-fact">
+                            <span>Online Tuition Fee</span>
+                            <strong>{program.onlineFee}</strong>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Both CTAs are the lead gate — /register — on the
+                          client's word (2026-08-24), as the brochure button
+                          they replace was (2026-08-19 decision). */}
+                      <div className="pp-card-ctas">
+                        <Link
+                          href="/register"
+                          className="pp-cta-outline"
+                          aria-label={`Register to check eligibility for ${program.title}`}
+                        >
+                          Check Eligibility
+                        </Link>
+                        <Link
+                          href="/register"
+                          className="pp-cta-solid"
+                          aria-label={`Register to know more about ${program.title}`}
+                        >
+                          Know More
+                        </Link>
+                      </div>
                     </div>
-                  </div>
-                </article>
-              ))}
+                  </article>
+                );
+              })}
             </div>
 
-            {shown < results.length && (
-              <div className="pp-more">
+            {totalPages > 1 && (
+              /* A div with the role, not <nav> — navbar.css styles the bare
+                 element into a second fixed site bar (see the breadcrumb
+                 note at the top of this component). */
+              <div
+                className="pp-pagination"
+                role="navigation"
+                aria-label="Pagination"
+              >
                 <button
                   type="button"
-                  className="sa-pathway-viewall"
-                  onClick={() => setShown((n) => n + PAGE_SIZE)}
+                  className="pp-page-arrow"
+                  disabled={safePage === 1}
+                  aria-label="Previous page"
+                  onClick={() => goToPage(safePage - 1)}
                 >
-                  Load {Math.min(PAGE_SIZE, results.length - shown)} more of{" "}
-                  {results.length} <FaArrowRight />
+                  <FaChevronLeft />
+                </button>
+                {pageCells(safePage, totalPages).map((cell, i) =>
+                  cell === "…" ? (
+                    <span
+                      key={`gap-${i}`}
+                      className="pp-page-gap"
+                      aria-hidden="true"
+                    >
+                      …
+                    </span>
+                  ) : (
+                    <button
+                      key={cell}
+                      type="button"
+                      className={`pp-page-btn${
+                        cell === safePage ? " is-current" : ""
+                      }`}
+                      aria-current={cell === safePage ? "page" : undefined}
+                      aria-label={`Page ${cell}`}
+                      onClick={() => cell !== safePage && goToPage(cell)}
+                    >
+                      {cell}
+                    </button>
+                  )
+                )}
+                <button
+                  type="button"
+                  className="pp-page-arrow"
+                  disabled={safePage === totalPages}
+                  aria-label="Next page"
+                  onClick={() => goToPage(safePage + 1)}
+                >
+                  <FaChevronRight />
                 </button>
               </div>
             )}
@@ -229,13 +444,21 @@ export default function PathwayProgramsClient() {
           /* Reachable — "Bachelors + Health & Science" is empty, for one — so it
              says what to do rather than only that there is nothing. */
           <div className="pp-empty">
-            <p>No program matches all of those preferences.</p>
+            <p>
+              No program matches{" "}
+              {searching ? "that search" : "all of those preferences"}.
+            </p>
             <button
               type="button"
               className="sa-pathway-viewall"
-              onClick={() => setSelection({})}
+              onClick={() => {
+                setSelection({});
+                setQuery("");
+                setPage(1);
+              }}
             >
-              Clear the filters <FaArrowRight />
+              Clear {searching ? "search & filters" : "the filters"}{" "}
+              <FaArrowRight />
             </button>
           </div>
         )}

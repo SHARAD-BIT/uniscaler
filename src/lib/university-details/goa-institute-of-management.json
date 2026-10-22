@@ -1,0 +1,435 @@
+{
+ "slug": "goa-institute-of-management",
+ "name": "GIM",
+ "establishedYear": "1993",
+ "location": "Sanquelim, Goa",
+ "rating": 3.8,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   2,
+   1
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/goa-institute-of-management.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "SAQS",
+   "logo": "/university/approvals/SAQS.jpg"
+  },
+  {
+   "title": "AMBA",
+   "logo": "/university/approvals/AMBA.jpg"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The Goa Institute of Management (GIM) was established in 1993 with a vision of empowering the youth of India in the management field via knowledge. With its varied range of management courses, the university is focused on filling the gap between the basic information of the field & practical applications. A team of 75+ full-time professors is imparting knowledge to make the business professional understand the impact of business strategies & developments on sustainability & ethical issues."
+  },
+  {
+   "t": "p",
+   "text": "GIM is accredited by the Association of MBAs (AMBA), Business Graduates Association (BGA), National Board of Accreditation (NBA), SAQS, All India Council for Technical Education (AICTE), & Association of Indian Universities (AIU). Moreover, the university is a proud member of the European Foundation for Management Development (EFMD) & Association to Advance Collegiate Schools of Business (AACSB). All of these approvals & accreditations give a global reputation to the university for its management courses in both Hybrid & On-Campus modes."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "In the direction of developing a strong understanding of topics in business developers & leaders, the university has introduced a hybrid program wing in the name of GIM Online Active Learning (GOAL). Some of the postgraduate management programs available at the university are also offered via GOAL to make the working professionals equipped with the latest trends & methodologies in the field."
+  },
+  {
+   "t": "p",
+   "text": "The international collaborations of GIM provide you with global exposure to the business industry. The insights into these trends make you equipped with the ability to understand the emerging practices, models, and technologies in the business world."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Innovative Learning",
+   "content": "GIM is renowned for incorporating innovative technicalities & strategies in its course curricula."
+  },
+  {
+   "title": "Diversified Course Range",
+   "content": "GIM offers a diverse range of management programs via its PGDM, MDP, & FPM courses."
+  },
+  {
+   "title": "International Collaborations",
+   "content": "GIM has partnered with other foreign institutions to make its learners equipped with global industry trends."
+  }
+ ],
+ "facts": [
+  "The Goa Institute of Management (GIM) was established in 1993 & has become one of the top-rated institutions of management studies in the country.",
+  "The university holds the accreditations/membership of AMBA, BGA, NBA, AICTE, AIU, EFMD, SAQS, & AACSB.",
+  "The university was listed among the top 4 business schools by Positive Impact Rating 2021.",
+  "GIM got selected by the United Nations PRME Champion 2023 for its innovative learning modules.",
+  "The university ranked 37 in the management category of NIRF 2024 & 16 in IIRF 2023.",
+  "The university also ranked 30th position by India Today in 2022.",
+  "The postgraduate diploma in management (PGDM) programs offered in hybrid mode at the university hold equal weightage as full-time PGDM courses.",
+  "The specialization areas of PGDM courses available at the university include Healthcare Management, Big Data Analytics, Banking, Insurance, & Financial Services, & many others.",
+  "The experienced faculty members & rigorous curriculum of the courses make you learn from basic to advanced concepts of the field via a flexible learning model.",
+  "The additional services provided in these hybrid mode courses provide you with global career opportunities."
+ ],
+ "courses": [
+  {
+   "name": "ePGP Healthcare Management",
+   "fee": 117000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "117000"
+    }
+   ]
+  },
+  {
+   "name": "PGP in Account and Finance",
+   "fee": 140000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "EMI Options available per Months",
+     "fee": "3403"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "140000"
+    }
+   ]
+  },
+  {
+   "name": "PGP in Supply Chain and HR",
+   "fee": 140000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "EMI Options available per Months",
+     "fee": "3403"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "140000"
+    }
+   ]
+  },
+  {
+   "name": "PGP In Leadership Strategy",
+   "fee": 140000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "EMI Options available per Months",
+     "fee": "3403"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "140000"
+    }
+   ]
+  },
+  {
+   "name": "PGP in Marketing Research",
+   "fee": 140000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "EMI Options available per Months",
+     "fee": "3403"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "140000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The hybrid PGDM courses are introduced by GIM to make advanced-level education accessible to all. These programs are mainly focused on making the workforce equipped with the analytical training of tools & practical applications of theories. In this direction, the university has also given the extra benefit of easy fee payment options in terms of education loan facilities/No Cost EMIs."
+  },
+  {
+   "t": "p",
+   "text": "Note: The specifications of these options can be confirmed by visiting the official university website."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The process of enrollment into the management programs of GIM is quite simple. The university does conduct screening tests like entrance exams & other aptitude tests for certain programs. This specific criterion must be checked by the students by visiting the official website of the university. A list of the general steps common to all hybrid mode courses is provided here:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Visit the official website at which the program is being offered & access the admission portal to get through the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Fill out the form with the correct information & submit it along with other academic & professional documents asked by the university."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: In the case of entrance exam-based programs, you need to clear the exam first with minimum scores pre-decided by the university. The rest of the admission formalities will be applicable only after you make it through the entrance tests."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: After clearing the entrance exam, if applicable, you will be contacted by the admission committee of the university for some submitting documents like resumes, cover letters, SOPs, LORs, etc. These documents are reviewed by the committee for your background check & to mark your potential for the program."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: After getting shortlisted in the review procedure, you will be asked for another screening test of an interview. After cracking the interview, you will receive an offer letter from the university with the blocking amount mentioned on it. Payment of the blocking amount before the deadline will ensure your seat in the course."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: At last, the program fee payment (in your chosen mode) will make mark your seat in the next batch of the course at GIM."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The PGDM courses at GIM are designed especially for executives & thus the evaluation criteria of these programs are also based on the performance of candidates on the analytical training apart from the theoretical exams. The performance of candidates in industry-based case studies, assignments, projects, etc. are all considered at the time of final evaluation. Thus, the hybrid model of management programs at the university is based on an engaging learning model & encourages professionals to upskill themselves via these programs."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Students of Goa Institute of Management are:"
+  },
+  {
+   "t": "li",
+   "text": "Placed at top positions in leading business firms"
+  },
+  {
+   "t": "li",
+   "text": "Connected with renowned faces of the business community"
+  },
+  {
+   "t": "li",
+   "text": "Earning around 5 times higher salary packages"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-08-16",
+   "content": "As per my experience, the rigorous curriculum, case studies, and interaction with industry experts are some of the key highlights of the MBA program at GIM. These not only improved my business knowledge but helped me choose a place that will give meaning to my career."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-08-16",
+   "content": "The innovation and practical learning approach of GIM is something that makes it different from others. The interaction with peers and committed teachers made me learn the business aspects in detail. Today, I am working at TCS & trying to create an impact on society too with the business knowledge I learned at GIM."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-08-16",
+   "content": "The industrial contacts I developed in my MBA program at GIM made me learn about opportunities I have not even heard of before. With the right guidance from my mentors, I chose a domain that keeps me passionate & now serving the business world with an innovative approach taught by them!"
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-06-14",
+   "content": "The discipline, time management, & decision-making skills I learned in the Executive Healthcare Management program at GIM has helped me outshine in my career. Their learning approach follows a different path focused on the innovation & technicalities in the field. The learning outcomes of this skillful course have benefited me personally & professionally."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is the fee range of online courses at GIM?",
+   "a": "The online PGDM courses at the Goa Institute of Management can be completed within the cost range of 1-2 Lakhs. This fee range can vary as per the program chosen, campus immersion chosen or not, fee waivers, & inclusion of GST charges."
+  },
+  {
+   "q": "Is an online management program from GIM worth it?",
+   "a": "The Goa Institute of Management is accredited by AMBA, BGA, NBA, AICTE, etc. Thus, the PGDM courses both in on-campus & hybrid mode offered by it are recognized in industries at a global level."
+  },
+  {
+   "q": "What are the benefits of pursuing a management program online from GIM?",
+   "a": "GIM offers a varied number of PGDM programs through its online active learning platform, GOAL. The updated curriculum, online classes delivered by industry experts, digitized academic resources for self-paced learning, & career assistance boot camps are some of the key benefits of choosing an online course from the Goa Institute of Management."
+  },
+  {
+   "q": "What are the minimum eligibility criteria to opt for an online management program for executives from the Goa Institute of Management?",
+   "a": "At GIM, to enroll in online executive management courses, you need to complete your bachelor’s degree with a minimum aggregate of 50%. You also need to have 3-4 years of work experience in the related domain."
+  },
+  {
+   "q": "What is the duration of online PGDM programs at GIM?",
+   "a": "The PGDM courses are treated as equivalent to MBA but have a short duration. The course duration of an online/hybrid postgraduate diploma in management is between 11 to 24 months at GIM. The exam duration of the program is specialization specific."
+  },
+  {
+   "q": "What is the salary package after completing the PGDM program at the Goa Institute of Management?",
+   "a": "GIM is one of those institutions which have a 100% placement rate. The university reported the highest domestic package for its 2021-2023 session to be 55 LPA. The average package earned by the students of GIM is between 17-20 LPA."
+  }
+ ]
+}

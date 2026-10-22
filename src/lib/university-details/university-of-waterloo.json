@@ -1,0 +1,220 @@
+{
+ "slug": "university-of-waterloo",
+ "name": "University of Waterloo",
+ "establishedYear": "1957",
+ "location": "",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "total": 0
+ },
+ "banner": "/university/banners/university-of-waterloo.webp",
+ "approvals": [
+  {
+   "title": "CEAB",
+   "logo": "/university/approvals/ceab.webp"
+  },
+  {
+   "title": "Ontario Ministry of Colleges and Universities",
+   "logo": "/university/approvals/ontario-ministry-of-colleges-and-universities.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The University of Waterloo started as Waterloo College Associate Faculties in 1956. It became an independent university in 1959. This came under the University of Waterloo Act. It offers a wide range of courses under six faculties, namely, Arts, Engineering, Environment, Health, Mathematics, and Science. The campus of the university stretches over 1000+ acres with 100+ buildings. Apart from this, the university also has 3 satellite campuses."
+  },
+  {
+   "t": "p",
+   "text": "University of Waterloo stands apart because it blends 4 things very well. These are strong teaching, real-world learning, an entrepreneurial mindset, and research that creates real impact. This mix makes Waterloo one of the most connected schools in the world. Co-op is Waterloo's biggest strength. 77% of students take part in it. Students switch between classes and paid work. Each stretch runs for four months. Most co-op students graduate with up to two years of paid work experience. No other Canadian school runs a co-op program to this level."
+  },
+  {
+   "t": "p",
+   "text": "The University of Waterloo provides a high-quality research framework that backs its reputation. It is also home to a Nobel Laureate and other global-level awards and recognitions. It offers full-time on-campus programs as well as 100% online programs. The university is recognized by the top accreditation and approval bodies in Canada and across the world."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "The University of Waterloo was established in 1957 in Waterloo, Ontario, Canada.",
+  "It was started as Waterloo College Associate Faculties.",
+  "It became an independent university under the University of Waterloo Act.",
+  "The school has six faculties: Arts, Engineering, Environment, Health, Mathematics, and Science.",
+  "The University of Waterloo also offers 100% Online courses, such as the Chief Technology and AI Officer Program.",
+  "Waterloo runs the biggest co-op program, which is popular globally.",
+  "It is also known as Canada's top research university.",
+  "The university offers both full-time on-campus programs and 100% online programs.",
+  "The university houses students from all over the world, apart from Canada.",
+  "The school is part of the U15, a group of Canada's top research universities."
+ ],
+ "courses": [
+  {
+   "name": "Chief Technology and AI Officer",
+   "fee": 680000,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "680000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The University of Waterloo does not offer an EMI Facility to pay the fees. However, it gives flexibility to pay the fees in every term instead of a one-time annual payment. Apart from this, it offers a wide range of scholarships and financial aid to outperforming students."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The University of Waterloo follows a dedicated admission process for its programs. The admission process for most of the courses in this university is online. Here is the admission process-"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Visit the official website of the University of Waterloo"
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Choose the course/program you are interested in enrolling in."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Sign up and generate the login details"
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Enter the login details and sign in."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Fill in all the required details in the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: Attach the required documents."
+  },
+  {
+   "t": "p",
+   "text": "Step 7: Submit the IELTS or TOEFL scores. This is required if English is not your first language."
+  },
+  {
+   "t": "p",
+   "text": "Step 8: Review your application form to ensure that the application is error-free, and pay the application fee to submit the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 9: Wait for the admission decision from the university."
+  },
+  {
+   "t": "p",
+   "text": "Step 10: If accepted, prepare for the adventurous journey at the University of Waterloo."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The University of Waterloo follows a comprehensive examination pattern for most of its courses. Undergraduate and graduate students are assessed based on tests, assignments, projects, and end-of-term finals. The assessment of Co-op students is done on the basis of work-term reports and employer evaluations. For doctoral-level courses, candidates are evaluated based on their comprehensive exams, a thesis proposal defence, original research, and a final viva voce."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The graduates of the University of Waterloo get job opportunities in some of the top organisations across the world. The strong reputation and high-quality learning environment prepare students for highly rewarding opportunities. Here are some of the top companies where the graduates of this university get placed-"
+  },
+  {
+   "t": "li",
+   "text": "Google"
+  },
+  {
+   "t": "li",
+   "text": "Amazon"
+  },
+  {
+   "t": "li",
+   "text": "Microsoft"
+  },
+  {
+   "t": "li",
+   "text": "Meta"
+  },
+  {
+   "t": "li",
+   "text": "BlackBerry"
+  },
+  {
+   "t": "li",
+   "text": "OpenText"
+  },
+  {
+   "t": "li",
+   "text": "Deloitte"
+  },
+  {
+   "t": "li",
+   "text": "RBC (Royal Bank of Canada)"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [],
+ "faqs": []
+}

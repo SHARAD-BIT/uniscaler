@@ -1,0 +1,498 @@
+{
+ "slug": "iit-madras",
+ "name": "IIT Madras",
+ "establishedYear": "1959",
+ "location": "Chennai, Tamil Nadu",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   5,
+   3
+  ],
+  "total": 8
+ },
+ "banner": "/university/banners/iit-madras.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC A",
+   "logo": "/university/approvals/logo-naac-a.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Indian Institute of Technology (IIT), Madras is one of the top institutes in India. It is the second established institute of the IIT family. It all started with the envision of then Prime Minister, Pandit Jawaharlal Nehru after they visited Germany where he was supported by the Government of the Federal Republic of Germany to establish institutes for high technology studies. Right after the signing of the Indo-German Agreement in 1959. IIT Madras was established and it was inaugurated by Professor Humayun Kabir in 1959. Known for its excellent academic delivery, it is ranked as one of the top engineering institutes in India. It is a world-renowned institute that offers quality information and research-oriented studies."
+  },
+  {
+   "t": "p",
+   "text": "The institute is innovative and diverse and carries a strong envision of new research ideas. They are actively involved in working in the research field related to robotics, artificial intelligence, nanotechnology, sustainable energy and many more. The professors of the institute are highly qualified and experts in the respective fields With cutting-edge technology, the latest and dynamic research project ideas and published papers in journals and magazines the institute is creating a new envision. The Institute is striving to achieve an entrepreneurship ecosystem by supporting new startups and collaborating with industry newbies."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The institute has introduced various new certificate courses in online mode through the Center for Outreach & Digital Education, which is designed especially for working professionals who are ready to learn and take their careers to the next higher level. Their online programs are in high demand and give flexibility to working professionals to learn with ease. Also, students belonging to the distinct places away from the main campus find it very helpful."
+  },
+  {
+   "t": "p",
+   "text": "Courses offered at IIT Madras include Undergraduate courses, postgraduate courses, doctoral programs and many online courses. Some are Bachelor of Technology (B.Tech.), and Bachelor of Engineering (B.E.) in Various Engineering Disciplines, Master of Technology (M.Tech.) - Specializations in Engineering and Technology Fields, Master of Business Administration (MBA) - Two-year Full-Time MBA Program, Master of Science (M.Sc.) - Programs in Physics, Chemistry, Mathematics, Data Science, Master of Arts (M.A.) - Programs in Humanities and Social Sciences, Master of City Planning (MCP) - Urban Planning and Development, Master of Design (M.Des.) - Programs in Design and Related Fields, Doctor of Philosophy (Ph.D.) - Research-Based Doctoral Programs, and online degree program that is Online B.Sc. Degree in Programming and Data Science."
+  },
+  {
+   "t": "p",
+   "text": "Many online certificate and diploma courses are provided to the students through SWAYAM, NPTEL and many more. Many departments offer quality education like Aerospace Engineering, Management Studies, Applied Mechanics, Mathematics, Biotechnology, Mechanical Engineering, Engineering Design, Chemistry, Metallurgical and Materials Engineering, Civil Engineering, Ocean Engineering, Computer Science and Engineering, Physics, Electrical Engineering, Chemical Engineering, Medical Science and Technology, Humanities and Social Sciences and many more. The Institute is approved by the All India Council for Technical Education and ranked as the number one engineering college by the National Institutional Ranking Framework. It is also accredited by NAAC grade."
+  },
+  {
+   "t": "p",
+   "text": "Courses Offered by IIT Madras"
+  },
+  {
+   "t": "li",
+   "text": "Bachelor of Technology (B.Tech.)"
+  },
+  {
+   "t": "li",
+   "text": "Bachelor of Engineering (B.E.)"
+  },
+  {
+   "t": "li",
+   "text": "Master of Technology (M.Tech.)"
+  },
+  {
+   "t": "li",
+   "text": "Master of Arts (M.A.)"
+  },
+  {
+   "t": "li",
+   "text": "Master of Science (M.Sc.)"
+  },
+  {
+   "t": "li",
+   "text": "Master of Business Administration (MBA)"
+  },
+  {
+   "t": "li",
+   "text": "Master of City Planning (MCP)"
+  },
+  {
+   "t": "li",
+   "text": "Master of Design (M.Des.)"
+  },
+  {
+   "t": "li",
+   "text": "Online B.Sc. Degree in Programming and Data Science"
+  },
+  {
+   "t": "li",
+   "text": "Doctor of Philosophy (Ph.D.)"
+  },
+  {
+   "t": "li",
+   "text": "Certification in AI Product design and management"
+  },
+  {
+   "t": "li",
+   "text": "Certificate in AI agent workflow"
+  },
+  {
+   "t": "li",
+   "text": "Certificate in Context Engineering"
+  },
+  {
+   "t": "li",
+   "text": "Certification in UI/UX Design (Pravartak)"
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "IIT Madras is ranked as the number one engineering college by the National Institutional Ranking Framework(NIRF). It is world-famous for its jobs and career opportunities."
+  },
+  {
+   "title": "Research- Oriented",
+   "content": "It executes various research and innovation in dynamic fields like robotics, artificial intelligence, nanotechnology, sustainable energy and many more."
+  },
+  {
+   "title": "Placement opportunities",
+   "content": "Placement and career opportunities are amazing at IIT Madras. They have many recruiters like Google, Amazon,  Goldman Sachs IBM, Laren & Toubro(L&tT), Infosys, Hindustan and many more"
+  }
+ ],
+ "facts": [
+  "Indian Institute of Technology Madras is the second established institute of the IIT family that was established in 1959 by Professor Humayun Kabir.",
+  "IIT Madras is approved by the All India Council for Technical Education. It is also accredited by NAAC grade.",
+  "It is the number one engineering college by the National Institutional Ranking Framework.",
+  "IIT Madras offers Undergraduate courses, postgraduate courses, doctoral programs and many online courses.",
+  "Many certificate courses in online mode are offered through the Center for Outreach & Digital Education, which is designed especially for working professionals.",
+  "Research and innovation in dynamic fields like robotics, artificial intelligence, nanotechnology, sustainable energy and many more.",
+  "There are many departments like Aerospace Engineering, Management Studies, Applied Mechanics, Mathematics, Biotechnology, Mechanical Engineering, Engineering Design, Chemistry, Metallurgical and Materials Engineering, Civil Engineering, Ocean Engineering, Computer Science and Engineering, Physics, Electrical Engineering, Chemical Engineering, Medical Science and Technology, Humanities and Social Sciences and many more."
+ ],
+ "courses": [
+  {
+   "name": "AI Agent Workflows and Agentic Systems Development",
+   "fee": 130390,
+   "duration": "7 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "130390"
+    }
+   ]
+  },
+  {
+   "name": "UI/UX Design with Agentic AI & GenAI",
+   "fee": 84000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "84000"
+    }
+   ]
+  },
+  {
+   "name": "Certificate Program",
+   "fee": 84000,
+   "duration": "7-8 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "84000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech Program",
+   "fee": 246000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "61500"
+    }
+   ]
+  },
+  {
+   "name": "Part-Time PhD",
+   "fee": 93000,
+   "duration": "5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15500"
+    }
+   ]
+  },
+  {
+   "name": "AI Agent Data Science",
+   "fee": 130390,
+   "duration": "7 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "130390"
+    }
+   ]
+  },
+  {
+   "name": "PhD Program",
+   "fee": 230000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "230000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Meritorious students are highly encouraged by the institute as it offers various scholarships and financial assistance to the students. The Institute is giving fee waivers to many students, depending on certain eligibility criteria. The Institute is giving scholarships to various students belonging to certain groups like SC, ST & female students. Merit-cum-Means scholarships, Institute Notional Prize, Institute free studentship, Dr K Vasanth Rau Scholarships and many more scholarships are offered to the students."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Admission to IIT is not an easy task. You have to go through various stages of selection. However, the admission to each course may vary. Some course requires an entrance examination. Also, before choosing the course check all the eligibility criteria for selection. Here are the basic steps that are advised to be followed by the candidates."
+  },
+  {
+   "t": "p",
+   "text": "Step 1- If you are applying for B.Tech, you are required to appear and clear JEE while if you are seeking admission to M.Sc, appear for the examination like JAM. It also offers various online degree programs. Students must have basic eligibility criteria fulfilled."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- As the candidates get selected and clear the cutoff, they can move on to the next step of registering online on the official website."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Now, students can check the references and move to applying on the website."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Enter all the details and make sure you end up doing all the work with the correct information."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- Upload all the required documents and scan them before uploading them."
+  },
+  {
+   "t": "p",
+   "text": "Step 6- The next step is fee payment which is done on the payment portal. Keep a print of the receipt before uploading it."
+  },
+  {
+   "t": "p",
+   "text": "Step 7- For more information, you can move to the SWAYAM or NPTEL portal."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The Examination is done by the institute in online mode. However, this applies only to students enrolled in online degree programs. The institute conducts online examinations through the online platform or LMS. The institute ensures high security and strict monitoring. The institute is also using remote assessment conduction, the students have to complete the examination in a stipulated time frame. Students must have tech devices like computers with good internet connectivity."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The placement offered here is renowned for its excellent and top-notch salary packages. Also, they have a dedicated placement cell that helps in facilitating better offers for young graduates. The placement is done in several steps like Pre-Placement Talks, Registration of the interested students, placement interview sessions, better job opportunities and final acceptance by the students. There are various companies that students can work in after getting placement. Top Recruiters of the IIT are-"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Facebook",
+   "logo": "/university/partners/facebook.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-20",
+   "content": "With so many course options, I managed to select the best course for myself. The study material offered by the institute is very well-structured and helps in accomplishing the course with perfect knowledge and skills."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-20",
+   "content": "The institute campus is so beautiful and amazing. It has all the facilities that help the students a lot."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-20",
+   "content": "Great learning experience! I have recently completed my online degree from this institute."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-20",
+   "content": "The Best thing about the institute is its placement cell and its support. This institute is one of the best institutes of engineering and it offers job opportunities with high packages."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Are the courses offered by IIT Madras valid?",
+   "a": "Yes, all the courses offered by the IIT Madras are valid and approved. It is ranked as a top engineering college by NIRF."
+  },
+  {
+   "q": "What are the courses offered to the students at IIT Madras?",
+   "a": "IIT Madras offers Undergraduate courses, postgraduate courses, doctoral programs and many online courses."
+  },
+  {
+   "q": "What disciplines are offered at IIT Madras?",
+   "a": "Disciplines offered by Aerospace Engineering, Management Studies, Applied Mechanics, Mathematics, Biotechnology, Mechanical Engineering, Engineering Design, Chemistry, Metallurgical and Materials Engineering, Civil Engineering, Ocean Engineering, Computer Science and Engineering, Physics, Electrical Engineering, Chemical Engineering, Medical Science and Technology, Humanities and Social Sciences and many more."
+  },
+  {
+   "q": "Will the mode of learning be shown on the IIT Madras marksheet?",
+   "a": "No, the mode of learning will not be mentioned on the mark sheet."
+  },
+  {
+   "q": "Does IIT Madras offer online programs?",
+   "a": "Yes, IIT Madras offers an Online B.Sc. Degree in Programming and Data Science program and many other certificate programs in online mode."
+  }
+ ]
+}

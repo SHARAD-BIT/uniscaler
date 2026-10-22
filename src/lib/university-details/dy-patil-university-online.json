@@ -1,0 +1,705 @@
+{
+ "slug": "dy-patil-university-online",
+ "name": "DY Patil University Online",
+ "establishedYear": "2003",
+ "location": "Pune, Maharashtra",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   3,
+   0,
+   3,
+   64,
+   221
+  ],
+  "total": 291
+ },
+ "banner": "/university/banners/dy-patil-university-online.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "UGC-DEB",
+   "logo": "/university/approvals/ugc-deb-logo.jpg"
+  },
+  {
+   "title": "NAAC A++",
+   "logo": "/university/approvals/logo-naac-a-plus-plus.jpg"
+  },
+  {
+   "title": "ISO",
+   "logo": "/university/approvals/iso-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "In 2003, Dr. D. Y. Patil Vidyapeeth, Pune (Deemed University) was established as a standalone institution for online education through the establishment of a Center for Online Learning (COL). Through this center, UGC recognized undergraduate and postgraduate programs are offered in a 100% online medium."
+  },
+  {
+   "t": "p",
+   "text": "At DPU COL, students can obtain an Online BBA, an Online MBA, and other specialized diplomas such as Healthcare Management and Digital Marketing. The program faculty consists of University faculty combined with working professionals to bring both academic theory and real-world applications."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Course materials, live lectures, and recorded lectures are available on a Learning Management System (LMS), which is secure and mobile-friendly. All online assessments and exams are conducted through the UGC compliant LMS, utilizing live proctoring systems to maintain the integrity of the examination process."
+  },
+  {
+   "t": "p",
+   "text": "The LMS also allows for non-supervised, self-paced learning opportunities through practice assessments, quizzes, discussion forums, and assignments (homework) in addition to progress tracking. This design engages and provides continuous opportunities for students to acquire knowledge and skills."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Reputed University",
+   "content": "Top accreditations and approvals with excellent reputation"
+  },
+  {
+   "title": "Industry-Relevant Courses",
+   "content": "Course curricula are up to date and industry-relevant"
+  },
+  {
+   "title": "Excellent Placement Record",
+   "content": "Top placement partners with a high placement record"
+  }
+ ],
+ "facts": [
+  "The university has all the accreditations and recognitions for providing full-time online education: UGC-DEB as well as AICTE, NIRF (Rank 44 in University Category), ISO, AIU, ACU, WES and more.",
+  "Dr. D.Y. Patil University is a NAAC rated A++ institution with a grade point of 3.64.",
+  "DPU-COL has multifaceted learning support features such as an e-learning toolkit, self-evaluation kits, case studies, university LMS, digital libraries etc.",
+  "D.Y. Patil University has a separate placement cell dedicated only to the online division of learning, and partners with a large number of companies like American Express, HDFC Bank, Bajaj and many more.",
+  "The faculty of the university is very well-trained in delivering education through the online mode and is additionally highly qualified and experienced in their fields.",
+  "The university has a network of over one lakh experienced alumni across the globe."
+ ],
+ "courses": [
+  {
+   "name": "Online MBA (Dual)",
+   "fee": 189400,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "189400"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 145400,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "145400"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "30000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 140000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "140000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 189400,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "189400"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 125000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "125000"
+    }
+   ]
+  },
+  {
+   "name": "Online Certificate",
+   "fee": 28000,
+   "duration": "Upto 6 Months",
+   "feeDetails": [
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "28000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "28000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "For getting financial assistance in paying the academic fee and other study expenses one can check out the easy financing options available in the market like education loans or easy-to-pay EMI installments. DY Patil University doesn’t provide these financing options. However, the College Vidya Portal assists the students in these financing options like education loan/EMI options."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Courses",
+      "MBA",
+      "BBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Fee",
+      "Full Fees",
+      "Sem Fees",
+      "Full Fees",
+      "Annual Fees"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Loan amount",
+      "₹140,200.00",
+      "₹40,000.00",
+      "₹102,200.00",
+      "₹20,000.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "3 Months - 9%",
+      "₹50,939.33",
+      "₹14,533.33",
+      "₹37,132.67",
+      "₹7,266.67"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Total Interest Amount",
+      "₹12,618.00",
+      "₹3,600.00",
+      "₹9,198.00",
+      "₹1,800.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "6 Months - 6.5%",
+      "₹24,885.50",
+      "₹7,100.00",
+      "₹18,140.50",
+      "₹3,550.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Total Interest Amount",
+      "₹9,113.00",
+      "₹2,600.00",
+      "₹6,643.00",
+      "₹1,300.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "8 Months - 5.25%",
+      "₹18,445.06",
+      "₹5,262.50",
+      "₹13,445.69",
+      "₹2,631.25"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Total Interest Amount",
+      "₹7,360.50",
+      "₹2,100.00",
+      "₹5,365.50",
+      "₹1,050.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "10 Months - 4.5%",
+      "₹14,650.90",
+      "₹4,180.00",
+      "₹10,679.90",
+      "₹2,090.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Total Interest Amount",
+      "₹6,309.00",
+      "₹1,800.00",
+      "₹4,599.00",
+      "₹900.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "12 Months - 4%",
+      "₹12,150.67",
+      "₹3,466.67",
+      "₹8,857.33",
+      "₹1,733.33"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Total Interest Amount",
+      "₹5,608.00",
+      "₹1,600.00",
+      "₹4,088.00",
+      "₹800.00"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "15 Months - 4.5%",
+      "₹9,767.27",
+      "₹2,786.67",
+      "₹7,119.93",
+      "₹1,393.33"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Total Interest Amount",
+      "₹6,309.00",
+      "₹1,800.00",
+      "₹4,599.00",
+      "₹900.00"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Note: Loan Partner - Financepeer"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Admission process in the DY Patil University is in online mode. Admission sessions are conducted twice in a year that is in January and July month. No entrance exams are conducted to take admission in the DY Patil university. Admissions are done on direct-basis. The admission procedure 2023 for the online courses at DPU-COL is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Go to the official website of DY Patil Online and click on &ldquo;Admissions&rdquo; and then fill in your basic details for mobile number and email verification."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Fill in all your basic personal information followed by educational and professional information."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Upload all the required documents along with your passport-size photo and signature."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Pay the fee online and then submit the form."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- Once all the documents are verified, your admission confirmation will be sent to you via email or SMS along with your student login credentials."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of DY Patil University Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "Is there any refund policy for Dr. D. Y. Patil University Online Courses in Pune? Yes, Dr. D. Y. Patil University Online follows the UGC refund policy, which states: ⭐ ≥15 days before last date: 100% refund ⭐ ⭐ ≤15 days after last date: 80% refund ⭐ 16 to 30 days after the last date: 50% refund ⭐ >30 days after last date: 0% refund Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The exams will be conducted in online modes at specified examination centers of the university. The evaluation will be based on a Formative Assessment of a Continuous Nature that will contribute 30% of marks and a Summative Assessment or Term End Examination that will contribute 70% of marks in the final evaluation."
+  },
+  {
+   "t": "p",
+   "text": "The exams will be conducted in online modes at specified examination centres of the university. The evaluation will be based on a Formative Assessment of a Continuous Nature that will contribute 30% of marks and a Summative Assessment or Term End Examination that will contribute 70% of marks in the final evaluation. Click here to view the examination pattern !"
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our students get to work with"
+  },
+  {
+   "t": "li",
+   "text": "Top Companies"
+  },
+  {
+   "t": "li",
+   "text": "Top Industry Experts"
+  },
+  {
+   "t": "li",
+   "text": "Global Markets"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Airtel",
+   "logo": "/university/partners/airtel.webp"
+  },
+  {
+   "title": "Apollo",
+   "logo": "/university/partners/apollo.webp"
+  },
+  {
+   "title": "Bsnl",
+   "logo": "/university/partners/bsnl.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Nestle",
+   "logo": "/university/partners/nestle.webp"
+  },
+  {
+   "title": "Paytm",
+   "logo": "/university/partners/paytm.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "Randstad",
+   "logo": "/university/partners/randstad.webp"
+  },
+  {
+   "title": "Sutherland",
+   "logo": "/university/partners/sutherland.webp"
+  },
+  {
+   "title": "Tata Motors",
+   "logo": "/university/partners/tata-motors.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  },
+  {
+   "title": "HSBC",
+   "logo": "/university/partners/hsbc.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Safia Farooqui",
+   "title": "Professor / Director",
+   "description": "Prof. (Dr.) Safia Farooqui is a Professor and Director at Dr. D.Y. Patil Vidyapeeth Centre for Online Learning. She has decades of experience in teaching and Learning. She has spent a lot of time researching how to become an effective teacher and ultimately, she became the one. She believes that her responsibilities are not just curriculum & teaching but also managing classrooms & learnersâ€™ engagement. She also has 2 Patents, 5 Copyrights & 64 National and International papers against her name.",
+   "photo": "/university/faculty/Dr._Safia_Farooqui.webp"
+  },
+  {
+   "name": "Mr. B. V. Marathe",
+   "title": "Academic Advisor",
+   "description": "Mr. Marathe has completed M.Sc (Applied Electronics) from Osmania University in 1979 and has more than 43+ years of rich academic and corporate experience. He has served as a Deputy Director in Symbiosis Institute of Telecom Management for 10 years and 4 years as a director of academics in MIT School of Telecom Management. He has also served in Symbiosis Center for Distance Learning as an academic advisor. Currently, he is associated with DPUCOL.",
+   "photo": "/university/faculty/Mr._B._V._Marathe.webp"
+  },
+  {
+   "name": "Mr. Narsimha Rao Parcha",
+   "title": "Professor of Practice",
+   "description": "He has worked as Senior HR professional for 32 Years with rich Corporate Experience in the entire gamut of HRM and Corporate Strategy of reputed conglomerates. Worked in Leadership roles for various Change Management, Corporate Strategy and Global HR Initiatives of different industrial sectors. He is professionally qualified with MSW-HR, LLB, LLM, PGDIAE&D and worked as Senior Vice President - HR for Reliance Industries, Aditya Birla Group, MSN Pharma and worked as HR Head for L&T, British American Tobacco Group, BPL and Coal India Limited (SCCL). Now he is associated with DPUCOL as Professor of Practice, to effectively synchronize the academics into practice and to enhance industry-Academia collaborations.",
+   "photo": "/university/faculty/Mr._Narsimha_Rao_Parcha.webp"
+  },
+  {
+   "name": "Mr Lothar Pirc",
+   "title": "Professor of Practice",
+   "description": "He is the owner and CEO of the Maharishi Ayurveda Health Centre in Bad Ems, Germany since 1992. The state-recognized clinic is one of Europe's leading and repeatedly awarded institutions for Ayurvedic treatments. He was course leader of international Transcendental Meditation (TM) teacher training courses and has worked on deepening of the meditation practice, study of consciousness as a field of all possibilities, Vedic Literature, Maharishi Ayurveda, Vedic Management and various international projects under the personal guidance of Maharishi Mahesh Yogi at Maharishi Vedic University in Vlodrop, Netherlands. He is the founding president of the German Foundation for the Promotion of Vedic Culture and many more. He is currently also associated with DPUCOL as Professor or Practice.",
+   "photo": "/university/faculty/Mr_Lothar_Pirc.webp"
+  },
+  {
+   "name": "Prof. Dr. Akesh Agrey",
+   "title": "Professor of Practice",
+   "description": "With over 23 years of illustrious work experience in the dynamic realm of the Healthcare sector, have served in Sr. Leadership capacities (GM, Head - HR) at diversified healthcare houses. Expertise lies in the innovative conceptualization, Learning & Development, and seamless implementation of transformative yet strategic initiatives, as well as Recruitment & Selection practices. Adaptable as a skilled change agent and a visionary thinker, possess a profound understanding of the pivotal levers in Strategic Human Resource Management especially at Jupiter Hospital, Jehangir Hospital, D Y Patil Hospital, M.G.M. Medical College & Hospital, Fortis Hospital, DMIMS etc. He is currently also associated with DPUCOL as Professor or Practice.",
+   "photo": "/university/faculty/Prof._Dr._Akesh_Agrey.webp"
+  },
+  {
+   "name": "Prof. (Dr.) Saurav Bhowmik,",
+   "title": "Consultant",
+   "description": "With rich Experience of 25 years in Hospital Management as a Consultant in Hospital employee training, Quality Management, Profit Centre Operations, Strategic Planning and Management, and placement of candidates in various hospitals and healthcare facilities. As a writer and author, he had participated in various national and international conferences in Hospital and healthcare. He is a member and fellow of Ithe nternational Society for Quality in Healthcare. (ISQUA) and member ofthe American College of Healthcare Administrator, USA. (ACHCA). NABH certified Assessor and Consultant with rich experience of 15 years in mentoring hospitals for NABH Accreditation.",
+   "photo": "/university/faculty/Prof._Dr._Saurav_Bhowmik.webp"
+  },
+  {
+   "name": "Dr. Sambhajiraje S. Patil",
+   "title": "Professor",
+   "description": "He is a professor for Logistics, Materials and Supply Chain Management at DPU COL. His qualifications include a BE, MBA, Ph. D.. in Management and certifications from IIT and IIM Ahmadabad. He has extensive experience in industry, education, research, and consultancy. Recognized as an Advisor in a global virtual contest and a Project Guide in IRIS, He has contributed to ODL, community development, and skills projects at a top-ranking university. He have successfully mentored budding entrepreneurs and womenpreneurs, leading SME development projects.",
+   "photo": "/university/faculty/Dr._Sambhajiraje_S._Patil.webp"
+  },
+  {
+   "name": "Dr. Yogesh Kumar Jain",
+   "title": "Professor",
+   "description": "He is an expert in academic delivery for Finance, Accounts & Financial Services related courses. And has rich & versatile Academic & Corporate experience and worked at different academic & administrative levels with many reputed Universities. He has guided many scholars who got awarded Doctorates under his guidance & have implemented new courses for Postgraduate and Undergraduate degrees including Certificate programs. Dr. Jain has contributed in higher education with many Academic Research & Publications published in various reputed National & International Journals. He is also actively involved in writing books & book chapters.",
+   "photo": "/university/faculty/Dr._Yogesh_Kumar_Jain.webp"
+  },
+  {
+   "name": "Dr. Yogesh Jojare",
+   "title": "Associate Professor",
+   "description": "He is the faculty for Hospital administration and HR. He is working as an Associate Professor at the DPU Centre for Online Learning, Pune. He has done BHMS, MBA and he has completed Ph. D.. in Management Science. He has a total of 13 years of experience out of which he has 10 years of teaching experience and 3 years of industry experience. He has also published many research papers on management science and is involved in research activities.",
+   "photo": "/university/faculty/Dr._Yogesh_Jojare.webp"
+  },
+  {
+   "name": "Dr. Mustafizul Haque",
+   "title": "Associate Professor",
+   "description": "He is an Associate Professor of Marketing Management at DR. D.Y. PATIL VIDYAPEETH'S CENTRE FOR ONLINE LEARNING). He obtained a B.com, M.B.A, Lucknow, a Doctoral Degree in 2015, M.Com and M.B.A (Fire & Safety Management). Professor HAQUE has served 13 Years as fa faculty member He has contributed more than 40 Paper in SCI, ABDC, Springer, Scopus Index, National, International journals, Conferences, Seminars, FDP, MOUs,and Ten Textbook Published, and Eight Patent.",
+   "photo": "/university/faculty/Dr._Mustafizul_Haque.webp"
+  },
+  {
+   "name": "Dr. Malleshappa T. Bhagawati",
+   "title": "Associate Professor",
+   "description": "He is working as Associate Professor at Dr. D. Y. Patil Vidyapeeth, Centre for Online Learning, Pune. Having an experience of more than 25 years in Teaching and 5 years in Industry, Training and Consultancy. He has taught UG students in various subjects such as Production and Operations Management, Supply Chain Management, Total Quality Management etc. Also taught for IGNOU students in subjects like Management of Machines and Materials, Logistics and Supply Chain Management,Materials Management. He has published more than 12 research papers in International Journals and his 5 research papers are in Scopus Indexed Journals.",
+   "photo": "/university/faculty/Dr._Malleshappa_T._Bhagawati.webp"
+  },
+  {
+   "name": "Mr. Amul Suryakant Tamboli",
+   "title": "Assistant Professor",
+   "description": "He has assorted total work experience of over eighteen years. He has worked in the corporate field with leaders like Godrej, WNS, ICICI Bank & HDFC Bank for five years in managerial capacities handling sales teams, marketing strategies, customer services, new branch launches, etc. & since the last thirteen years,s he is associated with academic field as Assistant Professor in Marketing and Banking area. He has published nine research papers in reputed International Journals & Conferences. Presently pursuing his PhD in Marketing from Savitribai Phule Pune University. He is also SET certified in the subject of Management.",
+   "photo": "/university/faculty/Mr._Amul_Suryakant_Tamboli.webp"
+  },
+  {
+   "name": "Ms.Vishakha Kuwar",
+   "title": "Assistant Professor",
+   "description": "Ms. Kuwar, BE(CSE), MBA(IBM), UGC- NET(Management) working as Assistant Professor. She is also the founder of the startup company. She has 5 years of teaching experience and 4.5 years of industrial experience and served both service and product-based industries. Her areas of expertise are in International Business Operations, International and Domestic Marketing, Production & Operation Management and IT management. She has also published research papers in three National & five International level Conferences.",
+   "photo": "/university/faculty/Ms.Vishakha_Kuwar.webp"
+  },
+  {
+   "name": "Ms. Asmita Arun Kamble",
+   "title": "Assistant Professor",
+   "description": "She is currently associated with DPU University as an Assistant Professor for Digital Marketing. She has a Bachelor's degree B. Tech in EXTC and she holds a dual master's degree in MBA (Marketing) & PGPM (IT). She has also qualified the National Eligibility Test (NET) in Management conducted by UGC. Having an experience of 2 years of teaching UG and PG students. Has published and presented 3 research papers at National and International level conferences.",
+   "photo": "/university/faculty/Ms._Asmita_Arun_Kamble.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Jatin",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "Easy admission process and support from the side of University"
+  },
+  {
+   "name": "PATIL NISHCHAL VISHNURAM",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "While placement assistance is advertised, student feedback points out that top-tier corporate recruitment is sparse compared to traditional on-campus MBA"
+  },
+  {
+   "name": "Sonaboti Kumari upadhyay",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Dy Patil University in online is very reputed university"
+  },
+  {
+   "name": "Suraj Prabhakar Bagate",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "DY Patil Online ka admission process bahut smooth tha. Support team helpful thi aur har step clearly samjhaya. Overall experience bahut achha raha. Online learning ke liye ye ek accha option hai."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "Does D.Y. Patil University provide fully online degrees?",
+   "a": "Yes, the Centre for Online Learning of Dr. D.Y. Patil University provides two full-time online degree courses- BBA and MBA."
+  },
+  {
+   "q": "Is an Online Degree from Dr. D.Y. Patil Valid?",
+   "a": "Yes, being a university accredited by the UGC-DEB for providing online education, an online degree/diploma/certificate from D.Y. Patil University is indeed valid and credible in India as well as abroad."
+  },
+  {
+   "q": "Is there scholarship facility at DPU for its online course?",
+   "a": "There are scholarship and fee concessions for certain special categories- students from a defence background or with special abilities and alumni of the university."
+  },
+  {
+   "q": "How are the exams conducted for the online courses at D Y Patil?",
+   "a": "The university conducts online proctored exams at designated exam centres for the online courses."
+  },
+  {
+   "q": "What specialisations are there in online MBA of DPU?",
+   "a": "The online MBA programme of D.Y. Patil University has 14 specialisations including marketing management, financial management, human resource management, IT management, project management and many more."
+  }
+ ]
+}

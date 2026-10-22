@@ -1,0 +1,412 @@
+{
+ "slug": "esgci",
+ "name": "ESGCI School of Business",
+ "establishedYear": "1986",
+ "location": "",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   3,
+   3,
+   9
+  ],
+  "total": 15
+ },
+ "banner": "/university/banners/esgci.webp",
+ "approvals": [
+  {
+   "title": "ACBSP",
+   "logo": "/university/approvals/ACBSP.jpg"
+  },
+  {
+   "title": "IACBE",
+   "logo": "/university/approvals/IACBE.jpg"
+  },
+  {
+   "title": "Qualiopi",
+   "logo": "/university/approvals/Qualiopi.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Founded in 1986, ESGCI, or &Eacute;cole Sup&eacute;rieure de Gestion et de Commerce International, is a prestigious business school in Paris, France. ESGCI has established itself as a prominent school for students aiming to thrive in the global business arena, with a strong concentration on international business and management education. The institution provides students with a complete and diversified learning experience by offering a variety of undergraduate and postgraduate degrees."
+  },
+  {
+   "t": "p",
+   "text": "ESGCI is well-known for its creative and practical educational approach. The program is intended to provide students with the skills and information essential to prosper in today's dynamic business world. The courses combine theoretical concepts with real-world applications, allowing students to build a solid foundation in business principles while learning about diverse industry sectors."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Related Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA Online",
+      "Global DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online DBA & MBA Program",
+      "PhD for Working Professionals"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "PhD Abroad",
+      "PhD Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "PhD Distance Education",
+      "Part Time PhD"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA After MBA",
+      "Doctorate Courses Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Ph.D. After MBA",
+      "Global PhD"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Doctoral for Working Professionals"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "One of ESGCI's primary assets is its faculty, which consists of seasoned professionals and respected academics who bring industry expertise into the classroom. Faculty members are committed to offering high-quality education while ensuring students get customized attention and assistance throughout their careers."
+  },
+  {
+   "t": "p",
+   "text": "ESGCI also places a high focus on international exposure and provides students with several possibilities to learn global perspectives. Students may widen their perspectives, explore new cultures, and acquire a global attitude through collaborations with overseas universities and study abroad programs."
+  },
+  {
+   "t": "p",
+   "text": "ESGCI also fosters a lively and inclusive campus community, encouraging a collaborative learning environment. Students work on group projects, case studies, and interactive conversations to improve their problem-solving, collaboration, and communication abilities."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "The French state recognises ESGCI, which has more than 20% international students from 65 nations."
+  },
+  {
+   "title": "Great Placement Assistance",
+   "content": "ESGCI provides students complete placement assistance and supports them in attaining internship and career opportunities."
+  },
+  {
+   "title": "International Tie-ups",
+   "content": "ESGCI offers worldwide affiliations with prestigious universities and institutions, providing students with international collaborations and global networking."
+  }
+ ],
+ "facts": [
+  "ESGCI has a long history and is regarded as a renowned business and international commerce education institution.",
+  "ESGCI has excellent links with various businesses, allowing students to benefit from guest lecturers, industrial visits, internships, and job placements.",
+  "ESGCI has a varied faculty group that includes local and foreign experts who offer their knowledge and global perspectives to the classroom.",
+  "ESGCI emphasises hands-on learning through case studies, projects, and simulations to bridge the gap between theory and real-world application.",
+  "ESGCI has a well-established alum network of accomplished people from various industries, providing students with vital contacts, mentorship, and career counselling.",
+  "ESGCI's Paris campus offers a lively and multicultural atmosphere that attracts students worldwide while cultivating a varied and inclusive community.",
+  "ESGCI promotes the entrepreneurial spirit by providing programs and resources to students interested in starting their businesses or pursuing professions in entrepreneurship.",
+  "ESGCI's curriculum is developed with industry professionals to ensure students obtain the skills and information employers require.",
+  "ESGCI actively encourages students to explore new ideas, execute projects, and contribute to the growth of knowledge in their chosen professions.",
+  "ESGCI is certified by various education authorities and has won recognition from renowned organizations for its high-quality education and academic programs."
+ ],
+ "courses": [
+  {
+   "name": "Online Doctorate Courses",
+   "fee": 715000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "715000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA Courses",
+   "fee": 715000,
+   "duration": "36 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "715000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral Program (PhD)",
+   "fee": 715000,
+   "duration": "3-5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "715000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "ESGCI understands the importance of giving financial aid to students and provides EMI (Equated Monthly Installments) options. This flexible payment option allows students to pay their tuition in monthly installments rather than a flat sum, reducing the financial load and increasing affordability. ESGCI's goal is to make great education available to students from different backgrounds, and the EMI facility is one approach to achieving this goal. ESGCI tries to guarantee that financial constraints do not prevent students from following their academic goals."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Other Doctor of Business Administration [DBA] Courses"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Rushford Online DBA",
+      "SSBM Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Golden Gate University Online DBA",
+      "IIM Kashipur Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Durham University Online DBA",
+      "IMSR Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "University of Michigan Flint Online DBA",
+      "University of Dallas Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "ESGCI School of Business Online DBA",
+      "Westcliff University Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "University of South Florida Online DBA",
+      "Walden University Online DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Liberty University Online DBA",
+      "Purdue University Online DBA"
+     ],
+     "header": false
+    }
+   ]
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Prospective students must submit an online application form and any needed documentation, including educational transcripts, letters of recommendation, and a statement of purpose."
+  },
+  {
+   "t": "p",
+   "text": "Step 1: The admissions committee evaluates individuals based on their academic accomplishments, employment experience (if available), and other relevant characteristics. Candidates who have been shortlisted are notified of the next round."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Shortlisted candidates are invited to an interview, which can take place in person or by video conference. The interview assists the admissions committee in determining the candidate's communication skills, motivation, and program fit."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: The admissions committee judges each candidate based on their application, documentation, and interview performance. Successful candidates get an admission offer, generally accompanied by information on the program and enrolling procedures."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Candidates who get an admission offer can accept it by submitting the proper acceptance paperwork and paying the requisite fees within the deadline given. The enrolling procedure is now complete."
+  },
+  {
+   "t": "p",
+   "text": "It should be noted that the admission procedure and prerequisites may differ based on the program and intake. For the most accurate and up-to-date information on the admission process, please visit the official ESGCI website or contact the admissions office."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The ESGCI examination pattern varies based on the program and intake. It usually consists of written assessments, group discussions, and personal interviews. The written test may assess a candidate's aptitude, analytical abilities, linguistic ability, and general knowledge. Candidates can demonstrate their communication and collaboration abilities in group discussions. Personal interviews enable the admissions committee to assess a candidate's personality, motivation, and program fit. It is crucial to note that the test pattern may vary depending on the program. Thus, it is best to consult the official ESGCI website or contact the admissions office for precise and complete information on the exact examination pattern for the chosen program."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "ESGCI offers its students specialized placement support. A specialized placement cell or career services department works directly with students to improve their employability and ease their transition into the professional world. Examples include organizing career development seminars, inviting industry leaders to provide guest lectures, arranging internships, and linking students with potential employers through job fairs and campus recruiting campaigns. ESGCI has strong partnerships and cooperation with its business partners, industry leaders, and organizations. Below are some notable examples of firms cooperating with ESGCI for placements and recruiting."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Byjus",
+   "logo": "/university/partners/byjus.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Nestle",
+   "logo": "/university/partners/nestle.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "Hindustan Unilever Limited",
+   "logo": "/university/partners/hindustan-unilever-limited.webp"
+  },
+  {
+   "title": "CocaCola",
+   "logo": "/university/partners/CocaCola.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Yannick Miel",
+   "title": "Professor",
+   "description": "Ph.D. from CNAM, focused on identifying factors influencing employees' application or non-application of organizational norms.",
+   "photo": "/university/faculty/Dr._Yannick_miel.webp"
+  },
+  {
+   "name": "Prof. Aparajit Parthasarathy",
+   "title": "Professor",
+   "description": "Doctoral candidate in Neuromarketing, award-winning entrepreneur with global experience, and published author with articles in Cambridge.",
+   "photo": "/university/faculty/Prof._Aparajit_Parthasarathy.webp"
+  },
+  {
+   "name": "Prof. Sophie Agulhon",
+   "title": "Professor",
+   "description": "Worked in research and teaching at 3 universities, 3 CNAM branches, 2 engineering schools, and 2 apprenticeship training centers.",
+   "photo": "/university/faculty/Prof._Sophie_Agulhon.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Kamal Lochan Behara",
+   "rating": 5,
+   "date": "2026-05-19",
+   "content": "I started the course now so my internal research says its a great university and well known in the country."
+  },
+  {
+   "name": "PK Gupta",
+   "rating": 5,
+   "date": "2026-01-28",
+   "content": "Excellent experience. Comparison given nicely. Amazing university. Good professor with excellent curriculum"
+  },
+  {
+   "name": "Aathi Narayanan Srirangam Perumal",
+   "rating": 3,
+   "date": "2025-12-30",
+   "content": "We as students value the platform's academic intent and professional outfit. However, the recurring operational issues, such as technical glitches. slow performance, access difficulties, automated machine responses for queries that are irrelevant have largely impacted adversely on our learning experience, particularly during the academic milestones. We certainly understand the complexity of managing such platforms, improved stability, clearer communication, and more responsive and committed support would significantly enhance the overall student experience."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Are ESGCI's programs industry-focused?",
+   "a": "Yes, ESGCI focuses on industry-relevant education and hands-on training. The curriculum is intended to provide students with the information, abilities, and experiences they need to succeed in their chosen vocations."
+  },
+  {
+   "q": "Does ESGCI provide internships or practical training?",
+   "a": "Yes, as part of the program, ESGCI supports internships and practical training opportunities for students. These opportunities provide students with hands-on experience in business and allow them to apply their academic knowledge in real-world circumstances."
+  },
+  {
+   "q": "What are the ESGCI entry requirements?",
+   "a": "The entrance criteria for each program may differ. Academic credentials, admission exam scores (if applicable), interviews, and other relevant factors are often used to evaluate applicants. Specific admission criteria can be checked on the official ESGCI website or by contacting the admissions office."
+  },
+  {
+   "q": "Is there a placement cell at ESGCI?",
+   "a": "Yes, ESGCI has a specialized placement cell or career services section that helps students with their job search and placement. The placement cell collaborates closely with industry partners to provide students with placement opportunities and career counseling."
+  },
+  {
+   "q": "Are there any scholarships or financial help available?",
+   "a": "ESGCI may provide scholarships or financial aid based on merit, need, or other factors. Contact the admissions office or visit the official website for information on possible scholarships and financial support."
+  },
+  {
+   "q": "Is ESGCI involved in any foreign cooperation or exchange programs?",
+   "a": "Yes, ESGCI may engage in international cooperation and exchange programs with prestigious colleges and institutes worldwide. These agreements give students worldwide exposure and cultural exchange possibilities."
+  },
+  {
+   "q": "Are student reviews available for the ESGCI School of Business?",
+   "a": "Yes, ESGCI School of Business is listed on the Student Review Portal by College Vidya , with reviews covering academics, LMS experience, placement support, and overall learning quality. You can browse these reviews, compiled from honest feedback shared by real enrolled students. Universities cannot pay to hide or remove reviews on the portal, so what you see is genuine."
+  },
+  {
+   "q": "Is ESGCI a reputable institution?",
+   "a": "ESGCI is a well-known and respected university offering business administration and communication programs. It is associated with prestigious colleges and has a solid industrial reputation."
+  },
+  {
+   "q": "What services does ESGCI provide?",
+   "a": "ESGCI provides undergraduate and postgraduate degrees, diplomas, and business administration and communication certificate courses."
+  }
+ ]
+}

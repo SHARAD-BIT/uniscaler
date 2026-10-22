@@ -1,0 +1,641 @@
+{
+ "slug": "amity-university-online",
+ "name": "Amity University Online",
+ "establishedYear": "2005",
+ "location": "Noida, Uttar Pradesh",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   19,
+   14,
+   52,
+   414,
+   1744
+  ],
+  "total": 2243
+ },
+ "banner": "/university/banners/amity-university-online.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "UGC-DEB",
+   "logo": "/university/approvals/ugc-deb-logo.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  },
+  {
+   "title": "DEC",
+   "logo": "/university/approvals/Digital_Education_Council-DEC.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Amity University has been ranked as one of the best private universities in India by the NIRF. The Amity Online University, which provides education entirely in online mode, is also a well-reputed online institution. It is known for its premium and world-class online education."
+  },
+  {
+   "t": "p",
+   "text": "The university has been approved by UGC-DEB to offer UG, PG, and diploma-level degree courses in online mode. The online MBA program of Amity Online University has been ranked as the best in Asia by the QS Global Ranking."
+  },
+  {
+   "t": "p",
+   "text": "The university offers online UG, PG, Certificate, and Diploma courses in the domains of Management, Information Technology, Arts & Humanities, Commerce, and Media & Journalism. There are other short-term programs as well that are trending and in demand in the industry."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The university offers 100,000+ job and placement opportunities and complete career assistance through various services and exclusive virtual job fairs in collaboration with their multiple hiring partners. The university also has collaborations with Ivy League universities to offer global exposure to its online learners."
+  },
+  {
+   "t": "p",
+   "text": "The university has its own LMS to conduct classes and examinations and offer other immersive learning facilities. There is a facility for personalized mentorship by not just professors but also top industry leaders who assist in the portfolio building of students with the help of real-world industry projects."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "The university is recognized by UGC, WES, and others. It is India's first private university to be a member of the Digital Education Council and has been ranked as a top online university by NIRF and QS World Ranking.",
+  "Amity University’s MBA has been ranked in the band #101-150 by QS WUR Ranking By Subject QS, 2025.",
+  "The university provides global exposure with the help of leading international faculty from around the world.",
+  "The programs at online Amity university are accredited by WES in the US & Canada.",
+  "The university has industrial partnerships with HCLTech, TCSiON, and others to provide its students with industry-ready skills.",
+  "There are online classes and online examinations conducted through the LMS of the university.",
+  "Amity University has been ranked in the band of #1001-1200 in the QS World University Rankings 2025, and in the Asian University Rankings - Southern Asia category, the university has secured the #33 rank.",
+  "The university provides 100,000+ job and placement opportunities and has multiple hiring partners that help in the placement through exclusive virtual job fairs."
+ ],
+ "courses": [
+  {
+   "name": "Online BBA+MBA Integrated Course",
+   "fee": 402800,
+   "duration": "4.5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "67200"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "67200"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA+MCA Integrated Course",
+   "fee": 355300,
+   "duration": "4.5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "59300"
+    }
+   ]
+  },
+  {
+   "name": "MBA (Dual)",
+   "fee": 329000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "82300"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 199000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "49800"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "183080"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 225000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "56300"
+    },
+    {
+     "type": "Annual Fee Payment",
+     "fee": "106880"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 175000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "29200"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "154000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 150000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "37500"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "138000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 275000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "68800"
+    },
+    {
+     "type": "Annual Fee Payment",
+     "fee": "130630"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 190000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "47500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "47500"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "174800"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 115000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "19200"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 199000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "33200"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "175120"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com Honours",
+   "fee": 175000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "29200"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "29200"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 115000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "101200"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "19200"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com+MBA Integrated Course",
+   "fee": 323000,
+   "duration": "4.5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "53900"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The Amity University Online offers courses at very affordable fees. But one can also pay their academic fee through the help of easy-to-pay EMI installments. The No-cost EMI plans not only help the student to pay their whole fee in small installments but also provide them with an opportunity to finance their education. So one should definitely opt out of these education loan/EMI plans and take responsibility for their own education."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission procedure for Amity Online generally takes place two times a year. The admission procedure for Amity Online generally takes place twice a year. The first admission cycle starts in January, and the second admission cycle takes place in July. The whole admission process from registration to admission confirmation takes place in online mode. No entrance exam is required for taking admission to the university."
+  },
+  {
+   "t": "p",
+   "text": "The admission procedure for 2026 for the online courses at Amity Online University is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Go to the official website of Amity Online (Note—there are separate websites for online and on-campus programs)."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Click on the &ldquo;Apply Now&rdquo; tab in the top right corner."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: First, fill in your basic personal and academic details, followed by your employment details (if any)."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Now upload all the necessary documents for eligibility proof along with your recent and colored passport-size photo."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Submit this application form and pay the application fee. Once your application is reviewed and documents are verified, the university will inform you about your enrollment and further procedure via email."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of Amity University Online Programs? Amity University Online refunds the course fees as per the UGC Refund Policy. A 100% refund is allowed if the admission is cancelled 15 days or more before the last admission date. A 90% refund is provided for admission cancellation less than 15 days before the last admission date. If the admission is cancelled within 15 days after the last admission date, an 80% refund will be provided. 50% if the admission is cancelled 15–30 days after the last date. No refund will be provided after 30 days, and the registration fee may not be refunded by Amity University. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examinations for all the online programs at Amity University are held through an online technology-enabled proctored mode. The exam pattern constitutes internal and external examinations. The weightage for internal (assignments) is 30% and for external (end-term examinations) is 70%. The exam comprises 3 sections—Section A (Subjective), Section B (Case Studies), and Section C (MCQs)."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our students get an opportunity to work with"
+  },
+  {
+   "t": "li",
+   "text": "Multiple Hiring Partners"
+  },
+  {
+   "t": "li",
+   "text": "100,000+ job and placement opportunities"
+  },
+  {
+   "t": "li",
+   "text": "Increased chances of getting selected in top companies with Industry projects"
+  },
+  {
+   "t": "li",
+   "text": "Additional Career Support Services"
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Employees From Leading Organizations Trust Amity For Lifelong Learning:"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Google",
+      "Apple",
+      "Accenture"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Infosys",
+      "EY",
+      "Dell Technologies"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Samsung",
+      "KPMG",
+      "JP Morgan"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Aditya Birla Group",
+      "Amazon",
+      "Wipro"
+     ],
+     "header": false
+    }
+   ]
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Samsung",
+   "logo": "/university/partners/samsung.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  },
+  {
+   "title": "Apple",
+   "logo": "/university/partners/apple.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Sunil Kumar",
+   "title": "Assistant Professor",
+   "description": "Hello, I'm Dr. Sunil Kumar, a PhD holder in Management as well as an engineer. I'm your faculty at Amity University, where I specialize in management courses such as research and production operation management. He has 10+ years of experience.",
+   "photo": "/university/faculty/Dr._Sunil_Kumar.webp"
+  },
+  {
+   "name": "Dr. Hailey Stanton",
+   "title": "International Faculty (11+ years of Experience)",
+   "description": "Hello, I'm Dr. Hailey Stanton, an expert in travel, tours, and management. Excited to join Amity University, I love teaching tourism, geography, and transportology. Aviation and sustainability are my passions.",
+   "photo": "/university/faculty/Dr._Hailey_Stanton.webp"
+  },
+  {
+   "name": "Luke Pearce",
+   "title": "International Faculty (10+ years of Experience)",
+   "description": "I'm Luke Pearce. I've taught English in the UK, Spain, and Australia for several years. With a background in Spanish concepts from the University of Exeter, I obtained a PGCE qualification and recently completed my master's in Educational Language.",
+   "photo": "/university/faculty/Luke_Pearce.webp"
+  },
+  {
+   "name": "Dr. Ronald Darnell",
+   "title": "International Faculty",
+   "description": "I'm Dr. Ronald Darnell, a professor at Amity University. I hold a Bachelor of Science from the University of Texas, an MBA in Management Information Systems (MIS) from the University of Dallas, and a Ph.D. in Organization and Information Technology.",
+   "photo": "/university/faculty/Dr._Ronald_Darnell.webp"
+  },
+  {
+   "name": "Neha Tandon",
+   "title": "Assistant Professor",
+   "description": "I'm Neha Tandon. At Amity University, we prioritize delivering an exceptional learning experience. Through immersive learning and cutting-edge technology like AI-powered professors, we ensure top-notch education. She has 8+ years of experience.",
+   "photo": "/university/faculty/Neha_Tandon.webp"
+  },
+  {
+   "name": "Sachit Paliwal",
+   "title": "Assistant Professor",
+   "description": "Hello, my name is Sachit Paliwal. I work as an Assistant Professor and Program Coordinator of BCom at Amity University Online. My area of specialization is finance and accounting, and my research includes stock market integration and portfolio analysis. He has 12+ years of experience.",
+   "photo": "/university/faculty/Sachit_Paliwal.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Rashmi",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "mity Online reviews are generally mixed-to-positive. Students appreciate the UGC-DEB recognition, flexible exam scheduling, and user-friendly learning portal, making"
+  },
+  {
+   "name": "Manisha",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "Amity Online offers flexible learning, while College Vidya provides helpful guidance and smooth admission support. Their services make the overall process simple and convenient for students."
+  },
+  {
+   "name": "yash raj gupta",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "I HAVE TAKEN ADMISSION IN AMITY UNIVERSITY THROUGH COLLEGE VIDYA HE HELPED ME A LOT FOR ADMISSION PROCESS"
+  },
+  {
+   "name": "Om singh raghav",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "Amity’s Online BCA is a solid choice if you want a legitimate, flexible degree from a recognized university. It is ideal if you plan to build practical coding skills through self-study,"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Are online programs of Amity University approved by the government?",
+   "a": "Yes, Amity University is approved and entitled by the UGC to offer online courses. It is also approved by AICTE, India's first private university to be a member of the Digital Education Council."
+  },
+  {
+   "q": "Which online courses are offered by the Amity university?",
+   "a": "In the UG category, Amity offers online BBA, BCA, and BA courses in several specializations. In the PG category, there are online MBA, MCA, M.Com, and MA JMC in several specializations."
+  },
+  {
+   "q": "Does Amity university have its own LMS facility?",
+   "a": "Yes, Amity Online University has its own LMS with distinct features designed to provide maximum flexibility and ease of learning to the students. The daily live online classes are conducted through this LMS. All the other academic activities related to the course are done on this LMS."
+  },
+  {
+   "q": "How are examinations conducted for online degree courses?",
+   "a": "The examinations for the online degree courses at Amity online university are conducted in the online mode through the LMS with remote proctoring using AI services."
+  },
+  {
+   "q": "Does Amity University offer placements for online courses?",
+   "a": "Amity Online University conducts placement drives and offers placement assistance to its online learners in the form of various career support services. The university has multiple hiring partners from top companies who participate in the placement drives conducted by the university."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by the UGC, which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part-Time MCA Part Time M.Tech Part Time MCom Part-Time MSc Part-Time MA Part-Time BBA Part Time BCA Part Time BTech Part-Time BCom Part-Time BSc Part-Time BA Part Time"
+  }
+ ]
+}

@@ -1,0 +1,427 @@
+{
+ "slug": "iit-gandhinagar",
+ "name": "IIT Gandhinagar",
+ "establishedYear": "2008",
+ "location": "Gandhinagar, Gujarat",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  "total": 3
+ },
+ "banner": "/university/banners/iit-gandhinagar.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "Government Approved",
+   "logo": "/university/approvals/government-approved.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Indian Institute of Technology Gandhinagar (IITGN) is one of the prominent institutions in India and all the IITs are globally recognized and renowned for their reputation and quality education. The IITGN Online is focused on imparting global competent education with a holistic approach in different specializations of engineering and technical fields."
+  },
+  {
+   "t": "p",
+   "text": "IIT Gandhinagar Online is located in Palaj, Gandhinagar, Gujarat near the Sabarmati River and it was established in 2008. IIT Gandhinagar is also known as the cleanest IIT and it is the first institute-rated 5-star GRIHA LD (Green) campus, that minimized the negative impacts on the environment. Meanwhile, IITGN has been declared the first Indian 5-star campus that ensures food safety and promotes healthy eating."
+  },
+  {
+   "t": "p",
+   "text": "IIT Gandhinagar takes all the precautions and follows all the guidelines implemented by the government to run an environment-friendly institution simultaneously IITGN Online takes care of its employees as well, so IITGN follows the highest standards of safety for its employees majority of those involved in the construction works. After considering the safety measures taken by the IITGN, labor welfare, and community outreach the IIT Council is to introduce this practice in all the IITs."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "IIT Gandhinagar Online offers an amazing and unmatchable education experience to its students, and more than 40% of students enrolled at IITGN experience global exposure during their academic journey at IITGN. The institute offers various undergraduate, postgraduate, doctoral, and executive (online) programs in different specializations. IITGN also ranks 25th under the Engineering category, 39th under the overall category, and 36th under the research category according to the National Institutional Ranking Framework (NIRF) 2025."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Research-Oriented",
+   "content": "The institute encourages interdisciplinarity in research activities, there are multiple research centers at the institute where candidates from different fields work together and more than 35 funding agencies have funded their research."
+  },
+  {
+   "title": "Placement opportunities",
+   "content": "The placement department of the university remains active throughout the programs and assists students in upskilling and enhancing their abilities to compete in the global market. The top recruiters of IITGN Online are Accenture, Cognizant, Deloitte, and"
+  },
+  {
+   "title": "Top-ranked university",
+   "content": "IIT Gandhinagar Online is a well-known and reputed institution that ranks #801-850 in Asian University Rankings 2025. It has been rated the cleanest university by the Ministry of Human Resource and Development (HRD)."
+  }
+ ],
+ "facts": [
+  "IIT Gandhinagar offers seven different specializations under the B.Tech program itself.",
+  "IITGN follows the highest standards of safety for its employees and more importantly, for those involved in the construction works.",
+  "More than 40% of candidates enrolled at the institute undergo a study abroad experience.",
+  "IIT Gandhinagar Online has been rated the cleanest university by the Ministry of Human Resource and Development (HRD).",
+  "The institute has been ranked by the NIRF 18 under the Engineering category, 24 under the overall category, and 31 under the research category.",
+  "The institute is located in Palaj, Gandhinagar, Gujarat, and was established in 2008.",
+  "It is the first institute-rated 5-star GRIHA LD (Green) campus, that minimized the negative impacts on the environment.",
+  "The institute has been declared the first Indian 5-star campus that ensures food safety and promotes healthy eating."
+ ],
+ "courses": [
+  {
+   "name": "M.Tech Program",
+   "fee": 250000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "250000"
+    }
+   ]
+  },
+  {
+   "name": "Agentic AI Engineering",
+   "fee": 500000,
+   "duration": "6 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "500000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "Cloud based Software Development",
+   "fee": 500000,
+   "duration": "6 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "500000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "PG Diploma Program",
+   "fee": 500000,
+   "duration": "6 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "500000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "3000"
+    }
+   ]
+  },
+  {
+   "name": "PhD Program",
+   "fee": 455000,
+   "duration": "5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "455000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "There are various undergraduate, postgraduate, and doctoral programs offered at the IIT Gandhi Nagar Online in different specializations. The fee structure of every program is designed in such a way that every student and working professional can afford it. To financially assists students, the institute offers loan option and there are a few scholarship programs available as well which students can avail of according to their eligibility criteria. A few scholarships offered at the institute are:"
+  },
+  {
+   "t": "li",
+   "text": "Erach and Meheroo Mehta Merit Scholarship"
+  },
+  {
+   "t": "li",
+   "text": "Santosh Rani Tandon Scholarship"
+  },
+  {
+   "t": "li",
+   "text": "Mrs. Sita Jha Memorial Scholarship"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Excellence in Sports and Games"
+  },
+  {
+   "t": "li",
+   "text": "Scholarship for Excellence in Arts & Culture"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Candidates are willing to enroll at the IIT Gandhi Nagar are requested to appear for entry-level exams like JEE (Joint Entrance Examination) for undergraduate programs and GATE (Graduate Aptitude Test in Engineering) for postgraduate programs and other relevant exams IT JAM, CAT, CEED, & JRF. The admission to the IITs is based on the cut-off basis, after scoring minimum marks in these exams, candidates have to follow some basic steps mentioned below:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1 Interested candidates have to visit the IIT Gandhi Nagar's official website and register on the website."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 After completion of the registration process, the candidate will receive their credentials to access the admission portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 After logging in to the admission portal, candidates have to click on the apply button and start filling out the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 While filling out the application form candidates have to provide accurate information related to personnel details, education, and professional background."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 Meanwhile, candidates are also requested to attach the relevant documents along with the application form and make sure all the information and documents are accurate or the application may get rejected from the institution end."
+  },
+  {
+   "t": "p",
+   "text": "Step 6 When all the steps in the application form are completed, the candidate can proceed with the payment process and then submit their application form."
+  },
+  {
+   "t": "p",
+   "text": "Note - Students have to check the eligibility criteria of their opted program and it is mandatory to clear the applicable entrance exam if not, they continue the further process."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The shortlisted students based on their entrance exam evaluation are allowed to start a fresh semester and the examinations at the institutes are primarily focused on enhancing the skills of an individual with the practical-based learning system. The institute upskills the students through regular research, workshops, self-analysis, and training sessions. This helps encourage the students to build industry-oriented abilities for quick and accurate decision-making and gives a boost to the morale of every individual. The exams are held in a semester pattern, which has two main components i.e. internal assessment and end-term examination. These examinations are conducted to evaluate the overall theoretical and practical understanding of a student throughout the program. For a brief understanding of the examination pattern section-wise, students can look for the previous year's question papers."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The dedicated placement department of IIT Gandhi Nagar Online remains active for every candidate throughout the program. The institute has partnered with some of the major leading companies and they actively recruit students from the institution. Some of the major recruiters of IIT Gandhi Nagar include Salesforce, Accenture, Cognizant, Deloitte, and Adobe. A few pros of IIT Gandhinagar placement cella are:"
+  },
+  {
+   "t": "li",
+   "text": "The average package offered at the institute varies from 15-19 LPA."
+  },
+  {
+   "t": "li",
+   "text": "The median package offered at the institute has increased by 57% for BTech students and 30% for MTech students."
+  },
+  {
+   "t": "li",
+   "text": "Last year 424 students were placed during the placement drive."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-25",
+   "content": "The faculty members of the institution are very helpful and supportive, they guided me throughout my academic journey and resolved all my queries within no time and because of them, my journey of being an IITian was wonderful and beyond my imagination."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-25",
+   "content": "The placement assistance of the institute is best. I don’t have any complaints and this institute is worth all the hard work that I put in to get shortlisted for it."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-25",
+   "content": "I completed my Mtech from IIT Gandhinagar last year and the curriculum helped me develop technical and adaptive abilities with their practical-based learning experience I got amazing global exposure."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How to contact IIT Gandhinagar?",
+   "a": "Contact details of the institute are: Mail: academics@iitgn.ac.in Phone: 079-2395- 2052/ 2053/ 2054/ 2055 Address: Indian Institute of Technology Gandhinagar Palaj, Gandhinagar - 382055, Gujarat"
+  },
+  {
+   "q": "What is the highest package at IIT Gandhinagar?",
+   "a": "The highest package offered at IIT Gandhinagar Online stands at INR 40 LPA."
+  },
+  {
+   "q": "Is it compulsory to stay in a hostel in IIT Gandhinagar?",
+   "a": "No, taking hostel accommodation is totally up to the student and it is not mandatory to stay in a hotel only. Student can choose their off-campus accommodation as well."
+  },
+  {
+   "q": "What is the last date for IIT Gandhinagar admission 2026?",
+   "a": "The last date to apply for IIT Gandhinagar Online is March 25, 2026, by 5 pm (Phase - II application deadline)."
+  },
+  {
+   "q": "What programs are offered by IIT Gandhinagar?",
+   "a": "The various programs offered at the IIT Gandhinagar are B.Tech, M.Tech, M.Sc., M.A., Ph.D., and Visiting Students Programme."
+  }
+ ]
+}

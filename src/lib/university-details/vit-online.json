@@ -1,0 +1,279 @@
+{
+ "slug": "vit-online",
+ "name": "VIT Online",
+ "establishedYear": "2019",
+ "location": "Vellore, Tamil Nadu",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   2,
+   1
+  ],
+  "total": 3
+ },
+ "banner": "/university/banners/vit-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "VIT online was founded by the Vellore Institute of Technology. VIT Online wanted to provide high-quality education that students in the country could experience anywhere in the world. In India, VIT has even stood out as one of the best respected private universities. It is backed up with a great reputation (and good credentials) as well. The university’s online courses have opened for students, researchers, postgraduate students, and working people interested in changing employment status without leaving their jobs, thanks to the availability of online tuition facilities."
+  },
+  {
+   "t": "p",
+   "text": "VIT Online University currently offers online postgraduate programs such as MBA, MCA, and M.Sc. in Data Science, and some certification programs. These courses are facilitated using a concurrent Learning Management System (LMS) where lectures are recorded, classes are live and interactive, and it is possible to use digital study materials, assignments, quizzes, and public discussion forums. Students can work faster than expected and also participate in structured sessions with the teacher. Of all the advantages of VIT Online, its name and credentials are the greatest. It is UGC-qualified and AICTE-approved if applicable. The university is also NAAC A++ accredited, and as such, employers and universities generally accept its online degrees."
+  },
+  {
+   "t": "p",
+   "text": "Online students can also access the broader VIT Network and opportunities, with alumni status available to online learners as well through VIT Online. The curriculum is practical, and it focuses on industrial-style modern tools, technology, and business principles. In addition, students receive placement support, career recommendations, and online workshops and industry sessions. VIT Online is perfect for professionals trying to upskill, change careers, and earn a recognised degree while keeping a job as well as a real life."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "The VIT online was created at Vellore Institute of Technology (VIT) in 2019.",
+  "UGC requires online degrees to be equivalent to regular degrees.",
+  "Programs are UGC-entitled and AICTE-approved for eligible courses. VIT is accredited by NAAC A++.",
+  "Designed with the working professional and fresh graduate in mind, programs provide MBA, MCA, and M.Sc. Data Science programs online.",
+  "Learning is done through live classes and recorded lectures.",
+  "Students have digital learning resources and assistance from an LMS.",
+  "Entry into online programs involves no entrance examination.",
+  "Application and submission of documents are online, including everything online.",
+  "Students can also choose flexible EMI payments through VIT Online.",
+  "Students who complete online studies in online courses receive the status of alumni and benefits.",
+  "Evaluation is based on the analysis of internal evaluations, assessments, and the end-of-term exams.",
+  "It's also industry-specific and career-based at the university, career-savvy.",
+  "Placement assistance is provided for eligible learners. International learners can also access the programs worldwide.",
+  "Members of the VIT faculty offer their lectures and sessions online.",
+  "The university enjoys quite strong brand recognition within the private industry in India."
+ ],
+ "courses": [
+  {
+   "name": "Online M.Sc",
+   "fee": 170000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "170000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1200"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 160000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "160000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1200"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 180000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "180000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1200"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "VIT Online provides flexible EMI and installment payment options that can help students ease education spending while avoiding large one-time payments. Students can also choose their payment plan by semester, and students can use financing plans from the partnered financial providers. The EMI facility is particularly beneficial for people who work full-time and want to pursue higher education without a huge financial outlay for a one-time investment. The university aspires to reduce the costs and offer quality online education through flexible payment frameworks and digital payment options."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "At VIT Online, the admissions process is entirely online and structured for user-friendliness and efficiency. Those wishing to enter can take a look at the official website, register an account, and choose the program they want to pursue."
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Applicants fill out the online application form with their personal, academic, and professional details after being registered."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Students need to submit scanned copies of core documentation like school certificates, ID proof, passport-size photo, and signature."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Candidates must pay the application fee after completing the application form using a debit card, credit card, net banking, or UPI from a point of sale on the internet."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: All documents are verified by the university, and eligibility criteria are verified after submission."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Upon completion of all applicants' qualifications, admission confirmation by the university is provided along with fee payment instructions."
+  },
+  {
+   "t": "p",
+   "text": "Also, the Students can then pay the program fee in full or through EMI methods. There is no entrance exam required for most online programmes offered by VIT Online. It is straightforward and takes just a few days after document verification. After enrollment, pupils are introduced to the LMS (Learning Management System), study materials, recorded lectures, and the academic calendar."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The internal assessment and end-term exams are used at VIT Online. Internal assessments carry 30% weightage and may include assignments, quizzes, projects, or participation in academic activities. The other 70% weight is reserved for end-term tests carried out in an online manner in line with the university policies. Students should maintain academic performance throughout the semester. The teaching and learning management system from the university includes timetables, exam instructions, and digital support. Tests are conducted in an accessible and systematic manner to ensure fairness and transparency for all online learners."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "VIT Online helps students who study online find placement assistance and career support services. It partners with reputable companies and recruiters to assist students in exploring job opportunities across industries. Placement data suggests that more than 1000+ companies offer job placements to the students. Students receive career guidance sessions, resume-building support, interview preparation, and skill enhancement workshops as well."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  },
+  {
+   "title": "Bajaj Finserv",
+   "logo": "/university/partners/bajaj-finserv.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Syed Khalid Perwez",
+   "title": "Professor",
+   "description": "Dr. Syed Khalid Perwez is a Professor in the Organization Behaviour and Human Resource (OB & HR) area at the VIT Business School (VITBS). He teaches management students and is actively involved in the faculty cohort for VIT's online MBA programs.",
+   "photo": "/university/faculty/dr-syed-khalid-perwez.webp"
+  },
+  {
+   "name": "Dr. Murugavel R",
+   "title": "Professor",
+   "description": "Dr. Murugavel R is a senior Professor in the Production Operations Systems and Quantitative Techniques division of the VIT Business School. He is a key faculty member for the VIT Online MBA program, teaching subjects related to Information Systems, Quality Management, and Supply Chain Management.",
+   "photo": "/university/faculty/dr-murugavel-r.webp"
+  },
+  {
+   "name": "Dr. Rajesh M",
+   "title": "Professor & HoD",
+   "description": "Dr. Rajesh M is an Associate Professor at the VIT Chennai campus, specializing in data science, machine learning, the Internet of Things (IoT), and big data",
+   "photo": "/university/faculty/dr-rajesh-m.webp"
+  },
+  {
+   "name": "Dr. Sakthi Srinivasan K",
+   "title": "Professor",
+   "description": "Dr. K. Sakthi Srinivasan is a Professor in the Finance, Accounts, and Economics Division at the VIT Business School. He specializes in Financial Economics, Behavioral Finance, and Financial Derivatives.",
+   "photo": "/university/faculty/dr-sakthi-srinivasan-k.webp"
+  },
+  {
+   "name": "Dr. Swamy T.N.V.R.L",
+   "title": "Professor",
+   "description": "Dr. T.N.V.R.L. Swamy is a Professor in the Department of Management at VIT Business School, Vellore Institute of Technology (VIT). He teaches courses in Human Resource Management (HRM), Organization Behaviour, and Law, and delivers lectures for programs hosted on the VIT Online Education platform.",
+   "photo": "/university/faculty/dr-swamy-tnvrl.webp"
+  }
+ ],
+ "reviews": [],
+ "faqs": [
+  {
+   "q": "Is VIT Online UGC approved?",
+   "a": "Yes, VIT Online programs are UGC-entitled."
+  },
+  {
+   "q": "Are online qualifications from VIT valid?",
+   "a": "Yes, the degrees are authentic online and recognized under UGC regulations. In addition, VIT Online is accredited by NAAC A++ & AICTE approved."
+  },
+  {
+   "q": "Is there an EMI facility available on VIT Online?",
+   "a": "Yes, students can use EMI and flexible payment options."
+  },
+  {
+   "q": "Are there any entrance exams for VIT online admission?",
+   "a": "No, VIT Online does not require entrance examinations for most programs."
+  },
+  {
+   "q": "Which courses are available at VIT Online?",
+   "a": "MBA, MCA, and M.Sc. in Data Science are among the major online programs, and it also offers some certification programs like Data Science & AI and Artificial Learning & Machine Learning."
+  },
+  {
+   "q": "Is VIT Online available for placement support?",
+   "a": "Yes, placement assistance and career services are provided."
+  },
+  {
+   "q": "Can working professionals apply to VIT Online?",
+   "a": "Yes, the programs are designed for working professionals and flexible learning."
+  }
+ ]
+}

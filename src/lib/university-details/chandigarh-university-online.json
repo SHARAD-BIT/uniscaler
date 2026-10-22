@@ -1,0 +1,577 @@
+{
+ "slug": "chandigarh-university-online",
+ "name": "Chandigarh University Online",
+ "establishedYear": "2012",
+ "location": "Ludhiana, Punjab",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   7,
+   6,
+   31,
+   200,
+   759
+  ],
+  "total": 1003
+ },
+ "banner": "/university/banners/chandigarh-university-online.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "UGC-DEB",
+   "logo": "/university/approvals/ugc-deb-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  },
+  {
+   "title": "ACCA",
+   "logo": "/university/approvals/the-association-of-chartered-accountants-acca.jpg"
+  },
+  {
+   "title": "Harvard Business Publishing Education",
+   "logo": "/university/approvals/harvard-business-publishing-education.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Chandigarh University Online Learning is a reputed online learning institute in India that is UGC-DEB approved and has been awarded A+ Grade by National Assessment and Accreditation Council (NAAC) for maintaining high standards in delivering quality higher education."
+  },
+  {
+   "t": "p",
+   "text": "Chandigarh University has received the E-Learning Excellence for Academic Digitisation (E-LEAD) certificate and has been ranked among the top 5% of online universities that are NAAC A+ accredited. The degree provided by Chandigarh Online University is globally recognized and accepted in India and Abroad."
+  },
+  {
+   "t": "p",
+   "text": "Chandigarh University offers both undergraduate and postgraduate online programs. In the UG category, the university provides BA JMC, BBA, and BCA in the online mode. In the PG category, the university provides MCA, MA Eng, M.SC Mathematics, MA Economics, MA JMC, M.Com, MBA, and M.Sc Data Science in the online mode."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Chandigarh University has designed the curriculum of all its online courses with complete flexibility keeping in mind the needs of students who are working professionals. The online learning platform of Chandigarh Online University offers a wide variety of study materials and other academic facilities."
+  },
+  {
+   "t": "p",
+   "text": "Apart from quality education, Chandigarh University offers excellent placement assistance services like personalized career guidance from industry mentors, training on resume building, interviews, soft skills, and aptitude. The online learners also get access to the job portal endorsed by the university with 5000+ job opportunities."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "CU Online has been ranked amongst top 5% NAAC A+ accredited universities of India."
+  },
+  {
+   "title": "Great Placement Assistance",
+   "content": "Get interview opportunities up to 6 months after graduation among other services."
+  },
+  {
+   "title": "International Tie-Ups",
+   "content": "CU Online has 411 tie-ups with top international universities."
+  }
+ ],
+ "facts": [
+  "Chandigarh University Online Learning has been approved and entitled by UGC-DEB to offer online degree courses.",
+  "Chandigarh University has received an A+ Grade from NAAC and is among the top 5% of universities in India with NAAC A+ grade.",
+  "Chandigarh Online University is E-Learning Excellence for Academic Digitisation (E-LEAD) certified.",
+  "Chandigarh Online University has 300+ hiring partners.",
+  "The online learners continue to receive opportunities for interviews with top companies even after completion of their course for up to 6 months.",
+  "Online learners get access to the university-endorsed job portal that has more than 5000 new job openings that are updated monthly.",
+  "The university offers a variety of specializations in MBA. It even offers multiple dual MBA specializations.",
+  "Chandigarh University Online also offers Harvard Certifications and KPMG modules in MBA BA and BBA BA programs."
+ ],
+ "courses": [
+  {
+   "name": "Online BBA",
+   "fee": 140000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "23334"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23334"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 91000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "22750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "22750"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 180400,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "45100"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "45100"
+    }
+   ]
+  },
+  {
+   "name": "Online BA Honours",
+   "fee": 94500,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "15750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15750"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 141600,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "23600"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23600"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 110001,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "27500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "27500"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 131250,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "21875"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "21875"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 108750,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "27188"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "27188"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA (Dual)",
+   "fee": 180400,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "45100"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "45100"
+    }
+   ]
+  },
+  {
+   "name": "Online Dual BBA",
+   "fee": 140000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23334"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "23334"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 116250,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "29063"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "29063"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech Lateral Entry",
+   "fee": 324000,
+   "duration": "3 Years",
+   "feeDetails": []
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "For paying the academic fee easily one can check out the easy financing options like education loan/EMI options provided by the Chandigarh Online University. Students must try out these options and get help in financing their education. You can opt for a No-cost EMI plan in annual or lumpsum amounts. You can even get up to 30% discounts as an early bird. Special scholarship schemes are also available for alumni, defense, women, and corporate employees. Moreover, students can pay for the semester, annual, or total fee as per their convenience."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "There is an online process for applying to CU online university. Fresh admission sessions starts peiodically from time to time. Direct admissions are done in the CU online university which means there is no need to give an entrance exam for securing the admission seat."
+  },
+  {
+   "t": "p",
+   "text": "The admission procedure 2026 for the online courses at Chandigarh University Online Learning is as follows-"
+  },
+  {
+   "t": "p",
+   "text": "Step 1 Visit the official website of Chandigarh University Online Learning and click on Apply Now."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 Under &ldquo;Register Today&rdquo; fill in your personal details. After this, you will receive your login User ID and password via SMS or Email."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 Now log in using the User ID and password to fill out the online application form and pay the program fee."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 Upload all the necessary documents by clicking on &ldquo;Document Upload&rdquo; along with your recent passport-size colored photograph and then click on the &ldquo;Submit&rdquo; button."
+  },
+  {
+   "t": "p",
+   "text": "Note: Students can also reserve their seats by paying a blocking amount of INR 10,000 after completion of all the admission formalities."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of Chandigarh University Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of Chandigarh University Online Courses? Chandigarh University Online follows UGC refund norms. Students are eligible for 100% refund when they withdraw from admission 15 days before the last admission date. They will be eligible for 90% refund if they withdraw in less than 15 days before the last date. Chandigarh University will refund 80% fee if the withdrawal is made within 15 days after the last date, and a 50% refund applies for withdrawals 15–30 days after the last date. No refund will be allowed after 30 days from the last date of admission. Additionally, the university will not refund the registration fee. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination will be conducted in the online proctored mode by the college as per the latest guidelines. The university uses technology-enabled software so the students can give exams from anywhere if they have a reliable internet connection and necessary digital assets. Students who missed their exams can apply for the re-exam facility before the subsequent semesters. In online courses at Chandigarh University, candidates are not required to pay for the exam fee separately."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 30% Internal (Non-Proctored: quizzes, assignments, presentations, discussions, projects via LMS) + 70% External Summative (AI-proctored end-of-semester exams via LMS). Question types: MCQs, essay-type, case studies, projects. Grading follows a 10-point letter grade system. Re-evaluation and re-exam options available."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our students have get"
+  },
+  {
+   "t": "li",
+   "text": "1.7 Cr Highest International Package"
+  },
+  {
+   "t": "li",
+   "text": "54 LPA Highest National Package"
+  },
+  {
+   "t": "li",
+   "text": "300+ Hiring Partners"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Flipkart",
+   "logo": "/university/partners/flipkart.webp"
+  },
+  {
+   "title": "Hitachi",
+   "logo": "/university/partners/hitachi.webp"
+  },
+  {
+   "title": "Indigo",
+   "logo": "/university/partners/indigo.webp"
+  },
+  {
+   "title": "ISRO",
+   "logo": "/university/partners/isro.webp"
+  },
+  {
+   "title": "NTT Data",
+   "logo": "/university/partners/ntt-data.webp"
+  },
+  {
+   "title": "Practo",
+   "logo": "/university/partners/practo.webp"
+  },
+  {
+   "title": "Tata",
+   "logo": "/university/partners/tata.webp"
+  },
+  {
+   "title": "Vistara",
+   "logo": "/university/partners/vistara.webp"
+  },
+  {
+   "title": "Adidas",
+   "logo": "/university/partners/adidas.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Kriti Khurana",
+   "title": "Faculty in Management",
+   "description": "Dr. Kriti Khurana has almost seven years of experience as an educator with four years of experience in higher education. She holds a PhD in English with a specialization in Campus Narratives.",
+   "photo": "/university/faculty/Dr._Kriti_Khurana.webp"
+  },
+  {
+   "name": "David F. Poritzky",
+   "title": "Visiting Faculty",
+   "description": "CEO, Envista Strategies David has over 20 years of experience across commercializing research-based projects, developing high-impact industry events and leading companies and teams through all levels of the growth process. An MBA graduate from the Wharton School, David formed Envista Strategies to advise and invest in early-stage start-ups. Envista Strategies focuses on strategy, fund-raising and revenue generation. David is a proven communicator and has taught MBA- level Business Communication courses as well as a series of Business Analytics and Management courses.",
+   "photo": "/university/faculty/David_F._Poritzky.webp"
+  },
+  {
+   "name": "Shamim Mondal",
+   "title": "Visiting Faculty",
+   "description": "Prof. Shamim is currently working as Associate Dean at the School of Business Management NMIMS. He is an economist with 10 years of experience teaching economics and statistics, conducting economic research and consulting (four years) with clients on topics of applied microeconomics, finance, industrial organization, healthcare and labor markets. His expertise lies in directing the design and implementation of economic and statistical models to analyze real-world problems. Project management with a specific focus in data analysis and advanced applied statistical and econometric research.",
+   "photo": "/university/faculty/Shamim_Mondal.webp"
+  },
+  {
+   "name": "Mirza Rahim Baig",
+   "title": "Lead Business Analyst",
+   "description": "Lead Business Analyst Mirza Rahim Baig is an experienced Business Analytics Expert with 12+ experience in the industry. He has been associated with Flipkart and also has been a visiting faculty at Narsee Moonji Institute of Management. He holds a Master's Degree in Data Science from Liverpool John Moores University, and a Graduate degree from BITS Pilani, a premier educational institute in India.",
+   "photo": "/university/faculty/Mirza_Rahim_Baig.webp"
+  },
+  {
+   "name": "Alka Sharma",
+   "title": "Visiting Faculty (Consultant)",
+   "description": "Alka Sharma is an ACC ICF seasoned Executive Coach and Communications Consultant committed to the miracle of transformation on Personal Mastery. Alka is a creator and host for BBC's first self-help 13-part web series. Alka is a guest faculty at IIM Kozhikode, IIM Amritsar and NIFT, Delhi. A TEDx Speaker, Alka is authentic and articulate. She has the rare ability to energize an audience yet deliver uncommonly original and useful insights that lead to individuals doing their best work, teams providing superb results, and organizations becoming unbeatable. For nearly 20 years, Alka has worked as corporate communication lead and counsel for many leading organizations, ranging from Yahoo!, GE, WhatsApp and HP. Alka is a certified ICF Life Coach and coaches individuals and groups on Personal Mastery.",
+   "photo": "/university/faculty/Alka_Sharma.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Yoginder singh sandhu",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Good university nice to be here , excellent syllabus being provided"
+  },
+  {
+   "name": "Damudat Naik",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Chandigarh University provides a convenient learning experience with a user-friendly platform, helpful faculty, flexible classes, and good academic support for students pursuing their education."
+  },
+  {
+   "name": "Shubham Dixit",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "I’m having a great experience with Chandigarh University. The staff is supportive, and the overall learning experience is excellent."
+  },
+  {
+   "name": "Aditya Kumar Nandi",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "My online MCA in Cloud Engineering has been a great and smooth experience. The LMS makes it very easy to access lectures and study materials. The up-to-date curriculum make it an excellent choice."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is online degree from Chandigarh University valid?",
+   "a": "Yes, the degree for online courses at Chandigarh University is completely valid as the university is approved and entitled by UGC-DEB for offering online education."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "Which online UG courses are offered by Chandigarh University?",
+   "a": "In the UG category, Chandigarh University offers BA JMC, BBA, and BCA in the online mode."
+  },
+  {
+   "q": "Which online PG courses are offered by Chandigarh University?",
+   "a": "In the PG category, Chandigarh University offers MA JMC, M.Com, MBA, and M.Sc Data Science in the online mode."
+  },
+  {
+   "q": "Does Chandigarh University give placement for online courses?",
+   "a": "Chandigarh University provides complete placement assistance to its online learners. They continue to receive opportunities for interviews with top companies even after completion of their course for up to 6 months. They also get access to the university-endorsed job portal that has more than 5000 new job openings that are updated monthly. Other placement assistance services include personalized career guidance from industry mentors, training on resume building, interviews, soft skills, and aptitude."
+  },
+  {
+   "q": "Is online degree from Chandigarh University valid abroad?",
+   "a": "Yes, the degree for any online course at Chandigarh University is universally accepted whether in India or abroad."
+  }
+ ]
+}

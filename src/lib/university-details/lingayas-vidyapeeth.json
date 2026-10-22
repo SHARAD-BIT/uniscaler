@@ -1,0 +1,490 @@
+{
+ "slug": "lingayas-vidyapeeth",
+ "name": "Lingaya's Vidyapeeth Engineering",
+ "establishedYear": "1998",
+ "location": "Faridabad District, Haryana",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   2,
+   2,
+   16,
+   111,
+   427
+  ],
+  "total": 558
+ },
+ "banner": "/university/banners/lingayas-vidyapeeth.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NAAC B+",
+   "logo": "/university/approvals/naac_b_.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Lingaya’s Vidyapeeth is a deemed-to-be university located in Faridabad, Haryana. It is a top-accredited university and has been recognised by a number of statutory and accrediting bodies like UGC, AICTE, NAAC, AIU etc. The university is a well-reputed institution providing higher education courses to students in a number of domains from engineering to humanities to law."
+  },
+  {
+   "t": "p",
+   "text": "The university, as an initiative to enable more working professionals to complete their formal education, has established a branch offering evening B.Tech and M.Tech courses in the form of Work-Integrated Learning Programmes, i.e. WILP."
+  },
+  {
+   "t": "p",
+   "text": "The university provides the engineering courses in the lateral entry mode which means that candidates who have completed their engineering diploma as well as those with working experience can opt for them and pursue them while continuing to work."
+  },
+  {
+   "t": "p",
+   "text": "Lingaya’s Vidyapeeth’s WILP programmes are all AICTE recognised and the university provides these courses through a blend of online and offline learning pedagogy. It conducts its classes on weekends and holidays as well as has lab sessions on Saturdays so that working professionals can easily complete the course without any compromises to their work front."
+  },
+  {
+   "t": "p",
+   "text": "The faculty of the university, which consists of over 200 esteemed members, is dedicated and supportive and helps students to develop their professional and technical skills while completing their education."
+  },
+  {
+   "t": "p",
+   "text": "The WILP programmes are also job-linked which means students can also seek to enhance their professional scope and opportunities while working and completing their degrees. The university has associations with over 100 hiring partners like Larsen & Toubro, NIIT, Mahindra, Tata Consultancy Services etc."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Flexibility of Learning",
+   "content": "Weekend and Holiday Classes, Practicals on Saturday"
+  },
+  {
+   "title": "AICTE Entitled Courses",
+   "content": "Recognition from AICTE for both B.Tech and M.Tech"
+  },
+  {
+   "title": "Basic Eligibility for Admission",
+   "content": "Flexible Eligibility for Admission without any Age Bar"
+  }
+ ],
+ "facts": [
+  "The B.Tech and M.Tech WILP courses are UGC and AICTE entitled.",
+  "The university takes classes for the WILP courses on weekends and holidays. The practical/lab sessions for the courses are conducted over the weekends as well. So working professionals would not have to compromise with their professional engagements.",
+  "There is a blend of offline lectures and practical sessions as well as LMS support for online learning based on the convenience of the students and all-round learning.",
+  "The WILP courses also have placement support facilities for students with 100+ hiring partners.",
+  "The faculty of the university with over 200 members, is highly experienced and qualified and has extensive experience in academic research and consultancy.",
+  "The evaluation procedure of the university on a continuous and cumulative basis and doesn’t solely rely on academic performance in the end-semester exams."
+ ],
+ "courses": [
+  {
+   "name": "M.Tech Part-Time",
+   "fee": 250000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "5000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "57500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "57500"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech Lateral Entry",
+   "fee": 375000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "57500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "57500"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "5000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech After Diploma",
+   "fee": 250000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "57500"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "5000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "57500"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech",
+   "fee": 250000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "57500"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "5000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "57500"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech",
+   "fee": 375000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "57500"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "5000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "57500"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech Part Time",
+   "fee": 375000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "5000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "5000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "57500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "57500"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The Lingaya’s WILP programs are offered at quite affordable courses but the student doesn’t get other financing options to pay the academic fee like education loan options or EMI options by the university. The student can avail of these options from the outside banks available outside providing education loans and get an opportunity to finance their education. In this aspect, the College Vidya Portal also assists the students in choosing easy-to-pay EMI options and easily pay their course fees."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Online applications are invited by the Lingaya’s for fresh admissions. Admissions are done on a direct basis based on education qualification and marks in the qualifying class. One just needs to follow the below-mentioned steps to secure admission to Lingaya’s WILP program. The admission procedure for 2026 for online courses at Lingaya’s Vidyapeeth WILP is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Go to the official website of Lingaya’s Vidyapeeth B.Tech & M.Tech for Working Professionals."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Under the &ldquo;Enquire Now&rdquo; section, fill in your basic details and click on &ldquo;Register Now&rdquo;. You will receive your student login details."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Log in using these details and then start filling out the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Fill in all the required details upload the documents and follow the instructions on the screen to complete the admission procedure."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "AICTE Approval for Lingayas Click here"
+  },
+  {
+   "t": "p",
+   "text": "AICTE Approval Process Handbook Click here"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The semester examinations of the WILP courses at Lingaya’s are conducted offline. Students have to come to the examination centre to give the exam. All the other assessments, assignments, and quizzes will be conducted continuously in the online mode."
+  },
+  {
+   "t": "p",
+   "text": "35% (Internal) – 65% (End Term)"
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our students get an opportunity with"
+  },
+  {
+   "t": "li",
+   "text": "100+ Company Tie-Ups"
+  },
+  {
+   "t": "li",
+   "text": "Industry Experts Sessions"
+  },
+  {
+   "t": "li",
+   "text": "Job-Ready Skills"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "ISRO",
+   "logo": "/university/partners/isro.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Mahindra",
+   "logo": "/university/partners/mahindra.webp"
+  },
+  {
+   "title": "Mphasis",
+   "logo": "/university/partners/mphasis.webp"
+  },
+  {
+   "title": "Niit Technologies",
+   "logo": "/university/partners/niit-technologies.webp"
+  },
+  {
+   "title": "Reliance",
+   "logo": "/university/partners/reliance.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Apple",
+   "logo": "/university/partners/apple.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Prof. Dr. SVAV Prasad",
+   "title": "Professor and Dean (Corporate Affairs)",
+   "description": "",
+   "photo": "/university/faculty/Prof._DE_SVAV_Prasad.webp"
+  },
+  {
+   "name": "Dr. Javalkar Dinesh Kumar",
+   "title": "Associate Professor and Associate Dean Academics",
+   "description": "",
+   "photo": "/university/faculty/Dr._Javalkar_Dinesh_Kumar.webp"
+  },
+  {
+   "name": "Dr. Namrata Bansal",
+   "title": "Assistant Professor",
+   "description": "Ph.D Rutgers University NJ, USA, M.Sc University of Texas, Dallas USA, B.Tech, KU",
+   "photo": "/university/faculty/Dr._Namrata_Bansal.webp"
+  },
+  {
+   "name": "Prof. (Dr.) Ritu Sindhu",
+   "title": "Associate Dean and HOD",
+   "description": "",
+   "photo": "/university/faculty/Prof._Dr._Ritu_Sindhu.webp"
+  },
+  {
+   "name": "Dr. Tapsi Nagpal",
+   "title": "Associate Professor",
+   "description": "",
+   "photo": "/university/faculty/Dr._Tapsi_Nagpal.webp"
+  },
+  {
+   "name": "Dr. Manisha Vashisht",
+   "title": "Associate Professor",
+   "description": "",
+   "photo": "/university/faculty/Dr._Manisha_Vashisht.webp"
+  },
+  {
+   "name": "Dr. Subbarao Chamarthi",
+   "title": "Associate Professor and HOD",
+   "description": "",
+   "photo": "/university/faculty/Dr._Subbarao_Chamarthi.webp"
+  },
+  {
+   "name": "Dr. Deepak Kumar Bhalla",
+   "title": "Professor",
+   "description": "",
+   "photo": "/university/faculty/Dr._Deepak_Kumar_Bhalla.webp"
+  },
+  {
+   "name": "Dr. R K Deb",
+   "title": "Assistant Professor",
+   "description": "",
+   "photo": "/university/faculty/Dr._R_K_Deb.webp"
+  },
+  {
+   "name": "Dr. Gaurav Sharma",
+   "title": "Assistant Professor and HoD, Civil Engg.",
+   "description": "",
+   "photo": "/university/faculty/Dr._Gaurav_Sharma.webp"
+  },
+  {
+   "name": "Dr. Abdul Rehman",
+   "title": "Assistant Professor",
+   "description": "",
+   "photo": "/university/faculty/Dr._Abdul_Rehman.webp"
+  },
+  {
+   "name": "Mr. Deepak Kaushik",
+   "title": "Assistant Professor",
+   "description": "",
+   "photo": "/university/faculty/Mr._Deepak_Kaushik.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Akash Kumar",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Smooth procedure of admission and staff is so cooperative"
+  },
+  {
+   "name": "bimlesh",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "All was good.Complete admission in Lingaya’s vidyapeeth"
+  },
+  {
+   "name": "rajat",
+   "rating": 4,
+   "date": "2026-08-07",
+   "content": "best for distance learning and mechanical engineering career"
+  },
+  {
+   "name": "BRIJMOHAN kumar",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "All good and experience was very good and meaningful"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How does College Vidya support Working Professionals applying for B.Tech After Diploma?",
+   "a": "College Vidya provides a platform to learners where they can interact with alumni and also offers networking opportunities ."
+  },
+  {
+   "q": "Is Lingaya’s Vidyapeeth UGC approved?",
+   "a": "Yes, Lingaya’s Vidyapeeth is a UGC approved university for higher education."
+  },
+  {
+   "q": "What is the duration of B.Tech Lateral Entry?",
+   "a": "The duration of a lateral entry B.Tech is 3 years since it is a lateral entry course."
+  },
+  {
+   "q": "Does Lingaya’s engineering courses have placement support?",
+   "a": "Yes, the engineering courses at Lingaya’s Vidyapeeth have placement support facilities and association with over 100 hiring partners."
+  },
+  {
+   "q": "Is the engineering course at Lingaya’s completely offline?",
+   "a": "Although the classes and lectures are conducted in the offline mode, there is also LMS support available to students in the engineering courses so that they can refer to the lectures and other course content later through the online mode conveniently."
+  },
+  {
+   "q": "When are the classes for the B.Tech at Lingayas conducted?",
+   "a": "The classes for the B.Tech at Lingaya’s Vidyapeeth are conducted on weekends and on holidays. The practical sessions of the university are also conducted on Saturdays to enable working professionals to conveniently complete the course while continuing to work."
+  },
+  {
+   "q": "Are there any entrance exams for admission to B.Tech lateral entry at Lingaya’s?",
+   "a": "No, there are no entrances conducted for admissions to lateral entry btech courses at Lingaya’s Vidyapeeth but students must satisfactorily meet the eligibility criteria to get admitted in the courses."
+  }
+ ]
+}

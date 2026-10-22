@@ -1,9 +1,10 @@
 "use client";
 import { useMemo, useState } from "react";
-import {
-  applicationCatalog,
-  MAX_UNIVERSITIES,
-} from "@/lib/commonApplicationCatalog";
+import CryptoJS from "crypto-js";
+import { IoSearch } from "react-icons/io5";
+import { MAX_UNIVERSITIES } from "@/lib/commonApplicationCatalog";
+import { ONLINE_UNIVERSITIES } from "@/lib/onlineUniversities";
+import { UNIVERSITY_COURSES } from "@/lib/universityCourses";
 import "./styles/commonApplicationForm.css";
 
 /**
@@ -31,6 +32,73 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 // takes ten digits.
 const PHONE_RE = /^[6-9]\d{9}$/;
 
+const PAGE_SIZE = 8;
+
+// Collapse whitespace and trim — live rows hold values like " Greater Noida"
+// and doubled spaces (see CLAUDE.md), and search or dedupe on the raw value
+// splits one real thing into several.
+const clean = (s) => String(s ?? "").replace(/\s+/g, " ").trim();
+
+// Instant search-as-you-type: every typed word must appear somewhere in the
+// name or location. No server round-trip.
+const matchesQuery = (query, hay) => {
+  const q = clean(query).toLowerCase();
+  if (!q) return true;
+  return q.split(" ").every((token) => hay.includes(token));
+};
+
+// `course` on a college row is a JSON string of {name, duration, content}
+// objects, but rows written before the admin panel enforced that shape hold
+// plain text — a throw here would take the whole list down.
+const parseJsonList = (value) => {
+  try {
+    const parsed = JSON.parse(value || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+};
+
+// Fallback for a university whose real course list is unknown. Same
+// placeholder set (and same caveat) as the old bundled catalog: replace with
+// real data before this goes in front of anyone.
+const MANAGEMENT = [
+  "Marketing",
+  "Finance",
+  "Human Resource Management",
+  "Operations",
+  "Business Analytics",
+];
+const COMPUTING = [
+  "Data Science",
+  "Cyber Security",
+  "Cloud Computing",
+  "Artificial Intelligence",
+];
+const GENERIC_COURSES = [
+  { name: "MBA", specializations: MANAGEMENT },
+  { name: "MCA", specializations: COMPUTING },
+  { name: "BBA", specializations: MANAGEMENT },
+  { name: "BCA", specializations: COMPUTING },
+  {
+    name: "M.Com",
+    specializations: ["Accounting & Finance", "Banking & Insurance", "Taxation"],
+  },
+];
+
+// Online mode: the 65 extracted universities, each with the courses it
+// actually runs (universityCourses.js). Real course lists carry no
+// specialisations, so that picker only appears for the generic fallback.
+const ONLINE_LIST = ONLINE_UNIVERSITIES.map((u) => ({
+  name: u.name,
+  location: u.location,
+  courses: (UNIVERSITY_COURSES[u.name] ?? []).map((name) => ({
+    name,
+    specializations: [],
+  })),
+  hay: `${u.name} ${u.location}`.toLowerCase(),
+}));
+
 const ageFrom = (iso) => {
   const dob = new Date(iso);
   if (Number.isNaN(dob.getTime())) return null;
@@ -55,6 +123,98 @@ const CommonApplicationForm = () => {
 
   const chosen = useMemo(() => Object.keys(picks), [picks]);
   const atLimit = chosen.length >= MAX_UNIVERSITIES;
+
+  // Mode, search and pagination for the university browser. Regular mode's
+  // college list comes from the backend's public fetchCollegeForSearch (blank
+  // term = every college) and is fetched once, on first switch.
+  const [mode, setMode] = useState("online");
+  const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
+  const [regular, setRegular] = useState([]);
+  // idle -> not asked yet (or Retry pressed), loading, ready, error
+  const [regStatus, setRegStatus] = useState("idle");
+
+  // Kicked from the mode switch (and Retry), not from an effect — the fetch
+  // is a response to a user action, and the lint setup rejects setState
+  // straight inside an effect body.
+  const loadRegular = () => {
+    setRegStatus("loading");
+    const Data = new Date().getDate();
+    const encryptedToken = CryptoJS.AES.encrypt(
+      JSON.stringify(process.env.NEXT_PUBLIC_FETCH_BLOG + Data),
+      process.env.NEXT_PUBLIC_PUBLIC_ENC
+    ).toString();
+    fetch(`${process.env.NEXT_PUBLIC_WEBSITE_API}/fetchCollegeForSearch`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ token: encryptedToken, searchTerm: "" }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.code === 200) {
+          const rows = Array.isArray(data.data) ? data.data : [];
+          const seen = new Set();
+          const list = [];
+          for (const item of rows) {
+            const name = clean(item.collegeName);
+            if (!name) continue;
+            // Live rows are untrimmed and inconsistently cased; compare on a
+            // normalised key so one real college does not appear twice.
+            const key = name.toLowerCase();
+            if (seen.has(key)) continue;
+            seen.add(key);
+            const location = clean(item.location);
+            list.push({
+              name,
+              location,
+              courses: parseJsonList(item.course)
+                .map((c) => ({ name: clean(c?.name), specializations: [] }))
+                .filter((c) => c.name),
+              hay: `${name} ${location}`.toLowerCase(),
+            });
+          }
+          setRegular(list);
+          setRegStatus("ready");
+          return;
+        }
+        // 401 means both "no rows" and "bad token"; only the latter is an
+        // error worth a retry.
+        if (data.message === "Invalid Token") {
+          setRegular([]);
+          setRegStatus("error");
+          return;
+        }
+        setRegular([]);
+        setRegStatus("ready");
+      })
+      .catch((err) => {
+        console.error("fetchCollegeForSearch failed:", err);
+        setRegular([]);
+        setRegStatus("error");
+      });
+  };
+
+  const switchMode = (next) => {
+    setMode(next);
+    setQuery("");
+    setPage(1);
+    // Fetched once; a repeat visit to Regular reuses what already arrived.
+    if (next === "regular" && regStatus === "idle") loadRegular();
+  };
+
+  const activeList = mode === "online" ? ONLINE_LIST : regular;
+  const filtered = useMemo(
+    () => activeList.filter((u) => matchesQuery(query, u.hay)),
+    [activeList, query]
+  );
+  const pageCount = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  // The filter can shrink the list under the current page number.
+  const clampedPage = Math.min(page, pageCount);
+  const pageItems = filtered.slice(
+    (clampedPage - 1) * PAGE_SIZE,
+    clampedPage * PAGE_SIZE
+  );
+  const listReady = mode === "online" || regStatus === "ready";
 
   const setField = (name, value) => {
     setDetails((prev) => ({ ...prev, [name]: value }));
@@ -96,11 +256,17 @@ const CommonApplicationForm = () => {
     setErrors((prev) => ({ ...prev, [university]: undefined }));
   };
 
-  const specializationsFor = (university, course) => {
-    const entry = applicationCatalog.find((u) => u.university === university);
-    const match = entry?.courses.find((c) => c.name === course);
-    return match?.specializations ?? [];
+  const coursesFor = (university) => {
+    const entry =
+      ONLINE_LIST.find((u) => u.name === university) ||
+      regular.find((u) => u.name === university);
+    const list = entry?.courses ?? [];
+    return list.length ? list : GENERIC_COURSES;
   };
+
+  const specializationsFor = (university, course) =>
+    coursesFor(university).find((c) => c.name === course)?.specializations ??
+    [];
 
   const validate = () => {
     const next = {};
@@ -123,7 +289,13 @@ const CommonApplicationForm = () => {
       chosen.forEach((u) => {
         const p = picks[u];
         if (!p.course) next[u] = "Choose a course";
-        else if (!p.specialization) next[u] = "Choose a specialization";
+        // Real course lists carry no specialisations — only demand one where
+        // there is genuinely something to pick.
+        else if (
+          specializationsFor(u, p.course).length > 0 &&
+          !p.specialization
+        )
+          next[u] = "Choose a specialization";
       });
     }
 
@@ -254,45 +426,80 @@ const CommonApplicationForm = () => {
             <span className="caf-error caf-error-block">{errors.universities}</span>
           )}
 
-          <div className="caf-uni-list">
-            {applicationCatalog.map((entry) => {
-              const pick = picks[entry.university];
-              const isOn = Boolean(pick);
-              // Only the unticked ones lock at the limit — a chosen university
-              // must always remain untickable, or the user cannot swap one out.
-              const locked = !isOn && atLimit;
-              const specializations = isOn
-                ? specializationsFor(entry.university, pick.course)
-                : [];
+          <div className="caf-mode-row">
+            <div className="caf-mode" role="radiogroup" aria-label="Mode">
+              <label>
+                <input
+                  type="radio"
+                  name="caf-mode"
+                  checked={mode === "online"}
+                  onChange={() => switchMode("online")}
+                />
+                Online
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="caf-mode"
+                  checked={mode === "regular"}
+                  onChange={() => switchMode("regular")}
+                />
+                Regular
+              </label>
+            </div>
+            <div className="caf-search">
+              <IoSearch aria-hidden="true" />
+              <input
+                type="search"
+                placeholder={
+                  mode === "online"
+                    ? "Search online universities..."
+                    : "Search colleges..."
+                }
+                value={query}
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                  setPage(1);
+                }}
+              />
+            </div>
+          </div>
 
-              return (
-                <div
-                  key={entry.university}
-                  className={`caf-uni${isOn ? " is-on" : ""}${
-                    locked ? " is-locked" : ""
-                  }${errors[entry.university] ? " has-error" : ""}`}
-                >
-                  <label className="caf-check">
-                    <input
-                      type="checkbox"
-                      checked={isOn}
-                      disabled={locked}
-                      onChange={() => toggleUniversity(entry.university)}
-                    />
-                    <span>{entry.university}</span>
-                  </label>
+          {/* Chosen universities live above the browser with their course
+              pickers, so a selection stays visible and editable no matter
+              which mode, page or search the list below is on. */}
+          {chosen.length > 0 && (
+            <div className="caf-picked">
+              {chosen.map((name) => {
+                const pick = picks[name];
+                const specializations = specializationsFor(name, pick.course);
+                return (
+                  <div
+                    key={name}
+                    className={`caf-uni is-on${
+                      errors[name] ? " has-error" : ""
+                    }`}
+                  >
+                    <div className="caf-picked-head">
+                      <span>{name}</span>
+                      <button
+                        type="button"
+                        onClick={() => toggleUniversity(name)}
+                      >
+                        Remove
+                      </button>
+                    </div>
 
-                  {isOn && (
                     <div className="caf-uni-selects">
                       <div className="caf-field">
-                        <label htmlFor={`course-${entry.university}`}>Course</label>
+                        <label htmlFor={`course-${name}`}>Course</label>
                         <select
-                          id={`course-${entry.university}`}
+                          id={`course-${name}`}
                           value={pick.course}
-                          onChange={(e) => setCourse(entry.university, e.target.value)}
+                          onChange={(e) => setCourse(name, e.target.value)}
                         >
                           <option value="">Choose</option>
-                          {entry.courses.map((c) => (
+                          {coursesFor(name).map((c) => (
                             <option key={c.name} value={c.name}>
                               {c.name}
                             </option>
@@ -300,36 +507,116 @@ const CommonApplicationForm = () => {
                         </select>
                       </div>
 
-                      <div className="caf-field">
-                        <label htmlFor={`spec-${entry.university}`}>Specialization</label>
-                        <select
-                          id={`spec-${entry.university}`}
-                          value={pick.specialization}
-                          disabled={!pick.course}
-                          onChange={(e) =>
-                            setSpecialization(entry.university, e.target.value)
-                          }
-                        >
-                          <option value="">
-                            {pick.course ? "Choose" : "Choose a course first"}
-                          </option>
-                          {specializations.map((s) => (
-                            <option key={s} value={s}>
-                              {s}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
+                      {/* Only where there is genuinely something to pick —
+                          real course lists carry no specialisations. */}
+                      {specializations.length > 0 && (
+                        <div className="caf-field">
+                          <label htmlFor={`spec-${name}`}>Specialization</label>
+                          <select
+                            id={`spec-${name}`}
+                            value={pick.specialization}
+                            onChange={(e) =>
+                              setSpecialization(name, e.target.value)
+                            }
+                          >
+                            <option value="">Choose</option>
+                            {specializations.map((s) => (
+                              <option key={s} value={s}>
+                                {s}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      )}
                     </div>
-                  )}
 
-                  {errors[entry.university] && (
-                    <span className="caf-error">{errors[entry.university]}</span>
-                  )}
-                </div>
-              );
-            })}
+                    {errors[name] && (
+                      <span className="caf-error">{errors[name]}</span>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+          <div className="caf-uni-list">
+            {!listReady ? (
+              regStatus === "error" ? (
+                <p className="caf-list-state">
+                  Could not load the college list right now.{" "}
+                  <button type="button" onClick={loadRegular}>
+                    Retry
+                  </button>
+                </p>
+              ) : (
+                <p className="caf-list-state">Loading colleges…</p>
+              )
+            ) : pageItems.length === 0 ? (
+              <p className="caf-list-state">
+                Nothing matches &ldquo;{query}&rdquo;.
+              </p>
+            ) : (
+              pageItems.map((u) => {
+                const isOn = Boolean(picks[u.name]);
+                // Only the unticked ones lock at the limit — a chosen
+                // university must always remain untickable, or the user
+                // cannot swap one out.
+                const locked = !isOn && atLimit;
+                return (
+                  <div
+                    key={u.name}
+                    className={`caf-uni${isOn ? " is-on" : ""}${
+                      locked ? " is-locked" : ""
+                    }`}
+                  >
+                    <label className="caf-check">
+                      <input
+                        type="checkbox"
+                        checked={isOn}
+                        disabled={locked}
+                        onChange={() => toggleUniversity(u.name)}
+                      />
+                      <span>
+                        {u.name}
+                        {u.location && (
+                          <em className="caf-uni-loc">{u.location}</em>
+                        )}
+                      </span>
+                    </label>
+                  </div>
+                );
+              })
+            )}
           </div>
+
+          {listReady && filtered.length > PAGE_SIZE && (
+            <div className="caf-pages">
+              <button
+                type="button"
+                disabled={clampedPage === 1}
+                onClick={() => setPage(clampedPage - 1)}
+              >
+                ‹ Prev
+              </button>
+              {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (
+                <button
+                  key={n}
+                  type="button"
+                  className={n === clampedPage ? "is-current" : undefined}
+                  onClick={() => setPage(n)}
+                >
+                  {n}
+                </button>
+              ))}
+              <button
+                type="button"
+                disabled={clampedPage === pageCount}
+                onClick={() => setPage(clampedPage + 1)}
+              >
+                Next ›
+              </button>
+            </div>
+          )}
         </section>
 
         <footer className="caf-foot">

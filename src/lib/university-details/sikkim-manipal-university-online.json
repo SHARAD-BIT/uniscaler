@@ -1,0 +1,542 @@
+{
+ "slug": "sikkim-manipal-university-online",
+ "name": "Sikkim Manipal University Online",
+ "establishedYear": "1995",
+ "location": "Gangtok, Sikkim",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   1,
+   2,
+   23,
+   117,
+   495
+  ],
+  "total": 638
+ },
+ "banner": "/university/banners/sikkim-manipal-university-online.webp",
+ "approvals": [
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "UGC-DEB",
+   "logo": "/university/approvals/ugc-deb-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Sikkim Manipal University of Health, Medical and Technological Sciences, and now known as (SMU) Sikkim Manipal University was established in the year 1995 after the mutual alliance between the Manipal Pai Foundation & the Government of Sikkim. In India, it is the first University that came up by offering quality higher education including healthcare facilities to the Students."
+  },
+  {
+   "t": "p",
+   "text": "This institute has two important campuses that are - the Technology Campus and the other one is Medical Campus. This Institute is recognized by the University Grants Commission (UGC) & Distance Education Council (DCE), and it is also approved by the NAAC A+ grade, Government of India (GOI). All the study programs that are offered to the students are approved by some of the highly regulatory bodies like NIRF, IIRF, and THEWEEK."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "This institute is well known for its top-notch quality learning practices and rankings. The University has been ranked in many national recognitions and awards it is ranked 51st in India’s Best Multidisciplinary University, and it is positioned number 1 state rank in the category of private engineering institutes, with many more achievements, the institute is excelling in all academia."
+  },
+  {
+   "t": "p",
+   "text": "It is known to be the first government-private initiative in this eastern region, the first-ever PPP(Public Private Partnership), delivering quality education to all the students of the northeastern and eastern zone. The Courses that are offered to the students are B.Sc Medical Biotech, B.Sc Nursing, M.Sc Medical Biotech, B.Sc Nursing, BPT, Courses in Arts & Humanities, technological field, and MPT."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "The University has been ranked 51st in India’s Best Multidisciplinary University, and number 1 state rank in the category of private engineering institutes, along with many more achievements, the institute is excelling in all fields of academia.."
+  },
+  {
+   "title": "Research- Oriented",
+   "content": "SMU is highly focussed on catering to students with research skills and encourages them to work on innovative and interactive ideas. Most of the research projects are sponsored by grants from the State Government."
+  },
+  {
+   "title": "Placement opportunities",
+   "content": "SMU offers various placement opportunities to top companies. Students get amazing packages with an average salary of 3.56 LPA. TCS, HCL, TVS, Wipro, Tech Mahindra, Capgemini, Apollo Tyre, Sony, ACC Cement, and Electrolab are some top hiring companies of t"
+  }
+ ],
+ "facts": [
+  "Sikkim Manipal University of Health, Medical, and Technological Sciences, which is now known by the name, (SMU) Sikkim Manipal University was established in the year 1995.",
+  "It was established after the mutual alliance of the Manipal Pai Foundation & the Government of Sikkim.",
+  "The Courses that are offered to the students are in the field of Medical, Technological, arts & humanities like B.Sc Medical Biotech, B.Sc Nursing, M.Sc Medical Biotech, B.Sc Nursing, BPT, MPT, and many more.",
+  "Approved by the University Grants Commission(UGC) & Distance Education Council (DCE), and by the Government of India(GOI), NAAC A+ NIRF, IIRF, and THE WEEK.",
+  "It is the first-ever PPP(Public Private Partnership), delivering quality education to all the students of the northeastern and eastern zone.",
+  "This institute is ranked by many national recognitions and awards. It is ranked 51st in India’s Best Multidisciplinary University, and number 1 state rank in the category of private engineering institutes"
+ ],
+ "courses": [
+  {
+   "name": "Online BBA",
+   "fee": 90000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "90000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 110000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "27500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "27500"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 75000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18750"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "18750"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 75000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18750"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "18750"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 120000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "30000"
+    },
+    {
+     "type": "Full Fee",
+     "fee": "120000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 75000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "12500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "12500"
+    }
+   ]
+  },
+  {
+   "name": "Online Dual MBA",
+   "fee": 110000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Application Fee",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "27500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "27500"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 75000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "12500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "12500"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The University offers a wide range of courses like medicine, technical, arts, humanities, social sciences, commerce, and many more. The fee for all the courses vary. Students need to pay the fee of the course on semester basis. There are various scholarships that students can apply for. These scholarships are given by the state university, some are also offered by the central government. The state government also offers grants for research-purpose to the students. Also, students can apply for education loans."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The University offers many Undergraduate and postgraduate courses to the students. If you are interested in pursuing a study program in medicine or in the technological field, you can opt for this University. Here are the steps that you can follow to get admission to the university. But if you are willing to get admission in the medical course you are required to appear for the NEET examination, but check eligibility criteria on the website before applying for the university."
+  },
+  {
+   "t": "p",
+   "text": "Step 1 - Select the course that you want to apply for on the official website of the University. Also, check the eligibility criteria of the selected course and the entrance exam associated with it."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- After looking at the University and course details, you can start applying on the login portal of the website, after the notification will be released."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Fill in all the details of the candidate and marks & results of the qualifying examinations. Enter the details correctly and check the information filled in twice to avoid any mistakes."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- The next step will be scanning & uploading the relevant documents on your portal. Make sure to upload clear & visible photographs, to avoid any problems at the time of verification of the documents by the University."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 - The final step is submitting the fee. Note that the fee for all courses may vary, check the fee on the official portal. After successful verification of the candidate’s application and documents, University will send an admission confirmation mail to your registered mobile number or E-Mail ID."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of Sikkim Manipal University Online Programs? Sikkim Manipal University Online follows UGC refund norms. Students get a 100% refund if they withdraw 15 days or more before the last admission date. A 90% refund applies if the withdrawal is less than 15 days before the last admission date. An 80% refund is allowed within 15 days after the last date of admission. A 50% refund applies for withdrawals 15–30 days after the last day of admission. No refund is given after 30 days. Online Manipal may not refund the registration fee paid at the time of admission. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "SMU offers many courses in the field of medicine, technology, arts & humanities. Eligibility criteria for admission to all these courses can vary. The Students are advised to go through the previous year's examinations before appearing for the final examination. The examination is done in two important steps, the project(assessment, group projects & discussion, assignments, practicals, and interactive research management). The other evaluation is done on the basis of the theory exams. Both stages are crucial for the skill upliftment of the students. Also, in some courses, a few semesters will be dedicated to training & experience."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: Semester-based system. Combination of mid-semester + end-semester examinations + continuous assessment (quizzes, assignments, projects). PG evaluation includes written exams, project work, presentations, thesis submission for select courses. Exam booking is done through the Online Examination Booking System (OEBS). Exams are online proctored."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The University offers many placement opportunities to top companies. Students get amazing packages with a maximum salary package of 6 LPA and an average salary of 3.56 LPA. Some of the top companies of the University are"
+  },
+  {
+   "t": "li",
+   "text": "TVS"
+  },
+  {
+   "t": "li",
+   "text": "Sony"
+  },
+  {
+   "t": "li",
+   "text": "ACC Cement"
+  },
+  {
+   "t": "li",
+   "text": "Electrolab"
+  },
+  {
+   "t": "li",
+   "text": "Shriram Finance"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Apollo",
+   "logo": "/university/partners/apollo.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Samsung",
+   "logo": "/university/partners/samsung.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Tech Mahindra",
+   "logo": "/university/partners/tech-mahindra.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Anupam Kumar Pandey",
+   "title": "Associate Professor/ Assistant Professor (SG)",
+   "description": "Dr. Anupam Kumar Pandey is currently working as an Associate/Assistant Professor (SG) at Sikkim Manipal University. He has completed his Ph.D. from Banaras Hindu University on Disinvestment in Public Sector Enterprises in India- A Case Study, graduation and post-graduation from Devi Ahilya University, Indore (M.P.). He specializes in income tax, corporate accounting, business regulatory framework, and business finance. Dr. Pandey has over ten years of teaching experience. He has presented multiple research papers at National and International Conferences and has been credited with many research publications in reputed journals.",
+   "photo": "/university/faculty/Dr._Anupam_Kumar_Pandey.webp"
+  },
+  {
+   "name": "Ms. Tshering Ganden Bhutia",
+   "title": "Assistant Professor",
+   "description": "Ms. Tshering Ganden Bhutia is currently working as an Assistant Professor at Sikkim Manipal University, India. She has completed her master’s in commerce (M.Com) from the University of Delhi with a major in Marketing Management and a minor in International Business, she completed her bachelor’s in commerce (B.Com) from University of Delhi. Her research interest spans Consumer Behaviour, Marketing Mix, and Business Environment. She has worked as an intern in NGOs like Feeding India where she worked under the Talent Management Team. She loves reading and crocheting during her leisure time.",
+   "photo": "/university/faculty/Ms._Tshering_Ganden_Bhutia.webp"
+  },
+  {
+   "name": "Mr. Royal Moktan",
+   "title": "Assistant Professor",
+   "description": "Mr. Royal Tamang (Moktan) is currently working as an Assistant Professor at Sikkim Manipal University. He is pursuing a Ph.D. from Sikkim Skill University in the Management Department. He specializes in marketing and finance specialization. Mr. Royal Tamang has more than 9 years of teaching (offline and online) and corporate experience combined. He has qualified for UGC-NET twice and holds an array of workshops, training, seminars, and symposiums under him.",
+   "photo": "/university/faculty/Mr._Royal_Moktan.webp"
+  },
+  {
+   "name": "Dr. Sourav Dhar",
+   "title": "Professor & Director",
+   "description": "Dr. Sourav Dhar is an engineer and academician by profession. He received PhD (Engineering) in 2013. Since 2003, he has been associated with the Sikkim Manipal Institute of Technology, India, and executed different academic and administrative responsibilities. He was a Professor and Head of the ECE Department, SMIT from 2019 to 2023. As Professor and Director, he has taken the responsibilities of the Centre for Distance and Online Education (CDOE), Sikkim Manipal University since September 2023. His current research interests include 6G communication, cloud computing, IoT, WSN, remote sensing, and microwave filter design. He is a senior member of the Institute of Electrical and Electronics Engineers (IEEE) (IEEE-GRSS society) and a life member of the Institution of Engineers (India)(IEI). He has published more than 60 research papers in several SCI/Scopus-indexed international journals and conference proceedings and guided several PhD scholars. Currently, four research scholars are working under his supervision at SMU. He has completed a sponsored project on microwave filter design as Principal Investigator.",
+   "photo": "/university/faculty/Dr._Sourav_Dhar.webp"
+  },
+  {
+   "name": "Dr. Kushal Pokhrel",
+   "title": "Associate Professor & Deputy Director",
+   "description": "Dr. Kushal Pokhrel graduated with his Bachelor of Engineering in Electronics and Telecommunication from the University of Mumbai in 2003, and an MTech in Digital Electronics and Advanced Communication from SMU in 2005. He was awarded PhD from the Department of Computer Science and Engineering, SMU in 2021. He has a teaching experience of over 19 years alongside academic administration. Born in Gangtok, Sikkim he has an avid interest in computer networking and electronic devices. He has been teaching in the Department of Electronics and Communication Engineering, Sikkim Manipal Institute of Technology, SMU as an Associate Professor and is currently posted as Associate Professor and Deputy Director at CDOE, SMU.",
+   "photo": "/university/faculty/Dr._Kushal_Pokhrel.webp"
+  },
+  {
+   "name": "Mr. Niraj Sapkota",
+   "title": "Adjunct Faculty",
+   "description": "Mr. Niraj Sapkota is an Adjunct Faculty at the Sikkim Manipal University. He holds a B.Sc. and M.Sc. in Mathematics and is currently pursuing his Ph.D. at Sikkim Manipal Institute of Technology, Sikkim Manipal University, India. Mr. Sapkota has authored numerous research papers published in reputable international journals and conference proceedings. He has actively participated in various national and international conferences, presenting his research findings. Additionally, he has mentored several Mathematical Summer Camps, including MTTS and INMOTC, for both college and school students. Mr. Sapkota is a dedicated member of the Sikkim Mathematical Society, where he has organized and facilitated numerous workshops. He frequently serves as a resource person in workshops and camps, delivering lectures in many Invited Talks. Mr. Sapkota is also proficient in LaTeX, Python, and C++, showcasing his enthusiasm for computer programming.",
+   "photo": "/university/faculty/Mr._Niraj_Sapkota.webp"
+  },
+  {
+   "name": "Mr. Tirupati Bhattacharya",
+   "title": "Assistant Professor",
+   "description": "Mr. Tirupati Bhattacharya is currently working as an Assistant Professor at Sikkim Manipal University. He has completed his Master of Technology (MTech), and PG Diploma in Remote Sensing & GIS from Jadavpur University, Kolkata followed by an MCA and BCA from Sikkim Manipal University. Previously he worked as a Group ‘B’ in the Central Government Research Organisation in the domain of (ICT)Information Communication Technology System Management.",
+   "photo": "/university/faculty/Mr._Tirupati_Bhattacharya.webp"
+  },
+  {
+   "name": "Dr. Rinzing Ongmu Sherpa",
+   "title": "Assistant Professor",
+   "description": "Dr. Rinzing Ongmu Sherpa is an Assistant Professor of Sociology at CDOE, Sikkim Manipal University. She received her PhD degree in Sociology from Jawaharlal Nehru University, New Delhi in 2023. She was awarded the UGC-NET&JRF scholarship, in Sociology. Her areas of interest include ethnicity and identity politics, community studies, gender studies, Himalayan studies, and ethnography. Over the years, she has been a part of several national and international academic conferences, seminars, talks, and workshops. In 2019, her M.Phil. research paper was funded by the Ireland India Institute, Dublin City University for their Annual International Conference on South Asia. Additionally, she has presented her works at the University of Toronto, Social Science Baha, Kathmandu, Jawaharlal Nehru University, and Ambedkar University Delhi, among others. Further, she has published in academic journals and edited volumes while also contributing regularly to online articles and op-eds for local newspapers. Ms. Rinzing has seven years of research experience and specializes in ethnographic research. Her teaching philosophy is anchored in the creation of an inclusive and safe learning space for her students. She is dedicated to fostering interdisciplinary learning experiences, aiming for a nuanced understanding of complex social phenomena beyond traditional classroom boundaries.",
+   "photo": "/university/faculty/Dr._Rinzing_Ongmu_Sherpa.webp"
+  },
+  {
+   "name": "Ms. Sayantani Ghosh",
+   "title": "Assistant Professor",
+   "description": "Ms. Sayantani Ghosh is currently serving as Assistant Professor/Course Coordinator of Sociology at Sikkim Manipal University, India. She holds a Master’s degree (M.A.) in Sociology, with the distinction of ranking first in her cohort at the University of Calcutta. In addition to her academic achievements, she has successfully qualified for the UGC-NET (National Eligibility Test), affirming her expertise and commitment to teaching and research. With a passion for exploring sociological theories and their implications on modern society, Ms. Ghosh brings a dynamic approach to her teaching and mentorship. Her interests encompass a wide range of sociological topics, where she aims to inspire students and foster critical thinking and analytical skills. Her work contributes to a deepened understanding of societal structures, cultural dynamics, and social change. Her research interests include gender and sexuality, cultural studies, and religion. As a dedicated educator, Ms. Ghosh is committed to inspiring her students to critically engage with social issues and contribute meaningfully to the field of sociology.",
+   "photo": "/university/faculty/Ms._Sayantani_Ghosh.webp"
+  },
+  {
+   "name": "Ms. Nilanjana Sinha",
+   "title": "Assistant Professor",
+   "description": "Ms. Nilanjana Sinha is currently working as an Assistant Professor at Sikkim Manipal University, India. She has completed her Masters in English from the University of North Bengal and has been the department topper in graduation from North Bengal St. Xavier’s College. Her research interest spans across identity, culture and ethnicity. Being an avid reader of stories and poems, she enjoys writing her own and has independently organized numerous events on spoken word poetry in her hometown, Kalimpong. She is also the community editor of The Pomelo, an e-magazine aimed at exploring Himalayan voices helmed by young women researchers of India and Nepal.",
+   "photo": "/university/faculty/Ms._Nilanjana_Sinha.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "sarath chandran r",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "A wonderful experiance with SMU. Their online distace education is sutable for me. As a working person, a very good experience with their classes and exam schedules."
+  },
+  {
+   "name": "Sai pavan Reddy",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "Good for working people and flexible Recording lecture + week end live class"
+  },
+  {
+   "name": "Dr.Sakshi  Bhatt(PT)",
+   "rating": 5,
+   "date": "2026-08-06",
+   "content": "I have just taken admission,I will give review later"
+  },
+  {
+   "name": "Kunal kumar",
+   "rating": 5,
+   "date": "2026-08-06",
+   "content": "My experience with this institution has been fantastic. Their easy-to-use portal and helpdesk made my learning journey stress-free. There helpdesk helped me with literally everything."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can I pursue MBBS from SMU without entrance?",
+   "a": "No, Students looking for pursuing MBBS from SMU are required to clear the NEET, and only the selected students will get admission."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "Are the courses offered by SMU valid?",
+   "a": "Yes, the courses offered by this institute are valid, as it is approved by UGC, DEC, NIRF, IIRF, NAAC A+, etc."
+  },
+  {
+   "q": "What are the courses offered by SMU?",
+   "a": "The Courses that are offered to the students are in the field of Medical, Technological, arts & humanities like B.Sc Medical Biotech, B.Sc Nursing, M.Sc Medical Biotech, B.Sc Nursing, BPT, MPT, and many more."
+  },
+  {
+   "q": "Are the courses offered by Sikkim Manipal University distance education valid?",
+   "a": "Yes, all the distance courses that are offered by the university are valid as the institute is approved by University Grants Commission."
+  },
+  {
+   "q": "Is Sikkim Manipal University Government or Private?",
+   "a": "SMU is a private institution that was established in 1995 and today it is offering various courses in medicine, technical, arts, humanities, and commerce subject field."
+  }
+ ]
+}

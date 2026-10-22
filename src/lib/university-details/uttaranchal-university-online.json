@@ -1,0 +1,524 @@
+{
+ "slug": "uttaranchal-university-online",
+ "name": "Uttaranchal University Online",
+ "establishedYear": "2013",
+ "location": "Dehradun, Uttarakhand",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   10,
+   10,
+   55,
+   390,
+   1655
+  ],
+  "total": 2120
+ },
+ "banner": "/university/banners/uttaranchal-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "ISO",
+   "logo": "/university/approvals/iso-logo.jpg"
+  },
+  {
+   "title": "PCI",
+   "logo": "/university/approvals/pci-the-pharmacy-council-of-India-approval.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Uttaranchal University, established in 2013, is a NAAC-rated A+ university in Dehradun, Uttarakhand which is dedicated to providing affordable higher education to students, making educational services accessible to a larger number of students. With the aim of furthering this initiative, the university has started offering a number of full-time online courses in fields like management, computer applications and humanities. Uttaranchal University ensures that students enrolled in online degree courses receive the same educational comprehensiveness as their offline education."
+  },
+  {
+   "t": "p",
+   "text": "Uttaranchal University is not only a well-reputed higher educational institution of Uttarakhand but also accredited and recognized by statutory bodies and accreditation councils of national repute such as UGC, AICTE, NAAC (A+ Rating), ISO etc. The university has a record of academic excellence and has a very well-educated and distinguished faculty, which adds on to the many ways in which this university provides a leverage to its students."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The university’s online courses have been designed with an updated curriculum and learning support in addition to the exclusive job fairs which provide good placement support to students. Uttaranchal University provides affordable education to students along with top educational facilities."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Affordable Courses",
+   "content": "The Online Uttaranchal University provides quite affordable courses through online learning."
+  },
+  {
+   "title": "Personalized Mentors for every student",
+   "content": "A dedicated mentor for each and every learner enrolled to support them at every step."
+  },
+  {
+   "title": "International Collaborations",
+   "content": "University’s International collaborations provide students a global exposure"
+  }
+ ],
+ "facts": [
+  "Uttaranchal University has the approval of UGC to offer fully online degree courses to students.",
+  "Uttaranchal University is a NAAC rated A+ institution of higher education in India.",
+  "There are a total of 5 online courses- MBA, BBA, MCA, BCA and BA.",
+  "The online degree courses are provided with LMS support and virtual library.",
+  "There are exclusive virtual job fairs conducted by the university for students enrolled in the online courses at UU.",
+  "The university has internal academic collaborations with well-renowned corporate and IT firms including the likes of IBM, ACCA, ISDC etc."
+ ],
+ "courses": [
+  {
+   "name": "Online BBA",
+   "fee": 102000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "17000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "17000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "96000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 96000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "24000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "24000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "92000"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 61200,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "10200"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "10200"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "55200"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 102000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "17000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "17000"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "96000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 98000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "24500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "24500"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "94000"
+    }
+   ]
+  },
+  {
+   "name": "Online Executive MBA",
+   "fee": 98000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "24500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "24500"
+    },
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "94000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Courses offered at Online Uttaranchal Unversity are quite pocket-friendly but one doesn’y get any other finance options to pay the course fee like education loan schemes, Monthly EMI options. Don’t worry one can avail these financial benefits from the College Vidya Portal and enroll in the Course at Online Uttaranchal through these easing paying options."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "All the admission procedure is conducted through Online Mode in Online Uttaranchal University. Fresh admissions starts from January month of every year. One can easily apply by following the steps mentioned below. The 2023 admission procedure for the online courses at Online Uttaranchal University is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "step 1: The first step is to click on the Apply Now tab present on the official website."
+  },
+  {
+   "t": "p",
+   "text": "step 2: Then the apply page will open where the candidate has to register themselves by filling out the necessary details."
+  },
+  {
+   "t": "p",
+   "text": "step 3: The registration can only be completed after successful contact verification through the OTP sent by the university."
+  },
+  {
+   "t": "p",
+   "text": "step 4: After successful verification, the candidate can fill out the application form by filling in all the required details asked in the form."
+  },
+  {
+   "t": "p",
+   "text": "step 5: After successfully filling up the application form pay the required fee as mentioned."
+  },
+  {
+   "t": "p",
+   "text": "step 6: At last upload all the required documents in the prescribed size and format. Then finally check the details fill in the form and submit it. After submission, your application is reviewed and verified by the university administration. Post successful verification the admission confirmation mail is sent to the candidate via the contact information given at the time of registration."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of Uttaranchal University Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of Uttaranchal University Online Courses? Online Uttaranchal University follows UGC guidelines. Students are eligible for a 100% refund if they withdraw 15 days or more before the last admission date. A 90% refund applies if withdrawal is less than 15 days before the last admission date. An 80% refund applies within 15 days after the last admission date. A 50% refund applies 15–30 days after the last admission date. No refund is allowed after 30 days. Also, Online UU may not refund the registration fee. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examinations conducted at the Online Uttaranchal University are through online proctored technology. This AI-based technology assures fair examination practices even in online mode. The student also got the option of giving the exams in offline mode through the pen-paper test."
+  },
+  {
+   "t": "p",
+   "text": "The student can check the examination schedule as uploaded on the Learning Management System (LMS) of the university. And, the examination is strictly conducted in the English medium only."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: Continuous Internal Assessment + End-Term Examination model. Exams are conducted through technology-enabled (online proctored) methods. Mixed objective + descriptive question format."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our Students have:"
+  },
+  {
+   "t": "li",
+   "text": "Career Assistance"
+  },
+  {
+   "t": "li",
+   "text": "Virtual Job Fairs"
+  },
+  {
+   "t": "li",
+   "text": "Industry Academic Collaborations"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Flipkart",
+   "logo": "/university/partners/flipkart.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Reliance",
+   "logo": "/university/partners/reliance.webp"
+  },
+  {
+   "title": "Samsung",
+   "logo": "/university/partners/samsung.webp"
+  },
+  {
+   "title": "Tata",
+   "logo": "/university/partners/tata.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  },
+  {
+   "title": "Tata Sky",
+   "logo": "/university/partners/tata-sky.webp"
+  },
+  {
+   "title": "Hindustan Unilever Limited",
+   "logo": "/university/partners/hindustan-unilever-limited.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Rajeev Kumar",
+   "title": "Associate Professor",
+   "description": "",
+   "photo": "/university/faculty/faculty_dummy_male_img.webp"
+  },
+  {
+   "name": "Dr. Monisha Awasthi",
+   "title": "Assistant Professor",
+   "description": "",
+   "photo": "/university/faculty/faculty_dummy_female_img.webp"
+  },
+  {
+   "name": "Dr. Anil Singh Chauhan",
+   "title": "Assistant Professor",
+   "description": "",
+   "photo": "/university/faculty/faculty_dummy_male_img.webp"
+  },
+  {
+   "name": "Dr. Vijaylakshmi Sajwan",
+   "title": "Assistant Professor",
+   "description": "",
+   "photo": "/university/faculty/faculty_dummy_female_img.webp"
+  },
+  {
+   "name": "Dr. Reeta Rautela",
+   "title": "Associate Professor",
+   "description": "",
+   "photo": "/university/faculty/faculty_dummy_female_img.webp"
+  },
+  {
+   "name": "Dr. Sameer Dev Sharma",
+   "title": "Associate Professor",
+   "description": "",
+   "photo": "/university/faculty/faculty_dummy_male_img.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Princgupta",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "Mujhe online MBA karna tha FIR mera contact college Vidya ke through hua jinhone Mera kam bahut aasan kar diya aur mera admission bhi ho gaya hai uttran"
+  },
+  {
+   "name": "Aniket v Avchite",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "I had a great experience taking admission to Uttaranchal University with the help of the College Vidya team. They guided me throughout the admission process and made the process simple."
+  },
+  {
+   "name": "VIKAS SAINI",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "University is good they explain very well. But I am not comfortable to understand because my basic concept are not clear."
+  },
+  {
+   "name": "Subham Chatterjee",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "I am starting my MBA journey, it will be great to get my degree"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How are examinations conducted at Online Uttaranchal University?",
+   "a": "The examinations are conducted in online mode through the help of AI-based technologies and online proctored methodologies for fair examination practices."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "Which online PG courses are offered by Uttaranchal University?",
+   "a": "The online PG courses offered by the university are- MBA and MCA."
+  },
+  {
+   "q": "Is an online degree from online Uttaranchal university valid or not?",
+   "a": "Yes, the online degree from the university is valid as the university is UGC-DEB approved."
+  },
+  {
+   "q": "Which online UG courses are offered by Uttaranchal University?",
+   "a": "The online UG courses offered by the university are- BBA, BCA, and BA."
+  },
+  {
+   "q": "Does Online Uttaranchal University offer placement support to students?",
+   "a": "Yes, the university provides placement support to the students through various industry tie-ups formed by the university."
+  }
+ ]
+}

@@ -1,0 +1,573 @@
+{
+ "slug": "vivekananda-global-university-online",
+ "name": "Vivekananda Global University Online",
+ "establishedYear": "2012",
+ "location": "Jaipur, Rajasthan",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   3,
+   0,
+   7,
+   35,
+   121
+  ],
+  "total": 166
+ },
+ "banner": "/university/banners/vivekananda-global-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "VGU, Vivekananda Global University, was established in 2012, and it is India’s leading institute that has offered students quality education, top-notch facilities, and better job and career opportunities for many years. The University offers On-Campus and Online courses in various disciplines. Some of the online courses available at the University are BBA, BCA, BA, MBA, MA, M.Sc., and MCA. The Institution is the University Grants Commission (UGC), entitled, accredited by the NAAC A+ Grade, and also approved by the All-India Council of Technical Education."
+  },
+  {
+   "t": "p",
+   "text": "They also help students enrolled in online courses to get all the resources online, be it self-learning material, live and recorded classes by experts and professionals, e-books, and many more. The University is actively helping the students to get good career opportunities through initiatives like a mandatory customized internship program that is 3-6 months. They have built a system of networking that involves live interactive sessions through online discussion forums and live chats. Companies like KPMG, Justdial, HCL Technologies, Intel, Vivo, IBM, Panasonic, and many more offer job roles to the university graduates."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "VGU has various multidisciplinary faculties that teach across more than 21 departments, has a global academic network of 50,000+ people, and offers more than 100 courses in on-campus Mode to students from more than 29+ countries. They also focus on the holistic growth of the students, be it academic or other extracurricular activities."
+  },
+  {
+   "t": "p",
+   "text": "The institute offers the best placement options with 500+ recruiters, national or international. It has been graded a 4.5-star rating in the category of Green Campus. The University has many departments: the Department of Agriculture, Communication Science & Application, Engineering & Technology, Material Sciences, Medical Sciences, Pharmaceutical Science, International Trade & Commerce, Management, Law, Hospitality, Design, Law, Journalism & Mass Communications, Hospitality, and many more."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Entrepreneurial Eco-system",
+   "content": "The university is leading in the research aspects and the Online VGU team is working on different 100+ Public and Private Projects and has 120+ Government Collaborations."
+  },
+  {
+   "title": "up-To-Date Events Activities",
+   "content": "To keep students engaged and updated with the current industry trends the VGU organizes various events like the Vedanta Marathon, CODE RED 3.0, and many more through its 23+ clubs and various societies."
+  },
+  {
+   "title": "Global Recognition",
+   "content": "The Vivekananda Global University Online is a renowned private university that is globally recognised and accredited by NAAC “A+”, AIU, AICTE, UGC, Ministry of Rural Development, and Ministry of Skill Development."
+  }
+ ],
+ "facts": [
+  "VGU has various multidisciplinary faculties that teach across more than 21 departments and has a global academic network of 50,000+ people.",
+  "It offers more than 100 courses in on-campus Mode to students from more than 29+ countries.",
+  "Companies like KPMG, Justdial, HCL Technologies, Intel, Vivo, IBM, Panasonic, and many more offer job roles to the University Graduates.",
+  "It has been graded a 4.5-star rating in the category of Green Campus.",
+  "VGU, Vivekananda Global University, was established in 2012 and offers On-Campus and Online courses in various disciplines.",
+  "Some of the online courses available at the University are BBA, BCA, BA, MBA, MA, M.Sc., and MCA.",
+  "The university provides self-learning material, live and recorded classes by experts and professionals, e-books, and many more.",
+  "The Institution is the University Grants Commission (UGC), entitled, accredited by the NAAC A+ Grade, and also approved by the All-India Council of Technical Education."
+ ],
+ "courses": [
+  {
+   "name": "Online BCA",
+   "fee": 132000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "132000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "22000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 132000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "22000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "132000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 150000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "150000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "37500"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 72000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "72000"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 72000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "12000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 72000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "72000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 150000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "37500"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "150000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The Online VGU offers various UG, PG, and Doctoral programs through online mode that are specially designed for students with a lack of availability of resources, and for working professionals, the online program helps them to pursue higher education without hampering their work schedule. The fee structure of the programs is comparatively budget-friendly and affordable as compared to a regular degree."
+  },
+  {
+   "t": "p",
+   "text": "The university regularly reviews and updates the fee structure in order to perfectly align with the industry requirements and standards while maintaining quality education. To lessen the financial burden on the students, the university offers installment payment mode, EMI, and scholarship options as financial aid. There are various scholarships offered at VMU Online; a few of them are listed below:"
+  },
+  {
+   "t": "li",
+   "text": "Merit-based scholarship"
+  },
+  {
+   "t": "li",
+   "text": "VGU Alumni & Student Scholarship"
+  },
+  {
+   "t": "li",
+   "text": "VGU Employee scholarship"
+  },
+  {
+   "t": "li",
+   "text": "RMedalist Scholarship"
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Students willing to enroll in an online degree program offered at Online Vivekananda Global University are required to follow the below-mentioned steps in the admission process:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Students are required to visit the official website of the university and start with the registration process in order to get credentials for accessing the students' portal of the university."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: After the registration process, students will receive their login details, and before going further, the students will be counseled by the university end for the chosen program and specialization by them."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: When the counseling is done, students can proceed with the application process and be guided to fill out the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Meanwhile, filling out the application form, students have to attach the required documents along with their admission form for verification."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Students whose admission form is accepted by the university will receive a notification on their account on the student portal and are required to pay the fee for their opted program."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: After successful fee payment, students can access their LMS (Learning Management System) and start their program."
+  },
+  {
+   "t": "p",
+   "text": "Step 7: Students are advised to print out the application form along with the fee receipt for future reference."
+  },
+  {
+   "t": "p",
+   "text": "Important notes:"
+  },
+  {
+   "t": "li",
+   "text": "Students are advised to visit the official website of the university and go through the eligibility of the program they are willing to enroll in."
+  },
+  {
+   "t": "li",
+   "text": "The details in the application form must be accurate and valid, as incorrect information may lead to rejection of the application form."
+  },
+  {
+   "t": "li",
+   "text": "Only after the final verification of documents and fee payment are the enrollment numbers generated and allotted to students."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the fee refund policy of Vivekananda Global University Online Courses (VGU Online)? VGU Online abides by the refund policy of the University Grants Commission. The fee refund is based on the timing of the admission withdrawal. ⭐Cancel 15 days or more before the last admission date → Full fee refund (100%) ⭐Cancel within 15 days before the last date → 90% refund ⭐Cancel within 15 days after the last date → 80% refund ⭐Cancel between 16 and 30 days after the last date of admission → 50% refund ⭐Cancel after 30 days → No refund Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Examinations will be done in online mode with the help of remote proctoring, and all the students are required to have a functional laptop or desktop with a webcam. All the activities done by the candidates will be observed by the invigilator. The students are instructed to follow all the instructions given by the University in order to avoid any future interruption."
+  },
+  {
+   "t": "p",
+   "text": "All the programs at VMU Online are well designed, and the syllabus of every program is regularly updated and revised as per the latest education policy to offer global exposure to the students with current market trends and situations. The examination follows a semester pattern and has two major components, namely internal examination and term and examination. The internal or mid-term examinations are conducted to evaluate the practical understanding of the students, as these examinations include assignments. Meanwhile, term-end examinations are conducted at the end of every semester to evaluate the overall theoretical understanding of an individual throughout their academic journey at the program."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 100% online semester-based system with two components — Internal/Mid-term (assignments) + Term-End Examination. Term-end exams are conducted in online remote proctored mode; students need laptop/desktop with webcam. Invigilator monitors all activities."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The Vivekananda Global University Online has a dedicated placement cell, and it remains active throughout the academic journey of the students to offer them guidance and help them acquire industry-relevant skills and abilities with the assistance of various academic activities like webinars, guest lectures, quizzes, mock interviews, training, fairs, workshops, etc. to boost the morale of students and enhance their personality."
+  },
+  {
+   "t": "p",
+   "text": "Meanwhile, the university has collaboration and ties up with many leading business corporations that recruit candidates from the campus, and with the help of developed skills, students are able to get placed in their desired industries and companies. A few stats of placements at Online VGU are mentioned below:"
+  },
+  {
+   "t": "li",
+   "text": "The university has a vast network of 50K+ students with 15,000+ students placed in top leading MNCs."
+  },
+  {
+   "t": "li",
+   "text": "The average package offered at the university is 4.6 LPA (approx.)."
+  },
+  {
+   "t": "li",
+   "text": "15,000+ students have been placed in top companies."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Tata Motors",
+   "logo": "/university/partners/tata-motors.webp"
+  },
+  {
+   "title": "Vivo",
+   "logo": "/university/partners/vivo.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  },
+  {
+   "title": "Apple",
+   "logo": "/university/partners/apple.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Pawan Bhambu",
+   "title": "Program Coordinator",
+   "description": "",
+   "photo": "/university/faculty/faculty_male_img.webp"
+  },
+  {
+   "name": "Mr. Mohit Tiwari",
+   "title": "Course Coordinator",
+   "description": "",
+   "photo": "/university/faculty/faculty_male_img.webp"
+  },
+  {
+   "name": "Ms. Ritu Sree",
+   "title": "Course Mentor",
+   "description": "",
+   "photo": "/university/faculty/faculty_female_img.webp"
+  },
+  {
+   "name": "Dr. Vijayendra Shrivastava",
+   "title": "Program Coordinator",
+   "description": "",
+   "photo": "/university/faculty/faculty_male_img.webp"
+  },
+  {
+   "name": "Ms. Shreya Mathur",
+   "title": "Course Coordinator",
+   "description": "",
+   "photo": "/university/faculty/faculty_female_img.webp"
+  },
+  {
+   "name": "Ms. Richa Goswami",
+   "title": "Course Mentor",
+   "description": "",
+   "photo": "/university/faculty/faculty_female_img.webp"
+  },
+  {
+   "name": "Dr. Priya Parihar",
+   "title": "Course Coordinator",
+   "description": "",
+   "photo": "/university/faculty/faculty_female_img.webp"
+  },
+  {
+   "name": "Dr. Deepak Kumar",
+   "title": "Course Coordinator",
+   "description": "",
+   "photo": "/university/faculty/faculty_male_img.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "kirtika",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "My experience at the university has been really good. The faculty members are supportive and the academic environment is positive"
+  },
+  {
+   "name": "Santosh kumar",
+   "rating": 4,
+   "date": "2026-08-03",
+   "content": "Overall, Everything is good till now. Faculty and course content are satisfactory. Please continue with the same efforts."
+  },
+  {
+   "name": "Shyamdeo Das",
+   "rating": 5,
+   "date": "2026-07-24",
+   "content": "I want from university good support in everything with good placement"
+  },
+  {
+   "name": "sahaj",
+   "rating": 5,
+   "date": "2026-06-30",
+   "content": "the admission cycle was smooth with a perfect document verification system."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Will my degree that is acquired in online mode from VGU be valued for higher studies and government jobs?",
+   "a": "Yes, the courses offered to the students in online mode will be valid for all types of employment be it private or public, and also for pursuing higher studies."
+  },
+  {
+   "q": "Are the courses offered to the students at VGU Online Valid?",
+   "a": "Yes, all the courses offered to the students at this university in online mode are valid and entitled by the University Grants Commission (UGC)."
+  },
+  {
+   "q": "What are the courses offered to students at VGU Online?",
+   "a": "The University offers undergraduate and postgraduate courses to the students, like BBA, BCA, BA, MBA, MA, M.Sc., and MCA."
+  },
+  {
+   "q": "How are degree programs at VGU Online delivered?",
+   "a": "The university offers flexible learning chances, e-books, and other learning materials, and classes are done in online mode, with the help of both live and recorded classes."
+  },
+  {
+   "q": "Will students enrolled in online courses get the same assistance as regular-mode students at VGU?",
+   "a": "Yes, the online degree offered to the students is at par with the regular-mode degree. Students get recorded sessions, presentations, e-books, assessments, quizzes, assignments, and many more."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of part-time courses. These courses are completely valid & approved by the UGC, which gives them equal recognition in the industry, just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part-Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part-Time BBA Part Time BCA Part Time BTech Part Time BCom Part-Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "How to contact Online Vivekananda Global University?",
+   "a": "The contact details of the university are: Address: Sector 36, Sisyawas, NRI Road, Jagatpura, Jaipur (303012), Rajasthan, India Admission Helpline No.: +919549360555 Phone: +911412851000 Website: info@vgu.ac.in, internationaladmission@vgu.ac.in"
+  }
+ ]
+}

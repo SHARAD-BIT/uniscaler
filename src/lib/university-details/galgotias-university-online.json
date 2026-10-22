@@ -1,0 +1,523 @@
+{
+ "slug": "galgotias-university-online",
+ "name": "Galgotias University Online",
+ "establishedYear": "2011",
+ "location": "Greater Noida, Uttar Pradesh",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   0,
+   1,
+   7,
+   31,
+   83
+  ],
+  "total": 122
+ },
+ "banner": "/university/banners/galgotias-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Galgotias University was established in 2011 after it was sponsored by the Smt. Shakuntala Educational & Welfare Society and is located in Uttar Pradesh. It has been accredited by the National Assessment and Accreditation Council (NAAC) with an A+ grade and also awarded the status of autonomous institution of the University Grants Commission, Ministry of Education, GOI. The university offers both online and on-campus courses to the students."
+  },
+  {
+   "t": "p",
+   "text": "The university offers world-class education to all the students that are enthusiastic to innovate and have the zeal to make this generation inspired to become leaders. They believe that trust, dependability, and commitment are the most essential core values. The university offers many undergraduate & postgraduate courses to students and has many schools/departments like the School of Computing Science & Engineering, Business, Law, Engineering, Liberal Education, Media & Communication Studies, Basic Sciences, Biological Sciences, Biomedical Sciences, Finance and Commerce, Nursing, Education, Design, Hospitality, Medical and Allied Sciences, University of Polytechnic, Agriculture, and many more."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explore Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses in India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Galgotias University has secured the Diamond Band—Institute of Excellence by R World Institutional Ranking. It is ranked in the top 12 among private universities, ranked 50th among government and private universities, ranked 4th in UP among private universities, and ranked 7th in UP among govt. & private universities."
+  },
+  {
+   "t": "p",
+   "text": "Ranked 5th all across PAN India for filling the maximum number of patents (Indian Patent Office Report for Academic Institutes & Universities). It has been awarded 5 stars in the placement audit (Prestigious Infomerics Analytics & Research Pvt. Ltd.). Additionally, it is approved by NIRF, AICTE, UGC, and many more prestigious universities."
+  },
+  {
+   "t": "p",
+   "text": "Galgotias University is a government-recognized and state-approved private institution. The university has been catering quality education for the past many years to many students every year in on-campus & online modes. This university is the only university in the Uttar Pradesh State that has gotten 3.37/4 by NAAC."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Galgotias University was established in 2011 in Uttar Pradesh after it was sponsored by the Smt. Shakuntala Educational & Welfare Society.",
+  "It has been accredited by the National Assessment and Accreditation Council (NAAC), with an A+ grade, and also by the institution of the University Grants Commission (Ministry of Education, GOI).",
+  "It has been awarded by NIRF, AICTE, UGC, and many more prestigious institutions.",
+  "It is the only university in the Uttar Pradesh State that has gotten 3.37/4 by NAAC.",
+  "The university is also ranked 5th all across PAN India for filling the maximum number of patents (Indian Patent Office Report for Academic Institutes & Universities).",
+  "The university has secured Diamond Band-Institute of Excellence by R World Institutional Ranking.",
+  "It is ranked in the top 12 among private universities, ranked 50th among government and private universities, ranked 4th in UP among private universities, and ranked 7th in UP among govt. & private universities.",
+  "Byjus, Samsung, FedEx, Tech Mahindra, Yamaha, and many more top companies are the hiring partners of the university."
+ ],
+ "courses": [
+  {
+   "name": "Online BCA",
+   "fee": 83200,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "83200"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1200"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "4000"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "23000"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 76200,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1200"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "33000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "4000"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "33000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 40200,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1200"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "15000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "4000"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "15000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 50200,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1200"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "20000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "4000"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "20000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 84200,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1200"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "37000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "4000"
+    },
+    {
+     "type": "Per Year (internally)",
+     "fee": "37000"
+    }
+   ]
+  },
+  {
+   "name": "M.Tech Program",
+   "fee": 154000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Year (internally)",
+     "fee": "77000"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "77000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "15000"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech Program",
+   "fee": 315000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Year (internally)",
+     "fee": "90000"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "90000"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "15000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 77200,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1200"
+    },
+    {
+     "type": "Exam Fees Yearly",
+     "fee": "4000"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "21000"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "77200"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The university offers various financial aids to the students to make the journey of students smooth. Serving & retired defense, CRPF, parliamentary, and police personnel can take the financial aid for the students. They offer sports quota scholarships, merit-based scholarships, and many more."
+  },
+  {
+   "t": "p",
+   "text": "They offer a 100% waiver on the tuition fee to all the board and university toppers. A 50% scholarship is granted to the students securing a rank up to 4000 in the JEE Examination. And a waiver of 25% on tuition fees for the students securing 93% marks or above in PCM and 80% marks or more in graduation."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "This university is well known and carries a high reputation. It has been recognized internationally. It has grown to have 15,000+ students after welcoming the first batch in 2011. If you are looking to take admission to the University, follow these steps given below:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1— The first step in the admission process is selecting the right course from the listed courses on the website of the university. Also, check the eligibility criteria to get admission to the course."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 - Make a new registration by using a functional phone number & email ID. This is important for two-step verification."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 - Now move to the most crucial step of filling all the information correctly on the application. Make sure to check all the information twice to avoid any mistakes."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 - Upload your documents and other related images. Scan all the documents for a smooth and hassle-free admission process."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 - Make the fee payment on your portal and take the receipt for future reference."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is the Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25. Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of universities and colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the Galgotias University policy for claiming the reimbursement? For claiming the reimbursement, the Galgotias University policy follows the UGC refund policy; the earlier you cancel, the higher the refund. You get 100% back if you cancel at least 15 days before the closing date, 90% if you cancel within 15 days before, 80% within 15 days after, 50% within 30 days after, and nothing after 30 days. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination for the students enrolled in online programs at the university is done in online mode. The university conducts examinations in online mode. Students are strictly advised to follow all the instructions by the students. The examination will be done on the LMS platform. Check the updated datasheet on the website."
+  },
+  {
+   "t": "p",
+   "text": "The question papers of each subject will consist of MCQs, fill-ups, single-word questions, and some subjective questions. Charge your laptop, or keep it connected to the energy supply. Log in on the LMS before the examination starts to avoid any problems in the mid-examination. The examination pattern can also be analyzed by looking at last year's papers."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The university offers top-notch education to all the students, and that helps them to get the best placement and career options. The university has many hiring partners that give exposure to the students in the market. Some companies are"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Facebook",
+   "logo": "/university/partners/facebook.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Mahindra",
+   "logo": "/university/partners/mahindra.webp"
+  },
+  {
+   "title": "Samsung",
+   "logo": "/university/partners/samsung.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Subrat",
+   "rating": 5,
+   "date": "2026-06-11",
+   "content": "It is fully trusted in terms of admission and degree"
+  },
+  {
+   "name": "Firdous Rahaman",
+   "rating": 5,
+   "date": "2026-06-04",
+   "content": "Great college with supportive faculty, good learning environment, and helpful student services. Overall, a good experience."
+  },
+  {
+   "name": "Samir borade",
+   "rating": 4,
+   "date": "2026-05-29",
+   "content": "Recently enrolled in Online BCA at Galgotias University. The admission process was smooth, and LMS access was provided on time. A positive experience so far."
+  },
+  {
+   "name": "subhash chandar",
+   "rating": 5,
+   "date": "2026-03-30",
+   "content": "The best service as a possibility and positive thoughts by college vidya"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC, which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part-Time MCA Part-Time MTech Part-Time MCom Part-Time MSc Part-Time MA Part-Time BBA Part-Time BCA Part-Time BTech Part-Time BCom Part-Time BSc Part Time BA Part-Time"
+  },
+  {
+   "q": "Are the courses offered by Galgotias University in Online mode Valid?",
+   "a": "Yes, all the courses offered by the university are valid and approved by UGC."
+  },
+  {
+   "q": "What are the courses offered to the students at Galgotias University online?",
+   "a": "There are many online courses offered to the students at Galgotias University in online mode: Electrical Engineering (EE), Electrical and Electronics Engineering (EEE), Electronics and Instrumentation Engineering (EIE), Instrumentation and Control Engineering (ICE), Information Technology (IT), Mechanical Engineering (ME), Applied Sciences (AS), Humanities (Hum), Management Studies, and many more."
+  },
+  {
+   "q": "What are the eligibility criteria for admission to the Online program at Galgotias University?",
+   "a": "The students need to pass class 12 with 60% marks or above. However, the eligibility may vary from course to course."
+  },
+  {
+   "q": "What are the other credentials given to Galgotias University online?",
+   "a": "The university has been accredited by the National Assessment and Accreditation Council (NAAC), with an A+ grade, and also by the institution of the University Grants Commission (Ministry of Education, GOI)."
+  },
+  {
+   "q": "What are the placement opportunities at Galgotias University online?",
+   "a": "Graduates of Galgotias University Online can get many placement and job opportunities in top MNCs like DXC, TCS, Accenture, Infosys, Wipro, HCL Technologies, Tech Mahindra, and many more."
+  }
+ ]
+}

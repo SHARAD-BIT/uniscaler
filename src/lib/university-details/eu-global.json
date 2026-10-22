@@ -1,0 +1,319 @@
+{
+ "slug": "eu-global",
+ "name": "EU Global",
+ "establishedYear": "2008",
+ "location": "",
+ "rating": 3.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   1,
+   2,
+   4,
+   0
+  ],
+  "total": 7
+ },
+ "banner": "/university/banners/eu-global.webp",
+ "approvals": [
+  {
+   "title": "ECTS",
+   "logo": "/university/approvals/ects-logo.png"
+  },
+  {
+   "title": "MFHEA",
+   "logo": "/university/approvals/Malta_Further__Higher_Education_Authority_MFHEA.webp"
+  },
+  {
+   "title": "EQF",
+   "logo": "/university/approvals/European_Qualifications_Framework_EQF.webp"
+  },
+  {
+   "title": "MQF",
+   "logo": "/university/approvals/Maltese_Qualifications_Framework_-_MQF.webp"
+  },
+  {
+   "title": "Association of Professional Higher Education Institutes, USA",
+   "logo": "/university/approvals/Association_of_Professional_Higher_Education_Institutes_USA.webp"
+  },
+  {
+   "title": "Council for Higher Education Development, USA",
+   "logo": "/university/approvals/Council_for_Higher_Education_Development_USA.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "European Global Institute of Innovation and Technology is one of the most prestigious higher education institutions. EU Global is globally renowned for its innovation, world-class education, and focus on research. EU Global offers a wide range of programs that range from bachelor’s degrees to doctoral courses. It fosters lifelong learning through online and blended modes. Students can attend their classes from anywhere in the world."
+  },
+  {
+   "t": "p",
+   "text": "EU Global offers a curriculum and coursework that is relevant to the global industries. It ensures that the students get access to global employability in an ever-changing job market through the knowledge and expertise provided by the institute. EU Global aims to empower learners to make meaningful and responsible contributors to society through its diverse courses. The courses provided by EU Global are supported by extremely experienced and highly qualified faculty members. The institute offers a collaborative learning environment with digital learning and real-world experiences."
+  },
+  {
+   "t": "p",
+   "text": "European Global Institute of Innovation and Technology has top Europen Licensed Accreditations. It is accredited by the Malta Further & Higher Education Authority (MFHEA), the Maltese Qualifications Framework (MQF), and the European Qualifications Framework (EQF). EU Global is recognized by the European Qualifications Framework (EQF) and Bologna process. Moreover, the programs pursued by this institute are recognized by the European Credit Transfer System (ECTS)."
+  },
+  {
+   "t": "p",
+   "text": "EU Global offers equal opportunity to all its learners in a highly responsible and empathetic environment. Students from different cultures and ethnicities get diverse learning opportunities with innovation and ownership. The institute believes in Being Human and Diversity and offers opportunities for global careers in rapidly evolving industries."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "European Global Institute of Innovation and Technology is a globally renowned university, based in Malta.",
+  "EU Global is accredited by the Malta Further & Higher Education Authority (MFHEA), the Maltese Qualifications Framework (MQF), and the European Qualifications Framework (EQF).",
+  "EU Global is recognized by the European Qualifications Framework (EQF) and Bologna process.",
+  "EU Global allows the European Credit Transfer System(ECTS).",
+  "EU Global has a wide range of USA Accreditation & Memberships.",
+  "This university offers Bachelor's, Master's, and Doctoral degrees in a wide range of academic disciplines.",
+  "EU Global supports online and blended learning in its courses.",
+  "The courses are supported by highly experienced faculty members with remarkable experience in their respective fields.",
+  "The curriculum and coursework of EU Global University are highly industry-oriented.",
+  "Learners get equal opportunity to all its learners in a highly responsible and empathetic environment.",
+  "Learners get access to practical-based education that ensures global employability."
+ ],
+ "courses": [
+  {
+   "name": "Online Global MBA",
+   "fee": 392000,
+   "duration": "12 - 18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "392000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral Course",
+   "fee": 835000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "835000"
+    }
+   ]
+  },
+  {
+   "name": "PhD for Working Professionals",
+   "fee": 835000,
+   "duration": "3-5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "835000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA",
+   "fee": 835000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "835000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "European Global Institute of Innovation and Technology (EU Global) acknowledges the financial burden of students in paying their course fees through numerous EMI and Educational Loan Facilities. Although the fee structure at EU Global is highly affordable, many students may still find it difficult to make one-time payments. Students can avail the EMI and Educational loan facilities to pay their fees in easy installments. These facilities by EU Global encourage students to pay full attention to their studies."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission process at the European Global Institute of Innovation and Technology (EU Global) can be completed online without going to the physical campus. Here is the detailed admission process-"
+  },
+  {
+   "t": "p",
+   "text": "Online Application Submission- The admission process for EU Global begins with the submission of online application forms. Here are the steps to submit the application form-"
+  },
+  {
+   "t": "li",
+   "text": "Step 1- Visit the official website of EU Global."
+  },
+  {
+   "t": "li",
+   "text": "Step 2- Navigate and select the admission section."
+  },
+  {
+   "t": "li",
+   "text": "Step 3- Select the program you are interested in."
+  },
+  {
+   "t": "li",
+   "text": "Step 4- Select the registration option to generate the login ID and password."
+  },
+  {
+   "t": "li",
+   "text": "Step 5- Login through the ID and password generated."
+  },
+  {
+   "t": "li",
+   "text": "Step 6- Fill out the application form by providing the information required by EU Global."
+  },
+  {
+   "t": "li",
+   "text": "Step 7- Attach the required documents and submit the form."
+  },
+  {
+   "t": "li",
+   "text": "Step 8- Select the payment option and proceed with the payment of application fees."
+  },
+  {
+   "t": "li",
+   "text": "Step 9- Approve the payment mandate to pay the fees."
+  },
+  {
+   "t": "li",
+   "text": "Step 10- Save and take a printout of the acknowledgment slip for future reference."
+  },
+  {
+   "t": "p",
+   "text": "Application Review- The admission committee of the EU Global will thoroughly review the application form once it has been finally submitted. The committee will ensure that the application form meets all the basic requirements and applicant fulfills the minimum eligibility requirements."
+  },
+  {
+   "t": "p",
+   "text": "Personal Interview- Once the application review has been completed, the candidates will be invited for a personal interview. This may or may not be applicable based on the course."
+  },
+  {
+   "t": "p",
+   "text": "Admission Offer- Candidates shortlisted in the personal interview, get admission offers from the EU Global Admission Committee. Candidates have to pay the admission fees to secure admission."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The assessment of the students at the European Global Institute of Innovation and Technology (EU Global) is done on various parameters. The students at EU Global are evaluated based on written tests, assignments, project work, case studies, and many more. The students enrolled in doctorate programs at EU Global are evaluated on different parameters. They have to go through coursework, comprehensive examinations, original research, and viva voice."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "With the high-quality world-class education that is globally applicable, students competing in their bachelor’s, master’s, and doctoral courses are hired by the top leaders in the industry. EU Global has a wide range of placement partners from national and international organizations. Here are some of the top placement partners of the European Global Institute of Innovation and Technology (EU Global):"
+  },
+  {
+   "t": "li",
+   "text": "Mercedes-Benz"
+  },
+  {
+   "t": "li",
+   "text": "Deloitte"
+  },
+  {
+   "t": "li",
+   "text": "Capgemini"
+  },
+  {
+   "t": "li",
+   "text": "Google"
+  },
+  {
+   "t": "li",
+   "text": "Microsoft"
+  }
+ ],
+ "placementPartners": [],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "PRABIN MENON",
+   "rating": 4,
+   "date": "2025-05-21",
+   "content": "Sofar so good . The admission process was hassle free. Councellor was supportive and the finance staff was also good."
+  },
+  {
+   "name": "sana manna",
+   "rating": 4,
+   "date": "2025-05-21",
+   "content": "I had a truly amazing experience with EU Global! The entire team is incredibly supportive, responsive, and professional. From the admission process to academic guidance, everything was handled smoothly and efficiently. The flexibility of the online programs, combined with international recognition and practical learning, makes it a great choice for working professionals and students alike. I'm proud to be a part of the EU Global community and highly recommend it to anyone looking to pursue globally recognized degrees with excellent student support."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2024-12-19",
+   "content": "The EMI and Educational loan facilities at EU Global have greatly helped me pay my course fees in easy installments."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 2,
+   "date": "2024-12-19",
+   "content": "The Online programs at EU Global are less interactive and less flexible in managing academic learning and other commitments."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the programs offered by the European Global Institute of Innovation and Technology (EU Global)?",
+   "a": "European Global Institute of Innovation and Technology (EU Global) offers a wide range of courses at Bachelor’s, Master’s, and doctorate levels."
+  },
+  {
+   "q": "Is EU Global an approved institution?",
+   "a": "Yes, EU Global has a wide range of European Licensed Accreditations and is recognized by the European Qualifications Framework (EQF). Moreover, it is an international member of the Association of Professional Higher Education Institutes, USA."
+  },
+  {
+   "q": "Does EU Global offer an Online DBA Course?",
+   "a": "Yes, EU Global offers Online DBA Courses in a wide range of specializations."
+  },
+  {
+   "q": "What are the modes of study at EU Global?",
+   "a": "EU Global offers online, blended, and on-campus programs."
+  }
+ ]
+}

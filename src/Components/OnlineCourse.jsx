@@ -1,10 +1,14 @@
 "use client";
 import { useNavigationState } from "@/Helper/NavigationState";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
+import { onlineCourseDetails } from "@/Helper/Helper";
 
 import "./styles/onlineCourse.css";
 import { useEffect } from "react";
 import Link from "@/Utils/StateLink";
+import OnlineUniversities from "@/Utils/OnlineUniversities";
+import LearnerWall from "@/Utils/LearnerWall";
+import FaqDoubts from "@/Utils/FaqDoubts";
 import {
   MdOutlineDashboard,
   MdSearch,
@@ -57,34 +61,67 @@ const isChipList = (details) =>
 const OnlineCourse = () => {
   const { navState: state } = useNavigationState();
   const navigate = useRouter();
-  const course = state?.course;
+  const params = useParams();
+
+  // Deep links and refreshes arrive without navigation state; the URL segment
+  // is enough, because the catalog in Helper.js holds the same course objects
+  // the links carry, keyed the way the hrefs are built (spaces -> dashes).
+  // Before this fallback, refreshing /online-course/BBA bounced to the home
+  // page.
+  const course =
+    state?.course ??
+    onlineCourseDetails.find(
+      (c) =>
+        c.name.replace(/\s/g, "-").toLowerCase() ===
+        decodeURIComponent(String(params?.name ?? "")).toLowerCase()
+    );
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    if (!state) navigate.replace("/");
-    document.title = `${state?.course?.name} - Uniscaler`;
+    if (!course) navigate.replace("/");
+    document.title = `${course?.name} - Uniscaler`;
     return () => {
       document.title = "Uniscaler";
     };
   }, []);
 
-  // No navigation state means this page was opened directly. The effect above
-  // redirects; render nothing until it does, rather than dereferencing null.
-  if (!state) return null;
+  // Unknown segment and no state: the effect above redirects; render nothing
+  // until it does, rather than dereferencing null.
+  if (!course) return null;
 
   return (
-    <main className="top onlineCourse">
+    <main className="onlineCourse">
+      {/* The client's programme video, full-bleed like the study-abroad hero:
+          edge to edge and flush under the fixed navbar, and like that one it
+          is ambience, not a player — no controls, muted (the only autoplay
+          browsers allow), looping. No `top` class on this main — the page
+          reserves its own navbar room (see the padding note in
+          onlineCourse.css). */}
+      <section className="oc-hero-band">
+        <video
+          className="oc-hero-video"
+          src="/online-course-hero.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-label={`${course?.name} course program video`}
+        />
+      </section>
+
+      {/* The universities grid saved from the client's collegevidya
+          reference — asked for right after the hero video here too. */}
+      <OnlineUniversities />
+
+      {/* The "1.25 Lakh+ learners" band from the same reference, below the
+          universities grid as asked. */}
+      <LearnerWall />
+
       <header className="oc-head">
         <span className="oc-badge">
           <i aria-hidden="true" />
           Dual Degree Program
         </span>
-        <h1>
-          Welcome to our <span>{course?.name}</span> course program
-        </h1>
-        <p className="oc-sub">
-          Our dual Degree Programs of <strong>{course?.name}</strong>
-        </p>
       </header>
 
       <div className="ddpWrapper">
@@ -245,6 +282,10 @@ const OnlineCourse = () => {
           </article>
         ))}
       </div>
+
+      {/* The FAQ band from the same reference — last thing on the page, so it
+          sits directly above the footer as asked. */}
+      <FaqDoubts />
     </main>
   );
 };

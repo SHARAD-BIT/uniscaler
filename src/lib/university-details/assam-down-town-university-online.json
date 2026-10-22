@@ -1,0 +1,334 @@
+{
+ "slug": "assam-down-town-university-online",
+ "name": "Assam Down Town University Online",
+ "establishedYear": "1957",
+ "location": "Guwahati, Assam",
+ "rating": 3.8,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   2,
+   1
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/assam-down-town-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NAAC A++",
+   "logo": "/university/approvals/logo-naac-a-plus-plus.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  },
+  {
+   "title": "PCI",
+   "logo": "/university/approvals/pci-the-pharmacy-council-of-India-approval.jpg"
+  },
+  {
+   "title": "INC",
+   "logo": "/university/approvals/inc-indian-nursing-council-approval.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The Assam Down Town University, popularly known as AdtU, is one of the leading universities in the North East region of India. It was started as an educational project by the down town Charity Trust. In 2010, this project received university status and became famous as the Assam Down Town University in the scenic surroundings of Panikhaiti, Chandrapur, Guwahati. With its establishment as a university, AdtU became the second private university in the state of Assam. The university offers multiple specializations for the bachelor’s, master’s, and doctoral level courses, and has even extended its wings in the distance and online modes as well."
+  },
+  {
+   "t": "p",
+   "text": "As of now, AdtU offers BBA and MBA courses in online mode. The NAAC A+ accreditation of the Centre for Distance and Online Education (CDOE) of AdtU has made it India’s first private university in the North East to earn this accreditation. In alignment with the UGC-DEB guidelines, the university is offering high-quality education through its online wing as well. Moreover, structured self-learning materials, dedicated digital support, interactive contact sessions, and a student-friendly examination system have made AdtU quite popular among learners."
+  },
+  {
+   "t": "p",
+   "text": "Assam Down Town University is one of the universities that not only offers academic excellence through affordable and accessible online courses but also provides mentorships and career guidance to its students. Professional training and industry-focused workshops are the two main highlights of the mentoring program that AdtU offers to its on-campus and online students."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "AdtU was established as a university in 2010 in the North East region of India.",
+  "Its Centre for Distance and Online Education (CDOE) has made it India’s first private university in the North East to earn NAAC A+ accreditation.",
+  "AdtU is the second private university in the state of Assam.",
+  "The university offers multiple online UG and PG courses following the UGC-DEB guidelines.",
+  "In the North East region of India, AdtU is seen as a testament to quality due to the academic excellence that it offers.",
+  "The university holds a global reputation as well, with an innovation ecosystem that provides entrepreneurship mentoring.",
+  "The industry-aligned curriculum of the programs offered by AdtU draws the attention of millennials as well as Gen-Z.",
+  "Live classes, doubt-clearing sessions, and faculty interaction all make the online learning experience quite engaging at AdtU.",
+  "Career development sessions organized by Assam Down Town University make it stand out from others when it comes to real growth opportunities."
+ ],
+ "courses": [
+  {
+   "name": "Online MCA",
+   "fee": 90000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "22500"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1000"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 90000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1000"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "10000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "90000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 90000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "10000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 100000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "10000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Regarding the EMI payment options for its courses, the AdtU does not give precise information. However, because the university's online course cost packages are quite affordable, most students can easily sign up for a program of their choice. The university allows students to pay the fees in a lump sum amount all at once or through installment plans as per university guidelines."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "These fundamental steps can be used to complete the admissions procedure to any course offered by AdtU."
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Visit the official website of the university and select the program of your choice from there."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Following program selection, you will be required to register for an account on the university registration portal and provide some basic information."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Upload all required paperwork after selecting your course and fill out the online admission form with your correct details."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Submit the form and lastly, pay the course fee to start learning the course you have chosen."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: If needed, you can connect with the authentic third-party counselors, like College Vidya, who can guide you through the process and help you finish the admission process smoothly."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The Assam Down Town University has a structured assessment system. It includes two major evaluation factors: one is the Internal Assessment, and the other is the End-of-Semester Examination. The internal assessment ensures a continuous evaluation system by making you go through assignments, quizzes, and other learning activities during the entire course period. In the End-of-Semester Examination, you need to pass the semester-end online exams conducted through a secure, AI-enabled proctored system. In the final result, your overall score will be calculated by taking the average of internal assessments and End-of-Semester Examinations for each semester."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Being a renowned university in Assam, AdtU is quite famous among the recruiters as well. Just like its on-campus programs, the online courses offered by the university are highly appreciated in the job market. The standard of the curriculum and mentorship that Assam Down Town University offers to its students has put them in the spotlight for many famous recruiters globally."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2025-09-08",
+   "content": "Highly recommended for management aspirants!"
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2025-09-08",
+   "content": "One of the best colleges with the best team of professors!"
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2025-09-08",
+   "content": "I was fortunate enough to get admission to AdtU, which truly made my life!"
+  },
+  {
+   "name": "Rakesh Kumar",
+   "rating": 3,
+   "date": "2025-09-08",
+   "content": "Proud to be a part of AdtU!"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What online programs can I currently enroll in at AdtU?",
+   "a": "Assam Down Town University is currently offering online BBA and online MBA courses at affordable prices."
+  },
+  {
+   "q": "What learning materials will I receive during the AdtU online BBA program?",
+   "a": "You will get access to digital learning materials, like e-books, assignments, video lectures, and online library resources, all through the university’s LMS platform in the Assam Down Town University’s online BBA course."
+  },
+  {
+   "q": "Can international students enroll in AdtU online programs?",
+   "a": "Yes, after meeting the eligibility criteria set for international applicants for online courses at Assam Down Town University, any interested applicant can enroll in any one of them."
+  },
+  {
+   "q": "Is ADTU UGC approved?",
+   "a": "Yes, Assam Down Town University is recognized by the University Grants Commission (UGC) and approved by the Assam Legislative Assembly, All India Council for Technical Education (AICTE), Indian Nursing Council (INC), and Pharmacy Council of India (PCI)."
+  },
+  {
+   "q": "Is ADTU private?",
+   "a": "Yes, Assam Down Town University is a leading private university in Assam."
+  },
+  {
+   "q": "Is ADTU good for management studies?",
+   "a": "Yes, the placement stats for Assam Down Town University MBA course are pretty high, and thus, the university is highly recommended for the management courses."
+  },
+  {
+   "q": "What qualifications do I need to join an online program at AdtU?",
+   "a": "At Assam Down Town University, for an undergraduate program like BBA, you need to complete 10+2 or equivalent, and for a postgraduate program like MBA, you need a bachelor’s degree in a relevant discipline from a recognized university."
+  },
+  {
+   "q": "Will I be able to connect with other students and faculty at AdtU online MBA?",
+   "a": "Yes, you will be able to connect with your peers and professors in the online MBA program of Assam Down Town University through discussion forums, live sessions, faculty consultations, and peer group activities."
+  }
+ ]
+}

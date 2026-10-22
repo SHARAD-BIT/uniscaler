@@ -1,0 +1,345 @@
+{
+ "slug": "jaypee-institute-of-information-technology-jiit",
+ "name": "Jaypee Institute of Information Technology (JIIT)",
+ "establishedYear": "2001",
+ "location": "Noida, Uttar Pradesh",
+ "rating": 3.8,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   2,
+   2,
+   1
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/jaypee-institute-of-information-technology-jiit.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC A",
+   "logo": "/university/approvals/logo-naac-a.jpg"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Jaypee Institute of Information Technology (JIIT) is an educational initiative of the Jaypee Group, which came into reality in 2001. This top-ranked Deemed to be University is delivering excellence in education, research, and innovation, in both Technology and Management through Jaypee Business School with almost 25 years of legacy. With its industry-aligned programs, expert faculty, state-of-the-art infrastructure, and live online classrooms, JIIT is offering a high-standard education to technology and management aspirants."
+  },
+  {
+   "t": "p",
+   "text": "JIIT, Noida, is one of the four prestigious universities across India established by the Jaypee Group. It has its campuses at Sector 62 and Sector 128, Noida. The other three universities are Jaypee University of Engineering and Technology (JUIT), Guna (Madhya Pradesh), Jaypee University of Information Technology (JUIT), Waknaghat (Himachal Pradesh), and Jaypee University, Anoopshahr (Uttar Pradesh). Coming to the credibility of JIIT, Noida, the list of approvals of this institution includes UGC approval, AICTE approval, NAAC accreditations, and NIRF rankings."
+  },
+  {
+   "t": "p",
+   "text": "In addition to making the learning fun for its regular students, JIIT is now making it possible for every dreamer to live the life of their choice by making quality higher education in them through online courses. As of now, the institution is offering only online BBA and online MBA, but a long list of programs is expected to be added to the university in this mode. The best part about these JIIT online courses is that the curriculum is designed by incorporating AI tools, which bridge the gap between skill and qualification for many learners or working professionals."
+  },
+  {
+   "t": "p",
+   "text": "The placement record of JIIT is also impressive, owing to its strong alumni network of 19,500+ members with 2,000+ placed in the USA. The involvement of experienced academicians trained at Berkeley, Harvard, INSEAD, BITS, IITs, IIMs, FMS, etc., as part of the institution’s faculty members also imparts practical knowledge to learners, enhancing their chances of landing a good job. Guest lectures from CXOs from Top Corporations and MNCs also help JIIT online students to get industry perspectives at a better level."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Founded in 2001, Jaypee Institute of Information Technology (JIIT) was an educational venture of the Jaypee Group",
+  "The institution has 25 years of legacy in Education, awarded with National & International Awards",
+  "JIIT is approved by UGC and AICTE. It is also NAAC accredited and has been there in the NIRF rankings",
+  "The institution has two campuses, located at Sector 62 and Sector 128, Noida",
+  "One of the USPs of JIIT is its team of professors, which includes 370+ faculty members with academic credentials from IIMs, Harvard, IITs & other premier institutions",
+  "JIIT has entered the online education domain with its online BBA and online MBA courses through the Centre for Distance & Online Education (CDOE)",
+  "UGC approved Learning Management System (LMS), Strong Training and Placement Assistance, Interactive Learning, and Use of Contemporary AI Tools by Students in Self-Development are some of the key highlights of the JIIT online courses",
+  "JIIT offers placement assistance through virtual career guidance, industry webinars, and resume building sessions, all through a dedicated corporate connect platform"
+ ],
+ "courses": [
+  {
+   "name": "Online MBA",
+   "fee": 175000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "42000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "42000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 119998,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "18333"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18333"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 99996,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "23333"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23333"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 136000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "21500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "21500"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Jaypee Institute of Information Technology offers an EMI facility for its online courses. The availability of this No Cost EMI option has made quality education highly accessible for learners who were planning to get associated with the JIIT for a longer time. Moreover, this facility makes JIIT an ideal university option when it comes to joining an online course."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The JIIT admissions procedure is quite easy to understand. As stated below, it can be completed in a few simple steps."
+  },
+  {
+   "t": "p",
+   "text": "Step 1: To access the online application form, register on the university's official website."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Complete the Online Application Form on the CDOE portal after obtaining your login information."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Upload the necessary files in the format specified on the form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Use the online payment portal to make the one-time application fee payment."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Pay the course cost in the format of your choice after receiving confirmation of admission and being shortlisted."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: You will receive access to the university's Learning Management System (LMS) for your course as confirmation of your admission."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Exam patterns for JIIT's online courses are essentially the same as those for its in-person courses. The final score will be determined by taking into consideration the theoretical semester-end tests and internal assessments. In addition to taking the semester-end exams for each course, you must turn in your assignments, projects, quizzes, and any other internal assessment tasks that your professor assigns you for each semester. You must pass all the exams and internal assessments from the previous semester in order to advance to the following one. You will be given the opportunity to retake those topics in subsequent semesters if you fail two or three of them."
+  },
+  {
+   "t": "p",
+   "text": "Semester/term-based with internal assessment (assignments, projects, quizzes) + End-Term Examinations. Online proctored exam mode. AACSB-aligned rigorous evaluation."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The placement record of JIIT is quite attractive as it includes names of top recruiters like Amazon, Google, Zomato, KPMG, and many more. The interactive e-tutorials, personalized learning paths, industry-led capstone projects, and live mentor sessions offered in the online courses of JIIT have produced numerous skilled professionals who are leading the organization in different fields."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "IOCL",
+   "logo": "/university/partners/iocl.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2025-09-17",
+   "content": "JIIT is known for its updated course curriculum delivered by highly experienced professors"
+  },
+  {
+   "name": "Raj Kumar",
+   "rating": 3,
+   "date": "2025-09-17",
+   "content": "One of the best tech university options for online courses"
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2025-09-17",
+   "content": "A decent college for sincere students, don’t come here if you want a “Dharma Production College”"
+  },
+  {
+   "name": "Sanskar Bhel",
+   "rating": 4,
+   "date": "2025-09-17",
+   "content": "Highly supportive faculty members!"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is JIIT a private or government university?",
+   "a": "Jaypee Institute of Information Technology is a private university established by the Jaypee Group in Noida, Uttar Pradesh."
+  },
+  {
+   "q": "Is JIIT UGC recognized?",
+   "a": "Yes, Jaypee Institute of Information Technology is approved by UGC-DEB to offer online courses, which are on par with its regular courses."
+  },
+  {
+   "q": "What is the NIRF rank of JIIT in India?",
+   "a": "Jaypee Institute of Information Technology is ranked in the NIRF 101-150 band in the engineering category of institutions in India."
+  },
+  {
+   "q": "What is the highest package offered in JIIT?",
+   "a": "The highest package offered at Jaypee Institute of Information Technology (JIIT) for the Batch of 2026 is INR 62.00 Lakhs by Atlassian, a Software company."
+  },
+  {
+   "q": "Does JIIT conduct entrance exams for online MBA?",
+   "a": "No, you can directly apply for an online MBA at Jaypee Institute of Information Technology without any entrance exam."
+  },
+  {
+   "q": "Can international students apply for the online programs of JIIT?",
+   "a": "Yes, after fulfilling the eligibility criteria set for your choice of online course at Jaypee Institute of Information Technology, you can apply for it irrespective of your country of origin."
+  },
+  {
+   "q": "Is there any difference between the online and offline degrees by JIIT?",
+   "a": "No, Jaypee Institute of Information Technology offers online degrees, which are equivalent in terms of industry recognition to its regular on-campus degrees."
+  }
+ ]
+}

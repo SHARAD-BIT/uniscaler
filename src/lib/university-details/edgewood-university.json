@@ -1,0 +1,513 @@
+{
+ "slug": "edgewood-university",
+ "name": "Edgewood University",
+ "establishedYear": "1927",
+ "location": "",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   3,
+   2
+  ],
+  "total": 5
+ },
+ "banner": "/university/banners/edgewood-university.webp",
+ "approvals": [
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "ACBSP",
+   "logo": "/university/approvals/ACBSP.jpg"
+  },
+  {
+   "title": "HLC",
+   "logo": "/university/approvals/HLC.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "In the USA, Edgewood University is a reputable university that offers courses to advance knowledge and abilities in a range of fields. Since its founding in 1927, it has gained recognition and established itself as a reliable resource for students looking to advance or broaden their skill set, thanks to its innovative approach to online education."
+  },
+  {
+   "t": "p",
+   "text": "The institution provides a dynamic and adaptable learning environment that enables students to acquire the necessary knowledge outside the traditional classroom setting. The University offers a range of studies in business, leadership, healthcare, marketing, and other areas. This University's faculty members, who are specialists in various fields, design the curricula to offer the highest caliber of instruction."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Related Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA Online",
+      "Global DBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online DBA & MBA Program",
+      "PhD for Working Professionals"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "PhD Abroad",
+      "PhD Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "PhD Distance Education",
+      "Part Time PhD"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA After MBA",
+      "Doctorate Courses Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Ph.D. After MBA",
+      "Global PhD"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Doctoral for Working Professionals"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The variety of courses offered at Edgewood is one of its main advantages. These are created and delivered by seasoned educators who are authorities in their domains. Additionally, the Higher Learning Commission and the Association of Collegiate Business Schools and Programs (ACBSP) have also approved them. The faculty members guarantee that the program remains current and relevant by bringing their expertise in the industry and real-world insights to the classroom. Students benefit from the real-world applications of ideas and concepts, which enhances the value of the learning process."
+  },
+  {
+   "t": "p",
+   "text": "Compared to typical lectures, Edgewood University's approach to education is more interactive. To enhance their understanding and practical skills, students engage in interactive simulations, case studies, discussions, and group projects. This approach promotes critical thinking, problem-solving abilities, and active learning."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "An Educational Community",
+   "content": "With a diverse background of students from different disciplines and different countries, Edgewood University has emerged as an education community that every learner needs."
+  },
+  {
+   "title": "Tech-driven Learning",
+   "content": "Edgewood University offers online students the same benefits as a traditional student, including advisors for personalized support and access to Oscar Rennebohm’s collection which has online resources."
+  },
+  {
+   "title": "A University With Global Recognition",
+   "content": "Edgewood University has been accredited by the Higher Learning Commission. It even holds membership for AAC&U, ACBSP, AIR, HLC, NACE, etc."
+  }
+ ],
+ "facts": [
+  "Edgewood University was established in 1927 and is well-recognized for delivering quality education across the globe.",
+  "The university has multiple course options in different domains of the arts, humanities, sciences, and professional programs.",
+  "All the courses offered by Edgewood University are accredited by the Higher Learning Commission.",
+  "The university is a proud member of AACN, AACRAO, AACTE, AAC&U, ACBSP, AAHE, ACCU, AGB, AILACTE, AIR, AIRUM, CASE, CIC, CCNE, CUR, CUPA, HLC, NACC, NACE, NACUBO, NAICU, NCAA III, NC-SARA, OLC, WACRAO, WACSN, WACTE, WAICU, WIPCS, WICTE.",
+  "Professionals can use Edgewood University's online platform from anywhere in the world and learn at their own pace.",
+  "The knowledgeable instructors at Edgewood University are subject matter experts in their fields and have extensive experience designing and teaching courses.",
+  "Edgewood University students can continue their professional development and stay up to date on industry trends by making use of resources, webinars, and networking events.",
+  "The university makes use of state-of-the-art technology to deliver interactive tools, multimedia-rich content, and interesting educational opportunities."
+ ],
+ "courses": [
+  {
+   "name": "Doctorate Course Online",
+   "fee": 950000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "950000"
+    }
+   ]
+  },
+  {
+   "name": "Executive MBA",
+   "fee": 395000,
+   "duration": "14 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "395000"
+    }
+   ]
+  },
+  {
+   "name": "Online Master of Education (M.Ed)",
+   "fee": 500000,
+   "duration": "14 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "500000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctor of Education (Ed.D.)",
+   "fee": 950000,
+   "duration": "24 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "950000"
+    }
+   ]
+  },
+  {
+   "name": "MBA Abroad Hybrid Program",
+   "fee": 1302320,
+   "duration": "4 Months Online + 12 Months On-campus (both at Edgewood University)",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1302320"
+    }
+   ]
+  },
+  {
+   "name": "DBA & MBA (Global)",
+   "fee": 1170000,
+   "duration": "30 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1170000"
+    }
+   ]
+  },
+  {
+   "name": "DBA & MBA (Executive)",
+   "fee": 1170000,
+   "duration": "30 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1170000"
+    }
+   ]
+  },
+  {
+   "name": "DBA & MBA Program",
+   "fee": 1170000,
+   "duration": "30 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1170000"
+    }
+   ]
+  },
+  {
+   "name": "DBA & MBA Online",
+   "fee": 1170000,
+   "duration": "30 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1170000"
+    }
+   ]
+  },
+  {
+   "name": "MS Abroad Hybrid Program",
+   "fee": 1816023,
+   "duration": "11 Months online with IMT Ghaziabad + 12 months on-campus at Edgewood University",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1816023"
+    }
+   ]
+  },
+  {
+   "name": "Online Dual M.Ed & Ed.D",
+   "fee": 1170000,
+   "duration": "30 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1170000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA",
+   "fee": 950000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "950000"
+    }
+   ]
+  },
+  {
+   "name": "Global MBA",
+   "fee": 395000,
+   "duration": "14 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "395000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral Program (PhD)",
+   "fee": 950000,
+   "duration": "3-5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "950000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Alternatives for financial aid are offered by Edgewood University to help students manage the cost of their education. They let students pay for their courses in monthly installments by offering payment plans. This EMI (Equated Monthly Installment) tool allows people to spread out the cost of their education over time, which makes it more affordable and accessible."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The goal of Edgewood University's admissions procedure is to make it as straightforward as possible. A rundown of the steps is provided below:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: The program offered by Edgewood University should be chosen based on your interests and career goals."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Provide your personal and educational information in the online application form. Questions about your background, work history, and career objectives may be asked on this form."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: The admissions committee will review your application after it has been submitted. They will assess your qualifications and suitability for the desired program."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: You will receive an acceptance notification from the University if your application is accepted. After that, you'll receive an enrollment confirmation deadline to guarantee your place in the program."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Observe the program fee payment schedule and make payments using a variety of options, such as credit/debit card payments and installment plans."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: You will be granted access to the online learning platform, where you may access the course materials, resources, and interactive tools, upon enrollment and payment."
+  },
+  {
+   "t": "p",
+   "text": "Step 7: As soon as the program starts, you might start interacting with the material, completing homework, taking part in discussions, and mingling with other students and teachers."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved ODL & Online programs for the academic batch of 2023-24, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Exam patterns at Edgewood University differ according to the curriculum and admission. Written tests, group discussions, and one-on-one virtual interviews are typically used. The written exam may evaluate a candidate's general knowledge, linguistic proficiency, analytical skills, and aptitude. Candidates might participate in group discussions to showcase their teamwork and communication skills."
+  },
+  {
+   "t": "p",
+   "text": "The admissions committee can evaluate a candidate's motivation, personality, and program fit during personal interviews. It is important to remember that the test pattern can change based on the software. Therefore, for accurate and comprehensive information regarding the specific exam pattern for the program of choice, it is preferable to visit the university's official website or get in touch with the admissions office."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Edgewood University has forged alliances and collaborations with numerous businesses and organizations across a range of sectors. However, the exact list of companies with formal placement ties to this institution is subject to change and fluctuates over time."
+  },
+  {
+   "t": "p",
+   "text": "During career fairs and networking events, Edgewood’s career services division helps students prepare for interviews, create resumes, and connect with potential employers. Giving students the tools and support they need to excel in their chosen careers and increase their employment prospects is the goal."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Bsnl",
+   "logo": "/university/partners/bsnl.webp"
+  },
+  {
+   "title": "Dabur",
+   "logo": "/university/partners/dabur.webp"
+  },
+  {
+   "title": "Flipkart",
+   "logo": "/university/partners/flipkart.webp"
+  },
+  {
+   "title": "H&M",
+   "logo": "/university/partners/hm.webp"
+  },
+  {
+   "title": "Honeywell",
+   "logo": "/university/partners/honeywell.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "ISRO",
+   "logo": "/university/partners/isro.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "NTT Data",
+   "logo": "/university/partners/ntt-data.webp"
+  },
+  {
+   "title": "Practo",
+   "logo": "/university/partners/practo.webp"
+  },
+  {
+   "title": "Tata Motors",
+   "logo": "/university/partners/tata-motors.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Victoria Palmisano",
+   "title": "Associate Dean",
+   "description": "PhD in Educational Leadership, MBA, and Masters in Legal Studies, specializing in small business management and Intellectual Property. She is an Associate Dean at Edgewood University.",
+   "photo": "/university/faculty/Dr._Victoria_palmisano.webp"
+  },
+  {
+   "name": "Dr. Leigh Maxwell",
+   "title": "Associate Professor",
+   "description": "Dr. Leigh Maxwell, with a PhD from Ohio State, is an Edgewood University associate professor teaching Communication Studies. Her research focuses on improving workplace communication, emphasizing ethics, fairness, and compassion.",
+   "photo": "/university/faculty/Dr._Leigh_Maxwell.webp"
+  },
+  {
+   "name": "Dr. John Henry",
+   "title": "Professor of Practice",
+   "description": "20+ years in AI and machine learning as Principal Data Scientist at Mitsui Sumitomo, CEO of Story Makers, holds a Ph.D. in Statistics and has taught at multiple universities.",
+   "photo": "/university/faculty/Dr._John_Henry.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2024-02-12",
+   "content": "After looking into a few colleges, I chose Edgewood College because it has a good reputation and is dedicated to academic excellence. I'm pursuing a DBA in project management. The classes are hard but fun. The teachers do everything possible to ensure students understand and are ready for work after graduation."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2024-02-12",
+   "content": "Edgewood College has a friendly community and many learning opportunities. I've been able to try out new subjects and do many different things."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2024-02-12",
+   "content": "I picked Edgewood College because it has good business programs, and I'm glad I did. The program covers much ground, including theoretical ideas and real-world uses. The career services office helped me get a position that led to an offer for a full-time job."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2024-02-12",
+   "content": "Being a working adult in India, I needed a college that let me get an education without lowering the quality. Edgewood College was better than I thought it would be. The teachers are helpful and quick, which makes learning fun and worthwhile. I've learned useful things that have helped me move up in my work."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Are student reviews available for Edgewood University?",
+   "a": "Yes, Edgewood University is featured on the Student Review Portal by College Vidya , with verified reviews covering academics, LMS experience, placement support, and overall learning quality. You can check these reviews directly, based entirely on feedback from enrolled students. The portal doesn't allow universities to pay for review removal, keeping the ratings trustworthy."
+  },
+  {
+   "q": "What is the process for getting into Edgewood University's Online programs?",
+   "a": "To get into Edgewood University, you have to choose a program based on your job goals and hobbies, fill out an online application form, have it reviewed by the admissions committee, be notified if you've been accepted, pay for the program, and then get access to the online learning platform."
+  },
+  {
+   "q": "Does Edgewood University provide great placement assistance?",
+   "a": "Edgewood University has partnered with various businesses and organisations in different fields to help students find jobs. The exact list of companies may be different, though. You can get it from the university's career services office at job fairs and other events for networking."
+  },
+  {
+   "q": "What is the background of Edgewood University, and how is it accredited?",
+   "a": "Edgewood University has existed since 1927 and is known worldwide for providing high-quality education. The Higher Learning Commission has approved it and is a member of many prestigious groups, including AAC&U, ACBSP, HLC, NACE, and more."
+  },
+  {
+   "q": "What kinds of classes does Edgewood University offer?",
+   "a": "Edgewood University offers business, arts, humanities, sciences, and career studies classes. These classes are created and taught by experienced teachers who ensure they are up-to-date and useful to business standards."
+  },
+  {
+   "q": "Does Edgewood University provide online programs?",
+   "a": "Yes, Edgewood University does provide some of its programs online. Students can learn on-campus or online, allowing them to fit their studies around their schedules and tastes."
+  },
+  {
+   "q": "Does Edgewood University help students grow their careers?",
+   "a": "Edgewood University provides career tools and growth opportunities to ensure that students have the skills and help they need to do well in their chosen fields and improve their chances of getting a job."
+  }
+ ]
+}

@@ -1,0 +1,555 @@
+{
+ "slug": "manipal-university-online",
+ "name": "Manipal University Online",
+ "establishedYear": "1953",
+ "location": "Jaipur, Rajasthan",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   21,
+   11,
+   103,
+   645,
+   2320
+  ],
+  "total": 3100
+ },
+ "banner": "/university/banners/manipal-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The online Manipal University is a part of the prestigious Manipal University Jaipur (MUJ). The university started offering courses in online mode in the year 2021. The University Grants Commission (UGC) has entitled Manipal University to offer UG and PG programs. The university currently offers BCA, BA, and B.Com in the undergraduate category, while MCA, MBA, M.Com, and MA JMC are in the postgraduate category."
+  },
+  {
+   "t": "p",
+   "text": "These online courses are taught by the same esteemed faculty of the Manipal University Jaipur and real-world mentors. The university offers an enhanced digital learning platform where you can find all your course material and cutting-edge tutorials. The university conducts examinations in online mode using this LMS. These online examinations are secure, as they are remotely proctored. The LMS even provides self-learning opportunities to the students with the help of various practice tests and online quizzes."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explore Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The programs at the online Manipal are designed to offer comprehensive educational experiences to help students develop skill-sets that are relevant to jobs in diverse industries. The curriculum and the learning methodology have been designed not only by the professors but also by expert practitioners from relevant industries."
+  },
+  {
+   "t": "p",
+   "text": "The university offers easy financing options like no-cost EMIs to help students from all backgrounds gain knowledge and education by overcoming the barrier of finances. There are also attractive scholarship offers for government employees, defense personnel, meritorious students, and differently-abled people."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Real-World Mentors",
+   "content": "The faculty includes experienced professors along with industry practitioners as mentors."
+  },
+  {
+   "title": "Industry Connect",
+   "content": "Manipal University has connections with 100+ recruiters from Fortune 500 companies."
+  },
+  {
+   "title": "Easy Financing Options",
+   "content": "There are options of No-Cost EMI & attractive scholarships for various categories."
+  }
+ ],
+ "facts": [
+  "Online Manipal University provides students with over 10 fully online, accredited degree and diploma courses.",
+  "All the courses are approved by UGC to be offered in online mode.",
+  "The university offers BCA, BBA, and B.Com undergraduate degree courses in the online mode and MCA, MBA, M.Com, and MA JMC postgraduate degree courses in the online mode.",
+  "The university has its own LMS with various salient and customized features like self-learning activities such as online quizzes, practice tests, and tutorials.",
+  "The examinations are conducted in the online mode which are remotely proctored through the LMS.",
+  "The university offers no-cost EMI options for easy financing.",
+  "There are scholarship opportunities for government employees, defense personnel, meritorious students, and differently-abled people."
+ ],
+ "courses": [
+  {
+   "name": "B.Tech",
+   "fee": 562000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "562000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 139500,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "23250"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23250"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 75000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "12500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "12500"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 158000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "39500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "39500"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 80000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "80000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "Distance MBA",
+   "fee": 175000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "43750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "43750"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 99000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "16500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "16500"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA (Dual)",
+   "fee": 175000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "43750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "43750"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 139500,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "23250"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23250"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 180000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "45000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "45000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 140000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "35000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "35000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 108000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "27000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "27000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The online Manipal University has very seamless education loan and EMI facilities for the learners of education loans. These facilities not only help the learner to get the loan with ease but also give time flexibility to the learner to pay it at different intervals of time. Overall, the education loan and EMI facilities by the online Manipal University are counted as the friendly option for those learners who are working professionals."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "At Online Manipal University, the admission process takes place in online mode. There are direct admissions. No entrance exam is conducted for the admission process. The admission procedure for 2026 for the online courses at Online Manipal University is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1 - Visit the official website of Online Manipal University and apply online by clicking on \"Enroll Now.\""
+  },
+  {
+   "t": "p",
+   "text": "Step 2 - Upload the documents and then submit the application."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 - Pay the application fee. This fee is later adjusted in the Semester 1 fees."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 - An admission counselor will reach out to you if any other procedure is pending and will assist you till the completion of the entire process."
+  },
+  {
+   "t": "p",
+   "text": "Online Manipal University Admission 2026 has been opened for all the eligible candidates of the country and outside the country. Students may be admitted online by submitting documents and paying the registration fee. The admission procedure is easy and friendly towards students."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of Manipal University Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "Where can I find the Manipal University Online refund policy? Students can find the Manipal University Online refund policy at the UGC official site , which helps in letting you know about when you will get a refund or how much: ⭐ ≥15 days before: 100% ⭐ ⭐ ≤15 days after: 80% ⭐ 16 to 30 days after: 50% ⭐ >30 days after: 0% Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Online Manipal University's examination pattern enables students to carry out their virtual study in an efficient manner by providing many different types of assessments, including quizzes, assignments, semester exams, and the ability to take home assessments."
+  },
+  {
+   "t": "p",
+   "text": "Click Here to View Examination Pattern"
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The University of Online Manipal is working in partnership with various corporations and organizations in order to provide students with many career and employment options. The Career and Technical Assistance provides students with career guidance, helps develop their resumes, offers interview preparation, and assists students in obtaining employment after they complete their degrees."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "HP",
+   "logo": "/university/partners/hp.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Kasinathan S",
+   "title": "Deputy Director & Professor",
+   "description": "Dr. Kasinathan. S is an Professor and Deputy Director at Centre for Distance and Online Education, Manipal University Jaipur. He has over 13 years of experience in teaching management subjects and over seven years of experience in open and distance learning. He has graduated in commerce and has an MBA, M.Phil in Management, and doctorate in Human Resource Management. He is also a UGC-NET (Management) qualified professional. Dr. Kasinathan has attended 7 international and 11 national conferences and presented 18 papers. He has received several accolades, including Best Teacher Award from Rotary Club of Madras Mount, MaGEX Award of Excellence in Academic, Excellence in Teaching Award from Sikkim Manipal University, and Academic Excellence Award from Manipal University Jaipur.",
+   "photo": "/university/faculty/Dr._Kasinathan.webp"
+  },
+  {
+   "name": "Dr. D Pushpa Gowri",
+   "title": "Assistant Professor (Senior Scale)",
+   "description": "Dr. D Pushpa Gowri is an Assistant Professor (Senior Scale) and Course Coordinator - commerce programs at the Centre for Distance and Online Education, Manipal University Jaipur. She has done Ph.D. and has over 12 years of teaching experience. She has published research papers in UGC Journals and has presented papers at various conferences. She has handled both Commerce and Management subjects both for UG & PG courses and guided 150+ MBA projects. She has been conferred with 'Best Women Employee' from ISBR Bengaluru. She is a member of the Management Research Scholars Association CBSMS Bengaluru.",
+   "photo": "/university/faculty/Dr._D_Pushpa_Gowri.webp"
+  },
+  {
+   "name": "Dr Nidhi Vyas",
+   "title": "Assistant Professor",
+   "description": "Dr Nidhi is presently working as an Assistant Professor at the Centre for Distance and Online Education (Commerce), Manipal University, Jaipur. She has finished her Ph.D. from SOE, DAVV Indore. She has a teaching experience of 10 years, and she has been engaged in some entrepreneurial endeavors since a decade.",
+   "photo": "/university/faculty/Dr_Nidhi_Vyas.webp"
+  },
+  {
+   "name": "Dr. Yogita S. Garwal",
+   "title": "Assistant Professor",
+   "description": "Dr. Yogita Satish Garwal is an Assistant Professor and Course Coordinator in the Department of Commerce at Centre for Distance and Online Education, Manipal University Jaipur. She has 5+ years of experience in teaching, research, and administration. She has done P.hD., MBA, MCom, and BCom, and LLB. She teaches Business Laws, Principle of Business Management, Management Concept and Organisational Behaviour. She has published multiple research papers and articles in reputed journals. She has organized and attended multiple international conferences, workshops, develpment programs, and seminars.",
+   "photo": "/university/faculty/Dr._Yogita_S._Garwal.webp"
+  },
+  {
+   "name": "Dr. Srinivasan Iyer",
+   "title": "Deputy Registrar & Associate Professor",
+   "description": "Dr. Srinivasan Iyer is Deputy Registrar and Associate Professor in Commerce at Centre for Distance and Online Education, Manipal University Jaipur. He has 16 years of experience. His area of expertise is Marketing & Management. He has published 18 research papers in international journals and has 3 research papers in Scopus Indexed Journal and one in WoS. Four students were awarded Ph.D. under his guidance in the field of Marketing and Management. He owns 3 patents in E-commerce, Blockchain, and AI in marketing. He is a very active member of the Green Society Organization, Coimbatore, and had delivered many Lectures on Green Campus and sustainable development programs.",
+   "photo": "/university/faculty/Dr._Srinivasan_lyer.webp"
+  },
+  {
+   "name": "Dr. Durgesh Batra",
+   "title": "Professor",
+   "description": "Dr. Durgesh Batra is currently working as an Professor - Management programs at Centre for Distance and Online Education, Manipal University Jaipur. He holds Ph.D in Management and cleared UGC-NET. He completed MBA in Human Resource Management, MBA in Marketing, and M.Sc. in statistics. He has 18+ years of experience in various engineering and management institutes and universities in India and abroad, teaching courses in programs at Ph.D,, PG, and UG level. Hie teaches statistics, operation research, operation management, research methodology, digital marketing and other general marketing and management courses. He has mentored 3 Ph.D. scholars, published three patents, and published many papers.",
+   "photo": "/university/faculty/Dr._Durgesh_Batra.webp"
+  },
+  {
+   "name": "Dr. Jagriti Singh",
+   "title": "Assistant Professor (Senior Scale)",
+   "description": "Dr. Jagriti Singh is currently working as an Assistant Professor (Senior Scale) at the Centre for Distance and Online Education at Manipal University Jaipur. She has done Bachelor of Engineering (B.E), Master of Business Administration (MBA), and Ph. D. Her area of research includes Marketing management, electronic commerce, Digital Marketing, Management Information Systems, and Artificial Intelligence. She has presented many papers at national and international conferences and won various Best Paper awards. During her academic career, she has been awarded the Best Teacher award. She has registered a patent for designing a machine learning model for local business vendors in advertising their offers.",
+   "photo": "/university/faculty/Dr._Jagriti_Singh.webp"
+  },
+  {
+   "name": "Dr. Shikha Maheshwari",
+   "title": "Associate Professor",
+   "description": "Dr. Shikha Maheshwari is an Associate Professor and Program Coordinator - Computer Application at the Centre for Distance and Online Education, Manipal University Jaipur. She is a founding member of the UEduCon Foundation and has immense experience in academics and research with a vision to improve the quality and global relevance of education. She has guided many faculty members of various Higher Education Institutes in NAAC, NBA accreditations, and Outcome-Based Education. She has earned many accolades at the national and international levels for imparting quality engineering education to the millennials. She has published research papers in refereed international/national journals and conferences.",
+   "photo": "/university/faculty/Dr._Shikha_Maheshwari.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "lalit",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "The onile portal and teachers of the university are very good"
+  },
+  {
+   "name": "Munawwar ali",
+   "rating": 2,
+   "date": "2026-08-08",
+   "content": "College Vidya ka experience mere liye kaafi achha raha. Counselling team ne course aur university select karne mein clearly guide kiya."
+  },
+  {
+   "name": "Hemant Laxkar",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Best facilities in online classes. They provide easy to learn process and facilities. If you are earner they you should must go for their courses. Because they provide full flexibility in the courses."
+  },
+  {
+   "name": "Manish Kumar",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "College vidya provided complete guidance and cleared all my doubts regarding placements support n fees and admission eligibility etc . Best platform to prevent from online admission's fraud."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is an online Manipal degree valid?",
+   "a": "Yes, the online Manipal University is identified by the UGC, NAAC, and other statutory bodies that make all the degrees, even in the online mode, offered by this university, credible and valid. Hence, the degrees from the online Manipal are accepted by other universities and organizations."
+  }
+ ]
+}

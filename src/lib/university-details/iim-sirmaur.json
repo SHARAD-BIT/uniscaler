@@ -1,0 +1,460 @@
+{
+ "slug": "iim-sirmaur",
+ "name": "IIM Sirmaur",
+ "establishedYear": "2015",
+ "location": "Sirmaur, Himachal Pradesh",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   1,
+   2,
+   3
+  ],
+  "total": 6
+ },
+ "banner": "/university/banners/iim-sirmaur.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Indian Institute of Management Sirmaur (IIM Sirmaur) is a prominent and leading institution funded by the Government of India. The institute was established in 2015 at Rampur Ghat Road, Paonta Sahib, District Sirmaur, Himachal Pradesh. It is one of the youngest siblings of the IIM family in India."
+  },
+  {
+   "t": "p",
+   "text": "IIM Sirmaur was established with the main objective of being a globally reputed institution in the management field. The IIM gives globally renowned practical exposure to education to students for their better future prospects. The institute has always been top-ranked, and the quality of education has no match. Known for its rigorous curriculum, industry collaborations, and emphasis on holistic development, social responsibility, and global excellence."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Top Course from IIMs!"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Courses Online",
+      "IIM Online MBA"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Executive MBA",
+      "IIM Online Certificate Courses"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Data Science and Analytics Online",
+      "IIM Digital Marketing and Analytics Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Project Management Online",
+      "IIM Financial Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Human Resource Management Online",
+      "IIM Leadership and Management Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Operations and Six Sigma Online",
+      "IIM Chief Business Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Financial Data Analytics Online",
+      "IIM Marketing and Sales Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Hospital and Healthcare Management Online",
+      "IIM Digital Transformation and Innovation Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Business Analytics Online",
+      "IIM Blockchain and Fintech Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Public Policy Management Online",
+      "IIM CMO Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM CFO Course Online",
+      "IIM Financial Services and Capital Markets Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Investment Banking and Capital Markets Online",
+      "IIM AI and Machine Learning Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief HR Officer Online Course",
+      "IIM Chief Operations Officer Online Course"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Chief Executive Officer Online Course",
+      "IIM General Management Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "IIM Logistics and Supply Chain Management Online"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The Institute offers MBA, Executive Programs, PG Diploma Programs, and Ph.D. Programs. IIM Sirmaur is under the third generation of IIMs, which ranks 57th in the National Institutional Ranking Framework (NIRF) &lsquo;management’ category, and it is chosen by the Ministry of Education as a top nodal center of AICTE QIP (Quality Improvement Programs) for serving faculty."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "IIM Sirmaur is situated in Paonta Sahib, District Sirmaur, Himachal Pradesh, and was established in 2015.",
+  "IIM Sirmaur is an Institution of National Importance under the Ministry of Education, Government of India.",
+  "The Institute offers MBA, Executive Programs, PG Diploma Programs, and Ph.D. Programs.",
+  "IIM Sirmaur Known for its rigorous curriculum, industry collaborations, and emphasis on holistic development, social responsibility, and global excellence.",
+  "IIM Sirmaur Ranks 57th in the National Institutional Ranking Framework (NIRF) ‘management’ category.",
+  "This institution is one of the youngest members of the IIM family in India."
+ ],
+ "courses": [
+  {
+   "name": "Online MBA",
+   "fee": 800000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "800000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "2950"
+    }
+   ]
+  },
+  {
+   "name": "Online Executive MBA",
+   "fee": 800000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "800000"
+    },
+    {
+     "type": "Application Fee",
+     "fee": "2950"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The IIM Sirmaur Online offers loan facilities to its students enrolled in both online and regular programs with the objective of offering financial aid to students who are unable to pursue their higher studies due to financial hindrances. The institute also offers various scholarships for financial assistance to the students, interested candidates can apply for the scholarship according to their eligibility criteria, which can be checked on the official website of IIM Sirmaur. A few scholarships offered at the institute are:"
+  },
+  {
+   "t": "li",
+   "text": "Post Matric Scholarships Scheme for Minorities"
+  },
+  {
+   "t": "li",
+   "text": "Scholarships for Top Class Education for students with disabilities."
+  },
+  {
+   "t": "li",
+   "text": "National Means Cum Merit Scholarship"
+  },
+  {
+   "t": "li",
+   "text": "Prime Minister's Scholarship Scheme For RPF/RPSF"
+  },
+  {
+   "t": "p",
+   "text": "Note : There is no fee for a Ph.D. student, meanwhile they will receive 30,000 INR per month for 5 years to cover the living expenses of the student."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The selection process will be governed by statutes, ordinances, rules, regulations, policies, guidelines and procedures of the respective institutions under the collaboration."
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Applicants will be requested to submit an online application form and upload the required documentation."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: The required documents include and may not be limited to: (1) enrolment application; (ii) CV; (iii) Photo with white background; and (iv) Transcript with marks."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Additional documents may include, but are not limited to, Experience Certificates (if any), other Professional Body Certificates etc.,"
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Once the documents have been submitted and approved, the student needs to complete the payment for the program."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Once the student's status has been validated with documents and payments, the student will receive a written and PI call letter."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: Upon satisfactorily clearing the basic criteria set by both the Institution’s, the Student will be issued with an Acceptance Letter."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination process at IIM Sirmaur Online has the main focus on bringing out the qualities of an individual during their academic journey These examinations assist students in enhancing their skills and building industry-oriented skills, which are very fruitful in the globally competent market."
+  },
+  {
+   "t": "p",
+   "text": "Measurement of academic performance is a continuous process that is based on varying combinations of evaluation components. Multiple components ensure that academic excellence is achieved through constant feedback and progress monitoring. The aim is to achieve minimum academic standards by encouraging and supporting superior performance."
+  },
+  {
+   "t": "p",
+   "text": "The course instructor specifies the evaluation components of a course and assigns the relative weights in the course outline. The components vary depending upon the nature of the course, pedagogical goal, and judgment of the instructor. Normally, the following components are used, but they can vary."
+  },
+  {
+   "t": "li",
+   "text": "Assignments, Quizzes, Class participation, etc."
+  },
+  {
+   "t": "li",
+   "text": "Project Work, Simulation, Term paper"
+  },
+  {
+   "t": "li",
+   "text": "Mid-term Examination"
+  },
+  {
+   "t": "li",
+   "text": "End-term Examination"
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The IIM Sirmaur assists its student in every step of their academic journey to give them the best future prospects. The Institute has a dedicated placement cell that stays active through the duration of every program and guides students in enhancing their skills to compete in the global competition, The Institute also has some upgrades in its placement cell, such as:"
+  },
+  {
+   "t": "li",
+   "text": "IIM Sirmaur has witnessed a 142% hike in its highest packages."
+  },
+  {
+   "t": "li",
+   "text": "The average package offered at the institute is 13 LPA."
+  },
+  {
+   "t": "li",
+   "text": "100% Placement."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Facebook",
+   "logo": "/university/partners/facebook.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "HP",
+   "logo": "/university/partners/hp.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "Nestle",
+   "logo": "/university/partners/nestle.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Shahana firthous S",
+   "rating": 5,
+   "date": "2025-07-09",
+   "content": "IIM is the most reputed university in india. It’s delightful to have a online option. This online course will more helpful for work professional."
+  },
+  {
+   "name": "Uttkarsh",
+   "rating": 5,
+   "date": "2025-04-08",
+   "content": "The whole process of admission was very smooth and the exam and interview were upto mark ensuring IIM credibility also college vidya helped me in my journey throughout, especially the website is absolutely good plus the team also connects with you whenever you are in need."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-10-05",
+   "content": "The faculty of the institute is very friendly and helpful, they guide every student at every point of their academic journey and resolve all the problems within no time."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-10-05",
+   "content": "The placement assistance provided by the institute is best according to me. They helped me enhance my qualities and acquire industry-related skills which are very helpful in my current job."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the contact details of the IIM Sirmaur?",
+   "a": "Contact details of the Institute are: Address: Rampur Ghat Road, Paonta Sahib, District Sirmaur, Himachal Pradesh - 173025 Email: contact@iimsirmaur.ac.in Phone: 01704-277363"
+  },
+  {
+   "q": "What is the NIRF Ranking of IIM Sirmaur?",
+   "a": "IIM Sirmaur is ranked 57th in the National Institutional Ranking Framework (NIRF) &lsquo;management’ category."
+  },
+  {
+   "q": "Can I pursue a doctorate program while working?",
+   "a": "Several online doctorate courses have been launched in the market for working professionals. A few of them include: Explore Online Doctorate Programs for Working Professionals Online Doctorate Course for Working Professionals Doctor of Juridical Science DBA In Supply Chain Management DBA In Supply Artificial Intelligence DBA In Human Resource Management Doctor of Business Administration"
+  },
+  {
+   "q": "Can I pursue an MBA without a good CAT score?",
+   "a": "Top management institutions in India including IIMs are now offering online MBAs for which you do not need to attempt CAT. Some of these trending MBA options are listed below. MBA without CAT Available! MBA Global Online MBA for Working Professionals MBA Courses Online MBA Distance Learning Course Online Executive MBA MBA Part-Time Courses Executive MBA for Working Professionals"
+  },
+  {
+   "q": "What are the eligibility criteria for online programs at IIM Sirmaur?",
+   "a": "Students who have a bachelor's degree with a minimum of 50% marks + relevant work experience of 3 years + valid score in entrance exams like CAT/GMAT/GRE/GATE. This might vary as per the course."
+  },
+  {
+   "q": "Which top IIMs offer online management courses other than IIM Sirmaur?",
+   "a": "Here is a list of the top IIMs as per NIRF 2024 Management category which offer different types of online management courses. Top IIMs In India As Per NIRF Ranking 2024 Name Rank Score Indian Institute of Management Ahmedabad 1 83.32 Indian Institute of Management Amritsar 47 52.57 Indian Institute of Management Bangalore 2 81.16 Indian Institute of Management Jammu 42 54.64 Indian Institute of Management Kashipur 23 60.82 Indian Institute of Management Kozhikode 3 77.90 Indian Institute of Management Lucknow 7 74.43 Indian Institute of Management Nagpur 31 56.94 Indian Institute of Management Raipur 14 64.40 Indian Institute of Management Ranch i 17 61.27 Indian Institute of Management Rohtak 12 66.49 Indian Institute of Management Sambalpur 50 51.47 Indian Institute of Management Shillong 24 60.49 Indian Institute of Management Sirmaur 57 50.92 Indian Institute of Management Udaipur 22 60.93 Indian Institute of Management Visakhapatnam 26 59.20"
+  },
+  {
+   "q": "What is the average salary of IIM Sirmaur Graduates?",
+   "a": "The median package offered by the placement cell of IIM Sirmaur lies between 20-25 LPA."
+  },
+  {
+   "q": "Does IIM Sirmaur offer online programs?",
+   "a": "Yes, online programs are offered at the IIM Sirmaur under their executive education programs, such as Executive MBA, Ex-MBA in Digital Transformation and Analytics, and PG Diplomas."
+  },
+  {
+   "q": "What are some best online executive programs in India?",
+   "a": "Universities have launched numerous online executive courses to empower the Indian workforce. The top ones on that list are tabulated below. Explorer Best Executive Programs In India Executive Program Online In Finance Executive Program Online In HR Executive Program Online In Operations Executive Program Online In Leadership Executive Program Online In Data Science and Analytics Executive Program Online In AI and Machine Learning Executive Program Online In Marketing Executive Program Online In Software and Technology Executive Program Online In Healthcare Executive Program Online In Business Analytics Executive Program Online In DevOps Executive Program Online In Cyber Security Executive Program Online In Bigdata Engineering Executive Program Online In Blockchain Executive Program Online In Cloud Computing LLM Online Job Linked Programs Pay After Placement Programs Explore more online and distance courses In India! Click here for all approved distance and online universities in India!"
+  }
+ ]
+}

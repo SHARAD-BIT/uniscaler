@@ -1,0 +1,384 @@
+{
+ "slug": "eimt",
+ "name": "EIMT",
+ "establishedYear": "1987",
+ "location": "",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   3,
+   5,
+   34
+  ],
+  "total": 42
+ },
+ "banner": "/university/banners/eimt.webp",
+ "approvals": [
+  {
+   "title": "ACBSP",
+   "logo": "/university/approvals/ACBSP.jpg"
+  },
+  {
+   "title": "DRPF",
+   "logo": "/university/approvals/DRPF_-_Diplomatic_Research_and_Policy_Foundation.webp"
+  },
+  {
+   "title": "QAHE",
+   "logo": "/university/approvals/QAHE_-_Quality_Assurance_in_Higher_Education.webp"
+  },
+  {
+   "title": "EURASHE",
+   "logo": "/university/approvals/EURASHE_-_European_Association_of_Institutions_in_Higher_Education.webp"
+  },
+  {
+   "title": "USDLA",
+   "logo": "/university/approvals/usdle.webp"
+  },
+  {
+   "title": "ATHEA",
+   "logo": "/university/approvals/athea.webp"
+  },
+  {
+   "title": "OTHM",
+   "logo": "/university/approvals/othm.webp"
+  },
+  {
+   "title": "AQS",
+   "logo": "/university/approvals/aqs.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "European Institute of Management & Technology (EIMT) is one of the prestigious institutes offering a wide range of courses in business management and technology. It was established in Switzerland and presently it has several campuses in France and Switzerland. It supports On-Campus as well as Online bachelor, master’s, and doctorate programs. EIMT offers a transformative learning experience and top-quality education with the integration of advanced technology to create a favorable academic environment."
+  },
+  {
+   "t": "p",
+   "text": "All the undergraduate, postgraduate, and doctorate programs at the European Institute of Management & Technology (EIMT) are supported by esteemed faculty members with significant expertise and experience. These faculty members are committed to shaping the future of the students with extraordinary education with real-world experiences. Students are encouraged to acquire advanced skills and competencies for their holistic development in leadership roles in global industries."
+  },
+  {
+   "t": "p",
+   "text": "The European Institute of Management & Technology (EIMT) has approvals and accreditations from eminent institutions and government bodies. It has 2-year accreditation from the Diplomatic Research and Policy Foundation (DRPF) which is a government-recognized Accreditation Agency. The International Association for Quality Assurance in Pre-Tertiary & Higher Education (QAHE) has also fully accredited EIMT. Apart from accreditation, EIMT is also a member of distinguished education bodies. It is a member of the Accreditation Council for Business Schools and Programs (ACBSP) and a full member of the European Association of Institutions in Higher Education (EURASHE). It is also a member of the United States Distance Learning Association (USDLA). These memberships and accreditations present EIMT as a top-grade academic institution."
+  },
+  {
+   "t": "p",
+   "text": "EIMT offers excellent student support with a dynamic team of student support services that is committed to cater the needs of every student enrolled in any program. Regardless of their learning modes, all the students are entitled to the student's support services. Students also get access to well well-established global community. This provides them with diverse opportunities to make connections that are beneficial for personal and professional growth. By meeting the highest educational benchmarks, EIMT prepares students to lead in fast-paced globally emerging industries."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "EIMT is based in Switzerland and France, with multiple campuses offering top-quality education and providing students with an international learning environment with access to flexible education opportunities.",
+  "EIMT offers more than 20 degree programs, including bachelor’s, master’s, doctoral, diploma, and certificate programs across different fields of study.",
+  "Individuals can pursue their program as per their convenience in terms of Online, on-campus, and blended formats. This setup allows the learners to choose the study method that best suits their professional and personal needs.",
+  "The institute provides programs in business and management, including areas such as business administration, leadership, entrepreneurship, and executive education, helping students develop skills for their future careers.",
+  "The institute provides programs in business and management, including areas such as business administration, leadership, entrepreneurship, and executive education, helping students develop skills for their future careers.",
+  "EIMT also offers computer science and technology-related programs, allowing students to build knowledge in modern digital and technological fields.",
+  "EIMT focuses on combining academic knowledge with practical skills, helping students develop professional abilities that match the demands of today’s global workplace.",
+  "The institution aims to make higher education more accessible by offering flexible and affordable learning opportunities for students around the world.",
+  "EIMT promotes innovation, leadership development, and international collaboration to prepare students for changing business and technology environments.",
+  "The institute values a learning culture based on quality education, professional growth, diversity, and respect, supporting students in becoming future leaders in a global society."
+ ],
+ "courses": [
+  {
+   "name": "PG Certificate in Applied AI for Business Leaders",
+   "fee": 450000,
+   "duration": "4 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "450000"
+    }
+   ]
+  },
+  {
+   "name": "PhD for Working Professionals",
+   "fee": 600000,
+   "duration": "3-5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Honorary DBA",
+   "fee": 650000,
+   "duration": "Depends On Interview",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "650000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctorate Course",
+   "fee": 600000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA",
+   "fee": 600000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Honorary PhD",
+   "fee": 650000,
+   "duration": "Depends On Interview",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "650000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "European Institute of Management & Technology (EIMT) ensures that every student enrolled in the institute can pay the course fees easily. To enable students with this, EIMT offers part-time tuition fee loans to the students apart from the affordable fee structure. With this facility, students will be able to pay their tuition fees in easy installments. Moreover, students can also seek other financial assistance and scholarships to lower their burden of fee payments."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Candidates interested in admission to the European Institute of Management & Technology (EIMT) can easily secure a seat by following the admission process mentioned below-"
+  },
+  {
+   "t": "li",
+   "text": "Choose the Program: Begin the admission process by selecting the appropriate program you want to pursue at the European Institute of Management & Technology (EIMT)."
+  },
+  {
+   "t": "li",
+   "text": "Go Through the Eligibility Requirements: Once you have selected the appropriate program, it is advisable to go through the eligibility requirements for the particular program. Make sure you meet all the eligibility requirements for the program."
+  },
+  {
+   "t": "li",
+   "text": "Prepare all the Documents: Once you have gone through the eligibility requirements, prepare and get ready with all the necessary documents. You may need to be ready with academic transcripts, a CV or resume, proof of language proficiency, letters of recommendation, and a statement of purpose based on your program."
+  },
+  {
+   "t": "li",
+   "text": "Complete the Application Form: After getting ready with all the necessary documents, visit the official website of the European Institute of Management & Technology (EIMT) to fill out and submit the application form. Make sure all the information is filled in correctly as any wrong information may lead to the rejection of the application."
+  },
+  {
+   "t": "li",
+   "text": "Review of Application: Once the application form has been successfully submitted, EIMT will go through the application form to ensure that it meets all the eligibility requirements. If your application meets all the requirements you will be called for an interview as a part of the verification process."
+  },
+  {
+   "t": "li",
+   "text": "Application Interview: EIMT will invite you for an application interview to learn about you in a better way. Generally, the interview is either conducted over a Phone Call or Video Call. The institute will try to know about your plans and understand the reason you are interested in a particular program."
+  },
+  {
+   "t": "li",
+   "text": "Payment of fees: If the EIMT is satisfied with your application and interview, it will initiate your admission confirmation by sending you the invoice for the first-year fees. You can secure a seat in EIMT by paying the first-year fees. Post payment of your tuition fees, you will get a payment receipt."
+  },
+  {
+   "t": "li",
+   "text": "Start the Program: Once you have paid the first-year course fees, you can start your degree at EIMT."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination at the European Institute of Management & Technology (EIMT) is conducted based on the mode of delivery. For on-campus programs, students are required to appear at the examination center of EIMT whereas, for Online Courses, examinations are conducted remotely. Students are evaluated based on their performance in written examinations, assignments, and project works at the bachelor's and master’s levels. For Doctorate programs, students are evaluated based on their comprehensive examinations, Thesis /Dissertation, and Viva Voice."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The wide global recognition and high-quality education, the European Institute of Management & Technology (EIMT) attracts top global companies and business organizations for the placement and hiring of its students. The Institute has good connections with some of the apex employers in the industry. EIMT ensures that all students are enrolled in its various programs before completion of their degree. Here is the list of some of the top recruiters that hired students from the European Institute of Management & Technology (EIMT) - Apple, Microsoft, Google, Morgan Stanly, Amazon, American Express, Deloitte, JP Morgan Chase, Nvidia, Meta, Berkshire Hathaway, etc."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Apple",
+   "logo": "/university/partners/apple.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Prof. Shailendra Naresh Kulkarni",
+   "title": "Professor & Rector",
+   "description": "Prof. S.N. Kulkarni has many firsts to his name in the field of academics. He is the Youngest VICE-CHANCELLOR of a University in India. He also happens to be the Youngest DIRECTOR of a Technical / Engineering Institute approved by the Government of India. He has varied experience in research & academia for over a decade and a half. He has set examples in teaching as well as research practices in India & abroad. He has been instrumental in conceptualizing, initializing & establishing a number of academic institutes.",
+   "photo": "/university/faculty/Prof._Shailendra_Naresh_Kulkarni.webp"
+  },
+  {
+   "name": "Dr. Manju Gupta",
+   "title": "Professor & Vice Rector",
+   "description": "Dr. Manju Gupta is an accomplished leader with over 23 years of diverse experience in the Education Industry, specializing in innovative teaching methods, online education, and operational excellence. She currently serves as the Vice Rector Academics at EIMT and is the CEO of Porteight Private Limited. Dr. Gupta has a proven track record of success in education, skill development, vocational education, and online assessment, with a focus on creating impactful learning products and services.",
+   "photo": "/university/faculty/Dr._Manju_Gupta.webp"
+  },
+  {
+   "name": "Prof. (Dr.)Mensur Zeqiri",
+   "title": "Vice Dean and Professor",
+   "description": "Mensur Zeqiri, PhD, brings a wealth of experience and expertise to his role as Vice Dean of Administration at the European Institute of Management and Technology. His academic journey spans Switzerland, Malaysia, and Slovenia, culminating in a doctorate in Marketing and Public Relations, a testament to his dedication to excellence in education and leadership.",
+   "photo": "/university/faculty/Prof._Dr._Mensur_Zeqiri.webp"
+  },
+  {
+   "name": "Prof. (Dr.) Ernesto O. Cordero",
+   "title": "Professor",
+   "description": "A professional leader with over ten years of experience in research, policy development, education, and corporate sustainability. Proven track record of exceptional leadership skills and outstanding results. Served in senior positions in professional and academic settings. Developed, delivered, and evaluated organizational programs, training, and education. Recognized with prestigious awards and memberships. Proficient in strategic planning, quality management, and corporate project planning. Excellent oral and written communication skills. Strong facilitation skills. Strategic and critical thinking abilities.",
+   "photo": "/university/faculty/Prof._Dr._Ernesto_O._Cordero.webp"
+  },
+  {
+   "name": "Dr. Eli Hamadimann",
+   "title": "Professor",
+   "description": "Dr. Eli Hamadimann is a distinguished figure in the realm of education, blending academic prowess with extensive industry experience to drive innovation and excellence. With a PhD from esteemed American institutions, Oakland University and the University of Alabama at Birmingham, Dr. Hamadimann has cultivated a rich background spanning two decades in teaching and education management",
+   "photo": "/university/faculty/Dr._Eli_Hamadimann.webp"
+  },
+  {
+   "name": "Dr. Blerina Metanj",
+   "title": "Professor",
+   "description": "Blerina Metanj is a seasoned professional with a diverse background in education, statistics, research, and project management. With extensive experience spanning academia, consultancy, and government institutions, Blerina has made significant contributions to the fields of education, statistics, and social development.",
+   "photo": "/university/faculty/Dr._Blerina_Metanj.webp"
+  },
+  {
+   "name": "Dr. Enrique S. Guevarra",
+   "title": "Professor",
+   "description": "Dr. Enrique S. Guevarra is an accomplished professional with a rich background in academia and public administration. With a Doctor of Management degree from Capitol University, Philippines, Dr. Guevarra has demonstrated his expertise in various roles, both in the Philippines and abroad",
+   "photo": "/university/faculty/Dr._Enrique_S._Guevarra.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Vikas  Gautam",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "I m really glad to take admission in EIMT, first at the time of my admission for DBA I didn't realise that EIMT provides such a great services"
+  },
+  {
+   "name": "Ms. Madhura Kajale",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "I have started with course and I have started the classes. I am able to learn many new things through Business Administration Approach. I have got a best support from College Vidya Platform."
+  },
+  {
+   "name": "Rajesh Manyam",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Great facility and good team work. Throughout my admission process they me a lot each and single point. Thank you so much."
+  },
+  {
+   "name": "Priya Mukherjee",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Everything is going well here. I am satisfied. They are responsive and I am getting classes and assistance smoothly."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the programs offered by the European Institute of Management & Technology (EIMT)?",
+   "a": "European Institute of Management & Technology (EIMT) offers Bachelors, master’s, doctorate and certificate programs."
+  },
+  {
+   "q": "What is the mode of learning at the European Institute of Management & Technology (EIMT)?",
+   "a": "The mode of learning at the European Institute of Management & Technology (EIMT) is On-Campus, Online as well as Hybrid. EIMT provides all its programs in these three modes."
+  },
+  {
+   "q": "What is the Accreditation of the European Institute of Management & Technology (EIMT)?",
+   "a": "European Institute of Management & Technology (EIMT) is fully accredited by Quality Assurance in Higher Education (QAHE). Additionally, the Diplomatic Research and Policy Foundation (DRPF), which is a Government-recognized Accreditation Agency has accredited EIMT for 2 years."
+  },
+  {
+   "q": "What are the memberships of the European Institute of Management & Technology (EIMT)?",
+   "a": "The European Institute of Management & Technology (EIMT) is a full member of the European Association of Institutions in Higher Education (EURASHE. It is also a member of the Accreditation Council for Business Schools and Programs (ACBSP), OTHM United Kingdom, and the United States Distance Learning Association (USDLA)."
+  },
+  {
+   "q": "How can I apply for a course at the European Institute of Management & Technology (EIMT)?",
+   "a": "The application process at the European Institute of Management & Technology (EIMT) is simple and easy. You just need to visit the official website of the institute and fill out the application form by selecting your program."
+  },
+  {
+   "q": "How can I Check the eligibility criteria for the European Institute of Management & Technology (EIMT)?",
+   "a": "You can check the eligibility criteria for the European Institute of Management & Technology (EIMT) at its official website. You can easily see the eligibility requirements by selecting the particular program on its official website. There are different sets of eligibility requirements for each program at the European Institute of Management & Technology (EIMT)."
+  }
+ ]
+}

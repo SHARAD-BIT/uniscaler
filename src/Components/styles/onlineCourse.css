@@ -11,15 +11,39 @@
   --oc-line: #e6ebf3;
   --oc-muted: #64748b;
   --oc-ink: #0f2140;
+  /* One value, read twice: the page pads by it and the hero band cancels it
+     with negative margins to run edge to edge. */
+  --oc-pad-x: clamp(1rem, 2.5vw, 2.5rem);
 
   /* Full-bleed: the cards run the width of the screen rather than sitting in a
-     centred column. Only enough side padding to keep them off the edge. */
+     centred column. Only enough side padding to keep them off the edge.
+
+     97px on top, not the `.top` class: same construction as `.sa-page` on the
+     study-abroad page, so the hero video can touch the navbar. The bar is up
+     to 127px tall, so the band's first ~30px slide under its glass — that
+     overlap is what keeps the bar's rounded bottom corners from showing a
+     white nick over the footage. `.top`'s 127px would instead leave a seam at
+     the widths where the bar runs shorter. */
   max-width: none;
   margin: 0;
-  padding: clamp(60px, 8vw, 120px) clamp(1rem, 2.5vw, 2.5rem) 4rem;
+  padding: 97px var(--oc-pad-x) 4rem;
+  transition: padding-top 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+/* Reserving its own navbar room means needing `.top`'s correction too: the bar
+   loses 63px when the app-switcher strip is shut. Same class on <body>, same
+   766px guard — see the note on `.top` in globals.css. */
+@media screen and (min-width: 766px) {
+  body.appbar-collapsed .onlineCourse {
+    padding-top: calc(97px - 63px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .onlineCourse {
+    transition-duration: 0.01ms;
+  }
 }
 
 /* Mesh background: three wide, faint radials so the white cards have something
@@ -104,6 +128,35 @@
 .onlineCourse .oc-sub strong {
   color: var(--accent);
   font-weight: 700;
+}
+/* ---- hero video band ----------------------------------------------------- */
+/* Full-bleed, built like `.sa-hero` on the study-abroad page: negative side
+   margins cancel the page's own side padding so the footage runs edge to
+   edge, and the page's 97px reservation (see above) starts it under the
+   navbar's glass. Bottom corners only — the top ones are always behind the
+   bar. The band is the fixed height and `overflow: hidden` clips the cover-
+   cropped footage to the curve, same as the study-abroad construction. */
+.onlineCourse .oc-hero-band {
+  position: relative;
+  margin: 0 calc(-1 * var(--oc-pad-x));
+  height: clamp(320px, 31.5vw, 520px);
+  background-color: #000;
+  border-bottom-left-radius: clamp(16px, 1.8vw, 28px);
+  border-bottom-right-radius: clamp(16px, 1.8vw, 28px);
+  overflow: hidden;
+}
+/* `object-fit: cover` because the band is a fixed height at full viewport
+   width, so the clip's own aspect is always cropped; cover crops it rather
+   than letterboxing or squashing it. */
+.onlineCourse .oc-hero-band .oc-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Nothing here is interactive, and it must not swallow a click or a drag —
+     same as .sa-hero-video. */
+  pointer-events: none;
 }
 
 /* ---- programme card ------------------------------------------------------ */

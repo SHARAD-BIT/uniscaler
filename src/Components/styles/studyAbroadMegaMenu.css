@@ -119,8 +119,8 @@
 }
 
 .study-abroad-country-item.active {
-  background-color: #fee2e2;
-  color: #dc2626;
+  background-color: #eef3fb;
+  color: var(--accent);
 }
 
 .study-abroad-country-flag {
@@ -162,18 +162,18 @@ nav .menu-links .study-abroad-mega-menu .study-abroad-view-all-btn {
   justify-content: center;
   gap: 0.4rem;
   padding: 0.65rem 1rem;
-  background-color: #dc2626;
+  background-color: var(--accent);
   color: #ffffff !important;
   font-size: 0.85rem;
   font-weight: 700;
   border-radius: 20px;
   text-decoration: none;
   transition: background-color 0.2s ease, transform 0.15s ease;
-  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 57, 128, 0.25);
 }
 
 nav .menu-links .study-abroad-mega-menu .study-abroad-view-all-btn:hover {
-  background-color: #b91c1c;
+  background-color: #00448f;
   transform: translateY(-1px);
 }
 
@@ -212,7 +212,7 @@ nav .menu-links .study-abroad-mega-menu .study-abroad-view-all-btn:hover {
 nav .menu-links .study-abroad-mega-menu .study-abroad-header-link {
   font-size: 0.88rem;
   font-weight: 700;
-  color: #dc2626;
+  color: var(--accent);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -221,7 +221,7 @@ nav .menu-links .study-abroad-mega-menu .study-abroad-header-link {
 }
 
 nav .menu-links .study-abroad-mega-menu .study-abroad-header-link:hover {
-  color: #991b1b;
+  color: #002d66;
   text-decoration: underline;
 }
 
@@ -337,7 +337,7 @@ nav .menu-links .study-abroad-mega-menu .study-abroad-course-card:hover {
 }
 
 nav .menu-links .study-abroad-mega-menu .study-abroad-course-card:hover .study-abroad-degree-title {
-  color: #dc2626;
+  color: var(--accent);
 }
 
 /* Mobile Adaptation.

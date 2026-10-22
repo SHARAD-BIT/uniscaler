@@ -1,0 +1,611 @@
+{
+ "slug": "kurukshetra-university-online",
+ "name": "Kurukshetra University Online",
+ "establishedYear": "1956",
+ "location": "Thanesar, Haryana",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   3,
+   0,
+   5,
+   20,
+   36
+  ],
+  "total": 64
+ },
+ "banner": "/university/banners/kurukshetra-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Established in 1956 by our former president of India, the late Dr. Rajendra Prasad, Kurukshetra University started with just one department for Sanskrit, and today it is offering various courses and study programs like MCom, BCom, MA, BA, and many more in online mode. The university is situated in Haryana State. This university is accredited by many government organizations, like NAAC A+ grade, the National Institutional Ranking Framework, and the Internal Quality Assurance Cell. This university campus is located at a place that is famous in the Mahabharata epic, Kurukshetra, around the holy river Brahmi Sarovar, and it is extended in the area of 400 acres of land."
+  },
+  {
+   "t": "p",
+   "text": "The university campus is well-equipped with all the facilities, from basic to world-class. The campus has an air-conditioned auditorium that has a capacity of 2500 people and has a 70 mm projector, a conference hall, a senate hall, a tennis court, a swimming pool, a basketball court, volleyball courts, and many other courts for various fields. The university encourages students to work in the direction of skill enhancement."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses in India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "There are many societies & clubs that students can join. With the capacity of 45 teaching departments, 369 affiliated colleges are situated in the districts of Panipat, Ambala, Yamuna Nagar, Kaithal, Jind, Hisar, Karnal, Panchkula, and Kurukshetra. For the past 65 years, the university has been excelling in offering quality education, and today it is positioned as 8th among the state universities and has been recognized as a Category-1 University."
+  },
+  {
+   "t": "p",
+   "text": "Exciting Offer"
+  },
+  {
+   "t": "p",
+   "text": "Most of the study programs that are offered at the University follow CBCS (Choice Based Credit System) along with LOCF (Learning Outcome Curriculum Framework). The university is catering to students with good learning resources like study guides, practice tests, virtual lab environments, and e-books as well. That helps students in getting relevant information useful to understand the syllabus and the curriculum of the examination."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Kurukshetra University came into existence in 1956 by the former president of India, Dr. Rajendra Prasad at the famous place in Mahabharata Epic Kurukshetra.",
+  "University is offering various courses and study programs in online mode like MCom, BCom, MA, BA, and many more.",
+  "This Institution is accredited by many government organizations like UGC, AICTE, NAAC A+ grade, National Institutional Ranking Framework, and Internal Quality Assurance Cell.",
+  "Courses offered at this institution follow CBCS(Choice Based Credit System) & LOCF (Learning Outcome Curriculum Framework).",
+  "University has affiliated colleges that are situated in the Districts of Panipat, Ambala, Yamuna Nagar, Kaithal, Jind, Hisar, Karnal, Panchkula, and, Kurukshetra.",
+  "It is ranked 8th among all the state universities in Category 1, by the Ministry of Human Resource Development(MHRD)."
+ ],
+ "courses": [
+  {
+   "name": "Internet of Things Certification",
+   "fee": 23800,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "23800"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "1200"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA Plus",
+   "fee": 119845,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "31045"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "31045"
+    }
+   ]
+  },
+  {
+   "name": "Online BA",
+   "fee": 72661,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "12661"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "12661"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 72661,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "12661"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1200"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "12661"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 76647,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "19947"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "19947"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 54036,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "14286"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "14286"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 54036,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "14286"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "14286"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 72661,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "12661"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1200"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "12661"
+    }
+   ]
+  },
+  {
+   "name": "Full Stack Development Certification",
+   "fee": 23800,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "23800"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "1200"
+    }
+   ]
+  },
+  {
+   "name": "Block Chain Management Certification",
+   "fee": 23800,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "23800"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "1200"
+    }
+   ]
+  },
+  {
+   "name": "Cloud Computing Certification",
+   "fee": 23800,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "23800"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "1200"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 98545,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25045"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25045"
+    }
+   ]
+  },
+  {
+   "name": "Online Diploma Program",
+   "fee": 28800,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "28800"
+    },
+    {
+     "type": "Exam Fees",
+     "fee": "1200"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "The institution provides courses in all three modes: regular mode, online mode, or distance mode. However, the courses that are offered to the students in regular mode are costly. Online courses offered by the university to the students are much more affordable as compared to other courses offered in regular mode. Students can also take education loans, scholarships, and other financial aid options that are offered to students by the center and state government."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "You can take admission through an online application process after the university releases the notification on the official website. The admission process is simple, but it is necessary to fill out the online application form carefully. You can follow these steps and get admission to this institute."
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Wait till the notification is released on the website. Once the university releases it, read it carefully. You can select the course that is available on the website. Also, check the eligibility criteria for pursuing the course."
+  },
+  {
+   "t": "p",
+   "text": "Step 2 - After carefully looking at the eligibility criteria, move to the next step of filling out the online form. Make a new registration on the admission portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 3 - The next step is filling out the online form by completing the details. Check all the details twice before the final submission."
+  },
+  {
+   "t": "p",
+   "text": "Step 4 - Then move to upload the relevant documents. Firstly, scan the documents and then upload them. Make sure to upload clear documents to avoid any future problems."
+  },
+  {
+   "t": "p",
+   "text": "Step 5 - Once you are done with these steps, a payment portal will appear. Now, move to the final step, which is the submission of the fee. You need to do the fee submission on the payment portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 6 - The moment you submit the fee, the university will verify your details and send you the admission confirmation through the mail."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is the Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25. Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of universities and colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "When can I apply for the refund for Kurukshetra University Online Courses? ⭐15+ days ahead: Full refund ⭐Last 15 days before date: 90% ⭐First 15 days after date: 80% ⭐Next 15 days: 50% ⭐After that: No refund The above-mentioned days are allowed to apply for the refund at the Kurukshetra University Online as per the UGC refund terms. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination pattern of each subject may vary. Students can understand more about the pattern after carefully reviewing last year's papers. The examination is done in two steps. The first step includes the evaluation of the practical knowledge of the student. The university gives the assessment to students in the form of practical tests, assignments, project work, and many more. After completion, students can submit these assessments on the portal in online mode. It is not required to visit the center to submit assignments. The next step of evaluation involves the theory examination that is conducted online."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: Combination of internal assessment (assignments, quizzes) + Term-End Examinations (theory). Re-appear exam Rs. 500 per subject. Exam pattern was updated recently - includes MCQ + Subjective components."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The university enables students to get all the skills and in-depth knowledge. This helps them to get better opportunities in the market and get amazing job and placement options. The university also offers expert guidance that helps students get a wide perspective on the market. They get certain live-interaction sessions from the university that cater to them with adequate subject field knowledge and scope associated with it. With top-notch & holistic education and teaching by the top faculty, students can get amazing job opportunities."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Axis Bank",
+   "logo": "/university/partners/axis-bank.webp"
+  },
+  {
+   "title": "Byjus",
+   "logo": "/university/partners/byjus.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "H&M",
+   "logo": "/university/partners/hm.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Dinesh Singh Rana",
+   "title": "Professor of Instrumentation & Control",
+   "description": "The Programme Coordinator Dr. Dinesh Singh Rana, Kurukshetra University, Kurukshetra drill a strong plan for spreading awareness in the society during COVID-19 pandemic. The Programme Co-ordinator arranged the training programme for Programme Officer, NSS Volunteers through Electronic Communication (online) on “what to do or don’t” for prevention to the COVID-19 and also trained the NSS Programme Officers and NSS Volunteers to prepare sanitizer at their home. The Programme Coordinator direct the Programme Officer for each district to continuously share and collect data with District Administration time to time for combating program against the COVID-19. During this campaign NSS volunteers made masks and distributed to their nearest zone. Major Research Publications: In National and International Journals of repute: 47 In the form of National and International Conference proceeding: 45 Conferences/symposia/seminar attends and abstract/full paper publications: 30 Summer school/ lecturer delivered in national/ International conference: 15",
+   "photo": "/university/faculty/dr-dinesh-singh-rana.webp"
+  },
+  {
+   "name": "Dr. Sunil Dhingra",
+   "title": "Professor of Semiconductor Electronics and Instrumentation",
+   "description": "Administrative and Research Experience: • 2.5 Years as Proctor, Kurukshetra University Kurukshetra • 4 years as Chief Vigilance Officer, Kurukshetra University Kurukshetra • 3 years 8 months as Dean Faculty of Engineering & Technology, KUK • 4 years 11 months as Director University Institute of Engg.& Technology, KUK • 6 years 9 months as Chairman, Department of Instrumentation Engg., KUK • 9 years 4 months as Director IT Cell, KUK • 1 Year 10 days as Head, Computer Centre, KUK • Member of Apex bodies of KUK and other Govt bodies in technical and higher education for the academic and administrative reforms. • Worked as Coordinator TEQIP (A World Bank Project) for about 4 years for KUK • Worked as Coordinator Career & Counseling Cell for about 13 years for KUK • Organisation/ participation of about 50 programs of National/ International level. • 25 publications/ patents with Research Guidance to Ph.D students.",
+   "photo": "/university/faculty/dr-sunil-dhingra.webp"
+  },
+  {
+   "name": "Dr. Surinder Singh",
+   "title": "Professor of Electrical Engineering",
+   "description": "Research Area/Field: Wind Energy Conversion Systems and Power Electronics based Drives, Research Scholar guided: 14 (M.Tech.), Research Paper published in International journals: 16, Research Paper published in International IEEE Conferences: 05, Paper Presented in Conferences/Symposia/Workshops/Seminars and Expert Talk in Trainin, Course: 07 - Conferences/Symposia/Workshops/Seminars attended: 14, Refresher courses/Orientation Programme /Trainings courses/faculty development Programmes attended: 24, Organizing/Advisory member in Trainings courses/faculty development Programmes Conferences/Symposia/Workshops/Seminars: 16.",
+   "photo": "/university/faculty/dr-surinder-singh.webp"
+  },
+  {
+   "name": "Dr. V. M. Murthy",
+   "title": "Professor - Remote Sensing and Instrumentation",
+   "description": "Particulars of research Collaborations: 1. Participating institute member in DWD/Germany – EM/DM work station model and global model, since 1995 2. User member (Data Analysis and feedback)– ECMWF, Reading U.K. since 1997 3. BARC nominee for JRF/SRF Evaluation committee at MIT, Kurukshetra since 2020 RESEARCH INTERESTS Analytical spectroscopy-GCMS Remote sensing applications in atmospheric sciences Sensitivity of high resolution GCMs on local scale Boundary layer parameterization and simulation AWARDS University first (1990-92) with 82% in M.Tech.(Atmospheric Sciences) at Andhra University. First-Place as a participant DST SERC School in Air-pollution, at Bangalore, 2002. CSIR-JRF during 1993-94 while pursuing Ph.D. at Andhra University. UGC- GATE - fellowship during M.Tech. (1990-92) course work.",
+   "photo": "/university/faculty/dr-v-m-murthy.webp"
+  },
+  {
+   "name": "Dr. Avnesh Verma",
+   "title": "Chairperson & Professor - Department of Instrumentation (Formerly USIC),",
+   "description": "Prof. Avnesh Verma holds a B.E., M.Tech, and Ph.D. in Engineering, with approximately 31 years of professional experience, 11 of which are in academic and administrative roles. He served as the Registrar at Guru Jambeshwar University of Science & Technology (GJUS&T), Hisar, from August 2020 to August 2023. Currently, he is the Chairperson of the Department of Instrumentation at Kurukshetra University, Kurukshetra. He also led the Department of Electrical Engineering for 6.5 years. Prof. Avnesh Verma has received numerous prestigious accolades for his contributions to education, research, and social welfare.",
+   "photo": "/university/faculty/Dr.-Avnesh-Verma.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Abhishek Bargale",
+   "rating": 5,
+   "date": "2026-05-26",
+   "content": "My university experience has been truly enriching and inspiring. The professors are knowledgeable, supportive, and encourage critical thinking."
+  },
+  {
+   "name": "Jugal Kishor",
+   "rating": 4,
+   "date": "2025-05-01",
+   "content": "I am ac technician but my favourite subject computer kal jais jaisi iska dosto hal hal karo idhar kam hai isliye sorry istharu idhar kishor tourist urakkam paiso idhar Isekai kal karo jab usko uska gandi jagah jagah NDLS card"
+  },
+  {
+   "name": "veeresh nk",
+   "rating": 5,
+   "date": "2025-04-02",
+   "content": "good support bt college vidya team this is a best platform for students they will provide you college as you requried they will compare with 100+ universites with fees with courses and facilities Best team"
+  },
+  {
+   "name": "SANDEEP KUMAR CHAURASIYA",
+   "rating": 5,
+   "date": "2025-03-22",
+   "content": "Kurukshetra University excels in academics, research, and student support. With experienced faculty, modern facilities, and a vibrant campus, it provides an enriching environment for learning, growth, and career success."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC, which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part-Time MCA Part-Time MTech Part-Time MCom Part-Time MSc Part-Time MA Part-Time BBA Part-Time BCA Part-Time BTech Part-Time BCom Part-Time BSc Part Time BA Part-Time"
+  },
+  {
+   "q": "Are the courses offered in Online mode at Kurukshetra University Valid?",
+   "a": "Yes, all the courses offered in online mode at the university are valid and have been approved by the University Grants Commission (UGC)."
+  },
+  {
+   "q": "What are the courses offered at Kurukshetra University in Online mode?",
+   "a": "Most of the courses that are offered at the university in online mode are MCom, BCom, MA, BA, and many more."
+  },
+  {
+   "q": "What are the other Credentials of Kurukshetra University Online?",
+   "a": "This university is accredited by many government organizations like UGC, AICTE, NAAC A+ grade, National Institutional Ranking Framework, and Internal Quality Assurance Cell."
+  },
+  {
+   "q": "What are the eligibility criteria to take admission to the online pg program at Kurukshetra University?",
+   "a": "Students are required to complete their undergraduate studies with at least a 50% score or equivalent. However, the course eligibility criteria for various courses may vary. Check the official website to get a better insight."
+  },
+  {
+   "q": "Are courses offered by Kurukshetra University follow CBCS?",
+   "a": "Yes, study programs that are offered at this institution follow CBCS (Choice Based Credit System) along with LOCF (Learning Outcome Curriculum Framework)."
+  }
+ ]
+}

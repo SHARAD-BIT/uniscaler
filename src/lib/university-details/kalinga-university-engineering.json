@@ -1,0 +1,377 @@
+{
+ "slug": "kalinga-university-engineering",
+ "name": "Kalinga University Engineering",
+ "establishedYear": "2011",
+ "location": "Raipur, Chhattisgarh",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   7,
+   36,
+   83
+  ],
+  "total": 126
+ },
+ "banner": "/university/banners/kalinga-university-engineering.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Located in the New Raipur, Kalinga University is quickly growing and offering quality education and a great learning environment. With a green and modern campus, the university helps students grow both academically and individually. Kalinga University focuses on the overall development of its students and prepares them to succeed in their careers and life."
+  },
+  {
+   "t": "p",
+   "text": "All courses at Kalinga University are recognized by the University Grants Commission (UGC), All India Council of Technical Education (AICTE), which means they are accepted in India. The university is also approved by the UGC-DEB, which makes its online and flexible courses valid and valuable in the job market."
+  },
+  {
+   "t": "p",
+   "text": "Kalinga University also offers flexible timing programs, which are perfect for working professionals and others who need to study at their own pace. However, all students must come to campus for offline exams, even for flexible programs, as per the instructions of the concerned regulatory bodies. These programs include:"
+  },
+  {
+   "t": "li",
+   "text": "Digital study materials"
+  },
+  {
+   "t": "li",
+   "text": "E-books and video lectures"
+  },
+  {
+   "t": "li",
+   "text": "Access to a powerful online learning platform"
+  },
+  {
+   "t": "li",
+   "text": "Optional practical sessions and doubt-clearing classes on campus"
+  },
+  {
+   "t": "p",
+   "text": "The university offers 3 specializations so that learners can choose the best program according to their interests, such as:"
+  },
+  {
+   "t": "li",
+   "text": "Civil Engineering"
+  },
+  {
+   "t": "li",
+   "text": "Mechanical Engineering"
+  },
+  {
+   "t": "li",
+   "text": "Electrical Engineering"
+  },
+  {
+   "t": "p",
+   "text": "Above mentioned specializations include the latest topics like Artificial Intelligence, Machine learning, and emerging technologies."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "The university offers UGC and AICTE-approved engineering programs that ensure quality education and recognition.",
+  "The university has have team of Experienced faculty bringing both academic knowledge and industry expertise.",
+  "The university has such Specializations available in Mechanical, Civil, Electrical, and other fields.",
+  "The university has the best curriculum focusing on emerging technologies like AI and Data Science.",
+  "The university has tie-ups with Strong industry, which provide valuable internships and placement opportunities.",
+  "The university places a deep Emphasis on practical learning and fosters project-based education.",
+  "The university mainly focuses on Regular tech fests, workshops, and seminars to promote continuous learning.",
+  "The university helps to provide the best Placement support and career guidance services help students in their career paths."
+ ],
+ "courses": [
+  {
+   "name": "B.Tech After Diploma",
+   "fee": 300000,
+   "duration": "3 - 3.5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "50000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1400"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "50000"
+    }
+   ]
+  },
+  {
+   "name": "Part-Time (Flexible) B.Tech",
+   "fee": 300000,
+   "duration": "3 - 3.5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "50000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1400"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "50000"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech Lateral Entry",
+   "fee": 300000,
+   "duration": "3 - 3.5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "50000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1400"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "50000"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech For Working Professionals",
+   "fee": 300000,
+   "duration": "3 - 3.5 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "50000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "50000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1400"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Education loans are available from various financial institutions with varying interest rates and repayment periods."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Step 1: Students must register on the university's official website by paying the online registration fee through the university's admission portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: After registration, upload the necessary documents to the admission portal. These documents will be verified by the university's admissions committee within 48 hours."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: After the Post document verification, the admissions office will either send a link to pay the course fee to the shortlisted candidates, and then students can directly pay it via the university’s payment gateway."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: After the successful fee payment, students will receive access to the Learning Management System and all details of academic resources to begin their engineering program."
+  },
+  {
+   "t": "p",
+   "text": "Note: Interested candidates can connect with the university’s online counselors for personalized guidance, which will help them to understand their selected course better and explore Kalinga University’s academic standing and industry relevance, and known for its excellence."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "For regular and online flexible programs for working professionals exams, students have to visit the university for the offline exams. As per the instructions of the regulatory bodies, applicants have to visit the campus for examination. In addition to that, internal assignments, projects, lab work, and offline exams are all part of the final evaluation scheme for your flexible timing engineering diploma or degree program."
+  },
+  {
+   "t": "p",
+   "text": "30% (Internal) – 70% (End Term)"
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Students are guided by the faculty to start their careers via placement support. Kalinga University has a dedicated Training and Placement Department that actively works with students to secure placements in various companies. Some of the top recruiters for B.Tech students at Kalinga University include Tata Motors, Amul, Patanjali, Global Logic, SAIL, and NTPC, among others."
+  },
+  {
+   "t": "li",
+   "text": "Strong industry connections with companies like NTPC, Hindustan Unilever, and Tata Chemicals."
+  },
+  {
+   "t": "li",
+   "text": "Average salary for graduates: 7.5 LPA."
+  },
+  {
+   "t": "li",
+   "text": "More than 300+ placement Opportunities."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Hitachi",
+   "logo": "/university/partners/hitachi.webp"
+  },
+  {
+   "title": "Jindal Steel and Power",
+   "logo": "/university/partners/new-jindal-steel-power.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Tata Motors",
+   "logo": "/university/partners/tata-motors.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Vishal Kumar",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "Very good university, an AICTE APPROVED university"
+  },
+  {
+   "name": "Sudhir Kumar",
+   "rating": 4,
+   "date": "2026-08-07",
+   "content": "Great university with a strong academic reputation. The curriculum is well-structured, and their focus on student success is impressive. Highly recommended for a solid educational foundation!"
+  },
+  {
+   "name": "Sandeep kumar Dangi",
+   "rating": 4,
+   "date": "2026-08-07",
+   "content": "I am happy to take admission in Kalinga University with the help of college Vidya."
+  },
+  {
+   "name": "Agnish Paul",
+   "rating": 5,
+   "date": "2026-08-06",
+   "content": "It was a good counselling and co-operations to the college"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Which board is Kalinga University on?",
+   "a": "Kalinga University Raipur, Best University in Chhattisgarh, UGC-approved."
+  },
+  {
+   "q": "Is Kalinga University good for placement?",
+   "a": "Kalinga University offers extensive placement and internship opportunities across various programs. Notable companies such as Tata, Wipro, Infosys, and IBM, among others, visit the campus for recruitment."
+  },
+  {
+   "q": "Is Kalinga University a good University?",
+   "a": "Ranked within the top 101-150 universities in India by the NIRF Rankings 2022, it is also among the top 50 universities founded after 2000."
+  },
+  {
+   "q": "Is Kalinga a Tier 1 college?",
+   "a": "KIIT Deemed to be University has accomplished a notable feat by obtaining the highest accreditation (Tier 1) status from the National Board of Accreditation (NBA) for all its B."
+  },
+  {
+   "q": "Is Kalinga University expensive?",
+   "a": "Kalinga University's fees vary by program, but generally range from ₹30,000 to ₹2,00,000 per year."
+  },
+  {
+   "q": "Is Kalinga University fake or not?",
+   "a": "Kalinga University is a State Private University established by the Government of Chhattisgarh and approved by the University Grants Commission."
+  },
+  {
+   "q": "Is Kalinga Institute free?",
+   "a": "Kalinga Institute of Social Sciences (KISS) is a free, fully residential educational institution for tribal children, providing education, accommodation, food, healthcare, and other necessities without any cost."
+  },
+  {
+   "q": "What is the rank of Kalinga University?",
+   "a": "It has been ranked #440 out of 876 in India and #7 out of 23 in Chhattisgarh by EduRank."
+  },
+  {
+   "q": "How many students are at Kalinga University?",
+   "a": "The university boasts an enrollment of over 8,000 students, including a significant number of more than 500 international students from over 20 different countries."
+  },
+  {
+   "q": "Is a Kalinga University degree valid?",
+   "a": "Yes, your degree is recognised for Government Jobs (State/Central) across the country and abroad."
+  },
+  {
+   "q": "How can I connect with Universities offering B.Tech for Working Professionals’ Counsellor?",
+   "a": "College Vidya Virtual Expo , a tool designed to help learners to speak with the counsellor to guide them."
+  }
+ ]
+}

@@ -1,0 +1,393 @@
+{
+ "slug": "nmims-online",
+ "name": "NMIMS Online",
+ "establishedYear": "1981",
+ "location": "Mumbai, Maharashtra",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   2,
+   1,
+   14,
+   81,
+   306
+  ],
+  "total": 404
+ },
+ "banner": "/university/banners/nmims-online.webp",
+ "approvals": [
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "UGC-DEB",
+   "logo": "/university/approvals/ugc-deb-logo.jpg"
+  },
+  {
+   "title": "NAAC A++",
+   "logo": "/university/approvals/logo-naac-a-plus-plus.jpg"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  },
+  {
+   "title": "BCI",
+   "logo": "/university/approvals/bar-council-of-india-bci-logo.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Narsee Monjee Institute of Management Studies (NMIMS) is one of the largest online educational institutions in India. After imparting its educational services in the regular and ODL mode, the university has established its name in the domain of online education. NMIMS Online offers various courses online that are approved and recognized around the globe."
+  },
+  {
+   "t": "p",
+   "text": "NMIMS Online has been recognized and approved by the University Grants Commission-Distance Education Board (UGC-DEB). The university has also been granted a Grade A++ university by the National Assessment and Accreditation Council (NAAC). NMIMS Online has also ranked amongst the top 50 universities by the National Institutional Ranking Framework (NIRF)."
+  },
+  {
+   "t": "p",
+   "text": "To help students get ready for the needs of a globally integrated corporate environment, NMIMS's Online teaching methodology is technology-enabled. Every program's curriculum is regularly reviewed to ensure that it is updated and relevant. The carefully crafted curriculum and syllabus are supported by in-depth research and equipped with the best and most up-to-date resources and technology to deliver a comprehensive learning experience."
+  },
+  {
+   "t": "p",
+   "text": "India's leading companies and start-ups have acknowledged NMIMS Online and work alongside it to help students gain employment. The university has also partnered with around 500+ hiring partners to the enrolled students. The university also offers personalized mentorship to assist students in cracking the top companies' interviews."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Autonomy Status",
+   "content": "NMIMS Online has been granted Autonomy Category I status by UGC."
+  },
+  {
+   "title": "Top Corporates and Start-Ups Recognized",
+   "content": "The university has been recognized by India’s top start-ups and industries."
+  },
+  {
+   "title": "Expert Career Sessions",
+   "content": "The university’s career coaches offer personalized sessions to prepare the students for the interviews."
+  }
+ ],
+ "facts": [
+  "After becoming a successful education provider in regular and ODL mode, NMIMS has established its name in the field of Online education through NMIMS Online.",
+  "The university has gotten UGC-DEB approval to offer the courses in online mode.",
+  "The university has been accredited by National Assessment and Accreditation Council (NAAC) as a Grade A++ university.",
+  "The university has gotten autonomy status from UGC in the year 2018.",
+  "The university has around 500+ hiring partners for its students.",
+  "The university offers one-to-one sessions by career coaches to groom you and increase your chances of getting selected for an interview.",
+  "The university has designed an online evaluation pattern consisting of exams, assignments, and project reports to evaluate the student.",
+  "The University uses multiple e-learning resources and follows the UDL(University Design for Learning) approach making online education more interactive for students.",
+  "The program structure is based on the KSA (Knowledge-Skill-Attitude) that helps working professionals gain the skills and knowledge required to excel at work."
+ ],
+ "courses": [
+  {
+   "name": "Online BBA",
+   "fee": 150000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Admission Fee",
+     "fee": "1200"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Annual Fee Payment",
+     "fee": "47000"
+    }
+   ]
+  },
+  {
+   "name": "MBA (Working Executives)",
+   "fee": 400000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Admission Fee",
+     "fee": "1500"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "400000"
+    },
+    {
+     "type": "1st Year",
+     "fee": "250000"
+    },
+    {
+     "type": "2nd Year",
+     "fee": "200000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 220000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "55000"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "105000"
+    },
+    {
+     "type": "Admission Fee",
+     "fee": "1200"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "55000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 108000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Admission Fee",
+     "fee": "1200"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "18000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "18000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "To assist students in paying their course fees through convenient EMI payments, NMIMS Online provides financial support. The course fee can be paid at one's convenience thanks to the 3, 6, 9, and 12-month EMI plans that are offered by the university. In addition, students can take the Education loan services from financial institutions, NGOs or more you can take it from the College Vidya."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Admissions to any course in NMIMS Online are conducted entirely online. Every year, new admissions usually start in January. Since admissions are made directly, there is no need to take an entrance exam to enroll in a university course. The following step describes the NMIMS Online course admissions process for the session 2025:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Visit the NMIMS Online official website and complete the registration form. Secondly, pay the admission processing fee."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Students must give their authorized enrolment partner their academic and professional credentials, as well as a photo ID."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: After the counselor has verified all the documentation, the students must pay the program fee online or through a Demand Draft."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Your admission will be confirmed and you will be given a \"student number\" after all of your documents have been examined and the fee payment has been completed."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "NGA-SCE is now renamed as NMIMS CDOE."
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online Programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The evaluation pattern of the NMIMS Online consists of assignments, term-end exams, and project reports. All the assignments and projects are uploaded and submitted on the student portal of the university. And, the online term-end exams are conducted periodically at the end of the semester through online proctored methodologies. The online proctored method ensures fair examination practices. The online exams consist of multiple-choice questions and descriptive-type questions."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: Each subject = 30 marks Internal Assignment + 70 marks Computer-Based Test (CBT / Term-End Exam). Total 100 marks per subject. Semester-based. Exams conducted through online proctored platform (webcam + identity verification + browser restrictions); PG/MBA exam duration -2.5 hours."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Placement Support isn’t available through NMIMS Online, but pursuing online studies will offer good placement opportunities with top MNCs. College Vidya Post Admission Services help learners to get the help in preparing for interviews. In addition, they allow learners to apply through their internship & job portal."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "India Mart",
+   "logo": "/university/partners/india-mart.webp"
+  },
+  {
+   "title": "Infoedge",
+   "logo": "/university/partners/infoedge.webp"
+  },
+  {
+   "title": "Tech Mahindra",
+   "logo": "/university/partners/tech-mahindra.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Priya Mary Mathew",
+   "title": "Director, NMIMS CDOE",
+   "description": "Dr. Priya Mary Mathew, Director, NMIMS CDOE, has been serving the Higher Education sector since 2002. She has metamorphosed from a management lecturer to an academic strategist, thanks to the broad spectrum of responsibilities she has handled in almost the last two decades; an excellent teacher, ace curriculum designer, researcher, faculty developer, virtual learning instructional designer, quality manager, online facilitator, VR-enabled game designer and international alliance promoter to name a few. She was a topper throughout her academic life and was a PGCHE Gold medalist (NTU, UK) in 2009. She had the opportunity to get trained as a Quality Manager under the UK’s Quality Assurance Agency (QAA) in 2013. After this training, she steered the Academic Quality Department for Laureate Network Institute in India. PhD (in Management) led her to mentor more than 200 research scholars and do a dozen industry projects related to online consumer behavior. International projects with US, UK, Malaysia and Australia-based institutes led her to create collaborative relations. Her interest in learning experience design opened the doors for her to develop online courses. She had a teaching stint at Torrens University’s online MBA program. She affirms, “Online Education has the power to empower every individual on this planet – that too in a customized way. One just needs to design the learning experience wisely.”",
+   "photo": "/university/faculty/Dr._Priya_Mary_Mathew.webp"
+  },
+  {
+   "name": "Dr. Brinda Sampat",
+   "title": "CIQA Director – NMIMS CDOE",
+   "description": "Dr Brinda has been teaching Information Technology for over 9 years. Her areas of academic proficiency include Managing Information Systems, ERP, and E-Business. She has presented research papers at national and international conferences and published research articles in international peer-reviewed journals. She has conducted extensive research on the adoption of Information Technology in healthcare.",
+   "photo": "/university/faculty/Dr._Brinda_Sampat.webp"
+  },
+  {
+   "name": "Dr. Pradeep Pai",
+   "title": "Deputy Director, NMIMS CDOE",
+   "description": "Dr. Pradeep Pai has 32 years of academic experience, including 20 years as visiting faculty at prestigious B-schools like K J Somaiya, NMIMS-SBM, and Great Lakes. He has 20 years of industry experience in reputed manufacturing organizations like Godrej GE Appliances Ltd., Godrej & Boyce Manufacturing Company and service organizations like ACE Search Consultants Pvt. Ltd. He specializes in Operations and Quantitative subjects such as Statistical Techniques for Business, Optimisation Models, Operations Management, Project Management, Supply Chain Management, Supply Chain Analytics, and Services Operations Management. He has also authored two textbooks: ‘Operations Research – Principles and Practice’ published by Oxford University Press and ‘Project Management’ by Pearson.",
+   "photo": "/university/faculty/Dr._Pradeep_Pai.webp"
+  },
+  {
+   "name": "CA Purva Shah",
+   "title": "Assistant Professor, NMIMS CDOE",
+   "description": "Prof. Shah is a chartered accountant and DISA-qualified member of ICAI. She has 15 years of teaching experience in the areas of auditing, accounts, finance, and taxation. She has been part of the visiting faculty at ICAI, Mumbai, and was a practicing chartered accountant till 2014. Her expertise lies in the fields of financial reporting & analysis, evaluating financial reporting quality, IT audits, inter-corporate investments, and direct taxation.",
+   "photo": "/university/faculty/CA_Purva_Shah.webp"
+  },
+  {
+   "name": "Dr. Tohid Kachwala",
+   "title": "Professor",
+   "description": "Dr. Kachwala has 29 years of expertise in teaching Operations Management & Decision Sciences and has held a number of administrative posts. He has 13 years of business experience, which includes serving as the Deputy Manager of Design for Godrej. Aside from this, he has led Executive Training programs for companies of global repute, like Forbes Marshall, Tata Motors, Taj Hotels, Asian Paints, Essar Group, and Larsen & Toubro, among others. Dr. Kachwala has also received numerous prestigious teaching honors.",
+   "photo": "/university/faculty/Dr._Tohid_Kachwala.webp"
+  },
+  {
+   "name": "Dr. Achyut Vaze",
+   "title": "Associate Professor, NMIMS CDOE",
+   "description": "A visionary, Dr. Vaze is a media, management, and economics expert. The Dean and Academic Advisor of the Jyoti Dalal School of Liberal Arts at NMIMS University, he was also the Founder-Director of the MET Institute of Mass Media. He created the first-of-its-kind liberal arts-based academic program in India for FLAME. An award-winning TV programmer (6 RAPA Awards), he has produced successful TV content for Sony, Zee, Eenadu, and DD. As Senior Consultant and Divisional Manager at Tata Economic Consultancy Services in Mumbai, Dr. Vaze has had a long and fruitful career in management consulting. As a corporate trainer, he trained various organizations on effective communication, creative thinking, and innovation. He has played a crucial role as a writer, director, and producer of experimental Marathi theatre, for which he has earned accolades.",
+   "photo": "/university/faculty/Dr._Achyut_Vaze.webp"
+  },
+  {
+   "name": "Dr. Bala Krishnamoorthy",
+   "title": "Professor, Associate Dean",
+   "description": "With 30+ years of experience in teaching, institutional building, research, and consulting, Dr. Krishnamoorthy has designed and conducted Executive Development Programs for several institutions, including the School of Business Management, NMIMS University, Mumbai. A regular trainer with leading executive development training institutes, she has contributed to institutional development and has been part of the Board of Management at NMIMS University. Dr. Krishnamoorthy held positions of institutional responsibilities for Industry Partnerships, chairperson for MBA admissions, faculty in charge of career advancement, Industry Institute Partnership Cell (IIPC), etc. Her book on Environmental Management Text and Cases is published by Prentice Hall of India in its third edition in 2017.",
+   "photo": "/university/faculty/Dr._Bala_Krishnamoorthy.webp"
+  },
+  {
+   "name": "Dr. Sunny Oswal",
+   "title": "Assistant Professor, NMIMS CDOE",
+   "description": "Dr. Oswal is a Marketing and Financial Services expert focusing on the BFSI sector. His corporate experience includes working as AVP at HSBC, Senior Manager at Kotak Mahindra Bank, and Vice President at Citibank, N.A. (Wealth). His academic, research, and mentoring involvement with Tier 1 B-Schools spans over a decade. In addition, he carries out Management Development Programmes and corporate training for various profiles. He has delivered talks at numerous forums, including TEDx International. His work has appeared in several foreign and domestic publications. An active participant in academic activities, he is a former member of the Association of Indian Management Scholars (AIMS). He has garnered numerous honors for his corporate accomplishments and academic contributions.",
+   "photo": "/university/faculty/Dr._Sunny_Oswal.webp"
+  },
+  {
+   "name": "Prof. Gourav Manjrekar",
+   "title": "Professor",
+   "description": "With over 12 years of teaching experience, Mr. Gourav Manjrekar has had the privilege of working with some of the most renowned academic institutions in India, sharing his expertise in Statistics, Operations Research, and Regression Modelling. He regularly contributes as a resource person in Faculty Development Programs (FDPs) and workshops, helping educators and professionals enhance their skills. His journey in academia is rooted in dedication, continuous learning, and a passion for making education accessible to all. He is a Double Gold Medalist in M.Sc (Statistics) from Devi Ahilya Vishwavidyalaya, Indore, where he secured the top position in the university. His academic achievements also include being a university topper during his B.C.A. studies. Additionally, he has qualified for the MPPSC SET 2022 in Mathematical Science (Statistics). In addition to writing, he is a passionate digital educator. His YouTube Channel, Gourav Manjrekar, has attracted over 75,000 subscribers, offering free online tutorials to learners worldwide. Through his online presence, he strives to make learning engaging, effective, and accessible to everyone.",
+   "photo": "/university/faculty/Prof._Gourav_Manjrekar.webp"
+  },
+  {
+   "name": "Dr. Leena Kulkarni",
+   "title": "Assistant Professor, NMIMS CDOE",
+   "description": "Dr. Kulkarni has over 20 years of teaching experience. As an Assistant Professor in the Department of Statistics at NMIMS Deemed University’s Sunandan Divatia School of Science, she is a member of the Statistics board of Studies and has mentored postgraduate students on various projects. She dabbles in numerous domains, such as Reliability Theory, Applied Probability, Time Series Data Analysis, and Multivariate Data Analysis. She has worked on academic initiatives for Idea Cellular, Piramal Finance, TATA Motors Finance, TATA Steel, Reliance Communications, and the Indian Meteorology Department (Mumbai). In 2006, she initiated the co-curricular activity ‘Sankhyiki’ for undergraduate and postgraduate statistics students to bridge the gap between academics and industry.",
+   "photo": "/university/faculty/Dr._Leena_Kulkarni.webp"
+  },
+  {
+   "name": "Dr. Ashwini Sanmath",
+   "title": "Professor",
+   "description": "Dr. Ashwini Sanmath has more than 9 years of experience, which includes 2 years in Corporate Banking and 7+ years as an academician. She has presented and published research papers and case studies in National and International Journals and has also contributed to writing Book chapters. Have taught and guided projects and research to MBA students of renowned Management institutions and Universities in Pune and Bangalore in the past 7 years. Expertise in subjects like Financial Accounting, Financial Markets, Managerial Economics, Taxation, Business Law, Legal and Regulatory Aspects of Banking, and Cost and Management Accounting and have also taught Business Ethics, Risk Management, Economic Policies and Reforms. She has also been a Course coordinator, Examination Superintendent, Evaluator, and Internal and External Question Paper Setter for various Institutions and Universities in India. Always looking forward to exploring and taking the opportunity for continuous growth and excellence in the field of Management and Finance. Her interest in research lies in Finance, Financial Markets, Banking, Digital Banking, Fintech, and Cost & Financial accounting.",
+   "photo": "/university/faculty/Dr._Ashwini_Sanmath.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Mousumi Mondal",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "I'm very excited to get the opportunity to study at NMIMS."
+  },
+  {
+   "name": "Dhruvika",
+   "rating": 5,
+   "date": "2026-08-07",
+   "content": "I had a smooth and hassle-free admission experience. The entire process was well-organized, and the admission team was supportive at every step. They patiently answered all my queries tysm entire team"
+  },
+  {
+   "name": "Kiran",
+   "rating": 5,
+   "date": "2026-08-05",
+   "content": "I enrolled in an Online MBA in HR through College Vidya 1.5 years ago. The admission process was smooth, the team was supportive, and my experience has been great. Highly recommended!"
+  },
+  {
+   "name": "Raj Nandini",
+   "rating": 5,
+   "date": "2026-08-05",
+   "content": "Perfect and only recommendation for Online MBA in India."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is the degree awarded by NMIMS Online valid?",
+   "a": "Yes, the degree awarded by NMIMS Online stands valid due to its UGC recognition."
+  },
+  {
+   "q": "Does MNCs HR considers NMIMS Online Degree?",
+   "a": "Yes, the MNCs' HR considers the NMIMS Online Degree."
+  },
+  {
+   "q": "Is NMIMS Online UGC approved?",
+   "a": "Yes, NMIMS Online has gotten the approval from the University Grants Commission(UGC) to offer courses in online mode."
+  },
+  {
+   "q": "Is the online degree equivalent to the on-campus degree?",
+   "a": "Yes, an online degree has the same value as one earned on campus."
+  },
+  {
+   "q": "Are examinations conducted in online mode at NMIMS?",
+   "a": "Yes, the exams at NMIMS Online are entirely online and proctored remotely with the use of cutting-edge AI technology through the Learning Management System (LMS)."
+  }
+ ]
+}

@@ -1,0 +1,330 @@
+{
+ "slug": "paris-school-of-business",
+ "name": "Paris School of Business",
+ "establishedYear": "1974",
+ "location": "",
+ "rating": 4.5,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   2,
+   2
+  ],
+  "total": 4
+ },
+ "banner": "/university/banners/paris-school-of-business.webp",
+ "approvals": [
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "AMBA",
+   "logo": "/university/approvals/AMBA.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Paris School of Business is a highly prestigious business school established in 1972. It was originally known as the ESG Management School in Paris, France, but was renamed in 2015. Paris School of Business offers a broad spectrum of Bachelor’s, master’s, and Doctorate courses in business management and executive master’s and doctorate courses for business professionals. All the courses are imparted through the different departments of the institute."
+  },
+  {
+   "t": "p",
+   "text": "Paris School of Business is known for its focus on Art, design, and Technology. It combines interdisciplinary skills and multicultural experiences to provide high quality education. The institute aims to train students to prepare them for leadership roles in international companies. The emphasis on leadership, management, and intercultural communication equips students to address complex problems in the contemporary global economy."
+  },
+  {
+   "t": "p",
+   "text": "The academic programs at the Paris School of Business are supported by excellent professors and researchers. The faculty members of the institute cover all the areas of management with academic excellence, innovation, and social responsibility. With 52% percent of faculty members from top international universities, it provides high quality education with a global perspective. Paris School of Business is a member of the European Foundation for Management Development (EFMD) and the Association to Advance Collegiate Schools of Business (AACSB)."
+  },
+  {
+   "t": "p",
+   "text": "Paris School of Business has strategic partnerships with leading global companies and prestigious academic institutions. This partnership is highly beneficial for offering cutting-edge research, and helping students to become skilled and forward-thinking professionals. Students are prepared to excel in the diverse business landscape with highly rewarding opportunities."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Paris School of Business is a prominent school of management established in 1974.",
+  "At the time of its establishment, it was known as ESG Management School.",
+  "It was remanded as Paris School of Business in 2015.",
+  "It offers a wide range of management programs at undergraduate, postgraduate, doctorate, and executive levels.",
+  "Diversity, openness, Agility, and Boldness are the core values of the Paris School of Business.",
+  "It combines interdisciplinary skills and multicultural experiences to provide high-quality education.",
+  "Paris School of Business is accredited by the top national and international bodies.",
+  "It has AACSB eligibility and AMBA accreditation for the Master of Business Administration program.",
+  "Paris School of Business is a member of the EFMD and AACSB.",
+  "52 percent of the faculty members are from reputed international universities.",
+  "Paris School of Business has strategic partnerships with leading global companies and prestigious academic institutions.",
+  "The institute has a prestigious partnership with globally renowned universities/colleges and distinguished business organizations.",
+  "With cutting-edge research opportunities and world-class education facilities, it provides intellectual, professional, and personal development."
+ ],
+ "courses": [
+  {
+   "name": "1 Year MBA Online",
+   "fee": 1250000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "1250000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Students enrolled in the Paris School of Business get a wide range of scholarships and financial aid to support their education. The Crous State Scholarship, Paris School of Business social scholarship, Paris School of Business merit-based scholarship, and Erasmus scholarship are major scholarships available to the students. Students can also apply for State-guaranteed loan to fund their education."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Admission to the Paris School of Business is conducted can be completed online. The admission process involves several steps. Here are the steps for admission to the Paris School of Business-"
+  },
+  {
+   "t": "p",
+   "text": "Application File - This is the first step in the admission process. Applicants interested in admission must fill out the application file. It can be filled out online with the steps mentioned below:"
+  },
+  {
+   "t": "li",
+   "text": "Step 1- Visit the official website of the Paris School of Business."
+  },
+  {
+   "t": "li",
+   "text": "Step 2- Navigate to the admission option and choose the program."
+  },
+  {
+   "t": "li",
+   "text": "Step 3- Click on the apply online option and choose registration."
+  },
+  {
+   "t": "li",
+   "text": "Step 4- Generate login credentials and click on the login button."
+  },
+  {
+   "t": "li",
+   "text": "Step 5- Login using the credentials generated."
+  },
+  {
+   "t": "li",
+   "text": "Step 6- Fill out the details required by the institution and attract required documents."
+  },
+  {
+   "t": "li",
+   "text": "Step 7- Review the application file for any errors and submit it."
+  },
+  {
+   "t": "li",
+   "text": "Step 8- Proceed for the payment of application fees."
+  },
+  {
+   "t": "li",
+   "text": "Step 9- Choose the payment method and pay the application fees."
+  },
+  {
+   "t": "li",
+   "text": "Step 10- Save and take a printout of the acknowledgment slip for future reference."
+  },
+  {
+   "t": "p",
+   "text": "Application Analysis - Once the application file has been submitted, it will be analyzed by the admission committee of the Paris School of Business. It will check whether the application file has the following information and documents:"
+  },
+  {
+   "t": "li",
+   "text": "Completed application file"
+  },
+  {
+   "t": "li",
+   "text": "ID photo"
+  },
+  {
+   "t": "li",
+   "text": "Photocopy of official ID"
+  },
+  {
+   "t": "li",
+   "text": "Photocopies of diplomas and reports obtained from baccalaureate level onwards (certified and translated into French for documents in another language)"
+  },
+  {
+   "t": "li",
+   "text": "CV + cover letter"
+  },
+  {
+   "t": "li",
+   "text": "100 euros administrative fee (reduced to 50 euros for scholarship students, subject to producing the definitive scholarship certificate for the academic year in progress"
+  },
+  {
+   "t": "p",
+   "text": "Individual Interview - The application file with all the required documents will be shortlisted by the admission committee. Selected applicants will be called for the individual interview. The interview can be conducted on-site, by telephone, or by videoconference."
+  },
+  {
+   "t": "p",
+   "text": "Admission Offer - Based on the application file and individual interview, applicants will receive an admission offer from the Paris School of Business. Applicant can secure their admission by paying the admission fees."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination pattern at Paris School of Business differs based on course levels. For undergraduate and postgraduate courses, students have to appear for written tests and complete group and individual projects and assignments. For doctorate courses, students are assessed based on coursework, comprehensive examination, original research, and viva voice."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Paris School of Business is a distinguished business school. With high-quality education and cutting-edge research in Management, it has partnerships with reputed national and international companies for placement. Here are the leading placement partners of Paris School of Business- Amazon, META, Google, Samsung, Deloitte, Accenture, EY, etc."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Facebook",
+   "logo": "/university/partners/facebook.webp"
+  },
+  {
+   "title": "Samsung",
+   "logo": "/university/partners/samsung.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. David E. Kalisz",
+   "title": "Director - Expert Programs",
+   "description": "David is the author of numerous publications and has published the book \"Competitive Strategies: TV Market in Poland.\" He holds a PhD. in the discipline of management sciences and also has two master’s degrees.",
+   "photo": "/university/faculty/Dr._David_E._Kalisz.webp"
+  },
+  {
+   "name": "Dr. Mateusz Panek",
+   "title": "Professor",
+   "description": "As a university professor and a holder of three doctoral degrees, Mateusz enjoys sharing his knowledge and insights with students. He has 16+ years of experience and is currently the Head of Sustainability at Lingaro.",
+   "photo": "/university/faculty/Dr._Mateusz_Panek.webp"
+  },
+  {
+   "name": "Dr. Françoise Passerard",
+   "title": "Assistant Professor",
+   "description": "Françoise has a PhD. from HEC Paris and teaches advertising, emerging markets and qualitative research techniques and related topics.",
+   "photo": "/university/faculty/Dr._Francoise_Passerard.webp"
+  },
+  {
+   "name": "Dr. Agnieszka Ches",
+   "title": "Associate Professor",
+   "description": "Ches is a Business Trainer, Business Consultant and Researcher. Her work on e-commerce, marketing, strategy, etc. has been featured in many renowned publications.",
+   "photo": "/university/faculty/Dr._Agnieszka_Ches.webp"
+  },
+  {
+   "name": "Dr. Nima Fazeli",
+   "title": "Assistant Professor",
+   "description": "He teaches Financial Analysis, International Finance, Quantitative Methods and related topics. His research has been presented at numerous national and international Economics and Finance conferences.",
+   "photo": "/university/faculty/Dr._Nima_Fazeli.webp"
+  },
+  {
+   "name": "Dr. Hatem Rijba",
+   "title": "Assistant Professor",
+   "description": "Hatem Rjiba is a Professor in Finance. Hatem has published several articles in high-ranked academic journals such as the Journal of Banking & Finance, and the Journal of Corporate Finance, among others.",
+   "photo": "/university/faculty/Dr._Hatem_rijba.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2025-01-07",
+   "content": "The executive program at the Paris School of Business offers remarkable flexibility to balance work-life balance. I have obtained my DBA degree while meeting my professional commitments."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2025-01-07",
+   "content": "The faculty support of the Paris School of Business is exceptional. As the institute has 52 % international professors, I got global exposure while pursuing my bachelor’s degree in Marketing and Communication."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2025-01-07",
+   "content": "I am enrolled in the Master of Marketing and Data at the Paris School of Business. The courses easily bridge together marketing and data with a highly industry-specific curriculum."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2025-01-07",
+   "content": "Paris School of Business is a prominent management school. My experience while pursuing a Master of Finance was exceptional. I got a highly conducive learning environment with a focus on innovation, technology, and regulations in finance management."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the courses offered by the Paris School of Business?",
+   "a": "Paris School of Business offers a wide range of bachelor’s, master’s, and doctorate courses in business management. It also provides executive programs for business professionals."
+  },
+  {
+   "q": "What are the accreditations of the Paris School of Business?",
+   "a": "Paris School of Business is accredited by the European Foundation for Management Development (EFMD), Association to Advance Collegiate Schools of Business (AACSB), and Association Member Benefits Advisors (AMBA), L’accr&eacute;ditation BGA."
+  },
+  {
+   "q": "Are student reviews available for Paris School of Business?",
+   "a": "Yes, Paris School of Business's student feedback is listed on the Student Review Portal by College Vidya , spanning academics, LMS quality, placement support, and overall experience. You can browse these reviews directly, sourced from students who've actually enrolled. Since universities can't pay to remove unfavorable reviews here, the ratings reflect genuine experiences."
+  },
+  {
+   "q": "What are the documents required for admission to the Paris School of Business?",
+   "a": "Candidates seeking admission to the Paris School of Business are required to have the following documents mentioned below- Completed application file ID photo Photocopy of official ID Photocopies of diplomas and reports obtained from baccalaureate level onwards (certified and translated into French for documents in another language) CV + cover letter 100 euros administrative fee (reduced to 50 euros for scholarship students, subject to producing the definitive scholarship certificate for the academic year in progress"
+  },
+  {
+   "q": "When was the Paris School of Business established?",
+   "a": "Paris School of Business was established in 1972 as ESG Management School. It was renamed in 2015."
+  }
+ ]
+}

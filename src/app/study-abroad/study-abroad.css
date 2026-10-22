@@ -188,7 +188,7 @@
 .sa-hero-lead,
 .sa-hero-tail {
   display: block;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, Garamond, "Times New Roman", serif;
   /* With the ellipse gone this is the only thing lifting the text off the
      footage. It is kept because it hugs the glyphs rather than covering the
      frame — it is not the cloud that was objected to, and removing it as well
@@ -201,6 +201,7 @@
 
 .sa-hero-lead {
   color: #e8253c;
+  font-style: italic;
   font-weight: 700;
   font-size: clamp(1.75rem, 3.9vw, 3.5rem);
   line-height: 1.12;
@@ -1222,15 +1223,16 @@
 
 /* ── Top Pathway Programs ──
    The one dark band on an otherwise light page, which is what makes it read as
-   the centre of it. The gradient is the app-switcher strip's own palette from
-   navbar.css rather than a new maroon, so the page's two dark surfaces are the
-   same colour. */
+   the centre of it. The blues are the app-switcher strip's own palette from
+   navbar.css (#003882 glow, #002d66 mid, #002049 corners) — the maroon it
+   briefly wore went on the client's word (2026-08-25), so the page's two dark
+   surfaces are the same colour again. */
 .sa-pathways {
   background: radial-gradient(
     120% 130% at 50% 0%,
-    #7a1c10 0%,
-    #43100a 48%,
-    #2b0a06 100%
+    #003882 0%,
+    #002d66 48%,
+    #002049 100%
   );
   padding: 4rem 1.5rem 4.5rem;
   color: #fff;

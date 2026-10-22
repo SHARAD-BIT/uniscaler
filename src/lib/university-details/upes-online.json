@@ -1,0 +1,483 @@
+{
+ "slug": "upes-online",
+ "name": "UPES Online",
+ "establishedYear": "2003",
+ "location": "Dehradun, Uttarakhand",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   1,
+   1,
+   3,
+   35,
+   110
+  ],
+  "total": 150
+ },
+ "banner": "/university/banners/upes-online.webp",
+ "approvals": [
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "UGC-DEB",
+   "logo": "/university/approvals/ugc-deb-logo.jpg"
+  },
+  {
+   "title": "NAAC A",
+   "logo": "/university/approvals/logo-naac-a.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "University of Petroleum and Energy Studies (UPES) was established in 2003. UPES is the division that provides degree courses in the online mode. The university is approved by UGC-DEB to offer courses in the online learning mode."
+  },
+  {
+   "t": "p",
+   "text": "UPES Online is approved by UGC-DEB to offer online degree courses. It has also been accredited by NAAC and maintains all the standards and guidelines laid down by the Centre for Internal Quality Assurance (CIQA)."
+  },
+  {
+   "t": "p",
+   "text": "The university aims to help working professionals upgrade their professional skills and knowledge. The programs offered by UPES Online are focused on industry domains and specializations that are rapidly growing and are high in demand. The university focuses on the domains of energy, health & industrial safety, high-end IT solutions, logistics & supply chain, among others."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1 year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "UPES Online has 5500+ alumni working not just in India but across 17 countries with top organizations. The university through its courses and cutting-edge curriculum helps students and working professionals enter into core industry domain areas and the emerging sectors of the economy."
+  },
+  {
+   "t": "p",
+   "text": "The learning methodology of UPES mainly includes self-learning through the study material provided by the college like e-books, recorded videos, papers, journals, pdfs, and more. The university has designed the curriculum in a way that is flexible which makes it easier for working professionals to learn, network, and grow."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Rankings",
+   "content": "UPES has been top-ranked by NIRF and received 5 Star in QS Global Rankings"
+  },
+  {
+   "title": "Corporate Network",
+   "content": "UPES has a strong industry presence with 33 big Corporates as partners"
+  },
+  {
+   "title": "Skilling Programs",
+   "content": "UPES offers various skilling programs in unique and industry relevant domains"
+  }
+ ],
+ "facts": [
+  "UPES Online is UGC-DEB approved and NAAC accredited.",
+  "The university offers courses in the blended online learning mode.",
+  "The online courses offered by UPES Online are in the Management domains with various unique specializations.",
+  "UPES Online offers skilling programs in the domains of Science and technology, Management, and especially Energy Studies.",
+  "For Self-Learning Management (SLM), the university provides e-learning content in the form of pdf, e-books, papers & journals, recorded videos, and much more.",
+  "There are live interaction sessions as well conducted by the experienced faculty of UPES and professionals from relevant industries."
+ ],
+ "courses": [
+  {
+   "name": "Certificate Program in Project Management",
+   "fee": 25000,
+   "duration": "3 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "25000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 175000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "43750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "43750"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA Dual",
+   "fee": 175000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "43750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "43750"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 150000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 150000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "25000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25000"
+    }
+   ]
+  },
+  {
+   "name": "Online PG Diploma & Certificate",
+   "fee": 75000,
+   "duration": "10 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "75000"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 93500,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "93500"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Many colleges and universities today offer various payment options to make it easier for students to pay their course fees, including education loan schemes with convenient EMI installments. While UPES does not provide such payment options directly, there is a platform called College Vidya Portal that helps students secure admission to the university and pay their academic fees through easy EMI installments. College Vidya is an unbiased online platform for online and distance education, offering flexible payment solutions for students."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission procedure for taking admission in UPES is through the online mode. The fresh admission generally starts in the month of January of every year. One can easily apply directly for admission as there is no entrance exam required to take admission in UPES. The admission procedure for 2026 for the online courses at UPES Online is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Visit the official website of UPES Online and click on &ldquo; Apply Now &rdquo;."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Now fill in your Education and Other details"
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Lastly, fill in your professional details (if any) and"
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Click on Submit."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "Does UPES Online offer a refund? Yes, UPES Online offers a refund, which policy is linked with the UGC; however, cancel 15 days or more before the admission closing date for a 100% refund. Cancellations within 15 days before get 90%, within 15 days after get 80%, within 16 to 30 days after get 50%, and after 30 days receive no refund. Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examinations at UPES Online are conducted in the online mode and are monitored and proctored live through various AI services."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 30% Internal Assessment (assignments, quizzes) + 70% End-Term Exam. All exams conducted online in remote proctored mode via the CodeTantra platform. Semester-based system."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "The globally recognized online degree earned from UPES provides ample career opportunities to its students. With a wide network of well-placed alumni, this university’s name in the resume enhances your employment opportunities in more than 21 countries. Moreover, a hike of 40% in the current CTC is observed for professionals upon completion of a program from UPES Online. The outcomes of this university’s courses have proved to be a game changer for many learners in their professional journey."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Naveen Agarwal",
+   "title": "Assistant Professor",
+   "description": "Dr. Naveen Agarwal is an Assistant Professor with over 12 years of industry experience holding a B.Tech, an MBA in Power Management, and a Ph.D. He teaches courses related to Energy Economics, Finance, Power Trading, and Renewable Energy.",
+   "photo": "/university/faculty/Dr._Naveen_Agarwal.webp"
+  },
+  {
+   "name": "Dr. Atul Rawat",
+   "title": "Assistant Professor",
+   "description": "Dr. Atul Rawat is an Assistant Professor with over 16 years of experience in energy research and consulting and brings a wealth of knowledge and expertise to his role. Dr. Rawat holds a Ph.D. in energy management and postgraduate degrees in business administration and Mathematics. His research interests lie in the areas of energy, sustainable development, and carbon emissions. Delivered lectures in training sessions for organizations like IOCL, HPCL, and Accenture.",
+   "photo": "/university/faculty/Dr._Atul_Rawat.webp"
+  },
+  {
+   "name": "Dr. Sumeet Gupta",
+   "title": "Professor, Financial Management",
+   "description": "Dr. Sumeet Gupta is a highly accomplished Professor and Program Lead with over 23 years of experience in teaching and research. Dr. Gupta holds an impressive educational background, including a Ph.D. in Derivatives, a Master of Finance and Control (M.F.C), and additional degrees such as a Chartered Business Administrator (CBA) from Canada, Masters in Financial Planner from the U.K., and Masters in Financial Consultants from the USA. I specialize in finance, risk management, project finance, supply chain, infrastructure finance, oil and gas, and banking. A Subject Matter Expert for Tata Consultancy in Risk Management.",
+   "photo": "/university/faculty/Dr._Sumeet_Gupta.webp"
+  },
+  {
+   "name": "Vikas Kumar",
+   "title": "Assistant Professor, Logistics & Supply Chain Management",
+   "description": "Vikas Kumar is an experienced Assistant Professor With a strong educational background, holding a B.Tech. and MBA. With 20 years of combined teaching and industry experience, Mr. Kumar brings a wealth of knowledge to his role. He has qualified for the UGC-NET (Management) certification. Has previously worked with GLAITM (now GLA University), a UPTU-affiliated college, before joining UPES.",
+   "photo": "/university/faculty/Vikas_Kumar.webp"
+  },
+  {
+   "name": "Dr. Rajesh Gupta",
+   "title": "Professor, Operations Management / Project Management",
+   "description": "A highly experienced Professor, Dr. Gupta brings 26 years of industry and 12 years of academic experience. He is a graduate in Textiles Technology and holds a Ph.D. degree. His research interests lie in Quality Management and Operations Management. Has been associated with the Textiles Committee, Ministry of Textiles and Govt. of India for consultancy projects.",
+   "photo": "/university/faculty/Dr._Rajesh_Gupta.webp"
+  },
+  {
+   "name": "Dr. Arvind Kumar Jain",
+   "title": "Sr. Associate Professor, Marketing Management",
+   "description": "Dr. Arvind Kumar Jain has an impressive background in both industry and academia, with 25 years of experience. His educational qualifications include a PhD, PGDBM, and BSc in Life Science and an LLB degree. A distinguished researcher specializing in Marketing & Allied Areas. Experienced in online education delivery, research supervision, e-learning, and institution-building activities.",
+   "photo": "/university/faculty/Dr._Arvind_Kumar_Jain.webp"
+  },
+  {
+   "name": "Dr. Anil Kumar",
+   "title": "Professor, Infrastructure Management",
+   "description": "Dr. Anil Kumar is a distinguished Professor with over 35 years of experience in the industry. Dr. Kumar's educational background is extensive, encompassing a wide range of qualifications including a B.Sc. degree in Electrical Engineering, an M. Tech in Energy & Environment Management, and multiple postgraduate degrees and diplomas in various fields including Finance, Economics, Marketing, HRM, Insurance Management, Urban Planning, and International Business.",
+   "photo": "/university/faculty/Dr._Anil_Kumar.webp"
+  },
+  {
+   "name": "Navdeep Bhatnagar",
+   "title": "Assistant Professor, Oil & Gas Management",
+   "description": "An Assistant Professor with 15 years of professional experience, Dr. Navdeep Bhatnagar holds a Master's degree in Energy Trading and is currently pursuing a Ph.D. in Management, showcasing his dedication to advancing their knowledge and expertise in the academic realm.",
+   "photo": "/university/faculty/Navdeep_Bhatnagar.webp"
+  },
+  {
+   "name": "Dr. Anita Sengar",
+   "title": "Associate Professor, Marketing Management",
+   "description": "Dr. Anita Sengar is an accomplished academician and Associate Professor with a strong educational background and 17 years of experience. She holds a Ph.D. in Management with a specialization in Rural Marketing from the prestigious Indian Institute of Technology, Roorkee, India. An expert in the field of Marketing and Customer Relationship Management (CRM). Has completed the Laureate Certification course in Online, Hybrid, and Blended Education.",
+   "photo": "/university/faculty/Dr._Anita_Sengar.webp"
+  },
+  {
+   "name": "Dr. Kabir Sharma",
+   "title": "Assistant Professor, Financial Management",
+   "description": "Dr. Kabir Sharma is an Assistant Professor with over 7 years of experience in both industry and academia. Holding a Ph.D. in Finance, he brings a wealth of knowledge to his role. His research interests lie in the field of Development Economics, focusing on areas such as taxation, accounting, finance, and general management. He is an expert in direct and indirect taxation.",
+   "photo": "/university/faculty/Dr._Kabir_Sharma.webp"
+  },
+  {
+   "name": "Dr. Rajesh Tripathi",
+   "title": "Assistant Professor, Marketing Management",
+   "description": "Dr. Rajesh Tripathi is an accomplished academician and media professional with over 18 years of experience. Dr. Tripathi's educational background is extensive, as he has obtained a Ph.D. in Strategic Management. Additionally, he holds an MBA in Marketing, a Master's degree, and a Post Graduate Diploma in Mass Communication and Journalism.",
+   "photo": "/university/faculty/Dr._Rajesh_Tripathi.webp"
+  },
+  {
+   "name": "Dr. Deepak Bangwal",
+   "title": "Assistant Professor, Human Resource Management",
+   "description": "Dr. Deepak Bangwal is an Assistant Professor in the Core Cluster/School of Business. With a Ph.D. in his field, Dr. Bangwal brings 11 years of experience to his role. His research interests primarily lie in HRM (Human Resource Management) and HR Analytics.",
+   "photo": "/university/faculty/Dr._Deepak_Bangwal.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Omkar Sharma vats",
+   "rating": 4,
+   "date": "2026-07-24",
+   "content": "⭐⭐⭐⭐⭐ I had a great experience with College Vidya. Their counselling team guided me throughout the entire admission process and helped me secure admission to UPES University."
+  },
+  {
+   "name": "Udit Narayan Das",
+   "rating": 5,
+   "date": "2026-05-14",
+   "content": "Easy to admission process and one of the best online MBA University for power management for Power sector employees/candidate."
+  },
+  {
+   "name": "Adnan Hussain",
+   "rating": 5,
+   "date": "2026-05-12",
+   "content": "The admission process was very smooth. Simran mam of college vidya helped in every step possible pre and post admission."
+  },
+  {
+   "name": "ROhit kumar",
+   "rating": 5,
+   "date": "2026-01-28",
+   "content": "That was so nice experience with so nice.the learning platform is to easy and very helful.overful i am with my decision."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Can I pursue two degree courses at the same time?",
+   "a": "No, as per the regulations of the university, students can not pursue two degree courses at the same time. However, the students can pursue one degree program and one short-term online course at the same time."
+  },
+  {
+   "q": "Is UPES Online learning approved by UGC?",
+   "a": "Yes, UPES Online has been approved by UGC and UGC-DEB to offer courses in online mode."
+  },
+  {
+   "q": "Is UPES accredited by NAAC and ranked by NIRF?",
+   "a": "Yes, UPES has NAAC accreditation and has been ranked by NIRF among the top 100 universities. The Business School of UPES has been ranked 41 by NIRF."
+  },
+  {
+   "q": "Are faculty members available other than live classes?",
+   "a": "Yes, you can reach the faculty on any day (except Monday) other than weekend live classes by booking a time slot in advance with the particular faculty member you wish to consult. You can go to the Help Desk and raise a ticket or request your program manager."
+  },
+  {
+   "q": "Are short-term skilling programs UGC approved?",
+   "a": "The short-term skilling programs need not be specifically approved by UGC, instead, they need to be approved by the Internal Statutory Body of the University."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part Time MCA Part Time MTech Part Time MCom Part Time MSc Part Time MA Part Time BBA Part Time BCA Part Time BTech Part Time BCom Part Time BSc Part Time BA Part Time"
+  },
+  {
+   "q": "Is there a fixed duration for online UG and PG courses?",
+   "a": "Every course has a minimum and maximum time period between which the students can complete the program. For undergraduate programs, the minimum duration is 3 years and the maximum duration is 5 years. For postgraduate programs, the minimum duration is 2 years and the maximum duration is 4 years."
+  }
+ ]
+}

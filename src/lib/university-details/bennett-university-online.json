@@ -1,0 +1,309 @@
+{
+ "slug": "bennett-university-online",
+ "name": "Bennett University Online",
+ "establishedYear": "2016",
+ "location": "Greater Noida, Uttar Pradesh",
+ "rating": 4.4,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "total": 0
+ },
+ "banner": "/university/banners/bennett-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "BCI",
+   "logo": "/university/approvals/bar-council-of-india-bci-logo.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The university’s online programs are flexible, accessible, and give an opportunity to develop into careers across India and beyond. In 2016, The Times Group, a reputable media company with over 185 years, founded Bennett University. To take the Indian higher education ecosystem up a notch with innovative education, technology, and entrepreneurship-based approaches, the university was created. Located in Greater Noida, Uttar Pradesh, Bennett University is considered one of the premier private universities in the country since its inception."
+  },
+  {
+   "t": "p",
+   "text": "In addition to undergraduate, postgraduate, doctoral, and online degrees, it offers courses in management, engineering, media, law, design, artificial intelligence, and liberal arts. The Centre for Distance and Online Education (CDOE) here focuses on high-quality online education through an online platform by Bennett Online. UGC-entitled and nationally recognized and NEP-compliant online courses legitimize and give the programs national recognition and credibility amongst a large and diverse population. Currently, Bennett Online teaches online MBA and Online BBA programs with specialization based on the trend of the industry, such as Finance, Marketing, HRM, Business Analytics, and Logistics & Supply Chain Management. Offers live, video-recorded lectures, digital learning materials, online assessments, academic assistance, and specialised student services."
+  },
+  {
+   "t": "p",
+   "text": "The university offers experiential learning, industry projects, and mentorship and training for the workforce. It collaborates with corporate collaborators and recruiters to provide internships and placements. Students have a digital infrastructure, an AI-enabled learning ecosystem, and a flexible learning timetable that would ensure working professionals can pursue studies without interrupting their jobs. A notable online university in India is Bennett University."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Online programs are UGC-entitled and nationally recognized.",
+  "Education programs have been created as per NEP-aligned education standards.",
+  "It provides Online MBA and Online BBA programs.",
+  "100% online learning with live and recorded classes.",
+  "Established in 2016 by The Times Group. Its campus is in Greater Noida, Uttar Pradesh, India.",
+  "Provides undergraduate, postgraduate, doctoral, and online offerings. Bennett Online is the Centre for Distance and Online Education (CDOE).",
+  "To enhance student engagement, an AI-enabled learning platform with industry-relevant skills and a practical exposure curriculum can be developed by the",
+  "Over 90% of the faculty members hold Ph.D. qualifications.",
+  "The university claims partnerships with over 1200 placement companies.",
+  "Bennett University offers EMI and flexible fee payment options.",
+  "Defence personnel, alumni, and differently-abled learners are eligible for scholarships.",
+  "A student portal dedicated to learning resources and academic tracking.",
+  "High emphasis on employability, leadership, and career development.",
+  "Provides live interaction sessions with faculty and industry professionals.",
+  "Assignment and quiz structure, and a semester assessment framework.",
+  "Bennett University offers students a recognized degree upon successful completion."
+ ],
+ "courses": [
+  {
+   "name": "Online BBA",
+   "fee": 150000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "150000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "1500"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "800"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 210000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "210000"
+    },
+    {
+     "type": "Application Fee (Non-refundable)",
+     "fee": "1500"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "800"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "10000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Bennett University has flexible fee submission as well as no-cost EMI facilities for students attending online programs. The Online BBA program fee is about ₹25,000 per semester, while the Online MBA fee is about ₹52,500 per semester. Students can select semester-wise payment options to minimize cost. Defence personnel, Bennett alumni, and differently-abled learners will also benefit from scholarship benefits. EMI facilities ensure that working professionals and students can continue to study at higher education without paying the full fee upfront. Additional charges may apply for examinations, re-registration, or payment gateway services."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission process of online degree programs at Bennett University is simple, transparent, and 100% online."
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Students would be able to apply via the Bennett Online Admission Portal by filling out the application form online and providing the appropriate paperwork."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Class 12 (minimum qualifying percentage) is required for Online BBA admissions. Most need a minimum of 50% marks from a recognized university for their bachelor’s degree for Online MBA admissions."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: For professionals, as well as candidates new to studying, one can apply, as well, for online programs."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Uploading academic documents, identification, and a passport-size photograph. Payment of the application fee."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Checking documentation by the admissions committee."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: Payments for registering for a semester or annual enrollment. Admission verification and entrance to the student learning portal."
+  },
+  {
+   "t": "p",
+   "text": "Step 7: Students are provided their login, student ID, and orientation contact information after enrollment."
+  },
+  {
+   "t": "p",
+   "text": "Similar to other schools, Bennett University also provides counseling support, explaining the eligibility, specialization, fee structure, and career opportunities for new students."
+  },
+  {
+   "t": "p",
+   "text": "At Bennett University, the college carries forward a learner-friendly admission policy that includes payment methods and financial aid. Moreover, it even hosts EMI support to guarantee good, cost-effective enrollment."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "Bennett University’s examination system is intended to assess both conceptual understanding and practical application. Students are assessed through assignments, quizzes, projects, case studies, and semester-end examinations. The structure of the online programs is typically semester-based with continuous evaluation throughout the academic session. Examinations are conducted online based on university rules. Students need to maintain academic performance through assignments and participation in learning activities. The curriculum promotes students’ skills development and industry-specific projects, practical experience, and skill-based assessments with industry-relevant projects such as internships or other project-based skill-based tests that will contribute to increasing employability and preparedness for the workplace."
+  },
+  {
+   "t": "p",
+   "text": "Three mandatory components: (1) Formative (Continuous) Assessment = 30% weightage, (2) Summative (End Term) Assessment = 70% weightage. Summative exam = 2.5 hours, structured as 40% MCQs + 30% Descriptive Questions. Two formats: Centre-based (at BU campus) OR Remote Online Proctored Exam (\"At my location\" option). Minimum 40% aggregate required to pass. 75% engagement/attendance required."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Bennett University offers placement and career support at Bennett University. This includes business cooperation, job services, career advice, peer training and speaking with employers. The university is associated with corporations like Google, Amazon Web Services, Cisco, Dell, Coca-Cola, Capgemini and BNY Mellon and the like. Students are assisted in researching r&eacute;sum&eacute;s, interviewing candidates, and scheduling career counseling appointments and industry consult sessions. The bachelor's program focuses on employability competency and professional skills, as well as on industrial-style training and experiential learning. There are some placement options, depending on students’ performance and specialization and current market conditions."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "CISCO",
+   "logo": "/university/partners/CISCO.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "CocaCola",
+   "logo": "/university/partners/CocaCola.webp"
+  },
+  {
+   "title": "Dell",
+   "logo": "/university/partners/Dell.webp"
+  },
+  {
+   "title": "Capgemini",
+   "logo": "/university/partners/capgemini.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Prof. (Dr.) Nidhi Sinha",
+   "title": "Associate Professor",
+   "description": "Dr. Nidhi Sinha has more than 20 years of rich experience in teaching, research, and training. She is an Associate Professor of Marketing and Communication in the School of Management at Bennett University. She specializes in the areas of Brand Management, Marketing Communication, Internet and Digital Marketing, and Social Media Marketing.",
+   "photo": "/university/faculty/prof-dr-nidhi-sinha.webp"
+  },
+  {
+   "name": "Dr. Monika Sharma",
+   "title": "Assistant Professor",
+   "description": "Dr. Monika Sharma’s accomplishments are highlighted by securing an Indian Patent for an innovative system aimed at preventing real-time accidents. She earned her Ph.D. from the prestigious Indian Institute of Technology (IIT) Delhi, highlighting her deep expertise in the field.",
+   "photo": "/university/faculty/dr-monika-sharma.webp"
+  },
+  {
+   "name": "Dr. Pratibha Biswas",
+   "title": "Assistant Professor",
+   "description": "Dr. Pratibha has a decade worth of experience in teaching English Language, Literature and Communication to undergraduate and graduate students. She earned her MPhil and PhD from the Department of English, Jamia Millia Islamia, New Delhi.",
+   "photo": "/university/faculty/dr-pratibha-biswas.webp"
+  },
+  {
+   "name": "Prof. (Dr.) Bhuwandeep",
+   "title": "Associate Professor",
+   "description": "Dr. Bhuwandeep is an Associate Professor at the School of Management, Bennett University. His academic journey began with a B.Tech (Hons.) from the Indian Institute of Technology, Kharagpur, followed by an MBA from the Indian Institute of Management, Bangalore.",
+   "photo": "/university/faculty/prof-dr-bhuwandeep.webp"
+  },
+  {
+   "name": "Prof. (Dr.) Ruby Sangar",
+   "title": "Associate Professor",
+   "description": "Dr. Ruby Sangar has over 12 years of experience in teaching and research. She completed her Ph.D. in OB and HRM from IIT Roorkee. She has worked with reputed educational universities like JIIT Noida, Symbiosis International University, Noida Campus as Area Chair – HR, BML Munjal University (A Hero Group Initiative), Amity University etc.",
+   "photo": "/university/faculty/prof-dr-ruby-sangar.webp"
+  }
+ ],
+ "reviews": [],
+ "faqs": [
+  {
+   "q": "What is the eligibility for an Online MBA?",
+   "a": "Applicants require a bachelor’s degree with at least 50% marks."
+  },
+  {
+   "q": "Does Bennett University offer EMI?",
+   "a": "Students have no-cost EMI and semester-wise fee payment options."
+  },
+  {
+   "q": "Is Bennett University Online UGC approved?",
+   "a": "Bennett University online programmes are UGC-entitled and recognized in India."
+  },
+  {
+   "q": "Which online courses does Bennett University offer?",
+   "a": "The university currently offers an Online MBA and an Online BBA."
+  },
+  {
+   "q": "Is the Online MBA suitable for working professionals?",
+   "a": "Yes, the program is designed specifically for working professionals and flexible learning."
+  },
+  {
+   "q": "Are live classes available in online programs?",
+   "a": "Yes, students get access to live interactive classes along with recorded lectures."
+  },
+  {
+   "q": "Does Bennett University provide placement support?",
+   "a": "Yes, the university offers career services, placement assistance, and industry mentorship."
+  },
+  {
+   "q": "Who founded Bennett University?",
+   "a": "The Times Group established Bennett University."
+  }
+ ]
+}

@@ -1,0 +1,452 @@
+{
+ "slug": "birchwood-university",
+ "name": "Birchwood University Online",
+ "establishedYear": "1991",
+ "location": "",
+ "rating": 4.6,
+ "reviewStats": {
+  "stars": [
+   0,
+   1,
+   1,
+   7,
+   18
+  ],
+  "total": 27
+ },
+ "banner": "/university/banners/birchwood-university.webp",
+ "approvals": [
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "CIE",
+   "logo": "/university/approvals/CIE_-_Commission_of_Independent_Education.webp"
+  },
+  {
+   "title": "FAPSC",
+   "logo": "/university/approvals/FAPSC_-_Florida_Association_of_Postsecondary_Schools_and_Colleges.webp"
+  },
+  {
+   "title": "CECU",
+   "logo": "/university/approvals/CECU_-_Career_Education_Colleges_and_Universities.webp"
+  },
+  {
+   "title": "QAHE",
+   "logo": "/university/approvals/QAHE_-_Quality_Assurance_in_Higher_Education.webp"
+  },
+  {
+   "title": "Florida Department of Education",
+   "logo": "/university/approvals/Florida_Department_of_Education.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Birchwood University is a prominent higher education institution located in Orlando, Florida, USA. It is recognized as one of the most prestigious universities in the global landscape. Birchwood University offers a continuum of programs ranging from bachelor's courses to doctorate courses. It is one of the best global online universities that offers access to world-class education that can be pursued from anywhere."
+  },
+  {
+   "t": "p",
+   "text": "Birchwood University offers an industry-driven curriculum under the guidance and mentorship of highly experienced faculty who have substantial industry experience along with teaching. The university employs a multidisciplinary approach to education. Students from across the world benefit from standardized and high-quality education regardless of their geographical location. Birchwood University offers highly industry-focused programs such as management courses, Data Science, Cyber Security, and Software Development which majorly cater to the present industry requirements."
+  },
+  {
+   "t": "p",
+   "text": "Birchwood University is accredited and authorized by the Commission of Independent Education (CIE) which demonstrates the standard and high-quality education. The courses at Birchwood University are committed to research-based education that offers ample opportunities to explore, innovate, and contribute to the body of knowledge."
+  },
+  {
+   "t": "p",
+   "text": "The faculty members of Birchwood University are highly experienced with decades of experience in both online and on-campus education that ensures an effective online learning environment for the students. It prepares students to transform the future workforce with leadership roles in some of the top industries in the world."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Online Degree Acceptance",
+   "content": "Online degrees earned from a government-approved university, just like a regular degree, are accepted by the top recruiters worldwide including government & private sectors."
+  },
+  {
+   "title": "Value of Online Degree",
+   "content": "An online degree from a government-approved university holds similar recognition in the industry as that of a regular degree. Thus, it is equally valuable when considered for a job or higher education."
+  },
+  {
+   "title": "Quality of Education",
+   "content": "The quality of education offered in online programs is of the same standard as offered in an on-campus program. Be it curriculum, faculty members, evaluation methods, practical sessions, online & on-campus programs follow similar standards of quality."
+  }
+ ],
+ "facts": [
+  "Birchwood University is a highly accredited and authorized educational institution located in Florida, USA.",
+  "Birchwood University is accredited by the Commission of Independent Education (CIE).",
+  "Birchwood University positions itself as a Global Online University.",
+  "It offers highly industry-focused programs that align with the evolving professional landscape.",
+  "It focuses on research-based education that promotes exploration, innovation, and contribution to the body of knowledge.",
+  "Birchwood University offers a continuum of programs ranging from bachelor's courses to doctorate courses.",
+  "It provides highly experienced faculty who have significant experience in Online as well as On-Campus education.",
+  "The curriculum of Birchwood University is industry-driven with a multidisciplinary nature.",
+  "It also offers programs developed in collaboration with industry partners.",
+  "Birchwood University focuses on personalized support to ensure a smooth educational journey.",
+  "It focuses on the holistic development of the students with theoretical along practical education that can be applied in real-world situations."
+ ],
+ "courses": [
+  {
+   "name": "Online IDBA (MBA + DBA)",
+   "fee": 800000,
+   "duration": "2 - 3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "800000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 884409,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "884409"
+    }
+   ]
+  },
+  {
+   "name": "Online Executive MBA",
+   "fee": 403211,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "403211"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "17079"
+    },
+    {
+     "type": "Full Fee",
+     "fee": "403211"
+    },
+    {
+     "type": "Scholarship",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 403211,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "403211"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "17079"
+    },
+    {
+     "type": "Full Fee",
+     "fee": "403211"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctorate Course",
+   "fee": 600000,
+   "duration": "2 - 3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Online DBA",
+   "fee": 600000,
+   "duration": "2 - 3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "600000"
+    }
+   ]
+  },
+  {
+   "name": "Online Global MBA",
+   "fee": 403211,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "403211"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "17079"
+    },
+    {
+     "type": "Full Fee",
+     "fee": "403211"
+    },
+    {
+     "type": "Scholarship",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Online Master of Science",
+   "fee": 884409,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "884409"
+    }
+   ]
+  },
+  {
+   "name": "1 Year MBA Online",
+   "fee": 403211,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "403211"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "17079"
+    },
+    {
+     "type": "Full Fee",
+     "fee": "403211"
+    }
+   ]
+  },
+  {
+   "name": "BBA+MBA Integrated",
+   "fee": 750000,
+   "duration": "30 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "750000"
+    }
+   ]
+  },
+  {
+   "name": "Online Doctoral Program (PhD)",
+   "fee": 600000,
+   "duration": "3-5 Years",
+   "feeDetails": []
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Birchwood University understands the concerns of students while paying their course fees. Despite the highly affordable fee structure, most of the students may not be able to make one-time payments of their fees. To address this problem, Birchwood University has several payment plans and financial assistance to its students. Students can pay their course fees in easy installments without the burden of paying it once. The university does not charge any interest on behalf of the payment plans it provides to the students."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Students interested in admission at Birchwood University can secure their seats by following these easy and simple admission processes mentioned below-"
+  },
+  {
+   "t": "li",
+   "text": "Online Application - The admission process at Birchwood University begins with the online application. Before filling out the application form, you must go through the admission requirements and be ready with the required documents. You can follow the steps to fill out the application form-"
+  },
+  {
+   "t": "li",
+   "text": "Step 1- Visit the official website of Birchwood University."
+  },
+  {
+   "t": "li",
+   "text": "Step 2- Select the Birchwood Programs section."
+  },
+  {
+   "t": "li",
+   "text": "Step 3- Select your desired program."
+  },
+  {
+   "t": "li",
+   "text": "Step 4- Click on the registration for admission."
+  },
+  {
+   "t": "li",
+   "text": "Step 5- Fill out the application form after registration."
+  },
+  {
+   "t": "li",
+   "text": "Step 6- Attach the required documents."
+  },
+  {
+   "t": "li",
+   "text": "Step 7- Review the application form and submit it."
+  },
+  {
+   "t": "li",
+   "text": "Step 8- Proceed for the payment of application fees."
+  },
+  {
+   "t": "li",
+   "text": "Step 9- Choose the payment gateway and pay the application fees."
+  },
+  {
+   "t": "li",
+   "text": "Step 10- Once the Payment is complete your application is successfully submitted."
+  },
+  {
+   "t": "li",
+   "text": "Online Assessment - Once the online application form has been successfully submitted, the admission committe of Birchwood University will go through the application form and check whether you fulfill all the requirements."
+  },
+  {
+   "t": "li",
+   "text": "Personal Interview - After a successful assessment, you will be invited for a personal interview. The purpose of the interview is to know your educational aspirations, plans, and why you want to enroll in a particular program at Birchwood University."
+  },
+  {
+   "t": "li",
+   "text": "Entry Documents Verication - After the Personal Interview, the university will verify your entry documents."
+  },
+  {
+   "t": "li",
+   "text": "Final Admission Decision - After the verification of the entry documents, final admission will be made by the university."
+  },
+  {
+   "t": "li",
+   "text": "Start the Program - If selected for admission in the admission decision, you can start the program."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Equivalance of degree obtained through ODL and Online mode with degree obtained through conventional mode Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The examination at Birchwood University is conducted through written tests, term papers, and projects. The performance of the students is assessed based on various parameters. The university elevates students based on their performance in case studies, project work, and exams. There is a different examination pattern for students enrolled in doctorate programs at Birchwood University. Doctorate goes through comprehensive exams, research work, thesis/dissertation writing, and viva voice. The university follows a letter grade system to evaluate students."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Being a prominent global university, Birchwood University has a wide range of placement partners. The students of Birchwood University are hired by some of the leading organizations in the industry with reading career opportunities. Moreover, the university also facilitates students with the excellent career support in placement. Here are some of the most popular placement partners of Birchwood University: Google, Amazon, Microsoft, Meta, Cognizant, Accenture, Morgan Stanley, etc."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Google",
+   "logo": "/university/partners/google.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Facebook",
+   "logo": "/university/partners/facebook.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "JP Morgan",
+   "logo": "/university/partners/JP_Morgan.webp"
+  }
+ ],
+ "faculty": [],
+ "reviews": [
+  {
+   "name": "Akshay Rathod",
+   "rating": 5,
+   "date": "2026-01-20",
+   "content": "Birchwood university is a good university, faculty is very helpful, understands the topic and query is well addressed. They have good communication and teaching skills, university is very well accredited. Do join if you have no time doing full time PHD. Join DBA if you are a working professional"
+  },
+  {
+   "name": "Umar Farooq",
+   "rating": 5,
+   "date": "2026-01-19",
+   "content": "The university maintains academic standards through experienced faculty and diverse programs. While teaching quality and student support services are strong."
+  },
+  {
+   "name": "Afsal Rahim",
+   "rating": 3,
+   "date": "2025-12-09",
+   "content": "This will help me in my career progression. I am doing the MBA intention to grow in career. MBA will add value to my profile."
+  },
+  {
+   "name": "Hemant Chauhan",
+   "rating": 4,
+   "date": "2025-12-09",
+   "content": "Nice courses and good facilities surely recommended to my friend and colleges.. I hope this will enhance my career"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the programs offered by Birchwood University?",
+   "a": "Birchwood University offers a wide range of programs ranging from bachelor's courses to doctorate courses."
+  },
+  {
+   "q": "Is Birchwood University a trusted institution?",
+   "a": "Yes, Birchwood University is a trusted institution that is accredited and authorized by the Commission of Independent Education (CIE) and Quality Assurance in Higher Education (QAHE)."
+  },
+  {
+   "q": "Does Birchwood University offer an Online DBA?",
+   "a": "Yes, Birchwood University offers an Online DBA (Doctorate of Business Administration)."
+  },
+  {
+   "q": "How can we fill out the application form for Birchwood University?",
+   "a": "You can fill out the application form for Birchwood University by visiting the official website. There is no need to personally visit the university campus for admission. Before filling out the application form, it is advisable to go through the eligibility and document requirements for the course."
+  },
+  {
+   "q": "What is the grading system of Birchwood University?",
+   "a": "The Birchwood University uses the Letter Grade system to evaluate its students."
+  }
+ ]
+}

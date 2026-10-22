@@ -118,10 +118,10 @@ const SMART_HIGHLIGHTS = [
  * they are not derived from anything.
  */
 const HERO_LINES = [
-  { lead: "Scale Without", tail: "Limits." },
-  { lead: "One Platform.", tail: "Infinite Scale." },
-  { lead: "Smart Scaling for", tail: "Growing Businesses." },
-  { lead: "Uniscaler:", tail: "Seamless Growth, Simplified." },
+  { lead: "Scale Without", tail: "Limits" },
+  { lead: "One Platform", tail: "Infinite Scale" },
+  { lead: "Smart Scaling for", tail: "Growing Businesses" },
+  { lead: "Uniscaler", tail: "Seamless Growth Simplified" },
 ];
 
 /**
@@ -523,13 +523,15 @@ export default function StudyAbroadPage() {
               <Link href="/contact" className="sa-smart-btn">
                 Talk to our counselor <FaChevronRight />
               </Link>
-              {/* Same-page anchor rather than a route. It jumps to the explorer,
-                  which is no longer the next section — the map sits between them
-                  since this band moved above it — so the anchor is now doing
-                  real work rather than scrolling one screen. */}
-              <a href="#sa-explorer" className="sa-smart-link">
+              {/* Both Explore courses CTAs go to the pathway listing since
+                  2026-08-24 (client's word) — one label, one destination; the
+                  in-page explorer keeps its own entry points elsewhere. */}
+              <Link
+                href="/study-abroad/pathway-programs"
+                className="sa-smart-link"
+              >
                 Explore courses <FaChevronRight />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -755,19 +757,16 @@ export default function StudyAbroadPage() {
               <span className="sa-goal-accent">300+ global university</span>{" "}
               partners for your study abroad journey
             </h2>
-            {/* Same destination as the domain cards above: the courses are on
-                this page, so this scrolls rather than navigates. */}
-            <button
-              type="button"
+            {/* Navigates to the full pathway listing rather than scrolling to
+                the in-page explorer, on the client's word (2026-08-24) — the
+                reference's partners band sends its Explore courses to its
+                accelerator-programs listing the same way. */}
+            <Link
+              href="/study-abroad/pathway-programs"
               className="sa-btn-primary"
-              onClick={() =>
-                document
-                  .getElementById("sa-explorer")
-                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
-              }
             >
               Explore courses <FaChevronRight />
-            </button>
+            </Link>
           </div>
 
           <div className="sa-partners-wall">

@@ -1,0 +1,560 @@
+/* /university/[slug] — university detail page in the style of the
+   collegevidya reference the client pointed at: full-width campus banner, a
+   logo tile overlapping it, name + approvals + rating row, action buttons, a
+   tab-like anchor bar, then About / Courses / Key Facts / Reviews / FAQs.
+   All data and images are local — see src/lib/university-details/. */
+
+.universityPage {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding-bottom: 4.5rem;
+  --uv-blue: #2469f3;
+  --uv-ink: #1b1b1b;
+  --uv-line: #e5e7eb;
+  --uv-muted: #5a5a5a;
+}
+
+.universityPage .uv-banner {
+  width: 100%;
+  height: clamp(200px, 32vw, 460px);
+  background-color: #f1f5f9;
+}
+.universityPage .uv-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---- header: logo tile, name, actions --------------------------------- */
+.universityPage .uv-head {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+/* Overlaps the banner bottom like the reference's floating logo card. */
+.universityPage .uv-logo-tile {
+  width: 108px;
+  height: 108px;
+  margin-top: -64px;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  border: 1px solid var(--uv-line);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(15, 33, 64, 0.12);
+  flex-shrink: 0;
+}
+.universityPage .uv-logo-tile img {
+  max-width: 86%;
+  max-height: 86%;
+  object-fit: contain;
+}
+
+.universityPage .uv-head-main {
+  flex: 1;
+  min-width: 240px;
+}
+.universityPage .uv-head-main h1 {
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-weight: 800;
+  color: var(--uv-ink);
+}
+.universityPage .uv-meta {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.universityPage .uv-approvals {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.universityPage .uv-approvals img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid var(--uv-line);
+  background-color: #ffffff;
+}
+.universityPage .uv-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+.universityPage .uv-rating button,
+.universityPage .uv-rating a {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  color: var(--uv-blue);
+  text-decoration: none;
+  font-weight: 600;
+}
+.universityPage .uv-stars {
+  display: inline-flex;
+  color: #f5a623;
+  font-size: 1.15rem;
+}
+.universityPage .uv-sub {
+  margin-top: 0.45rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  color: var(--uv-muted);
+}
+.universityPage .uv-sub span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.universityPage .uv-sub svg {
+  color: var(--uv-blue);
+}
+
+.universityPage .uv-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: stretch;
+}
+.universityPage .uv-apply,
+.universityPage .uv-talk {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+.universityPage .uv-apply {
+  background-color: var(--uv-blue);
+  color: #ffffff;
+}
+.universityPage .uv-talk {
+  background-color: #eef3fb;
+  color: var(--uv-ink);
+  border: 1px solid var(--uv-line);
+}
+
+/* ---- tab bar ------------------------------------------------------------ */
+/* Real tabs, like the reference: the buttons switch panels, and the active
+   one carries the blue underline. */
+.universityPage .uv-tabs {
+  max-width: 1180px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
+  display: flex;
+  gap: 1.6rem;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--uv-line);
+}
+.universityPage .uv-tabs button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.6rem 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--uv-muted);
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.universityPage .uv-tabs button:hover {
+  color: var(--uv-blue);
+}
+.universityPage .uv-tabs button.is-active {
+  color: var(--uv-blue);
+  font-weight: 700;
+  border-bottom-color: var(--uv-blue);
+}
+
+/* ---- sections ---------------------------------------------------------- */
+.universityPage .uv-body {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.universityPage .uv-section {
+  margin-top: 2.5rem;
+  /* Anchor targets land below the fixed navbar instead of under it. */
+  scroll-margin-top: 140px;
+}
+.universityPage .uv-section h2 {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: var(--uv-ink);
+  margin-bottom: 1rem;
+}
+
+.universityPage .uv-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 1.25rem;
+}
+.universityPage .uv-box {
+  border: 1px solid var(--uv-line);
+  border-left: 3px solid var(--uv-blue);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  background-color: #fafbfe;
+}
+.universityPage .uv-box h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--uv-ink);
+}
+.universityPage .uv-box p {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--uv-muted);
+}
+
+.universityPage .uv-prose p,
+.universityPage .uv-prose li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333333;
+  margin-bottom: 0.8rem;
+}
+.universityPage .uv-prose ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.universityPage .uv-prose h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--uv-ink);
+  margin: 1.2rem 0 0.5rem;
+}
+
+/* Tables embedded in the source prose (course grids, exam patterns, dates),
+   drawn like the reference: full cell grid, light header band, link-blue
+   cells where a cell leads somewhere. Scrolls in its own wrapper on phones. */
+.universityPage .uv-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.25rem;
+}
+.universityPage .uv-content-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.universityPage .uv-content-table th,
+.universityPage .uv-content-table td {
+  border: 1px solid var(--uv-line);
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  color: #333333;
+  line-height: 1.5;
+}
+.universityPage .uv-content-table th {
+  background-color: #eef3fb;
+  text-align: center;
+  font-weight: 700;
+  color: var(--uv-ink);
+}
+.universityPage .uv-content-table tr:nth-child(even) td {
+  background-color: #fafbfe;
+}
+.universityPage .uv-content-table a {
+  color: var(--uv-blue);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.universityPage .uv-courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 14px;
+}
+.universityPage .uv-course {
+  border: 1px solid var(--uv-line);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.universityPage .uv-course h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--uv-ink);
+}
+.universityPage .uv-course-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  color: var(--uv-muted);
+  flex: 1;
+}
+.universityPage .uv-course-meta em {
+  font-style: normal;
+  color: #9aa3b2;
+}
+.universityPage .uv-course a {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--uv-blue);
+  text-decoration: none;
+}
+
+.universityPage .uv-subhead {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--uv-ink);
+}
+
+.universityPage .uv-partners {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+.universityPage .uv-partner {
+  width: 110px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--uv-line);
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 8px;
+}
+.universityPage .uv-partner img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* The table can outgrow a phone — it scrolls inside its own wrapper rather
+   than widening the page. */
+.universityPage .uv-fee-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--uv-line);
+  border-radius: 8px;
+}
+.universityPage .uv-fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+.universityPage .uv-fee-table th,
+.universityPage .uv-fee-table td {
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid var(--uv-line);
+  vertical-align: top;
+}
+.universityPage .uv-fee-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.universityPage .uv-fee-table th {
+  background-color: #f6f8fc;
+  font-weight: 700;
+  color: var(--uv-ink);
+  white-space: nowrap;
+}
+.universityPage .uv-fee-table td {
+  color: #333333;
+}
+.universityPage .uv-fee-table td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.universityPage .uv-faculty {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+}
+.universityPage .uv-fac {
+  border: 1px solid var(--uv-line);
+  border-radius: 8px;
+  padding: 1.1rem 0.9rem;
+  text-align: center;
+}
+.universityPage .uv-fac img,
+.universityPage .uv-fac .uv-fac-ph {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.6rem;
+  display: block;
+}
+.universityPage .uv-fac .uv-fac-ph {
+  display: grid;
+  place-items: center;
+  background-color: #eef3fb;
+  color: var(--uv-blue);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.universityPage .uv-fac h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--uv-ink);
+}
+.universityPage .uv-fac-title {
+  margin-top: 0.15rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--uv-blue);
+}
+.universityPage .uv-fac-desc {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--uv-muted);
+}
+
+.universityPage .uv-facts {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.universityPage .uv-facts li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.universityPage .uv-review-summary {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid var(--uv-line);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+.universityPage .uv-review-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.universityPage .uv-review-score strong {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--uv-ink);
+  line-height: 1;
+}
+.universityPage .uv-review-score span {
+  font-size: 0.82rem;
+  color: var(--uv-muted);
+}
+.universityPage .uv-review-bars {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.universityPage .uv-review-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  color: var(--uv-muted);
+}
+.universityPage .uv-review-bar > span:first-child {
+  width: 2rem;
+}
+.universityPage .uv-review-bar > span:last-child {
+  width: 2.5rem;
+  text-align: right;
+}
+.universityPage .uv-review-bar div {
+  flex: 1;
+  height: 8px;
+  border-radius: 999px;
+  background-color: #eef1f6;
+  overflow: hidden;
+}
+.universityPage .uv-review-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background-color: #f5a623;
+}
+
+.universityPage .uv-reviews {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+.universityPage .uv-review {
+  border: 1px solid var(--uv-line);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0;
+}
+.universityPage .uv-review p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333333;
+}
+.universityPage .uv-review footer {
+  margin-top: 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--uv-muted);
+}
+
+.universityPage .uv-faqs details {
+  border: 1px solid var(--uv-line);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.6rem;
+}
+.universityPage .uv-faqs summary {
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--uv-ink);
+}
+.universityPage .uv-faqs p {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: #333333;
+}
+
+@media screen and (max-width: 600px) {
+  .universityPage .uv-logo-tile {
+    width: 84px;
+    height: 84px;
+    margin-top: -46px;
+  }
+  .universityPage .uv-actions {
+    flex-direction: row;
+    width: 100%;
+  }
+  .universityPage .uv-apply,
+  .universityPage .uv-talk {
+    flex: 1;
+  }
+}

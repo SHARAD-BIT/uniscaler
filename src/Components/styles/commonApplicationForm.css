@@ -191,6 +191,155 @@
   border-top: 1px dashed #dbe3ef;
 }
 
+/* ---- mode, search, pagination -------------------------------------------- */
+.caf .caf-mode-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.caf .caf-mode {
+  display: inline-flex;
+  gap: 0.4rem;
+  padding: 0.3rem;
+  border: 1px solid #d8e0ec;
+  border-radius: 999px;
+  background-color: #f4f6fa;
+}
+.caf .caf-mode label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #47536a;
+  cursor: pointer;
+}
+.caf .caf-mode label:has(input:checked) {
+  background-color: var(--light);
+  color: var(--accent);
+  box-shadow: 0 2px 6px rgba(15, 33, 64, 0.12);
+}
+.caf .caf-mode input {
+  accent-color: var(--accent);
+}
+.caf .caf-search {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.85rem;
+  border: 1px solid #d8e0ec;
+  border-radius: 10px;
+  background-color: var(--light);
+}
+.caf .caf-search svg {
+  flex-shrink: 0;
+  color: #7c8798;
+}
+.caf .caf-search input {
+  width: 100%;
+  padding: 0.6rem 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 0.9rem;
+  color: #1e293b;
+}
+
+/* Chosen universities sit above the browser with their pickers. */
+.caf .caf-picked {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.caf .caf-picked-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+.caf .caf-picked-head button {
+  cursor: pointer;
+  border: 1px solid #d8e0ec;
+  border-radius: 8px;
+  background-color: var(--light);
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #7c8798;
+  transition: color 0.2s, border-color 0.2s;
+}
+.caf .caf-picked-head button:hover {
+  color: #b64545;
+  border-color: #e3a2a2;
+}
+
+.caf .caf-uni-loc {
+  display: block;
+  margin-top: 2px;
+  font-style: normal;
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: #7c8798;
+}
+
+.caf .caf-list-state {
+  padding: 1rem 1.1rem;
+  font-size: 0.9rem;
+  color: #47536a;
+}
+.caf .caf-list-state button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: inherit;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.caf .caf-pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+.caf .caf-pages button {
+  cursor: pointer;
+  min-width: 34px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #d8e0ec;
+  border-radius: 8px;
+  background-color: var(--light);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #47536a;
+  transition: border-color 0.2s, color 0.2s;
+}
+.caf .caf-pages button:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.caf .caf-pages button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.caf .caf-pages button.is-current {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--light);
+}
+
 /* ---- footer -------------------------------------------------------------- */
 .caf .caf-foot {
   display: flex;

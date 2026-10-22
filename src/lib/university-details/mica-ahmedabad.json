@@ -1,0 +1,443 @@
+{
+ "slug": "mica-ahmedabad",
+ "name": "MICA",
+ "establishedYear": "1991",
+ "location": "Ahmedabad, Gujarat",
+ "rating": 4.7,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   0,
+   2,
+   4
+  ],
+  "total": 6
+ },
+ "banner": "/university/banners/mica-ahmedabad.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NAAC",
+   "logo": "/university/approvals/naac-logo.jpg"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The Mudra Institute of Communications, Ahmedabad (MICA), located in Ahmedabad, Gujarat, is a renowned institution specializing in strategic marketing and communication. MICA, founded in 1991, has emerged as one of India's finest management colleges, focused on the specialty subject of communication management."
+  },
+  {
+   "t": "p",
+   "text": "MICA has delivered knowledge and abilities in advertising, branding, digital marketing, media management, public relations, and market research. It provides various postgraduate programs, including the two-year flagship Post Graduate Diploma in Management-Communications (PGDM-C). This curriculum is intended to provide students with a comprehensive grasp of the dynamic and ever-changing world of marketing and communications."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "MICA's industry-focused curriculum is one of its distinguishing features. The institution works closely with industry experts, practitioners, and prominent marketing and communication professionals to ensure the programs stay current and connected with industry trends. Through actual projects, internships, and industry connections, students receive practical insights and hands-on experience."
+  },
+  {
+   "t": "p",
+   "text": "MICA's faculty comprises highly qualified academics and industry experts who offer a wealth of knowledge and experience to the classroom. They use creative teaching approaches such as case studies, simulations, workshops, and guest lectures to establish an engaging learning environment."
+  },
+  {
+   "t": "p",
+   "text": "MICA also places a premium on research and thought leadership. The institution encourages teachers and students to research, publish articles in prestigious journals, and attend national and international conferences. This research-driven strategy keeps MICA at the forefront of knowledge production and dissemination in marketing and communication."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "MICA is frequently listed among the best universities in India and is also approved by the National Board of Accreditation (NBA) and recognised by the Association of Indian Universities (AIU)."
+  },
+  {
+   "title": "Great placement assistance",
+   "content": "MICA has consistently achieved a 100% placement rate in the last 3 years. 77 recruiters participated in MICA placements in 2023, with 56% being first-time recruiters."
+  },
+  {
+   "title": "International Tie-ups",
+   "content": "MICA is a member of the Association of Asia Pacific Business Schools (AAPBS) and the Association of South Asian Management Development Institutions (AMDISA)."
+  }
+ ],
+ "facts": [
+  "MICA is India's leading management institute specialising in strategic marketing and communication. It was founded in 1991 and has since become a household brand in the industry.",
+  "In the NIRF ranking 2023, MICA is ranked 37 among the B-School category.",
+  "MICA's flagship curriculum is the two-year Post Graduate Diploma in Management-Communications (PGDM-C).",
+  "MICA focuses on speciality areas such as advertising, branding, digital marketing, media management, public relations, and market research.",
+  "MICA has a faculty that is composed of highly experienced academics and industry people. They offer a plethora of knowledge and skill to the classroom, ensuring students have a rich learning experience.",
+  "MICA collaborates closely with industry experts, practitioners, and top marketing and communication professionals. This partnership helps to define the curriculum, keeping it current with industry trends and practices.",
+  "Faculty and students of MICA do research, publish papers, and attend national and international conferences, all of which contribute to the body of knowledge in marketing and communication.",
+  "MICA's campus is contemporary, with well-equipped classrooms, libraries, multimedia studios, computer labs, and a specialised market research department.",
+  "MICA’s strong industrial network makes internships, live projects, and placements possible, giving students significant industry experience and possibilities.",
+  "Through many student groups and committees, MICA maintains an active campus life. These plan events, contests, cultural activities, and guest lecturers to help students develop holistically.",
+  "MICA has a strong placement record, placing students in prestigious firms across industries. MICA's specialised placement cell advises and supports students throughout the placement process."
+ ],
+ "courses": [
+  {
+   "name": "Advanced Certificate in Marketing and Communication",
+   "fee": 79999,
+   "duration": "4 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "79999"
+    }
+   ]
+  },
+  {
+   "name": "Marketing Leadership Development (CMO)",
+   "fee": 101000,
+   "duration": "5 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "101000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "10000"
+    }
+   ]
+  },
+  {
+   "name": "Advanced Certificate in Leadership Development",
+   "fee": 285000,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "285000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Mudra Institute of Communications, Ahmedabad (MICA) recognizes the financial implications of education and strives to present students with viable choices. In this context, MICA provides Equated Monthly Instalments (EMI) to assist students in managing their tuition payments. This allows students to pay their tuition in installments, relieving the financial load while assuring access to high-quality education."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Mudra Institute of Communications, Ahmedabad (MICA) admissions are based on a thorough and competitive screening process. The following is an outline of the admissions process:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Candidates must apply online using the official MICA website. Personal information, academic data, job experience (if available), and other essential information are required on the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Candidates must take the Common Admission Test (CAT), the Xavier Aptitude Test (XAT), or the Graduate Management Admission Test (GMAT). These scores are the key criterion for shortlisting applicants for further selection rounds."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Shortlisted candidates are asked to take the MICA Admission Test (MICAT), which examines their analytical and verbal abilities, written communication skills, divergent thinking, and general marketing and media understanding."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Candidates passing the MICAT are evaluated further through Group Exercises and Personal Interviews. These rounds assess candidates' communication skills, problem-solving abilities, aptitude for leadership, and suitability for MICA's program."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: The candidate's success in the MICAT, GE, and PI entrance tests determines their ultimate selection. Academic records, professional experience, extracurricular accomplishments, and diversity criteria are all considered."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: MICA makes admission offers to successful candidates based on the final selection process. The offers detail the program, any constraints, and a deadline for accepting the offer and submitting the required paperwork and money."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "MICA examinations evaluate students' knowledge and talents in a variety of fields. Exams are given both in person and online, with remote proctoring."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "MICA has a specialized placement cell that collaborates with top corporations and organizations in marketing, advertising, media, and communication. The placement cell actively links students with work possibilities and helps them get positions that match their objectives. Some firms that have collaborated with MICA are listed below."
+  },
+  {
+   "t": "p",
+   "text": "The institution's rigorous academic program, industry-oriented approach, and emphasis on practical skill development equip students to flourish professionally. MICA guarantees students access to prospective placement options and starts their careers on a good foundation through various networking events, industry engagements, and corporate collaborations."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "ICICI Bank",
+   "logo": "/university/partners/icici-bank.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Mahindra",
+   "logo": "/university/partners/mahindra.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Siddharth Deshmukh",
+   "title": "Professor, MICA",
+   "description": "He graduated as a \"first MICAn\" in 1996 and returned to his alma mater as a faculty. He co-created MICA's Digital Communication Management (DCM) specialization.",
+   "photo": "/university/faculty/Siddharth_Deshmukh.webp"
+  },
+  {
+   "name": "Anita Basalingappa",
+   "title": "Professor, MICA",
+   "description": "With over 20 years of experience, Dr Anita is a professor in Marketing and Chairperson of Online Programs at MICA.",
+   "photo": "/university/faculty/Anita_Basalingappa.webp"
+  },
+  {
+   "name": "Professor C.D Mitra",
+   "title": "Adjunct Faculty, MICA",
+   "description": "A senior industry leader in the media domains in a career spanning over 30 years. He chose to become a facilitator and guide for students.",
+   "photo": "/university/faculty/Professor_C.D_Mitra.webp"
+  },
+  {
+   "name": "Rajneesh Krishna",
+   "title": "Associate Dean & Professor, MICA",
+   "description": "Dr Krishna is the Associate Dean and Professor of Strategic Marketing at MICA. Armed with a PhD from IIT Bombay, he joined MICA as an Associate Professor.",
+   "photo": "/university/faculty/Rajneesh_Krishna.webp"
+  },
+  {
+   "name": "Falguni Vasavada-Oza",
+   "title": "Professor, MICA",
+   "description": "Dr Falguni completed her PhD in Advertising Management and has spent 20+ years teaching Marketing, Advertising, and IMC-related subjects at MICA.",
+   "photo": "/university/faculty/Falguni_Vasavada-Oza.webp"
+  },
+  {
+   "name": "Professor Sukaran Thakur",
+   "title": "Professor, MICA",
+   "description": "Sukaran is a Brand Consultant, Principal Partner at ICE Studios, and Director at Heritage Group, with expertise in luxury brand management.",
+   "photo": "/university/faculty/Professor_Sukaran_Thakur.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Dhawal",
+   "rating": 5,
+   "date": "2025-07-19",
+   "content": "Best institute and guidance i have received from here. I’m happy to start my learning here plus my CV coach has helped me a lot."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-06-12",
+   "content": "MICA Ahmedabad offers the ideal balance of academic rigour and industry exposure. The faculty's commitment to mentorship and the numerous guest lectures from industry professionals have enhanced my learning experience. It is an outstanding institute for ambitious marketing experts."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-06-12",
+   "content": "The strategic focus and industry-oriented curriculum at MICA have transformed my perspective on marketing. The hands-on learning, collaborative projects, and great placement support have equipped me for a successful career."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-06-12",
+   "content": "MICA Ahmedabad provides an unrivalled learning experience in marketing and communication. The competence of the instructors, industry exposure, and vibrant campus life make it a great venue to foster creativity and thrive professionally."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Which programs does MICA provide?",
+   "a": "MICA offers several PG programs in strategic marketing and communication, including the flagship Post Graduate Diploma in Management-Communications (PGDM-C), the Fellow Program in Management-Communications (FPM-C), and several certificate programs."
+  },
+  {
+   "q": "What are the entrance requirements for MICA?",
+   "a": "The eligibility requirements for various programs varied. For the PGDM-C program, applicants must have a bachelor's degree in any subject and a minimum aggregate score. The official MICA website has detailed qualifying criteria."
+  },
+  {
+   "q": "Does MICA provide online programs?",
+   "a": "Yes, MICA provides both online and on-campus programs. The official website has further information and eligibility criteria for MICA’s online programs."
+  },
+  {
+   "q": "How is the MICA faculty?",
+   "a": "MICA's faculty comprises seasoned academics and industry experts who offer a wealth of knowledge and skills to the classroom. They are well-known for their research, consulting, and industrial partnerships contributions."
+  },
+  {
+   "q": "Does MICA offer financial aid or scholarships?",
+   "a": "Yes, MICA provides financial help to qualified individuals. Scholarships may be available based on merit, need, or other factors."
+  },
+  {
+   "q": "What is MICA Ahmedabad famous for?",
+   "a": "MICA Ahmedabad is well-known for its industry-focused curriculum, experienced instructors, and strong industry contacts, all of which provide students with outstanding employment options in marketing and communication."
+  },
+  {
+   "q": "What is MICA's placing record?",
+   "a": "MICA has a good placement record, with students in prominent firms across various industries. To assist with internships and placements, the institute's dedicated placement department collaborates closely with industries."
+  },
+  {
+   "q": "What is the fee structure at MICA Ahmedabad?",
+   "a": "MICA Ahmedabad's fees vary based on the program. The approximate fees for the flagship PGDM-C program for the cohort 2025-2026 are roughly Rs. 21 lakhs."
+  },
+  {
+   "q": "What is the rank of MICA Ahmedabad College?",
+   "a": "MICA Ahmedabad is one of India's leading management colleges. It has long been regarded as one of the most prestigious institutions for strategic marketing and communication education."
+  }
+ ]
+}

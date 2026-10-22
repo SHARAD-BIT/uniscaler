@@ -1,0 +1,557 @@
+{
+ "slug": "iiit-bangalore",
+ "name": "IIIT Bangalore",
+ "establishedYear": "1998",
+ "location": "Bengaluru, Karnataka",
+ "rating": 4.3,
+ "reviewStats": {
+  "stars": [
+   0,
+   0,
+   1,
+   4,
+   4
+  ],
+  "total": 9
+ },
+ "banner": "/university/banners/iiit-bangalore.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "The International Institution of Information Technology Bangalore (IIIT Bangalore) is a top engineering institution in India, located in the dynamic city of Bangalore, Karnataka. IIIT Bangalore has established itself as a top university for engineering education due to its academic rigor, research achievements, and innovation-driven culture. Let us look at the numerous aspects contributing to IIIT Bangalore's reputation for excellence."
+  },
+  {
+   "t": "p",
+   "text": "IIIT Bangalore provides undergraduate, postgraduate, and doctorate engineering, technology, and science programs. Bachelor of Technology (B.Tech), Master of Technology (M.Tech), Master of Science (M.Sc), and Doctor of Philosophy (Ph.D.) programs are available at the institute. These programs are intended to offer students a solid foundation in academic knowledge and the practical abilities required to face real-world situations."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In DevOps",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses In India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The faculty of IIIT Bangalore is noteworthy, with highly skilled academics, researchers, and industry specialists. They have a strong desire to share knowledge with students. They use new teaching approaches, interactive classroom sessions, and research-oriented projects. The faculty's dedication to quality and mentorship is critical in creating the next generation of engineers and scientists."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explore Online Doctorate Programs for Working Professionals"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Online Doctorate Course for Working Professionals",
+      "Doctor of Juridical Science"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA In Supply Chain Management",
+      "DBA In Supply Artificial Intelligence"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "DBA In Human Resource Management",
+      "Doctor of Business Administration"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The institution invites students and faculty members to participate in cutting-edge research initiatives in various fields. IIIT Bangalore has cutting-edge research facilities, labs, and centers of excellence, allowing for revolutionary research and innovation. The institute's research output is well-known and contributes to technological, scientific, and societal developments."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "IIIT Bangalore is a premier engineering university consistently ranked among India's top universities. In NIRF 2022, the university was placed 74th in the Engineering category."
+  },
+  {
+   "title": "Great placement assistance",
+   "content": "With its employment facilities and chances, IIIT Bangalore provides students complete satisfaction.  IIIT Bangalore has kept its 100% placement record for many years now."
+  },
+  {
+   "title": "International Tie-ups",
+   "content": "The International Student Exchange Program at IIITB allows students to go to overseas institutions and engage in research projects. Faculty collaborate with their counterparts at top worldwide academic universities."
+  }
+ ],
+ "facts": [
+  "Following the recommendations of the Kothari Commission, IIIT Bangalore was created in 1969 as one of the first IITs in India.",
+  "The institute has a remarkable faculty known for its competence in numerous engineering, science, and technology disciplines.",
+  "IIIT Bangalore is frequently ranked among India's best engineering universities. It was ranked 74th in the Engineering category in the NIRF 2022.",
+  "The institute emphasises research and innovation and conducts large research programs that national and international organisations support.",
+  "The institute has won honours, such as the \"Institute of Eminence\" designation from the Government of India.",
+  "IIIT Bangalore has well-equipped laboratories, research centres, libraries, sports facilities, and dormitories, all contributing to a conducive learning and research environment.",
+  "The institution promotes a collaborative and interdisciplinary research culture by encouraging students and staff to collaborate across departments and domains to address challenging issues.",
+  "IIIT Bangalore fosters entrepreneurship and innovation through incubation facilities, entrepreneurship cells, and startup assistance programs.",
+  "The institution maintains strong relationships with the industry, supporting internships, industrial visits, and collaborative research initiatives.",
+  "The institute has a substantial and distinguished alum network, with graduates holding important positions in major national and international organisations."
+ ],
+ "courses": [
+  {
+   "name": "MS Degree Online",
+   "fee": 485000,
+   "duration": "18 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "485000"
+    }
+   ]
+  },
+  {
+   "name": "PG Certificate Program",
+   "fee": 99000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "99000"
+    }
+   ]
+  },
+  {
+   "name": "Job - Linked Program",
+   "fee": 120000,
+   "duration": "8 - 8.5 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "120000"
+    },
+    {
+     "type": "EMI Options available per Months",
+     "fee": "3037"
+    }
+   ]
+  },
+  {
+   "name": "IIIT Online PG Course",
+   "fee": 325000,
+   "duration": "12 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "325000"
+    }
+   ]
+  },
+  {
+   "name": "Chief Technology Officer & AI Leadership",
+   "fee": 365000,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "365000"
+    }
+   ]
+  },
+  {
+   "name": "IIIT Bangalore Applied AI and Agentic AI",
+   "fee": 140000,
+   "duration": "7 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "140000"
+    }
+   ]
+  },
+  {
+   "name": "Executive Program in Generative AI for Leaders",
+   "fee": 175000,
+   "duration": "5 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "175000"
+    }
+   ]
+  },
+  {
+   "name": "DevOps Program (Executive)",
+   "fee": 180000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "180000"
+    }
+   ]
+  },
+  {
+   "name": "Cloud Computing Program (Executive)",
+   "fee": 180000,
+   "duration": "8 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "180000"
+    }
+   ]
+  },
+  {
+   "name": "Executive Diploma in Machine Learning and AI",
+   "fee": 335000,
+   "duration": "13 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "335000"
+    },
+    {
+     "type": "EMI Options available per Months",
+     "fee": "6850"
+    }
+   ]
+  },
+  {
+   "name": "ePGP In Software Development",
+   "fee": 183000,
+   "duration": "9.5 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "183000"
+    }
+   ]
+  },
+  {
+   "name": "Executive Diploma in Data Science & AI",
+   "fee": 280000,
+   "duration": "12 months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "280000"
+    },
+    {
+     "type": "EMI Options available per Months",
+     "fee": "6625"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "IIIT Bangalore recognizes the financial difficulties that students may face while pursuing an education. The institute provides financial aid to allay these fears, including Equated Monthly Installments (EMI) for fee payments. This service allows students to spread their fee payments over time, making them more reasonable and alleviating the financial load."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admissions process at the International Institute of Information Technology Bangalore (IIIT Bangalore) is rigorous and demanding. The following outlines the admissions process:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Candidates must fulfill the eligibility requirements for the selected program. Educational credentials, minimum marks or grades, and other prerequisites, such as acceptable admission exam results, are often included in these criteria."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: For management programs (MBA), prospective candidates must take national-level admission tests such as JEE Advanced, GATE, and CAT. The tests assess candidates' aptitude, topic knowledge, and problem-solving ability."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Candidates must submit an online application through the IIIT Bangalore admissions portal. Personal information, academic history, entrance exam results, and any other information desired by the institute are all included in the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: IIIT Bangalore shortlists candidates for subsequent selection stages based on entrance exam results and other specified criteria. Depending on the program and department, shortlisted candidates are often asked for interviews, written examinations, or group discussions."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: Candidates are chosen based on their total performance in admission examinations, interviews, written tests, and other selection procedures. The institute creates a merit list or cutoff scores to select which individuals are given admission."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: Successful students are admitted to their respective programs at IIIT Bangalore based on the merit list and the availability of seats."
+  },
+  {
+   "t": "p",
+   "text": "Step 7: To ensure their admission, candidates must confirm their acceptance by paying the relevant fees within the time-frame indicated."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The IIIT Bangalore exams assess students' knowledge and abilities in various disciplines. The exams are administered in person and online, with remote proctoring."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "IIIT Bangalore helps its students get employment. A specialized Placement Cell works with students directly to promote employability and facilitate job placements. The Placement Cell works with students directly to promote employability and provide job placements. Some of the companies that have worked on placements with IIIT Bangalore are mentioned below."
+  },
+  {
+   "t": "p",
+   "text": "IIIT Bangalore boasts a 100% placement record, with students engaged by leading businesses across various industries. The institute's extensive industry relationships and alumni network help to bring in renowned recruiters. IIIT Bangalore graduates have worked in consulting, banking and finance, information technology, manufacturing, retail, and other industries."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Mahindra",
+   "logo": "/university/partners/mahindra.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  },
+  {
+   "title": "Hindustan Unilever Limited",
+   "logo": "/university/partners/hindustan-unilever-limited.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. V. Sridhar",
+   "title": "Professor - IIIT-B",
+   "description": "Dr. V. Sridhar, a professor at IIIT-Bangalore's CITAPP, specializes in telecommunications technology, management, and regulation. He has co-authored two books, published numerous articles in leading journals, and written about 300 articles on Telecom and IT in major business newspapers and magazines.",
+   "photo": "/university/faculty/Dr._V.sridhar.webp"
+  },
+  {
+   "name": "Dr. Chandrashekhar Ramanathan",
+   "title": "Dean, Academics - IIIT-B",
+   "description": "Dr. Chandrashekar Ramanathan, a professor at IIIT-B since 2007, specializes in data science, software engineering, and large-scale applications. With over 25 years of experience, he was named a top data science academician in India by Analytics India magazine in 2018 and 2019.",
+   "photo": "/university/faculty/Dr._Chandrashekhar.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Divya Sanam",
+   "rating": 3,
+   "date": "2025-11-08",
+   "content": "Have started the course from September , little early to give feedback. Course conten n structure so far is good. But v hectic."
+  },
+  {
+   "name": "Pradeep Swaro",
+   "rating": 5,
+   "date": "2025-09-12",
+   "content": "One of the best university to study. Hopefully it will help to enhance my skill for next level of position."
+  },
+  {
+   "name": "Vaishnavi Ashok Dhere",
+   "rating": 4,
+   "date": "2025-05-23",
+   "content": "All this are going well and their team working nice to guide us every time bt Iam dealing some issues regarding my cashback otherwise all this are well"
+  },
+  {
+   "name": "CHekkaplly Raju",
+   "rating": 4,
+   "date": "2024-09-12",
+   "content": "EMI Facility Student Support"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How are IIIT Bangalore's placements?",
+   "a": "IIIT Bangalore has a solid placement record, with reputable organizations recruiting on campus. Pre-placement lectures, internships, and placement drives are all organized by the institute's specialized placement cell to help in the placement process."
+  },
+  {
+   "q": "What courses does IIIT Bangalore provide?",
+   "a": "IIIT Bangalore provides undergraduate (B.Tech), postgraduate (M.Tech, M.Sc, MBA, and other degrees), and doctoral (PhD) programs in engineering, technology, science, and management."
+  },
+  {
+   "q": "What are the entrance requirements for IIIT Bangalore?",
+   "a": "The qualifying requirements for various programs varied. Candidates must generally have achieved relevant educational qualifications, such as 10+2 or a bachelor's degree, with stated minimum marks or grades. In most cases, legitimate admission exam scores are also necessary."
+  },
+  {
+   "q": "Which entrance tests must I pass to get admitted to IIIT Bangalore?",
+   "a": "Candidates for undergraduate programs must pass the Joint Entrance Examination (JEE) Advanced. The Graduate Aptitude Test in Engineering (GATE) is typically needed for postgraduate studies. MBA schools, for example, demand CAT scores."
+  },
+  {
+   "q": "Is there any leniency in the eligibility criteria for candidates from the restricted categories?",
+   "a": "Yes, IIIT Bangalore relaxes qualifying requirements for candidates from reserved groups by Government of India norms."
+  },
+  {
+   "q": "Does IIIT Bangalore offer financial aid or scholarships?",
+   "a": "Yes, IIIT Bangalore provides financial aid, scholarships, and educational loans to qualified students. These alternatives assist students in managing their financial expenditures while pursuing their academic goals."
+  },
+  {
+   "q": "What is the seat allotment procedure at IIIT Bangalore?",
+   "a": "Admission counseling and seat allocation procedures differ based on the program and the counseling authority. Official notices or the institute's website are frequently used to keep candidates up to speed on the counseling schedule and seat allotment procedure."
+  }
+ ]
+}

@@ -1,0 +1,590 @@
+{
+ "slug": "o-p-jindal-global-university",
+ "name": "OP Jindal Global University Online",
+ "establishedYear": "2009",
+ "location": "Sonipat, Haryana",
+ "rating": 4.5,
+ "reviewStats": {
+  "stars": [
+   1,
+   1,
+   5,
+   22,
+   44
+  ],
+  "total": 73
+ },
+ "banner": "/university/banners/o-p-jindal-global-university.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NAAC A",
+   "logo": "/university/approvals/logo-naac-a.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  },
+  {
+   "title": "BCI",
+   "logo": "/university/approvals/bar-council-of-india-bci-logo.webp"
+  },
+  {
+   "title": "DASCA",
+   "logo": "/university/approvals/Data_Science_Council_of_America.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "O.P. Jindal Global University is deemed to be a university situated in Sonipat, Haryana. The university was established in the year 2009 & continued imparting quality education & knowledge in different domains since then. The courses offered by the university are valid and recognized around the globe."
+  },
+  {
+   "t": "p",
+   "text": "The university is recognized by the Ministry of Human Resource Development (MHRD), the Government of India as an Institution of Eminence (IOE), the University Grants Commission (UGC), & Bar Council of India (BCI). It is a member of the National Assessment and Accreditation Council (NAAC) with an &ldquo;A&rdquo; Grade, the Association of Indian Universities (AIU), the International Development and Public Policy Alliance (IDPA), the Association of American Colleges and Universities, Law Schools Global League, & International Association of Law Schools (IALS). O. P. Jindal University is awarded a DIAMOND University ranking by QS I.GAUGE & is also ranked as &ldquo;India’s Number 1 Private University&rdquo; by the QS World University Rankings 2023."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The major domains of the programs available at the university involve Law, Business & Management, Banking & Finance, Public Policy, Journalism, Art & Architecture, International Affairs, Languages & Literature, Environment & Sustainability, Liberal Arts & Humanities, Psychology & Counselling, and Public Health & Human Development."
+  },
+  {
+   "t": "p",
+   "text": "The university offers a high standard of education via various online courses for helping students to learn at their own pace with a flexible mode of blended learning. The international panel of faculty members has made the university rank among the top 550 universities in the world."
+  },
+  {
+   "t": "p",
+   "text": "Exciting Offer"
+  },
+  {
+   "t": "p",
+   "text": "Apart from academic excellence, the university provides the student with 360-degree career support including a global outlook on the newest industry trends, analytical tool training, network expansion, & some other add-on skills that help you jumpstart your career. A 24*7 student support system is always there with you to resolve your technical doubts and queries."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Top-Ranked University",
+   "content": "O.P. Jindal Global University ranked the No. 1 Private University in India in the QS World University Rankings 2023."
+  },
+  {
+   "title": "International Collaborations",
+   "content": "O.P. Jindal Global University provides its learners with global aspects by making them learn from prestigious international institutions."
+  },
+  {
+   "title": "Research Oriented Education",
+   "content": "O.P. Jindal Global University not only focuses on equipping students with a research-based curriculum but also provides a supportive environment for many researchers."
+  }
+ ],
+ "facts": [
+  "The university was established in 2009 in the region of Sonipat, Haryana.",
+  "The courses offered by the university are well-accredited and recognized around the globe.",
+  "The university has gotten approvals from UGC, BCI, AIU, NAAC A, & MHRD, Govt. of India.",
+  "The university is ranked as the No.1 Private University in India by the QS World Rankings of universities.",
+  "The university is also a member of the International Association of Law Schools (IALS), International Development and Public Policy Alliance (IDPA), Association of American Colleges and Universities, & Law Schools Global League.",
+  "The university has been awarded a DIAMOND university ranking by QS I.GAUGE.",
+  "The university’s online courses provide an ease to learn at one’s own pace and comfort through the blended mode of learning.",
+  "The programs offered online mode at the university include an LL.M. in Corporate and Financial Law, an LL.M. in Intellectual Property & Technology Law, an LL.M. in Dispute Resolution, an MBA, and an MA.",
+  "The university also provides some financial aid via easy-to-pay EMI plans or Education Loans for most of the courses offered by it.",
+  "Industry-oriented course curriculum & research-based learning modules are designed by the university to make learners industry ready in both domestic & international markets.",
+  "A 24x7 student support system available at the university is of great help in resolving the academic/non-academic issues and problems of the learners.",
+  "A continuous & periodic evaluation method is used to assess the performance of candidates during the entire course session.",
+  "The university offers constant career support to groom students in terms of career prospects."
+ ],
+ "courses": [
+  {
+   "name": "MBA Program",
+   "fee": 200000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "200000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA Dual",
+   "fee": 225000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "225000"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 225000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "230000"
+    }
+   ]
+  },
+  {
+   "name": "Online MS Degree Program",
+   "fee": 299000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "299000"
+    }
+   ]
+  },
+  {
+   "name": "Career Acceleration Online MBA",
+   "fee": 210000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "210000"
+    }
+   ]
+  },
+  {
+   "name": "Global MBA Online",
+   "fee": 200000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "200000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Sc",
+   "fee": 220000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "220000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "25000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 220000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "220000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "25000"
+    }
+   ]
+  },
+  {
+   "name": "Online MA",
+   "fee": 220000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "275000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "25000"
+    }
+   ]
+  },
+  {
+   "name": "Online User Experience",
+   "fee": 650000,
+   "duration": "12 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "650000"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Sc",
+   "fee": 275000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "275000"
+    },
+    {
+     "type": "Registration Fees",
+     "fee": "25000"
+    }
+   ]
+  },
+  {
+   "name": "1-Year MBA Online",
+   "fee": 200000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "200000"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "In the pursuit of its vision, the university has introduced several options for fee payment that include easy EMI options or an Education Loan Facility. These financial aids make higher education accessible to all irrespective of their financial background."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "At O.P. Jindal Global University, the whole admission process occurs online. Students have to appear in an entrance test, i.e., JMAT or other valid national-level aptitude test to meet the eligibility criteria of the program chosen. Fresh batches start generally in the month of January-February of every year. The admission procedure for the online courses at the university is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Visit the official website where the program is being offered & click on the &ldquo;Apply Now&rdquo; button to start filling up the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Fill up the application form by entering the correct order & spelling of the details required in the form. Upload the mandatory documents as proof of attestation for your academic & professional background."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: For some programs, the university conducts an entrance test (JMAT, JSAT-Law, & others) in which one has to score the required marks to secure a seat in the specific course of the university. Candidates who have given the online national aptitude test of management programs like CAT, GMAT, CLAT, etc. are exempted from this entrance test."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: After clearing the entrance test, candidates are required to submit their details like resume/professional synopsis, SOPs, LORs, etc. as the university validates their candidature for the program based on these details."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: After being shortlisted, candidates need to appear for a telephonic interview or video conferencing. On clearing this, they will receive an offer letter from the university."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: After getting the offer letter, candidates need to pay their blocking amount to reserve their seats in the course. After the final fee payment, the candidates need to save the confirmation slip for future reference."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of OP Jindal Global University Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "A continuous evaluation method is used by the university to make the course session engaging & interactive for students. In online mode, the examinations are conducted with the help of AI-based technology that ensures fair examination practices. Apart from the term-end examinations, other academic assessments like quizzes, assignments, and capstone projects are conducted by the university. The primary requirement to give an online exam involves a device like a laptop or mobile phone with a working webcam and microphone facility."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: Combination of internal assessment (assignments, quizzes, participation) + End-Semester proctored online exams via LMS. MBA delivered through interactive online sessions with live faculty + optional Global Immersion Program at Jindal campus."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Students of the university:"
+  },
+  {
+   "t": "li",
+   "text": "Have Global Employment Options"
+  },
+  {
+   "t": "li",
+   "text": "Work with Top Companies"
+  },
+  {
+   "t": "li",
+   "text": "Earn High Packages"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Axis Bank",
+   "logo": "/university/partners/axis-bank.webp"
+  },
+  {
+   "title": "Dabur",
+   "logo": "/university/partners/dabur.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "PWC",
+   "logo": "/university/partners/pwc.webp"
+  },
+  {
+   "title": "Reliance",
+   "logo": "/university/partners/reliance.webp"
+  },
+  {
+   "title": "Samsung",
+   "logo": "/university/partners/samsung.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Dr. Anirban Ganguly",
+   "title": "Professor & Vice Dean (Research)",
+   "description": "Prof. (Dr.) Anirban holds an MS and PhD from the Stevens Institute of Technology, USA. Prior to joining JGBS, he held faculty positions at the City University of New York and Stevens Institute of Technology.",
+   "photo": "/university/faculty/Dr._Anirban_Ganguly.webp"
+  },
+  {
+   "name": "Prof. Asim Talukdar",
+   "title": "Professor & Associate Dean",
+   "description": "Prof. Asim has over 33 years of experience in the HR domain, specializing in consulting, policies, training, and leadership, he has been a key member of the top leadership teams at HT Media, NIIT Ltd., and Maruti Suzuki Ltd. as Head of HRM. He is also a fellow in Management - HRM from XLRI Jamshedpur.",
+   "photo": "/university/faculty/Prof._Asim_Talukdar.webp"
+  },
+  {
+   "name": "Dr. Chitrakalpa Sen",
+   "title": "Professor & Associate Dean",
+   "description": "Prof. (Dr.) Chitrakalpa holds an M.Sc. in Economics and a PhD. His area of research includes high-frequency financial market dynamics, green investments, and growth economics. He is also an active member of the school's Centre for Research in Emerging Economies (CREE).",
+   "photo": "/university/faculty/Dr._Chitrakalpa_Sen.webp"
+  },
+  {
+   "name": "Prof. Sonam Chawla",
+   "title": "Associate Professor & Associate Dean",
+   "description": "Prof. (Dr.) Sonam is a Fellow in Management MDI, Gurgaon, in Organisational Behaviour. She has published research papers and book chapters in reputed journals like Frontiers in Psychology and has presented her work at Oxford University.",
+   "photo": "/university/faculty/Prof._Sonam_Chawla.webp"
+  },
+  {
+   "name": "Dr. Soumyadip Roy​",
+   "title": "Associate Professor & Associate Dean (VITAL)",
+   "description": "Prof. (Dr.) Soumyadip, an economist at JGU, specializes in Labour Economics and Applied Econometrics. Previously, he served as Vice President of Fraud Risk at Citibank in the USA, integrating rich industry experience into his teaching and research.",
+   "photo": "/university/faculty/Dr._Saumyadip_Roy.webp"
+  },
+  {
+   "name": "Anand Sharma",
+   "title": "Associate Professor",
+   "description": "Prof. Anand is a Fellow of IIM, Ahmedabad. Dr. Sharma previously worked with IIM Rohtak and IIM Sirmaur. He has also worked as an economic expert in the Antitrust Division of the Competition Commission of India.",
+   "photo": "/university/faculty/Anand_Sharma.webp"
+  },
+  {
+   "name": "Dr. Sarveshwar Kumar Inani",
+   "title": "Associate Professor",
+   "description": "Prof. Sarveshwar has a Ph.D. in finance and accounting from IIM Lucknow. He holds double master's, i.e., MBA - Finance and M.Com.- Accountancy and Business Statistics. His research interests are focused primarily on price discovery and volatility spillover in financial markets.",
+   "photo": "/university/faculty/Dr._Sarveshwar_Kumar_Inani.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Mohammad Ali",
+   "rating": 5,
+   "date": "2026-05-30",
+   "content": "Perfect for MBA, Global Recognition and great contents of course"
+  },
+  {
+   "name": "Amit silawat",
+   "rating": 3,
+   "date": "2026-05-25",
+   "content": "Good structured MBA program. The study material is helpful, and the flexibility of online learning makes it convenient for working professionals. Overall, a good university for higher education"
+  },
+  {
+   "name": "Prapanna Pandian",
+   "rating": 5,
+   "date": "2026-05-06",
+   "content": "The admission process is very much streamlined. The sessions are structured."
+  },
+  {
+   "name": "Aishwarya",
+   "rating": 5,
+   "date": "2026-04-29",
+   "content": "College vidya helpd me in choosing best institution for my MBA degree at best price Thank you for helping in."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is O.P. Jindal NAAC accredited or not?",
+   "a": "Yes, O.P. Jindal Global University is a member of the National Assessment and Accreditation Council (NAAC) with an &ldquo;A&rdquo; grade."
+  },
+  {
+   "q": "What is the exam pattern at OP Jindal University?",
+   "a": "At OP Jindal University, most subjects have two parts. Internal Assessments (IAs) are non-proctored MCQ tests set by faculty. Term-End Exams are proctored, held online on Mercer Mettl, with subjective questions. Special cases apply for Business Communication (Term 1) and Capstone Project (Term 4), which are based 100% on submissions with no exams."
+  },
+  {
+   "q": "Does O.P. Jindal Global University conduct an entrance exam for online LL.M. programs?",
+   "a": "Yes, O.P. Jindal Global University does conduct entrance exams for its online LL.M. courses irrespective of the specialization chosen. The entrance exam specific to this program at the university is JSAT-LAW but those who have cleared CLAT are exempted from this entrance test & can jump directly onto the further admission formalities."
+  },
+  {
+   "q": "Are student reviews available for OP Jindal Global University Online?",
+   "a": "Yes, OP Jindal Global University Online is featured on the Student Review Portal by College Vidya , with verified reviews covering academics, LMS experience, placement support, and overall learning quality. You can check these reviews directly, based entirely on feedback from enrolled students. The portal doesn't allow universities to pay for review removal, keeping the ratings trustworthy."
+  },
+  {
+   "q": "What if someone is not able to pass an exam at OP Jindal University?",
+   "a": "If a student fails to meet OP Jindal University's passing criteria, they are notified and need to either resubmit the internal assessment or reappear for the term-end exam. Passing each subject is compulsory to be marked \"Pass\" for that term."
+  },
+  {
+   "q": "What is the criteria to pass an exam at OP Jindal University?",
+   "a": "At OP Jindal University, a student must score at least 30% in the Term-End Exam and at least 40% overall, combining IA and Term-End scores. Missing either condition means the student has to reattempt."
+  },
+  {
+   "q": "How are marks divided at OP Jindal University?",
+   "a": "At OP Jindal University, general subjects carry 50% IA (25% each if there are two IAs) and 50% Term-End Exam. Business Communication (Term 1) and Capstone Project (Term 4) are based 100% on submissions, with no term-end exam."
+  },
+  {
+   "q": "Are online courses from O.P. Jindal valid?",
+   "a": "Yes, O.P. Jindal is a UGC & government-approved university. All of its programs in online & offline modes are credible even at the Global level as it has got number 1 ranking in the QS World Ranking System."
+  },
+  {
+   "q": "Does O.P. Jindal Global University provide placement assistance to the students?",
+   "a": "OPJGU has a 1:9 faculty-student ratio that only equips learners with conceptual knowledge but helps them choose a perfect career path for themselves. A network of 7500+ alumni & 375+ International collaborators provides the students of the university with a plethora of career opportunities."
+  },
+  {
+   "q": "What kind of certification is provided at the end of an online MBA program from O.P. Jindal Global University?",
+   "a": "After completion of an online degree program MBA from OPJGU, candidates get a degree with the name of the university, program, & candidate specified on it. This degree holds equal weightage as an offline program from the university & is recognized even at the global level."
+  },
+  {
+   "q": "Is O.P. Jindal Global University providing equal educational opportunities to female aspirants?",
+   "a": "At OPJGU, female admission percentages are around 49% which reflects the university as an unbiased education provider. Above all, the university is committed to ensuring the implementation of basic human rights & hence has introduced a &ldquo;Gender Sensitization Cell&rdquo; in that direction."
+  }
+ ]
+}

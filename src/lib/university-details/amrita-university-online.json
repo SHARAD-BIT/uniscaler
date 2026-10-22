@@ -1,0 +1,590 @@
+{
+ "slug": "amrita-university-online",
+ "name": "Amrita University Online",
+ "establishedYear": "1994",
+ "location": "Coimbatore, Tamil Nadu",
+ "rating": 4.5,
+ "reviewStats": {
+  "stars": [
+   2,
+   0,
+   2,
+   35,
+   62
+  ],
+  "total": 101
+ },
+ "banner": "/university/banners/amrita-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "WES",
+   "logo": "/university/approvals/wes-logo.jpg"
+  },
+  {
+   "title": "NAAC A++",
+   "logo": "/university/approvals/logo-naac-a-plus-plus.jpg"
+  },
+  {
+   "title": "Category-1 Autonomy",
+   "logo": "/university/approvals/awarded_category_-_1_autonomy.webp"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Amrita Vishwa Vidyapeetham is a private university that is multidisciplinary and research-intensive. It is UGC approved and has been ranked as the 8th Best University in India by the National Institutional Ranking Framework (NIRF) in 2025. The university has been awarded an A++ grade by the National Assessment and Accreditation Council (NAAC)."
+  },
+  {
+   "t": "p",
+   "text": "Amrita Online is the division of Amrita Vishwa Vidyapeetham that offers education in an entirely online mode. The same world-class faculty teaches both the online and on-campus learners. This faculty includes professors and mentors from both India and abroad."
+  },
+  {
+   "t": "p",
+   "text": "The curriculum of the online courses is also similar to the regular courses. The curriculum is industry-aligned and has been designed while keeping in mind the changing times and trends as well as the needs and demands of the industry. The curriculum aims at providing an immersive learning experience to all the online learners."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explore Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses in India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "Apart from an excellent curriculum that includes both academics and mentored industry projects, the university offers industry training certification programs that are relevant to their domain and useful for industry exposure. There are dedicated course mentors to help students through the entire duration of the course."
+  },
+  {
+   "t": "p",
+   "text": "The university provides full placement assistance to online learners. The university even has its own startup incubator called Amrita TBI, which is one of the best in the country, where the students can build their own startups."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Outstanding Faculty",
+   "content": "The faculty is world-class with mentors from India and abroad"
+  },
+  {
+   "title": "Top-notch Programs",
+   "content": "The online programs are equivalent to the on-campus programs"
+  },
+  {
+   "title": "Top-Ranked University",
+   "content": "Ranked as the 8th Best University in India by NIRF"
+  }
+ ],
+ "facts": [
+  "Amrita Vishwa Vidyapeetham has been ranked as the 8th best university in India by NIRF.",
+  "The university has been recognized by UGC to offer courses in the online mode.",
+  "The university has received the highest level—an A++ grade—from NAAC.",
+  "The learning pedagogy for the online programs at Amrita Online is innovative and award-winning.",
+  "The university provides complete placement assistance to the online learners.",
+  "The university has its own startup incubator called Amrita TBI, which is one of the best in India."
+ ],
+ "courses": [
+  {
+   "name": "Online MCA",
+   "fee": 140000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "35000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "35000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "700"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2750"
+    }
+   ]
+  },
+  {
+   "name": "Online M.Com",
+   "fee": 90000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "22500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "22500"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 141000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fee",
+     "fee": "141000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "700"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23500"
+    }
+   ]
+  },
+  {
+   "name": "Part Time PhD",
+   "fee": 240000,
+   "duration": "5 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "240000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 176000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester (internally)",
+     "fee": "44000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "700"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2750"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "44000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 120000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "20000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "20000"
+    }
+   ]
+  },
+  {
+   "name": "PhD",
+   "fee": 180000,
+   "duration": "6 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "180000"
+    }
+   ]
+  },
+  {
+   "name": "Online BCA",
+   "fee": 141000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fee",
+     "fee": "141000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "700"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "2750"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23500"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Students get an additional advantage of zero-cost EMI options to pay their academic fee at Amrita Online University. One must opt out of these options and ease the financial burden of their education."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "There is an online admission process for applying to Amrita University. With the simple and easy-to-understand admission procedure of the university, you can apply for your preferred course easily. There are direct admissions available, and thus, no entrance exam is required to apply for online courses at this university."
+  },
+  {
+   "t": "p",
+   "text": "The admission procedure for the online courses at Amrita Online is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- Go to the official website of Amrita Online."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Click on &ldquo;Admissions&rdquo; in the top right corner and then click on &ldquo;ONLINE DEGREE.&rdquo;"
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Now select the online course you wish to pursue from the drop-down list and proceed to the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Fill in the application form with your personal, academic, and professional details."
+  },
+  {
+   "t": "p",
+   "text": "Step 5- Submit the application form. The university will get back to you via email with your enrollment details if your application is accepted."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is the Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25. Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of universities and colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "What is the Amrita University Online Courses refund policy? The Amrita University Online refund terms are the same as the UGC refund policy. ⭐15+ days prior: 100% refund ⭐ 1–14 days prior: 90% refund ⭐1–15 days post: 80% refund ⭐16–30 days post: 50% refund ⭐After 30 days: No refund Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "As per the new regulations, the exams for all the online programs are conducted through the Online Technology Enabled Proctored mode. You can therefore give the exams from your home, as you do not need to go to college or any other center."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: Conducted in Online Technology Enabled Proctored Mode with AI + human proctoring. Structure: 30% assignments + 30% internal + 40% end-term exam (approx). Students appear from home. Follows semester system."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our students are provided with"
+  },
+  {
+   "t": "li",
+   "text": "360 Degree Placement Support"
+  },
+  {
+   "t": "li",
+   "text": "Industry Certification Training"
+  },
+  {
+   "t": "li",
+   "text": "Job Opportunities in Top Companies"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "Cognizant",
+   "logo": "/university/partners/cognizant.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Godrej",
+   "logo": "/university/partners/godrej.webp"
+  },
+  {
+   "title": "HDFC Bank",
+   "logo": "/university/partners/hdfc-bank.webp"
+  },
+  {
+   "title": "Honeywell",
+   "logo": "/university/partners/honeywell.webp"
+  },
+  {
+   "title": "Mckinsey and Company",
+   "logo": "/university/partners/mckinsey-and-company.webp"
+  },
+  {
+   "title": "Mphasis",
+   "logo": "/university/partners/mphasis.webp"
+  },
+  {
+   "title": "TCS",
+   "logo": "/university/partners/tcs.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Prof. Raghu Raman",
+   "title": "Dean, Amaravati Campus",
+   "description": "Dean, Amaravati Campus | Dean, School of Business (Amritapuri, Amaravati & Kochi) | Director, Center for Accreditations, Rankings and Eminence (IQAC NAAC) | Director, Center for Research in Analytics & Technologies for Education (CREATE).",
+   "photo": "/university/faculty/Prof._Raghu_Raman.webp"
+  },
+  {
+   "name": "Prof. Nava Subramaniam",
+   "title": "Dean, School of Business, Coimbatore",
+   "description": "Dean, School of Business, Coimbatore",
+   "photo": "/university/faculty/Dr._Nava_Subramaniam.webp"
+  },
+  {
+   "name": "Dr. Manoj P",
+   "title": "Dean, School of Business, Bengaluru",
+   "description": "",
+   "photo": "/university/faculty/Dr._Manoj_P..webp"
+  },
+  {
+   "name": "Prof. Rajiv Prasad",
+   "title": "Principal, School of Business Kochi",
+   "description": "",
+   "photo": "/university/faculty/Prof.Rajiv_Prasad.webp"
+  },
+  {
+   "name": "Dr. Viswanathan P. K.",
+   "title": "Principal, School of Business, Amritapuri",
+   "description": "",
+   "photo": "/university/faculty/Dr._Viswanathan_P._K..webp"
+  },
+  {
+   "name": "Dr. Ajith Sundaram",
+   "title": "Program Coordinator",
+   "description": "Assistant Professor (Selection Grade), School of Business, Kochi | Program Coordinator, Amrita MBA",
+   "photo": "/university/faculty/Dr._Ajith_Sundaram.webp"
+  },
+  {
+   "name": "Dr. Murale Venugopalan",
+   "title": "Associate Professor, School of Business, Kochi",
+   "description": "",
+   "photo": "/university/faculty/Dr._Murale_Venugopalan.webp"
+  },
+  {
+   "name": "Dr. Dhanya M",
+   "title": "Assistant Professor",
+   "description": "Assistant Professor (Sr. Gr.), School of Business, Kochi",
+   "photo": "/university/faculty/Dr._Dhanya_M.webp"
+  },
+  {
+   "name": "Dr. Rojalin Patri",
+   "title": "Assistant Professor",
+   "description": "Assistant Professor, Operations Management, Department of Management, Kochi",
+   "photo": "/university/faculty/Dr._Rojalin_Patri.webp"
+  },
+  {
+   "name": "Prof. Parvathy Venugopal",
+   "title": "Assistant Professor",
+   "description": "Assistant Professor (Marketing), Amrita School of Business, Kochi",
+   "photo": "/university/faculty/Prof._Parvathy_Venugopal.webp"
+  },
+  {
+   "name": "Dr. B.Radhakrishnan",
+   "title": "Assistant Professor",
+   "description": "Assistant Professor (Sr. Grd.), School of Business, Coimbatore",
+   "photo": "/university/faculty/Dr._B.Radhakrishnan.webp"
+  },
+  {
+   "name": "Vinitha V. U.",
+   "title": "Assistant Professor",
+   "description": "Assistant Professor, School of Business, Coimbatore",
+   "photo": "/university/faculty/Vinitha_V._U..webp"
+  },
+  {
+   "name": "Dr. T. Sakthi Nagaraj",
+   "title": "Assistant Professor",
+   "description": "Assistant Professor, School of Business, Coimbatore",
+   "photo": "/university/faculty/Dr._T.Sakthi_Nagaraj.webp"
+  },
+  {
+   "name": "Dr. A. Senthil Kumar",
+   "title": "Vice Principal, Amrita School Business",
+   "description": "Vice Principal, Amrita School Business, Coimbatore | PGP Chair, Amrita School of Business, Coimbatore | Assistant Professor (Selection Grade), Amrita School of Business, Coimbatore",
+   "photo": "/university/faculty/Dr._A._Senthil_Kumar.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Deepanshu",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "Good experience with Amrita University Online. Smooth admission process, helpful support team and well-structured course. Happy with my decision to pursue B.Com in Taxation and Finance."
+  },
+  {
+   "name": "Yadnyesh Janardhan pote",
+   "rating": 5,
+   "date": "2026-07-04",
+   "content": "Great experience till now and had no problem during admission very supportive people very helpful"
+  },
+  {
+   "name": "Purnima bhalla",
+   "rating": 4,
+   "date": "2026-05-07",
+   "content": "The experience is good. The faculty is supportive and the overall experience is good till now but there are some technical issues there."
+  },
+  {
+   "name": "Sk Rajibul Rahaman",
+   "rating": 5,
+   "date": "2026-04-11",
+   "content": "I am currently pursuing my Online BBA from Amrita Vishwa Vidyapeetham, and my experience so far has been exceptional. As one of India’s top-ranked universities,"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is the online degree offered by Amrita approved by the government?",
+   "a": "Yes, Amrita Online is UGC approved and has been awarded an A++ grade from NAAC. Amrita Vishwa Vidyapeetham has been ranked as the 8th best university in India by NIRF."
+  },
+  {
+   "q": "Can international students take admission in Amrita Online?",
+   "a": "Yes, students from any country other than India can take admission for online courses at Amrita Online if they fulfill the eligibility criteria."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC, which gives them equal recognition in the industry, just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part-Time MCA Part-Time MTech Part-Time MCom Part-Time MSc Part-Time MA Part-Time BBA Part-Time BCA Part-Time BTech Part-Time BCom Part-Time BSc Part Time BA Part-Time"
+  },
+  {
+   "q": "Which online courses are offered by Amrita Online?",
+   "a": "In the UG category, the university offers BBA, BCA, and B.Com in the online mode. In the PG category, the university offers MBA, M.Com (in different specializations), and MCA in the online mode. The university also offers various online certification courses."
+  },
+  {
+   "q": "Is Amrita online good for online degree courses?",
+   "a": "Amrita Vishwa Vidyapeetham has been ranked by NIRF as the 8th best university in India. The faculty is world-class, with mentors from both India and abroad. The curriculum is industry aligned and includes industry projects and industrial training certification programs as well."
+  },
+  {
+   "q": "Does Amrita Online offer placement assistance services?",
+   "a": "Yes, Amrita Online offers 360-degree placement assistance. Amrita is a top-ranking and reputed university in India, and hence many top companies recruit students from here. The university has one of India’s best startup incubators as well, which is called the Amrita TBI."
+  }
+ ]
+}

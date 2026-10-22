@@ -1,0 +1,467 @@
+{
+ "slug": "imt-ghaziabad",
+ "name": "IMT Ghaziabad",
+ "establishedYear": "1980",
+ "location": "Ghaziabad, Uttar Pradesh",
+ "rating": 4,
+ "reviewStats": {
+  "stars": [
+   0,
+   1,
+   1,
+   2,
+   3
+  ],
+  "total": 7
+ },
+ "banner": "/university/banners/imt-ghaziabad.webp",
+ "approvals": [
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "AACSB",
+   "logo": "/university/approvals/aacsb-association-to-advance-collegiate-schools-of-business.webp"
+  },
+  {
+   "title": "NBA",
+   "logo": "/university/approvals/NBA.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "IMT Ghaziabad was established with the backing of the Government of India and under the auspices of the Industrial Credit and Investment Corporation of India (ICICI). The institute is located in Ghaziabad, Uttar Pradesh. It has a spacious campus outfitted with cutting-edge infrastructure, contemporary classrooms, well-stocked libraries, and cutting-edge technology to give students an optimum learning environment."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explorer Best Executive Programs In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Finance",
+      "Executive Program Online In HR"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Operations",
+      "Executive Program Online In Leadership"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Data Science and Analytics",
+      "Executive Program Online In AI and Machine Learning"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Marketing",
+      "Executive Program Online In Software and Technology"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Healthcare",
+      "Executive Program Online In Business Analytics"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Devops",
+      "Executive Program Online In Cyber Security"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Bigdata Engineering",
+      "Executive Program Online In Blockchain"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Executive Program Online In Cloud Computing",
+      "LLM Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explorer more online and distance courses In India !",
+      "Click here for all approved distance and online university in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "The faculty of IMT Ghaziabad is diversified and experienced, consisting of prominent academicians and industry specialists. Faculty members are passionately devoted to providing high-quality education and actively participate in research and consulting initiatives. Their combination of academic and practical knowledge guarantees that students thoroughly understand business principles and their implementation in real-world circumstances."
+  },
+  {
+   "t": "p",
+   "text": "IMT Ghaziabad maintains close relationships with industry leaders and actively seeks cooperation with reputable firms and organizations. The business Interface Cell of the institute is critical in organizing guest lectures, business visits, internships, and placement events, allowing students to get exposure to the corporate world. IMT Ghaziabad has a strong placement record, with students getting coveted positions in prominent national and international corporations across various industries."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Great placement assistance",
+   "content": "IMT offers a variety of placement options in marketing, finance, and human resources. Even yet, it provides nearly 100% placements. Batch 21-23's yearly package is believed to be INR 17.35 LPA."
+  },
+  {
+   "title": "International Tie-ups",
+   "content": "At IMT, IRC identifies, develops, and maintains worldwide collaborations. In recent years, IMT Ghaziabad has developed long-term connections with over 50 partners worldwide."
+  },
+  {
+   "title": "Top-Ranked University",
+   "content": "The Institute of Management Technology Ghaziabad (IMTG) is a top business school in the Delhi NCR which is ranked 30th in India by NIRF 2025."
+  }
+ ],
+ "facts": [
+  "IMT Ghaziabad was founded in 1980 under the auspices of the Industrial Credit and Investment Corporation of India (ICICI) and with the assistance of the Government of India.",
+  "IMT Ghaziabad is accredited by the National Board of Accreditation (NBA) and the Association to Advance Collegiate Schools of Business(AACSB) as one of India's best business schools.",
+  "The faculty at IMT Ghaziabad comprises renowned academicians and industry leaders who offer a wealth of expertise and experience to the classroom.",
+  "IMT Ghaziabad has developed excellent relationships with top national and international corporations.",
+  "The institution works with industry partners to provide students with practical insights and exposure to real-world business settings through guest lectures, industrial visits, live projects, internships, and placement possibilities.",
+  "Through its Entrepreneurship Development Cell, IMT Ghaziabad encourages an entrepreneurial attitude among its students.",
+  "IMT Ghaziabad has a large and diverse alum network, with graduates occupying leadership positions in prestigious corporations worldwide.",
+  "IMT Ghaziabad is routinely ranked among India's best business schools. Leading journals such as Business Today, Business World, and Outlook have named it one of the top B-Schools.",
+  "The institute provides various management programs, including a two-year full-time Post Graduate Diploma in Management (PGDM) and speciality PGDM programs in Marketing, Finance, Human Resources, Operations, and Business Analytics.",
+  "NIRF 2025 placed IMT Ghaziabad 30th in the Management category."
+ ],
+ "courses": [
+  {
+   "name": "Job Linked Program in General Management",
+   "fee": 250000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "250000"
+    },
+    {
+     "type": "EMI Options available per Months",
+     "fee": "5875"
+    }
+   ]
+  },
+  {
+   "name": "Advanced General Management Program",
+   "fee": 153000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "153000"
+    }
+   ]
+  },
+  {
+   "name": "Advanced Certificate Program",
+   "fee": 175000,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "175000"
+    }
+   ]
+  },
+  {
+   "name": "Distance MBA",
+   "fee": 125000,
+   "duration": "2 Years",
+   "feeDetails": []
+  },
+  {
+   "name": "Executive MBA",
+   "fee": 110000,
+   "duration": "15 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "110000"
+    }
+   ]
+  },
+  {
+   "name": "Job-linked Advanced Management",
+   "fee": 250000,
+   "duration": "11 Months",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "250000"
+    },
+    {
+     "type": "EMI Options available per Months",
+     "fee": "5875"
+    }
+   ]
+  },
+  {
+   "name": "PhD",
+   "fee": 400000,
+   "duration": "4 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "400000*"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "IMT Ghaziabad offers EMI to students for tuition payments. The institute recognizes students' financial limits and provides various payment choices to alleviate the stress of upfront payment. Because the particular specifics and terms of the EMI facility may differ, students should contact the institute's admissions or finance department for further information and detailed assistance on using this facility."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "Admission to IMT Ghaziabad's management programs normally entails the following steps:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1: Applicants must verify that they satisfy the eligibility requirements established by IMT Ghaziabad for the program to which they desire to apply."
+  },
+  {
+   "t": "p",
+   "text": "Step 2: Applicants must sit for a practical entrance exam. IMT Ghaziabad accepts CAT (Common Admission Test), XAT (Xavier Aptitude Test), GMAT (Graduate Management Admission Test), and CMAT (Common Management Admission Test) results."
+  },
+  {
+   "t": "p",
+   "text": "Step 3: Following the entrance exam, the applicant must fill up the online application form, which is available on the official IMT Ghaziabad admissions page."
+  },
+  {
+   "t": "p",
+   "text": "Step 4: Shortlisted applicants will get an invitation to the next step of the selection process, which often involves a Personal Interview (PI) based on their admission exam scores."
+  },
+  {
+   "t": "p",
+   "text": "Step 5: IMT Ghaziabad will thoroughly screen the applicant’s profile to identify those who exhibit academic achievement, leadership potential, and a well-rounded personality."
+  },
+  {
+   "t": "p",
+   "text": "Step 6: Accepted candidates will receive an official offer letter from IMT Ghaziabad."
+  },
+  {
+   "t": "p",
+   "text": "Step 7: To ensure their spot, selected candidates must confirm their acceptance by paying the program fee by the deadline."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to Know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, Get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25, Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC declares a 100% Fee Refund policy for students within a specified period by universities. Click here to read the full notice."
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of Universities & Colleges. Read the UGC Letter ."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "The IMT Ghaziabad test pattern assesses students' knowledge and abilities in various subjects. The exams are offered in person and online, utilizing remote proctoring processes."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "IMT Ghaziabad provides substantial placement assistance to its students. The institute maintains a specialist Placement Cell that works directly with students and recruiters to assist the placement process. The institution has developed strong relationships with several top corporations and organizations in various industries."
+  },
+  {
+   "t": "p",
+   "text": "Students gaining jobs in famous national and international firms across industries like consulting, finance, marketing, operations, and more have benefited from IMT Ghaziabad's placement aid activities. Its extensive placement assistance shows the institute's dedication to preparing students for successful employment. Some of the companies that have worked on placements with IMT Ghaziabad are mentioned below."
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "ICICI Bank",
+   "logo": "/university/partners/icici-bank.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Deloitte",
+   "logo": "/university/partners/deloitte.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "Infosys",
+   "logo": "/university/partners/infosys.webp"
+  },
+  {
+   "title": "ITC",
+   "logo": "/university/partners/itc.webp"
+  },
+  {
+   "title": "KPMG",
+   "logo": "/university/partners/kpmg.webp"
+  },
+  {
+   "title": "L&T",
+   "logo": "/university/partners/lt.webp"
+  },
+  {
+   "title": "Mahindra",
+   "logo": "/university/partners/mahindra.webp"
+  },
+  {
+   "title": "Microsoft",
+   "logo": "/university/partners/microsoft.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Prof. Puja Aggarwal Gulati",
+   "title": "Program Director | Assoc. Professor Finance",
+   "description": "An expert in all things finance, Prof. Puja has years of experience in teaching with her core interests in IFRS and stocks.",
+   "photo": "/university/faculty/Prof._Puja_Aggarwal_Gulati.webp"
+  },
+  {
+   "name": "Prof. Abhishek S",
+   "title": "Associate Professor, IMT Ghaziabad",
+   "description": "Prof. Abhishek has many years of experience working, researching, and teaching in the marketing domain. He has a conceptual and practical understanding of issues in marketing communication, consumer behavior, and retailing. During his work experience in the marketing domain, he has been exposed to different contexts ranging from rural consumers in far-flung markets to the influence of the latest technology in consumer purchase decisions. As an academic, his research interests have been in the field of marketing communications, e-commerce and digital marketing, promotion planning, and consumer behavior in retail context. His current research work looks at advertising issues with public policy implications and the role of technology in marketing communications. He is excited to learn and discover the opportunities offered by digital platforms with an increasing focus on mobile platforms and technology.",
+   "photo": "/university/faculty/Prof._Abhishek_S.webp"
+  },
+  {
+   "name": "Prof. Harvinder Singh",
+   "title": "Professor Marketing, IMT Ghaziabad",
+   "description": "An expert in the business domain, Prof. Harvinder has been awarded “The Best Professor in Marketing Management” by the World Education Congress.",
+   "photo": "/university/faculty/Prof._Harvinder_singh.webp"
+  },
+  {
+   "name": "Dr. Richa",
+   "title": "Asst. Professor, IMT Ghaziabad",
+   "description": "As a Visiting / Adjunct faculty, she has taught courses in some of the leading Business schools of the country including IIM Kozhikode, IIM Indore, IIM Ranchi, and IIM Amritsar. She is actively engaged in Executive Education and has delivered for some of the leading clients across the sectors. She is also professionally certified in administering Psychometric instruments like MBTI and FIRO-B. She has also participated in the Global Colloquium of Participant-centered Learning organized by Harvard Business School, USA.",
+   "photo": "/university/faculty/Dr._Richa.webp"
+  },
+  {
+   "name": "Shibani Belwalkar",
+   "title": "Leadership Coach & Visiting Faculty",
+   "description": "An author and faculty member at NMIMS, Dr. Shibani is a behavioral coach and leading organizational culture transformation expert.",
+   "photo": "/university/faculty/Shibani_belwalkar.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Mallinath Master",
+   "rating": 5,
+   "date": "2024-08-11",
+   "content": "Student Support"
+  },
+  {
+   "name": "Verified learner",
+   "rating": 3,
+   "date": "2023-08-16",
+   "content": "Highly Recommended!! Apart from the course syllabus & teachers, I just loved the way the placement cell of the IMT Ghaziabad stayed connected with every student of our batch & made sure to land each of us at top firms. As a result, I got a chance to appear for an interview with Gartner Company & initiated my career with it."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 4,
+   "date": "2023-08-16",
+   "content": "Fortunately, I got the opportunity to get an alumnus status at IMT Ghaziabad by completing my Advanced General Management program in 2021. My learning journey was beyond my imagination that was a clear result of the continuous efforts of the teaching staff. Also, I got placed at a reputed firm through the placement support of the university."
+  },
+  {
+   "name": "Verified learner",
+   "rating": 5,
+   "date": "2023-06-09",
+   "content": "I am grateful to be a part of IMT Ghaziabad. The institute's emphasis on holistic development, strong alum network, and entrepreneurship concentration have all played important roles in establishing my professional goals."
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What are the entrance requirements for IMT Ghaziabad?",
+   "a": "The eligibility requirements for different programs may differ. Candidates must have a bachelor's degree from a recognized university and may be required to fulfill other requirements such as work experience, admission exam results, and academic achievement."
+  },
+  {
+   "q": "Which admission tests are accepted by IMT Ghaziabad?",
+   "a": "IMT Ghaziabad accepts CAT (Common Admission Test), XAT (Xavier Aptitude Test), GMAT (Graduate Management Admission Test), and CMAT (Common Management Admission Test) results."
+  },
+  {
+   "q": "Does IMT Ghaziabad offer financial aid or scholarships?",
+   "a": "Yes, IMT Ghaziabad provides eligible students with financial aid through scholarships, loans, and EMI."
+  },
+  {
+   "q": "How do you rate the professors at IMT Ghaziabad?",
+   "a": "The faculty at IMT Ghaziabad comprises seasoned academicians and industry specialists who bring a combination of theoretical knowledge and practical insights to the classroom."
+  },
+  {
+   "q": "How robust is IMT Ghaziabad's alum network?",
+   "a": "The alum network of IMT Ghaziabad is large and prominent. Alums are actively involved with the institution by engaging in mentorship programs, giving industry insights, and assisting current students with placement chances."
+  },
+  {
+   "q": "What is it like to live on campus at IMT Ghaziabad?",
+   "a": "IMT Ghaziabad has a thriving campus life with various extracurricular activities, clubs, sports facilities, and cultural events. The institute promotes comprehensive development and provides a welcoming atmosphere for students to pursue their passions."
+  }
+ ]
+}

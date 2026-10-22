@@ -166,6 +166,22 @@ nav .menu-links > .links > li .link {
   font-style: normal;
   color: var(--accent);
   display: block;
+  /* Never wrap a label mid-word. Without this, any viewport a few px too
+     narrow for the row (browser zoom, OS display scaling) broke "Study
+     Abroad" and friends onto two lines — the same one navbar renders on
+     every page, so it looked like some pages had a different, broken bar. */
+  white-space: nowrap;
+}
+
+/* Inline links live from 1181px up (below that the drawer takes over). In
+   the band where full-size links no longer fit beside the logo and the All
+   Courses button, tighten them instead of letting the row overflow. */
+@media screen and (max-width: 1420px) and (min-width: 1181px) {
+  nav .menu-links > .links > li a,
+  nav .menu-links > .links > li .link {
+    padding: 0.5rem 0.55rem;
+    font-size: 1rem;
+  }
 }
 
 /* online course details */
@@ -772,15 +788,19 @@ nav .appBar {
      across the top of that image reads #002d66 at both edges and #003579 at the
      middle, and the image's true extremes are #002049 in the corners and
      #003882 at the brightest point of the glow. The strip is a thin horizontal
-     slice of the same thing, so the stops run dark → glow → dark rather than
-     the asymmetric ramp the old maroon used. Kept in step with `.appSheet`
-     below, which is this bar's phone form. */
+     slice of the same thing — but where the image peaks at one point, the
+     glow here holds flat from 26% to 74%, because that is where the centred
+     1300px shortcut row sits: with a single 52% peak only Online Courses got
+     the bright backdrop, and the client asked for the same behind all six,
+     Refer & Earn through Contact. Kept in step with `.appSheet` below, which
+     is this bar's phone form. */
   background-image: linear-gradient(
     90deg,
     #002049 0%,
-    #002d66 24%,
-    #003882 52%,
-    #002d66 78%,
+    #002d66 10%,
+    #003882 26%,
+    #003882 74%,
+    #002d66 90%,
     #002049 100%
   );
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.12);
@@ -887,6 +907,24 @@ nav .appItemImg {
 nav .appItemImg.ai-icon {
   /* Move SVG down slightly and keep larger size */
   transform: translateY(0.1rem) scale(1.35);
+}
+/* Study Abroad's art is wider than tall (846×762 boarding pass), so the
+   square slot would shrink it; the box is widened to the art's aspect so
+   it renders at the slot's full height, level with its neighbours. Real
+   box dimensions rather than the ai-icon transform trick: Chrome
+   rasterizes an <img> SVG at layout size and then stretches the raster
+   for transform: scale, which blurred the ticket's white keylines — a
+   real-size box rasterizes crisply. */
+nav .appItemImg.study-abroad-icon {
+  width: 2.4rem;
+}
+/* Online Courses, Common Application Form and Contact read a touch small
+   next to their enlarged neighbours; their art is near-square so a small
+   in-place scale is all they need. */
+nav .appItemImg.online-courses-icon,
+nav .appItemImg.caf-icon,
+nav .appItemImg.contact-icon {
+  transform: scale(1.15);
 }
 
 /* ---- U-dots toggle ----
@@ -1112,6 +1150,14 @@ nav.appbar-open .wrapperBox .linkGrc {
   nav .appItemImg.ai-icon {
     transform: scale(1.35);
   }
+  nav .appItemImg.study-abroad-icon {
+    width: 1.5rem;
+  }
+  nav .appItemImg.online-courses-icon,
+  nav .appItemImg.caf-icon,
+  nav .appItemImg.contact-icon {
+    transform: scale(1.1);
+  }
   .linkGrc {
     gap: 0.5rem;
   }
@@ -1323,6 +1369,16 @@ nav .login-circle:hover {
   height: 2.2rem;
   object-fit: contain;
   flex: none;
+}
+/* Same landscape-art compensation as the strip (see .appItemImg above);
+   the 88px sheet tile has room for the sideways overflow. */
+.appSheetItemImg.study-abroad-icon {
+  width: 2.45rem;
+}
+.appSheetItemImg.online-courses-icon,
+.appSheetItemImg.caf-icon,
+.appSheetItemImg.contact-icon {
+  transform: scale(1.1);
 }
 /* The global `* { font-family: Lato }` reset re-applies Lato to every text
    node regardless of inheritance, so the display font is set here, not on a

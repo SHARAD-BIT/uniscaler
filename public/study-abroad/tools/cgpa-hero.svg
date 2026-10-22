@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 250" fill="none" role="img" aria-hidden="true">
+  <!-- Flat stationery illustration for the CGPA hero: notebook, ruler,
+       protractor, pencil, calculator, paper clips. Drawn in-house. -->
+
+  <!-- pink notebook, tilted right -->
+  <g transform="rotate(9 252 155)">
+    <rect x="198" y="78" width="112" height="140" rx="10" fill="#f6c6d3"/>
+    <rect x="198" y="78" width="20" height="140" fill="#ec9db4"/>
+    <rect x="198" y="78" width="20" height="140" fill="none"/>
+    <circle cx="208" cy="98" r="3.2" fill="#fff"/>
+    <circle cx="208" cy="120" r="3.2" fill="#fff"/>
+    <circle cx="208" cy="142" r="3.2" fill="#fff"/>
+    <circle cx="208" cy="164" r="3.2" fill="#fff"/>
+    <circle cx="208" cy="186" r="3.2" fill="#fff"/>
+    <rect x="232" y="102" width="62" height="6" rx="3" fill="#fff" opacity="0.85"/>
+    <rect x="232" y="120" width="62" height="6" rx="3" fill="#fff" opacity="0.65"/>
+    <rect x="232" y="138" width="44" height="6" rx="3" fill="#fff" opacity="0.65"/>
+  </g>
+
+  <!-- teal ruler, bottom left, tilted -->
+  <g transform="rotate(-32 78 205)">
+    <rect x="18" y="192" width="128" height="26" rx="5" fill="#35c0b2"/>
+    <g stroke="#e9fbf8" stroke-width="2.4">
+      <line x1="34" y1="192" x2="34" y2="201"/>
+      <line x1="50" y1="192" x2="50" y2="205"/>
+      <line x1="66" y1="192" x2="66" y2="201"/>
+      <line x1="82" y1="192" x2="82" y2="205"/>
+      <line x1="98" y1="192" x2="98" y2="201"/>
+      <line x1="114" y1="192" x2="114" y2="205"/>
+      <line x1="130" y1="192" x2="130" y2="201"/>
+    </g>
+  </g>
+
+  <!-- pink protractor, top left -->
+  <g transform="rotate(-14 70 62)">
+    <path d="M22 78 A48 48 0 0 1 118 78 Z" fill="#f2a9bd"/>
+    <path d="M46 78 A24 24 0 0 1 94 78 Z" fill="#fdeef3"/>
+    <rect x="22" y="72" width="96" height="8" rx="4" fill="#ec8aa5"/>
+  </g>
+
+  <!-- calculator, centre, tilted left -->
+  <g transform="rotate(-8 128 140)">
+    <rect x="70" y="58" width="118" height="164" rx="14" fill="#eef1f5"/>
+    <rect x="70" y="58" width="118" height="10" rx="5" fill="#dde3ea"/>
+    <rect x="82" y="76" width="94" height="34" rx="6" fill="#2e2a52"/>
+    <rect x="120" y="84" width="48" height="8" rx="4" fill="#8f8bc0"/>
+    <!-- keypad: three grey columns, red operator column -->
+    <g fill="#d5dce4">
+      <rect x="82" y="122" width="20" height="16" rx="5"/>
+      <rect x="108" y="122" width="20" height="16" rx="5"/>
+      <rect x="134" y="122" width="20" height="16" rx="5"/>
+      <rect x="82" y="146" width="20" height="16" rx="5"/>
+      <rect x="108" y="146" width="20" height="16" rx="5"/>
+      <rect x="134" y="146" width="20" height="16" rx="5"/>
+      <rect x="82" y="170" width="20" height="16" rx="5"/>
+      <rect x="108" y="170" width="20" height="16" rx="5"/>
+      <rect x="134" y="170" width="20" height="16" rx="5"/>
+      <rect x="82" y="194" width="46" height="16" rx="5"/>
+      <rect x="134" y="194" width="20" height="16" rx="5"/>
+    </g>
+    <g fill="#ea5c72">
+      <rect x="160" y="122" width="16" height="16" rx="5"/>
+      <rect x="160" y="146" width="16" height="16" rx="5"/>
+      <rect x="160" y="170" width="16" height="16" rx="5"/>
+      <rect x="160" y="194" width="16" height="16" rx="5"/>
+    </g>
+  </g>
+
+  <!-- pencil leaning on the calculator -->
+  <g transform="rotate(38 208 120)">
+    <rect x="200" y="34" width="14" height="96" rx="2" fill="#2fb5a8"/>
+    <rect x="200" y="34" width="14" height="10" rx="2" fill="#f2a9bd"/>
+    <path d="M200 130 L214 130 L207 150 Z" fill="#f4c583"/>
+    <path d="M204.5 143 L209.5 143 L207 150 Z" fill="#4a4a5a"/>
+  </g>
+
+  <!-- paper clips -->
+  <g stroke="#9aa6b2" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M40 148 v-22 a7 7 0 0 1 14 0 v26 a11 11 0 0 1 -22 0 v-24"/>
+    <path d="M310 60 v-16 a6 6 0 0 1 12 0 v20 a9 9 0 0 1 -18 0 v-18" transform="rotate(24 316 52)"/>
+  </g>
+</svg>

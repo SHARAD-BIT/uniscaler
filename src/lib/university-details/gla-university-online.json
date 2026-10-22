@@ -1,0 +1,631 @@
+{
+ "slug": "gla-university-online",
+ "name": "GLA University Online",
+ "establishedYear": "1991",
+ "location": "Mathura, Uttar Pradesh",
+ "rating": 4.5,
+ "reviewStats": {
+  "stars": [
+   8,
+   5,
+   5,
+   28,
+   127
+  ],
+  "total": 173
+ },
+ "banner": "/university/banners/gla-university-online.webp",
+ "approvals": [
+  {
+   "title": "UGC",
+   "logo": "/university/approvals/ugc-logo.jpg"
+  },
+  {
+   "title": "AICTE",
+   "logo": "/university/approvals/aicte-logo.jpg"
+  },
+  {
+   "title": "AIU",
+   "logo": "/university/approvals/aiu-logo.jpg"
+  },
+  {
+   "title": "NIRF",
+   "logo": "/university/approvals/nirf-logo.jpg"
+  },
+  {
+   "title": "NAAC A+",
+   "logo": "/university/approvals/logo-naac-a-plus.jpg"
+  },
+  {
+   "title": "QS World University Rankings",
+   "logo": "/university/approvals/qs-word-university-rankings-.jpg"
+  }
+ ],
+ "about": [
+  {
+   "t": "p",
+   "text": "Ganesh Lal Agrawal University, known more famously as GLA Online University, was established in 1991 in Mathura, Uttar Pradesh, by N. D. Agrawal. GLA University is a privately owned institution of higher education that provides courses in the form of degrees and diplomas."
+  },
+  {
+   "t": "p",
+   "text": "The university has received the necessary accreditations from UGC-DEB as well as other statutory bodies such as AICTE, NAAC (rated &lsquo;A’), BCI, etc. It has also received a special recognition from the Government of Uttar Pradesh and is a reputed and prestigious university to pursue higher education from."
+  },
+  {
+   "t": "p",
+   "text": "GLA University has its own online functionary, which aims to provide top educational facilities to students irrespective of location by tapping on virtual technological means for educational dissemination. The university offers online courses in the domains of management, commerce, computer sciences, wealth management, and more."
+  },
+  {
+   "t": "table",
+   "rows": [
+    {
+     "cells": [
+      "Explore Online Learning Courses In India"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MBA Course Online",
+      "MCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MTech Course Online?",
+      "MCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "MSc Course Online",
+      "MA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BBA Course Online",
+      "BCA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BTech Course Online",
+      "BCom Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "BSc Course Online",
+      "BA Course Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "1-year MBA Online",
+      "Global MBA Online"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Job-Linked Programs",
+      "Pay After Placement Programs"
+     ],
+     "header": false
+    },
+    {
+     "cells": [
+      "Explore more online and distance courses in India !",
+      "Click here for all approved distance and online universities in India !"
+     ],
+     "header": false
+    }
+   ]
+  },
+  {
+   "t": "p",
+   "text": "GLA University has a very value-rooted approach to education and strives to extend equally insightful and comprehensive learning experiences to students enrolled in the online courses that boost not only their knowledge and skills but also their values."
+  },
+  {
+   "t": "p",
+   "text": "The university’s online courses are provided to students at very pocket-friendly ranges and are integrated with a number of efficient support features such as merit scholarships, admissions and student support, placement services, and LMS."
+  }
+ ],
+ "aboutBoxes": [
+  {
+   "title": "Affordable Education",
+   "content": "Courses offered at very affordable rates along with Merit Scholarships"
+  },
+  {
+   "title": "Top Accreditations",
+   "content": "Important Approvals & Full Credibility of Online Degree/Diploma"
+  },
+  {
+   "title": "Efficient Placements",
+   "content": "Association with Top Companies & MNCs"
+  }
+ ],
+ "facts": [
+  "GLA Online University has the approvals from bodies like UGC-DEB as well as AICTE (for its technical courses) and is a credible online educational institution.",
+  "There are provisions for both diploma and degree courses along with relevant specializations that students can choose from.",
+  "The learning support of the university has features like live lectures and recorded lectures (both virtual), webinars, discussion forums, and virtual course materials, as well as systematic curriculum planning and course coordination to ensure smooth learning.",
+  "The online programs have placement support as well, and students stand the chance to get placed in companies like Accenture, Capgemini, Samsung, Amazon, Honda, and more.",
+  "The faculty at GLA University has extensive hands-on experience in delivering online education and is highly qualified in their field of specialization.",
+  "The student support bodies of the university are responsive, cooperative, and prompt in addressing student concerns via online mode itself.",
+  "GLA Online University has the approvals from the BCI Government of Uttar Pradesh."
+ ],
+ "courses": [
+  {
+   "name": "Online BCA",
+   "fee": 97500,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "16250"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1800"
+    }
+   ]
+  },
+  {
+   "name": "Online Certificate Program",
+   "fee": 14000,
+   "duration": "6 Months",
+   "feeDetails": [
+    {
+     "type": "One Time Full Fee Payment",
+     "fee": "14000"
+    },
+    {
+     "type": "Full Fees (internally)",
+     "fee": "14000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com Honours",
+   "fee": 69000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1800"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "11500"
+    }
+   ]
+  },
+  {
+   "name": "B.Tech",
+   "fee": 543000,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Full Fees (internally)",
+     "fee": "543000"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA (Dual)",
+   "fee": 105300,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "24250"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "24250"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1800"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    }
+   ]
+  },
+  {
+   "name": "Online MCA",
+   "fee": 94300,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Per Semester Fee",
+     "fee": "21500"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "23000"
+    },
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1800"
+    }
+   ]
+  },
+  {
+   "name": "Online PG Diploma",
+   "fee": 30000,
+   "duration": "1 Year",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "15000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "15000"
+    },
+    {
+     "type": "Yearly Fees",
+     "fee": "30000"
+    }
+   ]
+  },
+  {
+   "name": "Online B.Com",
+   "fee": 71300,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "500"
+    },
+    {
+     "type": "Per Semester Fee",
+     "fee": "10000"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1800"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "10000"
+    },
+    {
+     "type": "Exam Fees (Per Sem.)",
+     "fee": "1500"
+    }
+   ]
+  },
+  {
+   "name": "Online MBA",
+   "fee": 103000,
+   "duration": "2 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "25750"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1800"
+    }
+   ]
+  },
+  {
+   "name": "Online BBA",
+   "fee": 97500,
+   "duration": "3 Years",
+   "feeDetails": [
+    {
+     "type": "Registration Fee (One Time)",
+     "fee": "1000"
+    },
+    {
+     "type": "Alumni Fee (Once)",
+     "fee": "1800"
+    },
+    {
+     "type": "Per Semester (internally)",
+     "fee": "16250"
+    }
+   ]
+  }
+ ],
+ "emi": [
+  {
+   "t": "p",
+   "text": "Education loans are new solutions to students' problems of affording their course fees. Nowadays various banks and universities provide the benefit to the student of financing their education with easy-to-pay EMI installments. GLA Online doesn’t provide students with such finance options. But don’t worry, College Vidya Portal is there to get your back and support you with these financial options to fund your education."
+  }
+ ],
+ "admission": [
+  {
+   "t": "p",
+   "text": "The admission process in the GLA Online University is conducted in the online mode. So, there is no need to visit the campus for the admission process. Direct admissions are done on the basis of educational qualifications. The admission procedure for 2026 for the online courses at GLA Online University is as follows:"
+  },
+  {
+   "t": "p",
+   "text": "Step 1- First go to the official website of GLA Online University and register yourself."
+  },
+  {
+   "t": "p",
+   "text": "Step 2- Fill in the application form carefully with all your personal, academic, and professional details."
+  },
+  {
+   "t": "p",
+   "text": "Step 3- Pay the fee online as specified in the application form."
+  },
+  {
+   "t": "p",
+   "text": "Step 4- Upload all the required documents for eligibility verification."
+  },
+  {
+   "t": "p",
+   "text": "Step 5— Once all your documents have been verified by the admissions authority of the university, you will receive the onboarding details if you fulfill the eligibility criteria."
+  }
+ ],
+ "importantDates": [
+  {
+   "t": "p",
+   "text": "According to the latest UGC guidelines, all candidates must create their ABC ID and DEB ID to get admission. Click here to know more!"
+  },
+  {
+   "t": "p",
+   "text": "What is the Academic Bank of Credit (ABC) Notification by UGC? Must Watch!"
+  },
+  {
+   "t": "p",
+   "text": "Now, get admission twice a year, in July/August and January/February. Latest Notice by UGC, Click here to know."
+  },
+  {
+   "t": "p",
+   "text": "UGC updated the list of approved Online programs for the academic batch of 2024-25. Click here to get the list!"
+  },
+  {
+   "t": "p",
+   "text": "Precautions to be taken by the students before enrolling for programs offered under ODL & Online Learning Mode, Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "A degree obtained through ODL mode is equivalent to a traditional degree. Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "To verify the authenticity of GLA University Online Click here to know!"
+  },
+  {
+   "t": "p",
+   "text": "UGC issues a public notice regarding misleading abbreviations in the names of universities and colleges. Read the UGC Letter ."
+  },
+  {
+   "t": "p",
+   "text": "How does GLA University Online offer a refund? GLA University Online offers a refund as per the University Grants Commission Refund Policy. ⭐Early cancellation (15+ days)—100% ⭐Late cancellation (≤15 days before)—90% ⭐ Up to 15 days after—80% ⭐16-30 days after - 50% ⭐Beyond 30 days—Nil Click here to read the full notice."
+  }
+ ],
+ "examination": [
+  {
+   "t": "p",
+   "text": "GLA Online University conducts examinations in the online mode. As per the new regulations regarding examinations for online degree courses, the university holds online technology-enabled proctored examinations."
+  },
+  {
+   "t": "p",
+   "text": "Examination Pattern: 30% Internal Assessment (assignments) + 70% External Assessment (end-term). End-term exams are online proctored (3 hours, 70 marks) across three sections."
+  }
+ ],
+ "placementText": [
+  {
+   "t": "p",
+   "text": "Our students got an opportunity"
+  },
+  {
+   "t": "li",
+   "text": "Work in top companies"
+  },
+  {
+   "t": "li",
+   "text": "Support of job search"
+  },
+  {
+   "t": "li",
+   "text": "Interview Preparation Sessions"
+  }
+ ],
+ "placementPartners": [
+  {
+   "title": "Amazon",
+   "logo": "/university/partners/amazon.webp"
+  },
+  {
+   "title": "HDFC Bank",
+   "logo": "/university/partners/hdfc-bank.webp"
+  },
+  {
+   "title": "Jindal Steel and Power",
+   "logo": "/university/partners/new-jindal-steel-power.webp"
+  },
+  {
+   "title": "NTT Data",
+   "logo": "/university/partners/ntt-data.webp"
+  },
+  {
+   "title": "Samsung",
+   "logo": "/university/partners/samsung.webp"
+  },
+  {
+   "title": "Tech Mahindra",
+   "logo": "/university/partners/tech-mahindra.webp"
+  },
+  {
+   "title": "HCL",
+   "logo": "/university/partners/hcl.webp"
+  },
+  {
+   "title": "IBM",
+   "logo": "/university/partners/ibm.webp"
+  },
+  {
+   "title": "Accenture",
+   "logo": "/university/partners/accenture.webp"
+  },
+  {
+   "title": "American Express",
+   "logo": "/university/partners/american-express.webp"
+  },
+  {
+   "title": "Wipro",
+   "logo": "/university/partners/wipro.webp"
+  },
+  {
+   "title": "Genpact",
+   "logo": "/university/partners/genpact.webp"
+  },
+  {
+   "title": "Ey",
+   "logo": "/university/partners/ey.webp"
+  }
+ ],
+ "faculty": [
+  {
+   "name": "Prof. Durg Singh Chauhan",
+   "title": "Pro Chancellor",
+   "description": "Department: Department of Computer Engineering & Applications",
+   "photo": "/university/faculty/Prof._Durg_Singh_Chauhan.webp"
+  },
+  {
+   "name": "Prof. Phalguni Gupta",
+   "title": "Vice-Chancellor and Professor",
+   "description": "Department: Department of Computer Engineering & Applications Experience: 30.6 Years",
+   "photo": "/university/faculty/Prof._Phalguni_Gupta.webp"
+  },
+  {
+   "name": "Prof. Anup Kumar Gupta",
+   "title": "Director & Pro Vice Chancellor",
+   "description": "Department: Department of English Experience: 28 Years",
+   "photo": "/university/faculty/Prof._Anup_Kumar_Gupta.webp"
+  },
+  {
+   "name": "Prof. (Dr.) Kamal Sharma",
+   "title": "Professor & Dean (R&D)",
+   "description": "Department: Department of Mechanical Engineering Experience:16 Years Qualifications: - Ph.D. Polymer Nano-composites 2014 - M.Tech. Computer-aided Design and Drafting 2007 - B.E. Mechanical Engineering 1999",
+   "photo": "/university/faculty/Prof._Dr._Kamal_Sharma.webp"
+  },
+  {
+   "name": "Prof. Anirudh Pradhan",
+   "title": "Distinguished Professor and Director",
+   "description": "Department: Department of Mathematics Experience: 42.8 years Qualifications - D.Sc (Enrolled in 2015) with GLA University, Mathura, India. - Ph.D, 1978, University of Gorakhpur, Gorakhpur, India. - M.Sc, 1972, University of Gorakhpur, Gorakhpur, India. - B.Sc, 1970, University of Gorakhpur, Gorakhpur, India.",
+   "photo": "/university/faculty/Prof._Anirudh_Pradhan.webp"
+  },
+  {
+   "name": "Prof. Vishal Goyal",
+   "title": "Professor & Director IQAC",
+   "description": "Experience: 19 Years Qualifications: - Ph.D. from GLA University, Mathura, 2016. - Master of Technology in Digital Communication from U.P. Technical University, 2006. - Bachelor of Engineering (B.E.) in Electronics from Nagpur University, 2001",
+   "photo": "/university/faculty/Prof._Vishal_Goyal.webp"
+  },
+  {
+   "name": "Prof. Subhash Chandra Tripathi",
+   "title": "Associate Director",
+   "description": "Department: Department of Chemistry",
+   "photo": "/university/faculty/Prof._Subhash_Chandra_Tripathi.webp"
+  },
+  {
+   "name": "Mr. Suresh Pratap Singh",
+   "title": "DIRECTOR- T&D",
+   "description": "Department: Department of Computer Engineering & Applications",
+   "photo": "/university/faculty/Mr._Suresh_Pratap_Singh.webp"
+  },
+  {
+   "name": "Prof. Anurag Singh",
+   "title": "Director",
+   "description": "Qualifications: - Ph.D Finance, Jamia Millia University, - MBM (Masters in Business Management) Finance, - Bachelor of Science, Punjab University, - Chartered Accountancy (Intermediate), Institute of Chartered Accountants of India, - Chartered Management Institute- UKIERI Technical Leadership Program 2019-20, Dudley College (UK) & AICTE (India), 2019-20.",
+   "photo": "/university/faculty/Prof._Anurag_Singh.webp"
+  }
+ ],
+ "reviews": [
+  {
+   "name": "Sudhir kumar das",
+   "rating": 5,
+   "date": "2026-08-08",
+   "content": "it was great exprience for learnig here and very great university"
+  },
+  {
+   "name": "Shivam Kumar Singh",
+   "rating": 4,
+   "date": "2026-08-08",
+   "content": "Best College for online education I have completed My MBA from this university."
+  },
+  {
+   "name": "Sejal Baghel",
+   "rating": 5,
+   "date": "2026-08-06",
+   "content": "I had a very good experience with College Vidya. Their counselors were supportive and answered all my que clearly. they helped me at every step. Thank you College Vidya, for your guidance and support."
+  },
+  {
+   "name": "Dhairya patel",
+   "rating": 5,
+   "date": "2026-08-05",
+   "content": "The clg is cool and its good. I have preferred this clg for my better convince as I'm studying for a professional course so it helps me alot by saving my time as my semester exas are connected online"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Is there placement support for online courses in GLA Online?",
+   "a": "Yes, the online courses have placement and professional support facilities and students can seek placements in top MNCs and companies like Capgemini, Accenture, Tech Mahindra, etc."
+  },
+  {
+   "q": "Do I need to visit the campus for admission to online course at GLA University?",
+   "a": "The admission procedure for GLA Online University is mainly completed online."
+  },
+  {
+   "q": "Is an online degree from GLA University valid?",
+   "a": "Yes, being a well-accredited and approved university from bodies such as UGC-DEB, AICTE, and many more, an online degree from GLA Online University is completely valid and credible."
+  },
+  {
+   "q": "Does GLA University provide online education?",
+   "a": "Yes, GLA University is UGC-DEB approved to provide fully online courses at the UG and PG levels."
+  },
+  {
+   "q": "Does GLA Online University have scholarship facilities?",
+   "a": "Yes, there are merit scholarships available for students at GLA Online University."
+  },
+  {
+   "q": "What are the top part-time courses offered by government-approved universities in India?",
+   "a": "After addressing the time commitment issues of working professionals & regular students, government-recognized universities have introduced a convenient format of courses at their portal in the name of Part-Time Courses. These courses are completely valid & approved by UGC, which gives them equal recognition in the industry just like the on-campus programs. A list of the top part-time courses that are quite popular among students & working professionals in India is provided below: Explore Part-Time Courses In India MBA Part-Time MCA Part-Time MTech Part-Time MCom Part-Time MSc Part-Time MA Part-Time BBA Part-Time BCA Part-Time BTech Part-Time BCom Part-Time BSc Part Time BA Part-Time"
+  }
+ ]
+}
