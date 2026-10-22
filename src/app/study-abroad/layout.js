@@ -1,5 +1,4 @@
 import { pageMetadata } from "@/lib/seo";
-import { studyAbroadCountries } from "@/lib/studyAbroadData";
 
 export const metadata = pageMetadata({
   title: "Study Abroad Programs — Top Universities Worldwide",

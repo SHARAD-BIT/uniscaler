@@ -79,7 +79,9 @@ const faqs = [
   ["Can international students work while studying?", "Many destinations allow limited work, subject to visa conditions. Hours and eligible work can change, so check official immigration guidance."],
 ];
 
-function Table({ headers, rows, links = false }) {
+/* Plain cells only: the destination column used to link to the per-country
+   pages, which were removed on client request (2026-08-25). */
+function Table({ headers, rows }) {
   return (
     <div className="sa-guide-table-wrap">
       <table className="sa-guide-table">
@@ -88,9 +90,7 @@ function Table({ headers, rows, links = false }) {
           {rows.map((row) => (
             <tr key={row[0]}>
               {row.slice(0, headers.length).map((cell, i) => (
-                <td key={`${row[0]}-${i}`}>
-                  {links && i === 0 ? <Link href={`/study-abroad/${row[2]}`}>{cell}</Link> : cell}
-                </td>
+                <td key={`${row[0]}-${i}`}>{cell}</td>
               ))}
             </tr>
           ))}
@@ -136,7 +136,7 @@ export default function StudyAbroadGuide() {
         <section>
           <h3>Popular study destinations</h3>
           <p>Compare the whole student experience—not only rankings. Tuition, living costs, course length, climate, work rules and long-term plans all matter.</p>
-          <Table headers={["Destination", "Why students consider it"]} rows={destinations} links />
+          <Table headers={["Destination", "Why students consider it"]} rows={destinations} />
         </section>
 
         <section>

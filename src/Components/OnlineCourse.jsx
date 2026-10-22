@@ -4,7 +4,7 @@ import { useParams, useRouter } from "next/navigation";
 import { onlineCourseDetails } from "@/Helper/Helper";
 
 import "./styles/onlineCourse.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "@/Utils/StateLink";
 import OnlineUniversities from "@/Utils/OnlineUniversities";
 import LearnerWall from "@/Utils/LearnerWall";
@@ -39,6 +39,19 @@ const MODULE_ICONS = [
   MdMailOutline,
 ];
 const BENEFIT_ICONS = [MdWorkOutline, MdMemory, MdTrendingUp, MdGroups];
+
+/**
+ * The rotating headline over the hero video, one line every 2s — the same
+ * construction (and beat) as the study-abroad hero's rotator. The client
+ * supplied these five lines and where each breaks into lead/tail.
+ */
+const HERO_LINES = [
+  { lead: "Learn Online", tail: "Scale Online" },
+  { lead: "Your Classroom Anywhere", tail: "Your Success Everywhere" },
+  { lead: "Master In Demand Skills", tail: "On Your Own Time" },
+  { lead: "One Platform", tail: "Every Online Course You Need" },
+  { lead: "Click Learn Conquer", tail: "Only at Uniscaler" },
+];
 
 // Benefits arrive as one string carrying both parts: "Career Opportunities:
 // Prepares you for roles such as…". Split on the first colon only, so a colon
@@ -85,6 +98,20 @@ const OnlineCourse = () => {
     };
   }, []);
 
+  /**
+   * The headline advances every 2s, unconditionally — reduced-motion visitors
+   * get the same words on the same beat with the crossfade turned off in CSS,
+   * matching the study-abroad rotator's reasoning.
+   */
+  const [heroLine, setHeroLine] = useState(0);
+  useEffect(() => {
+    const id = setInterval(
+      () => setHeroLine((i) => (i + 1) % HERO_LINES.length),
+      2000
+    );
+    return () => clearInterval(id);
+  }, []);
+
   // Unknown segment and no state: the effect above redirects; render nothing
   // until it does, rather than dereferencing null.
   if (!course) return null;
@@ -107,6 +134,23 @@ const OnlineCourse = () => {
           playsInline
           aria-label={`${course?.name} course program video`}
         />
+        <h1 className="oc-hero-headline">
+          {/* Read once, in full, instead of the visible copy — which a screen
+              reader would otherwise re-announce every two seconds. */}
+          <span className="oc-sr-only">
+            Uniscaler online courses — learn online, scale online. Your
+            classroom anywhere, your success everywhere. Master in-demand
+            skills on your own time. One platform, every online course you
+            need. Click, learn, conquer — only at Uniscaler.
+          </span>
+          {/* A changing key remounts the span so the entrance animation
+              replays — re-applying a class never restarts a running
+              animation. Same reasoning as the study-abroad rotator. */}
+          <span key={heroLine} className="oc-hero-rotator" aria-hidden="true">
+            <span className="oc-hero-lead">{HERO_LINES[heroLine].lead}</span>
+            <span className="oc-hero-tail">{HERO_LINES[heroLine].tail}</span>
+          </span>
+        </h1>
       </section>
 
       {/* The universities grid saved from the client's collegevidya

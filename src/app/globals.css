@@ -91,19 +91,6 @@ img {
   height: 100%;
   object-fit: contain;
 }
-.dot {
-  position: fixed;
-  left: -20px;
-  top: -20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--accent);
-  z-index: 9999;
-  pointer-events: none;
-  box-shadow: 0 0 10px var(--accent);
-  transition: transform 0.2s ease;
-}
 .top {
   /* 127px, not the 100px this carried since before the app-switcher strip
      existed. The fixed navbar is two layers — the 63px strip plus the glass
@@ -151,11 +138,6 @@ img {
 @media screen and (max-width: 765px) {
   .top {
     padding-top: 70px;
-  }
-}
-@media screen and (max-width: 765px) {
-  .dot {
-    display: none;
   }
 }
 .swiper-button-prev,

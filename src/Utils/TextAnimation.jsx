@@ -32,6 +32,23 @@ const TextAnimation = ({ TEXTS }) => {
 
   return (
     <div className="textAnimation">
+      {/*
+        The height reservation. Every phrase is rendered here, hidden, all in
+        one grid cell — so the box is always as tall as the LONGEST phrase at
+        this width, and swapping lines cannot change the height of whatever
+        contains it. Client, 2026-09-04: on a phone the hero's slogans
+        alternate between one and two lines, and the card grew and shrank by
+        36px every three seconds, shoving the search bar and everything under
+        it up and down while reading. Measuring the real phrases rather than
+        reserving "2 lines" is what keeps it exact at every width and font
+        size — the same component also runs at 0.9rem inside the online-course
+        cards.
+      */}
+      <span className="textAnimation__sizer" aria-hidden="true">
+        {TEXTS.map((text, i) => (
+          <span key={i}>{text}</span>
+        ))}
+      </span>
       {index > 0 ? (
         <span
           key={`out-${index}`}

@@ -62,7 +62,22 @@ const OnlineUniversities = ({ heading: Heading = "h2" }) => (
             {u.location && (
               <span className="gp-chip gp-chip-loc">
                 <MdLocationOn aria-hidden="true" />
-                {u.location}
+                {/* City and state split into spans so the phone styles can
+                    drop the state ("Pune, Maharashtra" → "Pune" — client ask,
+                    2026-09-02: one is enough on a half-width tile). One outer
+                    span, because the chip is inline-flex with a 3px gap: as
+                    separate flex items the gap landed before the comma
+                    ("Bengaluru , Karnataka"); inside a single item it is
+                    plain inline text and desktop renders exactly what it
+                    always did. */}
+                <span>
+                  {u.location.split(",")[0]}
+                  {u.location.includes(",") && (
+                    <span className="gp-loc-state">
+                      {u.location.slice(u.location.indexOf(","))}
+                    </span>
+                  )}
+                </span>
               </span>
             )}
             <span className="gp-chip gp-chip-badge">

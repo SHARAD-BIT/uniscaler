@@ -45,13 +45,6 @@ function arcFromHome({ x, y }) {
 }
 
 /**
- * Destinations and catalog countries are two different lists: Ireland is offered
- * as a destination but has no programs, so `/study-abroad/ireland` would 404.
- */
-const hasCountryPage = (slug) =>
-  studyAbroadCountries.some((c) => c.slug === slug);
-
-/**
  * The four split cards in the "smartest way" band. `tone` selects a colour from
  * the four defined on `[data-tone]` in study-abroad.css — a name rather than a
  * hex here so the palette stays in the stylesheet with the rest of the design.
@@ -318,21 +311,21 @@ export default function StudyAbroadPage() {
   const [showAllPathways, setShowAllPathways] = useState(false);
 
   /**
-   * The hero video mounts only where it is worth its 3.7MB — 901px and up — and
-   * never for a visitor who has asked for reduced motion. Everyone else gets
-   * `hero-poster.webp` instead, painted as the section's background in CSS, so
-   * the band looks the same either way; only the motion is missing.
+   * The hero video used to mount only at 901px and up, with phones getting the
+   * static `hero-poster.webp` to spare them the 3.7MB download — but on the
+   * phone that read as "the video is broken" (client, 2026-09-01), so it now
+   * plays at every width. The reduced-motion opt-out stays: those visitors get
+   * the poster, painted as the section's background in CSS, so the band looks
+   * the same either way; only the motion is missing.
    *
-   * Gated in JS rather than with a CSS media query because `display: none` on a
-   * <video> does not stop the download; the file would still be fetched on
-   * every phone. Starts false so the server-rendered markup and the first
-   * client paint agree — the poster shows for that frame either way.
+   * Still gated in JS rather than with a CSS media query because
+   * `display: none` on a <video> does not stop the download. Starts false so
+   * the server-rendered markup and the first client paint agree — the poster
+   * shows for that frame either way.
    */
   const [heroVideo, setHeroVideo] = useState(false);
   useEffect(() => {
-    const mq = window.matchMedia(
-      "(min-width: 901px) and (prefers-reduced-motion: no-preference)"
-    );
+    const mq = window.matchMedia("(prefers-reduced-motion: no-preference)");
     const sync = () => setHeroVideo(mq.matches);
     sync();
     mq.addEventListener("change", sync);
@@ -426,6 +419,23 @@ export default function StudyAbroadPage() {
   const submitPlan = (e) => {
     e.preventDefault();
     setPlanStatus("sending");
+    // Mirror the lead into the client's Google Sheet when a webhook URL is
+    // configured (setup: GOOGLE-SHEET-LEADS.md at the repo root). Fire-and-
+    // forget by design: Apps Script web apps answer without CORS headers, so
+    // this goes out `no-cors` (the response is opaque and unreadable) with a
+    // text/plain body — a JSON content type would trigger a preflight the
+    // script can never answer. What the visitor sees as success is still
+    // decided by the site's own /consultation endpoint below, which stays
+    // the primary store; the sheet is a convenience copy.
+    const sheetHook = process.env.NEXT_PUBLIC_LEADS_SHEET_WEBHOOK;
+    if (sheetHook) {
+      fetch(sheetHook, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ source: "study-abroad-plan", ...plan }),
+      }).catch(() => {});
+    }
     fetch(process.env.NEXT_PUBLIC_API_URL + "/consultation", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -630,16 +640,10 @@ export default function StudyAbroadPage() {
                   <Link href="/contact" className="sa-dest-card-btn">
                     Country guide
                   </Link>
-                  {/* Ireland is a destination but has no programs in the
-                      catalog, so it has no country page to send anyone to. */}
-                  <Link
-                    href={
-                      hasCountryPage(active.slug)
-                        ? `/study-abroad/${active.slug}`
-                        : "/contact"
-                    }
-                    className="sa-dest-card-link"
-                  >
+                  {/* The per-country pages were removed on client request
+                      (2026-08-25), so Explore goes where Country guide already
+                      went: the contact page. */}
+                  <Link href="/contact" className="sa-dest-card-link">
                     Explore <FaChevronRight />
                   </Link>
                 </div>
@@ -717,30 +721,15 @@ export default function StudyAbroadPage() {
             ))}
           </div>
 
-          {/* Not optional. All nine photos — the four cards above and the
-              support band's five — are CC BY, which permits the commercial
-              use and the crop but requires the credit: removing this line
-              means removing the images. The support five are credited here rather
-              than under their own figure on the client's word (2026-08-21);
-              one combined line on the page satisfies BY's "reasonable to the
-              medium" attribution. Generated by scripts/fetch-domain-photos.mjs
-              and scripts/fetch-support-photos.mjs respectively. */}
-          <p className="sa-goal-credits">
-            Photos:{" "}
-            {[...domainPhotoCredits, ...supportPhotoCredits].map((c, i) => (
-              <span key={c.key}>
-                {i > 0 && " · "}
-                <a href={c.source} target="_blank" rel="noopener noreferrer">
-                  {c.title}
-                </a>{" "}
-                by {c.creator} (
-                <a href={c.licenseUrl} target="_blank" rel="noopener noreferrer">
-                  {c.license}
-                </a>
-                )
-              </span>
-            ))}
-          </p>
+          {/* The combined "Photos: …" credit line that sat here was removed
+              on the client's instruction (2026-09-01) — all nine photos (the
+              four goal cards and the support band's five) are CC BY, which
+              REQUIRES discoverable attribution, so the credits now live on
+              /image-credits (see src/app/image-credits/page.js), linked from
+              the small "Image credits" link in the footer's copyright line.
+              That page and link are what keep these photos inside their
+              license terms; removing either brings the obligation back
+              here. */}
         </div>
       </section>
 

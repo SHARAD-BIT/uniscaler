@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import SearchSet from "../Utils/SearchSet";
 import "./styles/ExploreColleges.css";
-import CryptoJS from "crypto-js";
 import Link from "@/Utils/StateLink";
+import { fetchCollegesForSearch } from "@/lib/collegeSearchClient";
 
 import { IoSearch } from "react-icons/io5";
 
@@ -88,24 +88,10 @@ const ExploreByCollege = () => {
     // Guards against a slow response for a previously selected stream landing
     // after a newer one and overwriting the list.
     const controller = new AbortController();
-    const Data = new Date().getDate();
-    const encryptedToken = CryptoJS.AES.encrypt(
-      JSON.stringify(process.env.NEXT_PUBLIC_FETCH_BLOG + Data),
-      process.env.NEXT_PUBLIC_PUBLIC_ENC
-    ).toString();
     setStatus("loading");
-    fetch(`${process.env.NEXT_PUBLIC_WEBSITE_API}/fetchCollegeForSearch`, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({
-        token: encryptedToken,
-        searchTerm: selectedItem.toLocaleLowerCase(),
-      }),
+    fetchCollegesForSearch(selectedItem.toLocaleLowerCase(), {
       signal: controller.signal,
     })
-      .then((res) => res.json())
       .then((data) => {
         if (data.code === 200) {
           setFetchData(Array.isArray(data.data) ? data.data : []);

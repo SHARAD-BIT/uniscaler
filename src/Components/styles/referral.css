@@ -36,9 +36,19 @@
   /* ?v= is the asset's version. The file name never changes, so a browser
      that has cached an earlier dot size keeps serving it — bump this
      whenever dot-map.svg is regenerated. */
+  /* Colour (client, 2026-09-03): the flat indigo (#16247f → #2a40d1, fading
+     to pale blue under the step cards) is gone; the panel is now the site's
+     hero blue — the navbar app-switcher strip's palette as the same radial
+     the Study Abroad pathway band uses (#003882 glow at the top, #002d66
+     mid, #002049 corners). Lightened on the client's follow-up ("aur light
+     karo"): same shape, the stops lifted two steps up the same hue —
+     #2b7be8 glow, #1259c4 mid, #0b3d91 corners; white copy still reads
+     at 4.5:1+ on the brightest patch. The dot map and the fine grid stay:
+     they are white at low opacity and recolour with whatever is under
+     them. */
   background-image: url("/refer-earn/dot-map.svg?v=5"),
     radial-gradient(rgba(255, 255, 255, 0.14) 1.5px, transparent 1.5px),
-    linear-gradient(180deg, #16247f 0%, #2a40d1 55%, #b9cdf3 130%);
+    radial-gradient(120% 130% at 50% 0%, #2b7be8 0%, #1259c4 48%, #0b3d91 100%);
   background-size: min(1400px, 100%) auto, 22px 22px, 100% 100%;
   background-position: center 12%, 0 0, 0 0;
   background-repeat: no-repeat, repeat, no-repeat;
@@ -120,14 +130,42 @@
   font-size: 0.8em;
 }
 
+/* Bigger illustration, same card (client, 2026-09-03). The image used to be
+   a 300px (80% on narrow cards) square parked at the card's bottom with a
+   1.2rem gap above it — and it set the card's height, so simply widening it
+   would have grown the card. So the BOX below keeps exactly that footprint
+   (height = the old image width — 80% of the card's content width, capped
+   at 300px — plus the same 1.2rem gap) and the image inside is
+   scaled to the card's full content width and cropped by the box. At 536px
+   cards that is 1.68x the old size; object-position keeps the raised arms
+   and the coin in view and lets the phones' bottoms be what is cut. The
+   auto top margin still parks the box at the bottom edge when the card is
+   stretched taller than its content.
+
+   The height is an aspect ratio, not a container-query unit: 5/4 on a
+   content-box makes the content height 0.8 x the width — the old image's
+   80% — and max-height caps it at the old 300px on wide cards. (A first
+   pass used container-type: inline-size on the card for 80cqw, and on
+   phones — where the card has auto margins, so it is fit-content wide —
+   the containment collapsed it to its padding, 51px.) */
+.rf-hero-art-box {
+  width: 100%;
+  flex: none;
+  margin: auto 0 0;
+  padding-top: 1.2rem;
+  box-sizing: content-box;
+  aspect-ratio: 5 / 4;
+  max-height: 300px;
+  overflow: hidden;
+}
+
 .rf-hero-art {
   display: block;
-  width: min(300px, 80%);
-  height: auto;
-  /* auto top margin parks it against the card's bottom edge, where the
-     reference's photo sits, rather than leaving the gap below it. */
-  margin: auto auto 0;
-  padding-top: 1.2rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 46%;
+  margin: 0;
 }
 
 /* The pitch sits on frosted glass, matching the left card's radius so the

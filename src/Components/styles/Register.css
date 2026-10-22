@@ -51,6 +51,67 @@
 .popup .register .form-wrapper::before {
   height: 16px;
 }
+/* Login page only (client asks, 2026-09-02/03): the ring-palette colours
+   frame the WHOLE card — a thin 2px gradient border on all four sides —
+   replacing the original 10px top-only strip the client called too thick.
+   Corners: went square on 2026-09-03 morning, back to rounded (16px) on
+   the client's follow-up the same day; the mockUp panel's inner corners
+   follow at 14px (16 minus the 2px border) so the illustration and the
+   Register band sit inside the curve. Register and the popup keep the
+   plain accent strip and their own shape.
+
+   The border is NOT painted by the card itself any more. It lives on an
+   ::after ring that starts invisible and is switched on by Login.jsx the
+   moment the SVG snake from the navbar ring disappears into the card's
+   top-right corner (`.border-lit`) — the client's ask: the colours should
+   not be there until the snake has gone in and "delivered" them. Under
+   reduced motion, or if the ring is not on the page, Login.jsx lights it
+   at once. The ring is a padding-box/content-box mask difference, 2px
+   wide, with the gradient as its background — the same construction as
+   the navbar pill's ray. */
+.login .form-wrapper {
+  position: relative;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  background: #ffffff;
+  /* Narrower than the 700px the shared rule sets ("width kam"), but the
+     illustration stays BESIDE the form — the stacked portrait pass was
+     reverted on the client's follow-up ("image to side me hi honi
+     chahiye thi"). The two-column grid comes from the shared
+     .form-wrapper rule; only the width is tightened here. */
+  max-width: 680px;
+  min-height: 390px;
+  grid-template-columns: 1.05fr 1fr;
+}
+.login .form-wrapper::before {
+  display: none;
+}
+.login .form-wrapper::after {
+  content: "";
+  position: absolute;
+  /* -2px: out from the padding edge over the border area, so the 2px ring
+     the mask leaves sits exactly where the card's transparent border is. */
+  inset: -2px;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(90deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+.login .form-wrapper.border-lit::after {
+  opacity: 1;
+}
+.login .form-wrapper .mockUp .text {
+  border-radius: 14px 0 0 14px;
+}
+/* The ring-snake-grow / ring-snake-crawl keyframes that animated the old
+   top-only strip into place were removed with the strip itself (2026-09-03,
+   see the .login .form-wrapper rule above). */
 .form-wrapper .mockUp {
   width: 100%;
   height: 100%;
@@ -59,6 +120,36 @@
 .login .form-wrapper .mockUp .text{
   padding:0 ;
   position: relative;
+}
+.login .form-wrapper .mockUp .text .img {
+  width: 100%;
+  height: calc(100% - 64px);
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.login .form-wrapper .mockUp .text .img img {
+  object-fit: cover;
+}
+.login .form-wrapper > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1.25rem 1rem;
+}
+.login .form-wrapper .form-element {
+  display: grid;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.login .form-wrapper .form-group {
+  gap: 0.55rem;
+}
+.login .form-wrapper .form-group label {
+  margin: 0;
+}
+.login .form-wrapper button {
+  margin-top: 0.25rem;
+  padding-block: 0.7rem;
 }
 .form-wrapper .mockUp .text {
   height: 100%;
@@ -156,7 +247,44 @@
   .form-wrapper .mockUp .text {
     border-radius: 0 0 20px 20px;
   }
-  .login .form-wrapper .mockUp .text .img{
-    height: 300px;
+  /* Login card on phones (client, 2026-09-03: "phone UI bahut kharab
+     hai"). Four things were wrong and each has its own line below: the
+     card ran edge to edge so its gradient border was clipped by the
+     viewport on both sides; the illustration sat in a fixed 300px box
+     with object-fit: cover (plus the generic -1rem margin-top above),
+     which cropped the "UNISCALER" heading off its top; the Register link
+     is absolutely pinned to the panel's bottom on desktop, and with the
+     panel's height now just the image it overlaid the illustration's
+     lower part; and the form's desktop padding left a big dead gap after
+     the panel. */
+  .login .form-wrapper {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: calc(100% - 2rem);
+    margin: 1rem auto 0;
+  }
+  .login .form-wrapper .mockUp .text {
+    gap: 0;
+    /* Stacked, so the panel is the card's TOP: round its top corners. */
+    border-radius: 14px 14px 0 0;
+  }
+  .login .form-wrapper .mockUp .text .img {
+    height: auto;
+    aspect-ratio: 1684 / 1546;
+  }
+  .login .form-wrapper .mockUp .text .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 0;
+  }
+  .login .form-wrapper .mockUp .text .link {
+    position: static;
+    padding: 0.75rem 1rem;
+    background: #fff;
+  }
+  .login .form-wrapper > form {
+    padding: 0.5rem 1rem 1.25rem;
   }
 }

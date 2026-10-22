@@ -1,10 +1,10 @@
 "use client";
 import { useMemo, useState } from "react";
-import CryptoJS from "crypto-js";
 import { IoSearch } from "react-icons/io5";
 import { MAX_UNIVERSITIES } from "@/lib/commonApplicationCatalog";
 import { ONLINE_UNIVERSITIES } from "@/lib/onlineUniversities";
 import { UNIVERSITY_COURSES } from "@/lib/universityCourses";
+import { fetchCollegesForSearch } from "@/lib/collegeSearchClient";
 import "./styles/commonApplicationForm.css";
 
 /**
@@ -139,17 +139,7 @@ const CommonApplicationForm = () => {
   // straight inside an effect body.
   const loadRegular = () => {
     setRegStatus("loading");
-    const Data = new Date().getDate();
-    const encryptedToken = CryptoJS.AES.encrypt(
-      JSON.stringify(process.env.NEXT_PUBLIC_FETCH_BLOG + Data),
-      process.env.NEXT_PUBLIC_PUBLIC_ENC
-    ).toString();
-    fetch(`${process.env.NEXT_PUBLIC_WEBSITE_API}/fetchCollegeForSearch`, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token: encryptedToken, searchTerm: "" }),
-    })
-      .then((res) => res.json())
+    fetchCollegesForSearch("")
       .then((data) => {
         if (data.code === 200) {
           const rows = Array.isArray(data.data) ? data.data : [];
@@ -339,6 +329,28 @@ const CommonApplicationForm = () => {
 
   return (
     <main className="top caf">
+      {/* Full-bleed hero video (2026-08-26). One <video> element only, on the
+          client's ask — a second, blurred copy of the same file was here as
+          a background fill and got dropped for exactly that reason. The band
+          is shorter than this 16:9 footage needs to show uncropped at full
+          width, so the video is `contain`-fit (never crops, by definition)
+          and the leftover space either side is filled by
+          .caf-hero-band::before — a blurred, scaled-up copy of a single
+          extracted frame (public/common-application-form-hero-poster.jpg),
+          not a second video. Same "blurred background" look as before, one
+          decode instead of two. See the CSS for the pseudo-element rule. */}
+      <section className="caf-hero-band">
+        <video
+          className="caf-hero-fg"
+          src="/common-application-form-hero.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+        />
+      </section>
+
       <header className="caf-head">
         <h1>Common Application Form</h1>
         <p>

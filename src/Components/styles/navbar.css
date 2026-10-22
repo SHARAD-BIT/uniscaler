@@ -377,11 +377,20 @@ nav .menu-links .links li:hover .sub-menu li a {
   position: relative;
   display: block;
 }
+/* The bullet dot and the text used to collide: the anchors inherit
+   `padding: 0.5rem 1rem` from the top-level link rule, which left the dot
+   (then at left: 5px) riding ~6px off the first letter — it read as a stray
+   mark on the text. The padding rule below opens the room; three classes and
+   four elements so it outweighs the (0,2,3) navbar anchor rule — see the
+   specificity note in studyAbroadMegaMenu.css. */
+nav .menu-links .links li .sub-menu li a {
+  padding-left: 1.7rem;
+}
 nav .menu-links .links li:hover .sub-menu li a::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 5px;
+  left: 0.7rem;
   transform: translateY(-50%);
   width: 5px;
   height: 5px;
@@ -567,14 +576,10 @@ nav .login-btn:hover {
   }
 }
 @media screen and (max-width: 600px) {
-  nav .login-circle {
-    width: 38px;
-    height: 38px;
-  }
-  nav .login-circle img {
-    width: 26px;
-    height: 26px;
-  }
+  /* The login-circle box/img sizes that used to sit here were dead code —
+     the unconditional `nav .login-circle` rules live far below this in the
+     file and, at equal specificity, always won at every width. The working
+     phone-only size now lives just after those rules, where it can win. */
   .linkGrc {
     gap: 0.3rem;
   }
@@ -603,12 +608,130 @@ nav .login-btn:hover {
   cursor: pointer;
   padding: 0.5rem;
   margin-left: 1.5rem;
-  background-color: var(--primary);
-  color: var(--light);
+  display: inline-flex;
+  align-items: center;
+  /* Water glass, not the flat grey this used to be (client ask, 2026-09-02)
+     — a small pane of the same material as the bar it sits on: a thin cool
+     tint the backdrop shows through, with the blur sampling whatever is
+     behind the bar. Falls back gracefully where backdrop-filter is
+     unsupported: the tint alone still separates the pill from the bar. */
+  background-color: rgba(255, 255, 255, 0.35);
+  background-image: linear-gradient(
+    140deg,
+    rgba(228, 241, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  backdrop-filter: blur(12px) saturate(180%);
+  color: var(--dark);
   font-weight: 600;
   white-space: nowrap;
   font-size: 1.06rem;
-  border-radius: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  /* Anchors the orbiting-ray pseudo-element below. */
+  position: relative;
+}
+/* Orange "comet" ray orbiting the pill's edge — copied from nomu.store's
+   early-access pill on the client's ask (2026-09-02). A conic-gradient
+   comet (bright head, fading tail) fills a pseudo-element that a pair of
+   composited masks cuts down to a 1.5px ring just inside the glass edge;
+   animating the registered --pill-ray-angle spins the gradient, not the
+   box. The keyframes are deliberately uneven — 0→300deg in the first 55%
+   of the cycle, the last 60deg in the remaining 45% — which is what gives
+   the reference its fast-sweep-then-slow-drift feel. Browsers without
+   @property (pre-2023) simply don't animate and show nothing extra; the
+   pill keeps its normal border. The ray passes over the flag badge's outer
+   arc by design, the way a story ring fronts its avatar. */
+@property --pill-ray-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.linkGrc .courseBtn button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  /* 2px — the ring the masks cut is this thick; settled here after two
+     client passes (1.5px too thin, 2.5px too thick). */
+  padding: 2px;
+  /* The tail builds over ~330deg — nearly the whole rim — before the
+     head (lengthened twice on the client's ask: ~44deg → ~210deg →
+     this). Tricolor, not the plain orange it started as (client,
+     2026-09-02): the tail runs the flag's own palette — green (#138808)
+     fading in, through chakra navy, into the bright saffron (#FF9933)
+     head — one continuous gradient. */
+  /* Colour balance per the client (2026-09-02): blue is a narrow ~50deg
+     bridge between green and saffron, and the saffron run is the longest
+     stretch (~90deg into the head). */
+  background: conic-gradient(
+    from var(--pill-ray-angle),
+    transparent 0deg,
+    transparent 30deg,
+    rgba(19, 136, 8, 0.12) 90deg,
+    rgba(19, 136, 8, 0.5) 180deg,
+    rgba(27, 63, 143, 0.6) 215deg,
+    rgba(255, 153, 51, 0.5) 255deg,
+    rgba(255, 153, 51, 0.8) 310deg,
+    #ff9933 345deg,
+    #ffd9a8 357deg,
+    transparent 360deg
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: pill-ray 3.6s infinite;
+}
+@keyframes pill-ray {
+  0% {
+    --pill-ray-angle: 0deg;
+  }
+  55% {
+    --pill-ray-angle: 300deg;
+  }
+  100% {
+    --pill-ray-angle: 360deg;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .linkGrc .courseBtn button::before,
+  .linkGrc .courseBtn button .course-country-badge {
+    animation: none;
+  }
+}
+@keyframes badge-cd-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.linkGrc .courseBtn button .course-country-badge {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  /* Above the orbiting-ray pseudo (positioned elements paint over statics,
+     so without this the ray drew across the flag's face on phones, where
+     the badge's circle IS the pill's right cap). The ray now passes
+     BEHIND the flag along their shared curve — the curve itself is
+     untouched (client, 2026-09-02). */
+  position: relative;
+  z-index: 1;
+  /* Spins like an album CD (client ask, 2026-09-02). The badge is a
+     bordered circle so its shape and the pill's cap stay visually still —
+     only the flag artwork turns. Slow like a record, not a loading
+     spinner; transform doesn't touch layout, so the negative-margin
+     curve-lock on phones is unaffected. */
+  animation: badge-cd-spin 6s linear infinite;
+  overflow: hidden;
+  margin-left: 0.55rem;
+  border: 1px solid #d4d9df;
+  border-radius: 50%;
+  background: #fff url("/nav-icons/india-tricolor-brush.png") center / 210% 210% no-repeat;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
 }
 .linkGrc .courseBtn button .icon svg {
   transition: 0.3s;
@@ -1189,14 +1312,120 @@ nav .login-circle {
   flex: none;
   cursor: pointer;
   transition: transform 0.25s;
+  /* Anchors the story-ring pseudo-elements below. */
+  position: relative;
 }
 nav .login-circle img {
-  width: 34px;
-  height: 34px;
+  /* 26px (sized up and back down across three client passes — final ask
+     was the whole ring-and-icon smaller): the Instagram-style ring below
+     wraps the icon the way a story ring wraps an avatar, and the mark is a
+     square-ish shield — its corners have to stay inside the white disc
+     (disc radius > half the icon's diagonal, 38/2 > 26·√2/2), or they'd
+     draw over the gradient. */
+  width: 26px;
+  height: 26px;
   display: block;
+  position: relative;
+  z-index: 1;
+}
+/* Instagram-style story ring around the mark (client ask, 2026-09-02, from
+   an IG screenshot): a conic-gradient disc with a smaller white disc on top
+   of it — the visible ring is the sliver of gradient between the two — and
+   the mark above both. Two pseudo-elements, no markup change; the 48px tap
+   target is untouched. */
+nav .login-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 210deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5,
+    #feda75
+  );
+}
+nav .login-circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 38 against the 42 gradient disc = the same 2px ring. */
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
 }
 nav .login-circle:hover {
   transform: translateY(-1px);
+}
+/* Login page only, applied by Login.jsx as its SVG snake slips out of the
+   ring: the ring drains to all blue — the snake "took the colours". A
+   conic swap can't crossfade, so a brief dim-pulse masks the change. The
+   class is removed in that effect's cleanup, so navigating anywhere else
+   restores the colourful ring instantly. */
+nav .login-circle.ring-drained::before {
+  background: conic-gradient(from 210deg, #4f5bd5, #3d49c9, #5a66e0, #4f5bd5);
+  animation: ring-drain-pulse 0.45s ease-out;
+}
+@keyframes ring-drain-pulse {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Phone-only shrink of the mark (client ask — desktop stays 34px). Placed
+   AFTER the unconditional rule above because that is the only position from
+   which it can win: this file's cascade runs on source order at equal
+   specificity, and an earlier ≤600px block that tried to size this icon sat
+   before the unconditional rule and never applied at any width. The 48px
+   tap-target box is deliberately untouched, so nothing beside it shifts. */
+@media screen and (max-width: 600px) {
+  nav .login-circle img {
+    /* 22px — same corner-inside-the-white-disc math as the base rule,
+       scaled to the phone ring below. */
+    width: 22px;
+    height: 22px;
+  }
+  nav .login-circle::before {
+    width: 36px;
+    height: 36px;
+  }
+  nav .login-circle::after {
+    /* 32 against the 36 disc = the same 2px ring as desktop. */
+    width: 32px;
+    height: 32px;
+  }
+  /* Client ask, phone-only: nudge the "All Courses" pill slightly right of
+     the wordmark. Covers 431–600px from here; the ≤430px block at the end
+     of the file re-declares the same margin (it used to zero it) because it
+     sits later in the source and would win otherwise. */
+  .linkGrc .courseBtn button {
+    margin-left: 0.5rem;
+  }
+  /* Client ask, phone-only: the mark icon slightly right too. The icon and
+     the hamburger are the two ends of `.menu-icons`, whose right edge is
+     pinned to the bar's gutter — so the icon moves right by closing the gap
+     between them, not by a margin on itself (a margin-left here just widens
+     the box leftward and the icon stays put). Halving the 1rem gap shifts
+     the icon 8px toward the hamburger, and gives the tight narrow-phone row
+     8px back as a side effect. */
+  nav .menu-icons {
+    gap: 0.5rem;
+  }
 }
 
 /* ===========================================================================
@@ -1252,12 +1481,46 @@ nav .login-circle:hover {
   /* "All Courses" was a touch tall next to the wordmark. Its padding does not
      come from the 600px block as the file order suggests — the top-level rule
      at "shrink the All Courses pill" sits after every media block and wins at
-     each width, so 0.45rem is what was actually applying. Down to 0.28rem,
-     about 5px off the pill. Longhands only: the horizontal 0.7rem and the
-     font size stay, so the label keeps its own breathing room. */
+     each width, so 0.45rem is what was actually applying. Longhands only:
+     the left 0.7rem and the font size stay, so the label keeps its own
+     breathing room.
+
+     Top/bottom padding is 0, not just reduced, and that is not merely a
+     height trim: `border-radius: 999px` makes the pill's right end a
+     semicircle of radius = button-height / 2, so as long as the button was
+     any taller than the flag badge, that cap traced a bigger circle than the
+     badge's own — with `padding-right: 0` below the two curves touched only
+     at the badge's vertical centre and peeled apart into a crescent of grey
+     everywhere else (a client-visible "still a little gap" even with the
+     edges flush). Zero top/bottom padding makes the button exactly as tall
+     as the badge — its tallest child, sized by the flex `align-items: center`
+     centring, not by this padding, so the label stays centred and unaffected
+     — which makes the pill's cap radius equal to the badge's own radius:
+     same circle, not two that happen to touch. */
   .linkGrc .courseBtn button {
-    padding-top: 0.28rem;
-    padding-bottom: 0.28rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* Client ask (mobile only): the pill's grey background should end flush
+       with the flag badge's own round edge, not trail extra grey past it.
+       The badge is the button's last child with no margin-right of its own,
+       so zeroing this out is enough — its circle sits inside the pill's
+       already-round right cap without getting clipped by it. */
+    padding-right: 0;
+  }
+  /* Even with zero padding, the badge only spans the button's *content*
+     box; the cap's semicircle follows the *border* box, one 1px border
+     wider on every side. Concentric circles one border apart read as a
+     thin grey ring between the flag and the pill's edge — visibly two
+     curves once the pill grew. Negative top/right/bottom margins pull the
+     badge over the border so its circle spans the full border-box: badge
+     radius and cap radius become the same circle, with the badge's own
+     1px border drawing the shared curve. margin-left is untouched — the
+     base 0.55rem (0.4rem in the ≤430px block, which only sets that
+     longhand and so keeps these three) still spaces it off the chevron. */
+  .linkGrc .courseBtn button .course-country-badge {
+    margin-top: -1px;
+    margin-right: -1px;
+    margin-bottom: -1px;
   }
 }
 
@@ -1390,3 +1653,86 @@ nav .login-circle:hover {
   letter-spacing: 0.01em;
 }
 
+/* =====================================================================
+   Keep the login avatar and the hamburger fully on screen on narrow
+   phones. `.wrapperBox` is `justify-content: space-between` between
+   `.linkGrc` (logo + "All Courses" pill) and `.menu-icons`, but flex
+   items default to `min-width: auto` — their own content size — so
+   `.linkGrc` never actually shrank: the pill's flag badge is fixed-width
+   and its label is `white-space: nowrap`, so past a point the row had
+   nowhere left to give, and the overflow pushed `.menu-icons` (the only
+   way to reach the mobile drawer) straight past the viewport edge, where
+   `overflow-x: clip` on <body> (globals.css) silently sliced the
+   hamburger in half rather than showing a scrollbar for it.
+   `min-width: 0` down this chain lets `.linkGrc` shrink below its
+   content size again; `.menu-icons` gets `flex-shrink: 0` so it is never
+   the side that gives. Placed last in the file on purpose, matching the
+   convention already in use above (see "shrink the All Courses pill") —
+   the last rule for a given selector wins here regardless of media-query
+   nesting. */
+nav .wrapperBox .linkGrc,
+nav .linkGrc .courseBtn,
+nav .linkGrc .courseBtn button {
+  min-width: 0;
+}
+nav .linkGrc .courseBtn button {
+  overflow: hidden;
+}
+nav .menu-icons {
+  flex-shrink: 0;
+}
+@media screen and (max-width: 430px) {
+  /* Below this the pill's own reduced font/padding aren't enough on their
+     own. The flag badge stays — it's the client's own branding on this
+     button, not decoration to cut — so everything around it shrinks
+     instead: smaller badge, tighter gaps, smaller label. */
+  .linkGrc .courseBtn button .course-country-badge {
+    /* 24px, up from the 20px this block first shipped with — client asked
+       for a slightly bigger pill. The pill's height IS the badge's height
+       (zero vertical padding, see the ≤768px block), so growing the pill
+       without breaking the shared pill-cap/badge curve means growing the
+       badge and the label together, not adding padding back. */
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    margin-left: 0.4rem;
+  }
+  .linkGrc .courseBtn button {
+    /* Matches the ≤600px nudge above — this block is later in the file and
+       would zero it back out otherwise. The row's shrink-safety chain
+       (min-width: 0 + overflow: hidden, see above) absorbs the 8px on the
+       narrowest phones instead of pushing the menu icons off-screen. */
+    margin-left: 0.5rem;
+    padding-left: 0.6rem;
+    /* Stays flush with the flag badge here too — see the ≤768px block's
+       padding-right, which this would otherwise override back to 0.5rem. */
+    padding-right: 0;
+    font-size: 0.84rem;
+  }
+  .linkGrc .courseBtn .icon {
+    margin-left: 0.15rem;
+  }
+  .linkGrc {
+    gap: 0.3rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  /* iPhone SE / small-Android width: still not enough room even with the
+     430px block's reductions, so the wordmark gives a little too. */
+  .linkGrc .logo.wordmark {
+    transform: scale(0.88);
+    transform-origin: left center;
+  }
+}
+
+
+/* The Study Abroad chevron only where it means something. In the drawer
+   (≤1180px, the layout phones and tablets get) a tap goes straight to the
+   page — the hover mega menu is desktop's — so the arrow promised a
+   dropdown that no longer opens (client, 2026-09-04: "Study Abroad ke side
+   se dropdown wala arrow hata do"). Desktop keeps it. */
+@media screen and (max-width: 1180px) {
+  nav .menu-links .sa-caret {
+    display: none;
+  }
+}

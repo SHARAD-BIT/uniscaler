@@ -5,6 +5,7 @@ import HeroSection from "../Decorators/HeroSection";
 import NewsLetter from "../Decorators/NewsLetter";
 import CollegeLocation from "../Decorators/CollegeLocation";
 import PopularCollege from "../Decorators/PopularCollege";
+import TrustBanner from "../Decorators/TrustBanner";
 import CollegeSlider from "../Decorators/CollegeSlider";
 import ExploreByCollege from "../Decorators/ExploreByCollege";
 import ExploreOnlineCourse from "../Decorators/ExploreOnlineCourse";
@@ -69,11 +70,52 @@ const Home = () => {
     const apply = () => {
       const overflow = sheet.offsetHeight - window.innerHeight;
       sheet.style.setProperty("--sheet-top", `${Math.min(0, -overflow)}px`);
+      // Applied here rather than in home.css — see the matching comment on
+      // `.home .sheet-stack > .pin` in home.css for why a declared
+      // `position: sticky` combined with the `0px` fallback is the bug.
+      sheet.style.position = "sticky";
     };
 
     apply();
     const observer = new ResizeObserver(apply);
     observer.observe(sheet);
+    window.addEventListener("resize", apply);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", apply);
+    };
+  }, []);
+
+  /*
+   * Same problem, one layer up. `.pin` (the success-stories deck) also pins at
+   * `top: 0`, which freezes it the instant it reaches the top of the viewport —
+   * fine on desktop, where the deck is shorter than the viewport and so already
+   * fully visible at that instant, but on a phone the stats bar, the journey
+   * card and its Previously/Thereafter pair stack tall enough to overflow one
+   * screen. Pinned at `top: 0`, only the top slice of that stack was ever on
+   * screen — the rest sat below the fold of a box that does not itself scroll —
+   * and the sheet was already riding up to cover it, so the deck appeared to
+   * get cut off mid-section instead of finishing first, exactly as on desktop.
+   * Same fix as the sheet: anchor above by the overflow so the deck scrolls
+   * fully into view, bottom-anchored, before it locks.
+   */
+  const pinRef = useRef(null);
+  useEffect(() => {
+    const pin = pinRef.current;
+    if (!pin) return undefined;
+
+    const apply = () => {
+      const overflow = pin.offsetHeight - window.innerHeight;
+      pin.style.setProperty("--pin-top", `${Math.min(0, -overflow)}px`);
+      // Applied here, not in home.css — see the comment on
+      // `.home .sheet-stack > .pin` there for why declaring it up front,
+      // rather than only once this effect has actually run, is the bug.
+      pin.style.position = "sticky";
+    };
+
+    apply();
+    const observer = new ResizeObserver(apply);
+    observer.observe(pin);
     window.addEventListener("resize", apply);
     return () => {
       observer.disconnect();
@@ -89,6 +131,7 @@ const Home = () => {
       <CollegeLocation />
       <CommunityBand />
       <PopularCollege />
+      <TrustBanner />
       {/*
         Three stacked layers, each pinning while the next rides up over it:
         success stories -> FAQ and newsletter -> footer. The footer is rendered
@@ -96,7 +139,7 @@ const Home = () => {
         element and its cover to share a parent.
       */}
       <div className="sheet-stack">
-        <div className="pin">
+        <div className="pin" ref={pinRef}>
           <OurSuccess />
           <div className="cta">
             <Link href="tel:+919667956655">Talk to a Career Expert</Link>

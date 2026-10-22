@@ -49,8 +49,25 @@
  * invisible as it rises: white card, white backdrop, no edge.
  */
 .home .sheet-stack > .pin {
-  position: sticky;
-  top: 0;
+  /*
+   * `position: sticky` is applied from JS (Home.jsx's pinRef effect), not
+   * declared here — see the longer version of this note on `.home .sheet`
+   * below. Short version: a *declared* sticky here combines with the
+   * `--pin-top, 0px` fallback to freeze this deck at the very first scroll
+   * pixel for as long as hydration takes, which on a slow phone is not
+   * instant. Leaving `position` out keeps this a plain in-flow block — no
+   * reveal effect yet, but nothing broken either — until the effect has
+   * actually measured the overflow and is ready to pin it correctly.
+   *
+   * Bottom-anchored the same way `.sheet` is (see `--sheet-top` below): on
+   * desktop this deck already fits inside the viewport, so its overflow is 0
+   * and `--pin-top` resolves to `0px` — unchanged from before. On a phone,
+   * where the stats bar + journey card stack taller than one screen, this
+   * lets the deck scroll fully into view before it locks, instead of pinning
+   * at the top the instant it arrives and permanently hiding whatever fell
+   * below that first screenful.
+   */
+  top: var(--pin-top, 0px);
   background-color: var(--sheet-backdrop);
 }
 
@@ -95,9 +112,18 @@
  * across eight scroll positions, the box kept moving 1:1 with the scroll and
  * never stuck, while a forced `top: -27px` pinned its bottom at exactly 900 every
  * time. Hence the measured offset.
+ *
+ * `position: sticky` is applied from JS (Home.jsx's sheetRef effect), not
+ * declared here. Declared, it combines badly with the `--sheet-top, 0px`
+ * fallback: before the effect has run, sticky still engages using the
+ * fallback `top: 0`, freezing this layer at the first scroll pixel — the
+ * exact bug this whole rule exists to avoid, just reached through the
+ * fallback instead of a literal `top: 0`. That gap is not instant on a slow
+ * connection or device; a real user can scroll well into the page before
+ * React hydrates. Leaving `position` out keeps this a plain in-flow block
+ * until the effect is actually ready to pin it at the right offset.
  */
 .home .sheet {
-  position: sticky;
   top: var(--sheet-top, 0px);
   /* Local to .sheet-hold's stacking context — below the footer, above nothing. */
   z-index: 1;

@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import CryptoJS from "crypto-js";
 import DOMPurify from "dompurify";
 import "./styles/directAdmission.css";
 import Link from "next/link";
+import { fetchCollegesForSearch } from "@/lib/collegeSearchClient";
+import { publicToken } from "@/lib/publicToken";
 
 const DirectAdmission = () => {
   const [college, setCollege] = useState([]);
@@ -53,20 +54,7 @@ const DirectAdmission = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const currentDate = new Date().getDate();
-    const encryptedToken = CryptoJS.AES.encrypt(
-      JSON.stringify(`${process.env.NEXT_PUBLIC_FETCH_BLOG}${currentDate}`),
-      process.env.NEXT_PUBLIC_PUBLIC_ENC
-    ).toString();
-
-    fetch(`${process.env.NEXT_PUBLIC_WEBSITE_API}/fetchCollegeForSearch`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ token: encryptedToken }),
-    })
-      .then((res) => res.json())
+    fetchCollegesForSearch()
       .then((data) => setCollege(data.data))
       .catch((error) => console.error("Error fetching college data:", error));
   }, []);
@@ -92,19 +80,13 @@ const DirectAdmission = () => {
     };
     setLoader(true);
     // /direct-pay accepted a bare POST from anyone until now. It checks the same
-    // daily handshake as the rest of the public API, so the form has to send it
-    // — the same token this component already builds to fetch the college list.
-    const currentDate = new Date().getDate();
-    const encryptedToken = CryptoJS.AES.encrypt(
-      JSON.stringify(`${process.env.NEXT_PUBLIC_FETCH_BLOG}${currentDate}`),
-      process.env.NEXT_PUBLIC_PUBLIC_ENC
-    ).toString();
+    // daily handshake as the rest of the public API, so the form has to send it.
     fetch(`${process.env.NEXT_PUBLIC_PAYMENT_URL}/direct-pay`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ...sanitizedFormValues, token: encryptedToken }),
+      body: JSON.stringify({ ...sanitizedFormValues, token: publicToken() }),
     })
       .then((res) => {
         res.json().then((data) => {

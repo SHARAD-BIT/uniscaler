@@ -2,8 +2,8 @@
 <svg viewBox="0 0 2754 1398" xmlns="http://www.w3.org/2000/svg" version="1.1" width="2754" height="1398">
 <style>
   path, circle { fill:#e7e9ee; stroke:#ffffff; stroke-width:1.1; stroke-linejoin:round; }
-  #us path, #us circle, #de path, #de circle, #fr path, #fr circle, #fi path, #fi circle, #gb path, #gb circle, #ca path, #ca circle, #au path, #au circle, #ie path, #ie circle { fill:#f6c9cb; }
-  #in path, #in circle { fill:#ef4b52; }
+  #us path, #us circle, #de path, #de circle, #fr path, #fr circle, #fi path, #fi circle, #gb path, #gb circle, #ca path, #ca circle, #au path, #au circle, #ie path, #ie circle { fill:#bfcde0; }
+  #in path, #in circle { fill:#003882; }
 </style>
 	<title>World Map</title>
 	

@@ -140,3 +140,20 @@
     font-size: 1rem;
   }
 }
+/* Client ask (2026-09-01), phone-only: no gap at all between the navbar and
+   the hero card — a first pass trimmed the old ≈38px strip (`.top`'s 70px
+   against the 64px phone navbar, the wrapper's 16px margin-top, the ≤1080px
+   block's 1rem padding) down to ≈10px, and the client then asked for even
+   that to go. `.hero-section.top` out-specifies the global `.top` (two
+   classes to its one) to bring the reservation down to the bar's exact 64px,
+   and the wrapper contributes nothing on top, so the card sits flush under
+   the glass. */
+@media screen and (max-width: 765px) {
+  .hero-section.top {
+    padding-top: 64px;
+  }
+  .hero-section .wrapper {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

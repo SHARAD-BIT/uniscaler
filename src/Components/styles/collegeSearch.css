@@ -43,7 +43,12 @@
 }
 .college-search .grid-view .filter .filter-btn {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* minmax(0, 1fr), not bare 1fr: `1fr` keeps a min-content floor, so a long
+     selected value ("BACHELOR OF COMPUTER APPLICATIONS (BCA)") widened its
+     column past the viewport and the row ran off the right edge of a phone.
+     Zeroing the floor keeps every column an exact third; the value itself is
+     ellipsized below instead of dictating the layout. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   width: 100%;
   place-items: center;
   border-radius: 20px;
@@ -55,6 +60,7 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  min-width: 0;
 }
 .college-search .grid-view .filter .filter-btn .grp label span:first-child {
   font-weight: 500;
@@ -64,6 +70,13 @@
   font-weight: 500;
   font-size: 0.7em;
   color: rgba(0, 0, 0, 0.6);
+  /* The full value still shows in the removable chip under the row — the
+     pill only needs enough of it to say which filter is set. */
+  max-width: 100%;
+  padding: 0 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .college-search .grid-view .grp {
   width: 100%;
@@ -162,7 +175,18 @@
 }
 .college-search .grid-view .grp .select input.chosen {
   color: var(--light);
+  /* Right-anchored tick (client ask, 2026-09-01): the selection shows only
+     here — the pill above always reads "Search", and the chips row is gone.
+     A background icon rather than a "✓ " in the value: these are readOnly
+     <input>s, and text at the far end of a long value clips out of sight,
+     while a right-anchored background stays put at the edge. White stroke,
+     since it sits on the accent fill. */
   background-color: var(--accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 0.85rem;
+  padding-right: 1.8rem;
 }
 .college-search .grid-view .grp .select input.reset {
   color: var(--primary);
@@ -219,170 +243,114 @@
 }
 
 /* ---- result cards ------------------------------------------------------- */
+/* Rebuilt 2026-08-26 to the pathway-programs card layout the client pointed
+   at (.pp-card in pathway-programs.css): one wide card per row — logo panel
+   on the left with the name under it, labelled facts in the middle, actions
+   bottom-right. Accents stay the site navy, not the reference's red. */
 .college-search .college-list {
   margin-top: 2.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   padding: 0.25rem;
 }
 .college-search .college-card {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 1.5rem 2rem;
+  padding: 1.5rem 1.75rem;
   background-color: var(--light);
   border: 1px solid #e6ebf3;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 18px rgba(0, 57, 128, 0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 57, 128, 0.06);
+  transition: box-shadow 0.2s ease;
 }
 .college-search .college-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0, 57, 128, 0.18);
+  box-shadow: 0 10px 28px rgba(0, 57, 128, 0.14);
 }
 
-/* cover image + floating chips */
-.college-search .college-card .cover {
-  position: relative;
-  /* Cards are ~630px wide at two per row, so a 16/10 cover would run close to
-     400px tall and push the buttons off the fold. */
-  aspect-ratio: 2 / 1;
-  background: linear-gradient(135deg, #eef3fa, #dbe5f4);
+/* left column: logo panel, name, courses line */
+.college-search .college-card .cc-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  padding: 0.9rem;
+  border: 1px solid #eef1f6;
+  border-radius: 8px;
+  background-color: var(--light);
+}
+.college-search .college-card .cc-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* A campus photo fills the panel edge to edge; only true logos float on the
+   white padding. */
+.college-search .college-card .cc-logo.is-photo {
+  padding: 0;
   overflow: hidden;
 }
-.college-search .college-card .cover > img {
+.college-search .college-card .cc-logo.is-photo img {
   width: 100%;
   height: 100%;
+  max-width: none;
+  max-height: none;
   object-fit: cover;
-  display: block;
-  transition: transform 0.5s;
 }
-.college-search .college-card:hover .cover > img {
-  transform: scale(1.05);
-}
-.college-search .college-card .cover.is-logo > img {
-  object-fit: contain;
-  padding: 2rem;
-  transform: none;
-}
-.college-search .college-card:hover .cover.is-logo > img {
-  transform: none;
-}
-.college-search .college-card .cover::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0) 35%,
-    rgba(0, 0, 0, 0) 55%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-}
-.college-search .college-card .chip {
-  position: absolute;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  font-size: 0.72rem;
+.college-search .college-card .cc-name {
+  margin: 0.9rem 0 0.4rem;
+  font-size: 1.02rem;
   font-weight: 700;
-  line-height: 1;
-  padding: 0.35rem 0.6rem;
-  border-radius: 999px;
-  white-space: nowrap;
-}
-.college-search .college-card .chip.courses-count {
-  top: 0.7rem;
-  left: 0.7rem;
-  background-color: rgba(255, 255, 255, 0.92);
+  line-height: 1.4;
   color: var(--accent);
 }
-.college-search .college-card .chip.rating {
-  top: 0.7rem;
-  right: 0.7rem;
-  background-color: rgba(0, 0, 0, 0.62);
-  color: var(--light);
-}
-.college-search .college-card .chip.rating small {
-  font-weight: 500;
-  opacity: 0.75;
-}
-.college-search .college-card .chip.place {
-  bottom: 0.7rem;
-  left: 0.7rem;
-  max-width: 55%;
-  padding-left: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--light);
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
-}
-.college-search .college-card .chip.tag {
-  bottom: 0.7rem;
-  right: 0.7rem;
-  background-color: #1f9d6a;
-  color: var(--light);
-}
-
-/* body */
-.college-search .college-card .card-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  padding: 1rem;
-}
-.college-search .college-card .card-body h3 {
-  font-size: 1rem;
-  line-height: 1.35;
-  font-weight: 700;
-  color: var(--accent);
-  min-height: 2.7em;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.college-search .college-card .card-body h3.linkable {
+.college-search .college-card .cc-logo.linkable,
+.college-search .college-card .cc-name.linkable {
   cursor: pointer;
 }
-.college-search .college-card .card-body h3.linkable:hover {
+.college-search .college-card .cc-name.linkable:hover {
   text-decoration: underline;
 }
-.college-search .college-card .stats {
+.college-search .college-card .cc-line {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* right column: labelled facts, course chips, actions */
+.college-search .college-card .cc-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.college-search .college-card .cc-facts {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: #f5f8fc;
-  border-radius: 12px;
-  padding: 0.7rem 0.85rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem 1.6rem;
 }
-.college-search .college-card .stats > div + div {
-  border-left: 1px solid #e0e7f1;
-  padding-left: 0.85rem;
+.college-search .college-card .cc-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
-.college-search .college-card .stats .k {
-  display: block;
-  font-size: 0.62rem;
+.college-search .college-card .cc-fact span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #64748b;
+}
+.college-search .college-card .cc-fact strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.98rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #7c8798;
-  margin-bottom: 0.2rem;
+  color: #0f2140;
+  line-height: 1.35;
 }
-.college-search .college-card .stats .v {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--accent);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.college-search .college-card .stats .v.green {
-  color: #1f9d6a;
+.college-search .college-card .cc-fact strong small {
+  font-weight: 600;
+  color: #64748b;
 }
 .college-search .college-card .course-tags {
   display: flex;
@@ -407,30 +375,31 @@
 }
 .college-search .college-card .actions {
   margin-top: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 .college-search .college-card .actions button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
+  min-width: 180px;
   font-family: inherit;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  padding: 0.62rem 0.5rem;
-  border-radius: 10px;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
   cursor: pointer;
   transition: 0.25s;
 }
 .college-search .college-card .actions .ghost {
   color: var(--accent);
-  background-color: #f2f5fa;
-  border: 1px solid #dfe6f1;
+  background-color: var(--light);
+  border: 1px solid var(--accent);
 }
 .college-search .college-card .actions .ghost:hover {
-  background-color: #e5ecf7;
+  background-color: #f2f5fa;
 }
 .college-search .college-card .actions .solid {
   color: var(--light);
@@ -491,12 +460,22 @@
   .college-search .search {
     margin: 1rem;
   }
-  .college-search .college-list {
+  /* The two-column card stacks: logo block on top, facts and actions below. */
+  .college-search .college-card {
     grid-template-columns: 100%;
-    gap: 1.25rem;
+    gap: 1rem;
+    padding: 1.1rem;
   }
-  .college-search .college-card .cover {
-    aspect-ratio: 16 / 9;
+  .college-search .college-card .cc-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.9rem 1rem;
+  }
+  .college-search .college-card .actions {
+    flex-direction: column;
+  }
+  .college-search .college-card .actions button {
+    min-width: 0;
+    width: 100%;
   }
   .college-search .group {
     flex-direction: column;
@@ -514,11 +493,7 @@
     width: 90vw;
     z-index: 9999;
   }
-  .college-search .college-card .card-body {
-    padding: 0.85rem;
-    gap: 0.7rem;
-  }
-  .college-search .college-card .card-body h3 {
-    font-size: 0.92rem;
+  .college-search .college-card .cc-name {
+    font-size: 0.95rem;
   }
 }

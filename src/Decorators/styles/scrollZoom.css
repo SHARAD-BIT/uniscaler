@@ -34,14 +34,32 @@
     max-width: 1200px;
   }
   
+  /*
+   * Thick rounded frame in nomu.store's proportions (client reference,
+   * 2026-09-03), coloured with a blue gradient on the client's follow-up.
+   * The gradient border is the border-box/padding-box double-background
+   * trick: the border is transparent and the second background layer
+   * paints the gradient under it; the image (absolutely filling the
+   * padding box) covers the first layer entirely.
+   *
+   * No outer drop shadow, deliberately: the white-border pass had one, and
+   * with a radius this large it bled out around the curves as a grey
+   * smudge at each corner — the "grey corners" the client saw. A gradient
+   * border reads on a white page by itself, so nothing needs lifting. The
+   * inset shadow stays for the frame's own depth.
+   */
   .zoomImage-imageWrapper {
     position: relative !important;
     width: 100% !important;
     height: 100% !important;
-    border-radius: 12vw !important;
+    box-sizing: border-box;
+    border: clamp(10px, 1.15vw, 16px) solid transparent;
+    border-radius: clamp(32px, 4vw, 56px) !important;
     overflow: hidden;
-    box-shadow: inset 1px 0 40px rgba(0, 0, 0, 0.3);
-    background: #fff;
+    box-shadow: inset 1px 0 40px rgba(0, 0, 0, 0.22);
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(135deg, #0b3d91 0%, #1f6fe0 50%, #47abec 100%)
+        border-box;
   }
   
   .zoomImage-image {
@@ -55,7 +73,7 @@
   
   @media screen and (max-width: 768px) {
     .zoomImage-imageWrapper {
-      border-radius: 1vw !important;
+      border-width: 8px;
+      border-radius: 24px !important;
     }
   }
-  

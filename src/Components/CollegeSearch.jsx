@@ -7,10 +7,9 @@ import SearchSet from "../Utils/SearchSet";
 import "./styles/collegeSearch.css";
 const logo = "/mainLogo.svg";
 const logoMobile = "/mainLogoMobile.svg";
-import CryptoJS from "crypto-js";
+import { fetchCollegesForSearch } from "@/lib/collegeSearchClient";
 import { FaArrowRight } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
-import { TiTick } from "react-icons/ti";
 import { FcRating } from "react-icons/fc";
 import { MdLocationOn } from "react-icons/md";
 
@@ -186,29 +185,13 @@ const CollegeSearch = () => {
   };
 
   const fetchDataFromServer = (searchTerm) => {
-    const Data = new Date().getDate();
-    const encryptedToken = CryptoJS.AES.encrypt(
-      JSON.stringify(process.env.NEXT_PUBLIC_FETCH_BLOG + Data),
-      process.env.NEXT_PUBLIC_PUBLIC_ENC
-    ).toString();
-
-    fetch(`${process.env.NEXT_PUBLIC_WEBSITE_API}/fetchCollegeForSearch`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        token: encryptedToken,
-        searchTerm,
-      }),
-    })
-      .then((res) => res.json())
+    fetchCollegesForSearch(searchTerm)
       .then((data) => {
         if (data.code === 200) {
           setFetchData(data.data);
         }
       })
-      .catch((err) => console.error(err));
+      .catch((err) => console.error("fetchCollegeForSearch failed:", err));
   };
 
   const keyHandler = (e) => {
@@ -295,7 +278,13 @@ const CollegeSearch = () => {
                 }}
               >
                 <span>Location</span>
-                <span>{locationFilter || "Search..."}</span>
+                {/* Static hint, never the chosen value: long course/location
+                    names kept breaking the pill row on phones, so the client
+                    asked for the selection to show only as a tick in the
+                    dropdown (and it is still spelled out in the removable
+                    chips below the row). `has-value` keeps colouring the
+                    label so an active filter is visible at a glance. */}
+                <span>Search...</span>
               </label>
               <div className="select">
                 {locationFilter && (
@@ -310,6 +299,10 @@ const CollegeSearch = () => {
                   <input
                     readOnly
                     key={btn}
+                    // The tick on the chosen entry comes from CSS (a
+                    // right-anchored background icon on `.chosen`) — these are
+                    // readOnly <input>s, and a text prefix would sit at the
+                    // left and vanish behind the clipping on long values.
                     value={btn}
                     className={sameValue(btn, locationFilter) ? "chosen" : ""}
                     onClick={() => pickFilter(setLocationFilter, btn)}
@@ -333,7 +326,8 @@ const CollegeSearch = () => {
                 }}
               >
                 <span>Course</span>
-                <span>{courseFilter || "Search"}</span>
+                {/* Static hint — see the Location note above. */}
+                <span>Search</span>
               </label>
               <div className="select">
                 {courseFilter && (
@@ -371,7 +365,8 @@ const CollegeSearch = () => {
                 }}
               >
                 <span>Duration</span>
-                <span>{durationFilter || "Search"}</span>
+                {/* Static hint — see the Location note above. */}
+                <span>Search</span>
               </label>
               <div className="select">
                 {durationFilter && (
@@ -404,16 +399,11 @@ const CollegeSearch = () => {
             {filteredColleges.length}{" "}
             {filteredColleges.length === 1 ? "college" : "colleges"}
           </span>
-          {activeFilters.map((filter) => (
-            <button
-              key={filter.key}
-              className="filter-chip"
-              onClick={filter.clear}
-              title={`Remove ${filter.key} filter`}
-            >
-              {filter.value} <span aria-hidden="true">×</span>
-            </button>
-          ))}
+          {/* The removable value chips that used to render here are gone on
+              the client's direction (2026-09-01) — the tick on the chosen
+              dropdown entry is the only place a selection is spelled out now.
+              Individual filters are still clearable from inside their own
+              dropdown ("All locations" / "All courses" / "Any duration"). */}
           {activeFilters.length > 0 && (
             <button className="clear-all" onClick={clearFilters}>
               Clear all
@@ -437,64 +427,93 @@ const CollegeSearch = () => {
 
               return (
                 <li key={index} className="college-card">
-                  <div
-                    className={`cover${hasCover ? "" : " is-logo"}`}
-                    onClick={openCollege}
-                  >
-                    <img
-                      src={hasCover ? college.gallery[0] : college.logo || logo}
-                      alt={college.name}
-                      loading="lazy"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = logoMobile;
-                        e.target.parentElement.classList.add("is-logo");
-                      }}
-                    />
-                    {courses.length > 0 && (
-                      <span className="chip courses-count">
-                        {courses.length} Course{courses.length > 1 ? "s" : ""}
-                      </span>
-                    )}
-                    <span className="chip rating">
-                      <FcRating /> {ratingFor(college.name)}
-                      <small>({reviewsFor(college.name)})</small>
-                    </span>
-                    {college.location && (
-                      <span className="chip place">
-                        <MdLocationOn /> {college.location}
-                      </span>
-                    )}
-                    <span className="chip tag">
-                      <TiTick /> Best in Placement
-                    </span>
-                  </div>
-
-                  <div className="card-body">
+                  {/* Pathway-programs card layout (client's ask, 2026-08-26):
+                      logo panel left with the name under it, labelled facts
+                      in the middle, actions bottom-right. The mapping above
+                      substitutes the SITE logo when a college has none in the
+                      DB, so "college.logo" alone would stamp Uniscaler on
+                      most cards — treat that value as absent and use the
+                      first campus photo instead (cover-fit via is-photo). */}
+                  <div className="cc-left">
+                    {(() => {
+                      const realLogo =
+                        college.logo && college.logo !== logo
+                          ? college.logo
+                          : null;
+                      const isPhoto = !realLogo && hasCover;
+                      return (
+                        <span
+                          className={`cc-logo${isPhoto ? " is-photo" : ""}${
+                            canOpen ? " linkable" : ""
+                          }`}
+                          onClick={openCollege}
+                        >
+                          <img
+                            src={
+                              realLogo ||
+                              (hasCover ? college.gallery[0] : logo)
+                            }
+                            alt={college.name}
+                            loading="lazy"
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.src = logoMobile;
+                            }}
+                          />
+                        </span>
+                      );
+                    })()}
                     <h3
-                      className={canOpen ? "linkable" : ""}
+                      className={`cc-name${canOpen ? " linkable" : ""}`}
                       title={college.name}
                       onClick={openCollege}
                     >
                       {college.name}
                     </h3>
+                    {courses.length > 0 && (
+                      <p className="cc-line">
+                        {courses.length} Course{courses.length > 1 ? "s" : ""}{" "}
+                        offered
+                      </p>
+                    )}
+                  </div>
 
-                    <div className="stats">
-                      <div>
-                        <span className="k">Avg. Fee</span>
-                        <span className="v">
-                          {formatFee(topCourse.fees) || "On request"}
-                        </span>
+                  <div className="cc-right">
+                    <div className="cc-facts">
+                      {topCourse.name && (
+                        <div className="cc-fact">
+                          <span>Top Course</span>
+                          <strong>{topCourse.name}</strong>
+                        </div>
+                      )}
+                      {college.location && (
+                        <div className="cc-fact">
+                          <span>Location</span>
+                          <strong>
+                            <MdLocationOn /> {college.location}
+                          </strong>
+                        </div>
+                      )}
+                      <div className="cc-fact">
+                        <span>Rating</span>
+                        <strong>
+                          <FcRating /> {ratingFor(college.name)}{" "}
+                          <small>({reviewsFor(college.name)})</small>
+                        </strong>
                       </div>
-                      <div>
-                        <span className="k">Duration</span>
-                        <span className="v green">
-                          {topCourse.duration || "—"}
-                        </span>
+                      <div className="cc-fact">
+                        <span>Avg. Fee</span>
+                        <strong>
+                          {formatFee(topCourse.fees) || "On request"}
+                        </strong>
+                      </div>
+                      <div className="cc-fact">
+                        <span>Duration</span>
+                        <strong>{topCourse.duration || "—"}</strong>
                       </div>
                     </div>
 
-                    {courses.length > 0 && (
+                    {courses.length > 1 && (
                       <div className="course-tags">
                         {courses.slice(0, 3).map((course, i) => (
                           <span key={i}>{course.name}</span>

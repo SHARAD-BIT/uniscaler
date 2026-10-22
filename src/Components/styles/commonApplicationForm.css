@@ -11,6 +11,99 @@
   margin: 0 auto;
   padding: clamp(90px, 10vw, 130px) clamp(1rem, 3vw, 2rem) 4rem;
 }
+/* The clamp above floors at 90px against the 64px phone navbar — a 26px
+   white strip over the video band, the same flat-reservation bug fixed on
+   the study-abroad and course pages. 40px matches those two exactly: the
+   band tucks 24px under the at-rest bar and stays 14px under the 54px
+   sticky one, so no state shows a strip (client, 2026-09-02). */
+@media screen and (max-width: 765px) {
+  .caf {
+    padding-top: 40px;
+  }
+}
+
+/* ---- hero video band ------------------------------------------------------ */
+/* Full-bleed on the client's ask (2026-08-26), corrected the same day: the
+   first cut cancelled only .caf's own side padding, which breaks the band out
+   to the edge of .caf's 1080px cap, not the actual screen edge — on a wider
+   monitor that left the exact gap the client flagged ("left aur right se
+   space nahi chutna chahiye"). .caf is centred with `margin: 0 auto`, so
+   `calc(-1 * padding)` only ever reaches .caf's own boundary, never the
+   viewport's; the online-course page's identical-looking trick works there
+   only because .onlineCourse itself has `max-width: none` and is already
+   viewport-width, which .caf is not.
+
+   Fixed with the standard container-independent breakout: 100vw sized, then
+   nudged left by half its own width from a position offset by half the
+   *containing block's* width — the two 50% bases are different frames of
+   reference, and the arithmetic between a parent-relative offset and a
+   viewport-absolute size is what cancels out to the true screen edges
+   regardless of how deeply nested or how narrow the ancestor chain is.
+   Verified empirically (not just derived): rendered against .caf's real
+   1080px/centred/padded shape in a headless browser at 1440px viewport width
+   and read back getBoundingClientRect() — left:0, right:1440, matching the
+   viewport exactly, with no horizontal overflow introduced (body already
+   carries `overflow-x: clip` as a backstop regardless). */
+.caf .caf-hero-band {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+  /* Height matches the study-abroad hero band exactly (.sa-hero in
+     study-abroad.css) — same clamp, same values — on the client's ask
+     (2026-08-26): "jitna area study abroad wali ne kar rakha hai utna do."
+     A flat `aspect-ratio: 16/9` (the previous fix, which did stop the crop)
+     would have made the band ~810px tall at a typical desktop width — far
+     taller than this reference. See the two-layer video rule below for how
+     the short band and zero cropping now hold at the same time. */
+  height: clamp(320px, 31.5vw, 520px);
+  background-color: #000;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+/* A short, full-width band and an always-uncropped 16:9 video are
+   incompatible for one `cover`-fit layer — the footage needs ~810px of
+   height at a typical desktop width to show every pixel, against the
+   ~450px this band actually is, so `cover` alone must crop *something*,
+   and every crop position tried already cut into this footage's own
+   edge-flush text.
+
+   Was solved with a second, blurred <video> playing the same file behind
+   the sharp one; the client asked for a single video layer (2026-08-26),
+   so the blurred fill is now this ::before pseudo-element instead — a
+   single extracted frame (public/common-application-form-hero-poster.jpg,
+   `ffmpeg -vf select=eq(n\,15)`), not a second decode. Still only ambient
+   filler behind the real, moving, uncropped video, so a static image reads
+   the same as a blurred loop would at this blur radius. */
+.caf .caf-hero-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/common-application-form-hero-poster.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Scaled up so the blur's own softened edge never shows a hard, unblurred
+     rim inside the band — the blur radius eats into the frame on all sides,
+     so the source has to overflow the box before it is blurred to hide it. */
+  transform: scale(1.15);
+  filter: blur(28px) brightness(0.55) saturate(1.1);
+}
+.caf .caf-hero-band video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* `contain` never crops by definition — it shrinks the frame to whatever
+     size fits the band, so the full, unedited video is always on screen;
+     any leftover space either side is the blurred ::before behind it. Above
+     that pseudo-element in the stacking order by plain DOM order, no
+     z-index needed. Decorative only — must not swallow a click or a drag. */
+  pointer-events: none;
+}
 
 /* ---- header -------------------------------------------------------------- */
 .caf .caf-head {

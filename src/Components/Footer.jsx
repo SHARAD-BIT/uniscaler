@@ -1,13 +1,36 @@
 "use client";
-import Logo from "./Logo";
 import "./styles/footer.css";
-import { FaFacebookF } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
 import Link from "@/Utils/StateLink";
 
 const Footer = () => {
+  const studySections = [
+    {
+      name: "Study Globally",
+      links: [
+        { name: "Study in USA", path: "/study-abroad/pathway-programs?country=USA" },
+        { name: "Study in Germany", path: "/study-abroad/pathway-programs?country=Germany" },
+        { name: "Study in France", path: "/study-abroad/pathway-programs?country=France" },
+        { name: "Study in Finland", path: "/study-abroad/pathway-programs?country=Finland" },
+        { name: "Study in UK", path: "/study-abroad/pathway-programs?country=UK" },
+        { name: "Study in Canada", path: "/study-abroad/pathway-programs?country=Canada" },
+        { name: "Study in Australia", path: "/study-abroad/pathway-programs?country=Australia" },
+        { name: "Study in Ireland", path: "/study-abroad/pathway-programs?country=Ireland" },
+      ],
+    },
+    {
+      name: "Study Locally",
+      links: [
+        { name: "Bachelor of Business Administration", path: "/online-course/BBA" },
+        { name: "Bachelor of Computer Applications", path: "/online-course/BCA" },
+        { name: "Master of Business Administration", path: "/online-course/MBA" },
+        { name: "Master of Computer Applications", path: "/online-course/MCA" },
+        { name: "Master of Commerce", path: "/online-course/M.Com" },
+        { name: "MSc Applied Mathematics", path: "/online-course/MSc.-Applied-Mathematics" },
+        { name: "MA Journalism & Mass Communication", path: "/online-course/MA-%E2%80%93-Journalism-and-Mass-Communication" },
+        { name: "MA Clinical Psychology", path: "/online-course/MA-%E2%80%93-Clinical-Psychology" },
+      ],
+    },
+  ];
   const topCoursesInIndia = [
     "B.Tech/B.E.",
     "MBBS",
@@ -53,28 +76,6 @@ const Footer = () => {
     "CA",
     "CS",
   ];
-  const socialMedia = [
-    {
-      id: 1,
-      icon: <FaFacebookF />,
-      url: "https://facebook.com",
-    },
-    {
-      id: 2,
-      icon: <FaYoutube />,
-      url: "https://www.youtube.com/@Uniscaler/",
-    },
-    {
-      id: 3,
-      icon: <FaInstagram />,
-      url: "https://www.instagram.com/uniscaler?utm_source=qr&igsh=aHplZTFpY3I5aTRp",
-    },
-    {
-      id: 4,
-      icon: <FaXTwitter />,
-      url: "https://twitter.com/Uniscaler",
-    },
-  ];
   const topLocation = [
     "Noida",
     "Gurugram",
@@ -88,53 +89,7 @@ const Footer = () => {
     "Kolkata",
     "Kota",
   ];
-  const address = {
-    name: "Uniscaler",
-    city: "Faridabad",
-    state: "Haryana",
-    pincode: 121004,
-    country: "India",
-    phone: "+91-9667956655",
-    email: "hello@uniscaler.in",
-    email2:"uniscalerx@gmail.com",
-    website: "https://www.uniscaler.com",
-    description: "NHPC Metro Station 13B, block A, DLF Industrial Area, Sec-32,Faridabad-121003,Haryana, India",
-  };
   const Links = [
-    {
-      name: "Links",
-      links: [
-        {
-          name: "About Us",
-          path: "/about",
-        },
-        {
-          name: "Contact Us",
-          path: "/contact",
-        },
-        {
-          name: "Blogs",
-          path: "/blogs",
-        },
-      ],
-    },
-    {
-      name: "Featured",
-      links: [
-        {
-          name: "Top college",
-          path: "/college/mba",
-        },
-        {
-          name: "Top University",
-          path: "/college/m.tech",
-        },
-        {
-          name: "Top Courses",
-          path: "/course",
-        },
-      ],
-    },
     {
       name: "Quick Links",
       links: [
@@ -158,11 +113,31 @@ const Footer = () => {
           name: "Sitemap",
           path: "/sitemap",
         },
+        {
+          // Load-bearing, not a courtesy: /image-credits carries the CC BY
+          // attributions for the Study Abroad photos, and this is its one
+          // link. Removing it un-satisfies those licenses — see
+          // src/app/image-credits/page.js.
+          name: "Image credits",
+          path: "/image-credits",
+        },
       ],
     },
     {
       name: "Help & Support",
       links: [
+        {
+          name: "About Us",
+          path: "/about",
+        },
+        {
+          name: "Contact Us",
+          path: "/contact",
+        },
+        {
+          name: "Blogs",
+          path: "/blogs",
+        },
         {
           name: "Help",
           path: "/help",
@@ -175,55 +150,26 @@ const Footer = () => {
           name: "Terms & Conditions",
           path: "/terms-and-conditions",
         },
-        {
-          name: "Refund Policy",
-          path: "/refund-policy",
-        },
-        {
-          name: "Report a problem",
-          path: "/report",
-        },
-        {
-          name: "Copyright",
-          path: "/copyright",
-        },
       ],
     },
   ];
   return (
     <footer className="footer">
-      <div className="footer-wrapper">
-        <div className="site-info">
-          <Logo />
-          <p className="name">
-            <span>{address.name}</span> : Give Your Best College & University
-            For You.
-          </p>
-          <div className="social-media">
-            {socialMedia.map((item) => {
-              return (
-                <a
-                  href={item.url}
-                  key={item.id}
-                  title={item.url}
-                  aria-label={item.url}
-                >
-                  {item.icon}
-                </a>
-              );
-            })}
+      <div className="study-links-wrapper">
+        {studySections.map((section) => (
+          <div className="study-links" key={section.name}>
+            <h2>{section.name}</h2>
+            <ul>
+              {section.links.map((link) => (
+                <li key={link.name}>
+                  <Link href={link.path}>{link.name}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
-          <p className="address">
-            <br />
-            {address.description} &nbsp;{address.country}
-            <a href={`tel:${address.phone}`}>{address.phone}</a>
-            <a href={`tel:${address.fax}`}>{address.fax}</a>
-            <a href={`mailto:${address.email}`}>{address.email}</a>
-            <a href={`mailto:${address.email2}`}>{address.email2}</a>
-            <a href={address.website}>{address.website}</a>
-          </p>
-        </div>
-
+        ))}
+      </div>
+      <div className="footer-wrapper">
         <div className="links-wrapper">
           {Links.map((item) => {
             return (
@@ -277,8 +223,11 @@ const Footer = () => {
         {/* suppressHydrationWarning: the year is baked in at build time and
             recomputed on the client, which only diverges across a New Year
             boundary. Keeping the text server-rendered avoids a blank flash. */}
+        {/* The "Image credits" link that briefly sat here moved into the
+            Quick Links list above on the client's ask (2026-09-01) — same
+            license-bearing role, better home. */}
         <p suppressHydrationWarning>
-          © 2013-{new Date().getFullYear()} Uniscaler | Powered by Skyone Educare
+          © 2013-{new Date().getFullYear()} Uniscaler |  Managed by Uniscaler Educational Society. All Rights Reserved.
         </p>
       </div>
     </footer>

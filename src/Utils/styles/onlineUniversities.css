@@ -269,3 +269,101 @@
 .gp-universities .gp-apply svg {
   font-size: 1rem;
 }
+
+/* Two-up on phones (client ask, 2026-09-01), matching the study-abroad card
+   grids converted the same day — the auto-fill minmax(330px, …) track above
+   goes one-per-row under ~680px and a full-width card read as wasteful.
+   Everything in here exists to make a ~170px tile work: the fee/duration
+   panel stacks (side by side its halves came out ~70px and "₹1,15,834"
+   clipped), the two action buttons stack full-width so both stay tappable,
+   and the cover chips get an ellipsis cap so "Bengaluru, Karnataka" cannot
+   run off a half-width cover. */
+@media screen and (max-width: 560px) {
+  .gp-universities .gp-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    /* Client ask (2026-09-02): wider tiles. The section carries 1rem sides
+       of its own; pulling the grid 10px back into them grows every card by
+       10px while leaving a 6px inset on /goal, whose page adds no padding
+       of its own. */
+    margin-inline: -10px;
+  }
+  /* The course page wraps this section in `.onlineCourse`'s own 1rem side
+     padding on top of the section's — two layers, so the same 6px inset
+     needs a deeper pull there (16 + 16 − 6). */
+  .onlineCourse .gp-universities .gp-grid {
+    margin-inline: -26px;
+  }
+  /* Client ask (2026-09-02): the degree pills (Online MBA, +11, …) come off
+     the phone tiles — with three-to-four pills on one card and none of it
+     scannable at this width, they made every card a different height and the
+     grid ragged. Without them the tiles are uniform (cover + name + fee/
+     duration + buttons) and near-square. The full course list is one tap
+     away on View Details; desktop keeps the pills. */
+  .gp-universities .gp-tags {
+    display: none;
+  }
+  .gp-universities .gp-body {
+    padding: 0.6rem 0.6rem 0.7rem;
+    gap: 0.55rem;
+  }
+  .gp-universities .gp-name {
+    font-size: 0.82rem;
+  }
+  .gp-universities .gp-stats {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+    padding: 0.55rem 0.6rem;
+  }
+  .gp-universities .gp-stats > div + div {
+    border-left: 0;
+    padding-left: 0;
+    border-top: 1px solid #e0e7f1;
+    padding-top: 0.45rem;
+  }
+  .gp-universities .gp-stats strong {
+    font-size: 0.82rem;
+  }
+  .gp-universities .gp-tag {
+    font-size: 0.62rem;
+    padding: 0.22rem 0.45rem;
+  }
+  .gp-universities .gp-actions {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .gp-universities .gp-view,
+  .gp-universities .gp-apply {
+    font-size: 0.72rem;
+    padding: 0.5rem 0.4rem;
+  }
+  .gp-universities .gp-chip {
+    font-size: 0.58rem;
+    padding: 0.22rem 0.45rem;
+    max-width: calc(100% - 16px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* Client ask (2026-09-02): the UGC Approved chip shares the cover's bottom
+     edge with the location chip, and on a ~170px tile the two collided —
+     the badge ran over "Pune"/"Delhi". The badge goes on phones; the
+     approval still reads in the section heading ("UGC-approved
+     universities, verified by us…") right above the grid, and desktop
+     keeps the chip. Location gets the freed edge to itself. */
+  .gp-universities .gp-chip-badge {
+    display: none;
+  }
+  /* Same round of asks: city only on the location chip ("Pune", not
+     "Pune, Maharashtra" — the state span is markup the JSX splits out for
+     exactly this rule), and the two top chips shrunk further than the
+     0.58rem the other chips get, so the college photo owns more of the
+     half-width cover. */
+  .gp-universities .gp-loc-state {
+    display: none;
+  }
+  .gp-universities .gp-chip-courses,
+  .gp-universities .gp-chip-rating {
+    font-size: 0.52rem;
+    padding: 0.18rem 0.38rem;
+  }
+}

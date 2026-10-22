@@ -6,7 +6,8 @@ import Logo from "./Logo";
 import MenuBtn from "../Utils/MenuBtn";
 import StudyAbroadMegaMenu from "./StudyAbroadMegaMenu";
 import "./styles/navbar.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { createPortal } from "react-dom";
 import { getStoredUser } from "../Helper/Helper";
 import { AllCourse, onlineCourseDetails } from "../Helper/Helper";
@@ -41,6 +42,10 @@ const Navbar = () => {
   // Read from an effect, not in the initial state: this component is
   // server-rendered too, where localStorage does not exist.
   const [username, setUsername] = useState(null);
+  // Hover-to-open on the login mark — see the comment at the Link below.
+  const router = useRouter();
+  const loginHoverTimer = useRef(null);
+  useEffect(() => () => clearTimeout(loginHoverTimer.current), []);
   const [activeMenu, setActiveMenu] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(false);
   const [studyAbroadOpen, setStudyAbroadOpen] = useState(false);
@@ -306,6 +311,7 @@ const Navbar = () => {
                   }
                 />
               </span>
+              <span className="course-country-badge" aria-hidden="true" />
             </button>
             <div className={`courseController ${!activeMenu ? "active" : ""}`}>
               <ul>
@@ -313,7 +319,20 @@ const Navbar = () => {
                   <li
                     key={index}
                     onMouseOver={(e) => setLinkData(e.target.textContent)}
-                    onClick={() => setActiveSubmenu(true)}
+                    onClick={(e) => {
+                      // These <li>s sit inside .courseBtn, whose own onClick
+                      // toggles the whole menu. On a phone one tap did both:
+                      // this handler opened the sub-drawer, then the same tap
+                      // bubbled up and toggled the menu shut — the drawer
+                      // flashed and vanished, and because activeSubmenu stayed
+                      // true it reappeared on the next "All Courses" tap.
+                      // Desktop never showed it: there the panel is held open
+                      // by CSS :hover, which masks the state toggle — so the
+                      // stop is gated to phones and desktop keeps its exact
+                      // current behaviour.
+                      if (isPhone) e.stopPropagation();
+                      setActiveSubmenu(true);
+                    }}
                   >
                     {course.name}
                   </li>
@@ -322,7 +341,11 @@ const Navbar = () => {
               <div className={`courseOverlay ${activeSubmenu ? "active" : ""}`}>
                 <span
                   className="iconBack"
-                  onClick={() => {
+                  onClick={(e) => {
+                    // Same bubbling trap as the <li>s above: without the stop,
+                    // "back" would close the whole drawer instead of returning
+                    // to the category list.
+                    if (isPhone) e.stopPropagation();
                     setActiveSubmenu(false);
                   }}
                 >
@@ -364,7 +387,16 @@ const Navbar = () => {
               {topNav.map((link) => (
                 <li
                   key={link.name}
-                  onMouseEnter={() => setStudyAbroadOpen(!!link.isStudyAbroad)}
+                  // Hover-only. On a phone the first tap on a link whose
+                  // mouseenter changes the page is treated by iOS as the hover
+                  // itself: the mega menu appeared and the tap never became a
+                  // click, so Study Abroad opened a dropdown instead of the
+                  // page (client, 2026-09-04). With no hover, nothing opens
+                  // and the tap is the link's click, straight to /study-abroad.
+                  onMouseEnter={() => {
+                    if (!window.matchMedia("(hover: hover)").matches) return;
+                    setStudyAbroadOpen(!!link.isStudyAbroad);
+                  }}
                 >
                   <Link
                     href={link.href}
@@ -375,7 +407,7 @@ const Navbar = () => {
                   >
                     {link.name}
                     {link.isStudyAbroad && (
-                      <span className="icon" style={{ marginLeft: "4px" }}>
+                      <span className="icon sa-caret" style={{ marginLeft: "4px" }}>
                         <FaChevronDown style={{ fontSize: "0.75rem" }} />
                       </span>
                     )}
@@ -407,11 +439,25 @@ const Navbar = () => {
         </div>
 
         <div className="menu-icons">
+          {/* Hover opens the destination too (client ask, 2026-09-02), not
+              just click — but only on devices that truly hover
+              (`hover: hover` guard, so a phone tap's synthetic mouseenter
+              doesn't double-fire alongside the link's own navigation), and
+              only after a 350ms dwell so a cursor merely crossing the bar
+              on its way to the hamburger doesn't yank the page. Leaving
+              cancels the timer. */}
           <Link
             href={username ? "/user-dashboard" : "/login"}
             className="login-circle"
             title={username ? username : "Student Login"}
             aria-label={username ? username : "Student Login"}
+            onMouseEnter={() => {
+              if (!window.matchMedia("(hover: hover)").matches) return;
+              loginHoverTimer.current = setTimeout(() => {
+                router.push(username ? "/user-dashboard" : "/login");
+              }, 350);
+            }}
+            onMouseLeave={() => clearTimeout(loginHoverTimer.current)}
           >
             <img src="/uniscaler-mark.svg" alt="" />
           </Link>

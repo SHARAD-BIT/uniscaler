@@ -270,6 +270,44 @@ export default function UniversityView({ uni, detail }) {
             <div className="uv-prose">
               <Blocks blocks={detail.about} />
             </div>
+
+            {/* About-only recap of two other tabs, on the client's ask
+                (2026-08-26): About read thin next to the rest of the page.
+                Every university on the site shares this component, so the
+                recap appears everywhere Key Facts / Courses do — nowhere
+                new is required per university. Each half stays conditional
+                on its own data, same as every other section here. */}
+            {detail.facts.length > 0 && (
+              <>
+                <h3 className="uv-subhead">Quick Facts</h3>
+                <ul className="uv-facts">
+                  {detail.facts.slice(0, 6).map((f, i) => (
+                    <li key={i}>{f}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {detail.courses.length > 0 && (
+              <>
+                <h3 className="uv-subhead">Courses at a Glance</h3>
+                <div className="uv-courses">
+                  {detail.courses.map((c, i) => (
+                    <div key={`${c.name}-${i}`} className="uv-course">
+                      <h3>{c.name}</h3>
+                      <p className="uv-course-meta">
+                        {c.duration && <span>{c.duration}</span>}
+                        {formatFee(c.fee) && (
+                          <span>
+                            {formatFee(c.fee)} <em>total fees</em>
+                          </span>
+                        )}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </section>
         )}
 

@@ -160,11 +160,14 @@
   place-items: center;
   background-color: #ffffff;
   padding: 0 10px;
-}
-.lw-card figcaption img {
-  max-height: 20px;
-  max-width: 90%;
-  object-fit: contain;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1f2a44;
 }
 
 @media screen and (max-width: 900px) {

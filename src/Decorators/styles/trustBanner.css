@@ -1,0 +1,103 @@
+.trust-banner {
+  /* Grey removed on the client's ask (2026-08-26) — was var(--secondary)
+     (#e5e5e5). Explicit white rather than leaving background unset, so the
+     section reads correctly even if a future page nests it inside something
+     non-white. */
+  background-color: var(--light);
+  padding: clamp(2.5rem, 6vw, 4.5rem) 1rem;
+  text-align: center;
+}
+
+/* The client's full logo — icon + "Uniscaler" wordmark — replacing the
+   lettering-only wordmark this banner used to show (2026-08-26). Sourced from
+   public/uniscalerFullLogo.svg, which is the client's supplied master file
+   (src/assets/uniscaler-full-logo.svg, all 15 original paths unchanged)
+   re-cropped to a tight viewBox around just the icon+lettering ink — measured
+   via a real headless-browser getBBox(), not eyeballed, so nothing here was
+   estimated and nothing is clipped: x 105–894, y 431–568 in the source's own
+   1000x1000 coordinate space. */
+.trust-banner .full-logo {
+  display: inline-block;
+  height: clamp(32px, 4.6vw, 46px);
+  width: auto;
+  margin-bottom: 1.5rem;
+}
+
+.trust-banner h2 {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  line-height: 1.25;
+  /* Explicit navy on the client's ask (2026-08-26). This already matched
+     var(--accent) — the site's navy everywhere else — so nothing was visibly
+     wrong in the source; pinned to the literal hex anyway so this heading
+     reads navy independent of any future change to --accent. */
+  color: #003980;
+}
+
+.trust-banner .contact-line {
+  margin: 1.25rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  font-weight: 600;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+.trust-banner .contact-line a {
+  /* Dark navy on the client's ask (2026-08-26) — was var(--dark), pure black.
+     One shade past the heading's #003980, matching the darkest stop the
+     navbar's own gradient already calls "dark navy" (navbar.css). */
+  color: #002049;
+}
+.trust-banner .contact-line a:hover {
+  color: var(--accent);
+}
+.trust-banner .contact-line span {
+  color: #002049;
+}
+
+.trust-banner .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.trust-banner .social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: clamp(0.5rem, 3vw, 0.7rem);
+  background-color: var(--accent);
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  color: var(--light);
+}
+
+.trust-banner .associated-with {
+  margin-top: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  color: var(--dark);
+}
+
+.trust-banner .badge {
+  display: block;
+  margin: 1.25rem auto 0;
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 765px) {
+  .trust-banner .contact-line {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .trust-banner .contact-line span {
+    display: none;
+  }
+}

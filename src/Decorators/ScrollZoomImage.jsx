@@ -113,7 +113,6 @@ const styles = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    borderRadius: "18vw",
     transition: "transform 0.3s ease-out",
     willChange: "transform",
   },

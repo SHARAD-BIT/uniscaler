@@ -1,0 +1,94 @@
+/*
+ * Generic version of the sticky reveal used on the home page's final section
+ * (see Components/styles/home.css): the page content pins in place while the
+ * footer rides up over it as a rounded card. Applied by RootLayOut to every
+ * route except "/", which builds its own three-layer version of this same
+ * technique because it has a natural middle layer (FAQ + newsletter) to pin
+ * before the footer. Everywhere else the footer covers the page directly.
+ *
+ * `.page-pin` is anchored the same way home.css anchors `.sheet`, not the way
+ * it anchors `.pin` — and for the same reason `.sheet` needs it: unlike
+ * home's `.pin` (a short, roughly-viewport-sized section that is fine to
+ * freeze the instant it's in view), `.page-pin` wraps an entire page, which
+ * is almost always taller than the viewport. A flat `top: 0` sticks it on the
+ * very first pixel of scroll, before the user has scrolled past any of the
+ * page's own content — a real bug, not a curiosity: the footer would start
+ * climbing over the page immediately, and everything below the first
+ * viewport-height of content becomes unreachable. Anchoring above the top
+ * edge by exactly the element's own overflow (`--pin-top`, measured in
+ * RootLayOut.jsx) makes it scroll through normally like ordinary content and
+ * pin only once its bottom edge reaches the bottom of the viewport — i.e.
+ * exactly where the footer should naturally begin. `bottom: 0` is the
+ * declarative way to ask for that and was rejected for the same measured
+ * reason home.css rejects it for `.sheet`: it does not reliably engage.
+ *
+ * Caveat: `position: sticky` unconditionally starts a new stacking context,
+ * so `.page-pin` traps the z-index of anything inside it — a full-screen
+ * fixed-position overlay authored inside a page's own content (e.g.
+ * Decorators/BookAConsult.jsx, used from Components/Exam.jsx) can never paint
+ * above `.footer-reveal` no matter what z-index it sets, only below it. Only
+ * matters while that overlay is open AND the footer has scrolled far enough
+ * to visually overlap it. A component that must always sit above the footer
+ * regardless of scroll position needs to render outside `.page-pin` (a portal
+ * to document.body, or a place in RootLayOut alongside GoToTop/CallUs/WhatsApp).
+ */
+.page-stack {
+  position: relative;
+}
+
+.page-stack > .page-pin {
+  /*
+   * `position: sticky` is applied from JS (RootLayOut.jsx's pinRef effect),
+   * not declared here. `top: var(--pin-top, 0px)` and a *declared* sticky
+   * combine badly during the gap before that effect has run — on a slow
+   * connection/device that gap is not instant, and a real user can scroll
+   * through most of the page before React hydrates. Sticky engages from the
+   * very first scroll pixel with nothing to override the `0px` fallback,
+   * freezing `.page-pin` on whatever was on screen at that moment for the
+   * rest of the session, with the footer then climbing over that frozen,
+   * usually-wrong frame far too early — the same bug this file's other
+   * comment already describes for a flat `top: 0`, just reached through the
+   * fallback instead of the literal value. Confirmed empirically: throttled
+   * to a slower phone, `document.readyState` sat at "interactive" and
+   * `--pin-top` stayed unset for 12+ seconds of continuous scrolling.
+   * Leaving `position` out of this rule means `.page-pin` is a plain
+   * in-flow block until JS is actually ready to pin it correctly, instead
+   * of pinning immediately in the worst possible place.
+   */
+  top: var(--pin-top, 0px);
+}
+
+.page-stack > .footer-reveal {
+  position: relative;
+  z-index: 1;
+  /* Dwell time, same reasoning as `.sheet-footer`'s margin in home.css: the
+     pin locks the moment the page's last screenful is fully on screen, and
+     without a gap the very next pixel of scroll starts sliding the footer
+     over it — on the college list the client saw the footer climbing over
+     the last card's Apply button almost as soon as it appeared. The gap sits
+     below the pinned viewport, so it costs nothing visually (the pinned page
+     shows through it); it just buys ~a hundred pixels of scroll in which the
+     last screenful stays fully readable before the cover begins. */
+  margin-top: clamp(3rem, 12vh, 9rem);
+  border-radius: clamp(20px, 3.5vw, 48px) clamp(20px, 3.5vw, 48px) 0 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .page-stack > .footer-reveal {
+    border-radius: 28px 28px 0 0;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+  }
+  /* The fixed Call Us / Chat Now bar (`.all`, ~55px, phone-only) permanently
+     covers the bottom of the viewport. The pin locks bottom-anchored — page
+     bottom flush with the *viewport* bottom — so without this, the last
+     ~55px of every page froze underneath that bar, unreachable by any amount
+     of scrolling: on the college list the final card's Apply button never
+     properly showed before the footer rode over it. This padding is counted
+     into the pin's measured height (RootLayOut's ResizeObserver reads
+     offsetHeight), so the lock lands with the page's real content ending
+     above the bar, and only this empty strip sits behind it. */
+  .page-stack > .page-pin {
+    padding-bottom: 5.5rem;
+  }
+}

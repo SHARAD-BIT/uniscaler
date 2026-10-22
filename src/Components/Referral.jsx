@@ -16,7 +16,7 @@ import {
 /**
  * Rebuilt 2026-08-20 after easemytrip.com/refer, on the client's word, with
  * their supplied illustration as the hero-card image. Every figure and rule in
- * the copy is carried over from the page this replaced — ₹1000 per successful
+ * the copy is carried over from the page this replaced — ₹5000 per successful
  * referral, code from the student account, success = enrolment in an
  * affiliated college, credit on confirmed enrolment, program subject to change
  * — nothing here is invented, only re-arranged into the reference's sections.
@@ -47,27 +47,27 @@ const STEPS = [
   {
     step: "Step 3",
     title: "Earn referral money",
-    copy: "When your friend enrolls in a college affiliated with Uniscaler, you earn ₹1000.",
+    copy: "When your friend enrolls in a college affiliated with Uniscaler, you earn ₹5000.",
     img: "/refer-earn/step-earn.svg",
   },
 ];
 
-/* One reward type exists (₹1000 on enrolment), so unlike the reference's
+/* One reward type exists (₹5000 on enrolment), so unlike the reference's
    flight/hotel/bus rows these differ by how you share, not by what you earn. */
 const INVITE_ROWS = [
   {
     title: "Share on WhatsApp",
-    sub: "You will earn ₹1000 per enrolment",
+    sub: "You will earn ₹5000 per enrolment",
     Icon: FaWhatsapp,
   },
   {
     title: "Share over Email",
-    sub: "You will earn ₹1000 per enrolment",
+    sub: "You will earn ₹5000 per enrolment",
     Icon: FaEnvelope,
   },
   {
     title: "Share on social media",
-    sub: "You will earn ₹1000 per enrolment",
+    sub: "You will earn ₹5000 per enrolment",
     Icon: FaShareNodes,
   },
 ];
@@ -89,7 +89,7 @@ const JOURNEY = [
     Icon: FaGraduationCap,
   },
   {
-    title: "₹1000 credited",
+    title: "₹5000 credited",
     copy: "The reward is credited to your account once the enrolment is confirmed.",
     Icon: FaWallet,
   },
@@ -102,7 +102,7 @@ const FAQS = [
   },
   {
     title: "How much do I earn per referral?",
-    des: "For every successful referral — when your friend enrolls in a college associated with Uniscaler through our platform — you earn ₹1000.",
+    des: "For every successful referral — when your friend enrolls in a college associated with Uniscaler through our platform — you earn ₹5000.",
   },
   {
     title: "When is a referral counted as successful?",
@@ -133,15 +133,24 @@ const Referral = () => {
               👑
             </span>
             <h2>UNISCALER</h2>
-            <p>Refer a friend and earn &#8377;1000*</p>
+            <p>Refer a friend and earn &#8377;5000*</p>
             <a href="#rf-how" className="rf-explore">
               Explore now <FaArrowUpRightFromSquare />
             </a>
-            <img
-              src="/refer-earn/hero-art.svg"
-              alt=""
-              className="rf-hero-art"
-            />
+            {/* The box, not the image, is what the card's layout sees: it
+                keeps the exact footprint the bare 300px image had (height =
+                that width, plus the same 1.2rem gap), so the card does not
+                grow — while the image inside is scaled up to the card's
+                width and cropped to the box (client, 2026-09-03: "image ka
+                size increase, card ka size mat chhedo"). Sizing in
+                referral.css. */}
+            <div className="rf-hero-art-box">
+              <img
+                src="/refer-earn/hero-art.svg"
+                alt=""
+                className="rf-hero-art"
+              />
+            </div>
           </div>
           <div className="rf-hero-pitch">
             <h1>
@@ -155,7 +164,7 @@ const Referral = () => {
                 </span>
               </span>
             </h1>
-            <p>Invite your friends &amp; earn &#8377;1000 per enrolment</p>
+            <p>Invite your friends &amp; earn &#8377;5000 per enrolment</p>
             <Link href="/login" className="rf-login">
               Login
             </Link>
@@ -214,7 +223,7 @@ const Referral = () => {
       {/* ─── The journey, four stops on a line ─── */}
       <section className="rf-journey">
         <h2>
-          Earn <strong>&#8377;1000 per referral</strong> with Uniscaler
+          Earn <strong>&#8377;5000 per referral</strong> with Uniscaler
         </h2>
         {/* The reference's wave: four near-semicircle arcs, each cradling a
             circle — down, up, down, up — with the copy on the opposite side of

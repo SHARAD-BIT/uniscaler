@@ -1,0 +1,37 @@
+/* Deliberately plain: this page exists to carry the CC BY attributions the
+   client wanted off the designed pages (see the note in
+   study-abroad/page.js). It is reachable from the small "Image credits" link
+   in the footer's copyright line and noindexed — the minimum footprint that
+   still satisfies BY's "reasonable to the medium" attribution. */
+.image-credits {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.image-credits h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.image-credits > p {
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.image-credits ul {
+  display: grid;
+  gap: 0.7rem;
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+.image-credits li {
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.image-credits a {
+  color: #245fc7;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

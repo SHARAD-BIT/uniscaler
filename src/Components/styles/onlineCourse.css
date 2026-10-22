@@ -40,6 +40,25 @@
     padding-top: calc(97px - 63px);
   }
 }
+/* Below 766px the app-switcher strip never renders at all (see navbar.css),
+   so the navbar is a flat ~64px, not the up-to-127px bar the 97px above was
+   sized against — the difference showed as a grey band between the navbar
+   and the hero video. 54px keeps this page's own habit of slightly
+   under-reserving so the band still tucks a little under the navbar's
+   glass, scaled down for the shorter mobile bar and its smaller 12px corner
+   radius (see navbar.css's ≤768px block) rather than carrying the desktop
+   overlap over unchanged. */
+@media screen and (max-width: 765px) {
+  .onlineCourse {
+    /* 40px, down from the 54px this override first shipped with: the client
+       could still see a white strip on their phone (2026-09-02), so the
+       tuck is now deep enough that no state can show one — 24px under the
+       64px at-rest bar and still 14px under the 54px sticky bar. The
+       rotator headline starts ~14% into the band, so it stays clear of the
+       glass even at this depth. */
+    padding-top: 40px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .onlineCourse {
     transition-duration: 0.01ms;
@@ -154,9 +173,115 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* Shifted left on the client's ask (2026-08-26): at cover + centred, the
+     band's fixed height crops the sides, and the left-of-frame subject was
+     landing under the crop. Anchoring the crop window to the frame's left
+     edge keeps that subject fully in view and pushes all the cropping onto
+     the right side instead, which the client said is fine to lose.
+     `object-position: left` alone already sits at the 0% boundary — there is
+     no further left to anchor to. When the client asked to go further still,
+     the only way is to zoom: scaled from its own left edge, so the crop
+     window tightens around what was already at the left instead of sliding
+     past a boundary that does not move. */
+  object-position: left center;
+  transform: scale(1.22);
+  transform-origin: left center;
   /* Nothing here is interactive, and it must not swallow a click or a drag —
      same as .sa-hero-video. */
   pointer-events: none;
+}
+
+/* ---- rotating headline over the video ------------------------------------ */
+/* Same construction as .sa-hero-headline on the study-abroad page — see the
+   notes there for why the serif sits on the child spans (the global Lato
+   `*` rule takes it back off anything higher) and why the white glyph glow
+   exists (it is what lifts the text off the footage without a scrim).
+   Top offset is generous because the band's first ~30px are tucked under the
+   fixed navbar's glass. */
+.onlineCourse .oc-hero-band .oc-hero-headline {
+  position: absolute;
+  top: 14%;
+  /* Shifted left off dead-centre on the client's ask (2026-08-26) — the video
+     itself was already anchored/zoomed toward its left edge, and the
+     headline reads better sitting over that same side rather than centred
+     on the full (now off-centre) frame. */
+  left: 38%;
+  transform: translateX(-50%);
+  width: min(1060px, 90vw);
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.onlineCourse .oc-hero-rotator {
+  position: relative;
+  display: block;
+  animation: oc-hero-in 0.55s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+@keyframes oc-hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* The line still changes on its two-second beat — this only takes the
+   movement out of the change. */
+@media (prefers-reduced-motion: reduce) {
+  .onlineCourse .oc-hero-rotator {
+    animation: none;
+  }
+}
+.onlineCourse .oc-hero-lead,
+.onlineCourse .oc-hero-tail {
+  display: block;
+  font-family: Georgia, Garamond, "Times New Roman", serif;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.85),
+    0 0 4px rgba(255, 255, 255, 0.9);
+}
+.onlineCourse .oc-hero-lead {
+  color: #e8253c;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 3.9vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+.onlineCourse .oc-hero-tail {
+  color: #111a44;
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3.05vw, 2.75rem);
+  line-height: 1.2;
+  margin-top: 0.15em;
+}
+/* `left: 38%` centred by `translateX(-50%)` only clears the left edge of the
+   band while the box is narrower than about 76% of it. At `width: 90vw` that
+   holds on a wide screen but not on a phone: half of 90vw is 45vw, and
+   38% - 45vw goes negative well before the viewport does, pushing the box's
+   left edge (and the start of "Master In Demand Skills") off-screen — cut off
+   by the band's own `overflow: hidden`. Recentring at 50% on a phone keeps
+   the box's edges inside the band; the "sit over the video's left-anchored
+   subject" nuance this was shifted for barely reads at this width anyway. */
+@media screen and (max-width: 640px) {
+  .onlineCourse .oc-hero-band .oc-hero-headline {
+    left: 50%;
+  }
+}
+/* Read by screen readers, never shown. Not display:none, which would remove
+   it from the accessibility tree too. */
+.onlineCourse .oc-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ---- programme card ------------------------------------------------------ */

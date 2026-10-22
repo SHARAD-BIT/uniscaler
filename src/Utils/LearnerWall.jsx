@@ -62,14 +62,11 @@ const Cards = ({ items }) =>
         alt={`AI-generated portrait of a learner placed at ${l.company}`}
         loading="lazy"
       />
-      <figcaption>
-        <img
-          src={`/university/partners/${l.logo}`}
-          alt={l.company}
-          title={l.company}
-          loading="lazy"
-        />
-      </figcaption>
+      {/* The company as text, not a logo image: the partner webp files are
+          small, and scaled down inside the animated track they rendered
+          blurry (client complaint, 2026-08-26). Text stays crisp at any size
+          and through the transform. */}
+      <figcaption>{l.company}</figcaption>
     </figure>
   ));
 

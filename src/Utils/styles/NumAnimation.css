@@ -63,10 +63,6 @@
 }
 .community-band .cb-mark {
   color: #fff;
-  /* hand-drawn squiggle under the brand name */
-  text-decoration: underline wavy #ffd75e;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 7px;
 }
 .community-band .cb-left > p {
   max-width: 46ch;

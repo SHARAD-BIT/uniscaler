@@ -67,8 +67,11 @@ const ContactUs = () => {
       });
   };
 
+  // `contact-page` scopes contactUs.css — see the header comment there:
+  // without it that stylesheet's bare `.icon`/`form`/`.container` selectors
+  // leak into the navbar and every other page.
   return (
-    <main className="top">
+    <main className="top contact-page">
       <div className="container">
         <span className="big-circle"></span>
         <img src="img/shape.png" className="square" alt="" />

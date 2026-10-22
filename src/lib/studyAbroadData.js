@@ -20,7 +20,7 @@
 export const studyAbroadStats = [
   { label: "Universities Partnered", value: "300+", subtitle: "Globally Accredited Institutions" },
   { label: "Admit Success Rate", value: "98%", subtitle: "Visa & Admission Support" },
-  { label: "Enrolled Learners", value: "20,000+", subtitle: "Active Global Students" },
+  { label: "Enrolled Learners", value: "10,000+", subtitle: "Active Global Students" },
   { label: "Avg Cost Savings", value: "₹20 Lakhs", subtitle: "Via Hybrid & Credit Transfers" }
 ];
 

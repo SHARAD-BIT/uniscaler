@@ -218,8 +218,8 @@ const isoList = destinations.map((d) => d.iso);
 // removed.
 const style = `<style>
   path, circle { fill:#e7e9ee; stroke:#ffffff; stroke-width:1.1; stroke-linejoin:round; }
-  ${isoList.map((i) => `#${i} path, #${i} circle`).join(", ")} { fill:#f6c9cb; }
-  #in path, #in circle { fill:#ef4b52; }
+  ${isoList.map((i) => `#${i} path, #${i} circle`).join(", ")} { fill:#bfcde0; }
+  #in path, #in circle { fill:#003882; }
 </style>`;
 map = map.replace(/(<svg[^>]*>)/, `$1\n${style}`);
 

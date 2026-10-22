@@ -5,7 +5,8 @@ import Link from "next/link";
 import "./styles/collegeByLocation.css";
 import Header from "../Utils/Header";
 // import CryptoJS from "crypto-js";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import { MdSchool } from "react-icons/md";
 import CollegeTable from "../Utils/CollegeTable";
 import CollegeLocation from "../Decorators/CollegeLocation";
 import NewsLetter from "../Decorators/NewsLetter";
@@ -80,12 +81,31 @@ import PopularCollege from "../Decorators/PopularCollege";
 
 const CollegeByLocation = () => {
   const location = usePathname().split("/")[2];
+  const locationsRef = useRef(null);
+  const dragStartRef = useRef({ x: 0, scrollLeft: 0 });
+  const dragMovedRef = useRef(false);
+  const autoScrollPausedRef = useRef(false);
+  const [isDraggingLocations, setIsDraggingLocations] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
+  useEffect(() => {
+    let frame;
+    const moveLocations = () => {
+      const strip = locationsRef.current;
+      if (strip && !autoScrollPausedRef.current) {
+        strip.scrollLeft += 0.45;
+        const halfway = strip.scrollWidth / 2;
+        if (strip.scrollLeft >= halfway) strip.scrollLeft -= halfway;
+      }
+      frame = requestAnimationFrame(moveLocations);
+    };
+    frame = requestAnimationFrame(moveLocations);
+    return () => cancelAnimationFrame(frame);
+  }, []);
   const collegesInGurugram = [
     {
       name: "Sushant University",
@@ -4531,20 +4551,58 @@ const CollegeByLocation = () => {
       />
       <div className="slider">
         <h2>All Locations</h2>
-        <div className="tags">
-          {collegeData.map((item) => {
+        <div
+          ref={locationsRef}
+          className={`tags${isDraggingLocations ? " is-dragging" : ""}`}
+          onMouseEnter={() => { autoScrollPausedRef.current = true; }}
+          onMouseLeave={() => {
+            autoScrollPausedRef.current = false;
+            setIsDraggingLocations(false);
+          }}
+          onPointerDown={(event) => {
+            const strip = locationsRef.current;
+            if (!strip) return;
+            strip.setPointerCapture(event.pointerId);
+            dragStartRef.current = { x: event.clientX, scrollLeft: strip.scrollLeft };
+            dragMovedRef.current = false;
+            autoScrollPausedRef.current = true;
+            setIsDraggingLocations(true);
+          }}
+          onPointerMove={(event) => {
+            if (!isDraggingLocations || !locationsRef.current) return;
+            const distance = event.clientX - dragStartRef.current.x;
+            if (Math.abs(distance) > 5) dragMovedRef.current = true;
+            locationsRef.current.scrollLeft = dragStartRef.current.scrollLeft - distance;
+          }}
+          onPointerUp={(event) => {
+            locationsRef.current?.releasePointerCapture(event.pointerId);
+            setIsDraggingLocations(false);
+            autoScrollPausedRef.current = false;
+          }}
+          onClickCapture={(event) => {
+            if (dragMovedRef.current) {
+              event.preventDefault();
+              event.stopPropagation();
+              dragMovedRef.current = false;
+            }
+          }}
+        >
+          {[...collegeData, ...collegeData].map((item, index) => {
+            const isDuplicate = index >= collegeData.length;
             return (
               <Link className={location === item.location ? "active" : ""}
-                key={item.location}
+                key={`${item.location}-${isDuplicate ? "copy" : "original"}`}
                 href={`/college-search-by-location/${item.location}`}
+                aria-hidden={isDuplicate || undefined}
+                tabIndex={isDuplicate ? -1 : undefined}
               >
-                {`${item.location}`}
+                <MdSchool aria-hidden="true" />
+                {item.location}
               </Link>
             );
           })}
         </div>
       </div>
-      <h2>Colleges and universities Listing in {location}</h2>
       {collegeData
         .filter((item) => item.location.includes(location))
         .map((item, index) => {

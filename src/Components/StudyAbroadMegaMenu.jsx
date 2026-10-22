@@ -69,8 +69,11 @@ const StudyAbroadMegaMenu = ({ onClose }) => {
             <img src={activeCountry.flag} alt="" />
             <span>{activeCountry.name}</span>
           </div>
+          {/* Went to /study-abroad/[country] until those pages were removed
+              on client request (2026-08-25); the catalog on the main page is
+              the destination now. */}
           <Link
-            href={`/study-abroad/${activeCountry.slug}`}
+            href="/study-abroad"
             className="study-abroad-header-link"
             onClick={onClose}
           >
@@ -87,7 +90,7 @@ const StudyAbroadMegaMenu = ({ onClose }) => {
                 {cat.courses.slice(0, 4).map((course) => (
                   <Link
                     key={course.id}
-                    href={`/study-abroad/${activeCountry.slug}`}
+                    href="/study-abroad"
                     className="study-abroad-course-card"
                     onClick={onClose}
                   >
