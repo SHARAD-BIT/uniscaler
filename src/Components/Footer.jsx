@@ -155,6 +155,7 @@ const Footer = () => {
   ];
   return (
     <footer className="footer">
+      {/* Hidden for live release: Study Globally & Study Locally links
       <div className="study-links-wrapper">
         {studySections.map((section) => (
           <div className="study-links" key={section.name}>
@@ -169,6 +170,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
+      */}
       <div className="footer-wrapper">
         <div className="links-wrapper">
           {Links.map((item) => {

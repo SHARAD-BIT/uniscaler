@@ -84,6 +84,7 @@ const Navbar = () => {
       img: "/nav-icons/ai-assistance.svg",
       imgClass: "ai-icon",
     },
+    /* Hidden for live release:
     {
       name: "Online Courses",
       href: `/online-course/${onlineCourseDetails[0].name}`,
@@ -97,6 +98,7 @@ const Navbar = () => {
       img: "/nav-icons/study-abroad.svg",
       imgClass: "study-abroad-icon",
     },
+    */
     {
       name: "Common Application Form",
       href: "/common-application-form",
@@ -113,7 +115,8 @@ const Navbar = () => {
 
   // Layer 2 — the main-bar links that sit beside the logo.
   const topNav = [
-    { name: "Study Abroad", href: "/study-abroad", isStudyAbroad: true },
+    // Hidden for live release:
+    // { name: "Study Abroad", href: "/study-abroad", isStudyAbroad: true },
     { name: "Explore City", href: "/college-search-by-location/delhi" },
     { name: "Top University", href: "/college" },
     { name: "Top MBA", href: "/college/management" },

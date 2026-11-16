@@ -38,7 +38,7 @@ const STATIC_ROUTES = [
   { path: "/admission", priority: 0.8, changeFrequency: "weekly" },
   { path: "/direct-admission", priority: 0.8, changeFrequency: "weekly" },
   { path: "/scholarship", priority: 0.8, changeFrequency: "weekly" },
-  { path: "/study-abroad", priority: 0.8, changeFrequency: "weekly" },
+  // { path: "/study-abroad", priority: 0.8, changeFrequency: "weekly" },
   { path: "/education-loan", priority: 0.7, changeFrequency: "monthly" },
   { path: "/common-application-form", priority: 0.7, changeFrequency: "monthly" },
   { path: "/ai", priority: 0.7, changeFrequency: "monthly" },
@@ -78,6 +78,7 @@ export default async function sitemap() {
 
     ...EXAM_CATEGORIES.map((name) => entry(`/exam/${name}`, 0.8, "monthly")),
 
+    /* Hidden for live release:
     // The four free calculators, linked from /study-abroad's tools band.
     // (The per-country /study-abroad pages were removed on client request,
     // 2026-08-25, and left the sitemap with them.)
@@ -94,6 +95,7 @@ export default async function sitemap() {
     ...ONLINE_COURSES.map((name) =>
       entry(`/online-course/${name.replace(/\s/g, "-")}`, 0.7, "monthly")
     ),
+    */
 
     ...COLLEGE_SEARCH_TERMS.map((term) =>
       entry(`/college/${term}`, 0.8, "weekly")

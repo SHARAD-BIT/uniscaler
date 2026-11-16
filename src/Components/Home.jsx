@@ -127,7 +127,7 @@ const Home = () => {
       <HeroSection />
       <CollegeSlider />
       <ExploreByCollege />
-      <ExploreOnlineCourse />
+      {/* Hidden for live release: <ExploreOnlineCourse /> */}
       <CollegeLocation />
       <CommunityBand />
       <PopularCollege />

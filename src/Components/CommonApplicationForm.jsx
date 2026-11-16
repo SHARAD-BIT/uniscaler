@@ -1,10 +1,12 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import { IoSearch } from "react-icons/io5";
 import { MAX_UNIVERSITIES } from "@/lib/commonApplicationCatalog";
 import { ONLINE_UNIVERSITIES } from "@/lib/onlineUniversities";
 import { UNIVERSITY_COURSES } from "@/lib/universityCourses";
 import { fetchCollegesForSearch } from "@/lib/collegeSearchClient";
+import { publicToken } from "@/lib/publicToken";
 import "./styles/commonApplicationForm.css";
 
 /**
@@ -120,6 +122,25 @@ const CommonApplicationForm = () => {
   const [picks, setPicks] = useState({});
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [showPaymentModal, setShowPaymentModal] = useState(true);
+  const [paymentLoading, setPaymentLoading] = useState(false);
+  const [paymentError, setPaymentError] = useState("");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (showPaymentModal && submitted) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showPaymentModal, submitted]);
 
   const chosen = useMemo(() => Object.keys(picks), [picks]);
   const atLimit = chosen.length >= MAX_UNIVERSITIES;
@@ -303,7 +324,48 @@ const CommonApplicationForm = () => {
       return;
     }
     setSubmitted(true);
+    setShowPaymentModal(true);
+    setPaymentError("");
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleProceedPayment = async () => {
+    setPaymentLoading(true);
+    setPaymentError("");
+    try {
+      const payload = {
+        studentName: details.fullName,
+        email: details.email,
+        phone: details.phone,
+        universities: chosen,
+        courses: chosen.map((u) => ({
+          university: u,
+          course: picks[u]?.course || "",
+          specialization: picks[u]?.specialization || "",
+        })),
+        token: publicToken(),
+      };
+
+      const res = await fetch(`${process.env.NEXT_PUBLIC_PAYMENT_URL}/caf-pay`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+      if (data.code === 200 && data.url) {
+        window.location.href = data.url;
+      } else {
+        setPaymentError(data.message || data.detail || "Unable to initiate payment gateway.");
+      }
+    } catch (err) {
+      console.error("Payment error:", err);
+      setPaymentError("Network error. Please try again.");
+    } finally {
+      setPaymentLoading(false);
+    }
   };
 
   if (submitted) {
@@ -315,14 +377,112 @@ const CommonApplicationForm = () => {
             You selected {chosen.length}{" "}
             {chosen.length === 1 ? "university" : "universities"}.
           </p>
-          <p className="caf-warning">
-            This form is not connected to anything yet — nothing was sent and
-            nothing was saved. It is here so the design can be reviewed.
-          </p>
-          <button type="button" className="caf-submit" onClick={() => setSubmitted(false)}>
-            Back to the form
-          </button>
+          <div className="caf-done-actions">
+            <button
+              type="button"
+              className="caf-submit caf-pay-now-btn"
+              onClick={() => setShowPaymentModal(true)}
+            >
+              Pay Application Fee (INR 1,500)
+            </button>
+            <button
+              type="button"
+              className="caf-back-btn"
+              onClick={() => setSubmitted(false)}
+            >
+              Back to the form
+            </button>
+          </div>
         </div>
+
+        {showPaymentModal && mounted && createPortal(
+          <div
+            className="caf-modal-overlay"
+            onClick={() => setShowPaymentModal(false)}
+            role="dialog"
+            aria-modal="true"
+          >
+            <div
+              className="caf-modal-card"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                className="caf-modal-close"
+                onClick={() => setShowPaymentModal(false)}
+                aria-label="Close modal"
+              >
+                &times;
+              </button>
+
+              <div className="caf-modal-header">
+                <span className="caf-modal-badge">Application Summary</span>
+                <h2>Complete Your Application</h2>
+                <p>Verify your details and proceed to the secure payment window.</p>
+              </div>
+
+              <div className="caf-modal-amount-box">
+                <div className="caf-amount-label">Total Payable Amount</div>
+                <div className="caf-amount-display">
+                  <span className="caf-currency-symbol">INR</span>
+                  <span className="caf-amount-number">1,500</span>
+                </div>
+                <div className="caf-amount-note">
+                  Application processing fee for {chosen.length} selected {chosen.length === 1 ? "university" : "universities"}
+                </div>
+              </div>
+
+              <div className="caf-modal-details">
+                <div className="caf-detail-row">
+                  <span className="caf-detail-label">Applicant:</span>
+                  <span className="caf-detail-value">{details.fullName}</span>
+                </div>
+                <div className="caf-detail-row">
+                  <span className="caf-detail-label">Contact:</span>
+                  <span className="caf-detail-value">{details.phone} • {details.email}</span>
+                </div>
+                <div className="caf-detail-row">
+                  <span className="caf-detail-label">Universities:</span>
+                  <span className="caf-detail-value">{chosen.length} Selected</span>
+                </div>
+              </div>
+
+              <div className="caf-selected-chips">
+                {chosen.map((u) => (
+                  <span key={u} className="caf-chip">
+                    <strong>{u}</strong>
+                    {picks[u]?.course ? ` — ${picks[u].course}` : ""}
+                  </span>
+                ))}
+              </div>
+
+              {paymentError && (
+                <div className="caf-modal-error">
+                  {paymentError}
+                </div>
+              )}
+
+              <div className="caf-modal-footer">
+                <button
+                  type="button"
+                  className="caf-pay-action-btn"
+                  onClick={handleProceedPayment}
+                  disabled={paymentLoading}
+                >
+                  {paymentLoading ? (
+                    <span className="caf-btn-loader">Connecting to Gateway...</span>
+                  ) : (
+                    <span>Proceed to Pay INR 1,500 &rarr;</span>
+                  )}
+                </button>
+                <div className="caf-modal-trust">
+                  <span>🔒 100% Safe & Secure Payment powered by PhonePe</span>
+                </div>
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
       </main>
     );
   }
